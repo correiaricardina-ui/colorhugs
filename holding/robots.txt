@@ -1,0 +1,5 @@
+# ColorHugs is not launched yet. Nothing here should be indexed, including the
+# preview build. Remove this file (by clearing SITE_MODE) at launch, so the
+# app's own robots.txt takes over.
+User-agent: *
+Disallow: /

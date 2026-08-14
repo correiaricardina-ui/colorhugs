@@ -28,17 +28,39 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      # Before launch, set the repository variable SITE_MODE to "holding".
+      # The root then serves a holding page and the real site is built under
+      # /preview. Clear SITE_MODE to publish normally.
+      - name: Resolve build mode
+        id: mode
+        run: |
+          if [ "${{ vars.SITE_MODE }}" = "holding" ]; then
+            echo "holding=true" >> "$GITHUB_OUTPUT"
+            echo "base_path=/preview" >> "$GITHUB_OUTPUT"
+          else
+            echo "holding=false" >> "$GITHUB_OUTPUT"
+            echo "base_path=${{ vars.BASE_PATH }}" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Build static export
         env:
           EXPORT: "1"
-          # Set BASE_PATH to /<repo-name> when serving from a project page
-          # rather than a custom domain. Leave empty for a custom domain.
-          BASE_PATH: ${{ vars.BASE_PATH }}
+          # BASE_PATH is /<repo-name> on a project page, /preview while the
+          # holding page is up, and empty on a custom domain at launch.
+          BASE_PATH: ${{ steps.mode.outputs.base_path }}
           # Also exposed to the app: <Image> needs it explicitly, because
           # unoptimized images bypass Next's automatic basePath handling.
-          NEXT_PUBLIC_BASE_PATH: ${{ vars.BASE_PATH }}
+          NEXT_PUBLIC_BASE_PATH: ${{ steps.mode.outputs.base_path }}
           NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+          NEXT_PUBLIC_SITE_MODE: ${{ vars.SITE_MODE }}
         run: npm run build:export
+
+      - name: Assemble holding layout
+        if: steps.mode.outputs.holding == 'true'
+        run: |
+          ./scripts/assemble-holding.sh out site
+          rm -rf out
+          mv site out
       - name: Disable Jekyll processing
         run: touch out/.nojekyll
       - uses: actions/configure-pages@v5

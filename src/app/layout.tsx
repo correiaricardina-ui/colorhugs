@@ -10,7 +10,12 @@ export const metadata: Metadata = {
   },
   description:
     "ColorHugs is a playful, psychology-informed platform where children learn, create and grow — with families in control.",
-  robots: { index: true, follow: true },
+  // While the holding page is up, the preview build must not be indexed even
+  // if someone links to it. robots.txt blocks crawling; this blocks listing.
+  robots:
+    process.env.NEXT_PUBLIC_SITE_MODE === "holding"
+      ? { index: false, follow: false }
+      : { index: true, follow: true },
   openGraph: {
     type: "website",
     siteName: "ColorHugs",

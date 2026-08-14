@@ -128,4 +128,14 @@ Never commit secrets. Safety-critical logic — AI, moderation, payments — mus
 run server-side only; nothing sensitive belongs in client code or in this
 repository.
 
+### Before launch
+
+Set the repository variable `SITE_MODE` to `holding`. The domain then serves a
+holding page and the real site is built under `/preview`, with crawling
+disallowed and every page marked `noindex`. Clear the variable and re-run the
+workflow to go live.
+
+Nothing on GitHub Pages can be password-protected — `/preview` is unlisted, not
+private, and the repository is public.
+
 Before any release, work through `docs/QA-CHECKLIST.md`.

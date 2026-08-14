@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ColorHugs — Coming soon</title>
+    <meta
+      name="description"
+      content="ColorHugs is on its way: a playful, psychology-informed place where children learn, create and grow."
+    />
+    <!-- Not for indexing until launch. -->
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/favicon.ico" />
+    <style>
+      :root {
+        --ink: #1b2a5b;
+        --cloud: #fffdf8;
+      }
+      * { box-sizing: border-box; }
+      html, body { height: 100%; }
+      body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 2rem 1.25rem 3rem;
+        text-align: center;
+        color: var(--ink);
+        background:
+          radial-gradient(120% 90% at 50% -10%, #eef6ff 0%, transparent 60%),
+          linear-gradient(180deg, var(--cloud) 0%, #fff6e9 100%);
+        font-family: "Nunito", ui-rounded, "Segoe UI Rounded", system-ui, sans-serif;
+      }
+      .banner {
+        width: min(100%, 780px);
+        border-radius: 1.75rem;
+        overflow: hidden;
+        box-shadow: 0 20px 44px -26px rgba(27, 42, 91, 0.55);
+      }
+      .banner img { display: block; width: 100%; height: auto; }
+      h1 {
+        margin: 0;
+        font-size: clamp(1.6rem, 1.1rem + 2.4vw, 2.4rem);
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+      p {
+        margin: 0.75rem auto 0;
+        max-width: 34rem;
+        font-size: clamp(1rem, 0.95rem + 0.4vw, 1.15rem);
+        line-height: 1.6;
+        color: rgba(27, 42, 91, 0.72);
+      }
+      footer {
+        font-size: 0.85rem;
+        color: rgba(27, 42, 91, 0.45);
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .banner { animation: rise 600ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+        @keyframes rise {
+          from { opacity: 0; transform: translateY(12px) scale(0.98); }
+          to { opacity: 1; transform: none; }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <img
+        src="/holding-banner.webp"
+        alt="ColorHugs — Create, Learn, Grow, Together"
+      />
+    </div>
+
+    <div>
+      <h1>Something colourful is on its way</h1>
+      <p>
+        ColorHugs is a playful, psychology-informed place where children learn,
+        create and grow — built with families in control. We are putting the
+        finishing touches to it.
+      </p>
+    </div>
+
+    <footer>© <span id="y">2026</span> ColorHugs</footer>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

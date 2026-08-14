@@ -437,3 +437,40 @@ manifest all carry the prefix, and the plain server build is unchanged.
 **Repository:** `correiaricardina-ui/colorhugs` (public — it holds no secrets,
 and `.gitignore` plus `.env.example` keep it that way).
 **Published at:** `https://correiaricardina-ui.github.io/colorhugs/`
+
+---
+
+# Increment 9 — Pre-launch holding page (2026-08-14)
+
+### D-042 `[DEFINED]` The domain shows a holding page until launch
+`colorhugs.pt` serves a holding page; the real site is built under `/preview`,
+unlinked from anywhere. Controlled by a repository variable, `SITE_MODE`:
+
+| `SITE_MODE` | Result |
+| --- | --- |
+| `holding` | holding page at `/`, real site at `/preview/`, nothing indexable |
+| *(cleared)* | the real site at `/`, indexable |
+
+Chosen over unpublishing the site, which would have left a bought domain
+returning GitHub's generic error page — a site that looks broken rather than
+one that looks unfinished on purpose.
+
+**One build, one deployment, one source of truth.** `scripts/assemble-holding.sh`
+moves the export under `/preview` and drops the holding page at the root. There
+is no second repository to keep in sync and nothing to undo by hand at launch:
+clearing the variable and re-running the workflow is the whole switch.
+
+### D-043 `[IMPLEMENTATION]` Nothing is indexable before launch
+Two independent measures, because either alone has a gap. A root `robots.txt`
+disallows all crawling, and every page in the preview build carries
+`noindex, nofollow` — so a search engine that reaches `/preview` through a link
+rather than a crawl still refuses to list it. Without this, Google would have
+banked dozens of "Coming soon" pages before launch.
+
+### D-044 `[DEFINED]` GitHub Pages cannot keep anything private
+Stated plainly because it constrains every future decision: Pages is static
+hosting with no server, so there is no password protection worth the name — any
+gate would be client-side JavaScript with the content shipped alongside it.
+`/preview` is unlisted and uncrawled, not secret, and the repository is public
+regardless. **A genuinely private review environment would need different
+hosting**, and that decision belongs with the authentication work, not before it.
