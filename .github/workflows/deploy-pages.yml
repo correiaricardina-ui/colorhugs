@@ -1,0 +1,57 @@
+# Static deployment to GitHub Pages.
+#
+# Only `main` deploys. Use `develop` for work in progress so the published
+# site always reflects an approved state.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Build static export
+        env:
+          EXPORT: "1"
+          # Set BASE_PATH to /<repo-name> when serving from a project page
+          # rather than a custom domain. Leave empty for a custom domain.
+          BASE_PATH: ${{ vars.BASE_PATH }}
+          # Also exposed to the app: <Image> needs it explicitly, because
+          # unoptimized images bypass Next's automatic basePath handling.
+          NEXT_PUBLIC_BASE_PATH: ${{ vars.BASE_PATH }}
+          NEXT_PUBLIC_SITE_URL: ${{ vars.SITE_URL }}
+        run: npm run build:export
+      - name: Disable Jekyll processing
+        run: touch out/.nojekyll
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

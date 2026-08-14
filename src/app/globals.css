@@ -1,0 +1,145 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================================
+   ColorHugs design tokens
+   The artwork carries the brand. These tokens only tint the space around it.
+   ========================================================================== */
+
+/* ---------------------------------------------------------------------------
+   Typography
+   Drop the licensed brand faces into /public/fonts and declare them here as
+   @font-face rules. Self-hosting keeps every request first-party, which
+   matters more than usual on a product used by children.
+   --------------------------------------------------------------------------- */
+
+@layer base {
+  :root {
+    --font-display: "Fredoka", "Baloo 2", ui-rounded, "Segoe UI Rounded",
+      "Hiragino Maru Gothic ProN", "Nunito", system-ui, sans-serif;
+    --font-body: "Nunito", ui-rounded, "Segoe UI Rounded", system-ui, sans-serif;
+
+    --sec-wash-a: #eef6ff;
+    --sec-wash-b: #fffdf8;
+    --sec-accent: #4fb3f0;
+    --sec-ink: #1b2a5b;
+
+    color-scheme: light;
+  }
+
+  /* Section themes — one per approved universe. */
+  .theme-learning-hub {
+    --sec-wash-a: #e3f0ff;
+    --sec-wash-b: #fffdf5;
+    --sec-accent: #2f6fd0;
+  }
+  .theme-brain-gym {
+    --sec-wash-a: #ffe8f2;
+    --sec-wash-b: #fff8fb;
+    --sec-accent: #e0619a;
+  }
+  .theme-my-inner-world {
+    --sec-wash-a: #efe6ff;
+    --sec-wash-b: #fbf7ff;
+    --sec-accent: #8b6fe0;
+  }
+  .theme-kids-draw {
+    --sec-wash-a: #ffeede;
+    --sec-wash-b: #fffaf3;
+    --sec-accent: #ef7d3d;
+  }
+  .theme-color-and-create {
+    --sec-wash-a: #e6f8ee;
+    --sec-wash-b: #fbfff8;
+    --sec-accent: #3fa96b;
+  }
+  .theme-my-colorhugs {
+    --sec-wash-a: #fff2d6;
+    --sec-wash-b: #fffcf3;
+    --sec-accent: #d9911a;
+  }
+  .theme-community {
+    --sec-wash-a: #ffe6ea;
+    --sec-wash-b: #fff9f9;
+    --sec-accent: #e0566a;
+  }
+  /* The adult area is intentionally calmer and visually distinct. */
+  .theme-parents {
+    --sec-wash-a: #e8eef5;
+    --sec-wash-b: #f7f9fc;
+    --sec-accent: #2c6178;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-ch-cloud font-body text-ch-ink antialiased;
+  }
+
+  /* Fluid, readable type — never below 16px on mobile. */
+  h1 {
+    font-size: clamp(1.75rem, 1.1rem + 3vw, 3rem);
+  }
+  h2 {
+    font-size: clamp(1.35rem, 1rem + 1.6vw, 2rem);
+  }
+
+  /* Visible, high-contrast focus for keyboard users everywhere. */
+  :focus-visible {
+    outline: 4px solid var(--sec-accent);
+    outline-offset: 3px;
+    border-radius: 0.75rem;
+  }
+}
+
+@layer components {
+  .wash {
+    background:
+      radial-gradient(120% 90% at 50% -10%, var(--sec-wash-a) 0%, transparent 60%),
+      linear-gradient(180deg, var(--sec-wash-b) 0%, #fffdf8 100%);
+  }
+
+  /* Shared shell for every sticker-style control. */
+  .sticker-surface {
+    @apply relative block rounded-sticker bg-white/70 p-3 backdrop-blur-[2px] transition duration-200 ease-out;
+    box-shadow: 0 10px 0 -2px rgba(27, 42, 91, 0.08), 0 18px 30px -14px rgba(27, 42, 91, 0.32);
+  }
+
+  .sticker-surface:hover {
+    @apply -translate-y-1 bg-white/90;
+    box-shadow: 0 16px 0 -2px rgba(27, 42, 91, 0.1), 0 26px 40px -16px rgba(27, 42, 91, 0.38);
+  }
+
+  .sticker-surface:active {
+    @apply translate-y-0.5;
+    box-shadow: 0 4px 0 -2px rgba(27, 42, 91, 0.1), 0 8px 16px -10px rgba(27, 42, 91, 0.32);
+  }
+
+  /* Minimum comfortable target for small hands: 64px. */
+  .tap-target {
+    @apply min-h-[64px] min-w-[64px];
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-semibold;
+  }
+}
+
+/* Respect the operating-system motion preference. Non-negotiable. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .sticker-surface:hover {
+    transform: none;
+  }
+}
