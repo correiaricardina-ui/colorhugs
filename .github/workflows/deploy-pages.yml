@@ -58,7 +58,7 @@ jobs:
       - name: Assemble holding layout
         if: steps.mode.outputs.holding == 'true'
         run: |
-          ./scripts/assemble-holding.sh out site
+          bash scripts/assemble-holding.sh out site
           rm -rf out
           mv site out
       - name: Disable Jekyll processing
