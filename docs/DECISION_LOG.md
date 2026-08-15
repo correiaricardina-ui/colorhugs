@@ -1007,3 +1007,76 @@ for the same reason.
 No badge, and no phrasing implying assessment that did not happen. On a product
 for children sold on trust, a false mark is not a shortcut — it ends the
 proposition.
+
+---
+
+# Increment 19 — Emotion families (2026-08-15)
+
+### D-087 `[DEFINED]` Seven emotion families
+Happy · Sad · Angry · Scared · Ashamed · Calm · Bored.
+
+Proposed six, requested ten. Seven is the resolution, and the reasoning
+matters: **three of the four requested additions are not families, they are
+words inside one.** Anxious and shy live inside *scared* — same family, finer
+word, which is exactly the granularity the activity is built on. Excited lives
+inside *happy*. Disgusted lives inside *angry* or *scared* depending on context.
+
+Two are genuinely their own: **ashamed**, which is not fear and is the emotion
+most often arriving disguised as something else; and **bored**, which fits
+nowhere and appears constantly with nowhere to go.
+
+Seven is also the ceiling for a choice screen used by a four-year-old who
+cannot read. More than that and a child picks the first icon or the one she
+recognises, rather than searching for the one that matches — which defeats the
+activity. It coincides with the seven areas, which gives the product one number
+instead of two.
+
+*Calm is deliberately included although it is a state rather than an emotion: a
+child needs to be able to say she is fine without having to be happy, and it is
+where Calm My Body leads.*
+
+### D-088 `[DEFINED]` One character, changing only expression and posture
+Every card is the same heart character — the face the My Inner World sticker
+already establishes. **If each emotion were a different animal, the child would
+be comparing animals.** With one character the only variable is the feeling.
+
+It has arms and legs because a face alone cannot carry shame or boredom: shame
+is looking down and turning away, boredom is slumping.
+
+### D-089 `[DEFINED]` The feeling must survive greyscale
+Colour on these cards is a recognition aid, never the meaning. Every card is
+checked with the colour removed — if the feeling becomes ambiguous, the posture
+is not doing enough. A child who cannot distinguish the colours reads every
+card, and nothing depends on knowing that blue means sad.
+
+Prompts: `docs/EMOTION-CARD-PROMPTS.md`. Seven families first; the ~28 finer
+words inherit from them and are written once these are settled.
+
+### D-090 `[IMPLEMENTATION]` Sixteen collectible stickers accepted, seven rejected
+Accepted and stored in `public/assets/stickers/collectible/`: all seven
+first-visit stickers, the Learning Hub rosette, and numbers 17–24.
+
+Rejected, with reasons:
+- **Target, speech bubbles, folder, clipboard** — outlines are navy, not black.
+  Measured: the accepted sixteen return RGB 0,0,0; these return 13–23 on the
+  blue channel. Side by side at small size they read as a different family.
+- **Magnifying glass and alarm clock** — correct style, but not on the list, and
+  the clock face carries numbers that are illegible at 100px.
+- **Trophy** — correct style, but carries a blank ribbon banner. A blank banner
+  is an invitation to write in it, and sooner or later someone does. The prompt
+  block now forbids them explicitly.
+
+Brain Gym arrived as a brain with a lightbulb rather than a sweatband, and
+without a face. Accepted: it reads clearly and is distinct from the others.
+
+Community shows three hands in different skin tones. This does not conflict
+with the no-skin-tone rule for avatars — that rule exists so twelve characters
+do not have to represent the whole range of human appearance. Here the
+diversity is the content.
+
+Still to generate: six rosettes and numbers 15 and 16.
+
+### D-091 `[DEFINED]` Handoff document
+`docs/HANDOFF.md` briefs a new conversation on the project state, the standing
+rules, and what is open. Written so the reasoning survives a change of context,
+not just the conclusions.
