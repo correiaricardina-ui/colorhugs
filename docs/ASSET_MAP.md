@@ -93,7 +93,9 @@ Parents & Safety banner, Brain Gym / Memory Challenge, My ColorHugs / My Progres
 
 ## Still outstanding
 
-1. **Brand typefaces.** The interface currently falls back to a rounded system
+1. **Child avatars** for the profile picker. Placeholder coloured circles with
+   an initial are in use.
+2. **Brand typefaces.** The interface currently falls back to a rounded system
    stack. Fredoka and Nunito (both SIL Open Font License) are the closest
    matches to the lettering in the artwork; once chosen, they should be
    self-hosted in `/public/fonts` so a child's browser makes no third-party
@@ -121,3 +123,30 @@ The mark is used only where the full lockup does not fit: below roughly 48px
 the lockup is unreadable. **This needs approval — see Q-007 in the decision
 log.** A commissioned small-size mark would replace it cleanly, since every
 icon is regenerated from a single source.
+
+---
+
+## Brand lockups
+
+| File | When to use |
+| --- | --- |
+| `branding/colorhugs-logo.webp` | the default. Navigation, small sizes, **anywhere a child sees it** |
+| `branding/colorhugs-parents.webp` | **family-facing** adult surfaces at 110px tall or more: parents area, family printables, sales pages |
+| `branding/colorhugs-professional.webp` | **the professional line**: licensed materials, application notes, anything sold to practitioners |
+| `branding/colorhugs-mark.png` | favicons and app icons only |
+| `branding/ricardina-correia.webp` | where the practitioner is the subject, not the endorser |
+
+**Both endorsed lockups have a minimum size**, verified by rendering them at
+the sizes the interface actually uses. Navigation renders at 44–56px, where
+both endorsement lines are unreadable smudges, so navigation keeps the plain
+lockup.
+
+- Script version: legible from about **110px** tall.
+- Typeset version: the name is legible from about **56px**, the qualification
+  from about **110px**.
+
+**Two versions, two audiences.** The handwritten line reads warm and puts
+ColorHugs clearly first — right for a parent. The typeset version gives the
+practitioner's name near-equal weight to the brand and reads credentialed
+rather than whimsical — right for a psychologist, where the name is what gets
+the email opened. Same lockup, emphasis flipped, exactly as D-063 requires.

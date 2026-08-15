@@ -55,8 +55,16 @@
       }
       footer {
         font-size: 0.85rem;
-        color: rgba(27, 42, 91, 0.45);
+        line-height: 1.9;
+        color: rgba(27, 42, 91, 0.5);
       }
+      footer a {
+        color: inherit;
+        font-weight: 700;
+        text-decoration-color: rgba(27, 42, 91, 0.3);
+        text-underline-offset: 3px;
+      }
+      footer a:hover { text-decoration-color: rgba(27, 42, 91, 0.7); }
       @media (prefers-reduced-motion: no-preference) {
         .banner { animation: rise 600ms cubic-bezier(0.22, 1, 0.36, 1) both; }
         @keyframes rise {
@@ -83,7 +91,17 @@
       </p>
     </div>
 
-    <footer>© <span id="y">2026</span> ColorHugs</footer>
+    <footer>
+      Created and clinically reviewed by
+      <a
+        href="https://ricardinacorreia.pt"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Ricardina Correia</a
+      >
+      · Paediatric Psychology<br />
+      © <span id="y">2026</span> ColorHugs
+    </footer>
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
     </script>

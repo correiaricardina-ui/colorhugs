@@ -2,6 +2,7 @@ import Image from "next/image";
 import type { Metadata } from "next";
 import AdultShell from "@/components/layout/AdultShell";
 import { PLAN_BADGES, SECTIONS } from "@/data/sections";
+import { CREDIT } from "@/data/credits";
 import { asset } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -86,7 +87,53 @@ export default function ParentsPage() {
           built.
         </p>
 
-        <section aria-labelledby="commitments" className="mt-10">
+        {/*
+          Who is behind ColorHugs, placed before the safety commitments.
+          A parent deciding whether to trust the product looks for the person
+          first — the credential is what makes the commitments below credible.
+        */}
+        <section aria-labelledby="who" className="mt-10">
+          <h2 id="who" className="font-display font-700 text-ch-ink">
+            Who is behind ColorHugs
+          </h2>
+          <div className="mt-5 flex flex-col items-start gap-6 rounded-xl border border-ch-ink/10 bg-white p-6 sm:flex-row sm:items-center">
+            <a
+              href={CREDIT.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0"
+              aria-label={`${CREDIT.name} — professional website`}
+            >
+              <Image
+                src={asset(CREDIT.logo.src)}
+                alt={CREDIT.logo.alt}
+                width={260}
+                height={158}
+                className="h-auto w-[220px]"
+              />
+            </a>
+            <div>
+              <p className="text-[0.95rem] leading-relaxed text-ch-ink/80">
+                {CREDIT.long}
+              </p>
+              <p className="mt-3 text-[0.95rem] leading-relaxed text-ch-ink/60">
+                {CREDIT.boundary}
+              </p>
+              <a
+                href={CREDIT.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-1.5 font-display text-[0.95rem] font-600 text-[var(--sec-accent)] underline underline-offset-4"
+              >
+                ricardinacorreia.pt
+                <span aria-hidden>&#8599;</span>
+                <span className="sr-only">(opens in a new tab)</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="commitments" className="mt-12">
           <h2 id="commitments" className="font-display font-700 text-ch-ink">
             Our safety commitments
           </h2>

@@ -474,3 +474,292 @@ gate would be client-side JavaScript with the content shipped alongside it.
 `/preview` is unlisted and uncrawled, not secret, and the repository is public
 regardless. **A genuinely private review environment would need different
 hosting**, and that decision belongs with the authentication work, not before it.
+
+---
+
+# Increment 10 — Authorship and clinical credit (2026-08-14)
+
+### D-045 `[DEFINED]` The credit appears in three places, at three weights
+Ricardina Correia is credited as creator and clinical reviewer, linked to
+`ricardinacorreia.pt`:
+
+| Where | Form |
+| --- | --- |
+| Parents & Safety | full section with logo, placed **above** the safety commitments |
+| Footer, every page | one quiet line with the link |
+| Holding page | one line |
+
+**Deliberately not on child-facing screens above the footer.** A child has no
+use for an authorship credit, and anything extra on their screen is noise.
+
+The credit sits first on the Parents page rather than last because a parent
+deciding whether to trust the product looks for the person behind it before
+reading the promises — the credential is what makes the commitments below it
+credible. On a platform that calls itself psychology-informed, naming the
+paediatric psychologist responsible is a trust signal, not a byline.
+
+### D-046 `[DEFINED]` The credit states the work, not a clinical service
+Wording: *"created and clinically reviewed by"*. The boundary is restated
+immediately beneath it — psychoeducational tools, no diagnosis, no assessment,
+no replacement for psychological care. **Claiming the credential is exactly the
+moment the boundary is most at risk of blurring**, so the two travel together
+and neither appears without the other.
+
+All wording lives in `src/data/credits.ts`, so it reads identically everywhere
+and changes in one place.
+
+### D-047 `[IMPLEMENTATION]` Logo processed like every other brand asset
+`Logo_RC.png` had a white background and heavy margins. Background flood-filled
+to transparency and trimmed — no die-cut rim rebuilt, since this is a fine-line
+mark rather than a sticker. The artwork itself is untouched.
+
+External links open in a new tab with `rel="noopener noreferrer"`, and screen
+readers are told so.
+
+---
+
+# Increment 11 — Account screens, designed not built (2026-08-14)
+
+### D-048 `[DEFINED]` The gate sits on the action, not on the door
+*(Supersedes the separate landing page and the `/play` move, both reversed.)*
+
+The sticker grid is the root again, and a visitor browses it and every activity
+page without an account. The account is required to **do** something — start an
+activity, download, submit a drawing.
+
+Three reasons this beats a login wall:
+
+1. **It persuades better.** Seeing an activity convinces a parent far more than
+   a form does. A wall means nobody can see what they would be buying.
+2. **A child meets one door, not seven.** With a wall at the entrance, every
+   sticker is a locked door. With the gate on the action, the child reaches the
+   activity and meets a single, explained stop.
+3. Rule 7 already drew this line: informational pages stay open, *interactive
+   child use* requires an authorised profile. Browsing is not use.
+
+Route map: `/` child universe (open to browse) · `/sign-in` · `/sign-up` ·
+`/profiles` · `/[section]/[activity]` (open to read, gated to do) · `/parents`.
+
+### D-049 `[DEFINED]` The signed-out band carries the parent's case
+The grid alone shows *what* exists but not who made it, what it costs, or why
+it is safe — the things that actually decide a parent. `SignedOutBand` sits
+below the grid with the psychologist credit, three claims (no ads, no tracking,
+no child chat), and the call to action.
+
+**It renders only while nobody is signed in.** Once a child's profile is open
+it disappears, along with the sign-in controls in the top bar, and the page is
+the child's universe and nothing else. No selling, no credentials and no adult
+controls follow a child around the product.
+
+### D-050 `[DEFINED]` The flow has four steps, not two
+The question assumed "user signs in". The approved account model makes it:
+
+public page → sign in or create account → **adult account** → **choose child
+profile** → child universe.
+
+The profile picker is the piece the split-screen question left out, and it is
+the most important one: it is where the adult hands over and steps back. It is
+the only screen both of them look at together, so it is warm enough for a child
+and clear enough for a parent.
+
+### D-051 `[IMPLEMENTATION]` Split screen, with the product on the right
+Form left; right carries the main banner, what ColorHugs is, who created it,
+**all seven sections**, and three claims a parent rarely gets to read — no ads,
+no tracking, no child chat. Real artwork throughout, not a decorative photo, so
+the panel sells the product instead of filling space. Below `lg` it is dropped
+rather than stacked: on a phone a parent wants the form, not to scroll past
+decoration to reach it.
+
+The count is read from the data rather than written by hand. A first pass
+showed six sections under a heading promising seven — a small lie, on the one
+screen where a parent is deciding whether to trust us.
+
+### D-052 `[IMPLEMENTATION]` Nothing pretends to work
+Every field is disabled and every screen carries a visible "Design preview"
+notice. **A form that looks live but quietly does nothing is worse than no form
+at all** — especially one asking a parent for an email address.
+
+### D-053 `[IMPLEMENTATION]` Consent is marked, not implemented
+The sign-up screen shows where verified parental consent goes and states that a
+tick box is not enough and that the method depends on jurisdiction. Rule 9.
+**Must be validated legally before launch.**
+
+---
+
+## Open questions
+
+### Q-010 `[OPEN QUESTION]` Where the account system lives
+Nothing on this page works until this is answered — see the conversation. It
+also decides where the download limit is counted, and a limit counted in the
+browser is a limit that can be erased by the child.
+
+### Q-011 `[OPEN QUESTION]` Landing-page copy
+The marketing wording on `/` is a first draft, written so the page can be
+reviewed. It is adult-facing sales copy and needs approval, like the section
+taglines did.
+
+### Q-012 `[OPEN QUESTION]` Child avatars
+The profile picker uses coloured circles with an initial. No avatar artwork
+exists, and inventing a set would create brand assets by the back door.
+
+---
+
+# Increment 12 — Account screens rolled back (2026-08-14)
+
+### D-054 `[DEFINED]` The account work is deferred; the design is kept
+The sign-in, sign-up and profile screens, the action gate and the signed-out
+band are **removed from the build**. So is any notion of counting downloads.
+The site returns to what it was: the child universe at the root, the quiet
+adult strip at the foot of it, and `/parents`.
+
+**Removed rather than left dormant.** Disabled forms sitting in production age
+badly — sooner or later someone finds them, and a form that asks a parent for
+an email and does nothing is worse than no form. Nothing half-built stays
+deployed.
+
+**The design decisions stand.** D-048 to D-053 remain the agreed specification
+for when accounts are built: gate on the action rather than the door, the
+four-step flow through the profile picker, the split screen with the product on
+the right, verified consent rather than a tick box, and no price or purchase
+button on any child-facing screen. Rebuilding from that spec is a small job;
+what took the thinking is written down.
+
+Route map is back to: `/` child universe · `/[section]` · `/[section]/[activity]`
+· `/parents`.
+
+### Still open, unchanged
+Q-010 where the account system lives · Q-011 landing copy (now moot until the
+public page returns) · Q-012 child avatars.
+
+---
+
+# Increment 13 — Content design proposals (2026-08-15)
+
+### D-055 `[PROPOSAL]` Content concepts for all seven universes
+See `docs/CONTENT-DESIGN.md`. Every concept is written with the mechanism it
+rests on and an honest evidence grade — established, reasonable, or practice.
+Nothing is claimed more strongly than its support, because a psychology-informed
+platform that overstates its science is worth less than one that has none.
+
+Three flags raised there need decisions and are repeated here:
+
+- **Q-013 `[OPEN QUESTION]` The "Brain Gym" name.** Brain Gym® is a trademarked
+  educational programme and one of the most cited examples of pseudoscience in
+  education. The audience most likely to recognise it — psychologists, teachers,
+  SEN staff — is the audience whose trust the product most needs. Credibility
+  and trademark issue both. Cheaper to change now than after launch.
+- **Q-014 `[OPEN QUESTION]` Which languages get literacy content at launch.**
+  Phonics cannot be translated; Word Explorer in seven locales is seven designs.
+- **Q-015 `[OPEN QUESTION]` What happens when a child repeatedly reports intense
+  distress in My Inner World.** Requires clinical and legal input before any of
+  that section is built. No automatic alerting, no diagnosis.
+- **Q-016 `[OPEN QUESTION]` Can a child's drawing become a colouring page for
+  other children?** Strongest single idea in the proposals; IP and consent
+  position needs legal advice.
+- **Q-017 `[OPEN QUESTION]` Is any of My Inner World visible to a parent?**
+  Argued no. A clinical judgement, not a product one.
+
+### D-056 `[PROPOSAL]` Build Calm My Body first
+Smallest activity with no AI, no moderation, no content library and no
+child-authored input — the fastest route to one finished end-to-end activity.
+One finished teaches more about the other thirty than thirty sketches.
+
+---
+
+# Increment 14 — Commercial model (2026-08-15)
+
+### D-057 `[DEFINED]` Three revenue lines: printables, professional licences, family subscription
+All three, in that order. See `docs/COMMERCIAL-MODEL.md`.
+
+They are not three products competing for the same hours. **It is one content
+library packaged three ways** — a deck of emotion cards authored once becomes
+the content of an activity, a printable pack, and a session-ready professional
+material. Each phase funds the next and none is thrown away when the next
+begins.
+
+### D-058 `[DEFINED]` Printables are a first-class format
+No longer an extra at the end of an activity. Every activity designed from here
+specifies its printable alongside its interaction.
+
+### D-059 `[DEFINED]` Every piece of content is authored three ways at once
+Interactive content, printable, and professional application note — written
+together, not retrofitted. **This is the most important change to how the
+design work is done from here**, and it applies to every area discussion that
+follows.
+
+### D-060 `[PROPOSAL]` An eighth area: the professional library
+Adult-facing, separately licensed, with application notes on each material.
+Does not exist in the current design. Required by Line B.
+
+### D-061 `[DEFINED]` Licence tiers are settled before the first sale
+Personal, professional, institutional — scoped as written in the commercial
+model. Terms cannot be tightened retroactively once material is out.
+
+### D-062 `[DEFINED]` The production constraint is authoring, not engineering
+The engines are finite; the content is not. Anything that reduces authoring
+time per piece is worth more than any feature.
+
+---
+
+## New open questions
+
+- **Q-018** VAT and invoicing on EU digital sales — needs an accountant before
+  the first sale, not after.
+- **Q-019** Prices. Every figure is a reasoned starting point, not research.
+  Ask five colleagues what they would pay for the professional tier.
+- **Q-020** Where printables are sold: own site, marketplace, or both.
+- **Q-021** Does the professional line share the ColorHugs brand, or sit under
+  your own name — which already carries the credential the buyer is buying.
+
+---
+
+# Increment 15 — Endorsed brand lockup (2026-08-15)
+
+### D-063 `[DEFINED]` ColorHugs by Ricardina Correia — endorsed branding
+One brand, endorsed by the practitioner, rather than two brands competing.
+Closes Q-021.
+
+- **Child-facing screens: ColorHugs alone.** A child has nothing to do with who
+  made it.
+- **Adult-facing surfaces carry the endorsement**: parents area, printables,
+  professional library, holding page, sales material.
+- **The emphasis flips with the audience.** For a parent, ColorHugs leads and
+  the credential reassures. For a psychologist it is nearly the reverse — the
+  name is what gets the email opened, and ColorHugs is what it contains. Same
+  block, different visual weight.
+- **The two logos are never set side by side.** One is fine-line slate, the
+  other is rainbow and rounded; adjacent they fight. The endorsed lockup, or
+  the practitioner's own logo where she is the subject — never both at once.
+
+### D-064 `[IMPLEMENTATION]` The endorsed lockup has a minimum size
+Supplied lockup processed like every other asset and stored as
+`colorhugs-parents.webp`. **Usable at 110px tall and above only.**
+Rendered at the sizes the interface actually uses, the script line becomes an
+unreadable smudge below that — noise without meaning. Navigation renders at
+44–56px and keeps the plain lockup.
+
+### Q-022 `[OPEN QUESTION]` A typeset variant for professional materials
+The handwritten script reads warm, which suits families. On a licence sold to
+psychologists it reads whimsical where it needs to read credentialed, and the
+pale script sits close to the contrast floor for adult body text. Worth a
+second variant with the endorsement typeset rather than handwritten, for the
+professional line only.
+
+### D-065 `[DEFINED]` Two endorsed lockups, one per audience — closes Q-022
+The typeset version supplied on 2026-08-15 solves the professional-register
+problem raised in Q-022, and it does something better than replacing the script
+version: **the two of them are the audience flip in D-063, made concrete.**
+
+- **Script lockup — families.** ColorHugs clearly dominant, the endorsement warm
+  and secondary. Parents area, family printables, sales pages.
+- **Typeset lockup — professionals.** The practitioner's name at near-equal
+  weight to the brand, set bold in the brand navy. Reads credentialed rather
+  than whimsical. Licensed materials, application notes, anything sold to
+  practitioners.
+
+Neither is a downgrade of the other; they are the same idea weighted for who is
+looking. Navigation keeps the plain lockup at both.
+
+Stored as `colorhugs-parents.webp` and `colorhugs-professional.webp` — named
+for the audience rather than for the typography, so that in six months nobody
+has to work out which is which.

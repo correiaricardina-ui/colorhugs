@@ -1,10 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import ChildShell from "@/components/layout/ChildShell";
 import SectionGrid from "@/components/sections/SectionGrid";
 import StickerButton from "@/components/stickers/StickerButton";
+import Link from "next/link";
 import { BRAND, CHILD_SECTIONS, SECTIONS } from "@/data/sections";
 import { asset } from "@/lib/site";
+
 
 const parents = SECTIONS.find((s) => s.slug === "parents")!;
 

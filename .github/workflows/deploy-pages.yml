@@ -58,6 +58,8 @@ jobs:
       - name: Assemble holding layout
         if: steps.mode.outputs.holding == 'true'
         run: |
+          # Invoked through bash rather than relying on the executable
+          # bit, which Windows does not preserve when files are copied.
           bash scripts/assemble-holding.sh out site
           rm -rf out
           mv site out

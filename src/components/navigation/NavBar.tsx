@@ -7,10 +7,10 @@ import { asset } from "@/lib/site";
  * Deliberately minimal: the logo, and nothing else.
  *
  * No hamburger, no dropdown, no hidden gesture — the homepage grid is the
- * navigation. The adult entry point deliberately does not live up here: a
- * button in the child's top bar invites taps that lead somewhere a child has
- * no use for. Parents reach their area from the strip at the foot of the
- * homepage, and from the footer link on every page.
+ * navigation. The adult entry point does not live up here: a button in the
+ * child's top bar invites taps that lead somewhere a child has no use for.
+ * Parents reach their area from the strip at the foot of the homepage, and
+ * from the footer link on every page.
  */
 export default function NavBar() {
   return (
@@ -33,6 +33,7 @@ export default function NavBar() {
         />
         <span className="sr-only">ColorHugs</span>
       </Link>
+
     </nav>
   );
 }
