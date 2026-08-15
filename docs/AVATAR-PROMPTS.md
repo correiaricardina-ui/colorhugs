@@ -131,3 +131,89 @@ Supply them at any size, on white. Processing does the rest:
 
 If a region turns out not to be sealed, it shows up immediately at that stage —
 colour floods where it should not — and that avatar goes back for regeneration.
+
+---
+
+# Body map figure
+
+Not an avatar. It is the figure in *How Do I Feel?* on which a child points to
+where in her body she feels something (D-105, D-106). **No white die-cut rim** —
+it is interface, not a collectable (D-083). Sealed line art coloured by code, as
+the avatars are (D-070).
+
+Five zones: **head · chest · stomach · arms and hands · legs and feet.**
+The throat is deliberately excluded: the lump in the throat is one of the most
+recognisable signals, but at phone size a neck zone is too small for a child's
+finger, and a zone that misses reads as the app not listening.
+
+The neck sliver between the chin line and the shoulder line is grouped with the
+head in processing, so nothing is left permanently white (D-075).
+
+```
+A simple outline figure for a children's app.
+
+THE FIGURE
+A single standing human figure seen from the front, arms held away from the
+body with a clear gap at each armpit, legs slightly apart. Simple, rounded,
+friendly proportions with a slightly large head.
+
+NO FACE AND NO IDENTITY
+The head is completely blank — no eyes, no mouth, no nose, no ears, no hair.
+No clothing, no shoes, no accessories. No gender. No fill of any kind.
+
+STYLE
+Black outline only, on a plain white background. THICK, BOLD lines of even
+weight, the same heavy weight throughout, like a children's colouring book.
+No colour, no fill, no shading, no gradient, no drop shadow.
+
+FIVE CLOSED COMPARTMENTS — THE MOST IMPORTANT REQUIREMENT
+The figure must be divided by internal lines into exactly five separate
+compartments: head, chest, stomach, arms with hands, legs with feet.
+
+EVERY internal dividing line must start ON the outer outline and end ON the
+outer outline, touching it at both ends, so that each compartment is a
+completely closed shape. A dividing line that stops in the middle of the body
+without reaching the outline is wrong.
+
+The required dividing lines are:
+- a line across the neck, separating the head from the chest;
+- a line across the waist, separating the chest from the stomach;
+- a line across each shoulder, separating each arm from the body;
+- a line across each hip, separating each leg from the stomach.
+
+Imagine pouring paint into the head: it must not be able to reach the chest.
+Pour paint into the stomach: it must not reach the legs or the arms.
+
+COMPOSITION
+Square image. The whole figure centred, even margin on all sides.
+
+DO NOT INCLUDE
+No text, no numbers. No background scenery. No other figures. No white
+die-cut border. No face of any kind. No internal line that fails to touch the
+outline at both ends.
+```
+
+## Why this prompt is longer than it looks
+
+The first attempt produced **one** fillable region instead of five. Its internal
+lines floated — they never met the outer outline at either end — and there was
+no line at the neck or the waist at all. Paint poured into the chest reached the
+head, both arms, both hands, both legs and both feet.
+
+**The sentence that fixed it is the one requiring every internal line to touch
+the outline at both ends.** It belongs in every line-art prompt from here on.
+
+Black ink was also 2.41% of the image against 5.2–6.1% on the avatars, so the
+line was too fine for the family. The second version came in at 5.76%.
+
+## Acceptance check
+
+- [ ] Count the sealed white regions. Group them: head, chest, stomach, two
+      arms, two legs. Anything that does not group into the five zones is a
+      defect.
+- [ ] Flood-fill each region a different colour and look. **No colour may cross
+      into a neighbour.** This is the failure that is invisible by eye and
+      obvious the moment colour is applied (D-072).
+- [ ] Black ink between 5% and 6.5% of the image, or the line does not belong
+      to the ColorHugs family.
+- [ ] No face, no hair, no clothing, no rim.

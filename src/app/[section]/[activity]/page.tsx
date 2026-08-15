@@ -4,17 +4,18 @@ import type { Metadata } from "next";
 import ChildShell from "@/components/layout/ChildShell";
 import BackButton from "@/components/navigation/BackButton";
 import HomeButton from "@/components/navigation/HomeButton";
-import ComingSoon from "@/components/ui/ComingSoon";
-import PlanBadge from "@/components/stickers/PlanBadge";
+import ActivityBody from "@/components/activities/ActivityBody";
 import MissingArtwork from "@/components/stickers/MissingArtwork";
 import { allActivityParams, getActivity } from "@/lib/sections";
 import { asset } from "@/lib/site";
 
 /**
- * Activity placeholder.
+ * Activity page.
  *
- * Phase 1 establishes the route, the chrome and the way back. The activity
- * itself arrives in a later phase, per the agreed development strategy.
+ * The route, the chrome and the way back are the same for every activity. What
+ * sits below the artwork is either a built activity from the registry or the
+ * honest "not made yet" placeholder — never something that implies an
+ * experience exists before it does (D-010).
  */
 
 type Params = { params: { section: string; activity: string } };
@@ -59,28 +60,12 @@ export default function ActivityPage({ params }: Params) {
             )}
           </div>
 
-          <h1 className="mt-5 font-display font-700 text-ch-ink">
-            {activity.title}
-          </h1>
-          <p className="mt-1 text-lg text-ch-ink/70">{activity.tagline}</p>
-
-          {/*
-            The only plan message a child ever sees, and only where an activity
-            genuinely cannot be opened. It points at a grown-up rather than at a
-            price, and there is no purchase button on any child-facing screen.
-          */}
-          {activity.access.kind === "premium" ? (
-            <p className="mt-4 inline-flex items-center gap-2">
-              <PlanBadge plan="premium" size={44} />
-              <span className="font-display font-600 text-ch-ink/70">
-                Ask a grown-up to unlock this one
-              </span>
-            </p>
-          ) : null}
-
-          <div className="mt-8">
-            <ComingSoon title={activity.title} />
-          </div>
+          <ActivityBody
+            section={section.slug}
+            activity={activity.slug}
+            fallback={{ title: activity.title, tagline: activity.tagline }}
+            premium={activity.access.kind === "premium"}
+          />
         </article>
 
         <div className="mt-10 flex flex-wrap justify-center gap-3">

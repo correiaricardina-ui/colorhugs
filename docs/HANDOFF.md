@@ -77,12 +77,21 @@ review, no diagnosis or assessment ever.
 **No price and no purchase button on any child-facing screen.** When a free set
 runs out the child is told the set is finished and pointed at a grown-up.
 
+**A material a child uses alone must close itself.** Naming can stand alone;
+exploring cannot. No "why", no free-text box, no interpretation, no intensity.
+Only material licensed to practitioners may open something and leave it open —
+because there is a person there to pick it up. Family printables follow the
+child-alone rules, because a printed sheet does not choose who is in the room.
+
 **Nothing is scored, ranked or taken away.** Rewards are for participation and
 variety, never performance. No streaks that can break — a streak that breaks is
 a punishment.
 
 **No text inside artwork.** Names come from the language file. A sticker that
 reads "Explorer" needs seven translations and seven regenerations, for ever.
+The existing activity artwork predates this rule and carries English text baked
+in; it is regenerated text-free as each activity is built (D-110). Section
+names are the exception — they work as wordmarks and are not translated.
 
 **Evidence is graded honestly** — established, reasonable, or practice. Never
 claim more than the support. A psychology-informed platform that overstates its
@@ -125,32 +134,35 @@ screens.
 
 ## What is open right now
 
-**Immediately, in My Inner World** — this is where we were working:
+**My Inner World / How Do I Feel? is designed** — increment 20 of the decision
+log holds it, and the rules there apply to every activity built after it. The
+three expressions exist: the activity spec, the printable (a seven-card deck),
+and the professional note at
+`docs/materials/como-me-sinto-nota-aplicacao.md`.
 
-1. Can a child see what she felt before? (We decided the parent cannot.)
-2. The remaining emotion cards: seven families are specified, the ~28 finer
-   words are not.
-3. The printable and the professional note for *How Do I Feel?*, designed
-   alongside the activity rather than after it.
+**What that activity still needs before it can be built:** the artwork
+regenerated without text (D-110), and the account question answered, since the
+short trail has to live somewhere (Q-010).
 
-**Artwork still to generate:** eight stickers — six rosettes and numbers 15 and
-16 — using `docs/STICKER-PROMPTS.md`. Then the seven emotion family cards using
-`docs/EMOTION-CARD-PROMPTS.md`.
+**Artwork:** all twenty-four stickers and all seven emotion cards are done. The
+body map figure is done and passed the sealing test. Two avatars — penguin and
+kite — remain withdrawn (D-079).
 
 **Bigger questions, recorded in the decision log:**
 
-- **Q-013 The "Brain Gym" name.** Brain Gym® is a trademarked programme widely
+- **Q-010 Where the account system lives.** Nothing about logins, download
+  limits or the short trail can work until this is answered.
+- **Q-013 The "Brain Gym" name.** Brain Gym is a trademarked programme widely
   cited as pseudoscience in education. The audience most likely to recognise it
-  is the one whose trust this product most needs. Needs deciding.
-- **Q-010 Where the account system lives.** Nothing about logins or download
-  limits can work until this is answered.
-- **Q-015 What happens when a child repeatedly reports intense distress.**
-  Needs clinical and legal input before My Inner World is built.
+  is the one whose trust this product most needs.
+- **Q-015 What happens when a child repeatedly reports distress.** Narrower
+  now: with no intensity recorded, the question is about repetition, not
+  severity. Still needs clinical and legal input.
 - **Q-016 Can a child's drawing become a colouring page for other children?**
-  The strongest idea in the content design; needs a legal position on consent.
+  Needs a legal position on consent.
 - **Q-018 VAT on EU digital sales.** Needs an accountant before the first sale.
-
----
+- **Q-026, Q-027, Q-028** — small and carried: the ashamed card's raised hand,
+  three unresolved PT-PT words, and whether language is detected or asked.
 
 ## What I would like you to do first
 

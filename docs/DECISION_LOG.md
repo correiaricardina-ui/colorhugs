@@ -1080,3 +1080,546 @@ Still to generate: six rosettes and numbers 15 and 16.
 `docs/HANDOFF.md` briefs a new conversation on the project state, the standing
 rules, and what is open. Written so the reasoning survives a change of context,
 not just the conclusions.
+
+---
+
+# Increment 20 — My Inner World: How Do I Feel? (2026-08-15)
+
+The first activity designed all three ways at once, as D-059 requires.
+
+## Artwork closed
+
+### D-092 `[IMPLEMENTATION]` The twenty-four stickers are complete
+The eight outstanding pieces arrived: numbers 15 (compass) and 16 (footprints),
+and the six remaining rosettes. With the Learning Hub rosette already accepted,
+all seven are in.
+
+**One spec correction, not an art correction.** The prompt for #13 asked for a
+rosette with a star at its centre; the artwork came with the sticker album. The
+artwork is right and the prompt was wrong — the block rule says each rosette
+carries the same motif as its first-visit pair, and #6 is an open album. A star
+would have broken the only rule that makes the rosettes read as the older
+siblings of the first-visit set. `STICKER-PROMPTS.md` is corrected.
+
+### D-093 `[DEFINED]` Ashamed and bored regenerated; only sad carries a tear
+Both failed review and both were regenerated. Measured, not judged by eye.
+
+- **Bored** carried almost no colour: 0.9% of pixels had real hue, against
+  25–36% across the accepted five. Next to six bright cards it would have read
+  as *disabled*, not as a feeling — the one card a child might not touch
+  because she thinks she cannot. The specified colour changes from
+  *warm grey-beige* to a **muted olive-khaki, `#A89B5C`**. Not a mustard:
+  beside the happy yellow a dull mustard reads as a dirty version of it.
+  After regeneration: 35.9% coloured pixels, mean luminance 141 — the second
+  darkest card after angry, which helps it in greyscale.
+- **Ashamed** was drawn facing forward, rubbing its eyes: a second *sad*.
+  D-088 specified looking down and turning away. Shame is the emotion D-087
+  added precisely because it arrives disguised as something else, so drawing it
+  as crying returns it to the disguise, and a child would have faced two crying
+  hearts with no way to choose. Regenerated with the gaze averted, one hand
+  shielding the side of the face, and no tear.
+
+**New acceptance rule: only sad carries a tear.** It is that card's strongest
+signal and it only works while it is unique to it.
+
+Both new cards were measured for flatness as well: luminance spread within the
+body is 11.2 and 9.4, against 11.3–14.4 across the accepted five. They are as
+flat or flatter, contrary to first impression. Canvas is 1254×1254 against
+1092×1092, normalised in processing as with the avatars (D-074).
+
+### Q-026 `[OPEN QUESTION]` The ashamed hand may read as a wave
+Open palm, fingers spread, at head height. With the averted eyes and the down-
+turned mouth it probably holds, but only a four-year-old settles this. If it
+reads as a greeting in testing, the fix is small: turn the palm inward against
+the cheek. Not worth regenerating for now.
+
+---
+
+## The principle underneath the section
+
+### D-094 `[DEFINED]` A material for a child alone must close itself
+The standard is not *infallible* — no activity is, on paper or on screen. The
+standard is that **when it fails, it fails safe**: a child who abandons it,
+picks at random, or does not understand it ends up no worse off than she
+started.
+
+From that, the distinction that actually separates the child version from the
+professional one is **not depth**. It is whether the material closes itself or
+opens deliberately. A material for a child alone has to end. A consultation
+material does the opposite on purpose — it opens something and leaves it on the
+table, because there is a person there whose job is to pick it up. **It is the
+clinical relationship that closes, not the material.**
+
+Practical rule: **naming can stand alone; exploring cannot.** "What are you
+feeling?" closes. "Why do you feel that?" does not — it needs a listener, and
+without one it is a child who has opened something in front of a screen.
+
+Four tests for anything built for a child on her own:
+
+1. If she leaves halfway and never comes back, is anything left open?
+2. Does it ask *why*, or ask for an account of what happened? A free-text box
+   is the most likely way this enters without anyone noticing — a child writing
+   what happened at home is telling nobody.
+3. Does it **interpret**? Naming is description. Telling a child what it means,
+   or what to do next, is a person's work.
+4. Does it ask for **intensity**?
+
+### D-095 `[DEFINED]` Family printables follow the child-alone rules
+The tempting arrangement is three degrees of mediation: interactive for the
+child alone, print for the family, notes for the psychologist. It is wrong.
+**A printable, once downloaded, does not choose who is in the room.** A sheet
+sold to families can end up with a child alone at the kitchen table and the
+adult next door.
+
+So family printables obey the child-alone rules. **Only material licensed to
+practitioners may open.**
+
+### D-096 `[DEFINED]` No intensity in the child-alone version
+Closes test 4 above. No scales, no 1-to-5, no "how big", no heart sizes. The
+child names; she does not grade. Grading may live in licensed material, where
+someone reads it.
+
+**This narrows Q-015.** Without intensity the product has no signal of what
+counts as "intense distress" — it knows only which family was chosen and how
+often. That is the right information not to have: a system that can measure
+emotional intensity in a child is one that sooner or later someone wants to
+fire an alert, which is automatic assessment and forbidden by rule 12. Q-015
+becomes a question about repetition, not about severity.
+
+### D-097 `[DEFINED]` A short trail, never an aggregate
+The child can see the last few cards she chose — the same cards, in order, and
+nothing else. No counts, no percentages, no charts, no "your most frequent
+feeling", no monthly view, no week-on-week comparison.
+
+**The line that matters is not between storing and not storing; it is between
+trail and aggregate.** A trail says "these were the days". An aggregate
+produces a sentence about who the child is, and *"you felt sad 12 times this
+month"* has the shape of a diagnosis. The line is easy to hold now and almost
+impossible to walk back once someone asks for a nice chart.
+
+Arguing for the trail: a child who sees she was angry on Monday and is calm
+today learns that feelings pass, which is one of the few genuinely useful
+things psychoeducation can give a small child. Arguing against: rumination,
+self-labelling, and performance if she knows it is recorded. The short trail
+without aggregation is the version that keeps the first and avoids the second.
+
+**Evidence: practice.** That naming feelings helps is well supported; that
+*reviewing one's own record* helps a child is practice, not established
+evidence, and the professional note says so.
+
+### D-098 `[DEFINED]` Nothing in My Inner World is visible to the parent — closes Q-017
+Confirmed as a clinical judgement.
+
+**The parents page must say so out loud.** A parent who looks for the record
+and finds nothing assumes it is broken. Stated plainly it stops being a gap and
+becomes a promise — and it is the sentence that makes the decision hard to
+reverse by accident when someone proposes a weekly summary next year. Wording
+in `docs/materials/parents-my-inner-world.md`.
+
+The printable does not contradict this. If the child fills in the sheet and the
+parent sees it, she showed him. **The product does not report; the child is not
+required to hide.**
+
+---
+
+## The activity
+
+### D-099 `[DEFINED]` How Do I Feel? is free with no limit
+`{ kind: "free" }`, replacing `{ kind: "sample", freeItems: 3 }`.
+
+Under the sample rule, the fourth time a child wanted to say how she felt the
+product would have told her the set was finished and to ask a grown-up. **An
+activity that exists so a child can name what she feels cannot have a limit on
+how many times she may feel.** And the message would arrive precisely to the
+child who came back most often.
+
+The three-item rule works when the item is a piece of a library — three
+stories, three challenges, three missions. It fails when the "item" is an act
+of the child rather than content of ours. What sells in My Inner World is the
+library: the fine words, the breathing exercises, the materials.
+
+### D-100 `[DEFINED]` The activity closes after the family; the fine layer is optional
+The seven families work for a four-year-old because they are drawings. The fine
+words are words — *frustrated*, *disappointed*, *nervous* do not differ by
+posture, they differ by meaning. **So the fine layer is for a child who reads,
+and we ask nobody's age.**
+
+Chosen: the activity closes after the family choice. A child who wants more
+taps again. A child who does not read never reaches it and loses nothing,
+because the activity has already closed.
+
+Rejected: unlocking by declared age (collects more personal data than needed,
+and reading does not track age — there are six-year-olds who read and
+nine-year-olds who do not). Deferred: audio carrying the fine words, which
+solves reading but costs seven recordings per word for ever (rule 19).
+
+The reason is not technical. **If the activity only closed after the fine word,
+the child who cannot read would be left with an unfinished activity** — the
+child with the most difficulty getting the worst version. This way everyone
+ends in the same place.
+
+It also makes the fine layer exactly what is sold in My Inner World, without
+any child meeting a wall: she has already named what she feels and already been
+met before the layer exists for her.
+
+### D-101 `[DEFINED]` The fine vocabulary is written per language, not translated
+It became visible only at this layer, because the seven families are universal
+and are drawings.
+
+English *ashamed* and *embarrassed* are two useful things; Portuguese
+*envergonhado* carries both. Portuguese separates *chateado* from *zangado*
+where English has no single word. *Com saudades* has no equivalent in six of
+the seven planned locales and is one of the most useful words a Portuguese
+child has.
+
+Consequences:
+
+- **The art holds**, because no card carries text (D-081). This is where that
+  rule pays for itself.
+- **~28 is a number per locale, not a global one.** A family may have four
+  words in Portuguese and three in English. The data model must allow different
+  counts per family and per language from the start; assuming four fixed breaks
+  silently on the second language, with someone force-translating a word no
+  child says.
+- It is closer to **pedagogical adaptation than translation**, in the rule 10
+  sense. That is authoring work, which is the real constraint (D-062), and
+  worth knowing before promising seven locales.
+
+Criterion for admitting a word: **the child must already have heard it**, even
+if she does not use it. The layer names what she already feels; it does not
+teach new vocabulary. An unknown word means she picks by the drawing, and the
+data is lost.
+
+### D-102 `[DEFINED]` PT-PT vocabulary, first pass — 23 words
+Written in PT-PT first, because that is where the ear for what a Portuguese
+child actually says is finest, and it is the one thing here that cannot be
+verified from outside. English is written later as its own set, not as a
+translation of this.
+
+| Family | PT-PT fine words |
+| --- | --- |
+| Feliz | contente · entusiasmado · orgulhoso · aliviado |
+| Triste | desiludido · sozinho · com saudades · magoado |
+| Zangado | chateado · irritado · furioso |
+| Assustado | nervoso · preocupado · tímido |
+| Envergonhado | culpado · arrependido · embaraçado |
+| Calmo | tranquilo · descansado · seguro |
+| Tédio | aborrecido · farto · impaciente · sem vontade |
+
+Twenty-three, not twenty-eight. The estimate was made in English; the count is
+per language, which is the point.
+
+**Deliberately excluded:** words that are only *more* of the same — terrified,
+petrified, furious-beyond-furious. That is intensity, and intensity is out
+(D-096). Admitting them through the fine layer would let back in by the side
+door what was kept out at the front.
+
+### D-103 `[DEFINED]` Tédio is the PT-PT family label; Bored stays canonical
+*Aborrecido* in European Portuguese means both *having nothing to do* and
+*cross with someone*. A child tapping the khaki heart could mean either.
+
+*Tédio* is unambiguous but adult — no seven-year-old says it. That is fine,
+because **the child never reads the family name; she sees the card.** The label
+is read by the author, by colleagues, and by whoever writes the material, and
+those are exactly the places where the ambiguity costs.
+
+So: **Tédio** as the PT-PT label, *aborrecido* moves inside the family as a
+fine word, where it is the word a child actually says. The child-facing label
+under the card stays **Aborrecido**, because the drawing beside it removes the
+ambiguity.
+
+**This is a PT-PT correction only.** *Boredom*, *ennui*, *aburrimiento* do not
+carry it. The canonical deck name stays *Bored* — written down so that nobody
+translates *Tédio* back in six months and reintroduces the problem.
+
+### D-104 `[DEFINED]` Card order is fixed
+Feliz · Calmo · Triste · Assustado · Zangado · Envergonhado · Tédio
+
+**Fixed, not shuffled.** A five-year-old learns where her card is and goes
+straight there; shuffling to "avoid priming" would take away the only advantage
+she has. It also makes the printed deck and the screen the same object, which
+is half the value of the bridge to consultation.
+
+**Not grouped by valence.** Pleasant on one side and unpleasant on the other is
+tidy and teaches the wrong thing — that feelings divide into good and bad. The
+reward system already paints the avatar identically for *furious* and for
+*calm* (D-067); the grid cannot say the opposite.
+
+Happy first because it is easiest and teaches the gesture. Calm immediately
+after, so a child who is fine without being cheerful finds her card at once
+instead of defaulting to happy. Sad, scared and angry in the order a small
+child recognises them. Ashamed after angry, because it arrives later
+developmentally and most often hides behind the one before it. Tédio last
+because it belongs nowhere, and with no neighbour to be confused with.
+
+**Layout:** three columns with the last row centred, label always beneath the
+card, never inside it. Seven in a grid otherwise leaves one card alone with an
+emphasis it has not earned.
+
+### Q-027 `[OPEN QUESTION]` Three words unresolved
+- **Which family *chateado* belongs to.** The most used word a Portuguese child
+  has and the most ambiguous: it serves for mild anger, for sadness and for
+  boredom. Placed in *zangado*. It may belong in *Tédio* instead, or be useful
+  enough to sit in two families — which sets a precedent we may not want.
+- **_Embaraçado_ is the weakest word on the list.** A seven-year-old rarely
+  hears it. It is there because English separates *ashamed* from *embarrassed*
+  and Portuguese does not, and without it the family has two words. Flagged
+  rather than replaced with something invented.
+- **No child's word for injustice.** "Não é justo" is the most common cause of
+  a child's anger and Portuguese has no single childlike word for it;
+  *injustiçado* and *revoltado* are adult. Either the family lacks its most
+  frequent trigger, or one card becomes a short phrase instead of a word — not
+  serious, since no card carries text and the length is only a label question.
+
+---
+
+## The body map
+
+### D-105 `[DEFINED]` The body map is in; the location is not stored
+The child may point to where in her body she feels it. It survives the four
+tests of D-094: pointing is descriptive, not interpretive.
+
+**It does not enter the short trail.** The trail holds the cards, in order, and
+nothing else. Storing location as well would give a record with two
+dimensions — emotion and place — which is the shape of a clinical instrument,
+and from there the distance to someone asking for a pattern is short.
+**The map is the moment; the card is the record.**
+
+### D-106 `[DEFINED]` A neutral outline figure, five zones
+Not the avatar: ten avatars, five of them objects, and a house has no chest —
+the child who picked it would get a different activity from her friend. Not the
+heart character either: it *is* the emotion, and pointing to where the emotion
+lives inside the emotion does not read.
+
+A **neutral outline figure**: no face, no hair, no clothing, no gender, no skin
+tone. The same solution D-071 found for the avatars, applied here — a figure
+that represents nobody in particular is the only one that leaves no child out.
+Without a face it also does not compete with the card.
+
+Five zones: **head · chest · stomach · arms and hands · legs and feet.** The
+child touches where she feels it and the zone lights in the colour of the card
+she chose.
+
+**Throat deliberately excluded.** The lump in the throat is one of the most
+recognisable signals, but at phone size a neck zone is too small for a child's
+finger, and a zone that misses reads as the app not listening.
+
+No white die-cut rim (D-083 — this is interface, not a collectable). Sealed
+line art coloured by code (D-070), so one file covers every state.
+
+### D-107 `[IMPLEMENTATION]` The figure passes the sealing test at the second attempt
+**First version: one fillable region, not five.** Paint poured into the chest
+reached the head, both arms, both hands, both legs and both feet. The internal
+lines were floating — they never met the outer outline at either end — and
+there was no line at the neck or the waist at all. Black ink was 2.41% of the
+image against 5.2–6.1% on the avatars, so the line was also too fine for the
+family.
+
+This is the D-072 failure again: it looks right until the colour goes in.
+
+**Second version passes.** Eight sealed regions inside the figure, grouping to
+the five zones — head, chest, stomach, arms (two), legs (two). No colour
+crossed between them. Black ink 5.76%, in family.
+
+A ninth region exists: a **sliver of neck** between the chin line and the
+shoulder line, 0.18% of the area. Sealed, so not a defect — but an orphan, and
+D-075 already settled this for avatars: nothing is left permanently white, or
+the figure looks unfinished even after the child has done everything. **Grouped
+with the head in processing**, its adjacent larger zone. No regeneration
+needed.
+
+The corrected prompt is in `docs/AVATAR-PROMPTS.md` under *Body map figure* —
+its instruction that every internal line must touch the outer outline at both
+ends is what fixed it, and it belongs in every future line-art prompt.
+
+---
+
+## The other two expressions
+
+### D-108 `[DEFINED]` The printable is a seven-card deck, with the weekly sheet secondary
+Chosen over the fill-in weekly sheet as the core.
+
+The deck closes itself, asks no why, interprets nothing, and a child alone at
+the kitchen table is not worse off for it — which is the D-095 requirement. The
+weekly sheet needs marking and probably writing, and so brings an adult into
+something that had to work without one. It stays in the pack, but it cannot be
+what the pack *is*: a pack whose core needs an adult fails exactly when the
+adult is absent.
+
+**And the deck survives the seventh language.** No card carries text, so it
+prints identically in every locale — one PDF, two language files, seven cards
+drawn once. The weekly sheet is headers, weekdays and instructions, all of it
+text. The piece that survives translation is the one without words, which is
+the D-081 economy appearing again somewhere else.
+
+Printed in black and white the card is also a colouring page: the child colours
+the heart whatever colour she likes rather than the one we gave her. Not
+decided, but it costs nothing.
+
+### D-109 `[DEFINED]` The professional note is a material note with a separated practice section
+Not a protocol. The buyer is a psychologist: she knows how to run a session;
+what she does not know is whether this material is any good and what it can be
+claimed to do. Selling her a script sells her the thing she is better at than
+we are. A protocol also runs close to rule 12 — a note advising what to do when
+a child repeatedly picks the blue heart is one step from saying what that means.
+
+What makes it valuable is the honest grading, not the volume.
+
+**The boundary, since some usage suggestions are included:** the note may
+**suggest uses, never interpret responses**. "Some colleagues leave the deck on
+the table with no instruction" is use. "If the child repeatedly picks the same
+card, consider X" is interpretation and stays out. The test: does the
+suggestion describe what the psychologist does, or what the child revealed?
+
+Suggestions sit in their own visibly separated section, labelled **practice**.
+Interleaved with the rest, the reader gives everything the same weight and the
+honest grading — which is the value — is lost.
+
+Written in PT-PT rather than English, unlike the documentation: it is licensed
+material, not documentation, and the first buyers are Portuguese colleagues.
+
+`docs/materials/como-me-sinto-nota-aplicacao.md`. **References are not yet
+cited by name.** The note describes the state of the evidence and carries a
+notice that citations must be verified before licensing — a reference nobody
+checked, in a document carrying a clinician's signature and claiming what the
+science supports, is exactly the error that ends the proposition.
+
+---
+
+## Language and artwork
+
+### D-110 `[DEFINED]` Activity artwork is regenerated text-free, once
+The section stickers, activity stickers and banners carry English text baked
+into the illustration — relief, double outline, shadow, one colour per letter.
+It is paint, not a text layer. Replacing it is redrawing approved artwork,
+which rule 6 and D-003 forbid, and any automated attempt would look nearly
+right, which is worse.
+
+**Nor is the answer a Portuguese set of the same artwork.** Seven section
+stickers, thirty-one activity stickers and eleven banners is 49 pieces: 98 in
+two languages, 343 in the seven priority locales, and every new activity would
+cost seven generations instead of one, for ever, with style consistency
+degrading each time. This is the D-081 mistake at full scale; the artwork
+predates that decision.
+
+**Half of it is saved by a distinction.** The seven section names work as
+**wordmarks**, not as translatable copy — "My Inner World" behaves like
+"ColorHugs": it is not translated, it is recognised. The app writes *O Meu
+Mundo Interior* beneath the tile from the language file and the artwork is
+untouched.
+
+The thirty-one activity stickers do not survive that argument. "HOW DO I FEEL?"
+is a question put to a child, not a mark, and it fills half the tile. **These
+are regenerated without text, once**, then serve all seven languages with the
+label drawn by the app. Not urgent — all are activities still to be built — so
+each is regenerated as its activity is built, starting with this one.
+
+### D-111 `[DEFINED]` The language switcher lives in the footer, not the child's top bar
+A child taps the control, the product changes to a language she cannot read,
+and the way back is now in that language. A five-year-old does not undo this;
+an adult does, in ten seconds — but the adult is not there, which is the
+premise of this whole section. The top bar is also the one piece of chrome that
+follows her everywhere, and D-036 already removed the parents button from it
+for the same reason.
+
+**Language is a household setting, not a session choice.** A child does not
+change language mid-afternoon; the family configures it once. So it sits in the
+footer and in `/parents`, where D-036 already put the adult door, reachable
+from any page and in nobody's way.
+
+Two safeguards: the control names languages **in their own names** —
+*Português*, *English* — never translated and never by flag alone. Flags are
+the usual choice and are wrong: PT-PT and PT-BR share a language and not a
+flag, and a flag names a country, not a language. And **changing language
+changes nothing the child made** — not the avatar, not the stickers, not the
+trail. Worst case is a strange page for a minute, not a loss.
+
+### Q-028 `[OPEN QUESTION]` Detected or asked on first visit
+Detecting from the browser is smoother and is almost always right; asking is
+explicit but puts a chooser in front of someone who only wanted to see the
+site. Blocks nothing.
+
+---
+
+## Still open, carried forward
+
+Q-010 where the account system lives · Q-013 the Brain Gym name · Q-014 which
+languages get literacy content · Q-015 repeated distress, now narrowed to
+repetition rather than severity · Q-016 a child's drawing as a colouring page ·
+Q-018 EU VAT · Q-019 prices · Q-020 where printables are sold · Q-025 penguin
+and kite corrections · Q-026 the ashamed hand · Q-027 three PT-PT words ·
+Q-028 language detected or asked.
+
+---
+
+# Increment 21 — How Do I Feel? built (2026-08-15)
+
+The first activity in the product that is not a placeholder.
+
+### D-112 `[IMPLEMENTATION]` Built without the trail
+The short trail (D-097) is not implemented. It waits on Q-010, because a trail
+kept in the browser vanishes when someone clears history — **the child comes
+back and the product has forgotten her**, which is worse than never having
+offered it.
+
+So this version stores nothing at all. The child picks a card, points if she
+wants, is thanked, and it closes. Everything else in the design holds: no
+intensity, no why, nowhere to write, no correct answer, no interpretation, and
+the body location is never a record (D-105).
+
+It is honest as it stands rather than half-finished: nothing on screen implies
+a memory that does not exist. What it cannot yet teach is the thing the trail
+was for — that feelings pass.
+
+### D-113 `[IMPLEMENTATION]` Activities are a registry, not a route
+`src/components/activities/registry.ts` maps `section/activity` to a component.
+Anything absent renders the honest `ComingSoon` placeholder. Adding a built
+activity is one line plus its component, which keeps D-002's discipline: the
+route, the chrome and the way back are written once.
+
+### D-114 `[IMPLEMENTATION]` The language file exists — `src/i18n/`
+Title, tagline and every child-facing word for this activity now come from
+`src/i18n/strings.ts` in EN and PT-PT, with English as the fallback while a
+locale is unwritten. An untranslated line is honest; an empty one is a bug.
+
+Locale is React context plus one stored key, read after mount so the
+prerendered HTML is not contradicted. **Changing language touches nothing the
+child made.**
+
+The switcher sits in the footer, names each language in its own language, and
+uses no flags (D-111).
+
+**Not yet localised:** the navigation, the footer and the section pages. Those
+strings are still written into components, and the screenshots show it — the
+Portuguese activity sits under an English "Back to My Inner World". Recorded
+rather than hidden.
+
+### D-115 `[IMPLEMENTATION]` The body figure colours by stacked shapes, not canvas
+Five zone silhouettes are exported alongside the outline and tinted with CSS
+beneath it. One outline and five shapes cover every state, with no canvas and
+no script — it works on static hosting.
+
+**A trap worth recording.** Cutting the white background is not enough for this
+figure. The white *inside* it is sealed, so it is not connected to the border
+and survives the cut as opaque white — which would sit on top of every coloured
+zone and hide all of them. The outline is therefore exported as **line only**,
+with alpha taken from darkness so the anti-aliased edge survives. First
+composite check came back blank, which is how this was found.
+
+`scripts/prepare-emotions.py` runs the sealing test on every build of the
+artwork and **refuses to export** if a zone is missing or if arms or legs
+resolve to one region instead of two — a merged pair being exactly the leak the
+test exists to catch.
+
+### D-116 `[DEFINED]` The primary button names what it does
+Before a zone is chosen it reads *I would rather not say*, because a child never
+has to point at her body. Once she has chosen, it becomes *Done*.
+
+The first build offered the skip as the only way forward, so a child who had
+answered was still being asked to give up. A control should say exactly what
+happens when it is used.
+
+### Q-029 `[OPEN QUESTION]` The section banner still says HOW DO I FEEL?
+The English wordmark now sits directly above the Portuguese title, which is
+D-110 made visible. This activity's artwork is the first that should be
+regenerated text-free.

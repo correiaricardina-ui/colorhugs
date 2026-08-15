@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { LocaleProvider } from "@/i18n/LocaleProvider";
 import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -40,8 +41,9 @@ export default function RootLayout({
 }) {
   return (
     /**
-     * `lang` is fixed to English for now and becomes the active locale when
-     * internationalisation lands (EN, FR, ES, PT-PT, PT-BR, ZH, HI).
+     * `lang` is the default locale in the prerendered HTML and is corrected on
+     * the client once the saved choice is read (see LocaleProvider). Remaining
+     * locales: FR, ES, PT-BR, ZH, HI.
      *
      * Fonts are resolved from a rounded system stack and, when the licensed
      * brand faces are added, from self-hosted files declared in globals.css.
@@ -56,7 +58,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        {children}
+        <LocaleProvider>{children}</LocaleProvider>
       </body>
     </html>
   );

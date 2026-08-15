@@ -220,9 +220,23 @@ here produces a score, a trend line, or anything resembling a screening result.
 
 ### How Do I Feel?
 
-**What the child does.** Picks a feeling from an expanding vocabulary — not
-four faces, but a growing set where "cross" splits into annoyed, frustrated,
-furious — then places it on a body map and says how big it is.
+**Status: `[DEFINED]` and designed. See Decision Log increment 20.**
+
+**What the child does.** Picks one of seven feeling cards. If she wants, she
+points to where in her body she feels it, on a neutral outline figure. Then the
+activity closes. A child who reads can tap again to open the family into three
+or four finer words — *chateado*, *desiludido*, *com saudades*.
+
+**What was removed from this proposal, and why.**
+- **Intensity is out** (D-096). "How big is it" produces *my sadness is a 5*
+  with nothing that follows, and turns a vocabulary tool into something shaped
+  like a measure.
+- **The body map is in, but the location is not stored** (D-105). The map is
+  the moment; the card is the record. Storing both gives a two-dimensional
+  record, which is the shape of a clinical instrument.
+- **The fine layer is optional and comes after the activity has closed**
+  (D-100), so the child who cannot read is not left with an unfinished
+  activity.
 
 **Rests on.** Affect labelling and emotion granularity. Naming an emotion
 specifically is associated with reduced physiological arousal and better
@@ -233,14 +247,22 @@ regulation; children with finer emotion vocabulary regulate better.
 Granularity — the vocabulary *growing* as the child does — is the actual
 mechanism, and nobody is building it for children.
 
-**Serious design constraints.**
-- No logging that a parent reads as a mood chart. A parent watching a graph of
-  their child's sadness is surveillance, and it changes what the child reports.
-- No "correct" feeling, ever.
-- If a child repeatedly selects the most intense negative states, the product
-  must not diagnose, alarm, or notify automatically. **What it should do is an
-  open question requiring clinical and legal input** — probably a gentle,
-  general prompt toward talking to a trusted grown-up, and nothing more.
+**Serious design constraints, now decided.**
+- **Nothing is visible to the parent** (D-098, closes Q-017). No summary, no
+  chart, no alert. Stated out loud on the parents page, because a parent who
+  finds nothing assumes it is broken.
+- **A short trail, never an aggregate** (D-097). The child sees the last few
+  cards she chose, in order. No counts, no percentages, no "your most frequent
+  feeling" — that sentence has the shape of a diagnosis.
+- No "correct" feeling, ever. **Free with no limit** (D-099): an activity for
+  naming what you feel cannot cap how many times you may feel.
+- Q-015 remains open but is narrower: with no intensity recorded, the product
+  has no measure of severity, only of repetition. That is the right information
+  not to have.
+
+**Three expressions** (D-059): the interactive activity, a seven-card printable
+deck with a secondary weekly sheet (D-108), and a professional application note
+(D-109) at `docs/materials/como-me-sinto-nota-aplicacao.md`.
 
 **Build: Medium.**
 
@@ -470,6 +492,5 @@ there is one finished activity to learn from.
    and legal input required before My Inner World is built.
 4. **Can a child's drawing become a colouring page for others?** IP and consent
    question, legal input required.
-5. **Is any of My Inner World visible to the parent?** Argued here that it
-   should not be. Needs your decision — it is a clinical judgement, not a
-   product one.
+5. ~~**Is any of My Inner World visible to the parent?**~~ **Answered: no**
+   (D-098). Nothing is shown to the parent, and the parents page says so.

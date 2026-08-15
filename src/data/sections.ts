@@ -187,10 +187,16 @@ export const SECTIONS: Section[] = [
     activities: [
       {
         slug: "how-do-i-feel",
+        // Title and tagline are the English fallback; the shown text comes
+        // from the language file (D-110). See src/i18n/strings.ts.
         title: "How Do I Feel?",
         tagline: "Name what you are feeling today",
-        access: { kind: "sample", freeItems: 3 },
-        status: "planned",
+        // Free with no limit (D-099). Under the sample rule the fourth time a
+        // child wanted to say how she felt, the product would have told her
+        // the set was finished — and an activity for naming what you feel
+        // cannot cap how many times you may feel.
+        access: { kind: "free" },
+        status: "live",
         origin: "official-library",
         sticker: {
           src: "/assets/stickers/my-inner-world/how-do-i-feel.webp",

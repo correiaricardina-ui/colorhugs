@@ -1,0 +1,29 @@
+{
+  "outline": "/assets/body/outline.webp",
+  "size": [
+    589,
+    900
+  ],
+  "zones": {
+    "head": {
+      "file": "/assets/body/zone-head.webp",
+      "regions": 2
+    },
+    "chest": {
+      "file": "/assets/body/zone-chest.webp",
+      "regions": 1
+    },
+    "stomach": {
+      "file": "/assets/body/zone-stomach.webp",
+      "regions": 1
+    },
+    "arms": {
+      "file": "/assets/body/zone-arms.webp",
+      "regions": 2
+    },
+    "legs": {
+      "file": "/assets/body/zone-legs.webp",
+      "regions": 2
+    }
+  }
+}

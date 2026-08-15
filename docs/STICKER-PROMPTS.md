@@ -2,8 +2,8 @@
 
 The rewards that fill My Sticker Book. Twenty-four for launch.
 
-Status: `[PROPOSAL]`. The system below needs approving before the artwork is
-worth generating.
+Status: `[DEFINED]`. All twenty-four generated, checked and accepted
+(D-090, D-092).
 
 ---
 
@@ -78,8 +78,14 @@ above, in a **rosette** — visibly the bigger sibling of the first-visit one.
 | 10 | My Inner World complete | rosette with a heart at its centre |
 | 11 | Kids Draw complete | rosette with a pencil at its centre |
 | 12 | Color & Create complete | rosette with a palette at its centre |
-| 13 | My ColorHugs complete | rosette with a star at its centre |
+| 13 | My ColorHugs complete | rosette with an open sticker album at its centre |
 | 14 | Community complete | rosette with joined hands at its centre |
+
+*Corrected after generation (D-092): #13 originally specified a star. The
+artwork came with the album and the artwork was right — the rule above is that
+each rosette carries the same motif as its first-visit pair, and #6 is an open
+album. A star would have broken the only thing that makes the rosettes read as
+the older siblings of the first-visit set.*
 
 ### Exploring (3)
 

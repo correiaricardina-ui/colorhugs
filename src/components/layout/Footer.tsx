@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LanguageSwitcher from "@/components/layout/LanguageSwitcher";
 import { CREDIT } from "@/data/credits";
 
 /**
@@ -26,6 +27,8 @@ export default function Footer() {
             <span className="text-ch-ink/45"> · {CREDIT.role}</span>
           </p>
         </div>
+        <div className="flex flex-col gap-3 sm:items-end">
+          <LanguageSwitcher />
         <nav aria-label="Footer" className="flex flex-wrap gap-x-5 gap-y-2 font-600">
           <Link href="/parents" className="hover:underline">
             Parents &amp; Safety
@@ -34,6 +37,7 @@ export default function Footer() {
           <span className="text-ch-ink/35">Privacy (pending)</span>
           <span className="text-ch-ink/35">Terms (pending)</span>
         </nav>
+        </div>
       </div>
     </footer>
   );
