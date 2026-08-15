@@ -763,3 +763,247 @@ looking. Navigation keeps the plain lockup at both.
 Stored as `colorhugs-parents.webp` and `colorhugs-professional.webp` — named
 for the audience rather than for the typography, so that in six months nobody
 has to work out which is which.
+
+---
+
+# Increment 16 — How the colour works (2026-08-15)
+
+### D-066 `[DEFINED]` The colour lives on the child's avatar, not on the screens
+Earlier framing — every screen starting muted and gaining colour as the child
+acts — was right in spirit and wrong in practice. Two objections, both correct:
+
+- **Color & Create is exempt.** There the child is already colouring for real.
+  A layer of symbolic colour on top of actual colour is redundant and confusing.
+- **Everywhere else the colour has to mean something.** In a drawing mission it
+  does. In a breathing exercise or an emotion choice, tinting objects at random
+  is decoration pretending to be feedback.
+
+**One constant place instead.** The child's avatar sits at the top of the
+interface and gains colour as they use ColorHugs. One piece solves what a
+per-screen rule could not, and it never has to be forced onto an activity where
+it makes no sense.
+
+### D-067 `[DEFINED]` Colour is earned by *having been*, never by how much
+The avatar gains the day's colour for showing up and doing something —
+**one activity or six, the same colour.**
+
+Colour by quantity would have been scoring in disguise: a child who did one
+thing and stopped would see a paler avatar than a child who did five, and
+productivity would have re-entered through the side door after being kept out
+of everything else.
+
+What accumulates over time is **variety, not intensity** — different colours
+from different areas, so a child who has wandered widely ends up painted in
+many colours. It rewards exploring, which is what the product wants, and it
+cannot be compared as a score.
+
+In My Inner World the existing rule holds: the avatar gains colour for having
+named a feeling, whichever feeling it was. "Furious" paints exactly as much as
+"calm".
+
+### D-068 `[DEFINED]` Art is produced flat, not in layers
+Direct consequence of D-066. With the colour carried by one avatar rather than
+by every illustration, no artwork needs a muted twin or separately paintable
+parts. **Illustrations continue to be produced as single flat images**, as all
+existing assets already are.
+
+The avatar itself is the exception, and the only asset that needs to exist in
+progressive colour states.
+
+### Q-023 `[OPEN QUESTION]` What the avatar is
+It is now the most-seen element in the product and the carrier of the whole
+colour idea, so it is worth more thought than a placeholder circle. Options
+range from a fixed ColorHugs character that every child shares, to a small set
+the child picks from, to something the child assembles. Also open: whether it
+is the same artwork as the profile picker avatars left open in Q-012.
+
+### D-069 `[DEFINED]` Twelve avatars, seven zones each — closes Q-023 and Q-012
+Six animals and six non-animals, all in the existing ColorHugs drawing style.
+The child picks one; it is theirs, and it carries the colour.
+
+**Seven paintable zones, identical on all twelve**, one per area:
+head → Learning Hub · head-top feature → Brain Gym · chest patch → My Inner
+World · arms → Kids Draw · torso → Color & Create · back feature → My ColorHugs
+· legs → Community.
+
+Identical zones are not a stylistic preference. **If one avatar had five zones
+and another eight, a child who picked the wrong one would receive less colour
+than her friend for the same work** — and the choice of avatar would quietly
+become a choice about reward.
+
+Chest for My Inner World is deliberate: it is where a child points when asked
+where a feeling lives.
+
+### D-070 `[IMPLEMENTATION]` Avatars are produced as line art and coloured by code
+Supplied as outlines only — no fill, no shading, every region sealed by an
+unbroken line. Colour is applied per zone at runtime.
+
+**One file per avatar covers every possible state**: grey, one colour, seven
+colours, any combination. The alternative — a generated image per state — would
+have been well over a hundred files for twelve characters, and impossible to
+keep consistent.
+
+Prompts and acceptance checks: `docs/AVATAR-PROMPTS.md`.
+
+### D-071 `[DEFINED]` No gendered avatars and no human skin tones
+Hence animals, robots and creatures rather than boys and girls. It avoids
+having to represent the whole range of human appearance in twelve characters,
+and avoids doing it badly — while making sure no child looks at the picker and
+finds nothing meant for them.
+
+---
+
+# Increment 17 — Twelve avatars supplied and tested (2026-08-15)
+
+### D-072 `[IMPLEMENTATION]` All twelve pass the sealing test
+Each drawing was analysed for enclosed regions — white areas sealed on every
+side by black line, and therefore fillable by code. **No leaks in any of the
+twelve.** Region counts run from 7 (penguin) to 24 (robot).
+
+This was the failure most likely to appear and the hardest to see by eye: a
+single gap in an outline lets colour flood into the neighbouring part, and it
+only shows once the colour is applied.
+
+### D-073 `[DEFINED]` Seven *chosen* regions per avatar, not seven identical anatomical zones
+The original rule — head, ears, chest, arms, torso, back, legs, the same on all
+twelve — does not survive contact with the artwork, and it should not. Five of
+the supplied characters are objects: a house has no arms, a kite has no legs.
+
+The rule that actually matters is the fairness one: **every avatar exposes
+exactly seven paintable regions, one per area, of broadly comparable visual
+weight.** Which seven differ per character, chosen from what that character has.
+The anatomy was a convenience; the count is the constraint.
+
+Where a character has more than seven sealed regions, the surplus small ones
+are simply never painted — they stay white, like a highlight.
+
+### D-074 `[OPEN QUESTION → resolved by artwork]` Consistency
+Line weight and style are consistent across all twelve. Canvas sizes differ
+(1254×1254 for the animals, 1086×1448 for the taller objects) and framing
+differs slightly; both are normalised in processing, not in the artwork.
+
+### Q-024 `[OPEN QUESTION]` Which seven regions on each avatar
+Needs one pass through the twelve, deciding what gets which area. The chest is
+the natural home of My Inner World on any character that has one; the objects
+need a judgement each.
+
+### D-075 `[DEFINED]` Every region is grouped; nothing is left permanently white
+Choosing seven regions and abandoning the rest would have left the robot with
+seventeen white parts for ever, looking unfinished even after the child had
+done everything. Instead **all regions are grouped into seven**, so a child who
+has visited all seven areas ends with a fully painted avatar.
+
+Mapping: `scripts/mapping.py`. Ten of the twelve map cleanly to
+head → Learning Hub · head-top → Brain Gym · chest → My Inner World ·
+arms → Kids Draw · torso → Color & Create · back feature → My ColorHugs ·
+legs → Community. The objects use their own equivalents — the car's windscreen
+is its face, the house's door is its face, the rocket's fins are its arms.
+
+### D-076 `[IMPLEMENTATION]` Assets exported as transparent line art plus fill points
+Each avatar is stored once, as trimmed transparent outlines, with
+`manifest.json` giving the points where each of the seven areas is filled.
+**One file per avatar covers every possible colour state.**
+
+### Q-025 `[OPEN QUESTION]` Two avatars need a small correction
+- **Penguin — only six groups.** Its wings are part of the same sealed region
+  as its head and back, so Learning Hub and Kids Draw cannot be separated, and
+  it has no distinct head-top. It needs regenerating with the wings outlined
+  separately from the body and a small tuft on the head.
+- **Kite — seven groups, but two are arbitrary.** It has no back feature, so
+  the tail bows were split between My ColorHugs and Community for want of
+  anywhere better. It works, but the division means nothing.
+
+Neither is urgent. Ten avatars are enough to build with.
+
+### D-077 `[DEFINED]` Avatars are stickers without the white rim
+Exported as transparent line art, so they sit on any background like the rest
+of the ColorHugs vocabulary — but **without the white die-cut rim** the section
+stickers carry.
+
+The rim marks something as cut out and collectable. **An avatar is not
+collected; it is the child on the screen.** Leaving it off keeps that
+distinction readable without anyone having to explain it, and it matches the
+artwork as supplied.
+
+### D-078 `[DEFINED]` Where the avatar sits
+Large on the home page, small on every other page. New colour appears on the
+home page, when the child comes back from an activity — so returning home is
+where the reward lands, which also gives a reason to go back there.
+
+At 44px in a top bar, seven colours are indistinguishable; at home-page size
+they read clearly. The mixture gets both: constant presence, and one place
+where it is actually legible.
+
+### D-079 `[DEFINED]` Penguin and kite withdrawn — ten avatars
+Both are removed rather than patched. The penguin's wings share a single sealed
+region with its head and back, so Learning Hub and Kids Draw could never be
+told apart on it; the kite has nothing at the back, so two of its seven groups
+were arbitrary.
+
+**Ten avatars is a real choice for a child and a clean system.** A tenth of the
+set carrying an invented rule would have cost more than it was worth.
+
+Remaining: gato · coelho · urso · raposa · dino · robot · borboleta · carro ·
+casa · foguetao — six creatures and four objects.
+
+### D-080 `[PROPOSAL]` Twenty-four collectible stickers for launch
+See `docs/STICKER-PROMPTS.md`. Grouped as: first visit to each area (7), tried
+everything in an area (7), exploring (3), making (4), feelings (3).
+
+### D-081 `[DEFINED]` No text on any sticker
+The moment a sticker reads "Explorer" it needs seven translations and seven
+regenerations, for ever. **Names are rendered by the app underneath the
+sticker**, from the language file; the artwork stays language-free and is drawn
+once.
+
+This is the most expensive mistake available in this piece of work, and it is
+invisible until the second language.
+
+### D-082 `[DEFINED]` Nothing counted for a sticker can be lost
+The return stickers count days the child came back — cumulatively, with no
+penalty for gaps. **A streak that breaks is a punishment**, and rule 38 rules
+those out. Everything else is participation and variety, so a child with
+learning difficulties collects as many as the quickest child in her class.
+
+### D-083 `[DEFINED]` Stickers keep the white rim; avatars do not
+The rim means *cut out and collectable*. Stickers are exactly that; an avatar
+is the child on the screen. The two families stay visually distinct without
+anyone having to explain the difference.
+
+---
+
+# Increment 18 — Certifications and seals (2026-08-15)
+
+### D-084 `[DEFINED]` Certification is a pre-launch goal
+Recorded so it is not forgotten. See `docs/CERTIFICATIONS.md`.
+
+**Two of the three suggested seals do not apply, and one no longer exists.**
+Checked rather than assumed:
+
+- **Selo de Segurança Digital / eSafety Label** certifies *schools*, not
+  websites or companies. ColorHugs cannot apply.
+- **Selo Protetor (CNPDPCJ)** is awarded to *entities* with competence in child
+  and youth matters — so the candidate is Ricardina Correia's practice, not
+  colorhugs.pt. Still worth having: it attaches to the name that endorses the
+  platform. Next window likely early 2027.
+- **Great Websites for Kids (ALSC/ALA)** was retired and folded into Notable
+  Children's Digital Media.
+
+Realistic targets instead: **kidSAFE Seal Program** (designed for children's
+websites and apps, with an FTC-approved COPPA tier and an AI seal), and
+inclusion in ALSC's Notable Children's Digital Media.
+
+### D-085 `[DEFINED]` Design to the criteria now, certify later
+Almost everything these programmes require, ColorHugs has already decided to do
+— verifiable consent, no behavioural advertising, no third-party trackers, data
+minimisation, no child-to-child contact, human review before publication.
+
+**That only stays cheap if it is designed in.** Retrofitting consent flows and
+data practices to pass an audit is where certification becomes expensive. The
+kidSAFE AI seal is worth keeping in view while Imagine & Create is designed,
+for the same reason.
+
+### D-086 `[DEFINED]` Never display an unearned seal
+No badge, and no phrasing implying assessment that did not happen. On a product
+for children sold on trust, a false mark is not a shortcut — it ends the
+proposition.

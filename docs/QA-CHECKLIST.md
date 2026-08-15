@@ -57,6 +57,9 @@ release rather than being logged for later.
 - [ ] Parental consent flow has been reviewed against each launch jurisdiction.
 - [ ] Privacy policy and terms are published and accurate.
 - [ ] A Content-Security-Policy is in place. *(Currently missing.)*
+- [ ] **BLOCKER** No certification seal or endorsement is displayed that has
+      not actually been earned, and no wording implies an assessment that did
+      not happen. See `docs/CERTIFICATIONS.md`.
 
 ## Technical
 
