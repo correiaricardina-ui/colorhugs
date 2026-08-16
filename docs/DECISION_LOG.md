@@ -2639,3 +2639,22 @@ rather than dropping her somewhere she never was.
 appears she has already named what she feels and already been met. What changed
 is that the option is now visible where she is, instead of at the end of a
 corridor.
+
+### D-166 `[DEFINED]` The holding page shows the word, not the artwork
+The full lockup was sitting on the public domain. **The mark is not registered,
+and in the EU it belongs to whoever files first** — so publishing the artwork
+before the filing is a real risk. Not a legal opinion, and worth confirming with
+someone who is a lawyer, but the instinct has a basis.
+
+**Replaced with plain text, not with another image.** A placeholder drawing
+would only swap a valuable piece for a worthless one; **text exposes nothing at
+all, because there is no drawing to copy.** It also scales, reads to a screen
+reader, and needs no file — the banner is no longer copied to the domain at
+all, so it is not merely unreferenced but absent.
+
+`scripts/assemble-holding.sh` no longer publishes `holding-banner.webp`. The
+line to restore is left in place, commented, for when the mark is registered.
+
+**`/preview` is deliberately unchanged.** It carries the full artwork on every
+page, and that is wanted: it is where the brand is being developed and reviewed.
+It is unlinked and not indexed, which is the accepted trade.

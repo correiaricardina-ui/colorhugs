@@ -21,7 +21,9 @@ cp -r "$SRC"/. "$DEST/preview/"
 # The holding page and its assets at the root.
 cp holding/index.html "$DEST/index.html"
 cp holding/robots.txt "$DEST/robots.txt"
-cp public/assets/banners/home.webp "$DEST/holding-banner.webp"
+# No banner. The holding page shows the word in plain text, so the brand
+# artwork is not published on the domain before the mark is registered
+# (D-166). Restore this line when it is.
 cp public/favicon.ico "$DEST/favicon.ico"
 
 # GitHub Pages serves this for unknown paths.

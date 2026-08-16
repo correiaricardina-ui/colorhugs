@@ -33,13 +33,25 @@
           linear-gradient(180deg, var(--cloud) 0%, #fff6e9 100%);
         font-family: "Nunito", ui-rounded, "Segoe UI Rounded", system-ui, sans-serif;
       }
-      .banner {
-        width: min(100%, 780px);
-        border-radius: 1.75rem;
-        overflow: hidden;
-        box-shadow: 0 20px 44px -26px rgba(27, 42, 91, 0.55);
+      /*
+        The wordmark is plain text, deliberately.
+
+        The real lockup is not registered yet, and in the EU a trade mark
+        belongs to whoever files first — so the full artwork should not sit on
+        a public domain before the filing. Replacing it with another image
+        would only swap a valuable drawing for a worthless one; text exposes
+        nothing at all, because there is no drawing to copy.
+
+        It also scales, reads to a screen reader, and needs no file. When the
+        mark is registered, put the banner back.
+      */
+      .wordmark {
+        margin: 0;
+        font-size: clamp(2.6rem, 1.6rem + 5vw, 4.5rem);
+        font-weight: 700;
+        letter-spacing: -0.015em;
+        color: #5b4f8a;
       }
-      .banner img { display: block; width: 100%; height: auto; }
       h1 {
         margin: 0;
         font-size: clamp(1.6rem, 1.1rem + 2.4vw, 2.4rem);
@@ -75,12 +87,7 @@
     </style>
   </head>
   <body>
-    <div class="banner">
-      <img
-        src="/holding-banner.webp"
-        alt="ColorHugs — Create, Learn, Grow, Together"
-      />
-    </div>
+    <p class="wordmark">ColorHugs</p>
 
     <div>
       <h1>Something colourful is on its way</h1>

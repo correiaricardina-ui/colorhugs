@@ -2,22 +2,28 @@ COLORHUGS — projecto completo, 16 de agosto de 2026
 ====================================================
 
 Repositório inteiro, sem node_modules. Substitui todos os pacotes anteriores.
+Inclui a pasta .github com os workflows.
 
 COMO USAR
   Substitua o conteúdo do repositório por este, faça commit, e depois:
       npm install
 
 NOVO NESTA VERSÃO
-  "Queres dizer melhor?" passa a estar no ecrã do corpo, ao lado de
-      "Prefiro não dizer", e em todos os ecrãs seguintes
-  o zangado passa a ter saída das estratégias — botão "Agora não"
+  a página de espera deixa de mostrar a faixa da marca — mostra a palavra
+      ColorHugs em texto simples; a imagem já não é copiada para o domínio
+  "Queres dizer melhor?" no ecrã do corpo, ao lado de "Prefiro não dizer"
+  saída das estratégias no zangado — botão "Agora não"
   "Pediatric Psychology" corrigido no rodapé e na página de espera
+
+QUANDO A MARCA ESTIVER REGISTADA
+  em scripts/assemble-holding.sh, repor a linha comentada que copia
+      public/assets/banners/home.webp para holding-banner.webp
+  em holding/index.html, repor o bloco .banner no lugar de .wordmark
 
 POR CORRIGIR NA ARTE
   public/assets/branding/colorhugs-professional.webp
       tem "Paediatric Psychology" pintado dentro da imagem
-  depois de substituir:  python scripts/figure-workbook-cover.py angry
 
 Commit sugerido:
 
-  fix: fine words beside the exit, and a way past the strategies (D-165)
+  fix: holding page shows the word, not the artwork (D-166)
