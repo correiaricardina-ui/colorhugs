@@ -54,10 +54,10 @@ import { asset } from "@/lib/site";
  *      since the paint layer sits on white.
  */
 const PALETTE = [
-  "#F5B700", "#FFD84D", "#F2872F", "#E63B33", "#B02A26", "#F495B0",
-  "#8FD9A8", "#4FAE6A", "#2E7D52", "#6FC5D9", "#5B8DEF", "#A98BDD",
+  "#FFCF15", "#FFD84D", "#F2872F", "#E8302C", "#B02A26", "#FC89AE",
+  "#A6E5C2", "#4FAE6A", "#2E7D52", "#7DC0F5", "#5B8DEF", "#C9ADE9",
   "#F7D9BE", "#E8B98F", "#C08552", "#8A5A3B", "#5C3A24", "#3A2418",
-  "#1F1B18", "#7A6A5A", "#A89B5C", "#B9BEC7", "#E4E7EC", "#FFFFFF",
+  "#1F1B18", "#7A6A5A", "#B0A454", "#B9BEC7", "#E4E7EC", "#FFFFFF",
 ];
 
 const BRUSH_WIDTH = 22;

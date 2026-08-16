@@ -2464,3 +2464,110 @@ languages in the same place.
 Regenerating approved artwork is an exception to rule 6 and is taken
 deliberately: the ribbon is now empty in all three, and pieces generated in one
 sitting match, which pieces generated months apart do not (D-132).
+
+---
+
+# Increment 28 — The whole deck redrawn in the house style (2026-08-16)
+
+### D-156 `[IMPLEMENTATION]` The angry fine words pass the silhouette test
+*Chateado · irritado · furioso*, drawn so the **body** carries the difference.
+Rendered as flat silhouettes with no face at all, the three are still told
+apart: chateado is a closed mass turned away, irritado shows fists as bumps in
+the outline with steam on one side only, furioso opens into a cross with three
+puffs.
+
+**This settles the objection raised in D-147.** Those three words differ largely
+by intensity, and the defence was that a child *names* rather than *grades*.
+The silhouettes show the defence holds: they are three states with their own
+posture, not three volumes of one. Had they been indistinguishable, it would
+have been the layer that needed rethinking, not the art. Drawing them was the
+test.
+
+### D-157 `[DEFINED]` All seven family cards redrawn to match — regenerating the whole deck
+The three fine-word cards came out in a different hand from the seven: softer
+line, plumper body, flat colour with no gloss streak. Beside the old red heart
+it showed immediately.
+
+**It had to be all or nothing.** Redrawing only the angry mother would have left
+it matching its own children and clashing with the other six. Redrawn: all
+seven, in the new hand.
+
+Deliberate exception to rule 6 and D-003. Justified because the new cards are
+better, because twenty-three fine cards are still to come and the new style
+will dominate the deck, and because these seven are the most visible object in
+the product — screen, paper, and the workbook cover.
+
+**Everything held on re-verification.** Coloured pixels 26.7–34.5% — bored at
+31.5%, no repeat of the 0.9% that would have read as *disabled* (D-093). All
+seven survive greyscale; angry is the darkest at 107.6 mean luminance. Only sad
+carries a tear. Ashamed is turned away with one hand shielding its face, not
+rubbing its eyes.
+
+Card tints in `emotions.ts` and the canvas palette are now **sampled from the
+artwork** rather than specified, so the body-map colour and the card cannot
+drift apart.
+
+### D-158 `[IMPLEMENTATION]` Scale normalisation ignores detached props
+The angry card came out visibly smaller than the rest. Cause: mass
+normalisation (D-122) counted the steam puff, which floats free of the body —
+so the card measured larger and was scaled down to compensate.
+
+Only the **largest connected piece** counts now. Measured after the fix, heart
+widths are 522–566px across the six comparable cards, under 5% from the median,
+which is not a real difference. Happy measures 689 only because its raised arms
+fall inside the band the measurement looks at.
+
+---
+
+# Increment 29 — The fine words, all seven families (2026-08-16)
+
+### D-159 `[DEFINED]` Twenty-four fine cards, drawn and integrated
+All seven families now have their fine words in PT-PT, drawn in the house
+style. `scripts/prepare-fine-cards.py` processes them from
+`artwork/fine/family__word.png`.
+
+**Scale is normalised within a family, not across the deck.** A fine word is
+only ever seen beside its own siblings and its own mother, never beside a card
+from another family, so that is the set that has to match.
+
+Counts are uneven by design (D-101): angry 3, happy 4, calm 3, sad 4, scared 3,
+ashamed 3, bored 4. Twenty-four rather than the twenty-three estimated, because
+*tranquilo* was kept.
+
+### D-160 `[DEFINED]` The silhouette test is a guide, not a rule
+Applied to every family. Results, honestly:
+
+- **Angry and happy** — all four distinguishable in silhouette.
+- **Sad** — two of four. *Desiludido* and *magoado* share a shape.
+- **Scared** — one of three. *Preocupado* and *tímido* share a shape.
+- **Bored** — all four, the best separated set of all.
+- **Ashamed** — all three, and the clinical distinction came through: guilt
+  closes in, *arrependido* moves toward the viewer to put something right.
+  It is the only card in the deck that reaches out.
+- **Calm** — all three, which was not expected: standing, sitting on the
+  ground, and hugging itself.
+
+**Not every fine word has a posture of its own, and that is the words' nature
+rather than a failure of the drawing.** *Preocupado* and *tímido* live in the
+face and the gaze. Forcing them onto the body produced a deformed character —
+a prompt asking for "a large hole of empty space between the arm and the body"
+returned two white triangles cut out of the heart.
+
+So the rule is corrected: **where two fine words share a silhouette but differ
+in the face, that is acceptable** — a child reaching the fine layer already
+reads. **Deforming the character to pass a test of ours never is.**
+
+### D-161 `[OPEN QUESTION]` *Tranquilo* is a synonym of *calmo*
+The art solved it — open eyes, arms behind the head, the only card in the deck
+that is awake and looking out. The vocabulary problem stands: *tranquilo* is
+the family again under another name, not a finer word inside it. Worth
+revisiting when the English set is authored, where *calm* and *tranquil* have
+exactly the same problem. *Satisfeito* was proposed as a replacement.
+
+### D-162 `[IMPLEMENTATION]` The fine layer is reached after the activity closes
+The child is thanked, and *only then* is offered "do you want to say it
+better?". Choosing a fine word changes nothing and leads nowhere — it is a
+better name for what she already said, not a second question.
+
+This is D-100 in code: no child meets a wall, because the activity has already
+ended before the premium layer exists for her.

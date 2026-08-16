@@ -212,9 +212,22 @@ def normalise_cards(images: dict[str, Image.Image], side: int) -> dict[str, Imag
     slumps narrow and tall. Area is the one measure that means the same thing
     across all seven poses.
     """
-    areas = {
-        name: int((np.asarray(img)[..., 3] > 128).sum()) for name, img in images.items()
-    }
+    def body_mass(img):
+        """Mass of the character alone, ignoring detached props.
+
+        Steam puffs float free of the body, so counting them makes the angry
+        card *look* bigger to the measurement and come out smaller on screen —
+        which is exactly what happened, visibly. Only the largest connected
+        piece counts.
+        """
+        solid = np.asarray(img)[..., 3] > 128
+        labels, count = ndimage.label(solid)
+        if count == 0:
+            return 1
+        sizes = ndimage.sum(solid, labels, range(1, count + 1))
+        return int(sizes.max())
+
+    areas = {name: body_mass(img) for name, img in images.items()}
     target = float(np.median(list(areas.values())))
 
     # Area-normalised size each card wants, before anything is made to fit.

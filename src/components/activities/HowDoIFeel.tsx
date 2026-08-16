@@ -7,7 +7,9 @@ import {
   BODY_OUTLINE,
   BODY_ZONES,
   EMOTIONS,
+  FINE_WORDS,
   bodyZoneShape,
+  fineCard,
   type BodyZone,
 } from "@/data/emotions";
 import { useLocale } from "@/i18n/LocaleProvider";
@@ -42,7 +44,7 @@ import { asset } from "@/lib/site";
  *    is the record (D-105).
  */
 
-type Stage = "choose" | "body" | "strategy" | "colour" | "done";
+type Stage = "choose" | "body" | "fine" | "strategy" | "colour" | "done";
 
 export default function HowDoIFeel() {
   const { locale } = useLocale();
@@ -55,6 +57,7 @@ export default function HowDoIFeel() {
     zones: all.zones as Record<string, string>,
     literacy: all.literacy as Record<string, string>,
     pages: all.pages as Record<string, string>,
+    fine: all.fine as Record<string, string>,
   };
 
   const [stage, setStage] = useState<Stage>("choose");
@@ -78,6 +81,11 @@ export default function HowDoIFeel() {
   function afterBody() {
     setStage(pages.length ? "strategy" : "done");
   }
+
+  // The fine words are premium and optional. They are reached only by asking
+  // for them, never on the way through — the activity has already closed by
+  // then (D-100), so a child who does not read loses nothing.
+  const fineWords = family ? (FINE_WORDS[family.id] ?? []) : [];
 
   return (
     <section className="mx-auto w-full max-w-3xl">
@@ -281,6 +289,52 @@ export default function HowDoIFeel() {
         </>
       ) : null}
 
+      {stage === "fine" && family ? (
+        <>
+          <h2 className="flex items-center justify-center gap-3 text-center font-display font-700 text-ch-ink">
+            {t.finePrompt}
+            <SpeakButton textKey="feelings.finePrompt" />
+          </h2>
+
+          <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+            {fineWords.map((word) => (
+              <li key={word}>
+                {/*
+                  Choosing a fine word changes nothing and leads nowhere: it is
+                  a better name for what she already said, not a second
+                  question. Tapping one simply shows it chosen.
+                */}
+                <div className="flex w-full flex-col items-center gap-1 rounded-sticker bg-white/60 p-3">
+                  <span className="relative block aspect-square w-full">
+                    <Image
+                      src={asset(fineCard(family.id, word))}
+                      alt=""
+                      fill
+                      sizes="(max-width: 640px) 45vw, 160px"
+                      className="object-contain"
+                    />
+                  </span>
+                  <span className="text-center font-display font-700 text-ch-ink">
+                    {t.fine[`${family.id}__${word}`] ?? word}
+                  </span>
+                  <SpeakButton textKey={`feelings.fine.${family.id}__${word}`} />
+                </div>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-6 text-center">
+            <button
+              type="button"
+              onClick={() => setStage("done")}
+              className="min-h-[64px] rounded-full bg-white/80 px-6 font-display font-600 text-ch-ink/80"
+            >
+              {t.fineBack}
+            </button>
+          </div>
+        </>
+      ) : null}
+
       {stage === "done" && family ? (
         <div className="mx-auto max-w-md text-center">
           <span className="relative mx-auto block aspect-square w-48">
@@ -302,13 +356,29 @@ export default function HowDoIFeel() {
             {t.done}
             <SpeakButton textKey="feelings.done" />
           </p>
-          <button
-            type="button"
-            onClick={reset}
-            className="mt-6 min-h-[64px] rounded-full bg-[--sec-accent] px-8 font-display font-700 text-white shadow-[0_10px_24px_-14px_rgba(27,42,91,0.8)]"
-          >
-            {t.doneAgain}
-          </button>
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            {/*
+              The way into the fine words, offered only after the activity has
+              closed. An invitation to go deeper, never a wall — she has
+              already named what she feels and already been met (D-100).
+            */}
+            {fineWords.length ? (
+              <button
+                type="button"
+                onClick={() => setStage("fine")}
+                className="min-h-[64px] rounded-full bg-white/80 px-6 font-display font-600 text-ch-ink/80"
+              >
+                {t.finePrompt}
+              </button>
+            ) : null}
+            <button
+              type="button"
+              onClick={reset}
+              className="min-h-[64px] rounded-full bg-[--sec-accent] px-8 font-display font-700 text-white shadow-[0_10px_24px_-14px_rgba(27,42,91,0.8)]"
+            >
+              {t.doneAgain}
+            </button>
+          </div>
         </div>
       ) : null}
     </section>

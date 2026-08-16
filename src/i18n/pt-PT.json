@@ -58,7 +58,36 @@
       "counting-fingers": "Contar devagar",
       "floating-feather": "Respirar devagar",
       "jumping": "Mexer o corpo"
-    }
+    },
+    "fine": {
+      "happy__contente": "Contente",
+      "happy__entusiasmado": "Entusiasmado",
+      "happy__orgulhoso": "Orgulhoso",
+      "happy__aliviado": "Aliviado",
+      "calm__tranquilo": "Tranquilo",
+      "calm__descansado": "Descansado",
+      "calm__seguro": "Seguro",
+      "sad__desiludido": "Desiludido",
+      "sad__sozinho": "Sozinho",
+      "sad__com-saudades": "Com saudades",
+      "sad__magoado": "Magoado",
+      "scared__nervoso": "Nervoso",
+      "scared__preocupado": "Preocupado",
+      "scared__timido": "Tímido",
+      "angry__chateado": "Chateado",
+      "angry__irritado": "Irritado",
+      "angry__furioso": "Furioso",
+      "ashamed__culpado": "Culpado",
+      "ashamed__arrependido": "Arrependido",
+      "ashamed__embaracado": "Embaraçado",
+      "bored__aborrecido": "Aborrecido",
+      "bored__farto": "Farto",
+      "bored__impaciente": "Impaciente",
+      "bored__sem-vontade": "Sem vontade"
+    },
+    "finePrompt": "Queres dizer melhor?",
+    "fineBack": "Voltar",
+    "fineLocked": "Pede a um adulto para abrir estas palavras"
   },
   "library": {
     "pick": "Escolhe um desenho",

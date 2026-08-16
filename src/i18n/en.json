@@ -58,7 +58,36 @@
       "counting-fingers": "Count slowly",
       "floating-feather": "Breathe slowly",
       "jumping": "Move your body"
-    }
+    },
+    "fine": {
+      "happy__contente": "Pleased",
+      "happy__entusiasmado": "Excited",
+      "happy__orgulhoso": "Proud",
+      "happy__aliviado": "Relieved",
+      "calm__tranquilo": "Peaceful",
+      "calm__descansado": "Rested",
+      "calm__seguro": "Safe",
+      "sad__desiludido": "Disappointed",
+      "sad__sozinho": "Lonely",
+      "sad__com-saudades": "Missing someone",
+      "sad__magoado": "Hurt",
+      "scared__nervoso": "Nervous",
+      "scared__preocupado": "Worried",
+      "scared__timido": "Shy",
+      "angry__chateado": "Cross",
+      "angry__irritado": "Annoyed",
+      "angry__furioso": "Furious",
+      "ashamed__culpado": "Guilty",
+      "ashamed__arrependido": "Sorry",
+      "ashamed__embaracado": "Embarrassed",
+      "bored__aborrecido": "Bored",
+      "bored__farto": "Fed up",
+      "bored__impaciente": "Impatient",
+      "bored__sem-vontade": "No energy"
+    },
+    "finePrompt": "Do you want to say it better?",
+    "fineBack": "Back",
+    "fineLocked": "Ask a grown-up to open these words"
   },
   "library": {
     "pick": "Pick a picture",
