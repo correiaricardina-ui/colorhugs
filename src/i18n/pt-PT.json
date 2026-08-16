@@ -72,5 +72,14 @@
       "floating-feather": "Pena",
       "jumping": "Aos saltos"
     }
+  },
+  "plans": {
+    "heading": "Formas de entrar",
+    "free": "Actividades para começar, sem custo",
+    "premium": "A biblioteca completa e o vocabulário alargado",
+    "professional": "Materiais para psicólogos, terapeutas e professores",
+    "professionalHealth": "Saúde — psicólogos e terapeutas",
+    "professionalEducation": "Educação — professores e educadores",
+    "notYet": "Ainda por construir"
   }
 }

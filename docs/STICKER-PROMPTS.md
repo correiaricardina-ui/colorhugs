@@ -1,5 +1,8 @@
 # ColorHugs — Collectible Sticker Prompts
 
+> **Style is governed by [`ART-DIRECTION.md`](ART-DIRECTION.md)** — kawaii,
+> Jellycat soft toy, cozy, with a thick bold outline. Where this document and
+> that one disagree, that one wins.
 The rewards that fill My Sticker Book. Twenty-four for launch.
 
 Status: `[DEFINED]`. All twenty-four generated, checked and accepted

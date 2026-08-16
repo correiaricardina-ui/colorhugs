@@ -19,7 +19,7 @@ export default function PlanBadge({
     <span className="inline-flex items-center">
       <Image
         src={asset(badge.src)}
-        alt={plan === "premium" ? "Premium activity" : "Free activity"}
+        alt={badge.alt}
         width={size}
         height={size}
         className="drop-shadow-[0_4px_6px_rgba(27,42,91,0.25)]"

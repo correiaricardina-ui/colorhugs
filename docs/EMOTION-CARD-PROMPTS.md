@@ -1,5 +1,8 @@
 # ColorHugs — Emotion Cards
 
+> **Style is governed by [`ART-DIRECTION.md`](ART-DIRECTION.md)** — kawaii,
+> Jellycat soft toy, cozy, with a thick bold outline. Where this document and
+> that one disagree, that one wins.
 The content of *How Do I Feel?*, the first printable deck, and the first
 professional material. One set of artwork, three destinations.
 

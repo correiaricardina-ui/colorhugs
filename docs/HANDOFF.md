@@ -87,6 +87,12 @@ child-alone rules, because a printed sheet does not choose who is in the room.
 variety, never performance. No streaks that can break — a streak that breaks is
 a punishment.
 
+**The house style is kawaii, Jellycat soft toy, cozy** — fat squashy shapes,
+thick bold outline, nothing rigid or elegant. It governs **every** image in the
+project, colouring pages included, and lives in `docs/ART-DIRECTION.md`, which
+also holds the prompting lessons and the rule to verify by measuring rather
+than by looking.
+
 **No text inside artwork.** Names come from the language file. A sticker that
 reads "Explorer" needs seven translations and seven regenerations, for ever.
 The existing activity artwork predates this rule and carries English text baked

@@ -1,9 +1,35 @@
-Copie tudo para a raiz do repositório, substituindo o que existe.
-Inclui tudo o que estava nos pacotes anteriores.
+COLORHUGS — projecto completo, 16 de agosto de 2026
+====================================================
 
-NOVO NESTE
-  paleta de 24 cores, com quatro tons de pele e brancos/cinzentos
+Repositório inteiro, sem node_modules.
+Substitui todos os pacotes anteriores.
+
+COMO USAR
+  Substitua o conteúdo do repositório por este, faça commit, e depois:
+      npm install
+
+NOVO NESTA VERSÃO
+  os três selos refeitos, com a fita vazia e sem taglines
+  a secção "Formas de entrar" em /parents, com Free, Premium e Professional
+  a linha profissional dividida em Saúde e Educação
+  as três páginas para colorir refeitas em estilo kawaii
+  docs/ART-DIRECTION.md — a direcção de arte, fonte única
+  docs/materials/zangado-caderno.md — o caderno profissional, com capa
+
+SCRIPTS
+  python scripts/prepare-colouring.py             páginas: valida, exporta, PDF
+  python scripts/prepare-emotions.py              cartas e figura do corpo
+  python scripts/prepare-audio.py                 áudio (precisa de vozes Piper)
+  python scripts/figure-arousal-curve.py          o esquema da activação
+  python scripts/figure-workbook-cover.py angry   a capa do caderno
+
+POR FAZER, POR ORDEM
+  as três cartas do zangado: chateado, irritado, furioso — o prompt está escrito
+  a camada premium de palavras finas
+  gerar os áudios com Piper
+  as seis famílias restantes
+  Q-010, onde vive o sistema de contas — trava mais do que qualquer outra
 
 Commit sugerido:
 
-  feat: twenty-four colour palette (D-141)
+  feat: three ways in, kawaii art direction, angry workbook

@@ -2154,3 +2154,313 @@ The rows are composed rather than gathered:
 Row three matters more than the count. The neutral outline figure (D-106) has
 no skin tone precisely so that no child is left out; a palette with one skin
 colour would put that back the moment she starts painting.
+
+---
+
+# Increment 26 — What is sold, and the practitioner note (2026-08-16)
+
+### D-142 `[DEFINED]` The essential of each feeling is free; depth is what sells
+Proposed: a premium version of the angry activity. **Rejected as proposed**, for
+two reasons.
+
+**Incoherent.** The five strategy pages are already free in Explore & Color,
+which is free in full (D-139). Gating them inside My Inner World would make the
+same image paid in one place and open two taps away.
+
+**And worse than incoherent.** A strategy for handling anger is help, not
+content. Gating it means the child whose family does not pay goes without —
+and she is very likely the child it is least defensible to take anything from.
+A product that sells emotional help to children loses the thing that
+distinguishes it.
+
+**Never premium, written down now, before commercial pressure arrives:**
+- **Naming what you feel** (already D-099).
+- **The audio.** Gating it charges precisely the child who cannot yet read.
+- **The first strategies of any feeling.**
+
+**Premium is:**
+- **The fine vocabulary** — the ~23 words inside the seven families. It fits
+  exactly: the activity already closes before that layer (D-100), so no child
+  meets a wall; it is real authoring work, which is where the cost is; and it
+  is enrichment, not rescue. A child who says *zangado* has been helped; a
+  child who wants *chateado* or *furioso* is going deeper.
+- **Additional strategies beyond the first five** — the fifth, sixth and
+  seventh way of handling anger is enrichment; the first ones are the essential.
+
+The rule generalises to the six remaining families and to the rest of the
+product: **the essential of each feeling is free; depth is what sells.**
+Defensible to a parent, to a colleague, and to ourselves in two years.
+
+### D-143 `[DEFINED]` The angry practitioner note, and the shape the other six follow
+`docs/materials/zangado-nota-aplicacao.md`, in PT-PT, following D-109: a
+material note with a visibly separated practice section, never a protocol.
+
+**The skeleton every family reuses:**
+
+1. *What the child meets* — the flow, and the literacy line quoted in full, so
+   a practitioner knows exactly what was said to the child.
+2. *The strategies, each with what actually supports it* — graded one by one,
+   not as a block.
+3. *What this material does not do* — no assessment, no scale, nothing kept,
+   nothing visible to a parent.
+4. *Limits* — including what is missing and what is weakest.
+5. *Suggestions for use*, labelled practice, describing what the clinician
+   does, never what the child's choice means.
+6. *Misuse*, and the standing disclaimer.
+
+**Section four is the one that must not be softened per family.** For angry it
+says plainly that no cell reaches *established*, that the best-supported thing
+in the set points off the screen, and that Portuguese lacks a child's word for
+the feeling of injustice — leaving this family's vocabulary incomplete at the
+point that matters most. A note that lists only strengths is worth less than no
+note, because a practitioner who finds one overstatement discounts the rest.
+
+Citations are still to be verified before licensing, as in the *Como Me Sinto?*
+note. Recorded rather than filled in from memory.
+
+### D-144 `[DEFINED]` The practitioner material is a workbook, not a note
+Chosen over a short note with separate annexes. Two reasons: a colleague buying
+this wants one file, not seven; and **we need to know what a whole family
+actually costs**, which loose annexes hide. If angry comes to twelve pages,
+that number times seven changes the plan, and it is better known now than at
+the fourth family.
+
+`docs/materials/zangado-caderno.md` replaces the shorter note. Eight sections,
+in the order a session happens: what the child meets · the strategies with what
+supports each · the arousal schema · exploratory questions · dynamics · a
+clinician's sheet · limits · what the material does not do. Plus the five pages
+as an annex.
+
+**Exploratory questions were the hard case.** D-094 says exploring cannot stand
+alone — but that governs material a child uses by herself. In a session there
+is someone to receive it. The line that still holds: the workbook may suggest
+**what to ask**, never **what the answer means**. "Ask her who she would go to"
+is a question; "if she cannot name anyone, consider…" is a reading, and that is
+the clinician's.
+
+The questions are grouped by the strategy that prompts them rather than listed
+loose, so they attach to what the child just chose.
+
+**The clinician's sheet is for their notes, not a score.** It records what she
+chose and said, never a rating, and is explicitly not to be filled in with the
+child watching as though it were a test.
+
+### D-145 `[IMPLEMENTATION]` The arousal schema is drawn in code, not generated
+An image generator is the wrong tool: exact curves and clean type are what they
+do worst, and this carries a clinician's signature. Drawn with a script —
+`scripts/figure-arousal-curve.py` — so it regenerates when a word changes.
+
+**No numbers and no tick marks on either axis**, with *esquema ilustrativo, não
+representa medições* printed beneath. A graph with a scale looks like data, and
+there is no data behind this shape. It is the visual form of the same trap the
+evidence grading exists to avoid: better it look plain than look measured.
+
+It carries one claim not in the child's literacy line — *aqui a estratégia ainda
+está a agir, mesmo que ela ache que não* — which is the clinical reason to show
+the schema at all, and which needs Ricardina's confirmation before licensing.
+
+### D-146 `[DEFINED]` The workbook opens with a framing section, and no references
+Written as synthesis, not review, with a notice that no reference is treated as
+verified until it is. **References are not written from memory.** In a field
+where error propagates easily, and in a document carrying a clinician's
+signature, one invented citation destroys everything around it, including what
+is correct — the same discipline as never displaying an unearned seal (D-086).
+
+The framing states four things: anger is normal, early and functional, and the
+aim is not to reduce it; **anger is not aggression**, which is the distinction
+the whole workbook rests on; regulation begins as a two-person process, which
+is why *go and tell someone* has the best base and why a digital material alone
+has a ceiling worth admitting; and the five strategies map onto recognised
+families of emotion regulation rather than being a list.
+
+**That mapping revealed something useful.** Situation selection and
+modification, attentional deployment and response modulation are all covered;
+**cognitive change is absent** — reappraisal, developmentally out of reach for a
+small child. The gap is a choice rather than an oversight, and it marks where
+the material could grow for older children.
+
+### D-147 `[DEFINED]` The workbook carries the fine words; the child's app gates them
+Section 8 holds *chateado · irritado · furioso* in full. In the app the layer is
+premium and optional (D-142); in the practitioner material it is included
+entirely, because whoever applies it needs the whole vocabulary even when the
+child meets only part.
+
+**A tension the workbook now states out loud.** Those three words differ largely
+by intensity, and intensity was deliberately excluded (D-096) — no *my anger is
+a 5*. The defence is that the child **names** rather than **grades**: she picks
+a word that already exists in her language, not a point on a scale. The
+practical effect is close, and the workbook says so rather than hiding it.
+
+Also recorded there: *chateado* serves for mild anger, sadness and boredom
+alike, so a child saying it may be in any of the three (Q-027 remains open).
+
+### D-148 `[IMPLEMENTATION]` The workbook cover, drawn in code
+`scripts/figure-workbook-cover.py`, one command per family.
+
+**Drawn, not generated**, for the same reason as the schema: a cover is
+typography, and type is what image generators do worst. Garbled Portuguese on a
+document carrying a clinician's signature is not a risk worth taking, and a
+drawn cover regenerates when a word changes.
+
+The illustration is the family's **own emotion card**, on a soft disc of its
+colour — so the workbook is recognisable from across a desk and matches exactly
+what the child sees on screen. That link is the point: the practitioner and the
+child are looking at the same object.
+
+**The endorsed professional lockup**, never the plain child-facing one
+(D-063, D-065). The header band is the same seven accents as the colouring
+pages, so every printed ColorHugs sheet reads as one family of objects.
+
+**Positions are fixed rather than flowed.** Tested with *Envergonhado*, the
+longest family name: flowed, a long title pushed the lockup into the text
+beneath it. The first version had exactly that fault.
+
+The script refuses to build a cover for a family whose workbook is not written,
+unless forced. A finished-looking cover in front of a colleague, with nothing
+behind it, is the kind of thing that gets shown by accident.
+
+### D-149 `[DEFINED]` Kawaii is the house style, for every image in the project
+Not a preference for stickers: **a rule for all artwork**, colouring pages
+included. Rounded, plump, cute shapes with soft corners, and a **thick bold
+outline of even weight**. A thin, delicate or varying line is wrong. A neat
+generic colouring-book line is wrong.
+
+**Consequence: the seven colouring pages must be regenerated.** The feather, the
+hand and the cushions are generic line art of the kind found on any colouring
+site. It was noticed and named earlier — *thin and generic* — without the
+conclusion being drawn. Ricardina drew it.
+
+Not wasted work: the scene prompts, the internal divisions and the six-area
+rule all stand. Only the style block changes, and the checker already measures
+the result in one command.
+
+**One boundary, or this goes wrong.** Kawaii in the *shapes* — chubby
+proportions, rounded corners, thick line — always. Kawaii *with a face* on
+objects is case by case. A cushion with eyes and blushing cheeks is fine. **The
+hand must not have a face**: it is the child's own hand, and a hand with eyes
+stops being hers. The body map figure stays faceless by D-106, which this rule
+does not override.
+
+The style block for every colouring-page prompt from here:
+
+```
+STYLE — KAWAII, THICK AND ROUNDED
+Cute kawaii style, the same family as a plump sticker: every shape is rounded,
+full and slightly chubby, with soft corners and no sharp points or thin spikes.
+Objects are drawn plump rather than realistic — a cushion is pillowy, a feather
+is soft and full, a hand is padded.
+
+THICK, BOLD black outline of even weight throughout, the confident chunky
+outline of a sticker. A thin, delicate or varying line is WRONG. A neat generic
+colouring-book line is WRONG. It must look hand-made and warm, not technical.
+
+No colour, no fill, no grey, no shading, no gradient, no texture, no hatching,
+no drop shadow.
+```
+
+### D-150 `[DEFINED]` The style is kawaii, Jellycat soft toy, cozy — and it has one home
+Refined from D-149. **Jellycat** is not merely cute: it is *plush* — fat, full,
+slightly lumpy, as though sewn by hand and lightly overstuffed, imperfect
+rather than symmetrical. **Cozy** is calm and huggable rather than bright and
+loud. Together they explain the earlier faults better than "kawaii" alone did:
+the feather and the hand were not only thin, they were **rigid**. A Jellycat
+feather is fat and soft; ours was a well-drawn feather.
+
+**One exclusion the reference brings with it and must not keep:** no stitching,
+no seams, no fabric tags. They would look right on a plush toy and would break
+the rule that matters more — on a colouring page they are fine lines a child
+cannot colour, undoing the requirement for large fillable areas. **The plush toy
+is the feeling, not the subject.**
+
+`docs/ART-DIRECTION.md` is now the single source for how artwork looks, and the
+three prompt documents point at it. It also gathers what was scattered: the
+face rules, the rim rule, sealing, the six-area floor, the prompting lessons,
+and the standing instruction to verify by measuring rather than by looking.
+
+**Also to revisit:** the body map figure was drawn before this rule existed. It
+is a correct neutral outline and probably too rigid for the family it now
+belongs to.
+
+### D-151 `[IMPLEMENTATION]` The three generic pages redrawn in the house style
+Hand, feather and cushions regenerated with the Jellycat block. All three pass:
+7, 10 and 12 fillable areas, no leaks. The cushions now keep off the wall/floor
+line, so wall and floor are two areas as intended.
+
+The feather has a face and the hand does not, per ART-DIRECTION.md. The
+cushions were left faceless: four identical faces would turn a quiet corner
+into a crowd staring back.
+
+### D-152 `[IMPLEMENTATION]` Line weight is measured by stroke width, not ink share
+**Ink share was a poor proxy and it misled us earlier.** A simple drawing with
+few lines has little ink even with a fat stroke: the new feather sits at 4.8%
+ink and 8.2px of stroke, the elephant at 10.1% and 11.7px. Most of that gap is
+how much there is to draw, not how thick the line is.
+
+`scripts/prepare-colouring.py` now reports **stroke width** — twice the
+ninetieth percentile of the distance transform of the ink, which is the ridge
+running down the middle of a stroke — and flags anything under 7px.
+
+**Warned, not refused.** A drawing may legitimately be simple, and a hard floor
+here would reject good art. The house style asks for thick; the number tells us
+when to look.
+
+This corrects the reasoning behind an earlier error: the people pages were told
+to slim down to match the object pages on ink share, when ink share was never
+measuring what we thought.
+
+---
+
+# Increment 27 — The three ways in (2026-08-16)
+
+### D-153 `[DEFINED]` Free, Premium and Professional live in the adult area, not the home page
+Proposed as three buttons on the home page. **Moved.**
+
+Free and Premium are subscription levels of a family account; **Professional is
+not a third subscription** but a different audience, product and price. Three
+equal buttons say they are three doors to the same place.
+
+And the home page is the child's. D-036 removed the parents button from the top
+bar because a five-year-old taps everything, and a large button reading
+*Premium* is the nearest thing to a purchase button we could put in front of
+her — D-039 keeps price and purchase off every child screen. It carries no
+price, but it teaches her to ask.
+
+They sit in `/parents`, where the adult door already is. Free and Premium stop
+being doors and become what they already are: the state of an account, decided
+on the adult side.
+
+### D-154 `[DEFINED]` The professional line splits: health and education
+A deeper distinction than it looks. **A psychologist may use material that
+opens** — exploratory questions, family dynamics, a clinical sheet. **A teacher
+has thirty children, forty-five minutes and no clinical frame**, and material
+that opens in a classroom opens and stays open.
+
+**The angry workbook, as written, must not go to a teacher.** What serves a
+school is a different body of content: the seven cards, the vocabulary, group
+activities, and no question asking a child to disclose anything in front of the
+class. It is a line to be written, not a variant of what exists.
+
+The education half is therefore shown and **marked as unbuilt**, rather than
+pointed at the clinical workbook.
+
+### D-155 `[DEFINED]` Plan names are brand; the description beside them is not
+The three badges carry their word in English, painted into the artwork, and are
+**not translated** — they behave as brand, like the section names (D-110).
+
+Objected to: *free*, *premium* and *professional* are not universal. They read
+in the European languages and mean nothing in Chinese or Hindi. **Resolved by
+the arrangement rather than by the word:** a description in the reader's own
+language always sits beside the badge, from the language file. The badge does
+not have to explain itself, so the English word costs nothing.
+
+**All three badges were regenerated together**, and the taglines came out. The
+Premium badge previously read *exclusive content · premium experience · more
+love, more fun* — sales copy, not brand: seven translations, promises made, and
+in a product built on not selling to children it was the one line anywhere in
+the material that sounded like an advertisement. With the description now
+beside the badge, a tagline inside it would say the same thing twice in two
+languages in the same place.
+
+Regenerating approved artwork is an exception to rule 6 and is taken
+deliberately: the ribbon is now empty in all three, and pieces generated in one
+sitting match, which pieces generated months apart do not (D-132).

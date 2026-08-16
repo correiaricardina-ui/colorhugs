@@ -6,8 +6,15 @@
  * components, no new routes, no layout work.
  */
 
-/** Subscription level, used for the Free and Premium brand badges. */
-export type Plan = "free" | "premium";
+/**
+ * Access level.
+ *
+ * Free and Premium are subscription levels of a family account. **Professional
+ * is not a third subscription** — it is a different audience, a different
+ * product and a different price (D-153). They share a badge shape because they
+ * are all doors in the adult area, not because they are the same kind of thing.
+ */
+export type Plan = "free" | "premium" | "professional";
 
 /**
  * How an activity is gated.

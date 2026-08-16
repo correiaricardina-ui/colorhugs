@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import AdultShell from "@/components/layout/AdultShell";
 import { PLAN_BADGES, SECTIONS } from "@/data/sections";
 import { CREDIT } from "@/data/credits";
+import WaysIn from "@/components/layout/WaysIn";
 import { asset } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -86,6 +87,8 @@ export default function ParentsPage() {
           trust it. This page explains how that works and what is still being
           built.
         </p>
+
+        <WaysIn />
 
         {/*
           Who is behind ColorHugs, placed before the safety commitments.

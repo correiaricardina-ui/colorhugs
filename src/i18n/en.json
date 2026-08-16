@@ -72,5 +72,14 @@
       "floating-feather": "Feather",
       "jumping": "Jumping"
     }
+  },
+  "plans": {
+    "heading": "Ways in",
+    "free": "Activities to start with, at no cost",
+    "premium": "The full library and the wider vocabulary",
+    "professional": "Materials for psychologists, therapists and teachers",
+    "professionalHealth": "Health — psychologists and therapists",
+    "professionalEducation": "Education — teachers and educators",
+    "notYet": "Not built yet"
   }
 }

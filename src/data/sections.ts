@@ -649,6 +649,11 @@ export const PLAN_BADGES = {
     alt: "Premium plan badge",
     banner: "/assets/banners/premium.webp",
   },
+  professional: {
+    src: "/assets/stickers/plans/professional.webp",
+    alt: "Professional badge",
+    banner: null,
+  },
 } as const;
 
 export const BRAND = {

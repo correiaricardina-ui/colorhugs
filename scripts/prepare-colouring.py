@@ -33,6 +33,7 @@ import sys
 
 import numpy as np
 from datetime import date
+from scipy import ndimage as _nd
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from scipy import ndimage
 
@@ -52,6 +53,15 @@ MIN_REGIONS = 6
 # as five areas. The hand itself was still one region and still gave a child
 # one colour.
 MIN_AREA_SHARE = 0.005
+
+# Ink share turned out to be a poor proxy for line weight: a simple drawing with
+# few lines has little ink even with a fat stroke. The feather sits at 4.8% ink
+# and 8.2px of stroke, the elephant at 10.1% and 11.7px — the difference in ink
+# is mostly how much there is to draw. Stroke width measures the line itself.
+#
+# Warned, not refused: a drawing can legitimately be simple, and a hard floor
+# here would reject good art. The house style asks for thick (ART-DIRECTION.md).
+MIN_STROKE = 7.0
 
 MAX_EDGE = 1400
 
@@ -104,6 +114,20 @@ def sealed_regions(grey, alpha=None):
         for i in range(1, count + 1)
         if i != background and (labels == i).sum() > total * MIN_AREA_SHARE
     ]
+
+
+def stroke_width(grey):
+    """Median-ish thickness of the black line, in pixels.
+
+    Distance transform of the ink: the ridge running down the middle of a
+    stroke sits at half its width, so twice the ninetieth percentile is a fair
+    estimate of the typical stroke.
+    """
+    ink = grey < 128
+    if not ink.any():
+        return 0.0
+    distances = _nd.distance_transform_edt(ink)
+    return float(2 * np.percentile(distances[ink], 90))
 
 
 def cut_white(img):
@@ -231,6 +255,7 @@ def main():
 
             regions = sealed_regions(grey)
             ink = (grey < 128).mean() * 100
+            stroke = stroke_width(grey)
 
             if len(regions) < MIN_REGIONS:
                 failures.append(
@@ -247,7 +272,11 @@ def main():
             )
             to_pdf(img, os.path.join(dst_dir, f"{stem}.pdf"))
             made += 1
-            print(f"  {path}/{stem:22} {len(regions):3} areas   ink {ink:4.1f}%   + pdf")
+            flag = "  thin?" if stroke < MIN_STROKE else ""
+            print(
+                f"  {path}/{stem:22} {len(regions):3} areas   "
+                f"stroke {stroke:4.1f}px   ink {ink:4.1f}%   + pdf{flag}"
+            )
 
     if failures:
         print("\n  Not exported:\n")
