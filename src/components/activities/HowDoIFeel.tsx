@@ -62,6 +62,9 @@ export default function HowDoIFeel() {
   };
 
   const [stage, setStage] = useState<Stage>("choose");
+  // Where the fine words were opened from, so "back" returns there instead of
+  // dropping the child somewhere she did not come from.
+  const [fineFrom, setFineFrom] = useState<Stage>("done");
   const [chosen, setChosen] = useState<string | null>(null);
   const [zone, setZone] = useState<BodyZone | null>(null);
   const [page, setPage] = useState<string | null>(null);
@@ -188,6 +191,30 @@ export default function HowDoIFeel() {
                 */}
                 {zone ? t.bodyDone : t.bodySkip}
               </button>
+
+              {/*
+                The fine words sit here, beside the way out, not behind it. A
+                child who wants a better word for what she is feeling should not
+                have to walk through the rest of the activity to find one — and
+                putting it after "I would rather not say" made the finer
+                vocabulary read as a consolation for having skipped.
+
+                It stays an option and never a wall (D-100): she has already
+                named what she feels and already been met.
+              */}
+              {fineWords.length ? (
+                <button
+                  type="button"
+                  onClick={() => {
+                    setFineFrom("body");
+                    setStage("fine");
+                  }}
+                  className="min-h-[64px] rounded-full bg-white/80 px-6 font-display font-600 text-ch-ink/80"
+                >
+                  {t.finePrompt}
+                </button>
+              ) : null}
+
               <button
                 type="button"
                 onClick={reset}
@@ -249,7 +276,32 @@ export default function HowDoIFeel() {
             ))}
           </ul>
 
-          <div className="mt-6 text-center">
+          {/*
+            A way past the strategies. Without it, a child who wants none of
+            them is stuck choosing one — and the only exits were "pick another
+            feeling" or nothing at all, which is the app refusing to let her
+            finish.
+          */}
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => setStage("done")}
+              className="min-h-[64px] rounded-full bg-[--sec-accent] px-8 font-display font-700 text-white shadow-[0_10px_24px_-14px_rgba(27,42,91,0.8)]"
+            >
+              {t.strategySkip}
+            </button>
+            {fineWords.length ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setFineFrom("strategy");
+                  setStage("fine");
+                }}
+                className="min-h-[64px] rounded-full bg-white/80 px-6 font-display font-600 text-ch-ink/80"
+              >
+                {t.finePrompt}
+              </button>
+            ) : null}
             <button
               type="button"
               onClick={reset}
@@ -333,7 +385,7 @@ export default function HowDoIFeel() {
           <div className="mt-6 text-center">
             <button
               type="button"
-              onClick={() => setStage("done")}
+              onClick={() => setStage(fineFrom)}
               className="min-h-[64px] rounded-full bg-white/80 px-6 font-display font-600 text-ch-ink/80"
             >
               {t.fineBack}
@@ -372,7 +424,10 @@ export default function HowDoIFeel() {
             {fineWords.length ? (
               <button
                 type="button"
-                onClick={() => setStage("fine")}
+                onClick={() => {
+                  setFineFrom("done");
+                  setStage("fine");
+                }}
                 className="min-h-[64px] rounded-full bg-white/80 px-6 font-display font-600 text-ch-ink/80"
               >
                 {t.finePrompt}

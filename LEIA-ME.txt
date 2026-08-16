@@ -8,21 +8,16 @@ COMO USAR
       npm install
 
 NOVO NESTA VERSÃO
-  "Pediatric Psychology" corrigido no rodapé de todas as páginas
-      (src/data/credits.ts) e na página de espera (holding/index.html)
-  as 24 cartas de palavras finas nas sete famílias
-  a camada premium no Como Me Sinto?
-  src/data/access.ts — quem tem acesso a quê
+  "Queres dizer melhor?" passa a estar no ecrã do corpo, ao lado de
+      "Prefiro não dizer", e em todos os ecrãs seguintes
+  o zangado passa a ter saída das estratégias — botão "Agora não"
+  "Pediatric Psychology" corrigido no rodapé e na página de espera
 
-POR CORRIGIR NA ARTE (não se corrige por código)
+POR CORRIGIR NA ARTE
   public/assets/branding/colorhugs-professional.webp
       tem "Paediatric Psychology" pintado dentro da imagem
-  depois de o substituir, regenerar a capa do caderno:
-      python scripts/figure-workbook-cover.py angry
-
-  ricardina-correia.webp está correcto — diz "Psicologia Pediátrica"
-  os PDF para colorir estão correctos — não têm a linha do cargo
+  depois de substituir:  python scripts/figure-workbook-cover.py angry
 
 Commit sugerido:
 
-  fix: Pediatric Psychology spelling (D-164)
+  fix: fine words beside the exit, and a way past the strategies (D-165)

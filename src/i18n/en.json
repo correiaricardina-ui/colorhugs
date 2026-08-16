@@ -87,7 +87,8 @@
     },
     "finePrompt": "Do you want to say it better?",
     "fineBack": "Back",
-    "fineLocked": "Ask a grown-up to open these words"
+    "fineLocked": "Ask a grown-up to open these words",
+    "strategySkip": "Not now"
   },
   "library": {
     "pick": "Pick a picture",

@@ -87,7 +87,8 @@
     },
     "finePrompt": "Queres dizer melhor?",
     "fineBack": "Voltar",
-    "fineLocked": "Pede a um adulto para abrir estas palavras"
+    "fineLocked": "Pede a um adulto para abrir estas palavras",
+    "strategySkip": "Agora não"
   },
   "library": {
     "pick": "Escolhe um desenho",

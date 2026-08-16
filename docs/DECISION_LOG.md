@@ -2616,3 +2616,26 @@ Portuguese, and is correct.
 
 The colouring-page PDFs are unaffected: their footer is `colorhugs.pt · ©
 year ColorHugs` and carries no role line (D-137).
+
+### D-165 `[DEFINED]` The fine words sit beside the way out, not behind it
+Two faults found by using it.
+
+**The angry family could not reach its fine words at all.** Its path goes body →
+strategies → colour → done, and the fine layer only appeared at *done*. The
+strategy screen had no way forward: the only exits were picking a strategy or
+starting over. A child who wanted none of them was stuck, and the app was
+refusing to let her finish. A **Not now** button now leads straight to done.
+
+**And the fine words were in the wrong place.** Reaching them meant tapping
+*I would rather not say* and walking to the end — which made the finer
+vocabulary read as a consolation for having skipped. It is the opposite: a
+child who wants a better word for what she feels should find one where she is.
+
+*Do you want to say it better?* now sits **beside** the way out, on the body
+screen, and on every screen after it. Back returns her where she came from
+rather than dropping her somewhere she never was.
+
+**D-100 still holds.** The layer is an option and never a wall: by the time it
+appears she has already named what she feels and already been met. What changed
+is that the option is now visible where she is, instead of at the end of a
+corridor.
