@@ -2600,3 +2600,19 @@ is coherent — the workbook is the only piece that must not cross — but it me
 activities, classroom sequences, material for thirty children rather than one.
 Until that content exists, an education licence priced above a family
 subscription would be hard to defend.
+
+### D-164 `[IMPLEMENTATION]` Spelling: *Pediatric*, not *Paediatric*
+Corrected everywhere it appears as text: `src/data/credits.ts` (which feeds the
+footer on every page, live and preview) and `holding/index.html` (the coming-soon
+page on the domain).
+
+**Two places it survives, because it is painted into artwork:**
+`colorhugs-professional.webp` and the workbook cover that uses it. Those need
+regenerating — text inside artwork cannot be corrected by a find-and-replace,
+which is the D-081 rule demonstrating itself in the least convenient way.
+
+`ricardina-correia.webp` is unaffected: it reads *Psicologia Pediátrica*, in
+Portuguese, and is correct.
+
+The colouring-page PDFs are unaffected: their footer is `colorhugs.pt · ©
+year ColorHugs` and carries no role line (D-137).

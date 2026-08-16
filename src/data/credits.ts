@@ -7,7 +7,7 @@
  */
 export const CREDIT = {
   name: "Ricardina Correia",
-  role: "Paediatric Psychology",
+  role: "Pediatric Psychology",
   url: "https://ricardinacorreia.pt",
   logo: {
     src: "/assets/branding/ricardina-correia.webp",
