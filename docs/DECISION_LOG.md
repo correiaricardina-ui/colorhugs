@@ -2658,3 +2658,18 @@ line to restore is left in place, commented, for when the mark is registered.
 **`/preview` is deliberately unchanged.** It carries the full artwork on every
 page, and that is wanted: it is where the brand is being developed and reviewed.
 It is unlinked and not indexed, which is the accepted trade.
+
+### D-167 `[IMPLEMENTATION]` Both endorsed lockups regenerated with the correct spelling
+*Pediatric*, not *Paediatric*, verified by enlarging the line rather than
+trusting the thumbnail: the parents lockup reads *by Ricardina Correia ·
+Pediatric Psychology* in script, the professional one *RICARDINA CORREIA* above
+*Pediatric Psychology*.
+
+**Two, not one.** The parents lockup was missed on the first pass because the
+search was run over the code and the code has no idea what a picture says. Text
+inside artwork is invisible to every tool that finds text — which is the cost
+D-081 exists to avoid, showing itself again.
+
+Processed without a die-cut rim: a lockup is a mark, not a collectable (D-083).
+The angry workbook cover regenerates from the new file and now carries the
+correct spelling.
