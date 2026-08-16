@@ -1,0 +1,59 @@
+{
+  "ui": {
+    "languageLabel": "Language",
+    "home": "Home",
+    "back": "Back",
+    "askAGrownUp": "Ask a grown-up to unlock this one",
+    "comingSoonTitle": "is being made",
+    "comingSoonBody": "We are still building this one. Come back soon!",
+    "listen": "Listen"
+  },
+  "activities": {
+    "my-inner-world/how-do-i-feel": {
+      "title": "How Do I Feel?",
+      "tagline": "Name what you are feeling today"
+    }
+  },
+  "feelings": {
+    "prompt": "How do you feel today?",
+    "bodyPrompt": "Where do you feel it?",
+    "bodySkip": "I would rather not say",
+    "bodyDone": "Done",
+    "done": "Thank you for telling me.",
+    "doneAgain": "Choose again",
+    "change": "Pick a different feeling",
+    "families": {
+      "happy": "Happy",
+      "calm": "Calm",
+      "sad": "Sad",
+      "scared": "Scared",
+      "angry": "Angry",
+      "ashamed": "Ashamed",
+      "bored": "Bored"
+    },
+    "zones": {
+      "head": "Head",
+      "chest": "Chest",
+      "stomach": "Tummy",
+      "arms": "Arms and hands",
+      "legs": "Legs and feet"
+    },
+    "literacy": {
+      "angry": "Anger usually turns up when something seems unfair, or when we wanted something badly and could not have it. It arrives fast, and takes longer to leave than it took to come."
+    },
+    "strategyPrompt": "Which would you like to try?",
+    "colourPrompt": "Colour it in",
+    "download": "Print this page",
+    "undo": "Undo",
+    "clear": "Start again",
+    "fillMode": "Fill",
+    "brushMode": "Brush",
+    "pages": {
+      "talking-together": "Go and tell someone",
+      "quiet-corner": "Move away from it",
+      "counting-fingers": "Count slowly",
+      "floating-feather": "Breathe slowly",
+      "jumping": "Move your body"
+    }
+  }
+}

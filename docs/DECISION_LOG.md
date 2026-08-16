@@ -1623,3 +1623,411 @@ happens when it is used.
 The English wordmark now sits directly above the Portuguese title, which is
 D-110 made visible. This activity's artwork is the first that should be
 regenerated text-free.
+
+---
+
+# Increment 22 — How Do I Feel? gains substance (2026-08-15)
+
+The built activity lasted twenty seconds and gave nothing back. It kept every
+rule and kept them by being thin, and a product a child uses once protects
+nobody.
+
+### D-117 `[DEFINED]` Three paths, because the feelings are not the same kind of thing
+- **Difficult** — sad, scared, angry, ashamed → a **strategy**, offered as a
+  choice: *which would you like to try?*
+- **Good** — happy, calm → **moments when I feel like this**, choosing the one
+  that matters most.
+- **Boredom** — its own path, **what I could do now**.
+
+All three end in a colouring page, on screen or downloaded.
+
+**Why not strategies everywhere.** Strategies only on the unpleasant feelings
+would teach that some feelings need fixing and others do not — valence
+returning by the side door, after D-104 refused it in the grid and D-067
+refused it in the avatar. A child who says *angry* and gets three things to do,
+and says *happy* and gets nothing, learns which one the product prefers.
+
+The moments path is not a consolation prize: choosing when I feel like this is
+savouring, which has a literature of its own.
+
+Boredom is neither difficult nor good, and it is the **only** feeling where the
+answer may be another part of ColorHugs. A bored child with nothing to do is
+well served by "draw something silly"; a sad child must not be redirected into
+an activity, and a happy one does not need distracting.
+
+Boredom is also rarely a lack of stimulation — more often a lack of meaning or
+of choice, a child with things to do and none that interest her. That argues
+against a list of ready suggestions, which is the obvious answer, and in favour
+of a real choice between a few genuinely different options. Mostly adult
+research: **reasonable**, not established.
+
+### D-118 `[DEFINED]` Offer, not instruction; literacy about the feeling, never about the child
+*Which would you like to try?* closes and leaves the choice with her. *Do this*
+decides for her, and deciding what a child should do next is a person's work
+(D-094, test 3).
+
+The literacy line is about the feeling in general. "Sometimes people feel angry
+when something seems unfair" is description. "You are angry because…" is
+interpretation, and it is where this breaks.
+
+### D-119 `[DEFINED]` The pages live in Explore & Color and are visible there
+Not a new activity: a group inside Explore & Color, which already exists, is
+already free in full, and whose `group` field the model already has.
+
+**Visible, not unlocked.** Hidden, the choice inside the activity becomes a
+reward, and a child starts choosing the feeling that yields the drawing she
+wants — destroying the only honest thing the activity records. Visible,
+choosing in the activity stays a choice about what helps.
+
+### D-120 `[DEFINED]` Pages are named for what they show, never for the feeling
+A page called *When I am angry*, or a folder called `angry/`, makes the
+downloaded file report what the child chose. No screen would say it, but a
+parent finding that PDF knows — and D-098 promised the product does not report.
+The child showing her drawing is one thing; the file announcing itself is
+another.
+
+A drawing of slow breathing is a drawing of breathing. **The link between
+feeling and page lives in data** — `src/data/colouring.ts` — never in the
+filename, the folder, or the page.
+
+It also lets one page serve several families: slow breathing belongs to angry,
+scared and sad. One strategy, one drawing, three links.
+
+### D-121 `[DEFINED]` Evidence decides the number of strategies, not symmetry
+Integrity over economy, explicitly: more drawings and more links are acceptable
+if that is what the literature supports.
+
+**The families will not have equal numbers of strategies, and must not be made
+to.** Four for angry and one for ashamed is a legitimate outcome. A symmetrical
+grid would look tidy and would be a lie.
+
+An honest caution about the literature: most research on children's emotion
+regulation compares **strategies** — distraction, reappraisal, suppression —
+rather than establishing which strategy suits which emotion. The
+emotion→strategy map is largely clinical extrapolation, so many cells will
+grade as *practice*, and the professional note must say so.
+
+Two exclusions, recorded now so they do not creep back in later:
+
+- **Discharging anger by hitting something.** The catharsis idea is the first
+  thing most children's apps reach for, and the literature points the other
+  way: it raises arousal rather than lowering it. Unwritten, it returns on its
+  own, because it is the picture everyone has of "dealing with anger".
+- **Cognitive reappraisal as a young child's strategy.** Among the most studied
+  in adults and developmentally out of reach at five.
+
+And one distinction to hold: **shame is not guilt.** Guilt moves a child to
+repair, shame moves her to hide, and a strategy built for one can make the
+other worse.
+
+### D-122 `[IMPLEMENTATION]` Emotion card scale is normalised by character mass
+The seven cards were trimmed to their own bounding boxes — right for section
+stickers, which are seven different subjects, wrong here. These are the same
+character seven times, compared side by side: if happy renders smaller than
+bored, the child reads a size difference that means nothing.
+
+Keeping the original canvases does not fix it either; they were generated at
+two sizes and framed from 0.64 to 0.85 of frame height.
+
+Normalised by **ink area** — the character's mass — because raised arms make
+happy wide and short while bored slumps narrow and tall, and area is the only
+measure that means the same across all seven poses. One shared fit factor
+brings the largest inside the canvas; shrinking only the overflowing ones would
+undo the normalisation. All seven now sit at 50.0% ink on an identical square.
+
+### Q-030 `[OPEN QUESTION]` The printable needs revisiting
+The seven-card deck (D-108) was the right core for a twenty-second activity. It
+is too small for what this has become. Recorded now rather than discovered
+later.
+
+---
+
+# Increment 23 — Anger, and audio (2026-08-15)
+
+### D-123 `[DEFINED]` Angry — the first family authored
+**Literacy line, about the feeling and never about the child:**
+
+> Anger usually turns up when something seems unfair, or when we wanted
+> something badly and could not have it. It arrives fast and takes longer to
+> leave than it took to come.
+
+The second sentence earns its place: arousal rises quickly and falls slowly,
+and a child who knows that does not conclude a strategy failed because it did
+not work in five seconds.
+
+**Strategies, each with what actually supports it:**
+
+| Strategy | Support |
+| --- | --- |
+| Go and tell someone | Base **established** — young children regulate *with* an adult, not alone. This gesture helping in the moment: **reasonable** |
+| Move away from it | **Reasonable** — changing the situation rather than enduring inside it |
+| Look at something else, count slowly | **Reasonable**, and probably the strongest here for four- and five-year-olds; attentional deployment is the mechanism in the classic delay research |
+| Slow breathing, longer out than in | **Reasonable in adults, practice in children.** The most popular strategy in children's products and the evidence is thinner than the popularity implies |
+| Move the body — run, jump, climb | **Practice.** Ships with the distinction written down: moving is not hitting |
+
+**Excluded: hitting a pillow or anything else.** The catharsis literature points
+the other way — discharging like that raises arousal rather than lowering it.
+
+Five drawings, named for what they show: two people sitting and talking · a
+quiet corner with cushions · fingers counting · a feather falling slowly · a
+child jumping.
+
+**What authoring one family revealed, and it is uncomfortable.** No cell
+reaches *established*. One base does; no application does. And the only
+well-supported thing is that **a small angry child regulates with another
+person** — the best evidence points off the screen.
+
+### D-124 `[DEFINED]` "Go and tell someone" stays, and the reason reframes it
+Argued against on the grounds that the product cannot guarantee anyone is
+there, and a suggestion that fails is worse than none.
+
+Overruled, correctly: **the strategy teaches that there is always someone to
+go to** — at home, at school — and that holds even in a minute when the room is
+empty. The drawing follows the reframing: not two particular people, but the
+idea that someone exists. It likely needs a second adult who is not a parent,
+since school is half the argument.
+
+### D-125 `[DEFINED]` Everything written can be heard
+No longer a comfort feature. The fine vocabulary and the literacy line were
+written for a child who reads, and **we ask nobody's age** (D-100). Without
+audio, the child who cannot read gets the smaller version of the activity, and
+she is the one who needs it most.
+
+**Chosen: files generated at build time.** Rejected: the browser's own voice —
+free and file-free, but on several systems synthesis happens on a server, which
+means a child's text leaving her device, and D-009 says her browser talks to
+nobody. Quality would also vary by device with no control.
+
+**Recorded human voice supersedes it, one line at a time.** Files are named
+from the string key — `feelings.families.angry` →
+`/assets/audio/pt-PT/feelings.families.angry.mp3` — so a real recording at that
+path replaces the generated file with **no code change**. Ricardina's own voice
+can arrive piece by piece, starting with whatever matters most.
+
+**Two rules, fixed now because they erode later:**
+- **Nothing plays by itself.** A child presses to hear. Sound that starts on
+  its own startles, and starting it for her decides what she needs.
+- **The button appears wherever there is text**, not only where we judge it
+  necessary — otherwise we are deciding which children can read.
+
+Where no recording exists the button is **absent, not broken**. A control that
+fails when pressed teaches a child not to press anything.
+
+**No placeholder voice is bundled.** A robotic stand-in would be worse than
+silence: it looks finished, so nobody replaces it. `scripts/prepare-audio.py`
+takes the engine as configuration and reports what is missing.
+
+### D-126 `[IMPLEMENTATION]` The language file is JSON
+`src/i18n/en.json` and `pt-PT.json`, with `strings.ts` reduced to types and
+loading. A translator edits JSON and never opens a TypeScript file — and the
+audio script reads the same source the screen reads, so the spoken and written
+lines cannot drift apart.
+
+### Q-031 `[OPEN QUESTION]` Which lines get the real voice first
+Not everything needs recording at once. The seven family names and the literacy
+lines are the strongest candidates; the interface furniture matters least.
+
+### D-127 `[DEFINED]` Piper generates the audio, locally
+Chosen over a cloud service (ElevenLabs, Google, Azure). Those sound better —
+some pass for human — but they cost money, need a key that cannot live in the
+repository (rule 44), and add a vendor and an account to maintain.
+
+Piper runs locally, needs no account, and nothing leaves the machine, which
+keeps D-009 true behind the scenes as well as in the browser.
+
+**The deciding argument was not quality.** The generated audio is a bridge
+until a recorded voice exists, and a bridge does not justify a vendor, a key
+and an invoice. With a paid service every correction to a word costs something,
+and people start avoiding edits to the copy — the opposite of what is wanted
+while the content is still being written. With Piper, changing a word
+regenerates the line for free.
+
+**A recorded voice remains the destination, without blocking anything.** It is
+now explicitly a later project: files are named from the string key, so a real
+recording dropped at that path replaces the generated one with no code change,
+one line at a time, in whatever format it was recorded.
+
+**Implementation notes.** Piper writes WAV; the script converts to MP3 when
+ffmpeg is present and keeps WAV otherwise. The manifest records the real
+filename including extension, so any format drops in. Existing files are never
+overwritten — a real recording already sitting there is the whole point.
+
+Pick a **pt_PT** voice, not pt_BR. They are different localisations (D-101),
+and the accent is the one difference a child notices immediately.
+
+**Not verified here:** the model host is unreachable from this environment, so
+the Piper command flags were checked against the installed CLI but no voice was
+downloaded and no line was generated. The first real run needs watching.
+
+---
+
+# Increment 24 — Colouring pages: two routes and a floor (2026-08-16)
+
+### D-128 `[DEFINED]` Angry's five drawings, and the sealing test applied to pages
+Named for what they show, never for the feeling (D-120): `talking-together` ·
+`quiet-corner` · `counting-fingers` · `floating-feather` · `jumping`.
+
+No white rim — these are pages, not collectables — and every region must be
+sealed, because a child colours them on screen and colour leaks through any
+line that fails to meet another.
+
+Four passed the leak test at the first attempt. **The hand failed completely**:
+the two wrist lines ended in mid-air, so the hand was one open shape continuous
+with the background — tap the palm and the whole page fills. The same failure as
+the body figure, in the most obvious place a hand can have one.
+
+The regenerated hand closed the wrist and **arrived with the numerals 1–5 drawn
+beside the fingers**. Removed, for two reasons. It is text inside artwork, which
+is the rule that cost thirty-one regenerations (D-110) — and numerals do not
+survive translation either, since two of the seven priority locales do not
+always write them this way. More importantly it changes what the page is: the
+strategy is *look at something else and count slowly*, where counting is
+somewhere to put attention, not an exercise. With numbers the page teaches
+counting to five, and the child who cannot count yet gets a task instead of a
+rest. That is Learning Hub entering My Inner World by the side door.
+
+### D-129 `[DEFINED]` Six fillable areas, official library only
+Tap-and-fill gives a child exactly as many colours as the drawing has sealed
+regions. Measured across the five: hand 1, conversation 4, corner 9, jumping
+15, feather 19. **The hand gave one colour and nothing else to do.**
+
+So: **at least six fillable areas** in any page published in the official
+ColorHugs library, with every internal dividing line touching the outer outline
+at both ends.
+
+**Scope, decided deliberately.** The official library only. Imagine & Create
+cannot guarantee it — no model does — and enforcing it there would mean
+re-generating on failure, at real cost, in the most expensive feature we have.
+A child's own drawing in Kids Draw for Kids almost never has six sealed
+regions and often has none. **Those two depend on the brush instead, and
+downloading is offered prominently, because paper is where they work best.**
+
+**On paper the rule does not apply.** With crayons, a one-region hand is a whole
+hand to colour however you like. The limit belongs to the screen, and rejecting
+good art because of it would be a mistake.
+
+`scripts/prepare-colouring.py` **refuses to export** a page below six. A rule
+nobody checks is not a rule.
+
+**A floor on the areas, learned the hard way.** The first version of the checker
+passed the numbered hand — the five hollow digits counted as five areas, so
+1 + 5 = 6. The hand was still one region and still gave one colour. A fillable
+area must now be at least 0.5% of the image to count. Without a floor the rule
+is trivially gamed, and the thing that gamed it was not a person.
+
+### D-130 `[DEFINED]` The brush is no longer optional
+Not as the first mode: tap-and-fill stays the accessible one, because a
+four-year-old does not have the finger control for a brush and going outside
+the line twenty times is defeating. But the brush is what makes it possible to
+colour a drawing that cannot obey the six-region rule — which is every
+AI-generated page and every child's drawing. Without it, D-129's scope decision
+leaves those two with nothing.
+
+### D-131 `[DEFINED]` Every published page has both routes
+**Colour it on screen, or download the PDF.** Neither is a fallback for the
+other: some children have a printer and crayons and no patience for a screen,
+and some have the opposite.
+
+PDFs are generated at build time from the same line art — A4, centred, 300 dpi,
+static files needing no server and no JavaScript. For Imagine & Create and Kids
+Draw the download is not merely available but **encouraged**, since those are
+the pages the brush serves and paper serves better.
+
+**No title and no feeling name on the page.** By D-120 the file must not report
+what the child chose. Only the quiet ColorHugs mark belongs there.
+
+### Q-032 `[OPEN QUESTION]` Encouraging download of another child's drawing
+D-131 encourages downloading in Kids Draw for Kids — which means one child's
+artwork travelling to strangers' devices as a file, beyond any later
+withdrawal. Q-016 already needs a legal position on consent for reuse; this
+raises the same question with the added fact that a downloaded file cannot be
+taken back. **The encouragement should not ship for Kids Draw until Q-016 is
+answered.** It is uncontroversial for Imagine & Create, where the child
+downloads her own page.
+
+### D-132 `[IMPLEMENTATION]` Angry's five pages, at the fourth attempt
+Passed: hand 7 areas, feather 11, corner 11, jumping 13, conversation 21. Ink
+5.3%–8.6%, one family, no leaks. Each exported as a WebP for the screen and an
+A4 PDF for printing.
+
+**What the three failed attempts taught, and it is mostly about prompting.**
+
+*Round one* — the hand was one open shape: the wrist lines stopped in mid-air
+and colour poured out to the whole page.
+
+*Round two* — the closed hand arrived with the numerals 1–5 beside the fingers.
+Text inside artwork (D-110), and it changed what the page taught: counting is
+somewhere to put attention, not an exercise.
+
+*Round three* — the two people pages came back gendered, both reading as boys,
+one as a boy with his dad. **Instructive tension:** dividing a person into
+colourable areas nearly forces clothing, because an unclothed outline body has
+few natural divisions. Clothing stays; hair was the gender signal — and hair is
+itself a colourable area, which helps reach eight.
+
+*The bald detour was my error.* The plain round head is right for the body map,
+where it is interface a child sees for a second, and wrong for a page she sits
+with for ten minutes: there it reads not as *any child* but as *no child*. And
+I had taken the thin object pages as the style reference and told the people
+pages to slim down — backwards. The reference is the ColorHugs stickers and
+logo: thick, even, rounded. The people pages were closer to right than the ones
+I was matching them to.
+
+*Round four* also needed **a fresh conversation.** "No hair" from an earlier
+turn kept being carried forward despite the new prompt asking for hair. Two
+prompting lessons worth keeping: state what **must** exist rather than
+describing how it should look — "every figure must have hair, bald is wrong"
+works where "simple hair" does not; and list forbidden details one by one,
+since "simple face" returned eyebrows, ears and a nose.
+
+**Minor, not blocking:** the jumping page's ground line stops short of the left
+edge, and in the quiet corner the cushions cross the wall/floor line so wall
+and floor read as one area.
+
+### D-133 `[IMPLEMENTATION]` A general library folder in Color & Create
+`artwork/colouring/library/` → `public/assets/colouring/library/`, for pages
+that answer to no activity and are simply good pages to colour. First two:
+`elephant` (12 areas) and `playing-football` (12 areas), both passing the
+six-area rule.
+
+Kept separate from `strategies/`, `moments/` and `now/` so that a page which
+belongs to no strategy cannot drift into looking like one. A page filed under a
+strategy but answering to none would be unreachable from the activity and
+misleading in the data.
+
+---
+
+# Increment 25 — The strategy step, and the colouring canvas (2026-08-16)
+
+### D-134 `[IMPLEMENTATION]` Angry's path is built end to end
+Card → body map → literacy line → choose a strategy → colour the page, on
+screen or on paper. The other six families still close after the body map,
+because they have no pages yet — which is honest: nothing on screen implies
+more exists.
+
+The literacy line is general, never about this child (D-118), and the
+strategies are offered — *which would you like to try?* — never instructed.
+
+### D-135 `[IMPLEMENTATION]` The colouring canvas
+Two layers: a paint canvas beneath, the line art as a plain image on top. The
+line art is never painted over, which keeps flood fill simple and undo cheap.
+
+**Fill is bounded by the line art, not by the paint.** A pixel is a wall where
+the drawing is dark. This is exactly why D-129 exists: an unsealed line is not
+a wall, and the colour runs across the whole page.
+
+Both modes on every page (D-130). **Undo, and a limit of twelve steps** — with
+fill a wrong tap is fixed by another tap, but a wrong brush stroke crosses the
+drawing, and a child who ruins her page after ten minutes does not come back.
+
+**Nothing is saved.** Same reason as the short trail: nowhere to put it until
+Q-010, and work that vanishes when someone clears history is worse than work
+never promised. What she makes can be downloaded.
+
+Twelve colours, chosen to include a brown and a dark grey so that skin and hair
+can be coloured plausibly by more children than a primary-colour set allows.
+
+### Q-033 `[OPEN QUESTION]` What the child does with a finished page
+Right now it can be downloaded blank as a PDF, but the coloured version exists
+only on screen and is lost on leaving. Saving it needs Q-010; exporting the
+canvas as an image does not, and might be enough.

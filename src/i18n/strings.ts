@@ -14,7 +14,15 @@
  * written; the rest fall back to English until they are authored — and
  * authored is the right word: the emotion vocabulary is written per language,
  * not translated (D-101).
+ *
+ * **The text itself lives in JSON, one file per locale**, so a translator edits
+ * `pt-PT.json` and never opens a TypeScript file. It is also what lets the
+ * audio script read the strings directly: every spoken line is generated from
+ * the same source the screen reads, so the two cannot drift apart.
  */
+
+import enJson from "@/i18n/en.json";
+import ptPTJson from "@/i18n/pt-PT.json";
 
 export const LOCALES = ["en", "pt-PT"] as const;
 export type Locale = (typeof LOCALES)[number];
@@ -33,121 +41,12 @@ export const LOCALE_TAGS: Record<Locale, string> = {
   "pt-PT": "pt-PT",
 };
 
-type Dictionary = {
-  /** Interface furniture. */
-  ui: {
-    languageLabel: string;
-    home: string;
-    back: string;
-    askAGrownUp: string;
-    comingSoonTitle: string;
-    comingSoonBody: string;
-  };
-  /** Activity titles and taglines, keyed `section/activity`. */
-  activities: Record<string, { title: string; tagline: string }>;
-  /** The How Do I Feel? activity. */
-  feelings: {
-    prompt: string;
-    bodyPrompt: string;
-    bodySkip: string;
-    bodyDone: string;
-    done: string;
-    doneAgain: string;
-    change: string;
-    /** One per emotion family, in the fixed order of D-104. */
-    families: Record<string, string>;
-    /** One per body zone. */
-    zones: Record<string, string>;
-  };
-};
+type Dictionary = typeof enJson;
 
-const en: Dictionary = {
-  ui: {
-    languageLabel: "Language",
-    home: "Home",
-    back: "Back",
-    askAGrownUp: "Ask a grown-up to unlock this one",
-    comingSoonTitle: "is being made",
-    comingSoonBody: "We are still building this one. Come back soon!",
-  },
-  activities: {
-    "my-inner-world/how-do-i-feel": {
-      title: "How Do I Feel?",
-      tagline: "Name what you are feeling today",
-    },
-  },
-  feelings: {
-    prompt: "How do you feel today?",
-    bodyPrompt: "Where do you feel it?",
-    bodySkip: "I would rather not say",
-    bodyDone: "Done",
-    done: "Thank you for telling me.",
-    doneAgain: "Choose again",
-    change: "Pick a different feeling",
-    families: {
-      happy: "Happy",
-      calm: "Calm",
-      sad: "Sad",
-      scared: "Scared",
-      angry: "Angry",
-      ashamed: "Ashamed",
-      bored: "Bored",
-    },
-    zones: {
-      head: "Head",
-      chest: "Chest",
-      stomach: "Tummy",
-      arms: "Arms and hands",
-      legs: "Legs and feet",
-    },
-  },
+const DICTIONARIES: Record<Locale, Dictionary> = {
+  en: enJson,
+  "pt-PT": ptPTJson as Dictionary,
 };
-
-const ptPT: Dictionary = {
-  ui: {
-    languageLabel: "Língua",
-    home: "Início",
-    back: "Voltar",
-    askAGrownUp: "Pede a um adulto para abrir esta",
-    comingSoonTitle: "está a ser feita",
-    comingSoonBody: "Ainda estamos a construir esta. Volta em breve!",
-  },
-  activities: {
-    "my-inner-world/how-do-i-feel": {
-      title: "Como Me Sinto?",
-      tagline: "Diz o que estás a sentir hoje",
-    },
-  },
-  feelings: {
-    prompt: "Como te sentes hoje?",
-    bodyPrompt: "Onde é que sentes isso?",
-    bodySkip: "Prefiro não dizer",
-    bodyDone: "Pronto",
-    done: "Obrigada por me contares.",
-    doneAgain: "Escolher outra vez",
-    change: "Escolher outro sentimento",
-    families: {
-      happy: "Feliz",
-      calm: "Calmo",
-      sad: "Triste",
-      scared: "Assustado",
-      angry: "Zangado",
-      // The family is Tédio in the documentation; the child sees the word she
-      // actually says, and the drawing beside it removes the ambiguity (D-103).
-      ashamed: "Envergonhado",
-      bored: "Aborrecido",
-    },
-    zones: {
-      head: "Cabeça",
-      chest: "Peito",
-      stomach: "Barriga",
-      arms: "Braços e mãos",
-      legs: "Pernas e pés",
-    },
-  },
-};
-
-const DICTIONARIES: Record<Locale, Dictionary> = { en, "pt-PT": ptPT };
 
 export function strings(locale: Locale): Dictionary {
   return DICTIONARIES[locale] ?? DICTIONARIES[DEFAULT_LOCALE];
@@ -164,5 +63,8 @@ export function activityStrings(
   activity: string,
   fallback: { title: string; tagline: string },
 ): { title: string; tagline: string } {
-  return strings(locale).activities[`${section}/${activity}`] ?? fallback;
+  const found = (strings(locale).activities as Record<string, { title: string; tagline: string }>)[
+    `${section}/${activity}`
+  ];
+  return found ?? fallback;
 }

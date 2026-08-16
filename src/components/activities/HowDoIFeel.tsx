@@ -12,6 +12,9 @@ import {
 } from "@/data/emotions";
 import { useLocale } from "@/i18n/LocaleProvider";
 import { strings } from "@/i18n/strings";
+import ColouringCanvas from "@/components/activities/ColouringCanvas";
+import { pagesForFamily } from "@/data/colouring";
+import SpeakButton from "@/components/ui/SpeakButton";
 import { asset } from "@/lib/site";
 
 /**
@@ -39,30 +42,50 @@ import { asset } from "@/lib/site";
  *    is the record (D-105).
  */
 
-type Stage = "choose" | "body" | "done";
+type Stage = "choose" | "body" | "strategy" | "colour" | "done";
 
 export default function HowDoIFeel() {
   const { locale } = useLocale();
-  const t = strings(locale).feelings;
+  const all = strings(locale).feelings;
+  // The JSON gives each family its own literal key. Widening to a record keeps
+  // the lookup honest — the ids come from EMOTIONS, which is the same list.
+  const t = {
+    ...all,
+    families: all.families as Record<string, string>,
+    zones: all.zones as Record<string, string>,
+    literacy: all.literacy as Record<string, string>,
+    pages: all.pages as Record<string, string>,
+  };
 
   const [stage, setStage] = useState<Stage>("choose");
   const [chosen, setChosen] = useState<string | null>(null);
   const [zone, setZone] = useState<BodyZone | null>(null);
+  const [page, setPage] = useState<string | null>(null);
 
   const family = EMOTIONS.find((e) => e.id === chosen) ?? null;
+  // Only angry is authored so far. A family with no pages closes after the
+  // body map, which is honest — nothing on screen implies more exists.
+  const pages = family ? pagesForFamily(family.id) : [];
+  const chosenPage = pages.find((p) => p.id === page) ?? null;
 
   function reset() {
     setChosen(null);
     setZone(null);
+    setPage(null);
     setStage("choose");
+  }
+
+  function afterBody() {
+    setStage(pages.length ? "strategy" : "done");
   }
 
   return (
     <section className="mx-auto w-full max-w-3xl">
       {stage === "choose" ? (
         <>
-          <h2 className="text-center font-display font-700 text-ch-ink">
+          <h2 className="flex items-center justify-center gap-3 text-center font-display font-700 text-ch-ink">
             {t.prompt}
+            <SpeakButton textKey="feelings.prompt" />
           </h2>
 
           {/*
@@ -108,8 +131,9 @@ export default function HowDoIFeel() {
 
       {stage === "body" && family ? (
         <>
-          <h2 className="text-center font-display font-700 text-ch-ink">
+          <h2 className="flex items-center justify-center gap-3 text-center font-display font-700 text-ch-ink">
             {t.bodyPrompt}
+            <SpeakButton textKey="feelings.bodyPrompt" />
           </h2>
 
           <div className="mt-6 flex flex-col items-center gap-6 sm:flex-row sm:items-start sm:justify-center">
@@ -130,13 +154,14 @@ export default function HowDoIFeel() {
                   className="object-contain"
                 />
               </span>
-              <p className="text-center font-display font-700 text-ch-ink">
+              <p className="flex items-center justify-center gap-2 text-center font-display font-700 text-ch-ink">
                 {t.families[family.id]}
+                <SpeakButton textKey={`feelings.families.${family.id}`} />
               </p>
 
               <button
                 type="button"
-                onClick={() => setStage("done")}
+                onClick={afterBody}
                 className="min-h-[64px] rounded-full bg-[--sec-accent] px-6 font-display font-700 text-white shadow-[0_10px_24px_-14px_rgba(27,42,91,0.8)]"
               >
                 {/*
@@ -160,6 +185,102 @@ export default function HowDoIFeel() {
         </>
       ) : null}
 
+      {stage === "strategy" && family ? (
+        <>
+          {/*
+            Literacy about the feeling in general, never about this child.
+            "Sometimes people feel angry when something seems unfair" is
+            description; "you are angry because…" is interpretation (D-118).
+          */}
+          <p className="mx-auto max-w-lg text-center text-lg text-ch-ink/80">
+            {t.literacy[family.id]}
+          </p>
+
+          {/*
+            Offered as a choice. "Which would you like to try?" closes and
+            leaves the choice with her; "do this" decides for her, and deciding
+            what a child should do next is a person's work.
+          */}
+          <h2 className="mt-6 flex items-center justify-center gap-3 text-center font-display font-700 text-ch-ink">
+            {t.strategyPrompt}
+            <SpeakButton textKey="feelings.strategyPrompt" />
+          </h2>
+
+          <ul className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
+            {pages.map((option) => (
+              <li key={option.id}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setPage(option.id);
+                    setStage("colour");
+                  }}
+                  className="flex w-full flex-col items-center gap-1 rounded-sticker bg-white/70 p-3 transition-transform duration-150 hover:-translate-y-1 motion-reduce:transform-none"
+                >
+                  <span className="relative block aspect-square w-full">
+                    <Image
+                      src={asset(`${option.src}.webp`)}
+                      alt=""
+                      fill
+                      sizes="(max-width: 640px) 45vw, 200px"
+                      className="object-contain"
+                    />
+                  </span>
+                  <span className="text-center font-display font-700 text-ch-ink">
+                    {t.pages[option.id]}
+                  </span>
+                </button>
+              </li>
+            ))}
+          </ul>
+
+          <div className="mt-6 text-center">
+            <button
+              type="button"
+              onClick={reset}
+              className="min-h-[64px] rounded-full bg-white/80 px-6 font-display font-600 text-ch-ink/80"
+            >
+              {t.change}
+            </button>
+          </div>
+        </>
+      ) : null}
+
+      {stage === "colour" && chosenPage ? (
+        <>
+          <h2 className="flex items-center justify-center gap-3 text-center font-display font-700 text-ch-ink">
+            {t.pages[chosenPage.id]}
+            <SpeakButton textKey={`feelings.pages.${chosenPage.id}`} />
+          </h2>
+          <p className="mt-1 text-center text-ch-ink/70">{t.colourPrompt}</p>
+
+          <div className="mt-5">
+            <ColouringCanvas
+              src={`${chosenPage.src}.webp`}
+              pdf={`${chosenPage.src}.pdf`}
+              alt={chosenPage.alt}
+            />
+          </div>
+
+          <div className="mt-6 flex flex-wrap justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => setStage("strategy")}
+              className="min-h-[64px] rounded-full bg-white/80 px-6 font-display font-600 text-ch-ink/80"
+            >
+              {t.change}
+            </button>
+            <button
+              type="button"
+              onClick={() => setStage("done")}
+              className="min-h-[64px] rounded-full bg-[--sec-accent] px-8 font-display font-700 text-white"
+            >
+              {t.bodyDone}
+            </button>
+          </div>
+        </>
+      ) : null}
+
       {stage === "done" && family ? (
         <div className="mx-auto max-w-md text-center">
           <span className="relative mx-auto block aspect-square w-48">
@@ -177,7 +298,10 @@ export default function HowDoIFeel() {
             "calm" is — the moment one answer gets a warmer reply than another,
             the child learns which one to give.
           */}
-          <p className="mt-4 font-display font-700 text-ch-ink">{t.done}</p>
+          <p className="mt-4 flex items-center justify-center gap-3 font-display font-700 text-ch-ink">
+            {t.done}
+            <SpeakButton textKey="feelings.done" />
+          </p>
           <button
             type="button"
             onClick={reset}

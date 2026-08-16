@@ -195,18 +195,73 @@ def prepare_figure(path: str, out_dir: str) -> dict:
     return manifest
 
 
+def normalise_cards(images: dict[str, Image.Image], side: int) -> dict[str, Image.Image]:
+    """Put every card on the same square canvas at the same character scale.
+
+    Trimming each card to its own bounding box — the pipeline used for section
+    stickers, where each is a different subject — is wrong here. These seven
+    are the *same character*, and a child compares them side by side: if happy
+    renders smaller than bored, the child is reading a size difference that
+    means nothing.
+
+    The originals cannot simply be kept either. They were generated at two
+    canvas sizes and framed differently, from 0.64 to 0.85 of the frame height.
+
+    Scale is normalised by **ink area** — the character's mass — rather than by
+    height or width, because raised arms make happy wide and short while bored
+    slumps narrow and tall. Area is the one measure that means the same thing
+    across all seven poses.
+    """
+    areas = {
+        name: int((np.asarray(img)[..., 3] > 128).sum()) for name, img in images.items()
+    }
+    target = float(np.median(list(areas.values())))
+
+    # Area-normalised size each card wants, before anything is made to fit.
+    wanted = {
+        name: (
+            img.size[0] * (target / areas[name]) ** 0.5,
+            img.size[1] * (target / areas[name]) ** 0.5,
+        )
+        for name, img in images.items()
+    }
+
+    # One shared factor brings the largest inside the canvas. Shrinking only
+    # the ones that overflow would undo the normalisation it just did — which
+    # is the bug this comment exists to stop someone reintroducing.
+    largest = max(max(w, h) for w, h in wanted.values())
+    fit = min(1.0, (side - 8) / largest)
+
+    out = {}
+    for name, img in images.items():
+        w, h = wanted[name]
+        scaled = img.resize(
+            (max(1, round(w * fit)), max(1, round(h * fit))), Image.LANCZOS
+        )
+        canvas = Image.new("RGBA", (side, side), (255, 255, 255, 0))
+        canvas.paste(
+            scaled, ((side - scaled.width) // 2, (side - scaled.height) // 2), scaled
+        )
+        out[name] = canvas
+    return out
+
+
 def main():
     cards_dir = os.path.join(DST, "emotions")
     os.makedirs(cards_dir, exist_ok=True)
 
+    cut = {}
     for name in CARDS:
         src = os.path.join(SRC, f"{name}.png")
         if not os.path.exists(src):
             print(f"  {name:9} MISSING SOURCE")
             continue
-        img = downscale(cut_white(Image.open(src), rim_ratio=0.016), MAX_CARD)
+        cut[name] = cut_white(Image.open(src), rim_ratio=0.016)
+
+    for name, img in normalise_cards(cut, MAX_CARD).items():
         img.save(os.path.join(cards_dir, f"{name}.webp"), "WEBP", quality=92, method=6)
-        print(f"  {name:9} {img.size[0]}x{img.size[1]}")
+        ink = int((np.asarray(img)[..., 3] > 128).sum())
+        print(f"  {name:9} {img.size[0]}x{img.size[1]}  ink {ink / (MAX_CARD ** 2) * 100:5.1f}%")
 
     figure = os.path.join(SRC, "body-figure.png")
     if os.path.exists(figure):

@@ -1,0 +1,59 @@
+{
+  "ui": {
+    "languageLabel": "Língua",
+    "home": "Início",
+    "back": "Voltar",
+    "askAGrownUp": "Pede a um adulto para abrir esta",
+    "comingSoonTitle": "está a ser feita",
+    "comingSoonBody": "Ainda estamos a construir esta. Volta em breve!",
+    "listen": "Ouvir"
+  },
+  "activities": {
+    "my-inner-world/how-do-i-feel": {
+      "title": "Como Me Sinto?",
+      "tagline": "Diz o que estás a sentir hoje"
+    }
+  },
+  "feelings": {
+    "prompt": "Como te sentes hoje?",
+    "bodyPrompt": "Onde é que sentes isso?",
+    "bodySkip": "Prefiro não dizer",
+    "bodyDone": "Pronto",
+    "done": "Obrigada por me contares.",
+    "doneAgain": "Escolher outra vez",
+    "change": "Escolher outro sentimento",
+    "families": {
+      "happy": "Feliz",
+      "calm": "Calmo",
+      "sad": "Triste",
+      "scared": "Assustado",
+      "angry": "Zangado",
+      "ashamed": "Envergonhado",
+      "bored": "Aborrecido"
+    },
+    "zones": {
+      "head": "Cabeça",
+      "chest": "Peito",
+      "stomach": "Barriga",
+      "arms": "Braços e mãos",
+      "legs": "Pernas e pés"
+    },
+    "literacy": {
+      "angry": "A zanga costuma aparecer quando alguma coisa parece injusta, ou quando queríamos muito uma coisa e não conseguimos. Chega depressa, e demora mais tempo a ir-se embora do que a chegar."
+    },
+    "strategyPrompt": "Qual queres experimentar?",
+    "colourPrompt": "Pinta como quiseres",
+    "download": "Imprimir esta página",
+    "undo": "Anular",
+    "clear": "Começar de novo",
+    "fillMode": "Encher",
+    "brushMode": "Pincel",
+    "pages": {
+      "talking-together": "Ir ter com alguém",
+      "quiet-corner": "Sair dali",
+      "counting-fingers": "Contar devagar",
+      "floating-feather": "Respirar devagar",
+      "jumping": "Mexer o corpo"
+    }
+  }
+}
