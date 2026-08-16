@@ -2027,7 +2027,130 @@ never promised. What she makes can be downloaded.
 Twelve colours, chosen to include a brown and a dark grey so that skin and hair
 can be coloured plausibly by more children than a primary-colour set allows.
 
-### Q-033 `[OPEN QUESTION]` What the child does with a finished page
-Right now it can be downloaded blank as a PDF, but the coloured version exists
-only on screen and is lost on leaving. Saving it needs Q-010; exporting the
-canvas as an image does not, and might be enough.
+### D-136 `[DEFINED]` The colouring is not kept — closes Q-033
+Raised as a gap: the child paints, leaves, and it is gone; the PDF downloads
+blank rather than as she coloured it. **It is not a gap.**
+
+The download exists so she can colour *by hand, on paper* — not so a record of
+what she coloured on screen follows her home. The blank PDF is not an
+incomplete version of her painting; it is a different thing, for a different
+place, with crayons and a table.
+
+This is the same decision as the activity itself (D-112), applied to the
+drawing: **it happens in the moment and does not stay.** And it extends the
+division already drawn between screen and paper — paper carries what lasts, the
+screen carries the moment. That split now earns its keep twice.
+
+It also removes a whole class of problem rather than deferring it. Nothing to
+moderate, nothing to delete, nothing a parent finds. A child who paints the
+whole page black leaves no trace: she painted, she left, it is done.
+
+**It does not wait on Q-010** — this is not "nowhere to store it yet", it is
+nothing to store.
+
+**One thing to keep in view, without adding a dialog.** Ten minutes of painting
+is lost by an accidental tap on *Start again*, and no warning is given.
+Confirmation boxes are tedious and teach children to press *yes* without
+reading. Undo already covers *Start again* exactly as it covers any stroke —
+it is built that way, and that is the safeguard. Do not let a later change
+break it.
+
+### D-137 `[IMPLEMENTATION]` The PDF fills the sheet, and carries the mark
+Two faults found by printing one.
+
+**The drawing was a stamp in the middle of the page.** `Image.thumbnail` only
+ever shrinks; the sources are around 1250px and the printable area is over
+2000, so it left them at original size on an A4 sheet. Replaced with a fit that
+scales up as well as down. A child colours with a crayon, not a needle.
+
+**No mark and no small print.** The page now carries the ColorHugs logo and one
+line beneath it, with a footer band reserved so nothing crowds the art.
+
+**The line is deliberately language-neutral** — `colorhugs.pt · © year
+ColorHugs`. A translatable sentence in the footer would mean seven versions of
+every PDF, for ever: the D-081 trap in another form. And by D-120 nothing on
+the page may name the feeling the child chose, so a parent who finds this file
+learns nothing about her.
+
+### D-138 `[DEFINED]` A wordless colour band heads the page
+Two layouts were printed and compared: a band of the seven section accents at
+the head with the mark at the foot, against the mark at the head with only the
+small line at the foot.
+
+**The band wins, and one reason only showed up on paper: the drawing comes out
+measurably larger.** With the mark already at the foot, the head needs only a
+thin band; putting the mark at the top costs space at both ends and shrinks the
+art. On a sheet that exists to be painted, that decides it.
+
+It also frames the page — without it the drawing floats — and it is the only
+colour on the sheet, which suits the object: the paper starts with a little
+colour and the child adds the rest.
+
+**No title, in any variant.** *Go and tell someone* printed across the top would
+tell anyone holding the sheet that the child chose angry. Same reason the pages
+are named for what they show. And a wordless band costs no translation, where a
+heading would mean a PDF per page *per locale*.
+
+### D-139 `[IMPLEMENTATION]` Explore & Color is built, and holds every page
+The whole library, free in full. Seven pages: the two general ones and the five
+that a strategy leads to.
+
+**The strategy pages appear here too** (D-119). Hidden, the choice inside How Do
+I Feel? would become a reward to unlock, and a child would start choosing the
+feeling that gives the drawing she wants.
+
+**Named for the picture, never for the strategy.** The bench page is *On the
+bench* here, not *Go and tell someone*; the feather is *Feather*, not *Breathe
+slowly*. A child browsing the library has no reason to meet a feeling she did
+not choose, and a name that carried its strategy would carry the feeling with
+it (D-120). The same drawing therefore has two labels — its strategy name
+inside the activity, its plain name in the library — and both live in the
+language file, not in the artwork.
+
+The canvas is the same component in both places, so a page gains fill, brush,
+undo and the printable PDF by existing, with no per-page work.
+
+### D-140 `[IMPLEMENTATION]` Jumping regenerated, and PDFs trim before scaling
+The ground line now runs the full width — verified, not judged by eye: it
+covers 100% of the image width and reaches both edges. Twelve fillable areas,
+ink 5.3%, in family with the other four.
+
+**Three phrasings of the same instruction were needed** to get it: state the
+line spans edge to edge, state it must not stop short, and give the picture —
+*think of it as the horizon*. One phrasing had failed twice.
+
+**A second fault showed up only in print.** The child sat in the upper two
+thirds of its square, so on A4 it printed noticeably smaller than the elephant,
+which filled its own. How much of the sheet a drawing covered depended on how
+the generator happened to frame it, not on the drawing.
+
+The PDF step now trims the empty margin before scaling, with a small pad. Same
+reasoning as normalising the emotion cards by mass (D-122): remove the
+accident of framing so the comparison is between drawings.
+
+**PDF only.** The WebP stays square, because the colouring canvas takes its
+size from the image and assumes a square frame. Changing that would need the
+canvas changed with it, and the print fault did not warrant the risk.
+
+### D-141 `[DEFINED]` Twenty-four colours, in composed rows
+Twelve was too few, and the elephant showed why: a child who wants to colour an
+elephant reaches for a grey, finds none, uses whatever is nearest, and the page
+quietly becomes a colour-matching exercise instead of hers.
+
+**More colours cost nothing in tap-target size.** The grid stays six wide, so
+swatches keep their width and only the panel grows taller. Swatch height went
+from 48 to 56px at the same time.
+
+The rows are composed rather than gathered:
+
+1. **warm** — reds, oranges, yellows
+2. **cool** — greens, blues, purples
+3. **skin** — four tones, so a child can colour a person to look like someone
+   she knows. Four is the least that is honest: a single "flesh" colour tells
+   most of the world the product is not for them.
+4. **hair, earth and neutrals**, ending in white — which doubles as an eraser,
+   since the paint layer sits on white.
+
+Row three matters more than the count. The neutral outline figure (D-106) has
+no skin tone precisely so that no child is left out; a palette with one skin
+colour would put that back the moment she starts painting.

@@ -2,10 +2,8 @@ Copie tudo para a raiz do repositório, substituindo o que existe.
 Inclui tudo o que estava nos pacotes anteriores.
 
 NOVO NESTE
-  o passo das estratégias e a tela de pintura na actividade
-  as sete páginas processadas, .webp e .pdf
-  o conteúdo do zangado em src/data/colouring.ts e nos ficheiros de língua
+  paleta de 24 cores, com quatro tons de pele e brancos/cinzentos
 
 Commit sugerido:
 
-  feat: angry strategies and colouring canvas (D-132 to D-135)
+  feat: twenty-four colour palette (D-141)

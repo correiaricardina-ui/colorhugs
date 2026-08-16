@@ -12,6 +12,10 @@
     "my-inner-world/how-do-i-feel": {
       "title": "Como Me Sinto?",
       "tagline": "Diz o que estás a sentir hoje"
+    },
+    "color-and-create/explore-and-color": {
+      "title": "Explorar e Pintar",
+      "tagline": "Escolhe um desenho e pinta"
     }
   },
   "feelings": {
@@ -54,6 +58,19 @@
       "counting-fingers": "Contar devagar",
       "floating-feather": "Respirar devagar",
       "jumping": "Mexer o corpo"
+    }
+  },
+  "library": {
+    "pick": "Escolhe um desenho",
+    "back": "Escolher outro desenho",
+    "pages": {
+      "elephant": "Elefante",
+      "playing-football": "A jogar à bola",
+      "talking-together": "No banco",
+      "quiet-corner": "Almofadas",
+      "counting-fingers": "A minha mão",
+      "floating-feather": "Pena",
+      "jumping": "Aos saltos"
     }
   }
 }

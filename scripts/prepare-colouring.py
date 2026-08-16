@@ -32,7 +32,8 @@ import os
 import sys
 
 import numpy as np
-from PIL import Image, ImageFilter
+from datetime import date
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from scipy import ndimage
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -57,6 +58,37 @@ MAX_EDGE = 1400
 # A4 at 300 dpi, with a margin wide enough for small hands and cheap printers.
 A4 = (2480, 3508)
 MARGIN = 190
+
+# Room at the foot of the page for the mark and the small print. Kept out of
+# the drawing's box so nothing crowds the art.
+FOOTER_HEIGHT = 300
+
+LOGO = os.path.join(ROOT, "public", "assets", "branding", "colorhugs-logo.webp")
+FONT = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+
+# The only words on the page, and deliberately language-neutral: a domain and a
+# copyright line read the same in every locale. A translatable sentence here
+# would need seven versions of every PDF, for ever — the D-081 trap in another
+# form. And by D-120 nothing may name the feeling the child chose.
+FOOTER_TEXT = "colorhugs.pt"
+
+# The band across the head of the page: the seven section accents, in the order
+# of the seven areas, taken from globals.css. It frames the sheet without a
+# single word — so it costs no translation, and by D-120 it cannot report what
+# the child chose. It is also the only colour on the page, which suits a sheet
+# that exists to be coloured: the paper starts with a little colour and the
+# child adds the rest.
+BAND_COLOURS = [
+    "#2F6FD0",  # Learning Hub
+    "#E0619A",  # Brain Gym
+    "#8B6FE0",  # My Inner World
+    "#EF7D3D",  # Kids Draw
+    "#3FA96B",  # Color & Create
+    "#D9911A",  # My ColorHugs
+    "#E0566A",  # Community
+]
+BAND_HEIGHT = 46
+BAND_GAP = 70
 
 
 def sealed_regions(grey, alpha=None):
@@ -91,20 +123,91 @@ def cut_white(img):
     return out
 
 
+def fit(img, box):
+    """Scale to fill the box, up or down, keeping the proportions.
+
+    `Image.thumbnail` only ever shrinks. The source drawings are around 1250px
+    and the printable area is over 2000, so thumbnail left them a stamp in the
+    middle of an A4 sheet. A colouring page has to fill the paper — a child
+    colours with a crayon, not a needle.
+    """
+    scale = min(box[0] / img.width, box[1] / img.height)
+    return img.resize(
+        (max(1, round(img.width * scale)), max(1, round(img.height * scale))),
+        Image.LANCZOS,
+    )
+
+
 def to_pdf(img, target):
-    """One page, A4, centred, black on white.
+    """One page, A4, the drawing filling the sheet, with the mark beneath.
 
     No title and no feeling name — by D-120 the file must not report what the
-    child chose. Only the quiet ColorHugs mark belongs here, and it is added to
-    the artwork rather than drawn as text.
+    child chose. A parent finding this PDF learns nothing about her.
     """
     page = Image.new("RGB", A4, "white")
-    art = img.convert("RGBA")
-    box = (A4[0] - 2 * MARGIN, A4[1] - 2 * MARGIN)
-    art.thumbnail(box, Image.LANCZOS)
+    draw = ImageDraw.Draw(page)
+
+    # Header band. Keeping the mark at the foot rather than repeating it here
+    # leaves the drawing measurably larger, and the sheet exists to be painted.
+    width = A4[0] - 2 * MARGIN
+    segment = width / len(BAND_COLOURS)
+    for index, colour in enumerate(BAND_COLOURS):
+        x = MARGIN + index * segment
+        draw.rounded_rectangle(
+            [x, MARGIN, x + segment - 6, MARGIN + BAND_HEIGHT],
+            radius=20,
+            fill=colour,
+        )
+
+    art_top = MARGIN + BAND_HEIGHT + BAND_GAP
+    box = (width, A4[1] - art_top - MARGIN - FOOTER_HEIGHT)
+
+    # Trim the empty margin the generator happened to leave before scaling, so
+    # how much of the sheet a drawing fills depends on the drawing and not on
+    # how it was framed. The jumping child sat in the top two thirds of its
+    # square and printed noticeably smaller than the elephant, which filled its
+    # own. Same reasoning as normalising the emotion cards (D-122).
+    #
+    # PDF only. The WebP stays square, because the canvas sets its size from the
+    # image and assumes a square frame.
+    trimmed = img.convert("RGBA")
+    bbox = trimmed.convert("L").point(lambda v: 255 if v < 200 else 0).getbbox()
+    if bbox:
+        pad = round(max(trimmed.size) * 0.02)
+        trimmed = trimmed.crop(
+            (
+                max(0, bbox[0] - pad),
+                max(0, bbox[1] - pad),
+                min(trimmed.width, bbox[2] + pad),
+                min(trimmed.height, bbox[3] + pad),
+            )
+        )
+
+    art = fit(trimmed, box)
     flat = Image.new("RGB", art.size, "white")
     flat.paste(art, (0, 0), art)
-    page.paste(flat, ((A4[0] - art.width) // 2, (A4[1] - art.height) // 2))
+    page.paste(flat, ((A4[0] - art.width) // 2, art_top + (box[1] - art.height) // 2))
+
+    footer_top = A4[1] - MARGIN - FOOTER_HEIGHT
+
+    if os.path.exists(LOGO):
+        logo = fit(Image.open(LOGO).convert("RGBA"), (900, 170))
+        page.paste(logo, ((A4[0] - logo.width) // 2, footer_top), logo)
+        text_y = footer_top + logo.height + 40
+    else:
+        text_y = footer_top + 60
+
+    try:
+        font = ImageFont.truetype(FONT, 46)
+    except OSError:
+        font = ImageFont.load_default()
+
+    line = f"{FOOTER_TEXT}   ·   © {date.today().year} ColorHugs"
+    width = draw.textlength(line, font=font)
+    draw.text(
+        ((A4[0] - width) / 2, text_y), line, fill=(120, 128, 150), font=font
+    )
+
     page.save(target, "PDF", resolution=300)
 
 

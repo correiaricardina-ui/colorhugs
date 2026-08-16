@@ -470,7 +470,7 @@ export const SECTIONS: Section[] = [
         // Free in full: every folder of colouring pages, not a sample.
         tagline: "Pick a picture and colour it in",
         access: { kind: "free" },
-        status: "planned",
+        status: "live",
         origin: "official-library",
         sticker: {
           src: "/assets/stickers/color-and-create/explore-and-color.webp",

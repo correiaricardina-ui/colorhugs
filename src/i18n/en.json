@@ -12,6 +12,10 @@
     "my-inner-world/how-do-i-feel": {
       "title": "How Do I Feel?",
       "tagline": "Name what you are feeling today"
+    },
+    "color-and-create/explore-and-color": {
+      "title": "Explore & Color",
+      "tagline": "Pick a picture and colour it in"
     }
   },
   "feelings": {
@@ -54,6 +58,19 @@
       "counting-fingers": "Count slowly",
       "floating-feather": "Breathe slowly",
       "jumping": "Move your body"
+    }
+  },
+  "library": {
+    "pick": "Pick a picture",
+    "back": "Pick another picture",
+    "pages": {
+      "elephant": "Elephant",
+      "playing-football": "Playing football",
+      "talking-together": "On the bench",
+      "quiet-corner": "Cushions",
+      "counting-fingers": "My hand",
+      "floating-feather": "Feather",
+      "jumping": "Jumping"
     }
   }
 }

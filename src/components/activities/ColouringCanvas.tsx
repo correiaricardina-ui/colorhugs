@@ -20,16 +20,44 @@ import { asset } from "@/lib/site";
  * With a brush, a wrong stroke crosses the drawing and there is no way back —
  * and a child who ruins her page after ten minutes does not come back.
  *
- * **Nothing is saved, in this version.** Same reason as the short trail: there
- * is nowhere to put it until Q-010 is answered, and work that vanishes when
- * someone clears history is worse than work that was never promised. What she
- * makes can be downloaded.
+ * **Nothing is saved, and that is the design** (D-136). The activity happens in
+ * the moment and does not stay — the same decision as the activity itself. The
+ * download exists so a child can colour *by hand, on paper*, not so a record of
+ * what she coloured on screen follows her home; the blank PDF is a different
+ * thing for a different place, not an incomplete version of her painting.
+ *
+ * It also removes a class of problem rather than deferring it: nothing to
+ * moderate, nothing to delete, nothing a parent finds.
+ *
+ * **Undo covers Start again**, deliberately. Ten minutes of painting is lost by
+ * one accidental tap, and a confirmation box is tedious and teaches a child to
+ * press yes without reading. Do not let a later change break this.
  */
 
+/**
+ * Twenty-four colours, in four rows of six.
+ *
+ * Twelve was too few, and the elephant showed why: a child who wants to colour
+ * an elephant reaches for a grey and finds none, so she uses whatever is
+ * nearest and the page becomes a colour-matching exercise instead of hers.
+ *
+ * More colours cost nothing in tap-target size — the grid stays six wide, so
+ * the swatches keep their width and only the panel grows taller.
+ *
+ * The rows are composed rather than gathered:
+ *   1  warm     — reds, oranges, yellows
+ *   2  cool     — greens, blues, purples
+ *   3  skin     — a real range, so a child can colour a person to look like
+ *                 someone she knows. Four tones is the least that is honest;
+ *                 one "flesh" colour tells most of the world it is not for them.
+ *   4  hair, earth and neutrals, ending in white — which doubles as an eraser,
+ *      since the paint layer sits on white.
+ */
 const PALETTE = [
-  "#F5B700", "#F2872F", "#E63B33", "#F495B0",
-  "#A98BDD", "#5B8DEF", "#6FC5D9", "#4FAE6A",
-  "#8FD9A8", "#A89B5C", "#8A5A3B", "#3A3A46",
+  "#F5B700", "#FFD84D", "#F2872F", "#E63B33", "#B02A26", "#F495B0",
+  "#8FD9A8", "#4FAE6A", "#2E7D52", "#6FC5D9", "#5B8DEF", "#A98BDD",
+  "#F7D9BE", "#E8B98F", "#C08552", "#8A5A3B", "#5C3A24", "#3A2418",
+  "#1F1B18", "#7A6A5A", "#A89B5C", "#B9BEC7", "#E4E7EC", "#FFFFFF",
 ];
 
 const BRUSH_WIDTH = 22;
@@ -264,8 +292,8 @@ export default function ColouringCanvas({
               style={{ backgroundColor: swatch }}
               className={
                 colour === swatch
-                  ? "h-12 w-full rounded-full ring-4 ring-ch-ink/70"
-                  : "h-12 w-full rounded-full ring-1 ring-ch-ink/15"
+                  ? "h-14 w-full rounded-full ring-4 ring-ch-ink/70"
+                  : "h-14 w-full rounded-full ring-1 ring-ch-ink/25"
               }
             />
           </li>

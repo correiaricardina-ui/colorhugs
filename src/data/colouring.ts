@@ -146,6 +146,30 @@ export const COLOURING_PAGES: ColouringPage[] = [
   },
 ];
 
+/**
+ * Pages that answer to no activity — simply good pages to colour. They live in
+ * `library/` rather than under a path folder so a page belonging to no strategy
+ * cannot drift into looking like one.
+ */
+export const LIBRARY_PAGES: ColouringPage[] = [
+  {
+    id: "elephant",
+    path: "strategy",
+    src: "/assets/colouring/library/elephant",
+    alt: "A small elephant sitting down",
+    families: [],
+    evidence: { level: "practice", note: "A picture to colour. No claim attached." },
+  },
+  {
+    id: "playing-football",
+    path: "strategy",
+    src: "/assets/colouring/library/playing-football",
+    alt: "A child running with a football",
+    families: [],
+    evidence: { level: "practice", note: "A picture to colour. No claim attached." },
+  },
+];
+
 export function pagesForFamily(family: string): ColouringPage[] {
   return COLOURING_PAGES.filter((page) => page.families.includes(family));
 }

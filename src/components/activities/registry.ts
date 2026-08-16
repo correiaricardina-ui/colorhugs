@@ -12,6 +12,9 @@ export const ACTIVITIES: Record<string, ComponentType> = {
   "my-inner-world/how-do-i-feel": dynamic(
     () => import("@/components/activities/HowDoIFeel"),
   ),
+  "color-and-create/explore-and-color": dynamic(
+    () => import("@/components/activities/ExploreAndColor"),
+  ),
 };
 
 export function activityComponent(section: string, activity: string) {
