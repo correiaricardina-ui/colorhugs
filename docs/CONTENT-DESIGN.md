@@ -260,9 +260,22 @@ mechanism, and nobody is building it for children.
   has no measure of severity, only of repetition. That is the right information
   not to have.
 
-**Three expressions** (D-059): the interactive activity, a seven-card printable
-deck with a secondary weekly sheet (D-108), and a professional application note
-(D-109) at `docs/materials/como-me-sinto-nota-aplicacao.md`.
+**Who gets what** (D-163). Declared in `src/data/access.ts`; not enforced until
+Q-010 is answered.
+
+| | Families | Fine words | Workbook |
+| --- | :---: | :---: | :---: |
+| Family — free | yes | — | — |
+| Family — premium | yes | yes | — |
+| Professional — education | yes | yes | — |
+| Professional — health | yes | yes | yes |
+
+Naming what you feel is never sold, nor is the audio, nor the first strategies
+of any feeling (D-142).
+
+**Three settings**: the interactive activity, a seven-card printable deck with
+a secondary weekly sheet (D-108), and a professional workbook (D-144) at
+`docs/materials/zangado-caderno.md`.
 
 **Build: Medium.**
 

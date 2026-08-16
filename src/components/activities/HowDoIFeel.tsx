@@ -15,6 +15,7 @@ import {
 import { useLocale } from "@/i18n/LocaleProvider";
 import { strings } from "@/i18n/strings";
 import ColouringCanvas from "@/components/activities/ColouringCanvas";
+import { CURRENT_AUDIENCE, can } from "@/data/access";
 import { pagesForFamily } from "@/data/colouring";
 import SpeakButton from "@/components/ui/SpeakButton";
 import { asset } from "@/lib/site";
@@ -85,6 +86,12 @@ export default function HowDoIFeel() {
   // The fine words are premium and optional. They are reached only by asking
   // for them, never on the way through — the activity has already closed by
   // then (D-100), so a child who does not read loses nothing.
+  //
+  // `can` is the declared rule, not an enforced one: without accounts (Q-010)
+  // every visitor is a free family and this check has nothing to check
+  // against. It is wired now so that the account system finds a place to plug
+  // into rather than a decision to make.
+  const mayOpenFineWords = can(CURRENT_AUDIENCE, "fineWords");
   const fineWords = family ? (FINE_WORDS[family.id] ?? []) : [];
 
   return (

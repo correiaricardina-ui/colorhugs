@@ -2571,3 +2571,32 @@ better name for what she already said, not a second question.
 
 This is D-100 in code: no child meets a wall, because the activity has already
 ended before the premium layer exists for her.
+
+### D-163 `[DEFINED]` Who gets what in My Inner World
+| | Families | Fine words | Workbook |
+| --- | :---: | :---: | :---: |
+| Family — free | yes | — | — |
+| Family — premium | yes | yes | — |
+| Professional — education | yes | yes | — |
+| Professional — health | yes | yes | yes |
+
+Written into `src/data/access.ts` and wired into the activity.
+
+**A teacher gets the vocabulary and not the workbook**, per D-154: the angry
+workbook as written must not go to a classroom, because material that opens,
+opens and stays open where there are thirty children, forty-five minutes and no
+clinical frame.
+
+**Declared, not enforced.** Without accounts (Q-010) there is no session to
+check, so every visitor is treated as a free family and the fine layer is
+visible in the preview build. **That is a gap, not a decision**, and it closes
+with the account system. Writing the rule first means the account work has
+something to implement rather than something to invent.
+
+### Q-034 `[OPEN QUESTION]` Education and premium are identical here
+For this activity a teacher and a paying family get exactly the same thing. That
+is coherent — the workbook is the only piece that must not cross — but it means
+**the education licence has to earn its price somewhere else**: group
+activities, classroom sequences, material for thirty children rather than one.
+Until that content exists, an education licence priced above a family
+subscription would be hard to defend.

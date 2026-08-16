@@ -5,6 +5,11 @@
 Acompanha o baralho *Como Me Sinto?*. Trata de uma família — a zanga — e das
 cinco estratégias que lhe estão associadas.
 
+**Licença de saúde.** Este caderno destina-se a psicólogos e terapeutas. A
+licença de educação dá acesso às sete famílias e às palavras derivadas, mas não
+a este caderno: contém perguntas exploratórias e dinâmicas que abrem, e material
+que abre precisa de quem o receba (D-154, D-163).
+
 ---
 
 ## 1. Enquadramento

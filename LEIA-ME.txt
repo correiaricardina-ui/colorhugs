@@ -8,16 +8,28 @@ COMO USAR
       npm install
 
 NOVO NESTA VERSÃO
-  as 24 cartas de palavras finas, nas sete famílias, processadas e ligadas
-  a camada premium no Como Me Sinto?, oferecida depois de a actividade fechar
-  scripts/prepare-fine-cards.py
+  as 24 cartas de palavras finas, nas sete famílias
+  a camada premium no Como Me Sinto?, depois de a actividade fechar
+  src/data/access.ts — quem tem acesso a quê
+
+QUEM TEM ACESSO A QUÊ (My Inner World)
+                              famílias   palavras finas   caderno
+  Família — grátis               sim           —             —
+  Família — premium              sim          sim            —
+  Profissional — educação        sim          sim            —
+  Profissional — saúde           sim          sim           sim
+
+  Declarado, não imposto: sem contas (Q-010) não há sessão para verificar,
+  portanto no preview a camada fina está visível. É uma lacuna, não uma
+  decisão, e fecha com o sistema de contas.
 
 POR FAZER, POR ORDEM
-  gerar os áudios com Piper (agora com mais 24 linhas por língua)
+  Q-010, onde vive o sistema de contas — sem ele o acesso não é imposto
+  gerar os áudios com Piper
   as estratégias das seis famílias que ainda só têm o zangado
   os seis cadernos profissionais que faltam
-  Q-010, onde vive o sistema de contas
+  conteúdo próprio para a licença de educação (Q-034)
 
 Commit sugerido:
 
-  feat: fine word cards for all seven families (D-159 to D-162)
+  feat: access model for My Inner World (D-163)
