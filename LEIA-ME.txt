@@ -8,17 +8,14 @@ COMO USAR
       npm install
 
 NOVO NESTA VERSÃO
-  os dois lockups com "Pediatric Psychology" corrigido, integrados
-  a capa do caderno do zangado regenerada com o lockup novo
-  a página de espera deixa de mostrar a faixa da marca
+  scripts/build-workbook-pdf.py — o caderno passa a compor-se em PDF
+      python scripts/build-workbook-pdf.py angry
+      -> docs/materials/zangado-caderno.pdf   (10 páginas, com capa)
+
+  os dois lockups com "Pediatric Psychology" corrigido
+  a página de espera sem a faixa da marca
   "Queres dizer melhor?" no ecrã do corpo; saída das estratégias no zangado
-
-JÁ NÃO HÁ NADA COM "Paediatric" — nem em texto nem em imagem.
-
-QUANDO A MARCA ESTIVER REGISTADA
-  em scripts/assemble-holding.sh, repor a linha comentada da faixa
-  em holding/index.html, repor o bloco .banner no lugar de .wordmark
 
 Commit sugerido:
 
-  fix: correct lockups and workbook cover (D-167)
+  feat: build the practitioner workbook as a PDF (D-168)

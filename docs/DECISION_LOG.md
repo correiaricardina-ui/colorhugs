@@ -2673,3 +2673,30 @@ D-081 exists to avoid, showing itself again.
 Processed without a die-cut rim: a lockup is a mark, not a collectable (D-083).
 The angry workbook cover regenerates from the new file and now carries the
 correct spelling.
+
+### D-168 `[IMPLEMENTATION]` The workbook builds to a PDF
+`scripts/build-workbook-pdf.py angry` → `docs/materials/zangado-caderno.pdf`,
+ten pages including the cover.
+
+**The markdown is where the content is written and reviewed; the PDF is what a
+colleague buys.** A licensed material arriving as a `.md` file is a draft,
+however good the writing.
+
+Markdown → HTML → PDF, printed by headless Chromium, rather than a PDF library:
+the layout is typographic — running page numbers, tables, callouts, headings
+that must not strand at a page foot — and CSS states all of that in a few lines
+where a drawing API would take hundreds.
+
+**The cover is page one, full bleed, no header or footer.** It is already a
+finished composition; framing it would be framing a frame.
+
+**The family name appears here, unlike on a colouring page.** D-120 keeps a
+child's own choice off anything she carries home. A workbook is not a record of
+a child — it is material about a feeling, and the practitioner needs to see at a
+glance which one they are holding.
+
+**One fault, caught by looking at every page.** Treating the markdown `---` as a
+page break gave sixteen pages, half of them ending in white space with a heading
+stranded at the foot of the previous one. The rule is a section separator, not a
+break; the heading rule already separates sections visually. Ten pages, and no
+heading now sits alone at the bottom of a page.
