@@ -4136,3 +4136,390 @@ communication the literature is thin. Said as such.
 The child's book is now thirteen pages, and the workbook's section 1 gained a
 paragraph, *Onde é que esta família acaba*, so that the next family is not built
 without asking the same question.
+
+### D-234 `[IMPLEMENTATION]` The sad family's ten guide pages and forty dynamics
+`scripts/build-sheet-guides.py` now takes a family. Ten pages, each beginning
+and ending on its own page — verified by searching the built PDF for each title
+and confirming it appears on exactly one page (D-197). The workbook is 29 pages.
+
+The dynamics are written as genuinely different activities rather than
+restatements. Some that carry a decision inside them:
+
+- *Quando é que ela aparece* → **the day it did not appear.** Finding a day it
+  did not come and seeing what was different usually yields more than the days
+  it did.
+- *O que me faz companhia* → **the adults guess.** They pick which they think are
+  hers before seeing her choices. The gap is the conversation.
+- *O que as pessoas dizem* → **the sentence handed over**, and it carries its own
+  limit: only if she wants to, and never by our decision.
+- *Sozinho* → **the playground.** Ask the adults what they know about her
+  breaks. They usually do not, and that is where this lives.
+- *Magoado* → **do not bring this sheet if the person named is in the room.**
+  Work on what stops her saying it instead.
+- *O que eu posso pedir* → **rehearse with me**: she asks the clinician for the
+  thing she means to ask for at home, there and then.
+
+**Two cautions in the guides that are new rules rather than advice.** Sheet 4
+says the sheet goes home with her and that the clinician decides whether it
+should, naming the case where it should not (D-223). Sheet 8 says **do not
+assume bereavement**: the same drawing serves a grandmother who moved house and
+a grandmother who died, and if it is bereavement this sheet does not reach.
+
+**The sad family is closed** — interactive, printable, and the professional line
+in three files for three readers, as angry is.
+
+---
+
+# Increment 35 — The scared family (2026-08-17)
+
+### D-235 `[DEFINED]` The governing distinction: *o medo não manda ficar parado*
+**Rejected: *medo não é perigo***, which the recipe had listed and which is true.
+It fails on where it leads rather than on what it says: **if the axis is *this is
+not as dangerous as it feels*, every sheet ends up asking the child to appraise
+the danger** — and that is cognitive reappraisal, which this material excluded
+deliberately as developmentally out of reach for a small child (D-182). The most
+obvious distinction of this family points straight at the one technique we said
+we do not do.
+
+**Adopted: *o medo não manda ficar parado*.** The fear arrives; what is done next
+is chosen.
+
+**It has anger's structure exactly** — feeling is not doing. Anger separates the
+emotion from the behaviour it seems to demand; fear does the same, and the
+behaviour is avoidance.
+
+**And it is the first family whose distinction is *estabelecida* rather than
+*razoável*.** That avoidance maintains fear is among the most solid findings
+child psychology has, more solid than anything supporting the six of the sad
+family. Every distinction so far has rested on reasonable ground; this one does
+not have to.
+
+**It names the error the family makes, and the error is accommodation** — taking
+the thing out of the way. Answering for her at the counter, excusing her from the
+party, no longer going where there are dogs. Each is immediate relief and
+long-term worsening, and none of it is ill will: it is the same mechanism that
+makes an adult try to cheer up a sad child.
+
+**The child's version:** *o medo diz cuidado — não diz não vás.*
+
+**What this family costs and what it does not.** Four of anger's five strategies
+cross intact, because fear also rises and has to come down, so the artwork is
+largely already drawn. What it needs that no family has needed yet is **something
+that lets her approach by steps** — and that is new content, not one more
+colouring page. Before building it, check whether a tool for this already exists
+in Ricardina's own clinical materials: the workbook should point at it rather
+than build a second one over the top.
+
+### D-236 `[DEFINED]` Nothing in a workbook may depend on a tool the licence does not carry
+The scared family's approach piece was going to point at Ricardina's own
+*Escada da coragem*, which exists already. **Rejected, and the reasoning
+generalises past this family.**
+
+A workbook licensed to a colleague has to work whole in her hands. Pointing at an
+application she has no access to turns a central piece into a dead reference, and
+makes the material look deliberately incomplete. **Nothing in any ColorHugs
+workbook may depend on a tool that does not come with the licence** — no app, no
+site, no material only the author has.
+
+Worth recording so it is not misread later: this is not the same object under
+another name. One lives in an application, with screens and state; the other is a
+sheet that closes on itself and that a colleague prints. Sharing the idea of
+steps does not make them competitors.
+
+### D-237 `[DEFINED]` The approach sheet may order situations, because it orders situations and not the child
+The hierarchy — steps ordered from easiest to hardest — is the classic
+instrument, and it is also **the only thing in this project that looks like a
+scale**. Ordering from less to more is what has been refused throughout: cards
+are not sorted by size (D-199), the fine words *name* rather than *grade*
+(D-147), and there is no intensity anywhere (D-096).
+
+**What saves it here is what is being ordered.** In the other families, sorting by
+size grades *the feeling* — *a minha zanga é 5*. Here what is ordered are
+**situations**, not feelings. *Seeing a dog across the road* is easier than
+*stroking one* as a fact about the world, not as a measurement of her.
+
+Approved with the distinction stated, and with two things fixed now because they
+are how it would erode:
+
+- **No numbers on the steps.** A ladder with rungs numbered one to six is a scale
+  wearing a picture, and *estou no 3* is one sentence away.
+- **The sheet never asks how frightened she is.** It asks which situation comes
+  before which. The moment it asks for a level, it has become the thing this
+  project refused.
+
+### D-238 `[DEFINED]` Four of anger's five cross to scared — and the fifth is barred
+Four work intact, because fear also rises and has to come down: the bench, the
+hand, the feather, the jumping child. Wired, and **no relabelling was needed** —
+*ir ter com alguém*, *contar devagar*, *respirar devagar* and *mexer o corpo*
+mean the same thing to a frightened child as to an angry one, unlike the sad
+family where two pages needed new names (D-224).
+
+**The fifth cannot enter, and it is the one that looks harmless: *sair dali*.**
+For anger, leaving the situation is situation modification and good strategy.
+**For fear it is avoidance** — the thing D-235 says maintains it. Offering it on
+screen would be the product proposing to the child exactly what the workbook
+tells the parents not to do.
+
+It is the sad family's finding in reverse. There, four of five fell and one
+survived; here four survive and one falls, and the one that falls is the one
+nobody would have questioned.
+
+### D-239 `[DEFINED]` The screen gets the mechanism as a picture, not as a task
+The approach ladder belongs to the workbook, because it opens and a child alone
+has nobody to receive it. That left the app, for this family, offering four ways
+to bring arousal down and **nothing at all of what the distinction actually
+says** — on screen, scared would have read as *calm down*, which is half the
+message.
+
+That is new. In angry and sad, the screen's options *are* the content; here the
+main content sits on the paper side.
+
+**Two pieces close the gap, and neither asks the child for anything:**
+
+- **The literacy line carries the mechanism**: *o medo fica mais pequeno quando
+  nos aproximamos devagar — não quando fugimos.* It is the first literacy line in
+  the product that states a mechanism rather than describing the feeling, and it
+  can, because this family's distinction is established rather than reasonable.
+- **One new colouring page, `stepping-stones`** — a child part-way across a path
+  of stones towards a waiting cat. **She looks at it; she is asked for nothing.**
+  It is the only page in the library that carries a mechanism rather than an
+  action.
+
+**The stones must be visibly different sizes.** Five identical stones in a row is
+a scale, and the approach sheet was only allowed at all because it orders
+situations rather than levels (D-237). Uneven stones read as a path; even ones
+read as rungs. Written into the prompt as a rule with its reason.
+
+Nobody in the drawing is frightened, for the same reason nobody in the sad pages
+is sad (D-220).
+
+### D-240 `[DEFINED]` The three pre-style pages, and what is actually wrong with them
+`HANDOFF.md` has carried "three colouring pages need regenerating" since the
+house style was extended to colouring pages. Looked at side by side with the
+pages accepted since, **the recorded reason is wrong**: it was read as thinness,
+and `counting-fingers` is the thickest page in the library at 10.8px. **The fault
+is that nothing in them is plush.**
+
+- **`quiet-corner` is the worst**, and it breaks an explicit rule rather than a
+  feeling: a straight wall, a straight skirting and a straight window edge. *No
+  straight edges* is not a preference here.
+- **`counting-fingers`** is a bare flat hand with no warmth at all.
+- **`floating-feather`** is closest to passing — the clouds and the face are
+  right — but the feather has a straight shaft and ruled diagonal veins.
+
+Prompts written for all three, plus `stepping-stones`, to be generated in one
+conversation (D-140). **The subject does not change**: a hand stays a hand, a
+feather a feather, cushions cushions. These are replacements, so the data, the
+names and the meanings stay where they are, and rule 6 is not touched — this is
+the retroactive application of a style decision that was already made, not a
+reinvention.
+
+Two traps written into the prompts because they have already cost something:
+**no numerals beside the fingers**, since that is how the first hand passed the
+six-area check while still giving a child one colour; and **no faces on the
+cushions**, since four identical faces turn a quiet corner into a crowd staring
+back.
+
+**What needs no art at all for the scared family**, recorded so it is not
+generated by mistake: the family card and its three fine cards exist; both
+covers are drawn in code; the schema will be drawn in code; the externalising
+sheet reuses `frame.png`; the identity page reuses `mirror.png`; and the
+approach sheet's structure is drawn in code, because a generated sheet with
+fields comes back with deformed text in them (D-174).
+
+### D-241 `[IMPLEMENTATION]` Three of the four passed; the hand did not, and it is worse than the one it replaces
+Measured, flood-filled region by region, and looked at on A4.
+
+| | Áreas | Linha | |
+| --- | ---: | ---: | --- |
+| stepping-stones | 13 | 6.3px | passa, linha fina |
+| floating-feather | 12 | 8.2px | passa |
+| quiet-corner | 11 | 7.2px | passa |
+| **counting-fingers** | **6** | 10.8px | **passa o piso e falha o desenho** |
+
+**The three that passed are in.** The feather is now plush, with six soft lobes
+and a padded shaft in place of the ruled veins; the cushions have no wall, no
+window and no straight line but the ground; and the stones are visibly uneven,
+so the path does not read as rungs. No colour crossed between regions in any of
+them, and the ground line reached both margins on both landscape pages — the
+instruction that failed on three of four in the sad build.
+
+**The hand is held back.** Its thumb is not sealed: the line at the base of the
+thumb stops in the middle, so paint poured into the thumb runs into the palm and
+the two are one region. It clears the six-area floor **only by counting the
+merged palm-and-thumb as one**, and the page it would replace has seven.
+
+So the replacement is better in style and **worse in the thing the page exists
+for**: a hand whose thumb cannot be coloured separately looks to a child like a
+mistake. The old page stays until a version arrives with the thumb closed.
+
+It is the third time a page has passed a check for the wrong reason — after the
+numerals counted as five areas, and after ink share was read as line weight.
+**The check tells you a page is not broken; it does not tell you the page is
+right.**
+
+### D-242 `[IMPLEMENTATION]` The hand passes — seven areas, and the thumb is one of them
+`counting-fingers` regenerated with the thumb line closed at both ends. **Seven
+sealed areas**, and the flood-fill shows the thumb in its own colour, separate
+from the palm. Line at 12.0px, the thickest in the library.
+
+**The four regenerations of D-240 are now all in**, and every page of the
+strategy library meets the house style. What changed in each was what the
+measurement had not been catching: the feather gained six plump lobes and a
+padded shaft in place of ruled veins; the cushions lost the wall, the window and
+the skirting; the hand became a mitten with a closed thumb.
+
+**What made the difference on the hand was naming the failure rather than the
+requirement.** The first prompt said the thumb must be its own sealed area, in
+general terms, and it came back open. The second described the exact wrong line
+— one that starts at the web and trails off into the middle of the palm — and
+gave a picture of the right one, a seam sewn all the way across. It is the
+three-ways rule from `ART-DIRECTION.md`, and this is the clearest case of it
+paying so far.
+
+### D-243 `[IMPLEMENTATION]` The scared family's schema: what avoidance does across episodes
+`scripts/figure-avoidance-cycle.py`, in both versions (D-189). Thirteen-page
+workbook; section 9 is a marked stub until the sheets exist.
+
+**Neither of the two shapes already drawn would do.** Anger's figure is one
+episode. Sadness's is one episode carried two ways. **Fear's problem is not
+inside an episode at all** — it is what happens across them, and no picture of a
+single occasion can show it.
+
+So it draws **four encounters with the same thing, twice over**. Running away
+gives relief inside each and a taller peak in the next; staying — even a little,
+even badly — gives a worse minute and a lower peak next time.
+
+**The line underneath is the one that does the work with parents:** *a versão que
+piora é a que sabe melhor no momento. É por isso que ninguém a escolhe de
+propósito.* It takes the blame out of the conversation without taking out the
+information.
+
+No numbers on any axis, and **that matters more here than anywhere else**,
+because the approach ladder is the only thing in this project that resembles a
+scale and the figure must not lend it cover.
+
+### D-244 `[IMPLEMENTATION]` The scared workbook's prose
+Things in it that are decisions rather than writing:
+
+- **Section 3 says the four screen options are not this family's main piece.**
+  They lower arousal, and arousal is not the problem — fleeing is. They are
+  presented as what makes staying possible: **not for the fear to pass, but to
+  get through the little while.** No other family's strategy section has to
+  demote itself.
+- **The same action reads two ways, and the workbook keeps asking which.** Going
+  to someone can be approach — asking for company in order to stay — or flight
+  under another name. Distracting can be either. **The difference is never in the
+  technique; it is in what happened next.** Two lines exist in the clinical record
+  for this alone: *serviram para ficar ou para sair*, and *pede garantias*.
+- **Reassurance-seeking is named as avoidance**, in the *preocupado* entry: the
+  guarantee given relieves and feeds, exactly as flight does. It is the form
+  hardest to see, because it looks like conversation.
+- ***Tímido* is the only fine word in the whole deck that others use to describe
+  the child**, often in front of her — so it hands her an identity rather than a
+  word. The workbook separates temperament from social avoidance and says plainly
+  that **a shy child with friends has no problem at all.**
+- **The missing word:** European Portuguese has no child's word for social fear.
+  *Tímido* names the temperament, not the avoidance, and a seven-year-old does
+  not say *envergonhado de falar*. What goes unnamed is precisely what is most
+  worked on at this age.
+
+**Section 10 carries a limit no other family needed.** *Medo que tem uma causa
+real não se trabalha assim*: a child afraid of someone at home does not have an
+avoidance problem, she has a reason. **It is the only family in the set where the
+thing the child avoids may be the thing she should be kept away from**, and no
+sheet is applied before that is excluded.
+
+It also states that **approach by steps is not exposure**: the sheet is
+psychoeducation and planning, has no dose and no duration, and material sold
+online may not imply it contains a treatment.
+
+### D-245 `[IMPLEMENTATION]` The scared family's sheets, and the ladder
+`docs/materials/assustado-fichas.html`. Nine for the child, one for whoever
+applies it, one for the family. The child's book is twelve pages.
+
+**Externalising is back.** It suits angry and scared, and it does not carry the
+risk it carried for sadness: putting the Fear outside herself and being rid of it
+is not this family's failure mode, because the distinction is about what she does
+next rather than about keeping the feeling.
+
+**Sheet 8 is the ladder, and it is the only sheet in the project that orders
+anything.** Its columns are named rather than numbered — *por onde começo · depois
+· depois · onde quero chegar* — and **the sheet asks nowhere how frightened she
+is**. Checked on the built PDF: the only digits anywhere on it are the age range.
+
+Three things in it that are decisions:
+
+- **The first step is small on purpose**, and the sheet says so in its opening
+  line: *tão pequeno que dê para fazer hoje*. The commonest way this goes wrong
+  is a first step nobody can take.
+- ***Quem vai comigo no primeiro?*** — company is part of the step, not an
+  admission of failure.
+- ***E se eu tentar e não conseguir, o que fazemos?*** and the closing line,
+  **não conseguir uma vez não estraga nada — quer dizer que aquele bocadinho era
+  grande de mais.** Without it the sheet sets her up for one attempt to decide
+  everything. It is the sad family's *e se a pessoa não puder* in another shape:
+  the refusal is planned for before it happens.
+
+**Two other sheets do work no other family's do.** *O que eu faço quando ele
+chega* asks, in its third column, **fico ou saio?** — which is the whole
+distinction turned into something a child can tick. And *Preocupado* asks how
+long the reassurance lasts, which is how a child discovers for herself that the
+guarantee feeds the thing it relieves.
+
+**A layout fault, fixed:** a one-row table is not a table with room. The ladder's
+single row has to take a drawing, so it now gets the height four rows would have
+had.
+
+### D-246 `[IMPLEMENTATION]` The scared family's nine guides — and the family is closed
+Twenty-five pages. Each guide begins and ends on its own page, verified by
+searching the built PDF; thirty-six dynamics.
+
+**Guide 9 did not fit at first**, and the way it failed is worth recording: the
+title stayed on its page and **the session record slid onto the next one, alone**
+— so a search for the title said the guide was intact while the printed page said
+otherwise. It is the longest guide in the project, because the ladder needs the
+most said about it. Four of its six fields were tightened until it fit.
+
+Cautions in these guides that are rules rather than advice:
+
+- **Sheet 3:** do not turn body awareness into symptom monitoring. A child who
+  starts watching her body always finds something, and that feeds rather than
+  relieves.
+- **Sheet 7:** do not withdraw reassurance suddenly. What is agreed —
+  *answer once, then answer the question and not the anxiety* — **is agreed with
+  the adults, not with her.**
+- **Sheet 8:** a shy child with friends has no problem at all, and this sheet is
+  not applied as though she had. Absence of speech in specific settings is a sign
+  to assess, not to apply more sheets.
+- **Sheet 9:** never ask how frightened she is at each step, and no reward and no
+  punishment — approach with a punishment on top stops being approach.
+
+The most useful dynamic of the set is on sheet 4: **o que deixámos de fazer**,
+put to the family. It measures accommodation without using the word, and the list
+surprises the people making it.
+
+**The scared family is closed.** Three of seven: angry, sad, scared.
+
+### D-247 `[DEFINED]` The age range belongs to the workbook and never to the child's book
+The sheets carry `data-age`, and the chip was being printed in both documents.
+**Removed from the child's exploration book**; it stays in the workbook, where
+every guide states the range in its first row.
+
+The reason is not tidiness. The range is a decision for whoever applies the
+material, **and one she often needs to override** — a sheet marked 7 to 9 is
+frequently exactly right for the six-year-old in front of her, and the point of
+her being in the room is that she can tell.
+
+**Printed on the sheet the child holds, it does the opposite of helping.** A
+child who reads *7 aos 9 anos* on a page she was given at six has been told she
+is early; at ten, that she is late. Either way the number arrives before the task
+and answers a question she had not asked.
+
+All three families rebuilt and verified by searching the built PDFs: **zero age
+ranges in the three exploration books and in the three parents' letters; nine,
+ten and nine in the three workbooks.**
+
+Checked at the same time, and correct in all three: the child's cover reads
+**Caderno de exploração** beneath the family name, with the plain logo and no
+licensing strapline (D-190).

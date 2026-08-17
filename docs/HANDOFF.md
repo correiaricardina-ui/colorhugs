@@ -92,7 +92,8 @@ child-alone rules, because a printed sheet does not choose who is in the room.
 variety, never performance. No streaks that can break — a streak that breaks is
 a punishment.
 
-**A family workbook is built to a fixed recipe** — three PDFs from one source,
+**Three families are closed** — angry, sad and scared — each in three PDFs plus
+the shared deck. **A family workbook is built to a fixed recipe** — three PDFs from one source,
 for the clinician, the child and the parents. `docs/WORKBOOK-RECIPE.md` holds
 the section order, the sheet menu, the non-negotiable rules (boxes not lines,
 nothing printed inside a box, the child's page speaks to her not about her) and

@@ -214,6 +214,9 @@ em { color: #4A5578; }
    sheet — a half-empty worksheet reads as an unfinished one. */
 /* Rows tall enough to draw in, and enough of them to fill the sheet. */
 table.fill td { height: 26mm; border: 1px solid rgba(27,42,91,0.28); }
+/* A one-row table is not a table with room: the ladder's single row has to
+   take a drawing, so it gets the height four rows would have had. */
+table.fill.one-row td { height: 62mm; }
 table.fill th {
   background: #F3F1FA;
   border: 1px solid rgba(27,42,91,0.28);
@@ -434,7 +437,9 @@ ul.prompts li { margin-bottom: 2.5mm; }
 SHEET_RE = re.compile(r'<section class="sheet".*?</section>', re.S)
 
 
-def load_sheets(family_id: str, audience: str | None = None) -> str:
+def load_sheets(
+    family_id: str, audience: str | None = None, show_age: bool = True
+) -> str:
     """The sheets, as HTML, from the one file that defines them.
 
     `audience` selects which are wanted. **What to say to the parents is not in
@@ -468,8 +473,16 @@ def load_sheets(family_id: str, audience: str | None = None) -> str:
                 continue
         # The age chip is written as an attribute so the sheet source stays
         # readable; it becomes a real element here.
+        #
+        # **Only in the workbook, never in the child's book** (D-247). The range
+        # is a decision for whoever applies the material — and one she may need
+        # to override, since a sheet marked 7 to 9 is often exactly right for a
+        # six-year-old in front of her. Printed on the sheet the child holds, it
+        # does the opposite of helping: a child who reads *7 aos 9 anos* on a
+        # page she was given at six has been told she is early, and a child of
+        # ten has been told she is late.
         age = re.search(r'data-age="([^"]+)"', sheet)
-        if age:
+        if age and show_age:
             sheet = sheet.replace(
                 "</h2>", f'</h2><span class="age">{age.group(1)}</span>', 1
             )
@@ -535,7 +548,14 @@ def build_html(family_id: str) -> str:
     # over her head, and out of the parents' letter because it is not addressed
     # to them. It was therefore appearing in no document at all — written,
     # built, and delivered nowhere.
-    practitioner = load_sheets(family_id, "practitioner")
+    sheets_file = os.path.join(
+        MATERIALS, f"{FAMILIES[family_id].lower()}-fichas.html"
+    )
+    practitioner = (
+        load_sheets(family_id, "practitioner")
+        if os.path.exists(sheets_file)
+        else ""
+    )
     if practitioner:
         # Last, as an annex. No heading is added: the sheet carries its own
         # title, and a second one would print the same words twice.
@@ -601,7 +621,7 @@ def sheets_html(family_id: str) -> str:
 <style>{CSS}
 .sheet:first-of-type {{ page-break-before: avoid; }}
 </style></head>
-<body>{IDENTITY.replace("ASSETS/", f"file://{ASSETS}/")}{load_sheets(family_id, "child")}</body></html>"""
+<body>{IDENTITY.replace("ASSETS/", f"file://{ASSETS}/")}{load_sheets(family_id, "child", show_age=False)}</body></html>"""
 
 
 RUNNING = """

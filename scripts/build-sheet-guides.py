@@ -25,7 +25,10 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # watch, then what to be careful of.
 FIELDS = ["Idade", "Base", "Objectivo", "Como aplicar", "A notar", "Cuidados"]
 
-ANGRY = [
+SHEETS = {}
+DYNAMICS = {}
+
+SHEETS["angry"] = [
     {
         "n": 1,
         "title": "A Zanga",
@@ -230,16 +233,16 @@ ANGRY = [
 ]
 
 
-DYNAMICS = {1: [('4–6', '**A carta e o espelho.** Pôr a carta do zangado ao lado do espelho da primeira página e perguntar se são parecidos. Serve para ligar a personagem a ela própria sem ter de o dizer.'), ('6–8', '**Ler ao contrário.** Ler as três frases e perguntar, a cada uma, se alguém em casa diria o contrário. Traz o discurso da família para a sala sem perguntar pela família.'), ('8–9', '**Explicar a outra pessoa.** Pedir que explique a curva a um adulto presente, por palavras dela. Quem explica percebe melhor do que quem ouve.'), ('qualquer', '**Guardar para o fim.** Reler esta página na última sessão da família e perguntar se mudou alguma coisa.')], 2: [('6–8', '**Só desenhos.** O adulto escreve as colunas e a criança desenha uma cara ou um sítio em cada linha. A tabela funciona sem uma palavra.'), ('7–9', '**Ordenar por facilidade.** Depois de preenchida, pedir que aponte a linha mais fácil de contar e a mais difícil. É informação sobre ela, não sobre as situações.'), ('8–9', '**A linha que falta.** Perguntar se há uma situação que não escreveu. A que fica de fora costuma ser a que interessa.'), ('com a família', '**A mesma tabela pelos pais.** Cada um preenche a sua e comparam-se. As diferenças são o material da conversa.')], 3: [('4–6', '**Dar-lhe voz.** Perguntar o que a Zanga diria se pudesse falar, e escrever isso ao lado do desenho.'), ('4–7', '**Onde é que ela mora.** Pedir que desenhe onde a Zanga fica quando não está com ela. Externaliza um passo mais.'), ('6–8', '**A Zanga de outra pessoa.** Pedir que desenhe a Zanga de um adulto da casa. Costuma dizer mais do que a dela.'), ('7–9', '**O que a Zanga quer.** Perguntar o que a Zanga está a tentar conseguir. Aproxima da função sem usar a palavra.')], 4: [('7–9', '**Ordenar por frequência.** Pôr as três cartas da mais dita à menos dita. Não é intensidade: é uso.'), ('7–9', '**Uma semana a marcar.** Levar as três cartas e assinalar a que usou cada dia. Voltar com o registo.'), ('8–9', '**As palavras dos outros.** Perguntar qual das três usaria a mãe, o pai, o professor. Mapeia o vocabulário da casa.'), ('com a família', '**Cada um escolhe a sua.** Os adultos escolhem também, e dizem uma vez em que a sentiram.')], 5: [('7–9', '**Três montes.** Escrever cinco situações em papéis e pedir que as distribua pelas três cartas-mãe. Mostra-lhe a ambiguidade sem lha explicar.'), ('7–9', '**Trocar a palavra.** Escolher uma situação e procurar outra palavra que sirva melhor que *chateado*.'), ('8–9', '**Quando é que não serve.** Perguntar se há vezes em que dizer chateada não chega. Abre para as outras duas.'), ('com a família', '**O que ouvem quando ela diz.** Perguntar aos adultos o que percebem quando ela diz chateada. Muitas vezes percebem a errada.')], 6: [('7–9', '**O mapa do dia.** Marcar numa linha do dia as horas em que a irritação costuma aparecer. Costuma haver duas.'), ('7–9', '**O que muda quando muda.** Procurar uma vez em que aquilo que costuma irritar não irritou, e ver o que estava diferente.'), ('8–9', '**Três coisas que já tentou.** Listar e classificar cada uma como *ajudou*, *não ajudou*, *não sei*.'), ('com a família', '**Combinar um sinal.** Escolher com os adultos um gesto que ela possa fazer antes de a irritação crescer.')], 7: [('6–8', '**Desenhar o depois.** Em vez de contar a vez, desenhar o momento em que já tinha passado.'), ('7–9', '**Quem estava lá.** Marcar na folha quem estava presente e quem percebeu. Nem sempre são os mesmos.'), ('8–9', '**A versão do outro.** Contar a mesma vez do ponto de vista de quem lá estava. Exigente, e só quando a relação já aguenta.'), ('com a família', '**O que fizeram a seguir.** Perguntar aos adultos o que fizeram quando passou, não durante.')], 8: [('6–8', '**Experimentar na sala.** Fazer ali mesmo a estratégia escolhida, sem estar zangada. Ensaiar a frio é metade do trabalho.'), ('6–9', '**Onde é que dá.** Verificar se a estratégia escolhida é possível na escola, no carro, na sala de aula. Muitas não são.'), ('8–9', '**Plano B.** Escolher uma segunda para quando a primeira não der.'), ('com a família', '**Combinar quem ajuda.** Se a estratégia é *ir ter com alguém*, essa pessoa tem de saber que foi escolhida.')], 9: [('6–8', '**Ensaiar em voz alta.** Dizer o que escreveu no balão, à colega, antes de dizer a quem é.'), ('6–9', '**Reparar sem falar.** Procurar uma coisa que se faça em vez de se dizer. Para crianças a quem as palavras custam.'), ('8–9', '**Se correr mal.** Preparar o que fazer se a outra pessoa não aceitar. Evita que uma tentativa falhada feche o assunto.'), ('com a família', '**Os adultos também compõem.** Perguntar se algum deles se lembra de ter composto alguma coisa com ela.')]}
+DYNAMICS["angry"] = {1: [('4–6', '**A carta e o espelho.** Pôr a carta do zangado ao lado do espelho da primeira página e perguntar se são parecidos. Serve para ligar a personagem a ela própria sem ter de o dizer.'), ('6–8', '**Ler ao contrário.** Ler as três frases e perguntar, a cada uma, se alguém em casa diria o contrário. Traz o discurso da família para a sala sem perguntar pela família.'), ('8–9', '**Explicar a outra pessoa.** Pedir que explique a curva a um adulto presente, por palavras dela. Quem explica percebe melhor do que quem ouve.'), ('qualquer', '**Guardar para o fim.** Reler esta página na última sessão da família e perguntar se mudou alguma coisa.')], 2: [('6–8', '**Só desenhos.** O adulto escreve as colunas e a criança desenha uma cara ou um sítio em cada linha. A tabela funciona sem uma palavra.'), ('7–9', '**Ordenar por facilidade.** Depois de preenchida, pedir que aponte a linha mais fácil de contar e a mais difícil. É informação sobre ela, não sobre as situações.'), ('8–9', '**A linha que falta.** Perguntar se há uma situação que não escreveu. A que fica de fora costuma ser a que interessa.'), ('com a família', '**A mesma tabela pelos pais.** Cada um preenche a sua e comparam-se. As diferenças são o material da conversa.')], 3: [('4–6', '**Dar-lhe voz.** Perguntar o que a Zanga diria se pudesse falar, e escrever isso ao lado do desenho.'), ('4–7', '**Onde é que ela mora.** Pedir que desenhe onde a Zanga fica quando não está com ela. Externaliza um passo mais.'), ('6–8', '**A Zanga de outra pessoa.** Pedir que desenhe a Zanga de um adulto da casa. Costuma dizer mais do que a dela.'), ('7–9', '**O que a Zanga quer.** Perguntar o que a Zanga está a tentar conseguir. Aproxima da função sem usar a palavra.')], 4: [('7–9', '**Ordenar por frequência.** Pôr as três cartas da mais dita à menos dita. Não é intensidade: é uso.'), ('7–9', '**Uma semana a marcar.** Levar as três cartas e assinalar a que usou cada dia. Voltar com o registo.'), ('8–9', '**As palavras dos outros.** Perguntar qual das três usaria a mãe, o pai, o professor. Mapeia o vocabulário da casa.'), ('com a família', '**Cada um escolhe a sua.** Os adultos escolhem também, e dizem uma vez em que a sentiram.')], 5: [('7–9', '**Três montes.** Escrever cinco situações em papéis e pedir que as distribua pelas três cartas-mãe. Mostra-lhe a ambiguidade sem lha explicar.'), ('7–9', '**Trocar a palavra.** Escolher uma situação e procurar outra palavra que sirva melhor que *chateado*.'), ('8–9', '**Quando é que não serve.** Perguntar se há vezes em que dizer chateada não chega. Abre para as outras duas.'), ('com a família', '**O que ouvem quando ela diz.** Perguntar aos adultos o que percebem quando ela diz chateada. Muitas vezes percebem a errada.')], 6: [('7–9', '**O mapa do dia.** Marcar numa linha do dia as horas em que a irritação costuma aparecer. Costuma haver duas.'), ('7–9', '**O que muda quando muda.** Procurar uma vez em que aquilo que costuma irritar não irritou, e ver o que estava diferente.'), ('8–9', '**Três coisas que já tentou.** Listar e classificar cada uma como *ajudou*, *não ajudou*, *não sei*.'), ('com a família', '**Combinar um sinal.** Escolher com os adultos um gesto que ela possa fazer antes de a irritação crescer.')], 7: [('6–8', '**Desenhar o depois.** Em vez de contar a vez, desenhar o momento em que já tinha passado.'), ('7–9', '**Quem estava lá.** Marcar na folha quem estava presente e quem percebeu. Nem sempre são os mesmos.'), ('8–9', '**A versão do outro.** Contar a mesma vez do ponto de vista de quem lá estava. Exigente, e só quando a relação já aguenta.'), ('com a família', '**O que fizeram a seguir.** Perguntar aos adultos o que fizeram quando passou, não durante.')], 8: [('6–8', '**Experimentar na sala.** Fazer ali mesmo a estratégia escolhida, sem estar zangada. Ensaiar a frio é metade do trabalho.'), ('6–9', '**Onde é que dá.** Verificar se a estratégia escolhida é possível na escola, no carro, na sala de aula. Muitas não são.'), ('8–9', '**Plano B.** Escolher uma segunda para quando a primeira não der.'), ('com a família', '**Combinar quem ajuda.** Se a estratégia é *ir ter com alguém*, essa pessoa tem de saber que foi escolhida.')], 9: [('6–8', '**Ensaiar em voz alta.** Dizer o que escreveu no balão, à colega, antes de dizer a quem é.'), ('6–9', '**Reparar sem falar.** Procurar uma coisa que se faça em vez de se dizer. Para crianças a quem as palavras custam.'), ('8–9', '**Se correr mal.** Preparar o que fazer se a outra pessoa não aceitar. Evita que uma tentativa falhada feche o assunto.'), ('com a família', '**Os adultos também compõem.** Perguntar se algum deles se lembra de ter composto alguma coisa com ela.')]}
 
 
-def page(sheet):
+def page(family, sheet):
     rows = "\n".join(f"| **{f}** | {sheet[f]} |" for f in FIELDS)
     questions = "\n".join(f"- {q}" for q in sheet["questions"])
     # Dynamics that grow out of this sheet, banded by age. The general ones stay
     # in section 6; these are what the sheet itself opens up (D-197).
     dynamics = "\n".join(
-        f"| {band} | {text} |" for band, text in DYNAMICS[sheet["n"]]
+        f"| {band} | {text} |" for band, text in DYNAMICS[family][sheet["n"]]
     )
     return f"""<div class="guide" markdown="1">
 
@@ -280,8 +283,10 @@ def page(sheet):
 """
 
 
-def build() -> str:
-    body = "".join(page(s) for s in ANGRY)
+def build(family: str = "angry") -> str:
+    if family not in SHEETS:
+        raise SystemExit(f"unknown family: {family}")
+    body = "".join(page(family, s) for s in SHEETS[family])
     return f"""## 9. Fichas — orientação de aplicação
 
 Uma página por ficha. **As fichas em si não estão aqui**: vivem no caderno de
@@ -295,5 +300,596 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 {body}"""
 
 
+
+
+# ---------------------------------------------------------------------------
+# Triste — ten sheets (D-222, D-233).
+#
+# The three moulds anger uses and this family does not: externalising, *da
+# próxima vez*, and repair. What replaces the last of them is *o que eu posso
+# pedir*, because a family that ends in description tells the child there is
+# nothing she can do.
+# ---------------------------------------------------------------------------
+
+SHEETS["sad"] = [
+    {
+        "n": 1,
+        "title": "A Tristeza",
+        "Idade": "6 aos 9 anos",
+        "Base": "Psicoeducação. Sem nível de evidência próprio: reformula em "
+                "linguagem infantil o que a secção 1 sustenta.",
+        "Objectivo": "Dar-lhe um enquadramento antes de lhe pedir seja o que "
+                     "for. Três afirmações e o esquema; nada para preencher.",
+        "Como aplicar": "Ler com ela, em voz alta, sem parar para perguntar. É a "
+                        "única página do caderno que não faz perguntas.",
+        "A notar": "Qual das três a surpreende. **A tristeza não é má** costuma "
+                   "ser a que provoca reacção; *não passa por a empurrarmos* "
+                   "costuma ser a que alivia, sobretudo em crianças que já "
+                   "tentaram e acham que falharam.",
+        "Cuidados": "Não transformar a leitura numa lição. E não acrescentar "
+                    "*mas vai passar* — a página já o diz, e repeti-lo com "
+                    "ênfase é o consolo a virar animação.",
+        "questions": [
+            "Já tinhas pensado que a tristeza podia servir para alguma coisa?",
+            "Alguma coisa aqui te parece diferente do que te costumam dizer?",
+        ],
+    },
+    {
+        "n": 2,
+        "title": "Quando é que ela aparece",
+        "Idade": "5 aos 8 anos",
+        "Base": "Comportamental — padrão temporal. **Estabelecido** quanto à "
+                "ligação entre contexto e resposta; esta aplicação é razoável.",
+        "Objectivo": "Procurar as alturas que se repetem. **Não procura causas**: "
+                     "procura horas, sítios e transições.",
+        "Como aplicar": "Uma linha de cada vez. Com crianças mais novas o adulto "
+                        "escreve enquanto ela conta. Se ela começar a explicar "
+                        "porquê, deixar — mas não perguntar.",
+        "A notar": "Se as alturas se agrupam. O deitar, o domingo à tarde, a "
+                   "saída da escola e as transições entre casas são as mais "
+                   "frequentes, e cada uma leva a conversa a um sítio diferente.",
+        "Cuidados": "**Nunca perguntar *porque é que estavas triste*.** Uma "
+                    "criança que não sabe inventa uma causa para satisfazer quem "
+                    "perguntou, e a partir daí passa a repeti-la.",
+        "questions": [
+            "Há alguma altura do dia em que aparece mais?",
+            "E algum dia da semana?",
+            "O que estava a acontecer mesmo antes?",
+        ],
+    },
+    {
+        "n": 3,
+        "title": "O que me faz companhia",
+        "Idade": "4 aos 7 anos",
+        "Base": "Co-regulação e objecto de conforto. **Base estabelecida** para a "
+                "primeira, **razoável** para o objecto, prática para a forma "
+                "concreta de cada uma.",
+        "Objectivo": "Descobrir o que a acompanha — não o que a anima. As seis "
+                     "figuras são as mesmas que ela viu no ecrã.",
+        "Como aplicar": "Pôr as seis à frente e deixar assinalar quantas quiser. "
+                        "A caixa do fim é para a dela, e vale mais do que as "
+                        "seis nossas.",
+        "A notar": "Quantas precisam de outra pessoa. Uma criança que só escolhe "
+                   "as que não dependem de ninguém está a dizer alguma coisa "
+                   "sobre quem tem disponível — e uma que só escolhe as que "
+                   "dependem também.",
+        "Cuidados": "**Nenhuma escolha é melhor do que outra**, e a manta não é "
+                    "um consolo menor do que a mãe. Se ela não escolher nenhuma, "
+                    "isso é resposta e não recusa.",
+        "questions": [
+            "Qual destas já usas sem ninguém te dizer?",
+            "Há alguma que gostavas e que não dá para ter?",
+            "Há alguma tua que não esteja aqui?",
+        ],
+    },
+    {
+        "n": 4,
+        "title": "O que as pessoas dizem",
+        "Idade": "7 aos 9 anos",
+        "Base": "Princípios de interacção pais-criança. **Estabelecido** quanto "
+                "ao efeito da resposta do adulto; esta aplicação é razoável.",
+        "Objectivo": "Tornar a distinção concreta: separar o que ajuda do que "
+                     "não ajuda, e chegar ao que ela gostava de ouvir e ninguém "
+                     "diz.",
+        "Como aplicar": "As duas primeiras caixas existem para tornar a terceira "
+                        "perguntável. Não apressar a terceira.",
+        "A notar": "**Se aparecer uma frase que também é sua, isso é o material a "
+                   "funcionar.** Não a defender, não explicar a intenção — "
+                   "anotar e usar depois.",
+        "Cuidados": "**Esta folha vai para casa com ela.** É quem aplica que "
+                    "decide o que sai da sala; se houver risco de a frase chegar "
+                    "à pessoa descrita e isso ser mau para ela, a folha fica no "
+                    "processo e faz-se a dinâmica falada.",
+        "questions": [
+            "Quem é que diz a coisa que ajuda?",
+            "E a que não ajuda — achas que essa pessoa sabe?",
+            "Se pudesses ensinar-lhes uma frase, qual era?",
+        ],
+    },
+    {
+        "n": 5,
+        "title": "As palavras finas",
+        "Idade": "7 aos 9 anos",
+        "Base": "Vocabulário emocional. **Razoável** quanto a diferenciação "
+                "emocional; o conjunto concreto é do ColorHugs.",
+        "Objectivo": "Pôr as quatro à frente e ver quais reconhece. **Não são "
+                     "graus** — são coisas diferentes, e a ficha diz-lho.",
+        "Como aplicar": "Uma caixa por palavra, sem ordem. Se uma ficar vazia, "
+                        "deixá-la vazia.",
+        "A notar": "Qual fica por preencher. E se usa *sozinho* para tudo — é a "
+                   "palavra mais larga das quatro.",
+        "Cuidados": "**Não ordenar por tamanho**, nem sugeri-lo. Nesta família a "
+                    "ordenação por intensidade nem sequer faz sentido, e "
+                    "propô-la ensinaria uma coisa falsa sobre as palavras.",
+        "questions": [
+            "Qual destas dizes mais vezes?",
+            "Há alguma que nunca tinhas ouvido?",
+            "Alguma delas é de uma pessoa em concreto?",
+        ],
+    },
+    {
+        "n": 6,
+        "title": "Desiludido",
+        "Idade": "7 aos 9 anos",
+        "Base": "Comportamental — expectativa e resultado. **Prática** nesta "
+                "forma.",
+        "Objectivo": "Ver a desilusão como distância entre o que se esperava e o "
+                     "que houve, e não como uma tristeza mais pequena.",
+        "Como aplicar": "As duas primeiras caixas juntas, e só depois a terceira. "
+                        "A terceira é a que interessa.",
+        "A notar": "**Se alguém prometeu ou se foi ela que pensou.** Uma criança "
+                   "que se desilude muitas vezes ou espera de mais, ou vive com "
+                   "alguém que promete de mais — e são coisas diferentes.",
+        "Cuidados": "Não corrigir a expectativa. *Também não era assim tão certo* "
+                    "é uma repreensão com outro nome.",
+        "questions": [
+            "O que é que tu achavas que ia acontecer?",
+            "Já aconteceu com a mesma pessoa mais do que uma vez?",
+            "Como é que soubeste que não ia ser?",
+        ],
+    },
+    {
+        "n": 7,
+        "title": "Sozinho",
+        "Idade": "6 aos 9 anos",
+        "Base": "Apoio social. **Razoável** quanto à ligação entre isolamento "
+                "percebido e sofrimento; a aplicação é prática.",
+        "Objectivo": "Separar as duas coisas que a palavra junta: estar sem "
+                     "ninguém, e sentir-se só estando lá gente.",
+        "Como aplicar": "A segunda caixa é a que faz o trabalho. Perguntar "
+                        "**estava lá gente?** e esperar.",
+        "A notar": "**Se ela se sente assim com gente à volta, é outra coisa e é "
+                   "mais pesada.** Uma criança que só se sente sozinha quando "
+                   "está mesmo sozinha está numa situação muito diferente.",
+        "Cuidados": "Não tranquilizar com factos — *mas tu tens a tua irmã* fecha "
+                    "a conversa e ensina que aquilo não se diz. Receber "
+                    "primeiro, verificar depois.",
+        "questions": [
+            "Onde é que te sentes assim? E quando?",
+            "Estava lá gente nessas alturas?",
+            "Há algum sítio onde nunca te sentes assim?",
+        ],
+    },
+    {
+        "n": 8,
+        "title": "Com saudades",
+        "Idade": "4 aos 7 anos",
+        "Base": "Representação de quem está ausente. **Prática**, com apoio "
+                "indirecto na literatura sobre separação e vinculação.",
+        "Objectivo": "Dar lugar à única palavra da família que não é inteiramente "
+                     "má, e ver de quem ou de quê.",
+        "Como aplicar": "É de desenhar, não de escrever. As perguntas por baixo "
+                        "fazem-se depois do desenho, nunca antes.",
+        "A notar": "**Se é de uma pessoa, de um sítio ou de um tempo.** Uma "
+                   "criança com saudades de uma versão da própria família que já "
+                   "não existe está a dizer outra coisa — é frequente depois de "
+                   "uma separação, de uma mudança ou de um nascimento.",
+        "Cuidados": "**Não assumir luto.** A mesma figura serve para uma avó que "
+                    "mudou de casa e para uma avó que morreu, e o desenho não "
+                    "decide qual. Se for luto, esta ficha não chega.",
+        "questions": [
+            "De quem, ou de quê?",
+            "Ter saudades faz-te sentir bem ou mal? Ou as duas coisas?",
+            "Quando é que te lembras mais?",
+        ],
+    },
+    {
+        "n": 9,
+        "title": "Magoado",
+        "Idade": "7 aos 9 anos",
+        "Base": "Sistémica. **Prática** nesta forma.",
+        "Objectivo": "É a única das quatro palavras que aponta para outra pessoa. "
+                     "A ficha procura quem, e se essa pessoa sabe.",
+        "Como aplicar": "A terceira caixa — o que lhe diria — fica por dizer. "
+                        "**Não é a ficha da reparação**: aqui não há nada que ela "
+                        "tenha de compor.",
+        "A notar": "**Uma criança que diz que a pessoa não sabe está a dizer duas "
+                   "coisas ao mesmo tempo**: que foi magoada, e que não conseguiu "
+                   "dizê-lo. A segunda é geralmente a que se trabalha.",
+        "Cuidados": "Não passar daqui para uma conversa entre as duas pessoas "
+                    "sem preparação. E atenção a quem é nomeado: se for alguém "
+                    "de casa, a folha pode não dever sair da sala.",
+        "questions": [
+            "Essa pessoa sabe que te magoou?",
+            "Foi a fazer de propósito, ou achas que não deu por isso?",
+            "Se pudesses dizer-lhe uma coisa, o que era?",
+        ],
+    },
+    {
+        "n": 10,
+        "title": "O que eu posso pedir",
+        "Idade": "6 aos 9 anos",
+        "Base": "Comunicação de necessidades e procura de ajuda. **Prática** — "
+                "a companhia assenta em terreno firme, o pedir não.",
+        "Objectivo": "Fechar a distância entre o que ela descobriu na ficha 3 e o "
+                     "que ela recebe. **É o que esta família tem em vez de *da "
+                     "próxima vez*.**",
+        "Como aplicar": "Depois da ficha 3, nunca antes — não há o que pedir sem "
+                        "saber primeiro o que ajuda. Ensaiar a frase em voz alta "
+                        "na sala.",
+        "A notar": "A quem pede. E se a terceira caixa fica vazia: uma criança "
+                   "que não consegue imaginar a recusa é a que mais precisa de a "
+                   "ter preparada.",
+        "Cuidados": "**A terceira caixa não é opcional.** Sem ela a ficha prepara "
+                    "uma recusa que a criança vai ler como rejeição. Um pedido "
+                    "recusado não é um pedido falhado — é um pedido com outro "
+                    "tempo. E não prometer que pedir faz passar.",
+        "questions": [
+            "O que é que queres pedir, e a quem?",
+            "Achas que essa pessoa sabe que isso te ajuda?",
+            "E se ela não puder nessa altura, o que fazes?",
+        ],
+    },
+]
+
+DYNAMICS["sad"] = {
+    1: [
+        ("4–6", "**A carta e o espelho.** Pôr a carta do triste ao lado do espelho da primeira página e perguntar se são parecidos. Liga a personagem a ela própria sem o dizer."),
+        ("6–8", "**Tapar uma linha.** Tapar a linha *com companhia* e perguntar o que acha que muda quando alguém está ao pé. Descobre-o em vez de o ler."),
+        ("8–9", "**Explicar a outra pessoa.** Pedir que explique o esquema a um adulto presente, por palavras dela."),
+        ("qualquer", "**Guardar para o fim.** Reler esta página na última sessão da família e perguntar se mudou alguma coisa."),
+    ],
+    2: [
+        ("5–7", "**A linha do dia.** Desenhar o dia numa tira de papel e marcar com um traço as horas em que aparece. Funciona sem escrever nada."),
+        ("6–8", "**A semana em cartões.** Sete cartões, um por dia, e assinalar os dias em que apareceu. Sem contagem e sem soma."),
+        ("8–9", "**O dia em que não apareceu.** Procurar um dia em que não apareceu e ver o que estava diferente. Costuma render mais do que os outros."),
+        ("com a família", "**A mesma tabela pelos adultos.** Cada um marca as alturas em que acha que ela fica triste. As diferenças são o material."),
+    ],
+    3: [
+        ("4–6", "**As seis em cima da mesa.** Imprimir as seis páginas e deixá-la pegar, sem dizer nada. Muitas escolhem antes de haver pergunta."),
+        ("4–7", "**Trazer a coisa.** Pedir que traga na próxima sessão a coisa macia, se existir. Muda o que se pode dizer a seguir."),
+        ("6–9", "**Depende de quem.** Separar as figuras em duas pilhas: as que precisam de outra pessoa e as que não. Contar as pilhas com ela."),
+        ("com a família", "**Os adultos adivinham.** Pedir-lhes que escolham as que acham que são dela, antes de verem as escolhas. A diferença é a conversa."),
+    ],
+    4: [
+        ("7–9", "**Ensaiar a frase.** Dizer em voz alta a frase que ela gostava de ouvir, dita por si. Ouvi-la dita muda-a."),
+        ("7–9", "**Quem diz o quê.** Escrever ao lado de cada frase quem a costuma dizer. Mapeia a casa sem perguntar pela casa."),
+        ("8–9", "**A intenção e o efeito.** Perguntar se acha que a pessoa quis ajudar. Separar as duas coisas protege a relação."),
+        ("com a família", "**A frase entregue.** Se ela quiser, dizer aos adultos a frase que gostava de ouvir. **Só se ela quiser, e nunca por decisão nossa.**"),
+    ],
+    5: [
+        ("7–9", "**Por quem lá está.** Separar as quatro em duas pilhas: as que acontecem com gente à volta e as que acontecem sozinha."),
+        ("7–9", "**A que custa mais dizer.** Escolher a que custa mais admitir em voz alta, e falar só dessa."),
+        ("8–9", "**As palavras dos outros.** Perguntar qual das quatro usaria a mãe, o pai, o professor."),
+        ("com a família", "**Cada um escolhe a sua.** Os adultos escolhem também, e contam uma vez em que a sentiram."),
+    ],
+    6: [
+        ("7–9", "**Duas colunas.** O que eu esperava, o que houve — em duas colunas lado a lado. A distância fica visível."),
+        ("7–9", "**Quem prometeu.** Marcar, em três desilusões, se alguém prometeu ou se foi ela que pensou. O padrão aparece depressa."),
+        ("8–9", "**A desilusão pequena.** Procurar uma que já não lhe faz diferença nenhuma. Mostra-lhe que passam, sem lho dizermos."),
+        ("com a família", "**As promessas em casa.** Perguntar aos adultos que promessas costumam fazer sobre tempo e disponibilidade. Sem acusação — é informação."),
+    ],
+    7: [
+        ("6–8", "**Dois desenhos.** Desenhar duas vezes em que se sentiu sozinha: uma com gente à volta e outra sem. Se só conseguir uma, isso é a resposta."),
+        ("6–9", "**O mapa dos sítios.** Marcar numa planta grosseira da casa e da escola onde é que aparece."),
+        ("8–9", "**Quem é que sabe.** Perguntar se alguém sabe que ela se sente assim. É a pergunta que mais rende desta ficha."),
+        ("com a família", "**O recreio.** Perguntar aos adultos o que sabem sobre os intervalos dela. Costumam não saber, e é onde isto vive."),
+    ],
+    8: [
+        ("4–6", "**A caixa das saudades.** Uma caixa onde põe coisas que lhe lembram essa pessoa. Leva-a para casa."),
+        ("4–7", "**Mandar sem enviar.** Desenhar uma coisa para essa pessoa, mesmo que não se envie. O desenho basta-se."),
+        ("6–9", "**Pessoa, sítio ou tempo.** Perguntar as três e ver qual escolhe. É a pergunta clínica desta ficha."),
+        ("com a família", "**As saudades dos adultos.** Perguntar-lhes de que têm saudades. Uma criança que percebe que também eles têm carrega menos sozinha."),
+    ],
+    9: [
+        ("7–9", "**Sabe ou não sabe.** Duas colunas com as pessoas que magoaram: as que sabem e as que não. A segunda coluna é o trabalho."),
+        ("7–9", "**A carta que não se envia.** Escrever ou desenhar o que diria, sem o entregar."),
+        ("8–9", "**A versão do outro.** Contar a mesma vez do ponto de vista da outra pessoa. **Exigente, e só quando a relação já aguenta.**"),
+        ("com a família", "**Sem nomear.** Se a pessoa nomeada estiver na sala, não trazer esta ficha. Trabalhar antes o que a impede de dizer."),
+    ],
+    10: [
+        ("6–8", "**Ensaiar comigo.** Ela pede ao clínico o que quer pedir em casa, ali mesmo. Ensaiar a frio é metade do trabalho."),
+        ("6–9", "**Onde é que dá.** Verificar se o pedido é possível na altura em que a tristeza costuma aparecer — ao deitar, no carro, à saída da escola."),
+        ("8–9", "**Pedir sem palavras.** Combinar um gesto ou um objecto que sirva de pedido. Para crianças a quem dizer custa."),
+        ("com a família", "**Combinar quem recebe.** A pessoa a quem ela vai pedir tem de saber que foi escolhida, e o que fazer quando não puder."),
+    ],
+}
+
+
+
+
+# ---------------------------------------------------------------------------
+# Assustado — nine sheets for the child plus the practitioner page (D-245).
+#
+# Externalising returns; *sair dali* is barred; and sheet 8 is the ladder, the
+# only sheet in the project that orders anything. Its guidance carries the two
+# cautions that matter most: the first step must be small enough to take today,
+# and an attempt that fails means the step was too big, never that she cannot.
+# ---------------------------------------------------------------------------
+
+SHEETS["scared"] = [
+    {
+        "n": 1,
+        "title": "O Medo",
+        "Idade": "6 aos 9 anos",
+        "Base": "Psicoeducação. Sem nível próprio: reformula em linguagem "
+                "infantil o que a secção 1 sustenta.",
+        "Objectivo": "Dar-lhe o enquadramento antes de lhe pedir seja o que for, "
+                     "e mostrar-lhe o esquema dos dois painéis. Nada para "
+                     "preencher.",
+        "Como aplicar": "Ler com ela em voz alta. Tapar o painel da direita e "
+                        "perguntar o que acha que acontece se ficar — é a única "
+                        "pergunta desta página, e é para adivinhar, não para "
+                        "responder certo.",
+        "A notar": "**O Medo diz cuidado — não diz não vás** costuma ser a que "
+                   "provoca reacção. Em crianças que já ouviram muitas vezes *não "
+                   "tenhas medo*, a que alivia é a segunda: toda a gente tem.",
+        "Cuidados": "Não acrescentar *e não há nada a temer*. Discutir se aquilo "
+                    "é mesmo perigoso é a reavaliação que este material não faz.",
+        "questions": [
+            "Achas que as pessoas mais corajosas também têm medo?",
+            "O que achas que acontece se ficarmos um bocadinho?",
+        ],
+    },
+    {
+        "n": 2,
+        "title": "O Medo vem visitar",
+        "Idade": "4 aos 7 anos",
+        "Base": "Externalização, terapia narrativa. **Prática**, com pouca "
+                "investigação controlada.",
+        "Objectivo": "Pôr o Medo fora dela, como personagem, para que se possa "
+                     "falar dele sem falar dela.",
+        "Como aplicar": "Desenho primeiro, perguntas depois. A última pergunta — "
+                        "*o que faz ele quando tu ficas na mesma* — é a que liga "
+                        "ao esquema, e vale a pena guardá-la para o fim.",
+        "A notar": "O tamanho que ela lhe dá, e se ele muda de tamanho conforme a "
+                   "situação. **E se ele tem voz**: crianças que lhe dão frases "
+                   "costumam repetir frases ouvidas em casa.",
+        "Cuidados": "Externalizar não é entregar-lhe a responsabilidade. Se ela "
+                    "disser *o Medo não me deixou ir*, a resposta é que **o Medo "
+                    "apareceu e os pés eram dela** — as duas coisas ao mesmo "
+                    "tempo, sem escolher.",
+        "questions": [
+            "Como é que sabes que ele está a chegar?",
+            "O que é que ele te diz ao ouvido?",
+            "E o que é que ele faz quando tu ficas na mesma?",
+        ],
+    },
+    {
+        "n": 3,
+        "title": "O que o meu corpo faz",
+        "Idade": "5 aos 8 anos",
+        "Base": "Consciência interoceptiva. **Razoável** quanto à ligação entre "
+                "reconhecer sinais e regular; a aplicação nesta forma é prática.",
+        "Objectivo": "Reconhecer o aviso do corpo, que no medo é o mais claro de "
+                     "todas as famílias — e descobrir que ele desce sozinho.",
+        "Como aplicar": "Com o mapa corporal ao lado, se estiver a usá-lo. A "
+                        "segunda pergunta é a importante: **se ficares, o corpo "
+                        "continua igual?**",
+        "A notar": "Se ela consegue nomear alguma coisa. Uma criança que não "
+                   "sente nada no corpo ou não está a olhar, ou está a evitar "
+                   "olhar — e são coisas diferentes.",
+        "Cuidados": "Não transformar isto em vigilância dos sintomas. Uma criança "
+                    "que passa a monitorizar o corpo encontra sempre alguma "
+                    "coisa, e isso alimenta em vez de aliviar.",
+        "questions": [
+            "O que é que o corpo faz primeiro?",
+            "Se ficares ali um bocadinho, continua igual?",
+            "Já houve uma vez em que o corpo se assustou e afinal não era nada?",
+        ],
+    },
+    {
+        "n": 4,
+        "title": "O que eu faço quando ele chega",
+        "Idade": "6 aos 9 anos",
+        "Base": "Comportamental — análise da resposta. **Estabelecido** quanto ao "
+                "papel da evitação; esta aplicação é razoável.",
+        "Objectivo": "Ver o que ela faz, e sobretudo se o que faz a deixa ficar "
+                     "ou a leva embora. **É a distinção transformada em coluna.**",
+        "Como aplicar": "Sem julgar nenhuma linha. A terceira coluna — *fico ou "
+                        "saio* — é para ela assinalar, não para nós decidirmos.",
+        "A notar": "**A mesma acção pode ser as duas coisas.** Ir ter com alguém "
+                   "para conseguir ficar é aproximação; ir ter com alguém para "
+                   "sair dali é fuga. A diferença nunca está na técnica, está no "
+                   "que aconteceu a seguir.",
+        "Cuidados": "A última pergunta — o que já não faz — costuma trazer mais do "
+                    "que a tabela toda, e é onde a acomodação da família aparece "
+                    "sem ninguém a nomear.",
+        "questions": [
+            "Isso que fazes deixa-te ficar ou leva-te embora?",
+            "Há alguma coisa que já não fazes por causa do medo?",
+            "Quem decide, quando isso acontece — tu ou o medo?",
+        ],
+    },
+    {
+        "n": 5,
+        "title": "As palavras finas",
+        "Idade": "7 aos 9 anos",
+        "Base": "Vocabulário emocional. **Razoável** quanto a diferenciação "
+                "emocional; o conjunto é do ColorHugs.",
+        "Objectivo": "Mostrar que as três se distinguem **por tempo** e não por "
+                     "tamanho: nervoso é antes e perto, preocupado é antes e "
+                     "longe, tímido é sobre quem se é.",
+        "Como aplicar": "Uma caixa por palavra, sem ordem. Se uma ficar vazia, "
+                        "deixá-la vazia.",
+        "A notar": "Se usa *nervoso* só para coisas más. Metade da utilidade da "
+                   "palavra está em ela também aparecer antes das boas.",
+        "Cuidados": "**Não ordenar por tamanho**, nem sugeri-lo. Aqui a ordenação "
+                    "por intensidade não faz sentido nenhum, e propô-la ensinaria "
+                    "uma coisa falsa sobre as palavras.",
+        "questions": [
+            "Qual destas dizes mais vezes?",
+            "Qual delas é antes de acontecer, e qual é durante?",
+            "Alguma delas é uma palavra que os outros usam sobre ti?",
+        ],
+    },
+    {
+        "n": 6,
+        "title": "Nervoso",
+        "Idade": "6 aos 9 anos",
+        "Base": "Vocabulário e antecipação. **Prática** nesta forma.",
+        "Objectivo": "Recuperar a metade boa da palavra: nervoso aparece antes do "
+                     "aniversário e antes da apresentação, e não só antes do que "
+                     "corre mal.",
+        "Como aplicar": "As duas caixas juntas, e por esta ordem — a de que não "
+                        "gosta primeiro, porque é a que lhe vem à cabeça.",
+        "A notar": "Se consegue preencher a segunda. **Uma criança que não "
+                   "encontra nenhuma coisa boa que a deixe nervosa está a evitar "
+                   "mais do que parece** — as coisas boas com nervoso dentro são "
+                   "as primeiras a desaparecer.",
+        "Cuidados": "Não tratar o nervoso como coisa a eliminar antes de uma "
+                    "apresentação ou de um teste. Serve para preparar.",
+        "questions": [
+            "Uma coisa que te deixa nervosa e de que gostas na mesma?",
+            "Onde é que sentes o nervoso no corpo?",
+            "Ele vai-se embora quando a coisa começa?",
+        ],
+    },
+    {
+        "n": 7,
+        "title": "Preocupado",
+        "Idade": "7 aos 9 anos",
+        "Base": "Antecipação e procura de garantias. **Razoável** quanto ao papel "
+                "da procura de garantias na manutenção; a ficha é prática.",
+        "Objectivo": "Ver a preocupação como medo com tempo futuro — e "
+                     "**descobrir, por ela própria, que a garantia dura pouco.**",
+        "Como aplicar": "A terceira pergunta é a ficha toda: *quanto tempo é que a "
+                        "preocupação fica quieta?* Deixá-la responder sem "
+                        "sugerir. Quase todas dizem *pouco*.",
+        "A notar": "A quem pede garantias e com que frequência. **Se um adulto "
+                   "responde a isto por ela na sessão, acabou de mostrar o "
+                   "padrão.**",
+        "Cuidados": "Não retirar as garantias de repente e sem combinar. O que se "
+                    "combina é responder uma vez e depois responder à pergunta e "
+                    "não à ansiedade — e isso combina-se com os adultos, não com "
+                    "ela.",
+        "questions": [
+            "Costumas perguntar a alguém se vai correr bem?",
+            "Quanto tempo é que a preocupação fica quieta depois?",
+            "Há alguma preocupação que já não te aparece?",
+        ],
+    },
+    {
+        "n": 8,
+        "title": "Tímido",
+        "Idade": "6 aos 9 anos",
+        "Base": "Temperamento e evitação social. **Estabelecido** quanto à "
+                "distinção entre os dois; a ficha é prática.",
+        "Objectivo": "Separar ser tímida — que não é problema nenhum — de deixar "
+                     "de fazer coisas por causa disso, que é o que se trabalha.",
+        "Como aplicar": "Começar pelos sítios onde fala à vontade, e não pelos "
+                        "outros. A ficha abre a dizer que ser tímida não é um "
+                        "problema, e essa frase é para ser lida em voz alta.",
+        "A notar": "A terceira pergunta. **Uma criança a quem chamam tímida à "
+                   "frente dos outros recebe uma identidade e não uma palavra**, e "
+                   "o que ela diz sobre isso costuma ser a coisa mais útil da "
+                   "página.",
+        "Cuidados": "**Uma criança tímida com amigos não tem problema nenhum**, e "
+                    "esta ficha não deve ser aplicada como se tivesse. Se houver "
+                    "ausência de fala em contextos específicos, isso é sinal para "
+                    "avaliar e não para aplicar mais fichas.",
+        "questions": [
+            "Onde é que falas à vontade sem pensar nisso?",
+            "Há alguma coisa que gostavas de fazer e não fazes por vergonha?",
+            "Alguém já te chamou tímida à frente dos outros?",
+        ],
+    },
+    {
+        "n": 9,
+        "title": "Chegar devagar",
+        "Idade": "6 aos 9 anos",
+        "Base": "Aproximação gradual. **Estabelecido** — o achado mais sólido de "
+                "todo este material. **Não é um protocolo de exposição.**",
+        "Objectivo": "Transformar uma coisa evitada numa série de bocadinhos, "
+                     "escolhidos por ela, com companhia combinada e com a falha "
+                     "prevista.",
+        "Como aplicar": "**O primeiro degrau tem de dar para fazer hoje.** É o "
+                        "que mais corre mal: um degrau ambicioso não se dá, e "
+                        "ninguém volta a tentar. Se ela propuser um grande, "
+                        "aceitar e pôr um menor antes.",
+        "A notar": "Se a ordem é dela e não a nossa ideia do que é mais difícil. "
+                   "**E se preenche a caixa da falha**: quem não consegue "
+                   "imaginar não conseguir é quem mais precisa de a ter escrita.",
+        "Cuidados": "**Nunca perguntar quanto medo tem em cada degrau.** A ficha "
+                    "ordena situações, não níveis. E sem prémio nem castigo: "
+                    "aproximação com castigo em cima deixa de o ser.",
+        "questions": [
+            "Qual seria o bocadinho mais pequeno de todos?",
+            "Quem vai contigo nesse?",
+            "E se tentares e não conseguires, o que fazemos?",
+        ],
+    },
+]
+
+DYNAMICS["scared"] = {
+    1: [
+        ("4–6", "**A carta e o espelho.** Pôr a carta do assustado ao lado do espelho da primeira página e perguntar se são parecidos."),
+        ("6–8", "**Tapar o painel da direita.** Mostrar só o lado do evitamento e pedir que adivinhe o outro. Descobre-o em vez de o ler."),
+        ("8–9", "**Quem é que também tem.** Pedir que nomeie três pessoas corajosas e adivinhe o medo de cada uma. Costuma desarmar a ideia de que ter medo é falha."),
+        ("qualquer", "**Guardar para o fim.** Reler esta página na última sessão e perguntar se mudou alguma coisa."),
+    ],
+    2: [
+        ("4–6", "**Dar-lhe voz.** Perguntar o que o Medo diria se pudesse falar, e escrever isso ao lado do desenho."),
+        ("4–7", "**Onde é que ele mora.** Pedir que desenhe onde o Medo fica quando não está com ela."),
+        ("6–8", "**O Medo de outra pessoa.** Pedir que desenhe o Medo de um adulto da casa. Costuma dizer mais do que o dela."),
+        ("7–9", "**O que ele quer.** Perguntar o que o Medo está a tentar conseguir. Aproxima da função sem usar a palavra."),
+    ],
+    3: [
+        ("5–7", "**O mapa do corpo.** Marcar no mapa corporal onde é o aviso, e comparar com o da zanga se já o tiver feito. Não costumam ser o mesmo sítio."),
+        ("5–8", "**Contar o que desce.** Ficar ali um minuto de relógio e ver o que o corpo faz. **Sem pedir nota nenhuma** — só o que mudou."),
+        ("8–9", "**O falso alarme.** Procurar duas vezes em que o corpo avisou e não era nada. Serve o mecanismo sem discutir probabilidades."),
+        ("com a família", "**O aviso dos adultos.** Perguntar-lhes o que os corpos deles fazem. As crianças costumam supor que os adultos não sentem."),
+    ],
+    4: [
+        ("6–8", "**Duas pilhas.** Escrever seis situações e separá-las: as que ela faz e as que já não faz. A segunda pilha é a intervenção."),
+        ("6–9", "**A mesma acção, duas leituras.** Pegar numa linha da tabela e perguntar o que aconteceu logo a seguir. É como se distingue aproximação de fuga."),
+        ("8–9", "**Quem decidiu.** Percorrer as linhas e perguntar, em cada uma, se quem decidiu foi ela ou o medo."),
+        ("com a família", "**O que deixámos de fazer.** Perguntar à família que coisas deixaram de fazer por causa disto. Mede a acomodação sem usar a palavra, e a lista surpreende quem a faz."),
+    ],
+    5: [
+        ("7–9", "**Antes, durante, sempre.** Distribuir as três cartas por estes três tempos. É a estrutura desta família em vez de uma ordenação por tamanho."),
+        ("7–9", "**A que os outros usam.** Perguntar qual das três já ouviu alguém dizer sobre ela."),
+        ("8–9", "**O nervoso bom.** Procurar três coisas boas que dão nervoso. Se não encontrar nenhuma, ficou material para a ficha 6."),
+        ("com a família", "**Cada um escolhe a sua.** Os adultos escolhem também, e contam uma vez em que a sentiram."),
+    ],
+    6: [
+        ("6–8", "**Antes e depois.** Desenhar como estava antes de uma coisa começar e como estava a meio. O nervoso quase sempre desce quando a coisa começa."),
+        ("6–9", "**A lista das coisas boas.** Cinco coisas de que gosta e ver em quantas há nervoso à mistura."),
+        ("8–9", "**O nervoso dos outros.** Perguntar como é que se percebe que outra pessoa está nervosa. Treina o reconhecimento fora de si própria."),
+        ("com a família", "**A véspera.** Combinar com os adultos o que se diz na véspera de uma coisa grande. *Vai correr tudo bem* costuma ser o que menos ajuda."),
+    ],
+    7: [
+        ("7–9", "**Quanto tempo dura.** Cronometrar, a brincar, quanto tempo a preocupação fica quieta depois de alguém garantir. É a demonstração inteira."),
+        ("7–9", "**A preocupação que já se foi.** Procurar uma que a preocupava o ano passado e já não. Mostra que passam, sem lho dizermos."),
+        ("8–9", "**Adiar.** Combinar guardar as preocupações para um bocadinho do dia, em vez de as perseguir quando chegam. Simples de explicar e difícil de fazer."),
+        ("com a família", "**Responder uma vez.** Combinar com os adultos como respondem à segunda e à terceira vez. **Isto combina-se com eles, não com ela.**"),
+    ],
+    8: [
+        ("6–8", "**Os sítios onde falo.** Desenhar ou nomear os sítios onde fala à vontade, antes de tocar nos outros."),
+        ("6–9", "**Uma coisa pequena com gente.** Escolher uma coisa social do tamanho de um degrau — pedir uma coisa ao balcão, dizer bom dia. Liga esta ficha à nona."),
+        ("8–9", "**A palavra dos outros.** Perguntar o que sente quando lhe chamam tímida, e o que preferia que dissessem."),
+        ("com a família", "**Não a apresentar como tímida.** Pedir aos adultos que deixem de o dizer à frente dela e de responder por ela. É a acomodação desta ficha."),
+    ],
+    9: [
+        ("6–8", "**O degrau de hoje.** Fazer o primeiro degrau ali mesmo, na sessão, se for possível. Um degrau dado vale mais do que quatro escritos."),
+        ("6–9", "**Cortar ao meio.** Pegar no primeiro degrau que ela propôs e fazer um mais pequeno antes. Quase sempre é preciso, e é melhor fazê-lo agora."),
+        ("8–9", "**Onde é que dá.** Verificar onde e quando o degrau é possível — na escola, no recreio, ao fim do dia. Muitos não são."),
+        ("com a família", "**Quem acompanha e o que faz.** A pessoa escolhida tem de saber que foi escolhida, e tem de saber que **não retira a coisa se ela ficar aflita**."),
+    ],
+}
+
+
 if __name__ == "__main__":
-    print(build())
+    import sys
+
+    print(build(sys.argv[1] if len(sys.argv) > 1 else "angry"))

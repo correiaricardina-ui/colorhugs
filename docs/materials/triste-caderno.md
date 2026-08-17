@@ -534,8 +534,474 @@ causa, porque lhe perguntaram. *Melancolia* e *abatimento* são de adulto.
 
 ## 9. Fichas — orientação de aplicação
 
-*(Gerada por `scripts/build-sheet-guides.py`. Ainda por escrever para esta
-família.)*
+Uma página por ficha. **As fichas em si não estão aqui**: vivem no caderno de
+exploração da criança, e uma licença dá acesso aos dois ficheiros — imprimi-las
+duas vezes só produz duas cópias que podem ficar desencontradas.
+
+Cada página diz para que serve a ficha, como se aplica, o que perguntar, o que
+notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
+**Por código, nunca por nome.**
+
+<div class="guide" markdown="1">
+
+### Ficha 1 — A Tristeza
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 6 aos 9 anos |
+| **Base** | Psicoeducação. Sem nível de evidência próprio: reformula em linguagem infantil o que a secção 1 sustenta. |
+| **Objectivo** | Dar-lhe um enquadramento antes de lhe pedir seja o que for. Três afirmações e o esquema; nada para preencher. |
+| **Como aplicar** | Ler com ela, em voz alta, sem parar para perguntar. É a única página do caderno que não faz perguntas. |
+| **A notar** | Qual das três a surpreende. **A tristeza não é má** costuma ser a que provoca reacção; *não passa por a empurrarmos* costuma ser a que alivia, sobretudo em crianças que já tentaram e acham que falharam. |
+| **Cuidados** | Não transformar a leitura numa lição. E não acrescentar *mas vai passar* — a página já o diz, e repeti-lo com ênfase é o consolo a virar animação. |
+
+**Questões de exploração**
+
+- Já tinhas pensado que a tristeza podia servir para alguma coisa?
+- Alguma coisa aqui te parece diferente do que te costumam dizer?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 4–6 | **A carta e o espelho.** Pôr a carta do triste ao lado do espelho da primeira página e perguntar se são parecidos. Liga a personagem a ela própria sem o dizer. |
+| 6–8 | **Tapar uma linha.** Tapar a linha *com companhia* e perguntar o que acha que muda quando alguém está ao pé. Descobre-o em vez de o ler. |
+| 8–9 | **Explicar a outra pessoa.** Pedir que explique o esquema a um adulto presente, por palavras dela. |
+| qualquer | **Guardar para o fim.** Reler esta página na última sessão da família e perguntar se mudou alguma coisa. |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+<div class="guide" markdown="1">
+
+### Ficha 2 — Quando é que ela aparece
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 5 aos 8 anos |
+| **Base** | Comportamental — padrão temporal. **Estabelecido** quanto à ligação entre contexto e resposta; esta aplicação é razoável. |
+| **Objectivo** | Procurar as alturas que se repetem. **Não procura causas**: procura horas, sítios e transições. |
+| **Como aplicar** | Uma linha de cada vez. Com crianças mais novas o adulto escreve enquanto ela conta. Se ela começar a explicar porquê, deixar — mas não perguntar. |
+| **A notar** | Se as alturas se agrupam. O deitar, o domingo à tarde, a saída da escola e as transições entre casas são as mais frequentes, e cada uma leva a conversa a um sítio diferente. |
+| **Cuidados** | **Nunca perguntar *porque é que estavas triste*.** Uma criança que não sabe inventa uma causa para satisfazer quem perguntou, e a partir daí passa a repeti-la. |
+
+**Questões de exploração**
+
+- Há alguma altura do dia em que aparece mais?
+- E algum dia da semana?
+- O que estava a acontecer mesmo antes?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 5–7 | **A linha do dia.** Desenhar o dia numa tira de papel e marcar com um traço as horas em que aparece. Funciona sem escrever nada. |
+| 6–8 | **A semana em cartões.** Sete cartões, um por dia, e assinalar os dias em que apareceu. Sem contagem e sem soma. |
+| 8–9 | **O dia em que não apareceu.** Procurar um dia em que não apareceu e ver o que estava diferente. Costuma render mais do que os outros. |
+| com a família | **A mesma tabela pelos adultos.** Cada um marca as alturas em que acha que ela fica triste. As diferenças são o material. |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+<div class="guide" markdown="1">
+
+### Ficha 3 — O que me faz companhia
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 4 aos 7 anos |
+| **Base** | Co-regulação e objecto de conforto. **Base estabelecida** para a primeira, **razoável** para o objecto, prática para a forma concreta de cada uma. |
+| **Objectivo** | Descobrir o que a acompanha — não o que a anima. As seis figuras são as mesmas que ela viu no ecrã. |
+| **Como aplicar** | Pôr as seis à frente e deixar assinalar quantas quiser. A caixa do fim é para a dela, e vale mais do que as seis nossas. |
+| **A notar** | Quantas precisam de outra pessoa. Uma criança que só escolhe as que não dependem de ninguém está a dizer alguma coisa sobre quem tem disponível — e uma que só escolhe as que dependem também. |
+| **Cuidados** | **Nenhuma escolha é melhor do que outra**, e a manta não é um consolo menor do que a mãe. Se ela não escolher nenhuma, isso é resposta e não recusa. |
+
+**Questões de exploração**
+
+- Qual destas já usas sem ninguém te dizer?
+- Há alguma que gostavas e que não dá para ter?
+- Há alguma tua que não esteja aqui?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 4–6 | **As seis em cima da mesa.** Imprimir as seis páginas e deixá-la pegar, sem dizer nada. Muitas escolhem antes de haver pergunta. |
+| 4–7 | **Trazer a coisa.** Pedir que traga na próxima sessão a coisa macia, se existir. Muda o que se pode dizer a seguir. |
+| 6–9 | **Depende de quem.** Separar as figuras em duas pilhas: as que precisam de outra pessoa e as que não. Contar as pilhas com ela. |
+| com a família | **Os adultos adivinham.** Pedir-lhes que escolham as que acham que são dela, antes de verem as escolhas. A diferença é a conversa. |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+<div class="guide" markdown="1">
+
+### Ficha 4 — O que as pessoas dizem
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 7 aos 9 anos |
+| **Base** | Princípios de interacção pais-criança. **Estabelecido** quanto ao efeito da resposta do adulto; esta aplicação é razoável. |
+| **Objectivo** | Tornar a distinção concreta: separar o que ajuda do que não ajuda, e chegar ao que ela gostava de ouvir e ninguém diz. |
+| **Como aplicar** | As duas primeiras caixas existem para tornar a terceira perguntável. Não apressar a terceira. |
+| **A notar** | **Se aparecer uma frase que também é sua, isso é o material a funcionar.** Não a defender, não explicar a intenção — anotar e usar depois. |
+| **Cuidados** | **Esta folha vai para casa com ela.** É quem aplica que decide o que sai da sala; se houver risco de a frase chegar à pessoa descrita e isso ser mau para ela, a folha fica no processo e faz-se a dinâmica falada. |
+
+**Questões de exploração**
+
+- Quem é que diz a coisa que ajuda?
+- E a que não ajuda — achas que essa pessoa sabe?
+- Se pudesses ensinar-lhes uma frase, qual era?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 7–9 | **Ensaiar a frase.** Dizer em voz alta a frase que ela gostava de ouvir, dita por si. Ouvi-la dita muda-a. |
+| 7–9 | **Quem diz o quê.** Escrever ao lado de cada frase quem a costuma dizer. Mapeia a casa sem perguntar pela casa. |
+| 8–9 | **A intenção e o efeito.** Perguntar se acha que a pessoa quis ajudar. Separar as duas coisas protege a relação. |
+| com a família | **A frase entregue.** Se ela quiser, dizer aos adultos a frase que gostava de ouvir. **Só se ela quiser, e nunca por decisão nossa.** |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+<div class="guide" markdown="1">
+
+### Ficha 5 — As palavras finas
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 7 aos 9 anos |
+| **Base** | Vocabulário emocional. **Razoável** quanto a diferenciação emocional; o conjunto concreto é do ColorHugs. |
+| **Objectivo** | Pôr as quatro à frente e ver quais reconhece. **Não são graus** — são coisas diferentes, e a ficha diz-lho. |
+| **Como aplicar** | Uma caixa por palavra, sem ordem. Se uma ficar vazia, deixá-la vazia. |
+| **A notar** | Qual fica por preencher. E se usa *sozinho* para tudo — é a palavra mais larga das quatro. |
+| **Cuidados** | **Não ordenar por tamanho**, nem sugeri-lo. Nesta família a ordenação por intensidade nem sequer faz sentido, e propô-la ensinaria uma coisa falsa sobre as palavras. |
+
+**Questões de exploração**
+
+- Qual destas dizes mais vezes?
+- Há alguma que nunca tinhas ouvido?
+- Alguma delas é de uma pessoa em concreto?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 7–9 | **Por quem lá está.** Separar as quatro em duas pilhas: as que acontecem com gente à volta e as que acontecem sozinha. |
+| 7–9 | **A que custa mais dizer.** Escolher a que custa mais admitir em voz alta, e falar só dessa. |
+| 8–9 | **As palavras dos outros.** Perguntar qual das quatro usaria a mãe, o pai, o professor. |
+| com a família | **Cada um escolhe a sua.** Os adultos escolhem também, e contam uma vez em que a sentiram. |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+<div class="guide" markdown="1">
+
+### Ficha 6 — Desiludido
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 7 aos 9 anos |
+| **Base** | Comportamental — expectativa e resultado. **Prática** nesta forma. |
+| **Objectivo** | Ver a desilusão como distância entre o que se esperava e o que houve, e não como uma tristeza mais pequena. |
+| **Como aplicar** | As duas primeiras caixas juntas, e só depois a terceira. A terceira é a que interessa. |
+| **A notar** | **Se alguém prometeu ou se foi ela que pensou.** Uma criança que se desilude muitas vezes ou espera de mais, ou vive com alguém que promete de mais — e são coisas diferentes. |
+| **Cuidados** | Não corrigir a expectativa. *Também não era assim tão certo* é uma repreensão com outro nome. |
+
+**Questões de exploração**
+
+- O que é que tu achavas que ia acontecer?
+- Já aconteceu com a mesma pessoa mais do que uma vez?
+- Como é que soubeste que não ia ser?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 7–9 | **Duas colunas.** O que eu esperava, o que houve — em duas colunas lado a lado. A distância fica visível. |
+| 7–9 | **Quem prometeu.** Marcar, em três desilusões, se alguém prometeu ou se foi ela que pensou. O padrão aparece depressa. |
+| 8–9 | **A desilusão pequena.** Procurar uma que já não lhe faz diferença nenhuma. Mostra-lhe que passam, sem lho dizermos. |
+| com a família | **As promessas em casa.** Perguntar aos adultos que promessas costumam fazer sobre tempo e disponibilidade. Sem acusação — é informação. |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+<div class="guide" markdown="1">
+
+### Ficha 7 — Sozinho
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 6 aos 9 anos |
+| **Base** | Apoio social. **Razoável** quanto à ligação entre isolamento percebido e sofrimento; a aplicação é prática. |
+| **Objectivo** | Separar as duas coisas que a palavra junta: estar sem ninguém, e sentir-se só estando lá gente. |
+| **Como aplicar** | A segunda caixa é a que faz o trabalho. Perguntar **estava lá gente?** e esperar. |
+| **A notar** | **Se ela se sente assim com gente à volta, é outra coisa e é mais pesada.** Uma criança que só se sente sozinha quando está mesmo sozinha está numa situação muito diferente. |
+| **Cuidados** | Não tranquilizar com factos — *mas tu tens a tua irmã* fecha a conversa e ensina que aquilo não se diz. Receber primeiro, verificar depois. |
+
+**Questões de exploração**
+
+- Onde é que te sentes assim? E quando?
+- Estava lá gente nessas alturas?
+- Há algum sítio onde nunca te sentes assim?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 6–8 | **Dois desenhos.** Desenhar duas vezes em que se sentiu sozinha: uma com gente à volta e outra sem. Se só conseguir uma, isso é a resposta. |
+| 6–9 | **O mapa dos sítios.** Marcar numa planta grosseira da casa e da escola onde é que aparece. |
+| 8–9 | **Quem é que sabe.** Perguntar se alguém sabe que ela se sente assim. É a pergunta que mais rende desta ficha. |
+| com a família | **O recreio.** Perguntar aos adultos o que sabem sobre os intervalos dela. Costumam não saber, e é onde isto vive. |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+<div class="guide" markdown="1">
+
+### Ficha 8 — Com saudades
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 4 aos 7 anos |
+| **Base** | Representação de quem está ausente. **Prática**, com apoio indirecto na literatura sobre separação e vinculação. |
+| **Objectivo** | Dar lugar à única palavra da família que não é inteiramente má, e ver de quem ou de quê. |
+| **Como aplicar** | É de desenhar, não de escrever. As perguntas por baixo fazem-se depois do desenho, nunca antes. |
+| **A notar** | **Se é de uma pessoa, de um sítio ou de um tempo.** Uma criança com saudades de uma versão da própria família que já não existe está a dizer outra coisa — é frequente depois de uma separação, de uma mudança ou de um nascimento. |
+| **Cuidados** | **Não assumir luto.** A mesma figura serve para uma avó que mudou de casa e para uma avó que morreu, e o desenho não decide qual. Se for luto, esta ficha não chega. |
+
+**Questões de exploração**
+
+- De quem, ou de quê?
+- Ter saudades faz-te sentir bem ou mal? Ou as duas coisas?
+- Quando é que te lembras mais?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 4–6 | **A caixa das saudades.** Uma caixa onde põe coisas que lhe lembram essa pessoa. Leva-a para casa. |
+| 4–7 | **Mandar sem enviar.** Desenhar uma coisa para essa pessoa, mesmo que não se envie. O desenho basta-se. |
+| 6–9 | **Pessoa, sítio ou tempo.** Perguntar as três e ver qual escolhe. É a pergunta clínica desta ficha. |
+| com a família | **As saudades dos adultos.** Perguntar-lhes de que têm saudades. Uma criança que percebe que também eles têm carrega menos sozinha. |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+<div class="guide" markdown="1">
+
+### Ficha 9 — Magoado
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 7 aos 9 anos |
+| **Base** | Sistémica. **Prática** nesta forma. |
+| **Objectivo** | É a única das quatro palavras que aponta para outra pessoa. A ficha procura quem, e se essa pessoa sabe. |
+| **Como aplicar** | A terceira caixa — o que lhe diria — fica por dizer. **Não é a ficha da reparação**: aqui não há nada que ela tenha de compor. |
+| **A notar** | **Uma criança que diz que a pessoa não sabe está a dizer duas coisas ao mesmo tempo**: que foi magoada, e que não conseguiu dizê-lo. A segunda é geralmente a que se trabalha. |
+| **Cuidados** | Não passar daqui para uma conversa entre as duas pessoas sem preparação. E atenção a quem é nomeado: se for alguém de casa, a folha pode não dever sair da sala. |
+
+**Questões de exploração**
+
+- Essa pessoa sabe que te magoou?
+- Foi a fazer de propósito, ou achas que não deu por isso?
+- Se pudesses dizer-lhe uma coisa, o que era?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 7–9 | **Sabe ou não sabe.** Duas colunas com as pessoas que magoaram: as que sabem e as que não. A segunda coluna é o trabalho. |
+| 7–9 | **A carta que não se envia.** Escrever ou desenhar o que diria, sem o entregar. |
+| 8–9 | **A versão do outro.** Contar a mesma vez do ponto de vista da outra pessoa. **Exigente, e só quando a relação já aguenta.** |
+| com a família | **Sem nomear.** Se a pessoa nomeada estiver na sala, não trazer esta ficha. Trabalhar antes o que a impede de dizer. |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+<div class="guide" markdown="1">
+
+### Ficha 10 — O que eu posso pedir
+
+| Orientação | |
+| --- | --- |
+| **Idade** | 6 aos 9 anos |
+| **Base** | Comunicação de necessidades e procura de ajuda. **Prática** — a companhia assenta em terreno firme, o pedir não. |
+| **Objectivo** | Fechar a distância entre o que ela descobriu na ficha 3 e o que ela recebe. **É o que esta família tem em vez de *da próxima vez*.** |
+| **Como aplicar** | Depois da ficha 3, nunca antes — não há o que pedir sem saber primeiro o que ajuda. Ensaiar a frase em voz alta na sala. |
+| **A notar** | A quem pede. E se a terceira caixa fica vazia: uma criança que não consegue imaginar a recusa é a que mais precisa de a ter preparada. |
+| **Cuidados** | **A terceira caixa não é opcional.** Sem ela a ficha prepara uma recusa que a criança vai ler como rejeição. Um pedido recusado não é um pedido falhado — é um pedido com outro tempo. E não prometer que pedir faz passar. |
+
+**Questões de exploração**
+
+- O que é que queres pedir, e a quem?
+- Achas que essa pessoa sabe que isso te ajuda?
+- E se ela não puder nessa altura, o que fazes?
+
+**Dinâmicas a partir desta ficha**
+
+| | |
+| --- | --- |
+| 6–8 | **Ensaiar comigo.** Ela pede ao clínico o que quer pedir em casa, ali mesmo. Ensaiar a frio é metade do trabalho. |
+| 6–9 | **Onde é que dá.** Verificar se o pedido é possível na altura em que a tristeza costuma aparecer — ao deitar, no carro, à saída da escola. |
+| 8–9 | **Pedir sem palavras.** Combinar um gesto ou um objecto que sirva de pedido. Para crianças a quem dizer custa. |
+| com a família | **Combinar quem recebe.** A pessoa a quem ela vai pedir tem de saber que foi escolhida, e o que fazer quando não puder. |
+
+<div class="record" markdown="1">
+
+| Aplicação | |
+| --- | --- |
+| Código / processo | |
+| Idade | |
+| Data | |
+
+| Registo da sessão |
+| --- |
+| |
+| |
+| |
+
+</div>
+
+</div>
+
+
 
 ---
 

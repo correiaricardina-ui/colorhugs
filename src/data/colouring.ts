@@ -96,7 +96,7 @@ export const COLOURING_PAGES: ColouringPage[] = [
     alt: "A child and a grown-up sitting on a bench, talking",
     // Serves sadness too (D-216): it is the one of anger's five that survives
     // the sad family's distinction, because it accompanies rather than removes.
-    families: ["angry", "sad"],
+    families: ["angry", "sad", "scared"],
     evidence: {
       level: "reasonable",
       note: "That young children regulate with an adult rather than alone is well established; that this gesture helps in the moment is reasonable. It teaches that there is always someone to go to — at home or at school — which holds even in a minute when the room is empty. For sadness the caveat is sharper and must not be lost: the literature on telling someone is consistent about the bond and equivocal about the feeling lifting. Company makes it easier to carry; it does not make it pass faster.",
@@ -111,6 +111,11 @@ export const COLOURING_PAGES: ColouringPage[] = [
     // leaving the situation; for sadness it is being with yourself without
     // being sent away — which is why the page is named for what it shows and
     // never for the strategy (D-120).
+    //
+    // **It does not cross to scared, and that is the point** (D-238). For fear,
+    // leaving the situation *is* avoidance, which is the thing the family's
+    // distinction says maintains it. Offering it would be the product proposing
+    // to the child what the workbook tells the parents not to do.
     families: ["angry", "sad"],
     evidence: {
       level: "reasonable",
@@ -162,11 +167,22 @@ export const COLOURING_PAGES: ColouringPage[] = [
     },
   },
   {
+    id: "stepping-stones",
+    path: "strategy",
+    src: "/assets/colouring/strategies/stepping-stones",
+    alt: "A child crossing a path of round stones towards a cat waiting at the end",
+    families: ["scared"],
+    evidence: {
+      level: "established",
+      note: "That avoidance maintains fear, and that graded approach reduces it, is among the most solid findings child psychology has — and it is the only claim in this library that reaches established. **This page is not the approach itself**: the ladder opens, and a child alone has nobody to receive it, so it lives in the workbook. What the page does is carry the mechanism as a picture. She looks at it and is asked for nothing (D-239).",
+    },
+  },
+  {
     id: "counting-fingers",
     path: "strategy",
     src: "/assets/colouring/strategies/counting-fingers",
     alt: "An open hand with the fingers spread wide",
-    families: ["angry"],
+    families: ["angry", "scared"],
     evidence: {
       level: "reasonable",
       note: "Attentional deployment has the best support specifically in young children — the mechanism in the classic delay research. Probably the strongest of this set at four and five. Counting is somewhere to put attention, never an exercise.",
@@ -177,7 +193,7 @@ export const COLOURING_PAGES: ColouringPage[] = [
     path: "strategy",
     src: "/assets/colouring/strategies/floating-feather",
     alt: "A feather drifting down through the clouds",
-    families: ["angry"],
+    families: ["angry", "scared"],
     evidence: {
       level: "practice",
       note: "The most popular strategy in children's products and the evidence is thinner than the popularity implies: the physiological logic and the studies are largely adult. Reasonable in adults, practice in children.",
@@ -188,7 +204,7 @@ export const COLOURING_PAGES: ColouringPage[] = [
     path: "strategy",
     src: "/assets/colouring/strategies/jumping",
     alt: "A child jumping with both arms in the air",
-    families: ["angry"],
+    families: ["angry", "scared"],
     evidence: {
       level: "practice",
       note: "Moving is not hitting. Discharging anger by striking something is excluded: the catharsis literature points the other way, raising arousal rather than lowering it.",

@@ -44,7 +44,8 @@
     },
     "literacy": {
       "angry": "A zanga costuma aparecer quando alguma coisa parece injusta, ou quando queríamos muito uma coisa e não conseguimos. Chega depressa, e demora mais tempo a ir-se embora do que a chegar.",
-      "sad": "A tristeza costuma aparecer quando perdemos alguma coisa de que gostávamos, ou quando as coisas não foram como esperávamos. Instala-se devagar e fica um bocado. Com alguém ao pé, não passa mais depressa — mas é mais fácil de carregar."
+      "sad": "A tristeza costuma aparecer quando perdemos alguma coisa de que gostávamos, ou quando as coisas não foram como esperávamos. Instala-se devagar e fica um bocado. Com alguém ao pé, não passa mais depressa — mas é mais fácil de carregar.",
+      "scared": "O medo aparece para nos dizer para termos cuidado. Não quer dizer que a coisa seja perigosa, e não quer dizer que tenhas de ficar parada. O medo fica mais pequeno quando nos aproximamos devagar — não quando fugimos."
     },
     "strategyPrompt": {
       "_": "Qual queres experimentar?",
@@ -67,7 +68,8 @@
       "sitting-beside": "Alguém ao pé de mim",
       "soft-blanket": "Uma coisa macia",
       "dog-beside": "Um bicho",
-      "keepsake-shelf": "Uma coisa que me lembra alguém"
+      "keepsake-shelf": "Uma coisa que me lembra alguém",
+      "scared__stepping-stones": "Chegar devagar"
     },
     "fine": {
       "happy__contente": "Contente",
@@ -114,7 +116,8 @@
       "sitting-beside": "No chão",
       "soft-blanket": "A manta e o urso",
       "dog-beside": "O cão",
-      "keepsake-shelf": "A prateleira"
+      "keepsake-shelf": "A prateleira",
+      "stepping-stones": "As pedras"
     }
   },
   "plans": {
