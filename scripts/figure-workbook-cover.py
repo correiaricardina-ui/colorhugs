@@ -60,7 +60,7 @@ DISCLAIMER = (
 # Families whose workbook is written. Generating a cover for one that is not
 # would put a finished-looking object in front of a colleague before the
 # content behind it exists.
-WRITTEN = {"angry", "sad", "scared"}
+WRITTEN = {"angry", "sad", "scared", "ashamed"}
 
 
 def fit(img, box):

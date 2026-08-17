@@ -4670,3 +4670,187 @@ the subject back.
 
 Both carry the ground-line instruction, which has now worked on every landscape
 page since it was rephrased.
+
+### D-254 `[IMPLEMENTATION]` The two ashamed pages passed, and the family is live at five
+| | Áreas | Linha |
+| --- | ---: | ---: |
+| also-got-it-wrong | 20 | 7.2px |
+| same-as-always | 15 | 6.3px, avisado |
+
+No colour crossed between regions in either. The block page has the most fillable
+areas of any page in the library. `same-as-always` sits under the 7px floor, as
+`stepping-stones` and `keepsake-shelf` do — recorded, not acted on.
+
+Both hold the rule this family added: **nobody is being looked at.** Neither
+child at the blocks is pointing, both face out, and the bedroom has nobody in it
+at all.
+
+The screen now asks **quem é que continua a gostar de ti na mesma?** over five
+pictures, and the literacy line carries the mechanism as the scared one does:
+*ela diz «tu és» — mas o que aconteceu não é quem tu és. E dá vontade de
+esconder, que é a única coisa que a faz ficar.*
+
+**Four families are live on screen, and each asks a different question.** Anger:
+*qual queres experimentar*. Sadness: *o que te faz companhia*. Fear: *qual queres
+experimentar*, with the mechanism carried by the literacy line and one picture.
+Shame: *quem continua a gostar de ti na mesma*. **The question is now the part
+that identifies a family**, more than the pictures under it — two of the five
+ashamed pages are the same drawings the sad family uses, doing different work.
+
+### D-255 `[IMPLEMENTATION]` The ashamed schema is a loop, not a graph
+`scripts/figure-shame-loop.py`, in both versions. **The first schema in the
+project that is not a graph.** Anger's is one episode over time, sadness's is one
+episode carried two ways, fear's is a series of episodes. **Shame's mechanism has
+no time axis worth drawing** — it is a circle that closes on itself, kept closed
+by the prediction never being tested.
+
+Four boxes, one loop, one arrow leaving it. **The arrow that leaves is the whole
+intervention: *alguém vê e fica*.**
+
+**A fault worth recording, because it was a fault of reasoning and not of
+drawing.** The first version had hiding *after* nobody being able to contradict
+her. The causal order is the other way — she hides, and *that* is why nobody can
+— and with the boxes in the wrong order the figure taught the mechanism
+backwards. The event now enters the loop from outside, since it does not repeat.
+
+### D-256 `[IMPLEMENTATION]` The ashamed workbook's prose, and its warning at the top
+Thirteen pages; section 9 is a stub. **It is the first workbook that opens with an
+instruction to read the limits before applying anything**, because it is the only
+family in the seven where what the child is ashamed of may be something done to
+her.
+
+Decisions inside it:
+
+- **Section 1 records both rejected distinctions and why**, including the one
+  that was chosen and then taken apart by its own premise.
+- **The error of this family is naming rather than acting: *rotular*.** *És
+  malcriada* tells a child exactly what shame already tells her, with an adult's
+  authority behind it. **And the workbook extends it to praise**: *és uma menina
+  tão boazinha* installs the same equation and prepares *então sou má*.
+- **Section 3 flags the danger inside the strongest option.** *Alguém que já
+  sabe* works because the child produces the counter-evidence herself — **unless
+  the person who already knows is the person who shamed her**, in which case the
+  figure points at the problem. The guidance says to ask who it is, every time.
+- **The *culpado* entry carries the question that splits this family in two:**
+  was it something she did, or something that happened? Guilt over an act is
+  workable and leads to repair. **Guilt over an event — a separation, an illness,
+  something done to her — is not guilt at all, and repair has nothing to hold.**
+- **Section 8 names the missing word, and it is the most consequential of the
+  seven families:** European Portuguese has no child's word for shame that comes
+  from nothing she did. *Humilhado* is adult and implies someone humiliating.
+  **What goes unnamed is exactly the shame that most needs saying.**
+
+**Section 10 is unlike any other family's.** It states that the questions are
+about the prediction and never about the content — *o que achas que aconteceria*,
+never *o que é que fizeste* — that sheet 8 is not applied without knowing who the
+person is, that sheet 9 is not applied where there was no act, and that **if
+suspicion of harm appears the workbook stops there**: what follows is the legal
+duty to report and the institution's procedure, and nothing here substitutes for
+either.
+
+### D-257 `[IMPLEMENTATION]` The ashamed family's sheets, and the two that are conditional
+`docs/materials/envergonhado-fichas.html`. Nine for the child, one for whoever
+applies it, one for the family. The child's book is twelve pages.
+
+**Nothing in the file asks the child what she hides.** Every question is about
+the prediction — *o que achas que aconteceria se soubessem* — and never about the
+content. If she tells, it is received; it is not gone looking for.
+
+**Two sheets are conditional, and the workbook now names them rather than
+numbering them**, so the condition cannot come loose from the sheet if the order
+ever changes:
+
+- ***Quem já sabe*** is not applied without knowing who that person is.
+- ***Arrependido*** is not applied where there was no act.
+
+Sheets that do work no other family's do:
+
+- ***O que eu fiz e o que eu sou*** is the distinction as two columns, and it
+  ends with the move that does most of the work: **if a friend said that about
+  himself, what would you say to him?** Almost every child is far more generous
+  with others than with herself.
+- ***Culpado* asks the question that splits the family**: was it something you
+  did, or something that happened? And it closes with the sentence that has to be
+  in her book and not only in the clinician's — *sentir-se culpada não quer dizer
+  que se seja culpada.*
+- ***Embaraçado* teaches what the language erased**, by asking for one moment
+  that has stopped mattering and one that has not. **A primeira passa em cinco
+  minutos. A segunda fica.**
+- ***Quem já sabe* ends by naming the evidence out loud**: *a Vergonha disse que
+  ia acontecer uma coisa, e não aconteceu.* It is the only sheet in the project
+  where the child is shown a prediction of her own failing.
+
+**The letter carries the correction to the people who make it**, in both
+directions: *isso que disseste magoou o teu irmão* instead of *és malcriada* —
+and *és uma menina tão boazinha* named as the same equation in reverse. It closes
+by saying that almost every adult carries old shame, and that it tends to wake
+when a child goes through the same: **reparar nisso é a diferença entre responder
+a ela e responder à nossa memória.**
+
+### D-258 `[IMPLEMENTATION]` The ashamed family's nine guides — and the family is closed
+Twenty-six pages, thirty-six dynamics. Each guide begins and ends on its own
+page, and **each one's session record is on the same page as its title** —
+checked explicitly this time, because that is exactly how guide 9 of the scared
+family failed while looking intact to a title search.
+
+Cautions in these guides that are rules rather than advice:
+
+- **Sheet 2:** do not correct the character with facts. A child who draws an
+  enormous Shame is not answered by being told it is not that big — she is asked
+  where it sends her.
+- **Sheet 3:** do not argue with the right-hand column. **Arguing against a
+  global label reinforces it**; what undoes it is hearing herself say something
+  else to somebody else.
+- **Sheet 4:** if she can name nobody, **do not fill it in for her and do not
+  press**. Naming somebody to please us produces a false list and closes the
+  subject.
+- **Sheet 6 → 7 is conditional:** if the answer was *it happened*, the repair
+  sheet is not used at all.
+- **Sheet 8:** the sheet asks whether it still stings, **not what it is**.
+- **Sheet 9:** not applied without knowing who the person is, and not applied at
+  all if she can name nobody.
+
+Two dynamics carry decisions rather than activities. **Sheet 6, with the
+family:** if it is a separation or an illness, the adults say out loud, in front
+of whoever applies it, that it was not her fault — **she needs to hear it from
+them, not from us.** And **sheet 8, with the family:** stop telling her
+embarrassing story to other people as an anecdote. It is frequent, it is
+affectionate, and it is precisely the mechanism.
+
+One dynamic asks the child for something the language cannot give her: **what
+word she would use for shame that comes from nothing she did.** There is none in
+Portuguese, and children usually invent a good one.
+
+**Four families are closed: angry, sad, scared, ashamed.** Three remain — feliz,
+calmo, tédio — and they are the ones with no strategies of descent at all.
+
+### D-259 `[DEFINED]` *Arrependido* becomes two sheets — the wish and the saying
+The single sheet asked two things that a child can manage separately: what she
+would have done differently, and what she wants to say to whoever was hurt.
+
+**They are not the same task.** The first is hers alone — she can complete it in
+the room, with nobody else's agreement needed. **The second depends on another
+person being willing to hear it.** Together on one page, a child who cannot
+manage the second leaves believing she failed the first as well.
+
+- ***O que querias ter feito de outra maneira*** — the wish turned into an
+  alternative, and forward: *se voltasse a acontecer amanhã, o que farias?*
+- ***O que querias dizer a quem ficou magoado*** — the speech bubbles, and it
+  closes with **se ela não quiser ouvir hoje, não quer dizer que não queira
+  nunca.**
+
+**Both are conditional on the same answer** in *Culpado*: something she did, not
+something that happened. The workbook now names both in the limits.
+
+**The caution that guards the first is the same one anger's forward sheet
+needed** (D-182), and it is worth repeating because the two are one word apart:
+**never *o que é que devias ter feito*.** That is a telling-off dressed as a
+worksheet. The question is about what **she** wanted.
+
+The family goes to ten child sheets and the child's book to thirteen pages; the
+workbook to twenty-seven.
+
+**Guide 7 failed the same way the scared family's guide 9 did** — the title held
+its page and the session record slid onto the next — and it was caught by the
+check added after that one, which now looks for a record on every page carrying a
+title. Four fields tightened until it fit.

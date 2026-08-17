@@ -96,7 +96,7 @@ export const COLOURING_PAGES: ColouringPage[] = [
     alt: "A child and a grown-up sitting on a bench, talking",
     // Serves sadness too (D-216): it is the one of anger's five that survives
     // the sad family's distinction, because it accompanies rather than removes.
-    families: ["angry", "sad", "scared"],
+    families: ["angry", "sad", "scared", "ashamed"],
     evidence: {
       level: "reasonable",
       note: "That young children regulate with an adult rather than alone is well established; that this gesture helps in the moment is reasonable. It teaches that there is always someone to go to — at home or at school — which holds even in a minute when the room is empty. For sadness the caveat is sharper and must not be lost: the literature on telling someone is consistent about the bond and equivocal about the feeling lifting. Company makes it easier to carry; it does not make it pass faster.",
@@ -127,7 +127,7 @@ export const COLOURING_PAGES: ColouringPage[] = [
     path: "strategy",
     src: "/assets/colouring/strategies/sitting-beside",
     alt: "A child and a grown-up sitting side by side on the floor, facing the same way",
-    families: ["sad"],
+    families: ["sad", "ashamed"],
     evidence: {
       level: "reasonable",
       note: "Co-regulation: that young children regulate with an adult rather than alone is well established, and it is the best-supported mechanism in this family's set. That silent presence specifically is what helps is practice. The drawing shows them facing the same way rather than each other, because this is the option that is not a conversation — the bench already is one.",
@@ -149,7 +149,7 @@ export const COLOURING_PAGES: ColouringPage[] = [
     path: "strategy",
     src: "/assets/colouring/strategies/dog-beside",
     alt: "A dog sitting calmly on a rug beside a child, the child's hand resting on its back",
-    families: ["sad"],
+    families: ["sad", "ashamed"],
     evidence: {
       level: "practice",
       note: "Animal company. Practice — which means not well studied, not that it does not work. For a choice that belongs to the child rather than to us, what children actually say outweighs a thin literature, and children say the dog constantly (D-218). Drawn with no breed markings and no collar, so no child's own animal is contradicted by it.",
@@ -175,6 +175,28 @@ export const COLOURING_PAGES: ColouringPage[] = [
     evidence: {
       level: "established",
       note: "That avoidance maintains fear, and that graded approach reduces it, is among the most solid findings child psychology has — and it is the only claim in this library that reaches established. **This page is not the approach itself**: the ladder opens, and a child alone has nobody to receive it, so it lives in the workbook. What the page does is carry the mechanism as a picture. She looks at it and is asked for nothing (D-239).",
+    },
+  },
+  {
+    id: "also-got-it-wrong",
+    path: "strategy",
+    src: "/assets/colouring/strategies/also-got-it-wrong",
+    alt: "Two children sitting side by side behind a tower of blocks that has fallen",
+    families: ["ashamed"],
+    evidence: {
+      level: "reasonable",
+      note: "Normalisation among peers: that shame rests on believing oneself uniquely at fault is well described, and that finding out otherwise reduces it is reasonable. **Neither child is at fault and neither is pointing** — the page has to show two people in something gone wrong without staging blame, because staging it would hand the child the feeling instead of the way out (D-252).",
+    },
+  },
+  {
+    id: "same-as-always",
+    path: "strategy",
+    src: "/assets/colouring/strategies/same-as-always",
+    alt: "A corner of a bedroom in the morning: a bed, slippers, a mug and a plush rabbit",
+    families: ["ashamed"],
+    evidence: {
+      level: "practice",
+      note: "Continuity and predictability. **It is not in the set for its evidence** — it is in the set so that a child who can name no person still has something to name (D-250). That is also why it contains no people at all: a person in it changes the subject back.",
     },
   },
   {

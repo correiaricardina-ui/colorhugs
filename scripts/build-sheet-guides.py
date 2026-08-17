@@ -889,6 +889,326 @@ DYNAMICS["scared"] = {
 }
 
 
+
+
+# ---------------------------------------------------------------------------
+# Envergonhado — nine sheets for the child plus the practitioner page (D-257).
+#
+# Two of the nine are conditional and their guidance says so in the first line
+# of *Cuidados*: *Quem já sabe* is not applied without knowing who the person
+# is, and *Arrependido* is not applied where there was no act.
+#
+# No guide here asks what the child hides. The questions are about the
+# prediction, never about the content.
+# ---------------------------------------------------------------------------
+
+SHEETS["ashamed"] = [
+    {
+        "n": 1,
+        "title": "A Vergonha",
+        "Idade": "6 aos 9 anos",
+        "Base": "Psicoeducação. Sem nível próprio: reformula em linguagem "
+                "infantil o que a secção 1 sustenta.",
+        "Objectivo": "Dar-lhe o enquadramento e mostrar-lhe o ciclo. Nada para "
+                     "preencher.",
+        "Como aplicar": "Ler com ela em voz alta e seguir o círculo com o dedo, "
+                        "pela ordem. Tapar a coluna verde e perguntar o que acha "
+                        "que faria o círculo abrir-se.",
+        "A notar": "**Ela diz «tu és»** costuma ser a frase que provoca "
+                   "reconhecimento — muitas crianças nunca ouviram ninguém "
+                   "descrever aquilo que se passa dentro delas.",
+        "Cuidados": "Não usar esta página para perguntar o que ela esconde. É "
+                    "para explicar o mecanismo, e o mecanismo explica-se sem "
+                    "conteúdo nenhum.",
+        "questions": [
+            "O que achas que faria o círculo abrir-se?",
+            "Já te aconteceu alguém saber de uma coisa e continuar igual?",
+        ],
+    },
+    {
+        "n": 2,
+        "title": "A Vergonha vem visitar",
+        "Idade": "4 aos 7 anos",
+        "Base": "Externalização, terapia narrativa. **Prática**, com pouca "
+                "investigação controlada.",
+        "Objectivo": "Pôr a Vergonha fora dela como personagem — o que nesta "
+                     "família vale mais do que em qualquer outra, porque a "
+                     "vergonha diz precisamente que ela **é** aquilo.",
+        "Como aplicar": "Desenho primeiro, perguntas depois. A última — *isso que "
+                        "ela diz é verdade?* — só se faz se o desenho já estiver "
+                        "feito.",
+        "A notar": "As frases que ela põe na boca da personagem. **Costumam ser "
+                   "frases ouvidas**, e muitas vezes ouvidas em casa ou na "
+                   "escola, palavra por palavra.",
+        "Cuidados": "Não corrigir a personagem com factos. Se ela desenhar uma "
+                    "Vergonha enorme, a resposta não é dizer que não é assim tão "
+                    "grande — é perguntar onde é que ela a manda ir.",
+        "questions": [
+            "Onde é que ela te manda ir?",
+            "O que é que ela te diz ao ouvido sobre ti?",
+            "Isso que ela diz é verdade?",
+        ],
+    },
+    {
+        "n": 3,
+        "title": "O que eu fiz e o que eu sou",
+        "Idade": "7 aos 9 anos",
+        "Base": "Distinção acto–pessoa. **Razoável** quanto ao efeito da "
+                "atribuição global; a ficha é prática.",
+        "Objectivo": "Separar as duas colunas que a vergonha cola. **É a "
+                     "distinção da família transformada em tabela.**",
+        "Como aplicar": "A coluna da direita é a que interessa, e é a que ela "
+                        "preenche mais depressa. A pergunta final — *o que "
+                        "dirias a um amigo* — faz-se depois de as três linhas "
+                        "estarem escritas, nunca antes.",
+        "A notar": "**A diferença entre o que ela diz a si própria e o que diria "
+                   "a um amigo.** Quase todas são muito mais generosas com os "
+                   "outros, e reparar nisso vale mais do que qualquer "
+                   "explicação nossa.",
+        "Cuidados": "Não discutir a coluna da direita. Argumentar contra um "
+                    "rótulo global costuma reforçá-lo — o que o desfaz é ela "
+                    "própria ouvir-se a dizer outra coisa a outra pessoa.",
+        "questions": [
+            "Se um amigo teu dissesse isso sobre ele, o que lhe dizias?",
+            "Alguma dessas frases foi alguém que ta disse?",
+            "Há alguma linha em que as duas colunas não combinam?",
+        ],
+    },
+    {
+        "n": 4,
+        "title": "Quem continua a gostar de mim na mesma",
+        "Idade": "4 aos 7 anos",
+        "Base": "Vinculação e desconfirmação da previsão. **Estabelecido** quanto "
+                "à disponibilidade do cuidador; o resto é razoável e prática.",
+        "Objectivo": "Pedir-lhe que nomeie — e não argumentar com a previsão da "
+                     "vergonha. As cinco figuras são as que ela viu no ecrã.",
+        "Como aplicar": "Deixar assinalar quantas quiser, e não sugerir nenhuma. "
+                        "A caixa do fim é para alguém que não esteja nas "
+                        "figuras.",
+        "A notar": "**Quantas pessoas consegue nomear, e se consegue alguma.** "
+                   "Uma criança que só assinala *uma coisa que continua igual* "
+                   "está a dizer que não consegue nomear ninguém — e essa é a "
+                   "informação mais importante que esta actividade pode dar.",
+        "Cuidados": "Se ela não conseguir nomear ninguém, **não preencher por "
+                    "ela e não insistir**. Nomear alguém para lhe fazer a "
+                    "vontade produz uma lista falsa e fecha o assunto.",
+        "questions": [
+            "Quem é que está lá mesmo nos dias maus?",
+            "Há alguém teu que não esteja nas figuras?",
+            "Alguma destas pessoas já te viu num dia mau?",
+        ],
+    },
+    {
+        "n": 5,
+        "title": "As palavras finas",
+        "Idade": "7 aos 9 anos",
+        "Base": "Vocabulário emocional. **Razoável** quanto a diferenciação "
+                "emocional; o conjunto é do ColorHugs.",
+        "Objectivo": "Mostrar que as três se distinguem **por alcance**: o "
+                     "embaraço alcança um momento, a culpa alcança um acto, a "
+                     "vergonha alcança a pessoa inteira.",
+        "Como aplicar": "Uma caixa por palavra, sem ordem. Se uma ficar vazia, "
+                        "deixá-la vazia.",
+        "A notar": "Se usa *culpado* para coisas que não fez. É frequente, e "
+                   "abre directamente a ficha seguinte.",
+        "Cuidados": "**Não ordenar por tamanho.** Aqui não é o tamanho do "
+                    "sentimento que muda, é o tamanho daquilo que ele condena — "
+                    "e ordenar por intensidade seria quase acertar e errar no "
+                    "essencial.",
+        "questions": [
+            "Qual destas dizes mais vezes?",
+            "Qual delas passa depressa e qual é que fica?",
+            "Alguma delas é sobre uma coisa que tu fizeste?",
+        ],
+    },
+    {
+        "n": 6,
+        "title": "Culpado",
+        "Idade": "7 aos 9 anos",
+        "Base": "Distinção entre culpa por acto e culpa por acontecimento. "
+                "**Razoável** quanto à distinção; a aplicação é prática.",
+        "Objectivo": "Fazer a pergunta que parte esta família em duas: **foi uma "
+                     "coisa que fizeste, ou uma coisa que aconteceu?**",
+        "Como aplicar": "A segunda caixa é a ficha toda. Dar tempo, e não "
+                        "sugerir a resposta — a criança que se culpa de um "
+                        "acontecimento costuma demorar a dizê-lo.",
+        "A notar": "**Culpa por um acontecimento não é culpa, é vergonha mal "
+                   "arrumada**, e não se trabalha com reparação nenhuma. "
+                   "Separação dos pais, doença de alguém, uma coisa que lhe foi "
+                   "feita — são as três mais frequentes.",
+        "Cuidados": "Se a resposta for *aconteceu*, **não seguir para a ficha "
+                    "*Arrependido***. Pedir reparação por uma coisa que lhe "
+                    "aconteceu confirma-lhe a culpa que ela já sente.",
+        "questions": [
+            "Isso foi uma coisa que tu fizeste, ou uma coisa que aconteceu?",
+            "Alguém alguma vez te disse que a culpa era tua?",
+            "Se tivesse acontecido a outra criança, a culpa era dela?",
+        ],
+    },
+    {
+        "n": 7,
+        "title": "O que querias ter feito de outra maneira",
+        "Idade": "6 aos 9 anos",
+        "Base": "Geração de alternativas. **Razoável** — resolução de problemas "
+                "é das melhores estudadas nesta idade; esta aplicação é prática.",
+        "Objectivo": "Transformar o arrependimento em alternativa. **É a metade "
+                     "virada para a frente**, e está separada da reparação "
+                     "porque uma criança pode conseguir esta e não a outra.",
+        "Como aplicar": "**Só depois da ficha *Culpado*, e só se a resposta lá "
+                        "tiver sido *uma coisa que eu fiz*.** Nunca no dia.",
+        "A notar": "Se a alternativa é dela ou é a nossa. **A dela vale mais**, "
+                   "mesmo quando é pior — é a única que vem com a situação dela "
+                   "dentro.",
+        "Cuidados": "**Nunca perguntar *o que é que devias ter feito*.** É uma "
+                    "repreensão disfarçada de ficha, e a criança percebe à "
+                    "primeira. A pergunta é sobre o que **ela** queria. Não se "
+                    "aplica onde não houve acto.",
+        "questions": [
+            "O que é que tu querias ter feito em vez disso?",
+            "Se voltasse a acontecer amanhã, o que farias?",
+            "Isso que querias fazer, dava mesmo para fazer?",
+        ],
+    },
+    {
+        "n": 8,
+        "title": "O que querias dizer a quem ficou magoado",
+        "Idade": "6 aos 9 anos",
+        "Base": "Reparação. **Prática**, com apoio indirecto: é o que a distinção "
+                "entre culpa e vergonha prevê.",
+        "Objectivo": "Escolher o que dizer a quem ficou magoado, e prever o caso "
+                     "de a outra pessoa não querer ouvir já.",
+        "Como aplicar": "Depois da ficha anterior, e **nunca no mesmo dia do "
+                        "acontecimento** — enquanto a coisa ainda está quente, "
+                        "compor não é possível.",
+        "A notar": "Se escreve sobre o que fez ou sobre o que sentiu. **Uma "
+                   "criança que só consegue explicar-se ainda não chegou à outra "
+                   "pessoa** — e isso é informação, não falha.",
+        "Cuidados": "**A palavra *desculpa* não aparece na ficha e não deve ser "
+                    "sugerida**: um pedido de desculpa mandado produz "
+                    "obediência, não reparação. E não se aplica onde não houve "
+                    "acto.",
+        "questions": [
+            "O que queres dizer a essa pessoa?",
+            "E se ela não quiser falar já, o que podes dizer mais tarde?",
+            "Há alguma coisa que queiras fazer em vez de dizer?",
+        ],
+    },
+    {
+        "n": 9,
+        "title": "Embaraçado",
+        "Idade": "6 aos 9 anos",
+        "Base": "Distinção entre embaraço e vergonha. **Estabelecido** quanto às "
+                "duas serem emoções diferentes; a ficha é prática.",
+        "Objectivo": "Desfazer o que o português cola. Uma passa em cinco "
+                     "minutos, a outra fica — e saber qual é qual muda o que se "
+                     "faz a seguir.",
+        "Como aplicar": "A primeira caixa antes da segunda, sempre. Uma vez que "
+                        "já não faz nada é fácil de contar, e é ela que torna a "
+                        "segunda perguntável.",
+        "A notar": "**Se a segunda caixa fica vazia, isso não quer dizer que não "
+                   "haja nada** — quer dizer que ainda não é para aqui que vem. "
+                   "E se ela conta as duas com o mesmo tom, ainda não distingue "
+                   "as duas coisas.",
+        "Cuidados": "Não perguntar o que é a coisa da segunda caixa. **A ficha "
+                    "pergunta se ainda dá aperto, não pergunta o que é.**",
+        "questions": [
+            "Essa primeira, hoje ainda te faz alguma coisa?",
+            "Já te riste disso mais tarde?",
+            "E a outra, é do mesmo tamanho que era?",
+        ],
+    },
+    {
+        "n": 10,
+        "title": "Quem já sabe",
+        "Idade": "6 aos 9 anos",
+        "Base": "Desconfirmação da previsão. **Razoável** quanto ao efeito da "
+                "revelação recebida; a ficha é prática.",
+        "Objectivo": "Encontrar uma prova de que a previsão da vergonha já "
+                     "falhou uma vez. **É a única ficha do projecto em que a "
+                     "criança vê uma previsão sua a não se cumprir.**",
+        "Como aplicar": "**Perguntar primeiro quem é a pessoa, e só depois "
+                        "seguir.** A ficha só faz sentido se essa pessoa tiver "
+                        "recebido bem.",
+        "A notar": "O que mudou depois. **Se ela disser que não mudou nada, é "
+                   "isso a prova** — e vale a pena nomeá-la em voz alta, porque "
+                   "sozinha ela não a lê como prova.",
+        "Cuidados": "**Não se aplica sem se saber quem é a pessoa.** Se quem já "
+                    "sabe for quem a envergonhou, esta ficha aponta para o "
+                    "problema e não para a saída, e o trabalho é outro — ver a "
+                    "secção 10. Se ela não conseguir nomear ninguém, a ficha não "
+                    "se aplica de todo.",
+        "questions": [
+            "Como é que essa pessoa ficou a saber?",
+            "O que aconteceu depois de ela saber?",
+            "Ela mudou alguma coisa contigo?",
+        ],
+    },
+]
+
+DYNAMICS["ashamed"] = {
+    1: [
+        ("4–6", "**A carta e o espelho.** Pôr a carta do envergonhado ao lado do espelho da primeira página e perguntar se são parecidos."),
+        ("6–8", "**Seguir o círculo com o dedo.** Percorrer as caixas por ordem, em voz alta, e parar em *escondo* para perguntar o que acontecia se ali fosse ao contrário."),
+        ("8–9", "**Tapar a coluna verde.** Mostrar só o ciclo e pedir que invente a saída antes de a ver."),
+        ("qualquer", "**Guardar para o fim.** Reler esta página na última sessão e perguntar se o círculo dela mudou."),
+    ],
+    2: [
+        ("4–6", "**Dar-lhe voz.** Escrever ao lado do desenho o que a Vergonha diz, palavra por palavra como ela a disser."),
+        ("4–7", "**Onde é que ela manda ir.** Pedir que desenhe o sítio para onde a Vergonha a manda. Costuma ser o quarto, e costuma ser sozinha."),
+        ("6–8", "**Quem é que fala como ela.** Perguntar se alguém que ela conhece diz coisas parecidas com as da personagem. **Perguntar, não sugerir.**"),
+        ("7–9", "**A Vergonha de outra pessoa.** Pedir que desenhe a Vergonha de um adulto da casa. Costuma dizer mais do que a dela."),
+    ],
+    3: [
+        ("7–9", "**Ler a coluna da direita em voz alta.** Ela lê, e depois lê outra vez como se fosse sobre outra pessoa. A diferença de tom é o material."),
+        ("7–9", "**Quem disse isto primeiro.** Ao lado de cada frase da direita, marcar se foi ela que a inventou ou se a ouviu."),
+        ("8–9", "**A frase que sobra.** Escolher a que ela nunca conseguiria dizer a um amigo, e trabalhar só essa."),
+        ("com a família", "**Como falam dela.** Reparar, na sala, nas frases que usam: *ela é…* contra *ela fez…*. Faz-se sem uma única acusação, só notando."),
+    ],
+    4: [
+        ("4–6", "**As figuras em cima da mesa.** Imprimir as cinco e deixar pegar, sem dizer nada."),
+        ("4–7", "**Trazer uma prova.** Pedir que traga na próxima sessão uma coisa dessa pessoa — uma fotografia, um desenho, um objecto."),
+        ("6–9", "**Ao contrário.** Perguntar de quem é que **ela** continua a gostar, sabendo o que sabe dessas pessoas. **É a dinâmica mais forte desta família**, e foi guardada para aqui porque precisa de alguém a conduzi-la."),
+        ("com a família", "**Os adultos adivinham.** Pedir-lhes que escolham as figuras que acham que são dela antes de verem. A diferença é a conversa."),
+    ],
+    5: [
+        ("7–9", "**Por alcance.** Pôr as três cartas por ordem daquilo que cada uma condena: um momento, uma coisa que fiz, eu toda."),
+        ("7–9", "**Qual passa.** Separar as três em *passa* e *fica*, e ver onde ela põe cada uma."),
+        ("8–9", "**A palavra que falta.** Perguntar-lhe que palavra usaria para a vergonha que não vem de nada que ela tenha feito. **Não há nenhuma em português, e ela costuma inventar uma boa.**"),
+        ("com a família", "**Cada um escolhe a sua.** Os adultos escolhem também, e contam uma vez em que a sentiram."),
+    ],
+    6: [
+        ("7–9", "**Duas pilhas.** Escrever cinco coisas de que se sente culpada e separá-las: as que fez e as que aconteceram."),
+        ("7–9", "**Se fosse outra criança.** Contar a situação como se fosse de outra pessoa e perguntar de quem era a culpa."),
+        ("8–9", "**Quem mais estava lá.** Nas que aconteceram, listar todas as pessoas envolvidas e ver quanto sobra para ela. Costuma sobrar muito pouco."),
+        ("com a família", "**Dizer em voz alta.** Se for uma separação ou uma doença, pedir aos adultos que lhe digam explicitamente, à frente de quem aplica, que a culpa não foi dela. **Ela precisa de o ouvir deles, não de nós.**"),
+    ],
+    7: [
+        ("6–8", "**Experimentar na sala.** Fazer ali mesmo a alternativa que ela escreveu, a brincar e sem estar em apuros. Ensaiar a frio é metade do trabalho."),
+        ("6–9", "**Onde é que dava.** Verificar se aquilo que ela queria ter feito era mesmo possível naquele momento — havia tempo, havia sítio, estava lá alguém. Muitas vezes não era, e isso alivia."),
+        ("8–9", "**Três em vez de uma.** Pedir três alternativas em vez de uma, mesmo que duas sejam más. Ter escolha vale mais do que ter a resposta certa."),
+        ("com a família", "**A alternativa dos adultos.** Perguntar-lhes o que **eles** queriam ter feito de outra maneira naquele dia. Muda a sala inteira, e é raro alguém lho ter perguntado."),
+    ],
+    8: [
+        ("6–8", "**Ensaiar em voz alta.** Dizer o que escreveu no balão, ao clínico, antes de dizer a quem é."),
+        ("6–9", "**Reparar sem falar.** Procurar uma coisa que se faça em vez de se dizer. Para crianças a quem as palavras custam."),
+        ("8–9", "**Se correr mal.** Preparar o que fazer se a outra pessoa não aceitar. Evita que uma tentativa falhada feche o assunto."),
+        ("com a família", "**Os adultos também compõem.** Perguntar se algum deles se lembra de ter composto alguma coisa com ela."),
+    ],
+    9: [
+        ("6–8", "**A história engraçada.** Pedir aos adultos ou ao clínico que contem um embaraço antigo de que hoje se riem. Mostra o *passa* em vez de o explicar."),
+        ("6–9", "**Quanto tempo faz.** Nas duas caixas, escrever há quanto tempo foi cada uma. A diferença costuma ser visível."),
+        ("8–9", "**O que faria passar.** Na segunda, perguntar o que teria de acontecer para deixar de doer. Quase sempre a resposta envolve outra pessoa."),
+        ("com a família", "**Não repetir a história.** Combinar com os adultos não contarem o embaraço dela a terceiros como anedota. É frequente, é afectuoso, e é exactamente o mecanismo."),
+    ],
+    10: [
+        ("6–8", "**Nomear a prova.** Depois de ela responder, dizer em voz alta: *a Vergonha disse que ia acontecer uma coisa, e não aconteceu.* Sozinha ela não lê aquilo como prova."),
+        ("6–9", "**Mais alguém.** Perguntar se há mais alguém que poderia saber e continuar igual. Não para contar — só para nomear."),
+        ("8–9", "**O que ela esperava.** Perguntar o que ela achava que ia acontecer quando essa pessoa soube, e comparar com o que aconteceu."),
+        ("com a família", "**Continuar igual.** Se a pessoa que já sabe estiver na sala, o combinado é não voltar ao assunto de propósito e tratá-la como sempre. **A prova constrói-se com dias normais.**"),
+    ],
+}
+
+
 if __name__ == "__main__":
     import sys
 

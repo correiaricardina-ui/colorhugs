@@ -45,11 +45,13 @@
     "literacy": {
       "angry": "A zanga costuma aparecer quando alguma coisa parece injusta, ou quando queríamos muito uma coisa e não conseguimos. Chega depressa, e demora mais tempo a ir-se embora do que a chegar.",
       "sad": "A tristeza costuma aparecer quando perdemos alguma coisa de que gostávamos, ou quando as coisas não foram como esperávamos. Instala-se devagar e fica um bocado. Com alguém ao pé, não passa mais depressa — mas é mais fácil de carregar.",
-      "scared": "O medo aparece para nos dizer para termos cuidado. Não quer dizer que a coisa seja perigosa, e não quer dizer que tenhas de ficar parada. O medo fica mais pequeno quando nos aproximamos devagar — não quando fugimos."
+      "scared": "O medo aparece para nos dizer para termos cuidado. Não quer dizer que a coisa seja perigosa, e não quer dizer que tenhas de ficar parada. O medo fica mais pequeno quando nos aproximamos devagar — não quando fugimos.",
+      "ashamed": "A vergonha aparece quando achamos que os outros nos viram por dentro e não vão gostar do que viram. Ela diz «tu és» — mas o que aconteceu não é quem tu és. E dá vontade de esconder, que é a única coisa que a faz ficar."
     },
     "strategyPrompt": {
       "_": "Qual queres experimentar?",
-      "sad": "O que te faz companhia quando estás triste?"
+      "sad": "O que te faz companhia quando estás triste?",
+      "ashamed": "Quem é que continua a gostar de ti na mesma?"
     },
     "colourPrompt": "Pinta como quiseres",
     "download": "Imprimir esta página",
@@ -69,7 +71,12 @@
       "soft-blanket": "Uma coisa macia",
       "dog-beside": "Um bicho",
       "keepsake-shelf": "Uma coisa que me lembra alguém",
-      "scared__stepping-stones": "Chegar devagar"
+      "scared__stepping-stones": "Chegar devagar",
+      "ashamed__sitting-beside": "Alguém cá de casa",
+      "ashamed__talking-together": "Alguém que já sabe",
+      "ashamed__dog-beside": "Um bicho",
+      "ashamed__also-got-it-wrong": "Quem também já se enganou",
+      "ashamed__same-as-always": "Uma coisa que continua igual"
     },
     "fine": {
       "happy__contente": "Contente",
@@ -117,7 +124,9 @@
       "soft-blanket": "A manta e o urso",
       "dog-beside": "O cão",
       "keepsake-shelf": "A prateleira",
-      "stepping-stones": "As pedras"
+      "stepping-stones": "As pedras",
+      "also-got-it-wrong": "Os blocos",
+      "same-as-always": "O quarto de manhã"
     }
   },
   "plans": {
