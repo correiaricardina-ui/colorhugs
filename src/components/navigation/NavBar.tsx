@@ -2,15 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { BRAND } from "@/data/sections";
 import { asset } from "@/lib/site";
+import CornerAvatar from "@/components/avatar/CornerAvatar";
 
 /**
- * Deliberately minimal: the logo, and nothing else.
+ * Deliberately minimal: the logo, the child's avatar, and nothing else.
  *
  * No hamburger, no dropdown, no hidden gesture — the homepage grid is the
  * navigation. The adult entry point does not live up here: a button in the
  * child's top bar invites taps that lead somewhere a child has no use for.
  * Parents reach their area from the strip at the foot of the homepage, and
  * from the footer link on every page.
+ *
+ * The avatar is the one addition (D-078, D-207). It is the child on the
+ * screen, not a control, and it appears only once she has chosen one.
  */
 export default function NavBar() {
   return (
@@ -34,6 +38,7 @@ export default function NavBar() {
         <span className="sr-only">ColorHugs</span>
       </Link>
 
+      <CornerAvatar />
     </nav>
   );
 }

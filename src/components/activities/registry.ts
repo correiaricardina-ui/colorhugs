@@ -15,6 +15,9 @@ export const ACTIVITIES: Record<string, ComponentType> = {
   "color-and-create/explore-and-color": dynamic(
     () => import("@/components/activities/ExploreAndColor"),
   ),
+  "my-colorhugs/my-avatar": dynamic(
+    () => import("@/components/activities/MyAvatar"),
+  ),
 };
 
 export function activityComponent(section: string, activity: string) {

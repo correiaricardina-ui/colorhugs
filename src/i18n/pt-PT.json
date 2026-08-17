@@ -111,5 +111,24 @@
     "professionalHealth": "Saúde — psicólogos e terapeutas",
     "professionalEducation": "Educação — professores e educadores",
     "notYet": "Ainda por construir"
+  },
+  "avatar": {
+    "prompt": "Quem vai contigo?",
+    "hint": "Ganha cor à medida que exploras o ColorHugs.",
+    "change": "Trocar quem vai comigo",
+    "chosen": "É este que vai comigo",
+    "names": {
+      "borboleta": "Borboleta",
+      "carro": "Carro",
+      "casa": "Casa",
+      "coelho": "Coelho",
+      "dino": "Dino",
+      "foguetao": "Foguetão",
+      "gato": "Gato",
+      "raposa": "Raposa",
+      "robot": "Robô",
+      "urso": "Urso"
+    },
+    "undo": "Não, quero outra vez o"
   }
 }

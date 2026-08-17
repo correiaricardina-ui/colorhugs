@@ -5,6 +5,7 @@ import StickerButton from "@/components/stickers/StickerButton";
 import Link from "next/link";
 import { BRAND, CHILD_SECTIONS, SECTIONS } from "@/data/sections";
 import { asset } from "@/lib/site";
+import HomeAvatar from "@/components/avatar/HomeAvatar";
 
 
 const parents = SECTIONS.find((s) => s.slug === "parents")!;
@@ -28,15 +29,24 @@ export default function HomePage() {
         </div>
 
         <h1 className="sr-only">ColorHugs — Create, Learn, Grow, Together</h1>
-        <p className="mt-6 text-center font-display text-xl font-600 text-ch-ink sm:text-2xl">
-          Pick a place to start
-        </p>
       </section>
+
+      {/*
+        The avatar, and the first choice of one. It sits above the grid and
+        never in front of it: the grid renders either way, so this is an
+        invitation and not a door (D-207).
+      */}
+      <HomeAvatar />
+
+      {/* This line labels the grid, so it sits with the grid. */}
+      <p className="mx-auto mt-10 w-full max-w-6xl px-4 text-center font-display text-xl font-600 text-ch-ink sm:text-2xl">
+        Pick a place to start
+      </p>
 
       {/* The homepage grid IS the navigation. */}
       <section
         aria-label="ColorHugs areas"
-        className="mx-auto mt-7 w-full max-w-6xl px-4"
+        className="mx-auto mt-5 w-full max-w-6xl px-4"
       >
         <SectionGrid>
           {CHILD_SECTIONS.map((section, i) => (

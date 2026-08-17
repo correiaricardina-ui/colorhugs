@@ -111,5 +111,24 @@
     "professionalHealth": "Health — psychologists and therapists",
     "professionalEducation": "Education — teachers and educators",
     "notYet": "Not built yet"
+  },
+  "avatar": {
+    "prompt": "Who is coming with you?",
+    "hint": "It gains colour as you explore ColorHugs.",
+    "change": "Change who comes with me",
+    "chosen": "This one comes with me",
+    "names": {
+      "borboleta": "Butterfly",
+      "carro": "Car",
+      "casa": "House",
+      "coelho": "Rabbit",
+      "dino": "Dino",
+      "foguetao": "Rocket",
+      "gato": "Cat",
+      "raposa": "Fox",
+      "robot": "Robot",
+      "urso": "Bear"
+    },
+    "undo": "No, bring back the"
   }
 }

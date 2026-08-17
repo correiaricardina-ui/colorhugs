@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import cn from "clsx";
 import {
   BODY_OUTLINE,
@@ -18,6 +18,7 @@ import ColouringCanvas from "@/components/activities/ColouringCanvas";
 import { CURRENT_AUDIENCE, can } from "@/data/access";
 import { pagesForFamily } from "@/data/colouring";
 import SpeakButton from "@/components/ui/SpeakButton";
+import { useAvatar } from "@/components/avatar/AvatarProvider";
 import { asset } from "@/lib/site";
 
 /**
@@ -43,12 +44,31 @@ import { asset } from "@/lib/site";
  *    work.
  *  - **The body location is never a record.** The map is the moment; the card
  *    is the record (D-105).
+ *
+ * **The finer word continues the path rather than ending it** (D-205). Choosing
+ * *furioso* takes her back to the body map and on to the strategies, now under
+ * that word. It is still never a wall: she has already named what she feels and
+ * already been met before the layer exists for her (D-100).
  */
 
 type Stage = "choose" | "body" | "fine" | "strategy" | "colour" | "done";
 
 export default function HowDoIFeel() {
   const { locale } = useLocale();
+  const { markVisited } = useAvatar();
+
+  /**
+   * The one line that connects an activity to the avatar (D-207).
+   *
+   * **For having been here, never for how much** (D-067): it fires once, on
+   * arrival, so a child who names one feeling and a child who names six get
+   * exactly the same colour. Firing it on completion would have made colour a
+   * reward for finishing, and there is nothing here that has to be finished.
+   */
+  useEffect(() => {
+    markVisited("IW");
+  }, [markVisited]);
+
   const all = strings(locale).feelings;
   // The JSON gives each family its own literal key. Widening to a record keeps
   // the lookup honest — the ids come from EMOTIONS, which is the same list.
@@ -66,6 +86,10 @@ export default function HowDoIFeel() {
   // dropping the child somewhere she did not come from.
   const [fineFrom, setFineFrom] = useState<Stage>("done");
   const [chosen, setChosen] = useState<string | null>(null);
+  // The finer word, once she has picked one. It replaces the family everywhere
+  // it is shown from then on — it is the word she chose, so it is the word the
+  // rest of the path should carry.
+  const [fine, setFine] = useState<string | null>(null);
   const [zone, setZone] = useState<BodyZone | null>(null);
   const [page, setPage] = useState<string | null>(null);
 
@@ -77,6 +101,7 @@ export default function HowDoIFeel() {
 
   function reset() {
     setChosen(null);
+    setFine(null);
     setZone(null);
     setPage(null);
     setStage("choose");
@@ -85,6 +110,42 @@ export default function HowDoIFeel() {
   function afterBody() {
     setStage(pages.length ? "strategy" : "done");
   }
+
+  /**
+   * She picked a finer word. The path starts again at the body map under that
+   * word — the place a feeling is felt is not always the same once it has a
+   * finer name, and the strategy that helps *chateado* is not the one that
+   * helps *furioso*.
+   *
+   * **Her mark on the figure is kept, not cleared** (D-206). Clearing it asked
+   * her the same question twice in a row about the same moment, which reads as
+   * the app not having believed her the first time. If she had already pointed,
+   * that answer stands and she sees it still there under the new word — a
+   * refinement rather than a repeat. If she had not, the question is still
+   * open and the empty figure asks it.
+   */
+  function chooseFine(word: string) {
+    setFine(word);
+    setStage("body");
+  }
+
+  /**
+   * What is on screen from here on: the finer word if she chose one, the
+   * family otherwise. One place decides it, so the card and the label cannot
+   * disagree with each other.
+   */
+  const shownSrc =
+    family && fine ? fineCard(family.id, fine) : (family?.src ?? "");
+  const shownLabel = family
+    ? fine
+      ? (t.fine[`${family.id}__${fine}`] ?? fine)
+      : t.families[family.id]
+    : "";
+  const shownKey = family
+    ? fine
+      ? `feelings.fine.${family.id}__${fine}`
+      : `feelings.families.${family.id}`
+    : "";
 
   // The fine words are premium and optional. They are reached only by asking
   // for them, never on the way through — the activity has already closed by
@@ -165,7 +226,7 @@ export default function HowDoIFeel() {
             <div className="flex w-full max-w-xs flex-col gap-3">
               <span className="relative mx-auto block h-28 w-28">
                 <Image
-                  src={asset(family.src)}
+                  src={asset(shownSrc)}
                   alt=""
                   fill
                   sizes="112px"
@@ -173,8 +234,8 @@ export default function HowDoIFeel() {
                 />
               </span>
               <p className="flex items-center justify-center gap-2 text-center font-display font-700 text-ch-ink">
-                {t.families[family.id]}
-                <SpeakButton textKey={`feelings.families.${family.id}`} />
+                {shownLabel}
+                <SpeakButton textKey={shownKey} />
               </p>
 
               <button
@@ -201,8 +262,12 @@ export default function HowDoIFeel() {
 
                 It stays an option and never a wall (D-100): she has already
                 named what she feels and already been met.
+
+                Once she has chosen one it stops being offered — there is no
+                finer layer beneath it, and a button that leads back to a list
+                she has already answered reads as the app not having heard her.
               */}
-              {fineWords.length ? (
+              {fineWords.length && !fine ? (
                 <button
                   type="button"
                   onClick={() => {
@@ -234,7 +299,29 @@ export default function HowDoIFeel() {
             "Sometimes people feel angry when something seems unfair" is
             description; "you are angry because…" is interpretation (D-118).
           */}
-          <p className="mx-auto max-w-lg text-center text-lg text-ch-ink/80">
+          {/*
+            The word she chose travels with her. Without it the strategy screen
+            forgot what she had just said — she picks *furioso* and the next
+            page shows her nothing of it, which reads as not having been heard.
+            Small, above the literacy line, so it reminds without competing.
+          */}
+          <div className="flex flex-col items-center gap-1">
+            <span className="relative block h-20 w-20">
+              <Image
+                src={asset(shownSrc)}
+                alt=""
+                fill
+                sizes="80px"
+                className="object-contain"
+              />
+            </span>
+            <p className="flex items-center gap-2 font-display font-700 text-ch-ink">
+              {shownLabel}
+              <SpeakButton textKey={shownKey} />
+            </p>
+          </div>
+
+          <p className="mx-auto mt-4 max-w-lg text-center text-lg text-ch-ink/80">
             {t.literacy[family.id]}
           </p>
 
@@ -290,7 +377,7 @@ export default function HowDoIFeel() {
             >
               {t.strategySkip}
             </button>
-            {fineWords.length ? (
+            {fineWords.length && !fine ? (
               <button
                 type="button"
                 onClick={() => {
@@ -359,23 +446,34 @@ export default function HowDoIFeel() {
             {fineWords.map((word) => (
               <li key={word}>
                 {/*
-                  Choosing a fine word changes nothing and leads nowhere: it is
-                  a better name for what she already said, not a second
-                  question. Tapping one simply shows it chosen.
+                  Choosing a finer word continues the path (D-205): it takes
+                  her back to the body map and on to the strategies, under that
+                  word. It was a dead end before — the list appeared, and
+                  tapping a card did nothing at all.
+
+                  The Listen button sits outside the card, because a button
+                  inside a button is not a thing a browser can make sense of
+                  and a screen reader announces the pair as one control.
                 */}
                 <div className="flex w-full flex-col items-center gap-1 rounded-sticker bg-white/60 p-3">
-                  <span className="relative block aspect-square w-full">
-                    <Image
-                      src={asset(fineCard(family.id, word))}
-                      alt=""
-                      fill
-                      sizes="(max-width: 640px) 45vw, 160px"
-                      className="object-contain"
-                    />
-                  </span>
-                  <span className="text-center font-display font-700 text-ch-ink">
-                    {t.fine[`${family.id}__${word}`] ?? word}
-                  </span>
+                  <button
+                    type="button"
+                    onClick={() => chooseFine(word)}
+                    className="flex w-full flex-col items-center gap-1 transition-transform duration-150 hover:-translate-y-1 focus-visible:-translate-y-1 active:translate-y-0 motion-reduce:transform-none"
+                  >
+                    <span className="relative block aspect-square w-full">
+                      <Image
+                        src={asset(fineCard(family.id, word))}
+                        alt=""
+                        fill
+                        sizes="(max-width: 640px) 45vw, 160px"
+                        className="object-contain"
+                      />
+                    </span>
+                    <span className="text-center font-display font-700 text-ch-ink">
+                      {t.fine[`${family.id}__${word}`] ?? word}
+                    </span>
+                  </button>
                   <SpeakButton textKey={`feelings.fine.${family.id}__${word}`} />
                 </div>
               </li>
@@ -398,7 +496,7 @@ export default function HowDoIFeel() {
         <div className="mx-auto max-w-md text-center">
           <span className="relative mx-auto block aspect-square w-48">
             <Image
-              src={asset(family.src)}
+              src={asset(shownSrc)}
               alt=""
               fill
               sizes="192px"
@@ -406,6 +504,10 @@ export default function HowDoIFeel() {
               priority
             />
           </span>
+          <p className="mt-2 flex items-center justify-center gap-2 font-display font-700 text-ch-ink">
+            {shownLabel}
+            <SpeakButton textKey={shownKey} />
+          </p>
           {/*
             Every feeling is met identically. "Furious" is thanked exactly as
             "calm" is — the moment one answer gets a warmer reply than another,
@@ -421,7 +523,7 @@ export default function HowDoIFeel() {
               closed. An invitation to go deeper, never a wall — she has
               already named what she feels and already been met (D-100).
             */}
-            {fineWords.length ? (
+            {fineWords.length && !fine ? (
               <button
                 type="button"
                 onClick={() => {

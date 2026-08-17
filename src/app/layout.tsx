@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { LocaleProvider } from "@/i18n/LocaleProvider";
+import { AvatarProvider } from "@/components/avatar/AvatarProvider";
 import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
@@ -58,7 +59,9 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        <LocaleProvider>{children}</LocaleProvider>
+        <LocaleProvider>
+          <AvatarProvider>{children}</AvatarProvider>
+        </LocaleProvider>
       </body>
     </html>
   );

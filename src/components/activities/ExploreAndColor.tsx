@@ -1,12 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ColouringCanvas from "@/components/activities/ColouringCanvas";
 import { COLOURING_PAGES, LIBRARY_PAGES } from "@/data/colouring";
 import SpeakButton from "@/components/ui/SpeakButton";
 import { useLocale } from "@/i18n/LocaleProvider";
 import { strings } from "@/i18n/strings";
+import { useAvatar } from "@/components/avatar/AvatarProvider";
 import { asset } from "@/lib/site";
 
 /**
@@ -24,6 +25,14 @@ import { asset } from "@/lib/site";
  */
 export default function ExploreAndColor() {
   const { locale } = useLocale();
+
+  /** Colour for having been here, not for how much was coloured (D-067). */
+  const { markVisited } = useAvatar();
+  useEffect(() => {
+    markVisited("CC");
+  }, [markVisited]);
+
+
   const t = strings(locale).library as {
     pick: string;
     back: string;

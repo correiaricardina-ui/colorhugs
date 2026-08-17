@@ -3333,3 +3333,285 @@ reproduced there in full, because each was invisible in the file.
 
 Also linked from `docs/HANDOFF.md`, so whoever picks the project up finds it
 without knowing to look.
+
+---
+
+# Increment 31 — Where the account lives (2026-08-17)
+
+### D-202 `[DEFINED]` Two systems with opposite requirements — closes Q-010
+The question was asked as *where does the account system live*. It has two
+answers, because there are two kinds of state here and they pull in opposite
+directions.
+
+**Commercial state lives on a server.** Who the adult is, verified consent, what
+was bought, how many times it was downloaded, which licence is held. This is the
+half that must be counted somewhere the child cannot reach — a limit counted in
+the browser is a limit that can be erased.
+
+**The child's trail lives on the device, and never syncs** (D-097). The last few
+cards, in order. It does not travel between devices and it is not sent anywhere.
+
+**Why the split, and not one store for both.** If the trail sits on a server
+under the parent's account, D-098 — *nothing in My Inner World is visible to the
+parent* — becomes a promise the law can override: a parent is the child's legal
+representative and can exercise a right of access over her data. On the device
+there is nothing to hand over, so **D-098 stops being a policy and becomes a
+fact of the architecture**. It also means the worst case of a breach is a list of
+adult email addresses rather than a record of children's feelings.
+
+**The cost, stated plainly:** the trail is lost if the browser is cleared or the
+device changes. Accepted. D-097 built it as something nobody should depend on —
+short, never aggregated, never reported — and a trail that survives a house move
+is a record, which is the thing this activity refused to become.
+
+**The order of building:**
+
+| | For | Built |
+| --- | --- | --- |
+| External store (Payhip, Gumroad, Etsy) | printables and professional licences | nothing to build; it pays, delivers and counts downloads |
+| Managed EU backend (Supabase or equivalent) | adult accounts, child profiles, subscription | only when the family subscription line arrives |
+| Own server | — | rejected: security and maintenance fall on one person |
+
+**What this unblocks and what it does not.** The short trail no longer waits on
+anything and can be built into *Como Me Sinto?* as device-local storage.
+Verified parental consent still needs legal validation before it exists, whatever
+host it lives on (rule 9). And until the managed backend exists, **the Free
+boundary inside the app stays declared and not enforced** — which is acceptable
+only while the revenue comes from printables sold through a store, and stops
+being acceptable the day a subscription is sold.
+
+### D-203 `[IMPLEMENTATION]` Piper cannot run in this environment; it runs on the author's machine
+`piper-tts` installs, but the voice catalogue and the models are hosted on a
+domain this environment cannot reach — `x-deny-reason: host_not_allowed`. D-127
+recorded that no voice had been downloaded and that the first real run needed
+watching; this is the confirmation that **the run has to happen on Ricardina's
+own machine**, not here.
+
+Nothing about the design changes: files are still named from the string key, a
+real recording still replaces a generated one with no code change, and the
+manifest still lists only files that exist so the Listen button is absent rather
+than broken.
+
+---
+
+# Increment 32 — The banner frame, and the finer word leads somewhere (2026-08-17)
+
+### D-204 `[IMPLEMENTATION]` The frame takes the artwork's shape, not the reverse
+`SectionBanner` framed every banner at 1568×644 and used `object-cover`, so
+anything of another shape was cropped to fit. **Three of the eleven banners are
+1568×784** — My Inner World, Brain Gym and Kids Draw — which meant eighteen per
+cent of each was cut away, top and bottom. On My Inner World that took the top
+of the heart and pushed the ribbon against the edge.
+
+**Cropping approved artwork to fit a frame is redrawing it by another means**
+(rule 6, D-003). The frame now takes each banner's own proportions.
+
+Measured rather than typed, by `scripts/measure-banners.py` into
+`src/data/banner-sizes.json` — **the number that was wrong before was a typed
+one**, and a new banner of a fourth shape would have been cropped in silence.
+The script reads the WebP header directly rather than through an image library,
+so the build does not gain a dependency.
+
+Verified on the rendered page, not in the source: `aspect-ratio:2` on the three
+tall banners, `2.4347826086956523` on the rest, and the whole composition inside
+the frame in a browser screenshot.
+
+### D-205 `[DEFINED]` The finer word continues the path — supersedes part of D-162
+D-162 said the fine layer is *a better name for what she already said, not a
+second question*, and the code did exactly that: the three cards appeared and
+tapping one did nothing at all. In use that reads as a dead end, not as
+restraint.
+
+**Choosing a finer word now returns her to the body map under that word, and on
+to the strategies.** The reasoning is clinical rather than technical: the place a
+feeling is felt is not always the same once it has a finer name, and **the
+strategy that helps *chateado* is not the one that helps *furioso***. Asking
+where she feels *that* is a genuinely different question, so the zone is cleared
+rather than carried — answering it for her would be the app deciding.
+
+**What does not change.** D-100 still holds: the layer is reached only by asking
+for it, always after she has already named what she feels and been met, so no
+child meets a wall and the child who does not read still ends in the same place
+as everyone else. Nothing new is recorded. No intensity appears anywhere: the
+three words are still three names, never three sizes (D-096, D-199).
+
+**Three consequences, worth stating because they were decisions and not
+mechanics:**
+
+- **The word travels.** The card and the label on the body, strategy and closing
+  screens are the finer word once she has chosen one. The strategy screen showed
+  nothing of it at first, and a screen that forgets what she just said reads as
+  not having heard her.
+- **The invitation stops being offered once she has answered it.** There is no
+  finer layer beneath *furioso*, and a button leading back to a list she has
+  already answered is the same fault in the other direction.
+- **The Listen button moved outside the card.** The card became a button, and a
+  button inside a button is not something a browser can resolve — a screen reader
+  announces the pair as one control.
+
+Walked end to end in a real browser rather than read in the source: family →
+*say it better* → *furioso* → body map → strategies → colouring → closed.
+
+### D-206 `[DEFINED]` Her mark on the figure survives the finer word
+Taken as a judgement rather than asked again, and easily reversed if it reads
+wrong in use.
+
+Choosing a finer word cleared the body zone, on the reasoning that *where do you
+feel* **furioso** is a different question from *where do you feel* **zangado**.
+Clinically that is true. In use it is worse: she points at her chest, asks for a
+better word, and is put back in front of the same empty figure being asked the
+same thing about the same moment — which reads as the app not having believed
+her the first time. **That is the "going backwards" reading**, and it comes from
+the answer disappearing, not from the screen repeating.
+
+**The zone is now kept.** Two cases, and the same rule serves both:
+
+- She had already pointed. Her answer stands and she sees it still there under
+  the new word — visibly a refinement, not a repeat.
+- She had not, because she asked for a better word before answering. The figure
+  is empty and the question is genuinely still open.
+
+Either way the finer word gets the body question at least once, and nothing is
+ever answered on her behalf. Verified in a browser: the marked zone is still
+marked after *furioso* is chosen.
+
+---
+
+# Increment 33 — The avatar, built as the skeleton everything plugs into (2026-08-17)
+
+Built before the remaining activities rather than after them, because it is the
+one piece every other piece depends on: an activity that cannot say *she was
+here* has to be reopened later to learn how.
+
+### D-207 `[DEFINED]` The first choice happens on the home page; My ColorHugs holds the change
+Two pieces, not one, and separating them is what makes this work:
+
+- **The avatar in the corner is the frame**, not a section. It belongs to every
+  page (D-078), and it appears only once she has chosen — an empty slot with a
+  prompt in it would be a nag on every screen.
+- **The picker is an activity**, and it is now the first sticker in My ColorHugs.
+
+**But the first choice cannot live only in My ColorHugs.** A child who arrives
+and goes straight to *Como Me Sinto?* would spend her first activity with an
+empty corner — the one that matters most. So the home page carries it: if she
+has no avatar, the ten stand where the avatar would be.
+
+**It is not a wall.** The section grid renders either way, so nobody is stopped
+on the way in. That is D-048 intact — the gate is on the action, never on the
+door. What changed is only that the choice is now *in front of* every child
+instead of hidden behind a section she may never open.
+
+`markVisited(area)` is the whole contract. One line in an activity connects it.
+Wired into *Como Me Sinto?*, *Explore & Color* and the picker itself. **It fires
+on arrival, not on completion** — colour is for having been there (D-067), and
+there is nothing in these activities that has to be finished.
+
+The new sticker does not exist and is shown as *artwork pending* (D-004): a
+substitute graphic quietly becomes a brand asset.
+
+### D-208 `[DEFINED]` The colour belongs to the child, not to the avatar
+Changing avatar carries every earned colour across, and the picker shows all ten
+already wearing it.
+
+If the colour stayed with the character, **changing her mind would cost her what
+she had earned**, and nothing in ColorHugs is ever taken away (rule 38, D-082).
+The cost on the other side is small and worth naming: the new avatar arrives
+already painted, which can read as unearned. Between a small oddity and a
+punishment for changing your mind, the oddity wins.
+
+Consequence for the data: the state is `{ avatar, painted[] }` — the character
+and the areas, kept apart. `src/lib/avatar-store.ts` is the only file that knows
+where it lives, so **moving it to a server when accounts arrive (D-202) is one
+file, not surgery**.
+
+**And the honest part.** It lives on the device today, which for the short trail
+was fine because the trail was built to be unimportant. **The avatar is the
+first thing in ColorHugs with something to lose** — it accumulates over weeks
+and it is the child on the screen. Clearing the browser takes it. That is
+written into the storage module itself, because it is the strongest argument the
+backend will ever have.
+
+### D-209 `[IMPLEMENTATION]` The fill map completed, and three faults worth recording
+`manifest.json` had seed points for the seven areas. Flood-filling from them,
+**between 1.6% and 42.8% of the character stayed white** depending on which one
+the child picked — the dino came out almost fully coloured, the fox nearly half
+blank, for the same work. **That is the D-069 fairness rule failing in another
+shape**: the choice of avatar was quietly a choice about how much reward was
+visible.
+
+`scripts/prepare-avatars.py` now assigns **every** sealed region to the area it
+shares the most border with — adjacency, not distance, because a cat's muzzle
+belongs to the head it sits inside and a centroid would sometimes disagree. All
+ten now reach 0.00% unpainted with all seven areas present.
+
+Three faults, each invisible in the file and obvious on the page:
+
+- **The colour goes underneath the line art, not inside it.** The artwork is
+  transparent everywhere except the line, so using its alpha as a mask over a
+  filled canvas throws the fill away and returns a blank avatar.
+- **Four of the ten had a seed sitting on the line itself.** That area got no
+  region at all, so one whole section stopped giving colour on those avatars —
+  the same fairness failure again. Seeds now snap to the nearest sealed space.
+- **A CSS mask reads alpha, not luminance.** The masks were written as greyscale,
+  which is opaque everywhere, so the browser painted the entire bounding box a
+  flat colour: on the page, a gold rectangle where a rocket should have been.
+
+A fourth, from the layout rather than the artwork: sizing the tiles by width
+made the rocket tall and thin and the house short and wide, the rows went
+ragged, and some avatars looked more important than others. **Fitted by height
+instead**, so all ten stand the same size.
+
+### D-210 `[OPEN QUESTION]` Two areas are very small on some avatars
+With everything assigned, the shares are uneven: My ColorHugs is 1.2% of the
+bear and Brain Gym 2.2% of the butterfly, against 40%-plus for the head on most
+creatures. Nothing is left white any more, which was the serious version of this
+problem — but a child whose avatar is the bear will barely see the colour that
+one section gives her. It may not matter at all; it needs looking at with a child
+rather than reasoning about.
+
+### D-211 `[DEFINED]` Each avatar carries its own palette — the section colours are dropped
+Painting each area in its section's accent made a harlequin of every character:
+a fox with a green torso, a purple chest and red legs. **The avatar's whole job
+is to be something a child likes looking at**, and a colour scheme nobody would
+choose for a drawing fails at that before it does anything else.
+
+**Ten palettes, one per character**, in `scripts/prepare-avatars.py` and written
+into `src/data/avatars.json`. A ginger cat with pink ears and a cream belly. A
+fox with a white front and dark socks. A brick roof on a cream house.
+
+**What is lost, stated plainly.** Colour is no longer readable as *which
+section*: purple no longer means My Inner World everywhere. That reading was
+theoretical — it needed a key, and nobody decodes a key. **What it cost was
+real**, and the trade is the right way round.
+
+**What is not lost.** The zone-to-section mapping is untouched (D-069, D-075):
+head is still Learning Hub, chest is still My Inner World, and every character
+still exposes exactly seven areas of comparable weight. Only what fills them
+changed.
+
+**Two craft rules held while choosing them**, and the second is measured:
+
+- *One family per character, varied by tone.* A cat is ginger nearly everywhere.
+  If head, arms and torso were the same swatch, a child would paint a whole
+  section and see nothing change — so they are one hue at different lightness,
+  with one or two honest accents.
+- *Touching areas must be far enough apart to read.* `check_contrast()` walks
+  the actual adjacency of the regions and warns below a perceptual distance of
+  9. All ten pass.
+
+Checked on the progression, not only on the finished state, because that is
+where the avatar spends nearly all its life: a fox painted one area at a time
+comes to life step by step rather than looking broken half-done.
+
+### D-212 `[DEFINED]` Changing avatar can be taken back, once, in the moment
+The change was immediate and final — tap the bear and the cat is gone. Nothing
+was lost but the character, and **a small child taps to see what happens**.
+
+The picker now offers the way straight back, showing the previous character and
+naming it: *não, quero outra vez o Gato*. It names the character rather than
+saying *undo*, which is a word for someone who already knows she made a mistake.
+
+**Held in memory, never saved.** It is an immediate undo, not a history: coming
+back tomorrow and being offered yesterday's avatar would be the product
+second-guessing a choice she has since lived with. It also only appears after a
+real change — tapping the one she already has offers nothing.

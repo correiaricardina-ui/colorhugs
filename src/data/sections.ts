@@ -519,6 +519,24 @@ export const SECTIONS: Section[] = [
     },
     activities: [
       {
+        // First in the section on purpose: it is the only one of the four that
+        // does something today, and it is where the child comes back to change
+        // who goes with her (D-207).
+        slug: "my-avatar",
+        title: "Who Comes With Me",
+        tagline: "Pick who goes with you around ColorHugs",
+        access: { kind: "free" },
+        status: "live",
+        origin: "official-library",
+        sticker: {
+          // Artwork pending. Missing artwork is flagged, never invented
+          // (D-004, rule 6): a substitute graphic quietly becomes a brand asset.
+          src: null,
+          alt: "Who Comes With Me",
+          ratio: "square",
+        },
+      },
+      {
         slug: "my-sticker-book",
         title: "My Sticker Book",
         tagline: "All the stickers you have collected",

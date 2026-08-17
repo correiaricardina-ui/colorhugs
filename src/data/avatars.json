@@ -1,0 +1,232 @@
+{
+  "borboleta": {
+    "height": 833,
+    "line": "/assets/avatars/borboleta.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/borboleta-BG.webp",
+      "CC": "/assets/avatars/masks/borboleta-CC.webp",
+      "CM": "/assets/avatars/masks/borboleta-CM.webp",
+      "IW": "/assets/avatars/masks/borboleta-IW.webp",
+      "KD": "/assets/avatars/masks/borboleta-KD.webp",
+      "LH": "/assets/avatars/masks/borboleta-LH.webp",
+      "MC": "/assets/avatars/masks/borboleta-MC.webp"
+    },
+    "palette": {
+      "BG": "#5B4AA5",
+      "CC": "#F5B267",
+      "CM": "#E9843B",
+      "IW": "#F2C14E",
+      "KD": "#F08CA0",
+      "LH": "#7E6BD1",
+      "MC": "#9A88E0"
+    },
+    "width": 900
+  },
+  "carro": {
+    "height": 814,
+    "line": "/assets/avatars/carro.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/carro-BG.webp",
+      "CC": "/assets/avatars/masks/carro-CC.webp",
+      "CM": "/assets/avatars/masks/carro-CM.webp",
+      "IW": "/assets/avatars/masks/carro-IW.webp",
+      "KD": "/assets/avatars/masks/carro-KD.webp",
+      "LH": "/assets/avatars/masks/carro-LH.webp",
+      "MC": "/assets/avatars/masks/carro-MC.webp"
+    },
+    "palette": {
+      "BG": "#A32E2A",
+      "CC": "#E0524C",
+      "CM": "#4B4F55",
+      "IW": "#C9CED4",
+      "KD": "#F7D36B",
+      "LH": "#A9D6EE",
+      "MC": "#AEB6BE"
+    },
+    "width": 900
+  },
+  "casa": {
+    "height": 900,
+    "line": "/assets/avatars/casa.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/casa-BG.webp",
+      "CC": "/assets/avatars/masks/casa-CC.webp",
+      "CM": "/assets/avatars/masks/casa-CM.webp",
+      "IW": "/assets/avatars/masks/casa-IW.webp",
+      "KD": "/assets/avatars/masks/casa-KD.webp",
+      "LH": "/assets/avatars/masks/casa-LH.webp",
+      "MC": "/assets/avatars/masks/casa-MC.webp"
+    },
+    "palette": {
+      "BG": "#A8483F",
+      "CC": "#F5E4C8",
+      "CM": "#6FA85E",
+      "IW": "#A9D6EE",
+      "KD": "#7FC0E2",
+      "LH": "#B5713F",
+      "MC": "#C0554A"
+    },
+    "width": 839
+  },
+  "coelho": {
+    "height": 900,
+    "line": "/assets/avatars/coelho.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/coelho-BG.webp",
+      "CC": "/assets/avatars/masks/coelho-CC.webp",
+      "CM": "/assets/avatars/masks/coelho-CM.webp",
+      "IW": "/assets/avatars/masks/coelho-IW.webp",
+      "KD": "/assets/avatars/masks/coelho-KD.webp",
+      "LH": "/assets/avatars/masks/coelho-LH.webp",
+      "MC": "/assets/avatars/masks/coelho-MC.webp"
+    },
+    "palette": {
+      "BG": "#F0B7C8",
+      "CC": "#EAE3F3",
+      "CM": "#BFB2D4",
+      "IW": "#FDF0E4",
+      "KD": "#BFB2D4",
+      "LH": "#DCD3E8",
+      "MC": "#FBDCE6"
+    },
+    "width": 563
+  },
+  "dino": {
+    "height": 900,
+    "line": "/assets/avatars/dino.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/dino-BG.webp",
+      "CC": "/assets/avatars/masks/dino-CC.webp",
+      "CM": "/assets/avatars/masks/dino-CM.webp",
+      "IW": "/assets/avatars/masks/dino-IW.webp",
+      "KD": "/assets/avatars/masks/dino-KD.webp",
+      "LH": "/assets/avatars/masks/dino-LH.webp",
+      "MC": "/assets/avatars/masks/dino-MC.webp"
+    },
+    "palette": {
+      "BG": "#E9A23B",
+      "CC": "#8ED092",
+      "CM": "#44844B",
+      "IW": "#DDF0C6",
+      "KD": "#569E5C",
+      "LH": "#6FBF73",
+      "MC": "#7CC57F"
+    },
+    "width": 809
+  },
+  "foguetao": {
+    "height": 900,
+    "line": "/assets/avatars/foguetao.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/foguetao-BG.webp",
+      "CC": "/assets/avatars/masks/foguetao-CC.webp",
+      "CM": "/assets/avatars/masks/foguetao-CM.webp",
+      "IW": "/assets/avatars/masks/foguetao-IW.webp",
+      "KD": "/assets/avatars/masks/foguetao-KD.webp",
+      "LH": "/assets/avatars/masks/foguetao-LH.webp",
+      "MC": "/assets/avatars/masks/foguetao-MC.webp"
+    },
+    "palette": {
+      "BG": "#AEB6BE",
+      "CC": "#DCE3E9",
+      "CM": "#F5A623",
+      "IW": "#E8843C",
+      "KD": "#E0524C",
+      "LH": "#F2C14E",
+      "MC": "#98A2AB"
+    },
+    "width": 465
+  },
+  "gato": {
+    "height": 900,
+    "line": "/assets/avatars/gato.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/gato-BG.webp",
+      "CC": "/assets/avatars/masks/gato-CC.webp",
+      "CM": "/assets/avatars/masks/gato-CM.webp",
+      "IW": "/assets/avatars/masks/gato-IW.webp",
+      "KD": "/assets/avatars/masks/gato-KD.webp",
+      "LH": "/assets/avatars/masks/gato-LH.webp",
+      "MC": "/assets/avatars/masks/gato-MC.webp"
+    },
+    "palette": {
+      "BG": "#EE8FA6",
+      "CC": "#F9BE7C",
+      "CM": "#FBE7CE",
+      "IW": "#FBE7CE",
+      "KD": "#E0904A",
+      "LH": "#F2A65A",
+      "MC": "#D9823E"
+    },
+    "width": 684
+  },
+  "raposa": {
+    "height": 900,
+    "line": "/assets/avatars/raposa.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/raposa-BG.webp",
+      "CC": "/assets/avatars/masks/raposa-CC.webp",
+      "CM": "/assets/avatars/masks/raposa-CM.webp",
+      "IW": "/assets/avatars/masks/raposa-IW.webp",
+      "KD": "/assets/avatars/masks/raposa-KD.webp",
+      "LH": "/assets/avatars/masks/raposa-LH.webp",
+      "MC": "/assets/avatars/masks/raposa-MC.webp"
+    },
+    "palette": {
+      "BG": "#B85A32",
+      "CC": "#F4A163",
+      "CM": "#8C5233",
+      "IW": "#FDF2E4",
+      "KD": "#D4712F",
+      "LH": "#E8823C",
+      "MC": "#EE9048"
+    },
+    "width": 763
+  },
+  "robot": {
+    "height": 900,
+    "line": "/assets/avatars/robot.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/robot-BG.webp",
+      "CC": "/assets/avatars/masks/robot-CC.webp",
+      "CM": "/assets/avatars/masks/robot-CM.webp",
+      "IW": "/assets/avatars/masks/robot-IW.webp",
+      "KD": "/assets/avatars/masks/robot-KD.webp",
+      "LH": "/assets/avatars/masks/robot-LH.webp",
+      "MC": "/assets/avatars/masks/robot-MC.webp"
+    },
+    "palette": {
+      "BG": "#E36B6B",
+      "CC": "#A9CBE3",
+      "CM": "#7A93A5",
+      "IW": "#F2C14E",
+      "KD": "#BCC9D3",
+      "LH": "#8FB8D9",
+      "MC": "#E08A4B"
+    },
+    "width": 561
+  },
+  "urso": {
+    "height": 900,
+    "line": "/assets/avatars/urso.webp",
+    "masks": {
+      "BG": "/assets/avatars/masks/urso-BG.webp",
+      "CC": "/assets/avatars/masks/urso-CC.webp",
+      "CM": "/assets/avatars/masks/urso-CM.webp",
+      "IW": "/assets/avatars/masks/urso-IW.webp",
+      "KD": "/assets/avatars/masks/urso-KD.webp",
+      "LH": "/assets/avatars/masks/urso-LH.webp",
+      "MC": "/assets/avatars/masks/urso-MC.webp"
+    },
+    "palette": {
+      "BG": "#E6C199",
+      "CC": "#DCAE7B",
+      "CM": "#E6C199",
+      "IW": "#F7E7CE",
+      "KD": "#B07C48",
+      "LH": "#C99560",
+      "MC": "#B07C48"
+    },
+    "width": 625
+  }
+}

@@ -58,8 +58,13 @@ so the domain shows a "coming soon" page and the real site is built at
 re-running the workflow puts the site live.
 
 **Built:** Next.js 14, TypeScript, Tailwind. The homepage, seven section pages,
-thirty-one activity placeholder pages, and the Parents & Safety area. All
-artwork processed and wired. Nothing is faked — placeholder activities say so.
+thirty-two activity pages, and the Parents & Safety area. All artwork processed
+and wired. Nothing is faked — placeholder activities say so.
+
+Three activities are real: *How Do I Feel?*, *Explore & Color*, and the avatar
+picker. **The avatar is the skeleton the rest plugs into** (D-207): one call to
+`markVisited(area)` connects an activity to it, and the colour it carries is the
+child's rather than the character's (D-208).
 
 **Not built:** any actual activity, accounts, payments, moderation, and
 internationalisation.
@@ -154,8 +159,8 @@ and the professional note at
 `docs/materials/como-me-sinto-nota-aplicacao.md`.
 
 **What that activity still needs before it can be built:** the artwork
-regenerated without text (D-110), and the account question answered, since the
-short trail has to live somewhere (Q-010).
+regenerated without text (D-110). The account question is answered (D-202) and
+the short trail now has somewhere to live — the device.
 
 **Artwork:** all twenty-four stickers and all seven emotion cards are done. The
 body map figure is done and passed the sealing test. Two avatars — penguin and
@@ -163,8 +168,10 @@ kite — remain withdrawn (D-079).
 
 **Bigger questions, recorded in the decision log:**
 
-- **Q-010 Where the account system lives.** Nothing about logins, download
-  limits or the short trail can work until this is answered.
+- ~~**Q-010 Where the account system lives.**~~ **Closed by D-202:** commercial
+  state on a server, the child's trail on the device and never synced. The short
+  trail is unblocked; the Free boundary stays declared and not enforced until a
+  backend exists.
 - **Q-013 The "Brain Gym" name.** Brain Gym is a trademarked programme widely
   cited as pseudoscience in education. The audience most likely to recognise it
   is the one whose trust this product most needs.
