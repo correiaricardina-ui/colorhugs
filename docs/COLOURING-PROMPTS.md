@@ -408,6 +408,98 @@ No fringe. No stitching. No faces. No hearts. No stars. No sparkles.
 
 ---
 
+---
+
+# Envergonhado
+
+**Two new pages.** Three of the five reuse artwork — *alguém ao pé de mim*, the
+bench, the dog.
+
+**A rule this family adds, and it is not the same as the other two.** In the sad
+pages nobody is sad; in the scared pages nobody is frightened; here **nobody is
+being looked at**. No pointing, no group of faces turned towards one child, no
+figure alone in front of others. Shame's whole content is being seen, and a
+drawing that stages it hands the child the feeling instead of the way out.
+
+Faces are calm and ordinary, as everywhere else in the library.
+
+### Quem também já se enganou · `also-got-it-wrong.png`
+
+*The hardest of the two to keep honest: it has to show two people side by side
+in something gone wrong, without either of them being the one at fault.*
+
+```
+[STYLE BLOCK]
+
+THE SCENE
+Two children sitting on the floor side by side, both facing the viewer, with a
+tall tower of fat rounded blocks between and in front of them that has fallen
+over. Some blocks are still stacked, some are lying scattered on the ground.
+
+Both children MUST be calm and content, and MUST be looking at the viewer, not
+at each other and not at the blocks. Neither is crying, neither is covering her
+face, and neither is pointing at the other. Nobody is being blamed in this
+picture.
+
+Every figure MUST have hair — a big rounded soft mass of it. Bald is wrong. Give
+the two children hair of clearly different shapes so a child colouring can tell
+them apart. Each MUST have visible clothing with a separate top and separate
+trousers, each its own enclosed area.
+
+The blocks MUST be fat and rounded, like stuffed cubes, and there MUST be at
+least five of them, each its own enclosed area, and clearly different sizes.
+
+THE GROUND LINE: a single soft line spanning the whole width of the picture,
+edge to edge, behind them. It must not stop short of either edge. Think of it as
+the horizon.
+
+FORBIDDEN, ONE BY ONE: no pointing fingers. No tears. No hands over faces. No
+speech bubble. No exclamation marks. No letters on the blocks. No numbers on the
+blocks. No hearts. No stars. No sparkles.
+```
+
+### Uma coisa que continua igual · `same-as-always.png`
+
+*The quietest page in the library, and deliberately so. It exists so that a child
+who can name no person still has something to name (D-250), which means it must
+contain no people at all.*
+
+```
+[STYLE BLOCK]
+
+THE SCENE
+A corner of a child's bedroom in the morning, with nobody in it.
+
+A fat rounded bed with a plump folded duvet and one soft pillow. Beside the bed,
+on the floor, two chubby slippers. On a small round bedside table, one fat mug
+and one plush toy rabbit sitting up. On the wall behind, nothing at all.
+
+NO PEOPLE. Not in the room, not at the door, not in a picture on the wall. This
+page is about the things that are still there, and a person in it changes the
+subject.
+
+The plush rabbit MUST have a face: two round dot eyes and one small curved
+mouth, and nothing else on the face. NOTHING ELSE IN THE PICTURE HAS A FACE —
+not the mug, not the slippers, not the pillow.
+
+Each of these MUST be its own enclosed area: the duvet, the pillow, the bed
+itself, each slipper, the table, the mug, the rabbit's body, the rabbit's tummy
+patch, and each of the rabbit's two ears.
+
+NO WALL, NO WINDOW FRAME, NO SKIRTING BOARD, NO CORNER OF A ROOM. No straight
+edges. The room is suggested by the floor alone.
+
+THE GROUND LINE: a single soft line spanning the whole width of the picture,
+edge to edge, behind everything. It must not stop short of either edge. Think of
+it as the horizon.
+
+FORBIDDEN, ONE BY ONE: no people. No wall. No window. No skirting board. No
+straight lines of any kind. No clock. No calendar. No numbers. No letters. No
+patterns on the duvet. No stripes. No stars. No sparkles. No sun.
+```
+
+---
+
 # Landing the files
 
 ## Where they go, and what to run
@@ -424,6 +516,8 @@ exactly:
 | `counting-fingers.png` | *A minha mão* — substitui a existente |
 | `floating-feather.png` | *Pena* — substitui a existente |
 | `quiet-corner.png` | *Almofadas* — substitui a existente |
+| `also-got-it-wrong.png` | *Quem também já se enganou* (envergonhado) |
+| `same-as-always.png` | *Uma coisa que continua igual* (envergonhado) |
 
 The filenames describe the picture and never the feeling (D-120): the child
 downloads the PDF and the file that lands in her house must not report what she

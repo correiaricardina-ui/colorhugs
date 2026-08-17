@@ -4523,3 +4523,150 @@ ten and nine in the three workbooks.**
 Checked at the same time, and correct in all three: the child's cover reads
 **Caderno de exploração** beneath the family name, with the plain logo and no
 licensing strapline (D-190).
+
+---
+
+# Increment 36 — The ashamed family (2026-08-17)
+
+### D-248 `[DEFINED]` The governing distinction: *o que aconteceu não é quem eu sou*
+Three were considered, and the second was taken apart by the thing it assumed.
+
+**Rejected: *vergonha não é culpa***, which the recipe listed. True, and well
+supported — guilt looks at the act and moves toward repair; shame looks at the
+person and moves toward hiding. **But it is a clinician's taxonomy, not a child's
+sentence.** No seven-year-old has that question, and no sheet hangs off it.
+
+**Rejected, after being chosen: *o que eu fiz não é quem eu sou*.** It has the
+right structure and it names the adult's error exactly — *és malcriada* instead
+of *isso que fizeste magoou-o*. **It was taken apart by its own premise: it
+assumes there was an act.** Much of childhood shame has none — being laughed at,
+wetting the bed, being the poorest in the class, a parent who drinks, something
+that was done to her. For those the sentence does not reach, and worse, it
+implies she did something. **In a family that touches things that may have been
+done *to* her, that is not a matter of wording.**
+
+**Adopted: *o que aconteceu não é quem eu sou*.** It keeps the structure and
+covers both origins — what she did and what happened to her.
+
+**The child's version:** *a vergonha diz "tu és" — mas o que aconteceu não é quem
+tu és.*
+
+**Hiding is this family's mechanism, as avoidance is fear's.** Shame orders
+concealment, and concealment is what maintains it: it blocks repair, and it
+blocks the discovery that nobody thinks of her what she believes they do. The
+workbook is organised around that, not around the guilt-shame distinction — which
+stays in the clinician's framing where it belongs.
+
+### D-249 `[DEFINED]` *Embaraçado* is not shame, and its sheet is where the language gets corrected
+Embarrassment is a different emotion — social, light, passing — and European
+Portuguese puts it inside *envergonhado* along with shame. **A child who says
+*estou envergonhada* may be describing a trivial moment in the playground or a
+global condemnation of herself.**
+
+**It is this family's *chateado*, and the heaviest of the three found so far**:
+*chateado* confuses three families of feeling, *sozinho* confuses two intensities
+of one, and this one confuses a passing social moment with the emotion most
+associated with concealment and with harm done to a child.
+
+**It stays in the family, and its sheet is about the difference.** Rejected:
+leaving it in with the workbook merely explaining the distinction, which would
+leave the weakest sheet of the set doing another emotion's work; and taking it
+out, which would clear the axis and leave **one of the most frequent experiences
+of this age with no name anywhere in the product**, besides discarding a card
+already drawn and approved.
+
+The reasoning is the *chateado* reasoning: **the ambiguity does not go away by
+removing the card — it lives in the child's head either way.** Better inside a
+sheet that treats it than inside a silence.
+
+So the sheet becomes the one that teaches what the language erased: **isto passa
+em cinco minutos, e aquilo fica.** It stops being the family's weakest page and
+becomes the one carrying its own distinction, exactly as *chateado* does in the
+angry family.
+
+**The family therefore has one axis and one correction**, not two axes: hiding is
+the mechanism throughout, and the *embaraçado* sheet exists to stop a passing
+social moment being filed under it.
+
+### D-250 `[DEFINED]` The middle step: *quem é que continua a gostar de ti na mesma?*
+**None of the nine pages already drawn serve this family.** Anger's five are ways
+down, and shame does not rise and fall like that. Sadness's six are company —
+**and shame, unlike sadness, makes a child want to be alone, and that wanting is
+the problem rather than the answer.** Offering *um bocadinho no meu sítio* here
+would be proposing the mechanism that maintains it.
+
+The question comes straight out of the distinction. Shame's claim is that if she
+were seen as she is, nobody would want her. **The screen does not argue with
+that — it asks her to name.**
+
+**It is also the only thing that can be offered here without opening anything.**
+Naming people closes on itself. Telling, showing and repairing do not: each needs
+someone present to receive it, and those belong to the workbook.
+
+**One constraint, fixed now.** A child who can name nobody is the child this
+family is most about, and on a screen with nobody there she must not be left
+staring at a blank. **At least one option has to be available to every child** —
+the role *uma coisa macia* played in the sad family. The set is chosen with that
+as a requirement, not as a nicety.
+
+### D-251 `[DEFINED]` The five, and the one that goes to the workbook
+| | Base | Grade |
+| --- | --- | --- |
+| Alguém cá de casa | vinculação, disponibilidade do cuidador | **estabelecido** as a mechanism |
+| Alguém que já sabe | a revelação não confirmou a previsão | **razoável** |
+| Um bicho | companhia sem julgamento | **prática** |
+| Alguém que também já se enganou | normalização entre pares | **razoável** |
+| Uma coisa que continua igual | continuidade e previsibilidade | **prática** |
+
+Three reuse artwork — *alguém ao pé de mim*, the bench, the dog — and two are
+new.
+
+***Alguém que já sabe* is the one that does the work.** Shame predicts that being
+seen would end the relationship. Naming somebody who has already seen and is
+still there is that prediction failing, and the child produces the
+counter-evidence herself rather than being argued out of it. **The screen never
+asks what that person knows**, only who they are.
+
+***Uma coisa que continua igual* is there because of the constraint** (D-250): a
+child who can name no person must still have something to name. The bed, the
+route to school, the same breakfast. It is *prática* and it is not in the set for
+its evidence — it is in the set so that nobody meets a blank.
+
+**Held back to the workbook: *alguém de quem eu gosto na mesma*.** It inverts the
+question — who does *she* still love, knowing what she knows about them — and it
+is the sharpest of the six. It is also the hardest to grasp alone on a phone, and
+it needs a person to say it. It goes into section 6 as a dynamic, where the
+inversion can be walked through.
+
+**The pattern is now three families deep and worth naming:** every family loses
+something at the screen and keeps it in the workbook, and it is always the piece
+that needs a person. Sadness lost nothing; fear lost the ladder; shame loses the
+inversion. **The workbook is not a longer version of the app — it is where
+everything that opens has gone to live.**
+
+### D-252 `[DEFINED]` Nobody is being looked at in the ashamed pages
+Each family has now added one rule to the artwork, and they are not the same
+rule. In the sad pages **nobody is sad**; in the scared pages **nobody is
+frightened**; here **nobody is being looked at**.
+
+No pointing, no group of faces turned towards one child, no figure standing alone
+in front of others. **Shame's whole content is being seen**, and a drawing that
+stages it hands the child the feeling instead of the way out. It is a stronger
+version of the D-220 reasoning: there the risk was the page reporting what she
+chose; here the page would also be doing the thing the family is about.
+
+### D-253 `[IMPLEMENTATION]` The two new pages, and why one has no people in it
+`also-got-it-wrong` — two children side by side behind a fallen tower of blocks,
+both calm, both facing out. **Neither is at fault and neither is pointing**: the
+page has to show two people in something gone wrong without staging blame, which
+is the hardest composition asked for so far.
+
+`same-as-always` — a corner of a bedroom in the morning, **with nobody in it**.
+Chosen over the route to school because every child has a bed and not every child
+has the same walk. It is the quietest page in the library on purpose: it exists
+so that a child who can name no person still has something to name (D-250), and
+**that is exactly why it must contain no people at all.** A person in it changes
+the subject back.
+
+Both carry the ground-line instruction, which has now worked on every landscape
+page since it was rephrased.
