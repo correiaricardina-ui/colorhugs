@@ -5539,3 +5539,191 @@ sheets and the figure all come out different because of it.
 **Recorded as a rule, because it was caught rather than avoided:** an atmospheric
 claim about how a feeling behaves is still a claim. *Passa depressa* had no
 evidence, no grading, and no reason to be there beyond sounding right.
+
+### D-283 `[DEFINED]` The happy family has four layers, an adult error, and a complaint that brings people in
+Ricardina's addition, and it changes the family from the thinnest of the seven
+into one of the fullest. Recorded in the order it arrived, because the last piece
+reframed the others.
+
+**Four layers, and each yields sheets:**
+
+1. **Nomear** — the degrees and kinds: contente, entusiasmado, orgulhoso,
+   aliviado. The four fine words already exist.
+2. **Guardar** — the five ways of keeping, with **agradecer** inside it.
+3. **Reactivar** — memories, and plans. **It is the only family that looks
+   forward**: making plans is anticipated joy, and it is a capacity rather than a
+   pastime.
+4. **Estar no momento** — the new layer, and the one that gives this family its
+   clinical weight.
+
+**The fourth layer holds two complaints that are the same mechanism in two
+tenses.**
+
+**The emptiness after the peak.** The party that ended, the holiday that ended,
+Sunday evening. It was in no part of the material, and it is almost always
+misread: the child is low after something good, and either she is told she has no
+reason to be, or the good thing is judged to have gone wrong.
+
+**And the joy that is never inhabited** — the commonest parental complaint of
+all: *ela quer muito uma coisa, fica entusiasmada, e quando chega parece que não
+a aproveita e já quer saber o que vem a seguir.* **The enthusiasm eats the joy.**
+The pleasure was all in the anticipation, and the anticipation ended the moment
+the thing arrived.
+
+**They are one section, not two** — the same inability to be in the moment one is
+in, in two tenses. Separating them would make the workbook repeat itself.
+
+**This gives the family the adult error it was thought not to have: calling it
+ingratitude.** *Nunca estás satisfeita* is this family's label, as *és malcriada*
+is shame's, and it is corrected the same way — speak of what happened, never of
+who she is. **The child is not rejecting the thing; she was never present in it.**
+
+**And it explains the link to anxiety that Ricardina named.** Excitement and
+anxiety share the activation: the body speeds up, tightens, will not sleep. Both
+live in what comes next rather than in what is. **A child who anticipates a great
+deal is frequently the same child who worries a great deal**, and this is the
+finest connection the material will carry.
+
+**The distinction stays as adopted** (D-282). It covers naming, keeping and
+reactivating, and the fourth layer gets its own section rather than a rewritten
+axis: no single sentence held both keeping and landing without losing the store,
+which is what makes this a resource family at all.
+
+### D-284 `[IMPLEMENTATION]` The happy family's schema, and its prose — thirteen pages
+`scripts/figure-joy-shapes.py`, in both versions. **The only figure in the
+material that draws a positive feeling**, and it exists for the two complaints in
+D-283.
+
+**Two panels.** In the first the charge is all in the *before*: a long climb, a
+small bump at the thing itself, and a fall that goes **below the line it started
+from**. It is what families read wrong twice — first as *não aproveitou*, then as
+*afinal não gostou*.
+
+**The second panel is not *the right way*.** No technique is promised. It is what
+it looks like when the charge is spread.
+
+**The baseline is drawn deliberately**, because the point of the *after* is that
+it passes below where it began and comes back. **The dip is normal, and the
+figure says so.**
+
+**A fault fixed before it printed:** the first version masked the curves at the
+moment with a hard cut and produced a vertical jump. **A discontinuity reads as a
+drawing error** — the drop is meant to be steep, not instantaneous — so the two
+halves are now blended.
+
+Decisions in the prose:
+
+- **The screen question is the only one in the product that asks the child to do
+  something** rather than choose between things: *o que é que queres guardar
+  disto?*
+- **Only one of the five ways of keeping has a base**, and the workbook says so.
+  *Contar a alguém* is reasonable and the best of the set — **and it is the only
+  one whose outcome is not in her hands.** A child who tells a good thing and is
+  met with indifference is left worse than if she had said nothing, so the
+  guidance says to choose the person before telling her to tell.
+- ***Agradecer* goes inside *contar a alguém*** rather than becoming a sixth
+  option. Said to the person it is sharing; written in a diary it is a record.
+  **As good manners it is nothing** — and this material does not teach courtesy.
+- **The body map is used properly here**, unlike in calm: happiness has a
+  location, and **the child who cannot locate it is the exception rather than the
+  rule** — the exact inverse of D-276.
+- **The missing word is the one that costs this family most:** there is no child's
+  word in European Portuguese for **shared joy** — the kind that exists only
+  because somebody else is feeling it at the same time. **What goes unnamed is
+  exactly what the best-supported way of keeping exists to produce.**
+
+**Section 10 carries the limit this family most needed:** that *contar a alguém*
+depends on who receives it, which is outside the child's reach and outside this
+material's — **it is not a technique she can apply alone with any guarantee.**
+
+### D-285 `[IMPLEMENTATION]` The happy family's sheets — eleven, the largest set of the seven
+`docs/materials/feliz-fichas.html`. Eleven for the child, one for whoever applies
+it, one for the family. Fourteen pages in the child's book — the biggest, because
+this family has four layers.
+
+**There is no externalising sheet.** Turning joy into a visiting character would
+put it outside her, and this family exists to keep it inside.
+
+Sheets that do work no other family's does:
+
+- ***Onde é que eu sinto*** uses the body map properly, and asks whether
+  *contente* and *entusiasmado* are felt in the same place. **It is the exact
+  inverse of the calm family**, where locating anything is the exception.
+- ***Contar a alguém* chooses the person before it tells her to tell.** The first
+  question is *quem é que fica mesmo contente quando te corre bem?*, and the
+  second asks how she knows — because this is the only way of keeping whose
+  outcome is not in her hands.
+- ***A espera e a coisa*** is the fourth layer as two squares: how the waiting
+  was, how the thing was, and **which square came out fuller**. It turns the
+  commonest parental complaint into something a child can answer about herself.
+- ***Quando acaba*** names the hole and closes with the sentence the whole family
+  was built around: **o buraco a seguir não quer dizer que a coisa boa correu mal
+  — quer dizer só que era boa.**
+- ***Contente* asks for three small things**, and closes with *não é preciso ser
+  grande para contar*. A child who has words only for the extremes ends up
+  believing ordinary days do not count.
+
+**The letter is the longest of the seven**, and it is the only one that quotes the
+parents back to themselves — *parece que nunca está satisfeita com nada* — before
+offering the reading that dissolves it. It ends on the smallest instruction in
+the whole material and possibly the most useful: **when she tells you something
+good, stop, look, and ask one more question. Three seconds.**
+
+**A check added to the pre-flight, and it now runs over all seven families:**
+markdown asterisks that survive the sheets HTML and reach the printed page. Two
+were caught in this family and one in calm before printing; all twenty-one built
+PDFs are now clean.
+
+### D-286 `[IMPLEMENTATION]` The happy family's eleven guides — and the seven are closed
+Twenty-eight pages, forty-four dynamics, each guide whole on its own page.
+
+Cautions in these guides that are rules rather than advice:
+
+- **Sheet 3:** none is better than another **on her sheet**, even though one has
+  a better base. **The hierarchy is the workbook's, not the child's.**
+- **Sheet 4:** do not tell her to tell before the person is chosen.
+- **Sheet 7:** do not suggest she be less excited. **The excitement is not the
+  problem** — the problem is that nothing is left for the moment.
+- **Sheet 10:** **never say she should have made more of it.** It is the
+  consulting-room version of this family's label, and a child hears it at once.
+
+The most useful dynamic of the set is on sheet 4, with the family: **parar,
+olhar, e fazer uma pergunta a mais.** Three seconds.
+
+**All seven families are closed.** Twenty-one PDFs: seven workbooks, seven child
+books, seven letters.
+
+### D-287 `[DEFINED]` The child's materials carry no gender, and this was a fault in all seven
+Ricardina's requirement: the child's books must be usable with a boy or a girl.
+**They were not.** Portuguese forces agreement, and the sheets had been written
+throughout in the feminine.
+
+**Two strategies, chosen case by case:**
+
+- **The double form where the word *is* the feeling** — *nervoso ou nervosa*,
+  *tímido ou tímida*, *orgulhoso ou orgulhosa*. The word is the point of the
+  sheet, and the child has to see herself or himself in it.
+- **Rewriting where the agreement was incidental** — *sentir culpa* for
+  *sentir-se culpada*, *com muito entusiasmo* for *muito entusiasmada*, *sem
+  ninguém a ajudar* for *sozinha*, *com zanga* for *zangada*.
+
+**And the citation form, in the masculine, where the sentence defines the word
+rather than describing the child:** *Arrependido é quando…*, *Orgulhoso é
+quando…*, *Aliviado é a alegria de…* — matching the card, which already carries
+the masculine as the name of the word.
+
+**Three faults on screen, and the third was the least obvious:**
+
+- **The bored button said *Ainda estou aborrecida*** → **Ainda estou assim**,
+  which is shorter, keeps the descriptive framing, and carries no agreement.
+- **The scared literacy line said *ficar parada*** → *ficar sem te mexer*.
+- **The closing line said *Obrigada por me contares*.** That is the product
+  speaking about itself in the feminine — and *Obrigado* would only move the
+  problem. **A child reading it can take it as being about her.** Replaced with
+  **Ainda bem que me contaste**, which has no agreement at all.
+
+**Verified by search across the built PDFs**: the fourteen sheets a child or a
+family takes home carry no loose feminine agreement, no age ranges, and no
+markdown asterisks. The workbooks keep the feminine where it belongs — they speak
+of *a criança*, which is a feminine noun in Portuguese and says nothing about the
+child in the room.

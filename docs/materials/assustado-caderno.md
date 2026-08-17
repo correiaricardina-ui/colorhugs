@@ -107,7 +107,7 @@ para pintar, no ecrã ou impresso.
 **A linha que ela lê:**
 
 > O medo aparece para nos dizer para termos cuidado. Não quer dizer que a coisa
-> seja perigosa, e não quer dizer que tenhas de ficar parada. O medo fica mais
+> seja perigosa, e não quer dizer que tenhas de ficar sem te mexer. O medo fica mais
 > pequeno quando nos aproximamos devagar — não quando fugimos.
 
 **É a primeira linha do produto que enuncia um mecanismo** em vez de descrever o

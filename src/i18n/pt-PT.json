@@ -23,7 +23,7 @@
     "bodyPrompt": "Onde é que sentes isso?",
     "bodySkip": "Prefiro não dizer",
     "bodyDone": "Pronto",
-    "done": "Obrigada por me contares.",
+    "done": "Ainda bem que me contaste.",
     "doneAgain": "Escolher outra vez",
     "change": "Escolher outro sentimento",
     "families": {
@@ -45,7 +45,7 @@
     "literacy": {
       "angry": "A zanga costuma aparecer quando alguma coisa parece injusta, ou quando queríamos muito uma coisa e não conseguimos. Chega depressa, e demora mais tempo a ir-se embora do que a chegar.",
       "sad": "A tristeza costuma aparecer quando perdemos alguma coisa de que gostávamos, ou quando as coisas não foram como esperávamos. Instala-se devagar e fica um bocado. Com alguém ao pé, não passa mais depressa — mas é mais fácil de carregar.",
-      "scared": "O medo aparece para nos dizer para termos cuidado. Não quer dizer que a coisa seja perigosa, e não quer dizer que tenhas de ficar parada. O medo fica mais pequeno quando nos aproximamos devagar — não quando fugimos.",
+      "scared": "O medo aparece para nos dizer para termos cuidado. Não quer dizer que a coisa seja perigosa, e não quer dizer que tenhas de ficar sem te mexer. O medo fica mais pequeno quando nos aproximamos devagar — não quando fugimos.",
       "ashamed": "A vergonha aparece quando achamos que os outros nos viram por dentro e não vão gostar do que viram. Ela diz «tu és» — mas o que aconteceu não é quem tu és. E dá vontade de esconder, que é a única coisa que a faz ficar.",
       "bored": "Não faz mal nenhum não ter nada para fazer. Não tens de encontrar já uma coisa."
     },
@@ -116,7 +116,7 @@
     "fineBack": "Voltar",
     "fineLocked": "Pede a um adulto para abrir estas palavras",
     "strategySkip": "Agora não",
-    "stillBored": "Ainda estou aborrecida"
+    "stillBored": "Ainda estou assim"
   },
   "library": {
     "pick": "Escolhe um desenho",

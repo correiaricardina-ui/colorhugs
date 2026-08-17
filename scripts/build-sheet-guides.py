@@ -1767,6 +1767,324 @@ DYNAMICS["calm"] = {
 }
 
 
+
+
+# ---------------------------------------------------------------------------
+# Feliz — eleven sheets for the child plus the practitioner page (D-285).
+#
+# The largest set of the seven, because this family has four layers. Two of the
+# guides carry the fourth: *A espera e a coisa* and *Quando acaba*, which are
+# the same mechanism in two tenses.
+# ---------------------------------------------------------------------------
+
+SHEETS["happy"] = [
+    {
+        "n": 1,
+        "title": "A Alegria",
+        "Idade": "6 aos 9 anos",
+        "Base": "Psicoeducação. Sem nível próprio.",
+        "Objectivo": "Dizer-lhe que a alegria se guarda, e mostrar-lhe as duas "
+                     "formas que uma coisa boa pode ter. Nada para preencher.",
+        "Como aplicar": "Ler com ela. Tapar o segundo painel e perguntar qual das "
+                        "partes é maior na cabeça dela.",
+        "A notar": "**Se reconhece o primeiro painel.** Muitas crianças "
+                   "reconhecem-se ali imediatamente, e é a primeira vez que "
+                   "alguém lhes descreve aquilo sem ser como defeito.",
+        "Cuidados": "**O segundo painel não é a maneira certa**, e não deve ser "
+                    "apresentado como tal. Não há técnica nenhuma prometida aqui.",
+        "questions": [
+            "Qual das partes é maior na tua cabeça — esperar ou a coisa?",
+            "Já te aconteceu ficares esquisita depois de uma coisa boa acabar?",
+        ],
+    },
+    {
+        "n": 2,
+        "title": "Onde é que eu sinto",
+        "Idade": "5 aos 8 anos",
+        "Base": "Consciência interoceptiva. **Razoável.**",
+        "Objectivo": "Localizar a alegria no corpo — **e é a única família "
+                     "positiva em que isso faz sentido** (ver o calmo, D-276).",
+        "Como aplicar": "Com o mapa corporal ao lado. A segunda pergunta — se o "
+                        "entusiasmo é no mesmo sítio que o contente — é a que "
+                        "abre a ficha 7.",
+        "A notar": "Se distingue os dois sítios. **E se descreve o entusiasmo em "
+                   "palavras que também serviriam para a ansiedade** — acelerar, "
+                   "apertar, não dormir. É a ligação da secção 1 a aparecer "
+                   "sozinha.",
+        "Cuidados": "Não sugerir sítios. Se ela não localizar nada, anotar: aqui "
+                    "é a excepção e não o esperado.",
+        "questions": [
+            "O que é que o corpo faz primeiro?",
+            "O entusiasmo é no mesmo sítio que o contente?",
+            "Já ficaste tão entusiasmada que não conseguiste dormir?",
+        ],
+    },
+    {
+        "n": 3,
+        "title": "O que eu quero guardar disto",
+        "Idade": "4 aos 7 anos",
+        "Base": "Saboreio e partilha. **Razoável** para *contar a alguém*, "
+                "prática para as outras quatro.",
+        "Objectivo": "Mostrar que a alegria se guarda de maneiras diferentes, e "
+                     "descobrir as dela.",
+        "Como aplicar": "Deixar assinalar quantas quiser. A caixa do fim é para "
+                        "uma maneira que não esteja nas figuras.",
+        "A notar": "Se alguma das que escolhe depende de outra pessoa estar "
+                   "disponível. **E se escolhe só as que faz sozinha** — pode ser "
+                   "preferência, e pode ser que contar não lhe tenha corrido bem.",
+        "Cuidados": "Nenhuma é melhor do que outra na folha dela, mesmo que uma "
+                    "tenha melhor base. **A hierarquia é do caderno e não da "
+                    "criança.**",
+        "questions": [
+            "Alguma destas já fazes sem ninguém te dizer?",
+            "Há alguma maneira tua que não esteja aqui?",
+            "Qual delas é mais fácil?",
+        ],
+    },
+    {
+        "n": 4,
+        "title": "Contar a alguém",
+        "Idade": "6 aos 9 anos",
+        "Base": "Partilha de acontecimentos positivos. **Razoável**, e a melhor "
+                "base desta família.",
+        "Objectivo": "**Escolher a pessoa antes de contar.** É a única maneira de "
+                     "guardar cujo resultado não está nas mãos dela.",
+        "Como aplicar": "Pela ordem em que está: primeiro quem, depois como se "
+                        "percebe, e só no fim a coisa que ainda não contou.",
+        "A notar": "**A segunda pergunta é a que interessa.** Uma criança que não "
+                   "consegue dizer como sabe que a pessoa ficou contente pode não "
+                   "ter tido essa experiência.",
+        "Cuidados": "**Não mandar contar antes de a pessoa estar escolhida.** "
+                    "Contar uma coisa boa e ser recebida com desinteresse deixa a "
+                    "criança pior do que se não tivesse contado — e ensina-a a "
+                    "não contar.",
+        "questions": [
+            "Quem fica mesmo contente quando te corre bem?",
+            "Como é que sabes que essa pessoa ficou contente?",
+            "Já contaste uma coisa boa e não ligaram nenhuma?",
+        ],
+    },
+    {
+        "n": 5,
+        "title": "As palavras finas",
+        "Idade": "7 aos 9 anos",
+        "Base": "Vocabulário emocional. **Razoável.**",
+        "Objectivo": "Mostrar que as quatro se distinguem **para onde apontam** — "
+                     "para a frente, para trás, para si própria, ou para agora.",
+        "Como aplicar": "Uma caixa por palavra, sem ordem.",
+        "A notar": "**Qual fica por preencher — e a que falta mais vezes é "
+                   "*contente*.** Uma criança que só tem palavras para os "
+                   "extremos acaba a achar que os dias normais não contam.",
+        "Cuidados": "Não ordenar por tamanho. *Contente* não é uma alegria "
+                    "pequena: é uma alegria de outro tipo.",
+        "questions": [
+            "Qual destas dizes mais vezes?",
+            "Qual delas é antes, e qual é depois?",
+            "Alguma delas é sobre ti e não sobre o que aconteceu?",
+        ],
+    },
+    {
+        "n": 6,
+        "title": "Contente",
+        "Idade": "6 aos 9 anos",
+        "Base": "Vocabulário e saboreio do quotidiano. **Prática.**",
+        "Objectivo": "Recuperar a alegria de tamanho normal. **É a que faz o "
+                     "depósito**, porque é a que acontece mais vezes.",
+        "Como aplicar": "Três coisas pequenas, e insistir no *pequenas*. Se ela "
+                        "trouxer coisas grandes, aceitar e pedir mais três "
+                        "menores.",
+        "A notar": "Se consegue encontrar três. **Uma criança que só encontra "
+                   "acontecimentos grandes tem o depósito dependente de coisas "
+                   "que acontecem poucas vezes por ano.**",
+        "Cuidados": "Não corrigir o tamanho do que ela traz. O que se pede é mais "
+                    "pequenas, não que as dela não contem.",
+        "questions": [
+            "Alguma delas foi tão pequena que não contaste a ninguém?",
+            "Há coisas boas que acontecem todos os dias?",
+            "Precisas de dizer a alguém para contar como boa?",
+        ],
+    },
+    {
+        "n": 7,
+        "title": "Entusiasmado",
+        "Idade": "7 aos 9 anos",
+        "Base": "Antecipação. **Razoável** quanto à partilha do substrato de "
+                "activação com a ansiedade; a aplicação é prática.",
+        "Objectivo": "Ver o entusiasmo como alegria que aponta para a frente — e "
+                     "**preparar a ficha 10**, que é onde o padrão se vê.",
+        "Como aplicar": "A terceira pergunta — se foi como esperava — faz-se sem "
+                        "tom nenhum. **Não é uma pergunta armadilhada.**",
+        "A notar": "**Se descreve o corpo entusiasmado em palavras de ansiedade.** "
+                   "Para uma criança ansiosa, saber que o corpo faz o mesmo nas "
+                   "duas costuma ser um alívio grande.",
+        "Cuidados": "Não sugerir que se entusiasme menos. **O entusiasmo não é o "
+                    "problema** — o problema é não sobrar nada para o momento.",
+        "questions": [
+            "Como ficou o corpo enquanto esperavas?",
+            "Foi como estavas à espera?",
+            "Isso que o corpo faz, já o fez antes de uma coisa difícil?",
+        ],
+    },
+    {
+        "n": 8,
+        "title": "Orgulhoso",
+        "Idade": "7 aos 9 anos",
+        "Base": "Distinção acto–pessoa. **Razoável**, e é a mesma do envergonhado "
+                "vista do outro lado.",
+        "Objectivo": "Orgulho de uma coisa feita, e não de quem se é. **A "
+                     "distinção do envergonhado vale nos dois sentidos.**",
+        "Como aplicar": "A segunda pergunta — o que foi o mais difícil — é a que "
+                        "ancora o orgulho num acto.",
+        "A notar": "**Orgulho de si própria sem acto nenhum é frágil e cai com o "
+                   "primeiro erro**, exactamente como o elogio global prepara a "
+                   "vergonha (ver o envergonhado).",
+        "Cuidados": "Não elogiar por cima. A ficha é para ela reconhecer, não "
+                    "para nós confirmarmos.",
+        "questions": [
+            "O que foi o mais difícil?",
+            "Alguém ficou orgulhoso de ti? Como soubeste?",
+            "É de uma coisa que fizeste, ou de como tu és?",
+        ],
+    },
+    {
+        "n": 9,
+        "title": "Aliviado",
+        "Idade": "6 aos 9 anos",
+        "Base": "Vocabulário. **Prática.**",
+        "Objectivo": "É a única desta família que precisa que outra coisa tenha "
+                     "acabado — **e é frequentemente a primeira emoção positiva "
+                     "que uma criança ansiosa consegue nomear.**",
+        "Como aplicar": "Se as outras fichas desta família tiverem corrido mal, "
+                        "**começar por aqui**: pede menos do que as outras.",
+        "A notar": "A terceira pergunta liga esta ficha à curva do zangado e ao "
+                   "*tranquilo* do calmo: **o corpo demora a perceber que já "
+                   "passou.**",
+        "Cuidados": "Não tratar o alívio como alegria menor. Para algumas "
+                    "crianças é a mais frequente que têm.",
+        "questions": [
+            "O que é que tinha acabado?",
+            "O que estavas a sentir antes?",
+            "O corpo percebeu logo, ou demorou?",
+        ],
+    },
+    {
+        "n": 10,
+        "title": "A espera e a coisa",
+        "Idade": "7 aos 9 anos",
+        "Base": "Antecipação e presença. **Prática**, e é a concretização da "
+                "queixa mais frequente desta família.",
+        "Objectivo": "Ver, em dois quadrados, onde é que a alegria dela esteve. "
+                     "**É o esquema da secção 4 reduzido a uma coisa que ela "
+                     "própria preenche.**",
+        "Como aplicar": "Os dois quadrados ao mesmo tempo, e a pergunta de qual "
+                        "ficou mais cheio faz-se **depois** de os dois estarem "
+                        "desenhados.",
+        "A notar": "**Se o quadrado da espera ficou mais cheio, está encontrado o "
+                   "padrão** — e é o que se leva aos pais, porque é o que "
+                   "desmonta o *nunca está satisfeita*.",
+        "Cuidados": "**Nunca dizer que ela devia ter aproveitado mais.** É a "
+                    "versão de consultório do rótulo desta família, e a criança "
+                    "percebe à primeira.",
+        "questions": [
+            "Qual dos dois ficou mais cheio?",
+            "Se voltasse a acontecer, querias mudar alguma coisa?",
+            "Alguém reparou que estavas mais entusiasmada antes?",
+        ],
+    },
+    {
+        "n": 11,
+        "title": "Quando acaba",
+        "Idade": "6 aos 9 anos",
+        "Base": "Regresso após acontecimento positivo. **Prática**, e descrita com "
+                "frequência sem estar bem estudada em crianças.",
+        "Objectivo": "**Nomear o buraco, e dizer que é normal.** Muitas vezes é "
+                     "tudo o que é preciso, e é raro alguém lho ter dito.",
+        "Como aplicar": "Sem alarme e sem consolo. A ficha descreve; não trata.",
+        "A notar": "O que lhe disseram. **Se alguém lhe disse que não tinha "
+                   "motivos, isso é a peça que falta** — e é o que se corrige com "
+                   "os adultos e não com ela.",
+        "Cuidados": "**O buraco é normal, mas nem sempre.** Se durar dias, se "
+                    "aparecer a cada acontecimento positivo, ou se vier com perda "
+                    "de interesse generalizada, deixa de ser o que esta ficha "
+                    "descreve — ver a secção 10.",
+        "questions": [
+            "Como ficaste no dia a seguir?",
+            "Alguém percebeu? O que te disseram?",
+            "Já te aconteceu mais vezes?",
+        ],
+    },
+]
+
+DYNAMICS["happy"] = {
+    1: [
+        ("4–6", "**A carta e o espelho.** Pôr a carta do feliz ao lado do espelho da primeira página e perguntar se são parecidos."),
+        ("6–8", "**Tapar o segundo painel.** Mostrar só o primeiro e perguntar se se reconhece ali."),
+        ("8–9", "**Desenhar a sua forma.** Pedir que desenhe a forma que a alegria dela costuma ter, em vez de escolher uma das duas."),
+        ("qualquer", "**Guardar para o fim.** Reler esta página na última sessão da família."),
+    ],
+    2: [
+        ("5–7", "**Duas cores no mapa.** Marcar o contente com uma cor e o entusiasmado com outra, e ver se ficam no mesmo sítio."),
+        ("5–8", "**Comparar com outra família.** Se já tiver feito o mapa do medo ou da zanga, pôr os dois lado a lado. **Costumam coincidir mais do que se espera.**"),
+        ("8–9", "**As palavras do corpo.** Pedir palavras para o corpo entusiasmado e ver quantas serviriam também para o corpo nervoso."),
+        ("com a família", "**Onde é que eles sentem.** Perguntar aos adultos. Costuma ser a primeira vez que alguém lhes faz essa pergunta."),
+    ],
+    3: [
+        ("4–6", "**As cinco em cima da mesa.** Imprimir e deixar pegar, sem dizer nada."),
+        ("4–7", "**Fazer uma agora.** Escolher uma das maneiras e usá-la na sessão, com uma coisa boa da semana."),
+        ("6–9", "**Precisa de quem.** Separar as figuras em duas pilhas: as que ela faz sozinha e as que precisam de outra pessoa."),
+        ("com a família", "**A caixa das coisas boas.** Combinar uma caixa em casa onde ela guarde objectos de dias bons."),
+    ],
+    4: [
+        ("6–8", "**Contar aqui primeiro.** Contar uma coisa boa ao clínico e reparar em como é ser ouvida."),
+        ("6–9", "**A lista das pessoas.** Fazer a lista de quem recebe bem e de quem não recebe. **Sem julgar nenhuma delas.**"),
+        ("8–9", "**Como se recebe.** Perguntar-lhe o que faz quando alguém lhe conta uma coisa boa. Treina o outro lado."),
+        ("com a família", "**Parar, olhar, perguntar mais uma coisa.** Combinar isto explicitamente com os adultos. **Três segundos, e é a intervenção desta família.**"),
+    ],
+    5: [
+        ("7–9", "**Para onde apontam.** Pôr as quatro cartas em quatro direcções: para a frente, para trás, para si, para agora."),
+        ("7–9", "**A que falta.** Se uma ficou vazia, trabalhar só essa na sessão seguinte."),
+        ("8–9", "**As palavras dos outros.** Perguntar qual das quatro usaria a mãe, o pai, um amigo."),
+        ("com a família", "**Cada um escolhe a sua.** Os adultos escolhem também, e contam quando foi a última vez."),
+    ],
+    6: [
+        ("6–8", "**A caça às pequenas.** Durante a sessão, encontrar cinco coisas boas pequenas que aconteceram naquele dia."),
+        ("6–9", "**Uma por dia, dita a alguém.** Sem registo e sem tabela. É das poucas coisas deste material que uma família repete sozinha."),
+        ("8–9", "**O dia normal.** Descrever um dia sem nada de especial e procurar o que esteve bom nele."),
+        ("com a família", "**Cada um diz a sua.** À mesa, à vez. **Mostra à criança que os adultos também têm dias normais bons.**"),
+    ],
+    7: [
+        ("7–9", "**A véspera.** Descrever o corpo na véspera de uma coisa boa e na véspera de uma difícil, e comparar."),
+        ("7–9", "**Guardar um bocado.** Combinar deixar deliberadamente uma parte da espera por gastar — não contar tudo antes, não planear ao pormenor."),
+        ("8–9", "**O entusiasmo dos outros.** Perguntar como se percebe que outra pessoa está entusiasmada."),
+        ("com a família", "**Dizer quanto falta.** Se a espera for longa, combinar dizer-lhe o tempo em vez de a manter em suspenso."),
+    ],
+    8: [
+        ("7–9", "**A lista do difícil.** Três coisas que ela consegue hoje e não conseguia há um ano."),
+        ("7–9", "**Orgulho sem plateia.** Procurar uma coisa de que ela se orgulha e que ninguém viu."),
+        ("8–9", "**O elogio que descreve.** Pedir-lhe que diga a si própria o que fez, em vez de dizer o que é."),
+        ("com a família", "**Trocar o elogio.** Combinar com os adultos dizer *hoje fizeste isto e foi difícil* em vez de *és tão boa aluna*. **É a mesma correcção do envergonhado.**"),
+    ],
+    9: [
+        ("6–8", "**Antes e depois.** Dois quadrados: como estava antes de acabar, como ficou depois."),
+        ("6–9", "**O alívio que ainda não chegou.** Procurar uma coisa que está a acontecer agora e cujo fim ela está à espera."),
+        ("8–9", "**Quanto demorou o corpo.** Ligar à curva do zangado, se já a tiver visto."),
+        ("com a família", "**Reparar no alívio.** Pedir aos adultos que reparem quando ela fica aliviada, porque costuma passar despercebido."),
+    ],
+    10: [
+        ("7–9", "**Uma coisa que aí vem.** Repetir a ficha com uma coisa boa que ainda não aconteceu, e voltar a ela depois de acontecer."),
+        ("7–9", "**Guardar para o momento.** Se o quadrado da espera ficou mais cheio, escolher uma parte da espera para deixar por gastar."),
+        ("8–9", "**Perguntar durante.** Combinar que alguém lhe pergunte, no meio da coisa boa, como está a ser. **Trazer a atenção ao presente sem lho explicar.**"),
+        ("com a família", "**A leitura nova.** Dizer-lhes à frente dela: ela não estava a rejeitar nada, não chegou a estar lá. **Muda a sala, e é raro alguém ter dito isto.**"),
+    ],
+    11: [
+        ("6–8", "**Desenhar o dia a seguir.** Em vez de o contar."),
+        ("6–9", "**Uma coisa pequena para o dia seguinte.** Combinar, antes de a coisa boa acontecer, uma coisa pequena para o dia a seguir. **Não é para tapar o buraco — é para haver alguma coisa.**"),
+        ("8–9", "**Quantas vezes.** Procurar três vezes em que isto aconteceu, e ver se foram todas depois de coisas boas."),
+        ("com a família", "**Não dizer que não tem motivos.** É a frase a retirar, e substitui-se por *pois, acabou, e era bom*. **Nomear chega quase sempre.**"),
+    ],
+}
+
+
 if __name__ == "__main__":
     import sys
 
