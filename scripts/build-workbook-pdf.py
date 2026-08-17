@@ -345,6 +345,15 @@ figure.art img { background: transparent; }
 .cards.five { gap: 3mm; }
 .cards.five img { max-height: 30mm; }
 .cards.five figcaption { font-size: 8.5pt; }
+/* Four fine words instead of three (sad), and six figures on the company
+   sheet. Smaller than .three so the row still leaves the child room to write
+   beneath it. */
+.cards.four img { max-height: 30mm; }
+.cards.four figcaption { font-size: 9.5pt; }
+.cards.six { flex-wrap: wrap; gap: 3mm; }
+.cards.six figure { flex: 0 0 30%; }
+.cards.six img { max-height: 30mm; }
+.cards.six figcaption { font-size: 9pt; }
 .cards.one { justify-content: center; }
 .cards.one img { max-height: 62mm; }
 .cards figcaption {
@@ -435,7 +444,16 @@ def load_sheets(family_id: str, audience: str | None = None) -> str:
     """
     path = os.path.join(MATERIALS, f"{FAMILIES[family_id].lower()}-fichas.html")
     if not os.path.exists(path):
-        return ""
+        # **Refuse, do not return nothing** (D-229). Returning an empty string
+        # produced a one-page parents' letter with a header, a footer and no
+        # letter, and a three-page exploration book with nothing to explore —
+        # files that look finished and are not, which is the fault D-004 exists
+        # to prevent, arriving through the build instead of through the data.
+        raise SystemExit(
+            f"{path}: the sheets for {FAMILIES[family_id]} are not written yet. "
+            f"The workbook can be built without them; the child's book and the "
+            f"parents' letter cannot."
+        )
     with open(path, encoding="utf-8") as f:
         raw = f.read()
 
@@ -510,7 +528,30 @@ def build_html(family_id: str) -> str:
     # The worksheets are not bound into the workbook: they live in the child's
     # exploration book, and a licence gives both. Printing them twice makes two
     # copies that can drift apart (D-194).
+    #
+    # **The practitioner pages are the exception, and they were reaching nobody**
+    # (D-231). A sheet marked `data-for="practitioner"` is written for whoever
+    # applies the material: it is kept out of the child's book because it talks
+    # over her head, and out of the parents' letter because it is not addressed
+    # to them. It was therefore appearing in no document at all — written,
+    # built, and delivered nowhere.
+    practitioner = load_sheets(family_id, "practitioner")
+    if practitioner:
+        # Last, as an annex. No heading is added: the sheet carries its own
+        # title, and a second one would print the same words twice.
+        body += practitioner
+
     band = "".join(f'<span style="background:{c}"></span>' for c in BAND)
+
+    # **The closing footnote goes inside the last sheet, not after it.**
+    # Standing on its own after a full-page annex, it opened a page of its own
+    # and printed a single grey line on an otherwise blank sheet — in both
+    # families, and unnoticed since the angry build.
+    footnote = '<p class="footnote">colorhugs.pt · Material licenciado · Uso profissional</p>'
+    if practitioner and body.rstrip().endswith("</section>"):
+        cut = body.rstrip()[: -len("</section>")]
+        body = cut + footnote + "</section>"
+        footnote = ""
 
     return f"""<!doctype html>
 <html lang="pt-PT"><head><meta charset="utf-8">
@@ -520,7 +561,7 @@ def build_html(family_id: str) -> str:
   <div class="band">{band}</div>
   <h1>{title} — Caderno de aplicação</h1>
   {body}
-  <p class="footnote">colorhugs.pt · Material licenciado · Uso profissional</p>
+  {footnote}
 </body></html>"""
 
 
@@ -680,6 +721,14 @@ def build(family_id: str) -> str:
         f"{title} — Caderno de aplicação",
         cover=os.path.join(MATERIALS, "figuras", f"{family_id}-capa.png"),
     )
+
+    # The workbook stands on its own while a family is being written; the
+    # child's book and the parents' letter are made of sheets and cannot.
+    sheets_file = os.path.join(MATERIALS, f"{stem}-fichas.html")
+    if not os.path.exists(sheets_file):
+        print(f"  {stem}-fichas.html not written yet — workbook only.")
+        return workbook
+
     sheets = render(
         sheets_html(family_id),
         os.path.join(MATERIALS, f"{stem}-exploracao.pdf"),

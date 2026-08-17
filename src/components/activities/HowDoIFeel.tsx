@@ -78,6 +78,7 @@ export default function HowDoIFeel() {
     zones: all.zones as Record<string, string>,
     literacy: all.literacy as Record<string, string>,
     pages: all.pages as Record<string, string>,
+    strategyPrompt: all.strategyPrompt as Record<string, string>,
     fine: all.fine as Record<string, string>,
   };
 
@@ -155,6 +156,33 @@ export default function HowDoIFeel() {
   // every visitor is a free family and this check has nothing to check
   // against. It is wired now so that the account system finds a place to plug
   // into rather than a decision to make.
+
+  /**
+   * The middle step is not the same question in every family (D-222).
+   *
+   * Anger asks *qual queres experimentar* and offers five ways down. Sadness
+   * asks **o que te faz companhia**, because asking a sad child which strategy
+   * she wants to try is asking her to solve her sadness — the exact error
+   * D-214 says this material does not make.
+   *
+   * Per family with a fallback, so a family that has not been authored yet
+   * still gets a sensible question rather than a blank heading.
+   */
+  const strategyPrompt = family
+    ? (t.strategyPrompt[family.id] ?? t.strategyPrompt._)
+    : t.strategyPrompt._;
+
+  /**
+   * And the pictures are not called the same thing in every family either. The
+   * bench is *ir ter com alguém* to an angry child and *contar a alguém* to a
+   * sad one; the cushions are *sair dali* in one family and *um bocadinho no
+   * meu sítio* in the other. **Same drawing, different job** — which is exactly
+   * why a page is named for what it shows and never for the strategy (D-120).
+   */
+  function pageLabel(id: string) {
+    return (family ? t.pages[`${family.id}__${id}`] : undefined) ?? t.pages[id];
+  }
+
   const mayOpenFineWords = can(CURRENT_AUDIENCE, "fineWords");
   const fineWords = family ? (FINE_WORDS[family.id] ?? []) : [];
 
@@ -331,8 +359,14 @@ export default function HowDoIFeel() {
             what a child should do next is a person's work.
           */}
           <h2 className="mt-6 flex items-center justify-center gap-3 text-center font-display font-700 text-ch-ink">
-            {t.strategyPrompt}
-            <SpeakButton textKey="feelings.strategyPrompt" />
+            {strategyPrompt}
+            <SpeakButton
+              textKey={
+                family && t.strategyPrompt[family.id]
+                  ? `feelings.strategyPrompt.${family.id}`
+                  : "feelings.strategyPrompt._"
+              }
+            />
           </h2>
 
           <ul className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
@@ -356,7 +390,7 @@ export default function HowDoIFeel() {
                     />
                   </span>
                   <span className="text-center font-display font-700 text-ch-ink">
-                    {t.pages[option.id]}
+                    {pageLabel(option.id)}
                   </span>
                 </button>
               </li>
@@ -403,8 +437,14 @@ export default function HowDoIFeel() {
       {stage === "colour" && chosenPage ? (
         <>
           <h2 className="flex items-center justify-center gap-3 text-center font-display font-700 text-ch-ink">
-            {t.pages[chosenPage.id]}
-            <SpeakButton textKey={`feelings.pages.${chosenPage.id}`} />
+            {pageLabel(chosenPage.id)}
+            <SpeakButton
+              textKey={
+                family && t.pages[`${family.id}__${chosenPage.id}`]
+                  ? `feelings.pages.${family.id}__${chosenPage.id}`
+                  : `feelings.pages.${chosenPage.id}`
+              }
+            />
           </h2>
           <p className="mt-1 text-center text-ch-ink/70">{t.colourPrompt}</p>
 

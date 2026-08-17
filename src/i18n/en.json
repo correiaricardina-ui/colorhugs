@@ -43,9 +43,13 @@
       "legs": "Legs and feet"
     },
     "literacy": {
-      "angry": "Anger usually turns up when something seems unfair, or when we wanted something badly and could not have it. It arrives fast, and takes longer to leave than it took to come."
+      "angry": "Anger usually turns up when something seems unfair, or when we wanted something badly and could not have it. It arrives fast, and takes longer to leave than it took to come.",
+      "sad": "Sadness usually turns up when we lose something we liked, or when things did not go the way we hoped. It settles in slowly and stays a while. With someone beside you it does not pass any faster — but it is easier to carry."
     },
-    "strategyPrompt": "Which would you like to try?",
+    "strategyPrompt": {
+      "_": "Which would you like to try?",
+      "sad": "What keeps you company when you are sad?"
+    },
     "colourPrompt": "Colour it in",
     "download": "Print this page",
     "undo": "Undo",
@@ -57,7 +61,13 @@
       "quiet-corner": "Move away from it",
       "counting-fingers": "Count slowly",
       "floating-feather": "Breathe slowly",
-      "jumping": "Move your body"
+      "jumping": "Move your body",
+      "sad__talking-together": "Telling someone",
+      "sad__quiet-corner": "A little while in my own place",
+      "sitting-beside": "Someone beside me",
+      "soft-blanket": "Something soft",
+      "dog-beside": "An animal",
+      "keepsake-shelf": "Something that reminds me of someone"
     },
     "fine": {
       "happy__contente": "Pleased",
@@ -100,7 +110,11 @@
       "quiet-corner": "Cushions",
       "counting-fingers": "My hand",
       "floating-feather": "Feather",
-      "jumping": "Jumping"
+      "jumping": "Jumping",
+      "sitting-beside": "On the floor",
+      "soft-blanket": "The blanket and the bear",
+      "dog-beside": "The dog",
+      "keepsake-shelf": "The shelf"
     }
   },
   "plans": {

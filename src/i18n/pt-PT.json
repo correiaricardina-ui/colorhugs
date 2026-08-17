@@ -43,9 +43,13 @@
       "legs": "Pernas e pés"
     },
     "literacy": {
-      "angry": "A zanga costuma aparecer quando alguma coisa parece injusta, ou quando queríamos muito uma coisa e não conseguimos. Chega depressa, e demora mais tempo a ir-se embora do que a chegar."
+      "angry": "A zanga costuma aparecer quando alguma coisa parece injusta, ou quando queríamos muito uma coisa e não conseguimos. Chega depressa, e demora mais tempo a ir-se embora do que a chegar.",
+      "sad": "A tristeza costuma aparecer quando perdemos alguma coisa de que gostávamos, ou quando as coisas não foram como esperávamos. Instala-se devagar e fica um bocado. Com alguém ao pé, não passa mais depressa — mas é mais fácil de carregar."
     },
-    "strategyPrompt": "Qual queres experimentar?",
+    "strategyPrompt": {
+      "_": "Qual queres experimentar?",
+      "sad": "O que te faz companhia quando estás triste?"
+    },
     "colourPrompt": "Pinta como quiseres",
     "download": "Imprimir esta página",
     "undo": "Anular",
@@ -57,7 +61,13 @@
       "quiet-corner": "Sair dali",
       "counting-fingers": "Contar devagar",
       "floating-feather": "Respirar devagar",
-      "jumping": "Mexer o corpo"
+      "jumping": "Mexer o corpo",
+      "sad__talking-together": "Contar a alguém",
+      "sad__quiet-corner": "Um bocadinho no meu sítio",
+      "sitting-beside": "Alguém ao pé de mim",
+      "soft-blanket": "Uma coisa macia",
+      "dog-beside": "Um bicho",
+      "keepsake-shelf": "Uma coisa que me lembra alguém"
     },
     "fine": {
       "happy__contente": "Contente",
@@ -100,7 +110,11 @@
       "quiet-corner": "Almofadas",
       "counting-fingers": "A minha mão",
       "floating-feather": "Pena",
-      "jumping": "Aos saltos"
+      "jumping": "Aos saltos",
+      "sitting-beside": "No chão",
+      "soft-blanket": "A manta e o urso",
+      "dog-beside": "O cão",
+      "keepsake-shelf": "A prateleira"
     }
   },
   "plans": {

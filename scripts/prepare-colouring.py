@@ -162,18 +162,58 @@ def fit(img, box):
     )
 
 
+def trim(img):
+    """Cut the empty margin the generator happened to leave.
+
+    So that how much of the sheet a drawing fills depends on the drawing and not
+    on how it was framed. The jumping child sat in the top two thirds of its
+    square and printed noticeably smaller than the elephant, which filled its
+    own. Same reasoning as normalising the emotion cards (D-122).
+
+    PDF only. The WebP stays as it is, because the canvas sets its size from the
+    image.
+    """
+    out = img.convert("RGBA")
+    bbox = out.convert("L").point(lambda v: 255 if v < 200 else 0).getbbox()
+    if not bbox:
+        return out
+    pad = round(max(out.size) * 0.02)
+    return out.crop(
+        (
+            max(0, bbox[0] - pad),
+            max(0, bbox[1] - pad),
+            min(out.width, bbox[2] + pad),
+            min(out.height, bbox[3] + pad),
+        )
+    )
+
+
 def to_pdf(img, target):
     """One page, A4, the drawing filling the sheet, with the mark beneath.
 
     No title and no feeling name — by D-120 the file must not report what the
     child chose. A parent finding this PDF learns nothing about her.
     """
-    page = Image.new("RGB", A4, "white")
+    # **A landscape drawing gets a landscape sheet** (D-228).
+    #
+    # Fitting a wide drawing into a tall box wastes the height: measured, the
+    # four new sad pages filled 48–59% of the art box against 70–82% for the
+    # square ones, and on the printed A4 the drawing sat in the top third with
+    # a hand's width of nothing beneath it. The child gets a smaller picture for
+    # no reason but the shape of the paper.
+    #
+    # Decided by the trimmed drawing rather than by the file, because the
+    # generator's framing is not the drawing.
+    trimmed = trim(img)
+    landscape = trimmed.width / trimmed.height > 1.15
+    size = (A4[1], A4[0]) if landscape else A4
+
+    page = Image.new("RGB", size, "white")
     draw = ImageDraw.Draw(page)
 
     # Header band. Keeping the mark at the foot rather than repeating it here
     # leaves the drawing measurably larger, and the sheet exists to be painted.
-    width = A4[0] - 2 * MARGIN
+    width = size[0] - 2 * MARGIN
     segment = width / len(BAND_COLOURS)
     for index, colour in enumerate(BAND_COLOURS):
         x = MARGIN + index * segment
@@ -184,39 +224,18 @@ def to_pdf(img, target):
         )
 
     art_top = MARGIN + BAND_HEIGHT + BAND_GAP
-    box = (width, A4[1] - art_top - MARGIN - FOOTER_HEIGHT)
-
-    # Trim the empty margin the generator happened to leave before scaling, so
-    # how much of the sheet a drawing fills depends on the drawing and not on
-    # how it was framed. The jumping child sat in the top two thirds of its
-    # square and printed noticeably smaller than the elephant, which filled its
-    # own. Same reasoning as normalising the emotion cards (D-122).
-    #
-    # PDF only. The WebP stays square, because the canvas sets its size from the
-    # image and assumes a square frame.
-    trimmed = img.convert("RGBA")
-    bbox = trimmed.convert("L").point(lambda v: 255 if v < 200 else 0).getbbox()
-    if bbox:
-        pad = round(max(trimmed.size) * 0.02)
-        trimmed = trimmed.crop(
-            (
-                max(0, bbox[0] - pad),
-                max(0, bbox[1] - pad),
-                min(trimmed.width, bbox[2] + pad),
-                min(trimmed.height, bbox[3] + pad),
-            )
-        )
+    box = (width, size[1] - art_top - MARGIN - FOOTER_HEIGHT)
 
     art = fit(trimmed, box)
     flat = Image.new("RGB", art.size, "white")
     flat.paste(art, (0, 0), art)
-    page.paste(flat, ((A4[0] - art.width) // 2, art_top + (box[1] - art.height) // 2))
+    page.paste(flat, ((size[0] - art.width) // 2, art_top + (box[1] - art.height) // 2))
 
-    footer_top = A4[1] - MARGIN - FOOTER_HEIGHT
+    footer_top = size[1] - MARGIN - FOOTER_HEIGHT
 
     if os.path.exists(LOGO):
         logo = fit(Image.open(LOGO).convert("RGBA"), (900, 170))
-        page.paste(logo, ((A4[0] - logo.width) // 2, footer_top), logo)
+        page.paste(logo, ((size[0] - logo.width) // 2, footer_top), logo)
         text_y = footer_top + logo.height + 40
     else:
         text_y = footer_top + 60
@@ -229,7 +248,7 @@ def to_pdf(img, target):
     line = f"{FOOTER_TEXT}   ·   © {date.today().year} ColorHugs"
     width = draw.textlength(line, font=font)
     draw.text(
-        ((A4[0] - width) / 2, text_y), line, fill=(120, 128, 150), font=font
+        ((size[0] - width) / 2, text_y), line, fill=(120, 128, 150), font=font
     )
 
     page.save(target, "PDF", resolution=300)

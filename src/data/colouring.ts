@@ -94,10 +94,12 @@ export const COLOURING_PAGES: ColouringPage[] = [
     path: "strategy",
     src: "/assets/colouring/strategies/talking-together",
     alt: "A child and a grown-up sitting on a bench, talking",
-    families: ["angry"],
+    // Serves sadness too (D-216): it is the one of anger's five that survives
+    // the sad family's distinction, because it accompanies rather than removes.
+    families: ["angry", "sad"],
     evidence: {
       level: "reasonable",
-      note: "That young children regulate with an adult rather than alone is well established; that this gesture helps in the moment is reasonable. It teaches that there is always someone to go to — at home or at school — which holds even in a minute when the room is empty.",
+      note: "That young children regulate with an adult rather than alone is well established; that this gesture helps in the moment is reasonable. It teaches that there is always someone to go to — at home or at school — which holds even in a minute when the room is empty. For sadness the caveat is sharper and must not be lost: the literature on telling someone is consistent about the bond and equivocal about the feeling lifting. Company makes it easier to carry; it does not make it pass faster.",
     },
   },
   {
@@ -105,10 +107,58 @@ export const COLOURING_PAGES: ColouringPage[] = [
     path: "strategy",
     src: "/assets/colouring/strategies/quiet-corner",
     alt: "A quiet corner with soft cushions and a folded blanket",
-    families: ["angry"],
+    // The same picture, doing a different job in each family. For anger it is
+    // leaving the situation; for sadness it is being with yourself without
+    // being sent away — which is why the page is named for what it shows and
+    // never for the strategy (D-120).
+    families: ["angry", "sad"],
     evidence: {
       level: "reasonable",
-      note: "Changing the situation rather than enduring inside it.",
+      note: "For anger: changing the situation rather than enduring inside it. For sadness the base is different and thinner — constructive solitude, practice. It is in the set because without it the activity prescribes company, and a sad child who wants to be alone would have no true answer on the screen.",
+    },
+  },
+  {
+    id: "sitting-beside",
+    path: "strategy",
+    src: "/assets/colouring/strategies/sitting-beside",
+    alt: "A child and a grown-up sitting side by side on the floor, facing the same way",
+    families: ["sad"],
+    evidence: {
+      level: "reasonable",
+      note: "Co-regulation: that young children regulate with an adult rather than alone is well established, and it is the best-supported mechanism in this family's set. That silent presence specifically is what helps is practice. The drawing shows them facing the same way rather than each other, because this is the option that is not a conversation — the bench already is one.",
+    },
+  },
+  {
+    id: "soft-blanket",
+    path: "strategy",
+    src: "/assets/colouring/strategies/soft-blanket",
+    alt: "A folded blanket with a plush bear sitting on it, a mug and a folded cloth beside",
+    families: ["sad"],
+    evidence: {
+      level: "reasonable",
+      note: "Comfort object. Reasonable and to be verified before it is written into the workbook; the theory's origin is psychodynamic, which is excluded as a base (D-171), so it is carried as the empirical finding and not as the theory. The most universal of the six: it is the only one that needs nobody to be available.",
+    },
+  },
+  {
+    id: "dog-beside",
+    path: "strategy",
+    src: "/assets/colouring/strategies/dog-beside",
+    alt: "A dog sitting calmly on a rug beside a child, the child's hand resting on its back",
+    families: ["sad"],
+    evidence: {
+      level: "practice",
+      note: "Animal company. Practice — which means not well studied, not that it does not work. For a choice that belongs to the child rather than to us, what children actually say outweighs a thin literature, and children say the dog constantly (D-218). Drawn with no breed markings and no collar, so no child's own animal is contradicted by it.",
+    },
+  },
+  {
+    id: "keepsake-shelf",
+    path: "strategy",
+    src: "/assets/colouring/strategies/keepsake-shelf",
+    alt: "A picture frame on a shelf with a shell, a folded scarf and a small ball",
+    families: ["sad"],
+    evidence: {
+      level: "practice",
+      note: "A representation of someone who is not there. Practice. It is in the set because it is the only one that houses com saudades, one of this family's four fine words, which otherwise has nowhere to land. Deliberately not a memorial: the figures in the frame are calm and ordinary, there is no candle, no flowers and no ribbon.",
     },
   },
   {
