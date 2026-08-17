@@ -9,9 +9,14 @@ import { strings } from "@/i18n/strings";
 /**
  * The avatar in the top corner, on every page below the homepage.
  *
- * Constant presence, small (D-078). At this size seven colours are not
- * individually legible and are not meant to be — **the homepage is where the
- * colour is actually read**, which is what gives coming back a point.
+ * Constant presence, and **not as small as it was** (D-213). At 44px it was a
+ * speck, and it was also below this project's own 64px tap-target floor
+ * (D-013) — for a link shaped like the child herself, which is the one thing
+ * on the page she is most likely to reach for. Now 64px, and 80 from the small
+ * breakpoint up.
+ *
+ * The homepage is still where the colour is read properly (D-078). This is
+ * presence, not a display.
  *
  * Nothing until she has picked one: an empty frame with a prompt in it would
  * be a nag on every screen, and choosing already has its two proper doors —
@@ -37,8 +42,8 @@ export default function CornerAvatar() {
       <Avatar
         id={avatar}
         painted={painted}
-        className="h-11 w-11 sm:h-14 sm:w-14"
-        sizes="56px"
+        className="h-16 w-auto sm:h-20"
+        sizes="80px"
       />
     </Link>
   );

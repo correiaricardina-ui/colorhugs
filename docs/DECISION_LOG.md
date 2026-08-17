@@ -3615,3 +3615,524 @@ saying *undo*, which is a word for someone who already knows she made a mistake.
 back tomorrow and being offered yesterday's avatar would be the product
 second-guessing a choice she has since lived with. It also only appears after a
 real change — tapping the one she already has offers nothing.
+
+### D-213 `[IMPLEMENTATION]` The corner avatar was too small
+44px, rising to 56 on wider screens. Two things wrong with that, and only the
+first was visible:
+
+- It read as a speck. The point of a constant avatar is presence, and something
+  that small is decoration in a corner.
+- **It was below this project's own 64px tap-target floor** (D-013), for a link
+  shaped like the child herself — the one thing on the page a small hand is most
+  likely to reach for.
+
+Now 64px, and 80 from the small breakpoint up. Measured on the built page: 80px
+tall on a desktop width, 64 on a phone.
+
+D-078 is unchanged: the home page is still where the colour is read properly.
+This is presence, not a display.
+
+---
+
+# Increment 34 — The sad family (2026-08-17)
+
+### D-214 `[DEFINED]` The governing distinction: *consolar não é animar*
+Angry's distinction does three jobs at once — it separates feeling from action,
+it names the error the family makes, and every one of the nine sheets hangs off
+it. Any candidate for sadness has to do all three.
+
+**Rejected: *tristeza não é depressão***, which the recipe had listed. It
+reassures the adult, governs no sheet, and a seven-year-old does not have the
+question. It is also a diagnostic distinction, and putting one at the head of a
+workbook that promises not to diagnose walks it toward the line it exists to
+stay behind.
+
+**Rejected: *tristeza não é fraqueza***. Real, and it governs hiding and crying,
+but narrower — and it drags a framing about gender that has no business in
+material for a child of four to nine.
+
+**Adopted: *a tristeza não se tira, acompanha-se*.**
+
+Anger's error is confusing feeling with doing. **Sadness's error is the adult's,
+and it is confusing comfort with cheering up** — *não fiques triste*, *vamos
+fazer uma coisa gira*, *já passou*. It governs sheets that can actually be
+written: who I want near me, what helps and what does not, what people say that
+does not help, what I wish they would say instead.
+
+**The child's own version**, as anger's had one: *a tristeza passa, mas não
+passa por a empurrarmos*.
+
+**One honesty condition, and it binds the whole family.** That sharing relieves
+sadness has support, but thinner than its popularity suggests and thinner again
+in children. **The material may not promise that talking makes sadness pass
+faster** — a child who talks and stays sad concludes she did it wrong or that
+something is broken in her. The formulation that holds is *with company it is
+easier to carry*, which is a different claim. Graded **razoável**, never
+established, and the workbook says so.
+
+**Consequence the recipe predicted:** the arousal curve does not apply. Sadness
+does not rise and fall in that shape, and its schema has to be a different
+figure — the same sadness carried alone and carried with someone, and no numbers
+on any axis (D-201).
+
+### D-215 `[DEFINED]` The middle step for sadness: *o que te faz companhia quando estás triste?*
+Anger's middle step asks *qual queres experimentar* and offers five strategies
+of descent — move away, count slowly, breathe slowly, move your body, go and
+tell someone. They work because anger rises and has to come down.
+
+**Four of the five contradict D-214 when applied to sadness.** Breathing,
+counting and moving offered to a sad child are precisely the *vamos fazer uma
+coisa gira* that the parents' letter tells the family not to do. Only the fifth
+survives, and it is the only one that accompanies rather than removes.
+
+Two formulations were considered and one was corrected.
+
+- ***Quem queres por perto*** was too narrow. Sadness is not only relational: a
+  child who wants the dog, or a blanket, or her own room for a while is not
+  answering badly — she is answering a question nobody asked her.
+- ***O que te faz sentir melhor*** widens it correctly and **promises exactly
+  what D-214 says may not be promised.** It is the child's version of *cheer
+  up*, and it carries a cost that only shows later: she chooses, she does it,
+  she is still sad, and what she concludes is that she chose wrong or that
+  something is broken in her.
+
+**Adopted: *o que te faz companhia quando estás triste?***
+
+The content the second formulation wanted is right — a blanket, the dog, a
+person sitting there. None of it removes sadness; all of it accompanies. **The
+fault was in the word, not in the list.** *Fazer companhia* joins the who and
+the what into one answer, which is how it lives in a child's head — the blanket
+and her mother are the same reply. It carries the distinction inside its own
+verb. And it promises nothing, so it cannot fail her: a child who picks the
+blanket and stays sad got exactly what she asked for.
+
+**Two consequences, fixed now:**
+
+- **No strategy in disguise.** Breathing and counting do not enter this set.
+  They belong to a family that has to come down; this one does not.
+- **A way past it**, as anger has *agora não*. A child for whom nothing is
+  company today must not be held there choosing one.
+
+### D-216 `[DEFINED]` The five, and the honest limit of what evidence chose
+Asked to pick the five best supported. **The evidence separates three, and then
+it stops** — saying otherwise would be the overclaiming this project exists not
+to do. The five, with the base marked and every claim flagged for verification
+before it is written into the material (no reference is recorded from memory):
+
+| | Base | Grade |
+| --- | --- | --- |
+| Alguém ao pé de mim, sem falar | co-regulation; responsive caregiver availability | **estabelecido** as a mechanism; the silent form specifically, prática |
+| Contar a alguém | social sharing of emotion | **razoável**, with the caveat below |
+| Uma coisa macia | comfort object | **razoável** — verify; the theory's origin is psychodynamic, which D-171 excludes as a *base*, so it is carried as the empirical finding and not as the theory |
+| Uma coisa que me lembra alguém | symbolic representation of the absent person | **prática** |
+| Um bocadinho no meu sítio | constructive solitude | **prática** |
+
+**The caveat on sharing is the same one D-214 fixed**, and it is worth stating
+twice because it is easy to lose: the literature on telling someone is
+consistent about the *bond* strengthening and equivocal about the *feeling*
+lifting. That is not a weakness of the option — **it is the exact shape of this
+family's distinction**, arriving from the evidence rather than from us. Company
+makes it easier to carry. It does not make it pass faster.
+
+**Four and five were not chosen by evidence**, because at that point there is
+none to choose with. They were chosen on two other grounds, said out loud:
+
+- *Um bocadinho no meu sítio* is structurally necessary. Without it the activity
+  prescribes company, and a sad child who wants to be alone would have no true
+  answer on the screen.
+- *Uma coisa que me lembra alguém* is the only one that houses **com saudades**,
+  one of the four fine words of this family, which otherwise has nowhere to land.
+
+**Art:** two reuse existing pages — the bench for *contar a alguém*, the quiet
+corner for *um bocadinho no meu sítio*. Three are new and must pass the sealing
+test and the six-area floor (D-129).
+
+### D-217 `[DEFINED]` The rest go to the workbook as suggestions, not to the screen
+Seven more were considered. They are not discarded — **the clinician's guidance
+page for this sheet carries them as things to offer a particular child**, which
+is exactly the place for something that suits one child and not another. The
+screen has to work for every child unattended; a session does not.
+
+| | Why not on the screen |
+| --- | --- |
+| Um abraço | the only one where a wrong tap can end in a touch she did not want. On a screen it is a suggestion; in a room there is someone reading her face |
+| Um bicho | prática, and it excludes every child without one |
+| Falar com alguém que está longe | no separate base beyond social sharing; and it needs a device and an adult |
+| Música | not blocked by the content — sad music heard by a sad person accompanies rather than cheers, and the evidence there is friendlier than expected. Blocked by licensing (unresolved) |
+| Enrolar-me | prática, near nil. It is what a sad body does, not something to choose |
+| Esperar que passe | the purest form of the distinction, and the one a six-year-old is least likely to choose. It also edges toward the acceptance work D-173 deliberately held back |
+| Chorar | **not company — permission.** It belongs with the three psychoeducation statements in the child's book, not in a list of things to pick |
+
+### D-218 `[DEFINED]` Six, not five — the pet stays and the keepsake stays
+The pet was dropped as *prática* and excluding children who have none. Corrected,
+and the correction is worth recording because the reasoning was wrong in a way
+this project should not repeat: **prática does not mean it does not work — it
+means it has not been well studied.** For a choice that belongs to the child
+rather than to us, what children actually say outweighs a thin literature, and
+children say the dog constantly.
+
+Six rather than five. Nothing requires five: the recipe says sheets are chosen
+per family and not to a grid. **The grid is also better** — six fills two rows of
+three and two of two, where five leaves one option alone with an emphasis it has
+not earned, which is the D-104 problem again.
+
+| | Base | Grade |
+| --- | --- | --- |
+| Alguém ao pé de mim, sem falar | co-regulation | estabelecido as a mechanism |
+| Contar a alguém | social sharing of emotion | razoável |
+| Uma coisa macia | comfort object | razoável, to verify |
+| Um bicho | animal company | prática |
+| Uma coisa que me lembra alguém | representation of the absent person | prática |
+| Um bocadinho no meu sítio | constructive solitude | prática |
+
+**The four fine words all have somewhere to land**: *sozinho* in the first or the
+last, *com saudades* in the keepsake, *magoado* and *desiludido* in telling
+someone. Cost: four new colouring pages instead of three, two reused.
+
+### D-219 `[IMPLEMENTATION]` The sad family's schema: two paths, drawn in code
+`scripts/figure-sadness-paths.py`, in both versions (D-189).
+
+**Not the arousal curve, and it could not be.** Anger rises fast and comes down
+slowly. Sadness does not, and drawing it as that curve would say something false
+about it before a word was read.
+
+It draws **the same sadness carried two ways** — alone, and with company — from
+one arrival to one ending.
+
+**The thing it had to get right:** the accompanied line must not end sooner. A
+figure where company makes sadness finish faster promises exactly what D-214
+forbids. So the two lines end together, and what differs is how far down the
+accompanied one runs: *easier to carry*, never *over sooner*. The clinician's
+version names the error — *aqui é onde se tenta animar, e é o que faz a linha de
+baixo desaparecer* — and the child's version does not, because that sentence is
+about her rather than to her.
+
+No numbers on either axis (D-201).
+
+**Three faults, all invisible in the code and obvious in the render:**
+
+- **The first draft spiked.** It rose almost vertically and read as anger in
+  another colour. Sadness arrives over a while, settles, and thins — and it does
+  not reach zero inside the picture, because it usually does not reach zero
+  inside a week either.
+- **The event mark landed halfway up the rise**, so the picture said the sadness
+  began before the thing that caused it.
+- **Two labels sat on top of the lines they described**, and *com companhia* was
+  printed on the baseline.
+
+### D-220 `[DEFINED]` Nobody in the sad family's colouring pages is sad
+Not a tear, not a downturned mouth, not a hunched back. The four new pages are
+about **company**, not about sadness.
+
+The reason is not aesthetic. D-120 already keeps the feeling out of the filename
+and out of the folder, so that a parent finding the downloaded PDF cannot read
+back what the child chose. **A drawing of a weeping child defeats that on the
+page itself** — a filename can be neutral, a crying figure cannot. The same
+promise, at the one place it had not yet been applied.
+
+Faces are the ordinary calm kawaii face of the rest of the library.
+
+### D-221 `[IMPLEMENTATION]` The four prompts, and what art the family still needs
+`docs/COLOURING-PROMPTS.md`, inheriting from `ART-DIRECTION.md` and written to
+the discipline it records: state what must exist, forbid details one by one,
+phrase the critical instruction three ways, ask for eight areas rather than the
+six that are required.
+
+**Four new pages**: alguém ao pé de mim · uma coisa macia · um bicho · uma coisa
+que me lembra alguém. **Two reused**: the bench for *contar a alguém* and the
+quiet corner for *um bocadinho no meu sítio* — a data change, adding `sad` to
+their families list, not new artwork.
+
+**What needs no art at all**, recorded so it is not generated by mistake: the
+family card and its four fine cards exist; both covers are drawn in code from
+the family card; the schema is drawn in code (D-219); the identity page's hand
+mirror is family-independent and already exists.
+
+**What is still unknown:** the worksheet illustrations, because the sheet menu
+for this family has not been chosen. *A Tristeza vem visitar* is not assumed —
+externalising suits angry and scared, and inviting a child to put her sadness
+outside herself and be rid of it is the one thing D-214 says the material does
+not do.
+
+### D-222 `[DEFINED]` The sad family's sheet menu, and the three of anger's that do not cross
+Nine for the child plus the practitioner's page, as anger has — but the axis is
+different, and it is the governing distinction that decides which of anger's
+moulds survive.
+
+| Sheet | Age | Base |
+| --- | --- | --- |
+| Psicoeducação — A Tristeza | 6–9 | to read, nothing to fill |
+| Quando é que ela aparece | 5–8 | behavioural, pattern |
+| O que me faz companhia | 4–7 | co-regulation · comfort object |
+| O que as pessoas dizem | 7–9 | parent–child interaction principles |
+| As palavras finas | 7–9 | the set together |
+| Desiludido | 7–9 | behavioural |
+| Sozinho | 6–9 | social support |
+| Com saudades | 4–7 | representation of the absent person |
+| Magoado | 7–9 | systemic |
+| O que dizer aos pais | practitioner | parent-mediated |
+
+**Three of anger's do not cross, and D-214 is what bars them:**
+
+- ***A Zanga vem visitar*** — externalising invites the child to put the thing
+  outside herself and be rid of it. That is the one move this family does not
+  make.
+- ***Da próxima vez*** — asks her to solve the sadness. For anger the question
+  is behavioural and within reach; here it is cheering up under another name.
+- ***Compor as coisas*** — there is nothing to repair. Sadness leaves nobody to
+  apologise to.
+
+**One is new and has no parallel: *quando é que ela aparece*.** Anger's
+equivalent hunts triggers, which is causal. **Looking for the cause of sadness
+puts a child to explaining herself, and often to blaming herself.** A temporal
+pattern is descriptive, asks for no explanation at all, and says more
+clinically — bedtimes, Sundays, transitions.
+
+**Age distribution, which the recipe says to watch:** it is top-heavy, five at
+7–9. The reason is honest rather than an oversight — three of this family's four
+fine words are concepts that need reading, unlike anger's. *Sozinho* is the one
+that could come down, using pictures of places.
+
+### D-223 `[DEFINED]` *O que as pessoas dizem* stays a child's sheet — the clinician is the gate
+The sheet asks a child to mark what the adults around her say that does not
+help, and it goes home in her book. It is the most useful sheet of the set,
+because it is the distinction made concrete, and it is the only one that can
+reach the hands of the people it describes.
+
+Proposed moving it into the workbook as a spoken dynamic. **Rejected**, and the
+reasoning generalises: **this is practitioner-licensed material, and the
+clinician decides what leaves the room.** A safeguard in the guidance page is the
+right instrument, not removing the sheet from the child who benefits from it.
+
+**The scope limit, written down now so it is not lost later:** that reasoning
+holds *because* there is a person there. It does not transfer to the family
+printable line. **This sheet must never appear in a printable sold to a family**
+— a printed sheet does not choose who is in the room, and nobody is there to
+decide whether it goes on the fridge.
+
+### D-224 `[IMPLEMENTATION]` The middle step is per family, and so are the picture names
+Found by using it rather than by reading it: choosing *triste* produced anger's
+screen — *which would you like to try?*, over pages called *go and tell someone*
+and *move away from it*. Both strings were global, written when one family
+existed.
+
+Both are now per family with a fallback. Sadness asks **what keeps you company**,
+and the same two drawings are called *contar a alguém* and *um bocadinho no meu
+sítio* rather than *ir ter com alguém* and *sair dali*.
+
+**The same drawing doing a different job in each family is not a compromise —
+it is the reason a page is named for what it shows and never for the strategy**
+(D-120). The bench is the bench. What it is *for* belongs to the family, and now
+lives where the family's words live.
+
+The two reused pages are wired (`families: ["angry", "sad"]`), each carrying its
+own evidence note for the second family — including, on the bench, the caveat
+that must not be lost: company makes it easier to carry, not faster to pass.
+
+### D-225 `[DEFINED]` The child's three statements and the literacy line
+Anger's three are in her book already; sadness's are the same shape.
+
+1. *A tristeza aparece quando perdemos alguma coisa de que gostávamos — uma
+   pessoa, um sítio, uma coisa, ou uma ideia do que ia acontecer.*
+2. *A tristeza não é má. É o corpo a dizer que aquilo era importante.*
+3. *A tristeza passa, mas não passa por a empurrarmos.*
+
+The third is the governing distinction in her words (D-214). The first is
+written to cover disappointment as well as loss, because *desiludido* is one of
+this family's four fine words and a statement about losing a person would leave
+it outside.
+
+**The literacy line on screen carries the honesty condition rather than hiding
+it**: *com alguém ao pé, não passa mais depressa — mas é mais fácil de carregar.*
+It would have been easy to write the warmer, false version. A child who is told
+that talking makes it pass, and then talks and stays sad, learns that she did it
+wrong.
+
+### D-226 `[IMPLEMENTATION]` The four filenames, fixed before generation
+`sitting-beside` · `soft-blanket` · `dog-beside` · `keepsake-shelf`, into
+`artwork/colouring/strategies/`, then `python3 scripts/prepare-colouring.py`.
+
+Fixed now rather than after the images arrive, because **the filename is the one
+part of a colouring page that travels into the child's house.** She downloads the
+PDF; whatever it is called lands on someone's desktop. Each of these names the
+picture and none names the feeling (D-120) — *keepsake-shelf* rather than
+*missing-someone*, *sitting-beside* rather than *comfort*.
+
+### D-227 `[IMPLEMENTATION]` The four pages passed, and the family is live at six
+Measured before exporting, then flood-filled region by region and looked at.
+
+| | Fillable areas | Stroke |
+| --- | ---: | ---: |
+| sitting-beside | 17 | 8.0px |
+| soft-blanket | 12 | 8.0px |
+| dog-beside | 11 | 8.0px |
+| keepsake-shelf | 13 | **6.3px** |
+
+All four clear the six-area floor comfortably, and no colour crossed between
+regions in any of them. **Three sit in family with the accepted pages** (the
+quiet corner is 7.2, jumping 8.2, the feather 8.2).
+
+**One warning, and it is the one the script warns about rather than refusing:
+`keepsake-shelf` at 6.3px is under the 7px floor** — the thinnest page in the
+whole library. It is not a failure and the page works, but it is the one drifting
+toward the generic colouring-book line the house style rules out. Recorded rather
+than acted on: the page passes, and redrawing accepted art needs a reason better
+than a number just under a threshold.
+
+**One thing the prompt asked for and did not get, on three of the four.** The
+ground line was specified as spanning edge to edge, and only `soft-blanket` has
+it. On the others the floor is therefore not a sealed region and cannot be
+coloured — a small loss and not a fault, since `dog-beside` has a rug instead and
+`keepsake-shelf` has the shelf. **Worth noting for the next family**: the
+instruction was phrased three ways and still did not take on three drawings out
+of four, which suggests the fault is in the instruction rather than the model.
+
+The six are wired, each with its own evidence note, and the screen now asks
+**what keeps you company when you are sad?** over six pictures.
+
+### D-228 `[DEFINED]` A landscape drawing gets a landscape sheet
+Found on the printed A4 and nowhere else. The four new pages are wide, the sheet
+was always tall, and the drawing sat in the top third with a hand's width of
+white beneath it before the mark.
+
+Measured rather than judged: the four filled **48–59% of the art box**, against
+70–82% for the square pages already accepted. `keepsake-shelf` was worst at
+47.7%. **The child was getting a smaller picture for no reason but the shape of
+the paper.**
+
+`to_pdf` now chooses the orientation, and chooses it **from the trimmed drawing
+rather than from the file** — the generator's framing is not the drawing. The
+same four now fill 71–88%, and nothing that was already accepted changed, since
+the square pages stay portrait.
+
+It is the same lesson as every other fault in this project: it was invisible in
+the source, invisible in the WebP, and obvious on the page.
+
+### D-229 `[IMPLEMENTATION]` The build refuses instead of producing an empty document
+Building the sad family before its sheets existed produced **a one-page parents'
+letter with a header, a footer and no letter**, and a three-page exploration book
+with nothing to explore. `load_sheets` returned an empty string when the file was
+missing, and everything downstream carried on politely.
+
+Files that look finished and are not are exactly what D-004 exists to prevent,
+arriving through the build rather than through the data. It now raises.
+
+**The workbook alone is allowed**, because it is prose and stands without the
+sheets — a family being written can be read before it is complete. The child's
+book and the parents' letter cannot: they are made of sheets.
+
+### D-230 `[IMPLEMENTATION]` The sad workbook's prose is written — fifteen pages
+`docs/materials/triste-caderno.md`. Sections 1–8, 10, 11 and the annexes;
+section 9 is a marked stub, because the guides are generated and the sheet
+menu has to become real sheets first.
+
+Things in it that are decisions rather than writing:
+
+- **Section 3 says out loud, before the table, that the evidence separates three
+  of the six and then stops.** The alternative was six entries with the same air
+  of support, three of which do not have it.
+- **The two *practice* entries that are in the set for stated non-evidential
+  reasons say so in their own paragraph** — the keepsake because it houses *com
+  saudades*, the quiet place because without it the activity prescribes company.
+- **The missing word of this family is not the missing word of anger.** Anger
+  lacked a child's word for injustice. Sadness lacks **a name for the sadness
+  that has no cause** — and a child who is sad and cannot say why, when asked
+  why, invents a cause to satisfy whoever asked. That is the clinical reason
+  sheet 2 asks *when* and not *why*, and the workbook now says so.
+- ***Sozinho* is this family's *chateado***: European Portuguese uses one word
+  for being without anyone and for feeling alone among people, and the second is
+  much heavier. **The question that separates them is *está lá gente?***
+- **Sorting by intensity is refused more easily here than anywhere else**, and
+  for a new reason: these four words differ by *cause* and by *target*, not by
+  size. *Sozinho* is not more or less than *magoado* — it is something else.
+
+### D-231 `[IMPLEMENTATION]` *O que dizer aos pais* was reaching nobody
+A sheet marked `data-for="practitioner"` was kept out of the child's book,
+because it talks over her head (D-188), and out of the parents' letter, because
+it is not addressed to them. **And it was never put into the workbook either.**
+
+So in both families it was written, built and delivered nowhere — a page of
+clinical content that existed in the source and in no document. Found by
+searching the three PDFs for its own title.
+
+It is now an annex to the workbook, after the closing signature. No heading was
+added: the sheet carries its own title, and a second one prints the same words
+twice.
+
+**Two faults fixed on the way, both from the printed page:**
+
+- Appended after the signature, the signature was pushed onto a sheet of its
+  own with one line on it.
+- The workbook's closing footnote then did the same thing, opening a further
+  page for a single grey line — **in both families, and unnoticed since the
+  angry build**. It now sits inside the last sheet.
+
+The angry workbook goes from 24 to 25 pages by gaining the page it should always
+have had, and loses the blank one it should never have had.
+
+### D-232 `[IMPLEMENTATION]` The sad family's sheets, and its letter
+`docs/materials/triste-fichas.html`. Nine for the child, one for whoever applies
+it, one for the family. The child's book is twelve pages; the letter is one.
+
+Two card layouts were needed and did not exist: **four** fine words instead of
+three, and **six** figures on the company sheet, both set smaller than the
+three-card row so the row still leaves the child room to write beneath it.
+
+Things in the sheets that are decisions:
+
+- ***Quando é que ela aparece* asks when, and says so in its own opening line** —
+  *não vamos procurar porquê*. A child asked why she is sad, who does not know,
+  invents a cause to satisfy whoever asked.
+- ***O que as pessoas dizem* has three boxes and the third is the one that
+  matters**: a thing she wishes someone would say, and nobody says. The first two
+  are what makes the third askable.
+- ***As palavras finas* opens by saying they are not bigger and smaller — they
+  are different things.** In anger that sentence could not be written; here it is
+  true, and it does the work of keeping intensity out.
+- ***Sozinho* asks *estava lá gente?*** — the question that separates being
+  without anyone from feeling alone among people, which European Portuguese does
+  not separate.
+- ***Magoado* ends with what she would say to the person**, and stops there. It
+  is not the repair sheet: there is nothing here for her to put right.
+
+**The letter carries the distinction to the people who make the error.** Its
+second paragraph is the one that had to be written carefully — *estar ao pé sem
+dizer nada é uma coisa a sério* — and its third says outright that talking does
+not make it pass faster and that this is not a bad sign, so that a parent whose
+child talks and stays sad does not conclude that it failed.
+
+### D-233 `[DEFINED]` The tenth sheet: *O que eu posso pedir* — the family had no way forward
+Caught by Ricardina on reading the set: **the sad arc ended in description.**
+Anger closes looking forward — *da próxima vez* and *compor as coisas* — and both
+were removed here for good reasons (D-222), with nothing put in their place.
+
+**Ending in description is itself a message, and the message is *there is
+nothing you can do*.** That is not what D-214 says. The distinction says sadness
+cannot be taken away; it does not say the child has no part.
+
+What it could not be is *da próxima vez* under another name. Asking a sad child
+what she will do so as not to be sad is asking her to solve the sadness.
+
+**What closes this family is asking.** Sheet 3 finds what keeps her company —
+and almost none of it depends on her alone. A child who knows that what helps is
+her mother sitting beside her without speaking still does not have it, because
+she cannot ask for it, and what adults do spontaneously is usually the other
+thing. **The sheet closes the distance between what she found and what she
+receives**, and promises nothing while doing it: asking does not make sadness
+pass, it lets the company arrive.
+
+Three parts, and the third is the one that cannot be missing: what I want to
+ask · who I ask · **and if that person cannot right then?** Without it the sheet
+prepares her for a refusal she will read as rejection. It is the reasoning of
+anger's repair sheet in the other direction: **a request refused is not a
+request failed, it is a request with different timing.**
+
+**Base: prática.** The company itself rests on established ground; what is hard
+is not the company but the asking, and on children's help-seeking and needs
+communication the literature is thin. Said as such.
+
+6 to 9, which also pulls the age distribution down slightly — it was top-heavy.
+
+The child's book is now thirteen pages, and the workbook's section 1 gained a
+paragraph, *Onde é que esta família acaba*, so that the next family is not built
+without asking the same question.
