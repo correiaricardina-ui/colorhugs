@@ -1492,6 +1492,281 @@ DYNAMICS["bored"] = {
 }
 
 
+
+
+# ---------------------------------------------------------------------------
+# Calmo — nine sheets for the child plus the practitioner page (D-280).
+#
+# The only family whose sheets start in the present rather than in memory, and
+# the only one whose last sheet is written to be used in another family's
+# session. No breathing anywhere, and no zone questions: calm is general
+# deactivation and has nowhere to be pointed at (D-276).
+# ---------------------------------------------------------------------------
+
+SHEETS["calm"] = [
+    {
+        "n": 1,
+        "title": "A Calma",
+        "Idade": "6 aos 9 anos",
+        "Base": "Psicoeducação. Sem nível próprio.",
+        "Objectivo": "Dizer-lhe que a calma não faz barulho, e mostrar-lhe para "
+                     "onde vai o que aqui se junta. Nada para preencher.",
+        "Como aplicar": "Ler com ela. **O esquema é um mapa e é abstracto** — "
+                        "seguir uma seta de cada vez, e só as das famílias que "
+                        "ela já conhece.",
+        "A notar": "Se percebe que isto é para depois. **É a única família cujo "
+                   "sentido está fora dela**, e algumas crianças acham isso "
+                   "estranho até verem a última ficha.",
+        "Cuidados": "Não transformar a página numa promessa de que se vai sentir "
+                    "melhor. O que se promete é ter onde ir buscar, e mais nada.",
+        "questions": [
+            "Achas que isto é para hoje ou para depois?",
+            "Já te aconteceu lembrares-te de um sítio bom num dia mau?",
+        ],
+    },
+    {
+        "n": 2,
+        "title": "O meu corpo agora",
+        "Idade": "5 aos 8 anos",
+        "Base": "Consciência interoceptiva. **Razoável** quanto a reconhecer "
+                "estados; esta aplicação é prática.",
+        "Objectivo": "**Começar no presente e não na memória.** Uma criança que "
+                     "não repara na calma não tem o que recordar — por isso o "
+                     "trabalho começa com o corpo que ela tem agora.",
+        "Como aplicar": "Na sala, sem instrução e sem respiração. A lista de "
+                        "palavras é para assinalar, não para escolher uma.",
+        "A notar": "As palavras que escolhe, e **se alguma delas é de tom em vez "
+                   "de zona**. Se ela responder com um sítio do corpo, anotar: é "
+                   "o achado desta família e não um engano.",
+        "Cuidados": "**Não é preciso que ela esteja calma**, e a ficha di-lo. "
+                    "Pedir-lhe que fique transforma isto num exercício, que é "
+                    "exactamente o que esta família não é.",
+        "questions": [
+            "O teu corpo, neste momento, está como?",
+            "E quando chegaste hoje, estava igual?",
+            "Se tivesses de escolher uma palavra só, qual era?",
+        ],
+    },
+    {
+        "n": 3,
+        "title": "Onde e quando",
+        "Idade": "4 aos 7 anos",
+        "Base": "Sem base própria. **Prática.**",
+        "Objectivo": "Recolher o depósito: sítios, alturas, quem lá está, e o que "
+                     "o corpo faz. **Só depois da ficha 2**, porque só então ela "
+                     "sabe o que anda a procurar.",
+        "Como aplicar": "Uma linha de cada vez. A última pergunta — a qual "
+                        "consegue ir esta semana — é a que torna isto utilizável.",
+        "A notar": "**Se todos os sítios dependem de outra pessoa, ou se nenhum "
+                   "depende.** E se algum é acessível hoje: um depósito feito de "
+                   "sítios de férias não serve na terça-feira.",
+        "Cuidados": "**Uma criança que não consegue nomear nenhum sítio calmo "
+                    "pode não ter esse sítio.** Não é falha de vocabulário e não "
+                    "se resolve insistindo — ver a secção 10.",
+        "questions": [
+            "Há algum sítio onde o teu corpo fica sempre assim?",
+            "Acontece quando estás sozinha?",
+            "A qual consegues ir esta semana?",
+        ],
+    },
+    {
+        "n": 4,
+        "title": "Demorar-me",
+        "Idade": "6 aos 9 anos",
+        "Base": "Saboreio. **Razoável** — é a única das três camadas desta família "
+                "com base identificável, e a literatura é sobretudo com adultos.",
+        "Objectivo": "Ficar mais tempo numa coisa boa em vez de passar por ela. "
+                     "**Pequena de propósito**: uma coisa boa grande não precisa "
+                     "de ajuda nenhuma para ser notada.",
+        "Como aplicar": "Contar devagar, com pormenores sensoriais. Se ela "
+                        "despachar em duas frases, pedir outra vez mais devagar — "
+                        "**é a lentidão que é o exercício, não a história.**",
+        "A notar": "Se consegue demorar-se sem ficar desconfortável. E a terceira "
+                   "pergunta — se alguém sabe que aquilo foi bom para ela — "
+                   "costuma render mais do que as outras duas.",
+        "Cuidados": "Não elogiar a história. **Elogiar transforma o saboreio em "
+                    "desempenho**, e a criança passa a contar para agradar.",
+        "questions": [
+            "O que é que se via, o que é que se ouvia?",
+            "O que é que o corpo fez nessa altura?",
+            "Alguém sabe que aquilo foi bom para ti?",
+        ],
+    },
+    {
+        "n": 5,
+        "title": "As palavras finas",
+        "Idade": "7 aos 9 anos",
+        "Base": "Vocabulário emocional. **Razoável** quanto a diferenciação; o "
+                "conjunto é do ColorHugs.",
+        "Objectivo": "Mostrar que as três se distinguem **pelo que veio antes** — "
+                     "uma coisa que passou, esforço, ou ausência de ameaça. "
+                     "**Nenhuma é uma quantidade de calma.**",
+        "Como aplicar": "Uma caixa por palavra, sem ordem.",
+        "A notar": "Qual fica por preencher. E se ela distingue *tranquilo* de "
+                   "*calmo* — a maioria não distingue, e tem razão.",
+        "Cuidados": "***Tranquilo* é a palavra mais frágil do baralho** e está "
+                    "registada como por resolver (D-161). Não insistir se ela "
+                    "não a distinguir: o problema é da palavra e não dela.",
+        "questions": [
+            "Qual destas dizes mais vezes?",
+            "Alguma delas vem sempre depois de outra coisa?",
+            "Tranquilo é o mesmo que calmo, ou é diferente?",
+        ],
+    },
+    {
+        "n": 6,
+        "title": "Tranquilo",
+        "Idade": "7 aos 9 anos",
+        "Base": "Vocabulário. **Prática**, e com a ressalva de D-161.",
+        "Objectivo": "Salvar a palavra pela única coisa que a distingue na "
+                     "prática: **é a calma depois de alguma coisa que passou.**",
+        "Como aplicar": "A segunda pergunta — o que tinha acabado — é a que dá "
+                        "sentido à primeira.",
+        "A notar": "**Quanto tempo o corpo demorou a perceber que já tinha "
+                   "passado.** É a mesma ideia da curva da activação vista do "
+                   "outro lado, e liga esta família ao zangado.",
+        "Cuidados": "Se ela não conseguir distinguir de *calmo*, aceitar e "
+                    "seguir. **Não construir uma distinção que a língua não "
+                    "sustenta.**",
+        "questions": [
+            "O que é que tinha acabado?",
+            "Quanto tempo demorou o corpo a perceber?",
+            "Houve alguma coisa que te ajudasse a perceber?",
+        ],
+    },
+    {
+        "n": 7,
+        "title": "Descansado",
+        "Idade": "6 aos 9 anos",
+        "Base": "Vocabulário. **Prática.**",
+        "Objectivo": "É a mais fácil das três de reconhecer, porque tem sempre um "
+                     "antes. **Costuma ser a melhor porta de entrada nesta "
+                     "família.**",
+        "Como aplicar": "Se as fichas anteriores tiverem corrido mal — se ela não "
+                        "reconheceu calma nenhuma — **começar por aqui e voltar "
+                        "atrás depois.**",
+        "A notar": "Se o descanso dela depende de ter havido esforço. A terceira "
+                   "pergunta abre isso, e algumas crianças descobrem ali que "
+                   "descansar não é uma recompensa.",
+        "Cuidados": "Não ligar descanso a mérito. *Descansaste porque "
+                    "trabalhaste* é uma frase de adulto e instala uma condição "
+                    "onde não é preciso nenhuma.",
+        "questions": [
+            "Depois de que coisas é que ficas assim?",
+            "É preciso estar cansada para ficar descansada?",
+            "Onde é que costumas ficar?",
+        ],
+    },
+    {
+        "n": 8,
+        "title": "Seguro",
+        "Idade": "6 aos 9 anos",
+        "Base": "Segurança percebida. **Estabelecido** quanto à sua relação com a "
+                "regulação; a ficha é prática.",
+        "Objectivo": "É o oposto exacto do assustado, e a condição das outras "
+                     "duas. **Sem ela, a calma não aparece.**",
+        "Como aplicar": "Pelas três perguntas por ordem. A terceira — sítio ou "
+                        "pessoa — é a que separa um depósito de um problema.",
+        "A notar": "**A ausência.** Se ela responder com facilidade a *onde me "
+                   "sinto segura* e com dificuldade a nada mais, isso é bom "
+                   "sinal; se for ao contrário, é o achado mais importante que "
+                   "este caderno pode dar.",
+        "Cuidados": "**Esta é a ficha que pode tirar a sessão deste caderno.** Se "
+                    "aparecer um sítio ou uma pessoa concreta onde ela não se "
+                    "sente segura, este material pára aí — o que se segue é "
+                    "avaliação e, se for caso disso, o dever legal de comunicar. "
+                    "Ver a secção 10.",
+        "questions": [
+            "Onde é que te sentes segura?",
+            "É por causa do sítio, ou de quem lá está?",
+            "Há sítios onde não te sentes?",
+        ],
+    },
+    {
+        "n": 9,
+        "title": "O meu depósito",
+        "Idade": "6 aos 9 anos",
+        "Base": "Sem base própria. **Prática**, e é a concretização de tudo o que "
+                "esta família existe para fazer.",
+        "Objectivo": "Levar o que foi recolhido para as famílias que vão precisar "
+                     "dele. **É a única ficha do projecto escrita para ser usada "
+                     "na sessão de outra família.**",
+        "Como aplicar": "No fim da família, e **com as fichas anteriores à "
+                        "frente** — ela copia de lá, não inventa aqui. Se alguma "
+                        "linha ficar vazia, deixar vazia.",
+        "A notar": "Se o que ela põe em cada linha é diferente. **Se puser a mesma "
+                   "coisa nas três, ou o depósito é pequeno ou aquela coisa é "
+                   "muito boa** — e vale a pena saber qual das duas.",
+        "Cuidados": "**Guardar a folha e voltar a ela nas outras famílias.** Uma "
+                    "ficha de depósito que fica no processo e nunca mais se abre "
+                    "não fez nada — e esta é a única do material cujo valor "
+                    "depende inteiramente de ser reaberta.",
+        "questions": [
+            "Quando estiveres com medo, o que vais buscar?",
+            "É a mesma coisa para as três, ou muda?",
+            "Onde é que vais guardar esta folha?",
+        ],
+    },
+]
+
+DYNAMICS["calm"] = {
+    1: [
+        ("4–6", "**A carta e o espelho.** Pôr a carta do calmo ao lado do espelho da primeira página e perguntar se são parecidos."),
+        ("6–8", "**Uma seta de cada vez.** Seguir só a família que ela conhece melhor e deixar as outras para depois."),
+        ("8–9", "**Desenhar a seta que falta.** Perguntar-lhe que outra família ia buscar coisas aqui, e porquê."),
+        ("qualquer", "**Guardar para o fim.** Voltar a esta página na última sessão, com a ficha 9 ao lado."),
+    ],
+    2: [
+        ("5–7", "**Um minuto de nada.** Estar em silêncio um minuto de relógio, sem instrução nenhuma, e depois perguntar o que o corpo fez."),
+        ("5–8", "**Duas palavras, duas vezes.** Uma no princípio da sessão e outra no fim, e comparar. Costuma haver diferença e ela costuma não ter reparado."),
+        ("8–9", "**As palavras que faltam.** Pedir-lhe que acrescente palavras à lista. As dela costumam ser melhores do que as nossas."),
+        ("com a família", "**Os adultos também.** Cada um diz duas palavras para o próprio corpo naquele momento. Mostra que isto se faz, e não só se pede."),
+    ],
+    3: [
+        ("4–6", "**A planta da casa.** Desenhar a casa por cima e marcar onde o corpo fica assim. Costuma haver um sítio, e costuma não ser o quarto."),
+        ("4–7", "**Ir lá e voltar.** Se o sítio existir no edifício, ir lá durante a sessão."),
+        ("6–9", "**Sozinha ou acompanhada.** Separar os sítios em duas pilhas e ver qual é maior."),
+        ("com a família", "**Onde é que ela fica assim.** Perguntar aos adultos antes de ela responder. As diferenças são o material, e costuma haver."),
+    ],
+    4: [
+        ("6–8", "**Contar duas vezes.** A mesma coisa boa, a segunda vez mais devagar do que a primeira. A diferença é o exercício."),
+        ("6–9", "**Dizer a quem lá estava.** Se a pessoa estiver na sala, contar-lhe a ela. Se não, combinar dizer-lhe durante a semana."),
+        ("8–9", "**A coisa pequena.** Procurar deliberadamente a coisa boa mais pequena da semana. As grandes não precisam de ajuda para serem notadas."),
+        ("com a família", "**Uma coisa boa cada um.** À vez, e devagar. É das poucas dinâmicas deste material que uma família consegue repetir sozinha."),
+    ],
+    5: [
+        ("7–9", "**Pelo antes.** Pôr as três cartas por ordem do que veio antes de cada uma: uma coisa que passou, esforço, ausência de ameaça."),
+        ("7–9", "**A palavra que ela usaria.** Perguntar que palavra usa em casa para isto. Muitas vezes não é nenhuma das três."),
+        ("8–9", "**A calma sem antes.** Perguntar-lhe que palavra usaria para a calma que não veio depois de nada. **Não há nenhuma em português.**"),
+        ("com a família", "**Cada um escolhe a sua.** Os adultos escolhem também, e dizem quando foi a última vez."),
+    ],
+    6: [
+        ("7–9", "**O antes e o depois.** Desenhar dois quadrados: como estava o corpo antes de aquilo acabar, e como ficou depois."),
+        ("7–9", "**O atraso.** Procurar uma vez em que a coisa já tinha acabado e o corpo ainda não sabia. **Liga esta ficha à curva do zangado.**"),
+        ("8–9", "**Distinguir ou não.** Perguntar-lhe directamente se tranquilo e calmo são a mesma coisa, e aceitar a resposta que der."),
+        ("com a família", "**O que ajuda a perceber que passou.** Perguntar aos adultos o que fazem quando uma coisa difícil acaba. Muitas vezes não fazem nada, e vale a pena que reparem."),
+    ],
+    7: [
+        ("6–8", "**Antes e depois de mexer.** Fazer uma coisa que canse um bocadinho na sessão, e reparar no corpo a seguir."),
+        ("6–9", "**Descansar sem ter feito nada.** Perguntar se dá. É a pergunta que desfaz a ligação entre descanso e mérito."),
+        ("8–9", "**Os descansos que não descansam.** Procurar coisas que ela faz para descansar e que a deixam na mesma."),
+        ("com a família", "**Como descansam os adultos.** E se descansam. Costuma abrir mais do que se espera."),
+    ],
+    8: [
+        ("6–8", "**O mapa dos sítios seguros.** Marcar numa planta da casa e da escola. **Reparar no que fica por marcar.**"),
+        ("6–9", "**Sítio ou pessoa.** Em cada sítio marcado, perguntar se seria igual sem aquela pessoa lá."),
+        ("8–9", "**O que faria um sítio ficar seguro.** Perguntar sobre um sítio onde ela não se sente segura — **sem perguntar porquê.**"),
+        ("com a família", "**Não usar o sítio dela como castigo.** Combinar isto explicitamente. Um sítio que serve de castigo não serve de depósito."),
+    ],
+    9: [
+        ("6–8", "**Copiar de lá.** Pôr as fichas anteriores à frente e deixá-la copiar. Não é para inventar aqui."),
+        ("6–9", "**Onde vai ficar.** Combinar um sítio concreto para guardar a folha — e que não seja o processo clínico."),
+        ("8–9", "**Fotografar.** Se houver telemóvel em casa, combinar com os adultos guardar uma fotografia da folha, para quando o papel se perder."),
+        ("com a família", "**Abrir noutra sessão.** Combinar com quem aplica que esta folha volta à mesa quando se trabalhar o medo, a zanga ou a tristeza. **É a única ficha do material cujo valor depende de ser reaberta.**"),
+    ],
+}
+
+
 if __name__ == "__main__":
     import sys
 

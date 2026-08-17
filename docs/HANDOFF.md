@@ -92,7 +92,7 @@ child-alone rules, because a printed sheet does not choose who is in the room.
 variety, never performance. No streaks that can break — a streak that breaks is
 a punishment.
 
-**Five families are closed** — angry, sad, scared, ashamed and bored — each in three PDFs plus
+**Six families are closed** — angry, sad, scared, ashamed, bored and calm — each in three PDFs plus
 the shared deck. **A family workbook is built to a fixed recipe** — three PDFs from one source,
 for the clinician, the child and the parents. `docs/WORKBOOK-RECIPE.md` holds
 the section order, the sheet menu, the non-negotiable rules (boxes not lines,

@@ -5211,3 +5211,331 @@ answer is usually better than ours.
 **Five families are closed: angry, sad, scared, ashamed, bored.** Two remain —
 feliz and calmo — and neither has options, a mechanism to correct, or a family
 error to name. **They will need a shape none of the five has used.**
+
+---
+
+# Increment 38 — The two that are not problems (2026-08-17)
+
+### D-273 `[DEFINED]` Happy and calm are resource families — the three logics in order
+Neither has what the other five had. **No family error to name** — nobody brings
+a child because she is happy. **No mechanism maintaining it** — avoidance keeps
+fear, hiding keeps shame, and nothing needs correcting here. **No options to
+offer** — there is nothing to give someone who is well. And the distinction that
+carries the other five always presupposes an error to avoid.
+
+D-119 already gave them their own path on screen — *momentos em que me sinto
+assim* rather than *o que queres experimentar* — and the shape grows from there.
+
+**The one thing that is true of both: these families are not worked when they
+appear, they are worked so that they can appear.**
+
+Three logics were considered and **all three are adopted, in an order that is
+itself the argument:**
+
+1. **Reconhecimento — the raw material.** Where, with whom, what the body does. A
+   child with words only for what goes wrong has half a vocabulary, and one who
+   recognises calm recognises its absence better. On its own it is thin.
+2. **Saboreio — the method.** Staying with the good instead of passing through
+   it. **It is the only one of the three with an identifiable evidence base**, and
+   it is reasonable rather than established.
+3. **Recurso — the purpose.** What is gathered on the good days is what the bad
+   days draw on. It is *uma coisa que me faz companhia* and *quem continua a
+   gostar de mim*, collected while everything is fine rather than in the middle
+   of the storm.
+
+**Recognition is what is gathered, savouring is how, and resource is what for.**
+
+**The consequence that matters most:** these two become the families applied
+**first** rather than last. **The store is built before it is needed** — and the
+other five gain somewhere to send the child to fetch from, which is what makes
+these part of the system rather than a pleasant appendix.
+
+### D-274 `[DEFINED]` Two workbooks, not one — and activation is what separates them
+Happy and calm share everything D-273 decided: the same three logics, the same
+path on screen, the same absence of an error to correct. Written like the other
+five they would produce **two nearly identical workbooks**, which is the worst
+thing to hand a colleague — she reads the second believing she opened the wrong
+file.
+
+**Rejected: one workbook in two halves.** It would have avoided the duplication
+by construction and it assumes the two are applied together, which is probably
+true. **It was rejected on a commercial ground rather than a clinical one**: the
+line is sold by family, and a double workbook breaks the shelf for all seven.
+
+**Adopted: two, with activation as the axis of each.** They are both positive and
+they differ in activation, which is a real distinction with its own literature.
+
+- **Feliz is positive and activated.** It wants to share, to move, to tell. **It
+  builds a store of memories and people.**
+- **Calmo is positive and deactivated.** It wants to stay, and for nothing to
+  change. **It builds a store of places and body states.**
+
+**And they are not interchangeable clinically**, which is what makes two
+workbooks honest rather than tidy: **an anxious child needs the calm one; a flat
+child needs the happy one.** A single workbook would have let a colleague reach
+for whichever half came first.
+
+**The obligation this creates, and it is recorded as a test rather than an
+intention:** if the two prose sections end up saying the same things in different
+words, the decision was wrong and should be revisited. Each must be readable
+without the other and must not be a rewrite of it.
+
+### D-275 `[DEFINED]` The calm family: *a calma não faz barulho*
+Four candidates, and the one that had been recommended was taken apart by
+Ricardina before it was written down.
+
+**Rejected: *calmo não é aborrecido*** — makes a positive family into a defence
+against another one, and governs nothing.
+
+**Rejected: *calmo não é estar quieto*** — closest to a real distinction, and it
+corrects a real adult error (ordering a child to sit still and calling it calm).
+But it is a sentence about discipline rather than about the child.
+
+**Rejected: *a calma treina-se*** — true and useful, and it turns the family into
+a programme of exercises. The axis is gathering, not training.
+
+**Rejected, after being recommended: *já estiveste calma antes — e isso serve*.**
+It presupposes its own answer. **A child who cannot remember is met with a
+statement about herself that she cannot confirm — and she is precisely the child
+this family is for.** It is the *avaria* mistake in another form: the sentence
+puts something in the room that we wanted absent.
+
+**And the objection has a second layer that only appeared under it.** Many
+children do not recognise calm **because it has no signal**. The other six
+families announce themselves — the body speeds up, tightens, weighs, hides.
+**Calm is the absence of announcement, and an absence is not noticed.** It is not
+a failure of memory; there was nothing to remember.
+
+**Adopted: *a calma não faz barulho*.** It names exactly that, and it presupposes
+nothing: it starts from now rather than from recall.
+
+**The child's version:** *a calma não faz barulho — por isso às vezes ela está lá
+e a gente nem dá por ela.*
+
+**Two consequences, fixed now.**
+
+**The first sheet stops being about remembering and becomes about noticing now** —
+the body, in the room, with the clinician there. Only after that does asking
+about places and other times make sense, because only then does she know what she
+is looking for.
+
+**No breathing in this family.** It already lives in angry and scared, where it is
+response modulation and exists to bring an activation down. **Here there is
+nothing to bring down.** If breathing enters, this becomes a relaxation manual and
+loses what makes it distinct. The axis is the body and the place, never the
+technique.
+
+**And the schema cannot explain a mechanism, because there is none.** It will
+have to do something else — most likely show the store and the arrows leaving it
+towards the other families, which is the only place the whole system would be
+visible at once.
+
+### D-276 `[DEFINED]` Calm has no location in the body — and the map stays anyway
+**Calm is general deactivation.** In the other six families the body signals at a
+point — the chest, the stomach, the throat, the legs. Here what changes is the
+**tone of the whole body**: softer, stiller, slower, looser.
+
+**That is the reason underneath *a calma não faz barulho*.** It is not only that
+it is quiet — **it is that there is nowhere to point.** So the questions ask for
+the state and never for the zone, and the words looked for are tone words: *mole,
+pesado, quieto, solto, devagar*.
+
+**Removing the body map from this family was proposed and rejected**, and the
+rejection came from Ricardina. The map has never obliged anyone to point and
+always has the way out beside it. **A child who does locate calm is not mistaken —
+she is saying something about herself**, and a product that had taken the map away
+would never have found out.
+
+So: **the map appears in all seven, as always.** What changes is only what is
+written around it. **The absence of a location is what is expected; the presence
+is the finding** — the exact opposite of every other family.
+
+**And it separates calm from happy more sharply than any other decision.**
+Happiness does locate — excitement in the chest, restlessness in the legs — so
+the same question carries two opposite clinical meanings. That is better than
+taking the map away from either.
+
+### D-277 `[DEFINED]` The screen question is the longest of the seven, and deliberately so
+> **O teu corpo fica assim em que sítios, ou em que alturas?**
+
+**Two doors instead of one.** *Quando* asks for a moment and a moment asks for
+memory, which is exactly what this family cannot presuppose. *Onde* is easier,
+because the place exists today and she can go there. But a child whose answer is
+*ao colo da minha mãe* must not be left thinking she answered the wrong question.
+
+**The separation between places and moments existed only in the words.** Every
+figure is a place and a moment at once, and dividing in the question what the
+image does not divide would have been an arrangement rather than a distinction.
+
+**What actually separates the two positive families is the body**, not the type of
+question: activated in happy, deactivated in calm. Both ask where, with whom, and
+what the body does.
+
+### D-278 `[IMPLEMENTATION]` The calm schema is the map of the system
+`scripts/figure-calm-store.py`. **The only figure in the material that is not
+about one family.**
+
+The other five explain a mechanism. Calm has none — nothing to bring down,
+nothing maintaining it, nothing to correct. What it has is the thing no other
+family has: **it points outwards.** The store fills here and is spent elsewhere.
+
+So the figure is the store at the centre with arrows leaving it: to **assustado**,
+which needs the calm body in order to stay; to **zangado**, which needs it to come
+down after the peak; to **triste**, which needs to know where her place is.
+
+**It is the only place in the whole material where the seven families are visibly
+one system** rather than seven separate things.
+
+A body map was considered for this figure and rejected for the reason in D-276.
+The two versions are further apart than in any other family: a map is abstract,
+and the child's carries fewer words and no explanation.
+
+### D-279 `[IMPLEMENTATION]` The calm workbook's prose — thirteen pages
+Section 9 is a stub. It opens with an instruction that no other workbook has:
+**this is the one applied first.** Applied last, it arrives too late.
+
+Decisions inside it:
+
+- **No breathing in this family**, and the workbook says why: breathing already
+  lives in angry and scared, where it exists to bring an activation down, and here
+  there is nothing to bring down. It would turn this into a relaxation manual and
+  lose what distinguishes it.
+- **Section 3 is the shortest in the material**, because there are no strategies
+  and no per-option evidence to grade. What it carries instead is what to notice —
+  including that **a child who can name no calm place may not have one**, which is
+  the most important thing this activity can hear.
+- ***Seguro* is named as the heaviest of the three fine words**, and the one that
+  can leave the workbook: it is the exact opposite of scared, and *onde é que não
+  te sentes segura* belongs to this family as much as to that one.
+- ***Tranquilo* is carried as an unresolved problem** rather than quietly used
+  (D-161): it is the family again under another name. The workbook says so, gives
+  the practical distinction that saves it for now — calm **after** something — and
+  records *satisfeito* as the proposed replacement.
+- **The missing word is the most curious of the seven families:** all three fine
+  words presuppose a *before*. **There is no child's word for calm that came after
+  nothing** — the baseline state, where a child spends most of her good days, and
+  which for having no name goes unnoticed. **It is the linguistic version of *a
+  calma não faz barulho*.**
+
+**Section 10 says the family treats nothing**, and that a child who cannot name a
+single calm place may simply not have one — which is not solved with worksheets.
+And **nothing here measures**: a store that is measured stops being a store and
+becomes a target.
+
+### D-280 `[IMPLEMENTATION]` The calm family's sheets, and the one that carries the store out
+`docs/materials/calmo-fichas.html`. Nine for the child, one for whoever applies
+it, one for the family. Twelve pages in the child's book.
+
+Three rules govern this file and none of them governs any other:
+
+- **The first sheet is about now, not about remembering.** *O meu corpo agora*
+  asks what her body is doing at that moment, in the room, and ends by saying
+  **não há resposta certa, e não é preciso que o teu corpo esteja calmo agora.**
+  Only after it does *Onde e quando* make sense, because only then does she know
+  what she is looking for.
+- **No breathing and no exercise of any kind.** This family gathers; it does not
+  produce the state.
+- **Tone words, never zones.** The word list on sheet 2 is *mole · duro · quieto
+  · a mexer · devagar · depressa · pesado · leve · solto · apertado* — every one
+  of them about the whole body.
+
+***O meu depósito* is the sheet that makes this family part of the system.**
+Three lines — *quando eu estiver com medo · zangada · triste, vou buscar…* — and
+it closes with **guarda esta folha; não é para hoje.** It is the only sheet in
+the project written to be used in a different family's session.
+
+**Two others carry decisions:**
+
+- ***Demorar-me*** is the savouring sheet, and it asks her to tell one small good
+  thing **slowly**, with what could be seen and heard. It is the only part of
+  this family with a base of its own, and it is graded reasonable.
+- ***Seguro*** asks where and with whom — and **whether it is the place or the
+  person**. That last question is the one that can take the session out of this
+  workbook, and the guidance says so.
+
+**The letter opens by naming what it is:** *esta é a única destas cartas que não
+é sobre um problema*. It asks parents to notice rather than produce, and carries
+the caution that is easiest to miss: **a room used as punishment cannot be her
+calm place** — the body learns what a place means, and that meaning does not
+divide in two.
+
+**A fault caught before printing:** markdown asterisks do not render inside the
+sheets file, and a `**…**` in the letter would have printed as literal asterisks
+on the page a family takes home. Checked for explicitly now, alongside the age
+ranges.
+
+### D-281 `[IMPLEMENTATION]` The calm family's nine guides — and the family is closed
+Twenty-five pages, thirty-six dynamics, each guide whole on its own page.
+
+Cautions in these guides that are rules rather than advice:
+
+- **Sheet 2:** it is not necessary for her to be calm, and the sheet says so.
+  **Asking her to become calm turns this into an exercise**, which is exactly
+  what this family is not.
+- **Sheet 3:** a child who can name no calm place **may not have one**. It is not
+  a vocabulary failure and it is not solved by pressing.
+- **Sheet 4:** do not praise the story. **Praise turns savouring into
+  performance**, and she starts telling it to please.
+- **Sheet 5 and 6:** if she cannot tell *tranquilo* from *calmo*, accept it and
+  move on. **The problem is the word's and not hers** — do not build a
+  distinction the language does not support.
+- **Sheet 7:** do not link rest to merit. *Descansaste porque trabalhaste* is an
+  adult's sentence and installs a condition where none is needed.
+- **Sheet 8:** it is the one that can take the session out of this workbook.
+
+**Sheet 9 carries the only caution in the project about what happens after the
+session ends:** *guardar a folha e voltar a ela nas outras famílias.* **A
+depósito sheet that stays in the file and is never reopened has done nothing** —
+it is the only sheet in the material whose value depends entirely on being
+reopened, and the family dynamic exists to make that agreed rather than hoped
+for.
+
+Two dynamics ask the child for what the language cannot give: **what word she
+would use for calm that came after nothing**, and **what word she uses at home**,
+which is often none of the three.
+
+**Six families are closed: angry, sad, scared, ashamed, bored, calm.** One
+remains — feliz — and it is the other half of D-274: activated where calm is
+deactivated, memories and people where calm has places and body tone. **If it
+comes out reading like a rewrite of this one, D-274 was wrong.**
+
+---
+
+# Increment 39 — The happy family (2026-08-17)
+
+### D-282 `[DEFINED]` The happy family: *a alegria acontece — e o que fizeres com ela é que fica*
+**Happiness is the one family of the seven that a child already recognises.**
+Calm makes no noise and slips past; happiness makes noise — the body laughs,
+moves, wants to tell. Nobody needs teaching to notice it.
+
+**So what this family works is not noticing but keeping.** That is why savouring,
+which was one of three layers in calm, is nearly the whole of this one.
+
+**Four candidates, and the recommended one was wrong.** It read *a alegria passa
+depressa — mas o que fizeres com ela fica*, and Ricardina asked why it passes
+quickly. **There is no basis for saying it does.** Sadness can last weeks, anger
+minutes, and happiness varies like the others; the claim was smuggled in as
+atmosphere.
+
+**What was actually meant was a different claim** — that a bad moment repeats
+itself unbidden and a good one has to be held or it leaves nothing behind. **The
+asymmetry between what the bad and the good leave behind is on much firmer
+ground.** But said to a child, *a alegria não deixa rasto* is a sad sentence: it
+tells her the good is fragile, and no family opens by telling a child that what
+she feels is slight.
+
+**Adopted, with no claim about duration at all:**
+
+> **A alegria acontece — e o que fizeres com ela é que fica.**
+
+**The child's version:** *a alegria vai e vem — o que ficar guardado, ficaste tu
+que guardaste.*
+
+**And it separates happy from calm exactly where D-274 required.** **Calm gathers
+what was already there and unseen; happy keeps what was in plain sight and was
+going to go.** One is noticing, the other is retaining — and the questions, the
+sheets and the figure all come out different because of it.
+
+**Recorded as a rule, because it was caught rather than avoided:** an atmospheric
+claim about how a feeling behaves is still a claim. *Passa depressa* had no
+evidence, no grading, and no reason to be there beyond sounding right.
