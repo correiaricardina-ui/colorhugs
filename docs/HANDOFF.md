@@ -87,6 +87,13 @@ child-alone rules, because a printed sheet does not choose who is in the room.
 variety, never performance. No streaks that can break — a streak that breaks is
 a punishment.
 
+**A family workbook is built to a fixed recipe** — three PDFs from one source,
+for the clinician, the child and the parents. `docs/WORKBOOK-RECIPE.md` holds
+the section order, the sheet menu, the non-negotiable rules (boxes not lines,
+nothing printed inside a box, the child's page speaks to her not about her) and
+the list of faults that were invisible in the file and obvious on the printed
+page. Angry is the worked example.
+
 **The house style is kawaii, Jellycat soft toy, cozy** — fat squashy shapes,
 thick bold outline, nothing rigid or elegant. It governs **every** image in the
 project, colouring pages included, and lives in `docs/ART-DIRECTION.md`, which

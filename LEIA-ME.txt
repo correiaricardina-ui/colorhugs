@@ -1,21 +1,17 @@
-COLORHUGS — projecto completo, 16 de agosto de 2026
+COLORHUGS — projecto completo, 17 de agosto de 2026
 ====================================================
 
-Repositório inteiro, sem node_modules. Substitui todos os pacotes anteriores.
+A RECEITA PARA AS PRÓXIMAS SEIS FAMÍLIAS
+  docs/WORKBOOK-RECIPE.md
 
-COMO USAR
-  Substitua o conteúdo do repositório por este, faça commit, e depois:
-      npm install
+  Quatro saídas, dois ficheiros a editar:
+    docs/materials/<familia>-caderno.md      a prosa
+    docs/materials/<familia>-fichas.html     as fichas
 
-NOVO NESTA VERSÃO
-  scripts/build-workbook-pdf.py — o caderno passa a compor-se em PDF
-      python scripts/build-workbook-pdf.py angry
-      -> docs/materials/zangado-caderno.pdf   (10 páginas, com capa)
+  python scripts/figure-workbook-cover.py <familia>
+  python scripts/build-workbook-pdf.py <familia>
+  python scripts/build-card-deck.py [locale]
 
-  os dois lockups com "Pediatric Psychology" corrigido
-  a página de espera sem a faixa da marca
-  "Queres dizer melhor?" no ecrã do corpo; saída das estratégias no zangado
-
-Commit sugerido:
-
-  feat: build the practitioner workbook as a PDF (D-168)
+O ZANGADO ESTÁ COMPLETO
+  zangado-caderno.pdf · zangado-exploracao.pdf · zangado-pais.pdf
+  baralho/baralho-pt-PT.pdf

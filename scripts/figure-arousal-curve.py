@@ -51,4 +51,12 @@ ax.text(0,-0.30,"Esquema ilustrativo. Não representa medições.",
 
 plt.tight_layout()
 plt.savefig("curva.png",bbox_inches="tight",facecolor="white")
+
+# A second version for the child's own page. Same curve; the line addressed to
+# the clinician — *mesmo que ela ache que não* — is about her rather than to
+# her, and has no place on a page she reads herself (D-189).
+for t in ax.texts:
+    if "estrat" in t.get_text():
+        t.set_visible(False)
+plt.savefig("curva-crianca.png",bbox_inches="tight",facecolor="white")
 print("ok")

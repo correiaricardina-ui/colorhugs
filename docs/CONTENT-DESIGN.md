@@ -507,3 +507,19 @@ there is one finished activity to learn from.
    question, legal input required.
 5. ~~**Is any of My Inner World visible to the parent?**~~ **Answered: no**
    (D-098). Nothing is shown to the parent, and the parents page says so.
+
+
+---
+
+## Music
+
+**A thread, not a section** (D-169). It appears inside activities that already
+exist, never as an eighth door:
+
+- **Calm My Body** — sound for regulation.
+- **Learning Hub** — rhythm and phonological awareness.
+- **Brain Gym** — rhythmic sequences for memory.
+
+**The licensing trap:** any recognisable melody is licensed, and traditional
+children's songs are not an escape — the melody may be public domain, the
+arrangement and the recording are not. Assume everything must be composed.

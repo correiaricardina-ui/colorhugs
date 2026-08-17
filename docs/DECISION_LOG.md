@@ -2700,3 +2700,636 @@ page break gave sixteen pages, half of them ending in white space with a heading
 stranded at the foot of the previous one. The rule is a section separator, not a
 break; the heading rule already separates sections visually. Ten pages, and no
 heading now sits alone at the bottom of a page.
+
+### D-169 `[DEFINED]` Music is a thread, not an eighth section
+Proposed as an eighth section beside the seven. **Rejected as a section,
+accepted as a thread.**
+
+**The product already promises too much.** Seven sections and thirty-one
+activities, of which one is built. A child opening the site today meets thirty
+tiles saying *being made*. An eighth door before the first room is furnished
+widens that gap — and the gap between what is promised and what exists is what
+makes a parent give up.
+
+**And the intellectual-property risk is the largest in the project.** Any
+recognisable melody is licensed. Traditional children's songs are not the
+escape they appear to be: the melody may be public domain, but the arrangement
+and the recording almost never are. A music section without a licensing budget
+means composing everything from scratch — and twenty-six spoken lines are not
+generated yet.
+
+There is a hosting cost too: the site is static on GitHub Pages, and the audio
+layer built so far is sized for speech.
+
+**As a thread it enters through the door of the problem it solves**, inside
+sections that already have a reason to exist:
+
+- **My Inner World / Calm My Body** — sound for regulation, the use with the
+  longest clinical tradition.
+- **Learning Hub** — rhythm and phonological awareness, one of the
+  better-established links between music and reading.
+- **Brain Gym** — rhythmic sequences for memory.
+
+Nothing in the architecture changes, no new section is announced, and each piece
+is born inside an activity that already justifies itself.
+
+**Still to decide when the first piece is built:** whether the sound is composed
+for ColorHugs or licensed, and where the files live. Neither blocks anything
+today.
+
+---
+
+# Increment 30 — What the workbook is made of (2026-08-16)
+
+### D-170 `[DEFINED]` One workbook, three layers — never two documents
+Proposed: a second workbook for parents. **Rejected.**
+
+**A parents' workbook cannot exist in the form of a workbook.** What serves a
+family is the printed sheet, the card, the colouring page — things that close
+themselves (D-094, D-095). A workbook is made of exploratory questions and
+dynamics, which are things that open. A parents' version would either be
+hollowed out until useless, or it would be material that opens on a kitchen
+table with nobody there to receive it.
+
+**But guidance for parents belongs inside the practitioner workbook**, because
+there it is not material handed to a family — it is **the clinician knowing what
+to say to the parents**. A section on what to say to a father who asks why she
+does not listen when she is like that is content for whoever applies it, even
+though its subject is parents.
+
+It is also where the evidence is strongest: **parent-mediated intervention is
+among the best supported approaches at this age**, and leaving it out would mean
+leaving out the best-supported thing we have.
+
+**Three layers, one document:**
+
+1. **The workbook** — the clinician's, and it opens.
+2. **A parent-guidance section inside it** — also the clinician's: what to say,
+   what to correct, what to avoid.
+3. **Take-home sheets, as an annex** — the family's, and they close themselves.
+
+This avoids the worst outcome, which is two documents with overlapping content
+drifting apart over time.
+
+### D-171 `[DEFINED]` The therapeutic bases the workbook may draw on
+The workbook reaches only people with training, so it may rest on things a
+family material never could.
+
+**In:**
+- **Emotion-focused therapy for children and parents** — the only one here that
+  treats emotion as information rather than as something to manage, and the
+  closest fit to the vocabulary already built. Reasonable, and growing.
+- **Systemic and family approaches** — a child's anger happens inside a system,
+  and sometimes what changes is the adult's response.
+- **Parent–child interaction principles (PCIT and kin)** — probably the
+  best-established evidence in this whole list for behaviour difficulties at
+  pre-school age. **Principles only: it is a programme with its own training,
+  and we may not imply the protocol.**
+- **Structured play therapy** — the natural vehicle from four to seven, and the
+  material is already half a game. Evidence uneven by branch; say so.
+- **Narrative therapy** — externalising *the Anger* as a character separate from
+  the child fits the red heart already drawn. Practice, with little controlled
+  research.
+- **Child-adapted mindfulness**, sparingly — partly present already in the
+  breathing strategies, and thinner than its popularity suggests.
+
+**Out, deliberately:**
+- **Psychodynamic** — it does not turn into worksheets without becoming
+  interpretation, which is the line this material does not cross (D-109).
+- **EMDR and trauma-focused work** — requires assessment and a frame a workbook
+  cannot presume. Material that suggests trauma work to whoever bought it online
+  is not a risk worth taking.
+
+**Provenance goes in the grading, not in the structure.** Each model has its own
+vocabulary, and a workbook that changes vocabulary every two pages confuses
+rather than enriches. The workbook is organised by **what is done with the
+child**; the model is named on the label beside the evidence level — *base:
+externalisation, narrative therapy, practice*.
+
+### D-172 `[DEFINED]` One source, two PDFs
+The workbook and the child's sheets are **two files built from one source**, not
+two documents written separately — same reasoning as D-170: separate sources
+drift, and a colleague ends up with two versions that no longer agree.
+
+It also fixes a problem noticed only when thinking about printing: as it stands,
+handing a sheet to a child means printing page nine of a document that carries
+evidence gradings and limits, which have no business on the table between them.
+
+- **Caderno de aplicação** — the whole thing, read once.
+- **Fichas da criança** — the fillable pages alone, printed as often as needed.
+
+One script produces both.
+
+### D-173 `[DEFINED]` Four sheets in angry, chosen per family thereafter
+Not a fixed grid across the seven. **Externalising suits angry and scared; the
+*lonely* card almost certainly asks for something else.** Each family picks its
+own from the set of types.
+
+The four for angry, one from each base, deliberately different so the moulds get
+tested against each other:
+
+| | Base | Kind |
+| --- | --- | --- |
+| O que acontece antes | behavioural — triggers | child's sheet |
+| A Zanga vem visitar | narrative — externalising | child's sheet |
+| As palavras finas | ColorHugs' own vocabulary | child's sheet |
+| O que dizer aos pais | parent-mediated | guidance page |
+
+**ACT is deliberately held back** — defusion, making room, values. It has the
+thinnest base and depends most on age. It joins the second round, once these
+four have been seen in use.
+
+**Each sheet is both things:** a page the child fills in, and text around it in
+the workbook telling whoever applies it what to ask and what to watch for.
+*O que dizer aos pais* is the exception — it is read, not filled in.
+
+### D-174 `[DEFINED]` Structure in code, illustration only where it is needed
+Mixed, rather than all-drawn or all-generated. The structure — fields, rules,
+typography — is drawn in code, so it regenerates when a word changes and so the
+sheets exist today. **A generated sheet with fields would come back with
+deformed text inside them**, which is exactly what generators do worst.
+
+Illustration is generated only where a sheet actually needs one: *A Zanga vem
+visitar* needs a large drawing space; *O que acontece antes* probably needs no
+picture at all. One or two generations, not four.
+
+### D-175 `[DEFINED]` Each sheet states its own age range
+The material spans four to nine, and **that span does not work on a single
+sheet**: a four-year-old writes nothing and orders no words; a nine-year-old does
+both and finds a drawing-only page babyish.
+
+Rejected: one mid-range version of everything (serves both ends badly), and two
+versions of each sheet (doubles the work, eight pages for four).
+
+**Each sheet is written for the age at which it makes sense, and says so in the
+corner.** *A Zanga vem visitar* is drawing, so four to seven. *As palavras finas*
+needs reading, so seven to nine. The workbook covers the span through the set,
+not through each piece.
+
+**The risk to watch:** if three of four land at the younger end, a nine-year-old
+is left with one. The four are distributed deliberately — two down, two up.
+
+### D-176 `[IMPLEMENTATION]` The four angry sheets, and the second PDF
+`docs/materials/zangado-fichas.html` defines them; `build-workbook-pdf.py`
+produces both files from it. Sixteen pages of workbook, four pages of sheets.
+
+| Sheet | Age | Base |
+| --- | --- | --- |
+| O que acontece antes | 7–9 | behavioural, triggers |
+| A Zanga vem visitar | 4–7 | narrative, externalising |
+| As palavras finas | 7–9 | vocabulary |
+| O que dizer aos pais | practitioner | parent-mediated |
+
+Two down, two up, as D-175 required.
+
+**The arrow on sheet three is not a scale.** Three boxes, one per fine word, and
+a line beneath saying anger sometimes starts at one word and moves to another.
+That is a true statement about anger, not a request that the child rate herself
+— which would reintroduce the intensity D-096 removed. The distinction is that
+she is **recognising words**, not grading a feeling.
+
+**The externalising sheet carries its own warning**, in the workbook text
+beside it: externalising is not handing responsibility to the Anger. If a child
+says *the Anger hit him*, the answer is that the Anger arrived **and** the hand
+was hers. Both at once, without choosing.
+
+Two faults, both found by looking at the printed pages rather than the source:
+the explanatory HTML comment at the top of the sheets file printed as body text,
+and the guidance page spilled a few lines onto a fifth sheet, stranding one
+paragraph alone. Comments are now stripped, and that page sets slightly tighter.
+
+### D-177 `[IMPLEMENTATION]` Running header and footer, and the drawing fills the sheet
+Every page carries the family and the document above, and `colorhugs.pt ·
+Material licenciado` with a page number below — **except the cover**, which is
+printed separately with no margin and no running elements. A header across a
+finished composition is a caption on a painting.
+
+Chromium prints the running elements into the page margin, so the margins moved
+out of the stylesheet and into the print call.
+
+**The artwork now takes every millimetre the rest of the page does not need**,
+because that is where the child draws. The sheet is a flex column and the figure
+is the part that stretches.
+
+**One fault worth recording**, because it will happen again: the sheet was given
+a *minimum* height, and a percentage height inside a flex column needs a
+*definite* one — so the drawing grew until each sheet spilled onto a second
+page. A4 less the printed margins is 260mm; the sheet is 256mm.
+
+### D-178 `[DEFINED]` The child's sheets open with an identity page
+A name, an age, and a frame to draw herself in — reusing the same frame as the
+externalising sheet rather than generating another.
+
+**A first name and an age, and nothing else.** No surname, no school, no
+address: a sheet that travels between a clinic and a home should not be able to
+identify a child to whoever finds it. Data minimisation applies to paper.
+
+### D-179 `[DEFINED]` The exploration covers the derivatives, not only the family
+Section 5 now asks about **chateado, irritado and furioso** separately, each
+with its own questions and its own caution:
+
+- *Chateado* — the most ambiguous word in European Portuguese; it serves mild
+  anger, sadness and boredom alike, so do not assume which.
+- *Irritado* — usually has a near, repeated target. **If the child names the
+  same person every time, that is the finding.**
+- *Furioso* — a child uses it to ask to be taken seriously rather than to
+  measure. The useful question is what happened next, not how big it was.
+
+Plus questions across the three: which she says at home and at school, whether
+one has never been said aloud, whether an adult around her uses any of them.
+
+A dynamic was added to match: the three words on three slips, one story each.
+**The one that is missing says something.**
+
+### D-180 `[DEFINED]` One sheet per fine word, plus the set sheet
+Seven sheets for angry, not four. The overview sheet stays; each derivative gets
+its own — **a child who needs to tell *chateado* from *irritado* will not do it
+in a three-line box.**
+
+**The sheets use the cards the child already met on screen.** Twenty-four fine
+cards were drawn and were being used only in the app; the vocabulary sheet had
+three empty boxes where it could have had the three characters. Paper and app
+are now recognisably one thing, and recognising the figure saves her an
+explanation.
+
+Each sheet asks something different, so the three are not one template with the
+name swapped:
+
+- **Chateado** — the most useful of the four, and the only one that exists
+  because of Portuguese. It puts the three **mother** cards in front of her —
+  angry, sad, bored — and asks which one it was, then asks for a time it was a
+  different one. *What to watch: if she always picks the same, the word is doing
+  work that another word should be doing.*
+- **Irritado** — what repeats, where, what has helped. *If she names the same
+  person every time, that is the finding.*
+- **Furioso** — the aftermath rather than the size: who noticed, what happened
+  once it passed. *A child who says nobody noticed is saying two things at once.*
+
+Across the seven families this means **24 individual sheets** eventually. The
+mould is written once; each is filling in.
+
+### D-181 `[IMPLEMENTATION]` The identity page has its own portrait space
+It was reusing the externalising frame. **The same picture on two sheets makes
+the second look like a repeat**, and these two ask for opposite things — one for
+her own face, one for the Anger's.
+
+Drawn in code for now: a soft rounded field labelled *Eu*. A plush hand-mirror
+has been prompted to replace it, which suits the page better than a picture
+frame — a mirror is what you look into to draw yourself.
+
+### D-182 `[DEFINED]` The missing sheet: *Da próxima vez*
+Nothing in the workbook asked the child what she could do differently. **A real
+gap**: generating alternative responses and choosing one is problem-solving
+training, among the best-studied things behavioural work offers at this age.
+
+**It is not the cognitive reappraisal this material excludes** (section 9).
+Reappraisal is *seeing the situation differently*, developmentally out of reach
+for a small child. This is *what I do next*, which is behavioural and within
+reach. Different things, and the workbook now says so, because the two are easy
+to confuse and one of them we have promised not to do.
+
+**The wording is the part that matters.** *What should you have done* is a
+telling-off dressed as a worksheet, and a child sees through it immediately. The
+sheet asks **da próxima vez, o que queres experimentar** — forward, with no
+verdict on what already happened.
+
+It uses the five strategies already drawn, so the child recognises the same five
+pictures she met on screen, and leaves room for an idea of her own. *What to
+watch: whether she picks one of ours or invents one. Her own is worth more —
+it is the only one that arrives with her situation already inside it.*
+
+A last line is for afterwards: what happened when she tried it. That closes the
+loop from experiment to result, which is the whole point of the behavioural
+frame.
+
+### D-183 `[DEFINED]` *Compor as coisas* — the repair sheet
+Two speech bubbles: what she wants to say, and what she can say later if the
+other person will not talk yet — because **a refused repair is not a failed
+repair, it is a repair with different timing.**
+
+**Practice**, with indirect support: it is what the guilt–shame distinction
+predicts. Guilt moves toward repair, and repair is one of the few things a small
+child can actually do after anger. It is also the sheet that connects to
+*arrependido*, the only fine card in the deck that reaches toward the viewer.
+
+**The error this sheet exists to avoid.** An adult-ordered *say sorry* produces
+compliance, not repair: the child learns the formula that makes the adult stop
+and learns nothing about the other person. So the sheet asks **what do you want
+to say**, and the word *desculpa* appears nowhere on it.
+
+**Two cautions written into the workbook.** Do not use it on the day — while
+arousal is still coming down, repair is not yet possible, which is what the
+schema in section 4 explains. And *what to watch*: whether she writes about what
+she did or about what she felt. **A child who can only explain herself has not
+yet reached the other person, and that is information rather than failure.**
+
+### D-184 `[IMPLEMENTATION]` The mirror, and a background that was not white
+The identity page now carries a plush hand mirror, replacing the field drawn in
+code. **A mirror is what you look into to draw yourself**, which suits the page
+better than a picture frame, and it is visibly not the externalising frame.
+
+**A fault worth recording.** The generator's background is a shade off pure
+white, and the alpha cut was measured against pure white — so every worksheet
+image carried a faint grey panel behind it, invisible on screen at small size
+and obvious on a printed sheet. The threshold now cuts at 248 rather than 255,
+and all four worksheet images were reprocessed.
+
+It is the same lesson as the rest of this project: **the fault was invisible in
+a thumbnail and plain in the artefact.** Look at the printed page, not the file.
+
+### D-185 `[DEFINED]` Boxes, not ruled lines — every sheet takes a drawing
+The sheets were written to be filled in with writing. **That excludes more than
+the youngest children**: any child with a written-language difficulty, who is
+precisely the child a psychologist has in front of her. A material for clinicians
+that fails on dyslexia fails at its own job.
+
+Rejected: two versions of each sheet, drawing and writing. That doubles the work
+to eighteen sheets a family and forces the clinician to choose before she knows
+the child.
+
+**Every ruled line became an empty box**, sized to the writing it replaced, and
+**each box says what is wanted** — *escreve ou desenha o que se repete*, *aponta,
+escreve ou desenha o que aconteceu*. A box takes a sentence, a drawing, or both,
+and nobody has to decide in advance.
+
+The four table columns carry the same hints, including *nome ou desenho*. That
+sheet stays the most writing-dependent of the nine, by its structure; with a
+younger child the adult writes while she talks, which is what happens in a
+session anyway.
+
+Some boxes point at the cards instead: *escreve a palavra ou aponta para a
+figura*. Twenty-four fine cards and seven family cards are already drawn, so a
+child who does not write can answer by pointing.
+
+### D-186 `[DEFINED]` *Assinala*, not *aponta* — and one treatment for every box
+**Pointing leaves nothing behind.** A child who points answers in the moment and
+goes home with a blank space, and the whole point of paper is that she takes it
+with her. Every prompt now says *assinala*.
+
+**No art inside the boxes.** Two treatments were built and compared on the
+printed page:
+
+- *soft* — a warm fill, no outline. Gentler, and **invisible in a black-and-white
+  photocopy**, which is how much of this will be printed.
+- *corner* — a small heart in one corner. It looked good, and it quietly took
+  that corner away from the child: a large drawing would have to go round it.
+
+**Adopted: a warm fill *and* an outline.** Survives the photocopier, belongs to
+the project, and the middle stays empty — which is the rule the corner motif
+broke. The middle of a box is where the child draws, and anything printed there
+competes with her and tells her where she may not go.
+
+### D-187 `[IMPLEMENTATION]` Boxes grow to fill the sheet
+`data-lines` stopped being a height in millimetres and became a **share**: a box
+asking for three gets three times the leftover space of one asking for one. The
+sheet is a flex column, prompts keep their natural size, and the boxes take
+everything that is left.
+
+The result is a page that fills itself whatever else is on it, and **a child who
+gets room to draw rather than room to sign her name**. Table rows grew to 26mm
+for the same reason.
+
+**A fault the experiment exposed**, worth recording because it was silent: the
+regular expression that turns a box into HTML assumed the box carried no other
+attributes. The experiment added a class and a style, and **every one of those
+boxes vanished from the page without an error** — the page simply rendered
+without them. Now tolerant of any attributes.
+
+A second, from the same run: giving the card figures a flex column stretched the
+emotion cards wide. `object-fit: contain` restored their proportions, and the
+caption box below takes the leftover height instead.
+
+### D-188 `[DEFINED]` Three files from one source, and each addressed to one reader
+- `zangado-caderno.pdf` — everything, for the clinician.
+- `zangado-fichas.pdf` — the child's sheets.
+- `zangado-pais.pdf` — one page, for the family to take home.
+
+Sheets are tagged `data-for` and the build selects. **What to say to the parents
+left the child's book**: it is written for whoever applies the material, and a
+page that talks over a child's head has no business in something she carries.
+
+The parents' page is the take-home layer D-170 described, now real: it **closes
+itself** (D-095) — nothing on it asks a question that needs someone present to
+receive the answer. Everything that opens stayed in the workbook. It carries the
+family's own card, so a parent recognises what the child has been holding.
+
+### D-189 `[DEFINED]` The child gets psychoeducation written to her
+The child's book had nine things to fill in and nothing that told her anything.
+It now opens with **A Zanga**: three statements and the schema, with nothing to
+complete.
+
+The three are the workbook's own foundations in her language: anger appears when
+something seems unfair; **anger is not bad** — it is the body saying something
+matters; and **being angry is not the same as doing harm**, which is the
+distinction the whole workbook rests on.
+
+**The schema needed a second version.** The one in section 3 carries a line
+addressed to the clinician — *aqui a estratégia ainda está a agir, mesmo que ela
+ache que não*. That sentence is **about** the child rather than **to** her, and
+on a page she reads herself it talks over her head. `figure-arousal-curve.py`
+now writes both; the child's page uses the one without it, and closes on the
+same idea in her own terms.
+
+### D-190 `[DEFINED]` The workbook recipe is written down
+`docs/WORKBOOK-RECIPE.md`, and `HANDOFF.md` points at it. **Written after the
+fact, from what the angry build actually needed**, so it records rather than
+predicts.
+
+It holds the three-file structure, the section order, the sheet menu with ages
+and bases, the grading rules and permitted therapeutic bases, and the
+non-negotiables: boxes never lines · *assinala* never *aponta* · nothing printed
+inside a box · boxes grow to fill the page · reuse the deck before generating
+art · the child's page speaks to her, not about her · the identity page asks a
+first name and an age and nothing else · the parents' page closes itself.
+
+It ends with the list of faults from the angry build, because **every one of
+them was invisible in the source and obvious on the printed page**: a comment
+printed as body text, a paragraph stranded on an extra sheet, an off-white
+background printing as a grey panel, cards stretched by a flex column, and boxes
+that vanished without an error because a regular expression assumed no extra
+attributes.
+
+**The angry family is closed** — interactive, printable, and the professional
+line in three files for three readers.
+
+### D-190 `[DEFINED]` The child's book is a *Caderno de exploração*, with its own cover
+It had none — it began at the identity page, which made it read as a printout
+rather than as hers.
+
+Same composition as the workbook cover, with two differences that matter:
+
+- **The plain ColorHugs logo, never the endorsed professional lockup**
+  (D-063, D-065). The endorsement is addressed to a colleague; a child holding
+  her own book has no use for a credential.
+- **No licensing strapline and no clinical disclaimer.** Both speak over her
+  head, and the child's material does not do that (D-189).
+
+`figure-workbook-cover.py <family>` now writes both covers in one run, and the
+file is `<familia>-exploracao.pdf`.
+
+### D-191 `[DEFINED]` `docs/WORKBOOK-RECIPE.md` — how the next six get built
+Written from what the angry build actually needed rather than from a plan: the
+three files and their readers, the eleven workbook sections in session order,
+the sheet menu with ages distributed, the non-negotiable rules (boxes not lines,
+*assinala* not *aponta*, nothing printed inside a box, boxes that grow, reuse the
+deck), the grading discipline, and the list of faults that were invisible in the
+source and obvious on the printed page.
+
+It exists so the next family is filling in rather than deciding again.
+
+### D-192 `[DEFINED]` The parents' page is a letter, not a handout
+It was five sections of advice, written in the workbook's register. **Rewritten
+as a letter addressed to the parents themselves.**
+
+The strategies belong in the intervention, not on the sheet that leaves the
+room. What the letter carries instead is **systemic framing and care for the
+adult**:
+
+- A child's anger happens in a house, between people, on a day that was already
+  hard. Said explicitly **not to hand out responsibility** but because it is why
+  their part counts.
+- **It is exhausting**, nobody does it well every day, and one bad day does not
+  undo the rest. *A relationship is not judged on its worst minute.*
+- **Look after yourselves.** An adult at their limit cannot lend calm to anyone,
+  so sleeping and eating are part of the work rather than time taken from the
+  child.
+
+It ends relationally rather than instructionally: *if something here does not
+fit your house, tell me next time — this is written with you, not for you.*
+
+**A correction worth recording:** *FBT* names the Maudsley family-based
+treatment for eating disorders specifically. What this letter draws on is
+systemic family thinking generally, which is what was meant, and the workbook
+says the latter.
+
+### D-193 `[DEFINED]` The clinician's table becomes a clinical record
+A flat ten-row table nobody would fill in during a session. **Restructured into
+four blocks, and the order is the argument:** what was done · what was seen ·
+what is read from it · what was agreed.
+
+**Observation is kept apart from interpretation on purpose.** What the child
+said and what it means are different things, and putting them on one line is how
+the difference gets lost — the same principle that keeps the workbook from
+telling a clinician what an answer means (D-144).
+
+**No name on it.** A code or the clinician's own case reference: a working sheet
+does not need to identify anyone, and it does not replace a case file.
+
+Two faults caught on the printed page: the record's tables had empty heading
+rows printing as grey stripes, and the writing cells had no borders at all — a
+form to fill in with nowhere to write.
+
+### D-194 `[DEFINED]` The workbook carries guidance about each sheet, not the sheets
+The worksheets were bound into both files. **Removed from the workbook**: they
+live in the child's exploration book, a licence gives both files, and printing
+them twice makes two copies that can drift apart.
+
+What the workbook carries instead is **one page per sheet**, generated by
+`scripts/build-sheet-guides.py`, with the same seven rows every time — age,
+base, objective, how to run it, what to notice, cautions — then the exploration
+questions, then **space to record the session it was used in**, identified by
+code and never by name.
+
+Generated rather than written by hand because there are nine per family and
+**sixty-three in all**: the shape must be identical every time, and a table
+written out sixty-three times drifts.
+
+### D-195 `[DEFINED]` Never *você* or *vocês*
+In all Portuguese materials, address the reader as *vós* or name them — *os
+pais*, *quem cuida*, *a criança*. The parents' letter was rewritten accordingly.
+
+### D-196 `[IMPLEMENTATION]` The workbook sets smaller than the sheets
+9.2pt against 10.5pt. It is a technical document read by a professional; the
+sheets are read by a child, and the two should not be set the same. Twenty-one
+pages rather than twenty-nine.
+
+### D-197 `[DEFINED]` One guide, one page — and dynamics per sheet, banded by age
+**Each sheet's guidance now begins on its own page and ends on it.** Looking up
+sheet nine should not turn up the limits section halfway down it, and a guide
+split across a page break is worse still: the record box lands away from the
+guidance it belongs to. The guides set at 8.4pt so they fit.
+
+**Each guide gained its own dynamics**, four apiece, banded by who they suit:
+age ranges, plus *com a família* and *qualquer*. These are what that sheet opens
+up, distinct from the general dynamics in section 6, which stay where they are.
+
+Written to be genuinely different activities rather than restatements. Some
+examples of what that means:
+
+- *A Zanga vem visitar* → **ask her to draw the Anger of an adult in the house**.
+  It usually says more than her own.
+- *Chateado* → **three piles**: five situations sorted onto the three mother
+  cards. It shows her the ambiguity instead of explaining it.
+- *Da próxima vez* → **check where the chosen strategy is actually possible** —
+  school, car, classroom. Many are not.
+- *Compor as coisas* → **repair without speaking**, for children for whom words
+  are the hard part.
+
+Thirty-six dynamics for angry; **252 across the seven families**, which is why
+they are generated from a table rather than written into prose.
+
+### D-198 `[IMPLEMENTATION]` The physical deck — thirty-one cards, no new artwork
+`scripts/build-card-deck.py` lays the existing deck out for print: seven family
+cards and twenty-four fine cards, nine to a sheet of A4, with cut marks in the
+margin and a duplex-ready back sheet mirrored to line up.
+
+**The back is identical on every card.** If backs varied by family a child could
+read a card face-down, which silently ruins any dynamic that turns one over.
+
+**The deck carries the words**, unlike every other piece of artwork (D-081). A
+printed deck is made for one language and reprinted for the next, so there is
+nothing to gain by leaving them off and real usefulness to lose. Labels come
+from the language file, so `build-card-deck.py en` produces the English deck.
+
+Word size is fitted rather than fixed: *Entusiasmado* is more than twice the
+width of *Feliz*, and a deck where one word is visibly smaller reads as a
+mistake rather than as a long word.
+
+### D-199 `[DEFINED]` The deck does not sort by intensity
+Ordering the cards from smallest to biggest is the first dynamic anyone thinks
+of, **and it is the one thing this material has refused throughout**: no scales
+in the app (D-096), and the sheets ask the child to *name* rather than *grade*
+(D-147). Sorting them by size puts back by hand exactly what was taken off the
+screen.
+
+Nothing stops a clinician doing it; it is simply not something the material
+proposes. What the workbook proposes instead:
+
+- **by frequency** — which she says most, which she has never said
+- **by how hard it is to say out loud**
+- **by who is there** — home, school, alone
+- **by recognition** — which she knows in her body, which only by name
+
+**The last three yield clinical information; sorting by size yields a number.**
+
+### D-200 `[DEFINED]` The cards are 90×120mm, not playing-card size
+Small hands hold them. Four to a sheet instead of nine, and sixteen sheets
+instead of eight — **worth it**: a card a four-year-old can pick up, turn over
+and put down without knocking the pile over is more useful than a deck that
+prints economically.
+
+The figure and the word grew with the card rather than floating in more white
+space, and the border thickened to match.
+
+### D-201 `[DEFINED]` The recipe is rewritten from what the build actually took
+`docs/WORKBOOK-RECIPE.md` replaced, not amended. The first version was written
+before the sheets, the guides, the deck, the letter and the two covers existed,
+and described a shape the build then moved away from twice.
+
+It now carries: the four outputs and the two files to edit · the eleven sections
+in session order · the child's book · how to choose sheets per family · the
+non-negotiable rules · the grading discipline · and the pre-flight list.
+
+**Two things in it are worth more than the rest**, because they are the ones
+that cost the most to learn:
+
+**Find the governing distinction first.** Angry's is *anger is not aggression*,
+and everything else hangs off it. Candidates named for the others so the next
+build does not start from nothing: sadness is not depression · fear is not danger
+· shame is not guilt · boredom is not laziness.
+
+**Look at every printed page, not the source.** The list of six faults is
+reproduced there in full, because each was invisible in the file.
+
+Also linked from `docs/HANDOFF.md`, so whoever picks the project up finds it
+without knowing to look.

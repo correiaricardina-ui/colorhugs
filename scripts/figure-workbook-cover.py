@@ -50,6 +50,7 @@ FAMILIES = {
 }
 
 SUBTITLE = "Caderno de aplicação"
+CHILD_SUBTITLE = "Caderno de exploração"
 STRAPLINE = "Material licenciado · Uso profissional"
 DISCLAIMER = (
     "Ferramenta psicoeducativa. Não diagnostica, não avalia\n"
@@ -78,7 +79,18 @@ def centred(draw, text, y, font, fill, spacing=18):
     return y
 
 
-def build(family_id: str) -> str:
+def build(family_id: str, child: bool = False) -> str:
+    """The cover.
+
+    `child=True` builds the cover of the child's exploration book. Two things
+    change, and both matter:
+
+    * **The plain ColorHugs logo, never the endorsed professional lockup**
+      (D-063, D-065). The endorsement is addressed to a colleague; a child
+      holding her own book has no use for a credential.
+    * **No licensing strapline and no clinical disclaimer.** They are addressed
+      over her head, and the child's material does not do that (D-189).
+    """
     family = FAMILIES[family_id]
     page = Image.new("RGB", A4, "white")
     draw = ImageDraw.Draw(page)
@@ -106,19 +118,26 @@ def build(family_id: str) -> str:
 
     # Title block. Positions are fixed rather than flowed, so a longer family
     # name — "Envergonhado" — cannot push the lockup into the text beneath it.
-    y = centred(draw, family["title"], 1830, ImageFont.truetype(BOLD, 150), INK, 10)
-    y = centred(draw, SUBTITLE, 2020, ImageFont.truetype(REGULAR, 78), INK, 10)
-    centred(draw, STRAPLINE, 2140, ImageFont.truetype(REGULAR, 46), MUTED, 10)
+    centred(draw, family["title"], 1830, ImageFont.truetype(BOLD, 150), INK, 10)
+    centred(
+        draw,
+        CHILD_SUBTITLE if child else SUBTITLE,
+        2020,
+        ImageFont.truetype(REGULAR, 78),
+        INK,
+        10,
+    )
+    if not child:
+        centred(draw, STRAPLINE, 2140, ImageFont.truetype(REGULAR, 46), MUTED, 10)
 
     # The endorsed professional lockup — never the plain child-facing one, and
     # never on a child's screen (D-063, D-065).
-    lockup = fit(
-        Image.open(os.path.join(BRANDING, "colorhugs-professional.webp")).convert("RGBA"),
-        (700, 560),
-    )
+    mark = "colorhugs-logo.webp" if child else "colorhugs-professional.webp"
+    lockup = fit(Image.open(os.path.join(BRANDING, mark)).convert("RGBA"), (700, 560))
     page.paste(lockup, ((A4[0] - lockup.width) // 2, 2400), lockup)
 
-    centred(draw, DISCLAIMER, 3060, ImageFont.truetype(REGULAR, 42), MUTED, 12)
+    if not child:
+        centred(draw, DISCLAIMER, 3060, ImageFont.truetype(REGULAR, 42), MUTED, 12)
     centred(
         draw,
         f"colorhugs.pt   ·   © {date.today().year}",
@@ -128,7 +147,8 @@ def build(family_id: str) -> str:
     )
 
     os.makedirs(OUT, exist_ok=True)
-    target = os.path.join(OUT, f"{family_id}-capa.png")
+    suffix = "-capa-crianca" if child else "-capa"
+    target = os.path.join(OUT, f"{family_id}{suffix}.png")
     page.save(target)
     return target
 
@@ -140,3 +160,4 @@ if __name__ == "__main__":
             f"{which}: no workbook written yet. Use --force only to preview a layout."
         )
     print(build(which))
+    print(build(which, child=True))
