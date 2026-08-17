@@ -1209,6 +1209,289 @@ DYNAMICS["ashamed"] = {
 }
 
 
+
+
+# ---------------------------------------------------------------------------
+# Tédio — nine sheets for the child plus the practitioner page (D-271).
+#
+# No externalising sheet: turning boredom into a character to be sent away is
+# the opposite of what this family asks. And two guides carry cautions no other
+# family needed — *Aborrecido* is the only sheet here that leads anywhere, and
+# *Sem vontade* is the only child's sheet in the whole project that points
+# outside the workbook.
+# ---------------------------------------------------------------------------
+
+SHEETS["bored"] = [
+    {
+        "n": 1,
+        "title": "O Tédio",
+        "Idade": "6 aos 9 anos",
+        "Base": "Psicoeducação. Sem nível próprio: reformula em linguagem "
+                "infantil o que a secção 1 sustenta.",
+        "Objectivo": "Tirar a pressão antes de mais nada, e mostrar-lhe a tira "
+                     "do tempo. Nada para preencher.",
+        "Como aplicar": "Ler com ela em voz alta. Tapar a segunda tira e "
+                        "perguntar o que acha que acontece se ninguém puser "
+                        "nada.",
+        "A notar": "**Não faz mal nenhum não ter nada para fazer** costuma "
+                   "surpreender — muitas crianças ouvem o contrário todos os "
+                   "dias, e algumas ficam visivelmente aliviadas.",
+        "Cuidados": "**Não prometer que a ideia vem.** A página diz *às vezes*, e "
+                    "esse *às vezes* é para ser lido como está. Uma criança que "
+                    "espera e não inventa nada não falhou.",
+        "questions": [
+            "O que achas que acontece se ninguém puser nada?",
+            "Já tinhas pensado que estar aborrecida podia servir para alguma coisa?",
+        ],
+    },
+    {
+        "n": 2,
+        "title": "Quando é que ele aparece",
+        "Idade": "5 aos 8 anos",
+        "Base": "Comportamental — padrão temporal. **Razoável** nesta forma.",
+        "Objectivo": "Ver as horas que se repetem, e sobretudo **o que acontece a "
+                     "seguir**: se foi ela que arranjou alguma coisa ou se lhe "
+                     "deram.",
+        "Como aplicar": "Uma linha de cada vez. A última coluna é a que interessa "
+                        "e é a que costuma ficar mais pobre — insistir um pouco "
+                        "nessa.",
+        "A notar": "**Se a resposta é sempre *deram-me*.** Não é acusação a "
+                   "ninguém: é a medida da acomodação desta família, e aparece "
+                   "sem se ter perguntado pelos adultos.",
+        "Cuidados": "Não transformar a tabela numa lista de queixas sobre a "
+                    "casa. O que se procura é o padrão, não o culpado.",
+        "questions": [
+            "Foste tu que arranjaste, ou foi alguém que te deu?",
+            "Há alguma hora do dia em que aparece mais?",
+            "E aos fins-de-semana?",
+        ],
+    },
+    {
+        "n": 3,
+        "title": "O que me apetece agora",
+        "Idade": "4 aos 7 anos",
+        "Base": "Sem base própria. **Prática.** São actividades, não estratégias, "
+                "e não há literatura que compare umas com as outras.",
+        "Objectivo": "Mostrar o que há, sem pedir que escolha. **A primeira conta "
+                     "como as outras**, e é a que dá a esta página o seu sentido.",
+        "Como aplicar": "Pôr as seis à frente e não sugerir nenhuma. Se ela não "
+                        "assinalar nada, deixar assim.",
+        "A notar": "De que precisam as que ela escolhe — material, outra pessoa, "
+                   "ou nada. **Se só escolhe as que precisam de material**, vale a "
+                   "pena ver se consegue imaginar alguma coisa sem objectos. **E "
+                   "se escolhe *não fazer nada de propósito*, reparar se é "
+                   "escolha ou desistência**: as duas parecem-se e não são o "
+                   "mesmo.",
+        "Cuidados": "**Nenhuma é melhor do que outra**, e não fazer nada não é a "
+                    "pior. Se a caixa do fim ficar vazia, não a preencher por ela.",
+        "questions": [
+            "Alguma destas já fazes sem ninguém te dizer?",
+            "Há alguma que precisa de uma coisa que não tens?",
+            "Há alguma tua que não esteja aqui?",
+        ],
+    },
+    {
+        "n": 4,
+        "title": "A coisa que eu inventei",
+        "Idade": "6 aos 9 anos",
+        "Base": "Sem base própria. **Prática**, e ligada à afirmação graduada como "
+                "razoável na secção 1.",
+        "Objectivo": "Encontrar uma prova dela própria de que já saiu alguma coisa "
+                     "do tempo vazio. **Substitui a ficha de externalização**, que "
+                     "esta família não tem.",
+        "Como aplicar": "Desenho primeiro, perguntas depois. Se ela não se lembrar "
+                        "de nada, perguntar aos adultos presentes — costumam "
+                        "lembrar-se de coisas que ela esqueceu.",
+        "A notar": "Se foi sozinha ou acompanhada, e se voltou a fazer. **Uma "
+                   "criança que não se lembra de nada não é uma criança sem "
+                   "invenção** — é mais provável que seja uma criança cujo tempo "
+                   "vazio nunca durou o suficiente.",
+        "Cuidados": "Não elogiar a invenção como desempenho. É uma prova, não uma "
+                    "prenda — e transformá-la em elogio põe pressão exactamente "
+                    "onde esta família a quer tirar.",
+        "questions": [
+            "Foi ideia tua ou de mais alguém?",
+            "Voltaste a fazer?",
+            "O que estavas a fazer mesmo antes de te lembrares disso?",
+        ],
+    },
+    {
+        "n": 5,
+        "title": "As palavras finas",
+        "Idade": "7 aos 9 anos",
+        "Base": "Vocabulário emocional. **Razoável** quanto a diferenciação; o "
+                "conjunto é do ColorHugs.",
+        "Objectivo": "Mostrar que as quatro se distinguem **pelo que falta**: "
+                     "estímulo, variedade, tempo, ou outra coisa.",
+        "Como aplicar": "Uma caixa por palavra, sem ordem.",
+        "A notar": "Se usa *aborrecido* para tudo. É frequente e é o que abre a "
+                   "ficha seguinte.",
+        "Cuidados": "**Não ordenar por tamanho.** E se ela preencher *sem "
+                    "vontade* com facilidade e as outras com dificuldade, isso "
+                    "não é vocabulário — é sinal, e vê-se na ficha 9.",
+        "questions": [
+            "Qual destas dizes mais vezes?",
+            "Qual delas passa depressa e qual é que fica?",
+            "Alguma delas é de uma pessoa em concreto?",
+        ],
+    },
+    {
+        "n": 6,
+        "title": "Aborrecido",
+        "Idade": "7 aos 9 anos",
+        "Base": "Distinção entre sub-estimulação e dificuldade de iniciação. "
+                "**Razoável** quanto às duas serem coisas diferentes; a ficha é "
+                "prática.",
+        "Objectivo": "**É a única ficha desta família que leva a algum lado.** "
+                     "Separar *não há nada para fazer* de *não consigo começar*.",
+        "Como aplicar": "A primeira caixa antes da segunda, sempre — a primeira é "
+                        "fácil e é ela que torna a segunda perguntável. A "
+                        "terceira faz-se devagar.",
+        "A notar": "**A terceira caixa é a ficha toda.** O que ela nomeia como "
+                   "impedimento aponta o caminho: cansaço, medo de correr mal, "
+                   "não saber por onde, a tarefa ser grande de mais, ou nada que "
+                   "ela consiga dizer.",
+        "Cuidados": "**Se a resposta for *não consigo começar*, saímos do tédio**, "
+                    "e o resto deste caderno não é o material indicado. O que "
+                    "vier a seguir depende do que estiver a impedir, e isso não "
+                    "está aqui.",
+        "questions": [
+            "Isso é não haver nada, ou é não conseguires começar?",
+            "Há coisas de que gostas e que mesmo assim não começas?",
+            "O que é que te parece estar a impedir?",
+        ],
+    },
+    {
+        "n": 7,
+        "title": "Farto",
+        "Idade": "6 aos 9 anos",
+        "Base": "Saturação. **Prática** nesta forma.",
+        "Objectivo": "Ver que farto tem alvo e o tédio não tem — e encontrar o "
+                     "alvo dela.",
+        "Como aplicar": "A segunda pergunta, sobre quanto tempo aguentou, dá "
+                        "muitas vezes mais do que a primeira.",
+        "A notar": "**Se nomeia sempre a mesma pessoa, é o achado da ficha do "
+                   "*irritado* noutra família** — e vale a pena não o tratar como "
+                   "tédio. Se nomeia sempre a mesma tarefa, pode ser calibração.",
+        "Cuidados": "Não corrigir o alvo. *Mas tu gostas do teu irmão* fecha a "
+                    "conversa e ensina que aquilo não se diz.",
+        "questions": [
+            "Farto de quê, ou de quem?",
+            "Quanto tempo aguentaste antes de ficares assim?",
+            "Há alguma coisa que faça isso ficar melhor?",
+        ],
+    },
+    {
+        "n": 8,
+        "title": "Impaciente",
+        "Idade": "6 aos 9 anos",
+        "Base": "Espera e tolerância à demora. **Razoável** quanto à ligação com "
+                "a previsibilidade; a ficha é prática.",
+        "Objectivo": "É o tédio com uma coisa à vista. **A única das quatro que "
+                     "tem fim previsto**, e a única em que se pode dizer "
+                     "honestamente que passa.",
+        "Como aplicar": "A segunda pergunta — saber ou não saber quanto falta — é "
+                        "a que rende, e a resposta costuma surpreender os "
+                        "adultos.",
+        "A notar": "Quase todas as crianças aguentam melhor uma espera medida do "
+                   "que uma indefinida. **Se ela disser o contrário, vale a pena "
+                   "perceber porquê.**",
+        "Cuidados": "Não transformar isto em treino de espera. A ficha descreve; "
+                    "não é um exercício de tolerância.",
+        "questions": [
+            "Do que é que costumas estar à espera?",
+            "É pior quando sabes quanto falta, ou quando não sabes?",
+            "O que fazes enquanto esperas?",
+        ],
+    },
+    {
+        "n": 9,
+        "title": "Sem vontade",
+        "Idade": "7 aos 9 anos",
+        "Base": "Distinção entre tédio e desinteresse persistente. **Estabelecido** "
+                "quanto às duas serem coisas diferentes; a ficha é de notar, não "
+                "de trabalhar.",
+        "Objectivo": "**Notar, não tratar.** Três perguntas: é de uma coisa ou de "
+                     "tudo, perdeu interesse por coisas de que gostava, e há "
+                     "quanto tempo.",
+        "Como aplicar": "Sem pressa e sem alarme. As três perguntas fazem-se pela "
+                        "ordem em que estão, e a segunda é a que mais importa.",
+        "A notar": "**Perda de interesse por coisas de que gostava é a resposta "
+                   "que muda o que se faz a seguir**, mais do que a duração. "
+                   "Recusa generalizada, prolongada, e que não varia com o sítio "
+                   "nem com a companhia, não é tédio.",
+        "Cuidados": "**É a única ficha de criança das sete famílias que não se "
+                    "fecha sobre si mesma**: acaba a dizer-lhe para falar com um "
+                    "adulto em quem confie. Isso é deliberado — aquilo que ela "
+                    "pode estar a apanhar não é coisa que uma folha feche. Se as "
+                    "respostas apontarem nesse sentido, o caminho é avaliação e "
+                    "não mais fichas.",
+        "questions": [
+            "É de uma coisa em especial, ou é de tudo?",
+            "Há alguma coisa de que gostavas muito e de que já não te apetece?",
+            "Há quanto tempo é assim?",
+        ],
+    },
+]
+
+DYNAMICS["bored"] = {
+    1: [
+        ("4–6", "**A carta e o espelho.** Pôr a carta do aborrecido ao lado do espelho da primeira página e perguntar se são parecidos."),
+        ("6–8", "**Tapar a segunda tira.** Mostrar só o que acontece quando se enche logo e pedir que adivinhe o outro lado."),
+        ("8–9", "**Explicar aos pais.** Pedir que explique a tira a um adulto presente, por palavras dela."),
+        ("qualquer", "**Guardar para o fim.** Reler esta página na última sessão e perguntar se mudou alguma coisa em casa."),
+    ],
+    2: [
+        ("5–7", "**A linha do dia.** Desenhar o dia numa tira de papel e marcar com um traço as horas em que aparece."),
+        ("6–8", "**Quem arranjou.** Ao lado de cada linha, marcar com um sinal se foi ela ou se foi outra pessoa. A coluna aparece sozinha."),
+        ("8–9", "**O domingo.** Olhar só para os fins-de-semana. É onde o tempo não estruturado vive, e onde os padrões são mais claros."),
+        ("com a família", "**O que fazemos quando ela diz.** Perguntar aos adultos antes de lhes dizer seja o que for. A resposta costuma ser imediata e costuma ser um ecrã."),
+    ],
+    3: [
+        ("4–6", "**As seis em cima da mesa.** Imprimir e deixar pegar, sem dizer nada."),
+        ("4–7", "**A caixa de coisas.** Pedir que traga na próxima sessão uma caixa com cinco coisas de casa que não sejam brinquedos."),
+        ("6–9", "**Precisa de quê.** Separar as figuras em três pilhas: as que precisam de material, de outra pessoa, e de nada. Contar as pilhas com ela."),
+        ("com a família", "**Os adultos adivinham.** Escolherem as que acham que são dela antes de verem. A diferença é a conversa."),
+    ],
+    4: [
+        ("4–6", "**Fazer outra vez.** Se a coisa inventada ainda for possível, fazê-la ali na sessão."),
+        ("6–8", "**A invenção dos adultos.** Perguntar-lhes o que inventavam quando eram pequenos e não havia nada. Costuma abrir a sala."),
+        ("8–9", "**Onde é que estavas.** Procurar o sítio e a hora em que essas coisas costumam aparecer. Costuma ser sempre o mesmo sítio."),
+        ("com a família", "**Guardar em vez de deitar fora.** Se a invenção existir em objecto, combinar guardá-la. Uma prova guardada vale mais do que uma prova contada."),
+    ],
+    5: [
+        ("7–9", "**Pelo que falta.** Pôr as quatro cartas por ordem daquilo que falta em cada uma: estímulo, variedade, tempo, outra coisa."),
+        ("7–9", "**Qual passa.** Separar as quatro em *passa depressa* e *fica*, e ver onde ela põe cada uma."),
+        ("8–9", "**A palavra que falta.** Perguntar-lhe que palavra usaria para o tempo vazio que é bom. **Não há nenhuma em português, e a resposta dela costuma valer mais do que a nossa.**"),
+        ("com a família", "**Cada um escolhe a sua.** Os adultos escolhem também, e dizem uma vez em que a sentiram."),
+    ],
+    6: [
+        ("7–9", "**Duas pilhas.** Escrever seis situações e separá-las: *não havia nada* e *havia e não comecei*."),
+        ("7–9", "**A tarefa cortada.** Pegar numa coisa que ela não consegue começar e cortá-la ao meio, e outra vez ao meio, até o primeiro passo caber num minuto."),
+        ("8–9", "**O que muda quando muda.** Procurar uma vez em que ela conseguiu começar aquilo mesmo, e ver o que estava diferente."),
+        ("com a família", "**Não é preguiça.** Se a resposta for *não consigo começar*, dizê-lo explicitamente aos adultos à frente dela. **É a correcção do rótulo, e tem de ser ouvida por ela.**"),
+    ],
+    7: [
+        ("6–8", "**Quanto tempo dá.** Cronometrar, a brincar, quanto tempo ela aguenta a coisa de que se farta. Costuma ser mais do que ela pensa."),
+        ("6–9", "**Variar em vez de acabar.** Procurar uma pequena mudança que faça a mesma coisa aguentar-se mais tempo."),
+        ("8–9", "**Farto de quem.** Se o alvo for uma pessoa, trabalhar isso como relação e não como tédio."),
+        ("com a família", "**A tarefa que se repete.** Se o alvo for uma tarefa doméstica ou escolar, ver com os adultos se está bem calibrada."),
+    ],
+    8: [
+        ("6–8", "**Uma espera medida.** Usar um relógio ou uma ampulheta numa espera pequena e ver se muda alguma coisa."),
+        ("6–9", "**A espera mais difícil.** Nomear a que custa mais, e ver se é longa ou se é indefinida. Quase sempre é indefinida."),
+        ("8–9", "**O que os adultos fazem.** Perguntar como é que as pessoas grandes esperam. Costuma ser com o telemóvel, e vale a pena que seja ela a dizê-lo."),
+        ("com a família", "**Dizer quanto falta.** Combinar dizer-lhe o tempo em vez de *já vai*. É pequeno e muda muito."),
+    ],
+    9: [
+        ("7–9", "**A lista do que gostava.** Escrever cinco coisas de que gostava há um ano e marcar as que ainda lhe apetecem."),
+        ("7–9", "**Varia com o sítio?** Ver se é igual em casa, na escola e em casa de outra pessoa. **Se for igual em todo o lado, não é tédio.**"),
+        ("8–9", "**Há quanto tempo.** Situar o princípio num acontecimento, se houver. Muitas vezes há, e ninguém tinha ligado as duas coisas."),
+        ("com a família", "**Perguntar-lhes o mesmo.** O que é que ela deixou de querer fazer, e desde quando. **Se as respostas coincidirem, isto sai deste caderno** e passa a ser avaliação."),
+    ],
+}
+
+
 if __name__ == "__main__":
     import sys
 

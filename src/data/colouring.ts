@@ -233,6 +233,28 @@ export const COLOURING_PAGES: ColouringPage[] = [
     },
   },
   {
+    id: "making-a-story",
+    path: "now",
+    src: "/assets/colouring/strategies/making-a-story",
+    alt: "A child sitting on the floor with three plush toys in front of her, mid-gesture",
+    families: ["bored"],
+    evidence: {
+      level: "practice",
+      note: "Inventing a story. Needs nothing. The child's hands are up mid-gesture rather than holding anything, so the page shows her telling and not playing with a specific toy.",
+    },
+  },
+  {
+    id: "going-outside",
+    path: "now",
+    src: "/assets/colouring/strategies/going-outside",
+    alt: "A child standing on grass with a tree and three bushes around her",
+    families: ["bored"],
+    evidence: {
+      level: "practice",
+      note: "Going outside. Needs outside. Deliberately still rather than running or jumping — *mexer o corpo* is a different option, and this one is about being somewhere else rather than about moving.",
+    },
+  },
+  {
     id: "counting-fingers",
     path: "strategy",
     src: "/assets/colouring/strategies/counting-fingers",

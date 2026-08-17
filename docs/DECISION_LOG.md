@@ -5052,3 +5052,162 @@ them in place, and the question *o que te apetece agora?* appears with them.
 
 It is the only family in the product whose middle step has to be asked for, and
 on screen it reads as one more button rather than as a step.
+
+### D-267 `[IMPLEMENTATION]` Both came back sealed — and the thickness instruction worked
+| | Áreas | Linha | Alcançável de fora |
+| --- | ---: | ---: | ---: |
+| making-a-story | 10 | **10.0px** | 58.3% |
+| going-outside | 12 | **10.0px** | 53.9% |
+
+The child's body is a closed shape in one and the tree is in the other, verified
+by flood-fill. Both sit comfortably under the 60% the new check asks for.
+
+**Two things were changed in the prompt and both took.**
+
+**The ground-line instruction, phrased as a failure rather than as a
+requirement.** The earlier version asked for a line spanning edge to edge and got
+one that cut through the figures. The new one names the exact wrong outcome —
+*the line ran behind the child and left a gap in her own outline; her jumper
+became one region with the sky* — and gives the picture that fixes it: **each
+figure is a paper sticker laid on a drawn horizon; the horizon passes behind, the
+sticker's edge goes all the way round.** It is the third time this year that
+naming the failure worked where naming the requirement had not, after the ground
+line itself and the thumb.
+
+**And *make the outline noticeably THICK — thicker than a normal colouring
+book*** took the stroke from 6.3px to 10.0px in both. That is the answer to the
+drift recorded in D-265: **the thinning was a prompt problem, not a generator
+one**, and the line is now among the thickest in the library. The remaining six
+pages at 6.3px are candidates for the same one-line addition, though none of them
+fails anything.
+
+### D-268 `[IMPLEMENTATION]` The bored family is complete on screen — six options
+All six wired and walked in a browser. Choosing *aborrecido* gives the card and
+the line and nothing else; **ainda estou aborrecida** opens the six in place
+under *o que te apetece agora?*.
+
+**Five families are now live on screen**, each asking a different question, and
+this is the only one that has to be asked before it answers.
+
+Two remain — feliz and calmo — and neither has options at all, so this was the
+last artwork any family needed.
+
+### D-269 `[IMPLEMENTATION]` The bored family's schema: a strip of time, not a curve
+`scripts/figure-boredom-time.py`, in both versions. **The fourth different shape
+in five families.** What matters here is not how a feeling moves but **what fills
+a stretch of empty time**, so the figure is a strip of time with blocks in it.
+
+Two strips. In the first the emptiness is filled the moment it appears, the
+discomfort ends at once, and nothing of hers happens. In the second the
+discomfort lasts a little longer, there is a stretch of nothing, and then
+something that came from her.
+
+**The last block is drawn with a dashed edge on purpose.** The figure may not
+promise that the invention arrives, because it does not always and the evidence
+is thin (D-260). The clinician's line says so: *a parte que custa é o princípio,
+não o todo — e o que vem no fim não vem sempre nem por encomenda.*
+
+### D-270 `[IMPLEMENTATION]` The bored workbook's prose — thirteen pages, and short on purpose
+Section 9 is a stub. **It is the shortest of the five and the workbook says so in
+its own opening**: the other families had a mechanism to explain, and this one has
+mostly one thing to ask of adults.
+
+Decisions inside it:
+
+- **Section 3 states that none of the six options has an evidence base of its
+  own**, and it is the only family of which that can be said. They are activities,
+  not strategies, and no literature compares making something with going outside.
+  **Prática, all of them.** What makes them a set is the coverage of the two axes,
+  and that is all that may be claimed.
+- **What matters clinically is not which she picks but what kind** — and **not
+  pressing the button at all is the most interesting answer the activity can
+  give**, which is what the whole mechanism was built to make possible.
+- ***Sem vontade* is named as the word that points outside this workbook.** It may
+  be boredom and it may be low mood, and it is the only fine word in all seven
+  families that leads directly to an assessment. Its sheet exists to notice it,
+  not to work on it.
+- **The missing word is the most revealing of the seven families:** European
+  Portuguese has no child's word for empty time that is good. *Ócio*, *sossego*
+  and *lazer* are adult. **Everything a child has for saying she has nothing to do
+  is a complaint** — and it is hard to value something whose only available word
+  is a grievance.
+
+**Section 10 carries a limit no other family needed**: that the boredom-creativity
+link is reasonable and not established, that the workbook does not assert it and
+the figure does not promise it. **A material that sold it as certain would be
+doing with an attractive idea what this project refuses to do with every other
+one.**
+
+It also says that nothing here is about screens as such — the screen appears
+because it is what fills the emptiness fastest today, not because this workbook
+has a position on screen time.
+
+### D-271 `[IMPLEMENTATION]` The bored family's sheets — and no externalising sheet
+`docs/materials/tédio-fichas.html`. Nine for the child, one for whoever applies
+it, one for the family. Twelve pages in the child's book.
+
+**There is no *O Tédio vem visitar*, and that is a decision.** Turning boredom
+into a character to be sent away is the opposite of what this family says: the
+whole point is to tolerate the thing rather than get rid of it. Angry and scared
+externalise; ashamed does too, because shame says *you are* and a character puts
+it outside her. **Boredom is the one feeling in the set that should stay where
+it is.**
+
+What replaces it is ***A coisa que eu inventei*** — a frame to draw something she
+once made up because there was nothing to do. It uses the same picture the
+externalising sheets use, doing the opposite work: **instead of putting the
+feeling outside her, it puts something of hers on the page.**
+
+Sheets that do work no other family's do:
+
+- ***Aborrecido* is the correction sheet**, and it is the only one here that leads
+  anywhere: one box for a time there was genuinely nothing to do, one for a time
+  there were things — *até coisas de que gostas* — and she still could not start,
+  and a third asking what seemed to be stopping her. It closes with **a primeira
+  não precisa de ser resolvida; a segunda é outra coisa.**
+- ***Sem vontade* is the only child's sheet in all seven families that tells her
+  to talk to an adult.** *Se isto durar muito tempo e for de tudo, não é tédio.*
+  Every other sheet closes on itself; this one deliberately does not, because the
+  thing it might be catching is not something a worksheet closes.
+- ***Quando é que ele aparece*** ends by asking whether she found something
+  herself or somebody gave it to her — which is the family's whole distinction
+  turned into one question a child can answer.
+
+**The letter opens by naming what it is:** *esta é a única carta destas em que o
+que vos peço é para não fazerem*. And it says *costumam* rather than *sempre*
+about what comes out of the empty time, in the letter itself, because the caveat
+belongs where the parents read it and not only in the workbook.
+
+### D-272 `[IMPLEMENTATION]` The bored family's nine guides — and the family is closed
+Twenty-six pages, thirty-six dynamics. Each guide whole on its own page, record
+included.
+
+Cautions in these guides that are rules rather than advice:
+
+- **Sheet 1:** do not promise the idea comes. The page says *às vezes* and that
+  is to be read as written. **A child who waits and invents nothing has not
+  failed.**
+- **Sheet 3:** none of the six is better than another, and doing nothing is not
+  the worst. If the last box stays empty, do not fill it for her.
+- **Sheet 4:** do not praise the invention as performance. **It is evidence, not
+  a gift** — turning it into praise puts pressure exactly where this family is
+  trying to take it away.
+- **Sheet 6:** if the answer is *não consigo começar*, **we have left boredom**,
+  and the rest of this workbook is not the right material.
+- **Sheet 9:** it is the only child's sheet in the project that does not close on
+  itself, and that is deliberate. **If the answers point that way, the path is
+  assessment and not more sheets.**
+
+Two dynamics carry decisions. **Sheet 6, with the family: if the answer is *I
+cannot start*, say so to the adults in front of her** — it is the correction of
+the *preguiçosa* label, and she has to hear it. And **sheet 9, with the family:
+ask them the same three questions, and if the answers agree, this leaves the
+workbook.**
+
+One dynamic asks the child what the language cannot give her: **what word she
+would use for empty time that is good.** There is none in Portuguese, and her
+answer is usually better than ours.
+
+**Five families are closed: angry, sad, scared, ashamed, bored.** Two remain —
+feliz and calmo — and neither has options, a mechanism to correct, or a family
+error to name. **They will need a shape none of the five has used.**

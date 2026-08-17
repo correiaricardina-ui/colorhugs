@@ -82,7 +82,9 @@
       "bored__doing-nothing": "Não fazer nada de propósito",
       "bored__making-something": "Fazer uma coisa com as mãos",
       "bored__with-someone": "Uma coisa com outra pessoa",
-      "bored__jumping": "Mexer o corpo"
+      "bored__jumping": "Mexer o corpo",
+      "bored__making-a-story": "Inventar uma história",
+      "bored__going-outside": "Ir lá para fora"
     },
     "fine": {
       "happy__contente": "Contente",
@@ -136,7 +138,9 @@
       "same-as-always": "O quarto de manhã",
       "doing-nothing": "No tapete",
       "making-something": "Na mesa",
-      "with-someone": "O jogo"
+      "with-someone": "O jogo",
+      "making-a-story": "Os bonecos",
+      "going-outside": "Lá fora"
     }
   },
   "plans": {

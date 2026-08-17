@@ -82,7 +82,9 @@
       "bored__doing-nothing": "Doing nothing on purpose",
       "bored__making-something": "Making something with my hands",
       "bored__with-someone": "Something with another person",
-      "bored__jumping": "Moving my body"
+      "bored__jumping": "Moving my body",
+      "bored__making-a-story": "Making up a story",
+      "bored__going-outside": "Going outside"
     },
     "fine": {
       "happy__contente": "Pleased",
@@ -136,7 +138,9 @@
       "same-as-always": "The bedroom",
       "doing-nothing": "On the rug",
       "making-something": "At the table",
-      "with-someone": "The game"
+      "with-someone": "The game",
+      "making-a-story": "The toys",
+      "going-outside": "Outside"
     }
   },
   "plans": {
