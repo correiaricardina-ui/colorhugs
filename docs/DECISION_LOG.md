@@ -4854,3 +4854,201 @@ workbook to twenty-seven.
 its page and the session record slid onto the next — and it was caught by the
 check added after that one, which now looks for a record on every page carrying a
 title. Four fields tightened until it fit.
+
+---
+
+# Increment 37 — The bored family (2026-08-17)
+
+### D-260 `[DEFINED]` The governing distinction: *o tédio não é um problema para resolver* — with a sheet that corrects the language
+**This is the first family where the feeling is usually fine.** The other four
+needed containing or accompanying; this one mostly needs leaving alone. So the
+distinction has two jobs at once: protect boredom from being treated as a fault,
+and still catch the cases where it is not boredom at all.
+
+**Rejected: *tédio não é preguiça***, which the recipe listed. It defends the
+child from a label and names the adult's error, but it is a sentence about what
+she is not, and no sheet hangs off it.
+
+**Adopted as the axis: *o tédio não é um problema para resolver*.** It names what
+almost every adult does — filling the emptiness immediately, now nearly always
+with a screen — and it governs sheets about tolerating rather than filling.
+
+**And adopted as a sheet, not as the axis: *não ter nada para fazer não é o mesmo
+que não conseguir começar*.**
+
+European Portuguese puts two very different things inside *aborrecido*:
+
+- **there is nothing to do** — under-stimulation, and useful. It is not treated;
+  it is tolerated.
+- **I cannot start** — which may be anxiety, low mood, avoidance of a task,
+  attention difficulty, or a task pitched wrong. **That is not boredom, and it is
+  the only thing in this family that asks for intervention.**
+
+**Why it is a sheet and not the axis**, which was the question that took the
+longest: an axis of *these are two different things* leaves the child who is
+bored and inventing something — the best thing boredom does — unprotected, since
+the frame would be about telling states apart rather than about leaving one
+alone. **But an axis of *leave it alone* alone gives the child who cannot start
+the advice meant for the other one.**
+
+The precedent is the ashamed family: **one axis and one correction** (D-249).
+Hiding is the axis there and *embaraçado* is the sheet that corrects what the
+language glued together. Here the shape is identical.
+
+**One caution written into the framing, at Ricardina's prompting and against the
+temptation to overclaim.** That boredom produces invention is worth saying — a
+child who is never bored never needs to invent anything — but the literature
+linking boredom to creativity is **modest and mostly adult and laboratory-based**.
+Graded **razoável**, and said as such. It is too attractive an idea to assert
+carelessly.
+
+### D-261 `[OPEN QUESTION]` The bored path on screen was designed to suggest activities
+D-119 made boredom the one family where the product may propose something to do
+without implying anything is wrong — the `now` path, *o que posso fazer agora*.
+
+**Under D-260 that is the product doing what the workbook tells the parents not
+to do.** Suggesting an activity the moment she says she is bored is filling the
+emptiness for her.
+
+It needs resolving before the family is built, and it is not obvious: removing
+the suggestions leaves the screen with nothing to offer, which in this family may
+be exactly right.
+
+### D-262 `[DEFINED]` Boredom waits to be asked — closes Q on D-261
+The screen shows the line first and keeps the suggestions behind one button.
+
+> **Não faz mal nenhum não ter nada para fazer. Não tens de encontrar já uma
+> coisa.**
+
+**Ainda estou aborrecida** · Pronto · Escolher outro sentimento
+
+Tapping the first opens the grid where it stands. No intervening screen: **it is
+one more button of the kind she already taps everywhere, not a step added to the
+path.**
+
+**The word *avaria* was rejected from the line, and the reason generalises.** The
+first draft read *o tédio não é uma avaria*. It is an engineer's word, it is
+mine, and it tells a child she might have been broken — introducing the idea in
+the one place we wanted it absent. **It is the scales trap in another form:
+naming a thing in order to deny it leaves it in the room.** The line that
+replaced it names nothing and only lifts the pressure.
+
+**The button says *ainda estou aborrecida*, not *quero ideias*.** The second
+makes her someone requesting help; the first leaves her describing how she is,
+which is all this activity asks of her in every other family.
+
+**A child who invents something never reaches the suggestions**, and leaves by
+the same exit as everyone else, with nothing said about having done better.
+
+This resolves the only inconsistency between a workbook and the screen in five
+families: the workbook tells parents that filling the emptiness immediately is
+this family's error, and the product now waits to be asked.
+
+**Built and typechecked; not yet observable.** No colouring page is wired to
+`bored`, so the family still closes after the body map, which is correct while
+there is nothing to offer. The mechanism is in place for when the suggestions
+exist.
+
+### D-263 `[DEFINED]` The six bored options carry both axes at once
+Asked whether the suggestions should be organised by **material** or by **kind**,
+the answer was both — and the literal cross would have been twenty pages and a
+matrix no child reads.
+
+**The name is the kind; a line beneath it says what it needs.** A drawing can
+only show an activity, so the activity is the name. The set is then chosen so
+that the six together cover both axes: **each kind appears once, and the
+materials run from *nothing* to *another person*.**
+
+| | Precisa de |
+| --- | --- |
+| Não fazer nada de propósito | nada |
+| Inventar uma história | nada |
+| Fazer uma coisa com as mãos | papel, lápis, uma caixa de coisas |
+| Mexer o corpo | espaço |
+| Ir lá para fora | lá fora |
+| Uma coisa com outra pessoa | alguém |
+
+A child asking *what can I do right now* reads the right-hand column; a child
+asking *what do I feel like* reads the names.
+
+***Não fazer nada de propósito* is the most important of the six**, and the one
+no list of suggestions ever has. Putting it inside a list of things to do is the
+family's distinction on the screen itself — **and it is the only figure that
+tells her the thing she is already doing is one of the options.**
+
+*Mexer o corpo* reuses the jumping child; the other five are new. **It is the
+most expensive family for artwork and the last one that needs any**: happy and
+calm have no options at all.
+
+### D-264 `[DEFINED]` Nobody is bored in the bored pages, and there are no screens
+Each family has added one rule to the artwork. Sad: nobody is sad. Scared: nobody
+is frightened. Ashamed: nobody is being looked at. **Bored: nobody is bored** —
+no slumped shoulders, no head on a hand, no sighing face. These are pictures of
+what she might do, not of what she is feeling.
+
+**And no screens anywhere in the five.** No television, no tablet, no phone.
+**Filling the emptiness with a screen is the commonest version of this family's
+error**, and a screen drawn on the page would be the material proposing it. It is
+the first artwork rule in the project that exists to keep something out of the
+picture rather than to keep something in.
+
+### D-265 `[IMPLEMENTATION]` Three of five passed; two leaked into the sky and go back
+| | Áreas | Linha | |
+| --- | ---: | ---: | --- |
+| doing-nothing | 12 | 6.3px | passa |
+| making-something | 12 | 6.3px | passa |
+| with-someone | 12 | 6.3px | passa |
+| **making-a-story** | 8 | 6.3px | **falha** |
+| **going-outside** | 10 | 6.3px | **falha** |
+
+**All five clear the six-area floor, and two of them are broken anyway.** The
+count did not catch it; a second check did.
+
+**The new check, and it is worth keeping.** Instead of counting sealed regions,
+measure how much of the page is reachable from the frame — everything a flood
+from outside can touch. On a good page that is the background and nothing else.
+
+| | Alcançável a partir da moldura |
+| --- | ---: |
+| doing-nothing | 42% |
+| making-something | 51% |
+| with-someone | 57% |
+| making-a-story | **68%** |
+| going-outside | **71%** |
+
+**In `making-a-story` the child's whole body is open to the sky** — the ground
+line passes behind her and her outline is broken where they meet, so her top,
+her arms and her trousers are one region with the background. A child taps her
+jumper on screen and the sky fills. **The subject of the page is the part that
+cannot be coloured.**
+
+**In `going-outside` the tree and the grass are open to the sky** for the same
+reason, so the two largest shapes on a page about going outside are unfillable.
+
+Both pass the six-area rule because the toys, the clouds and the bushes carry the
+count. **It is the fourth time a page has passed a check for the wrong reason** —
+after the numerals, after ink share read as line weight, and after the thumb. The
+region count says a page is not empty; it does not say the right things are
+sealed.
+
+`with-someone` is accepted with its floor open to the background, which is a
+small loss and not a fault: the children, the board and the pieces are all
+fillable, and several accepted pages have no separate floor at all.
+
+**A drift worth naming:** every page generated in the last two rounds comes in at
+6.3px — six of the fifteen in the library are now under the 7px floor, and none
+of them was under it before. The floor warns rather than refuses, deliberately,
+but six is no longer a stray case. **Worth watching, and worth a decision if the
+next batch is 6.3 too.**
+
+### D-266 `[IMPLEMENTATION]` The bored family is live, and the button now does something
+Four options wired — the three new pages plus *mexer o corpo*, which reuses the
+jumping child. Two more arrive when the two failed pages come back.
+
+Walked in a browser: choosing *aborrecido* shows the card, the line **não faz mal
+nenhum não ter nada para fazer — não tens de encontrar já uma coisa**, and three
+buttons. **The pictures are not there.** Tapping *ainda estou aborrecida* opens
+them in place, and the question *o que te apetece agora?* appears with them.
+
+It is the only family in the product whose middle step has to be asked for, and
+on screen it reads as one more button rather than as a step.

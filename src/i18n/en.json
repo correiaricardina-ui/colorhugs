@@ -46,12 +46,14 @@
       "angry": "Anger usually turns up when something seems unfair, or when we wanted something badly and could not have it. It arrives fast, and takes longer to leave than it took to come.",
       "sad": "Sadness usually turns up when we lose something we liked, or when things did not go the way we hoped. It settles in slowly and stays a while. With someone beside you it does not pass any faster — but it is easier to carry.",
       "scared": "Fear turns up to tell us to be careful. It does not mean the thing is dangerous, and it does not mean you have to stay put. Fear gets smaller when we come closer slowly — not when we run away.",
-      "ashamed": "Shame turns up when we think other people have seen inside us and will not like what they saw. It says “you are” — but what happened is not who you are. And it makes you want to hide, which is the one thing that keeps it there."
+      "ashamed": "Shame turns up when we think other people have seen inside us and will not like what they saw. It says “you are” — but what happened is not who you are. And it makes you want to hide, which is the one thing that keeps it there.",
+      "bored": "There is nothing wrong with having nothing to do. You do not have to find something yet."
     },
     "strategyPrompt": {
       "_": "Which would you like to try?",
       "sad": "What keeps you company when you are sad?",
-      "ashamed": "Who still likes you just the same?"
+      "ashamed": "Who still likes you just the same?",
+      "bored": "What do you feel like now?"
     },
     "colourPrompt": "Colour it in",
     "download": "Print this page",
@@ -76,7 +78,11 @@
       "ashamed__talking-together": "Someone who already knows",
       "ashamed__dog-beside": "An animal",
       "ashamed__also-got-it-wrong": "Someone who got it wrong too",
-      "ashamed__same-as-always": "Something that is still the same"
+      "ashamed__same-as-always": "Something that is still the same",
+      "bored__doing-nothing": "Doing nothing on purpose",
+      "bored__making-something": "Making something with my hands",
+      "bored__with-someone": "Something with another person",
+      "bored__jumping": "Moving my body"
     },
     "fine": {
       "happy__contente": "Pleased",
@@ -107,7 +113,8 @@
     "finePrompt": "Do you want to say it better?",
     "fineBack": "Back",
     "fineLocked": "Ask a grown-up to open these words",
-    "strategySkip": "Not now"
+    "strategySkip": "Not now",
+    "stillBored": "I am still bored"
   },
   "library": {
     "pick": "Pick a picture",
@@ -126,7 +133,10 @@
       "keepsake-shelf": "The shelf",
       "stepping-stones": "The stones",
       "also-got-it-wrong": "The blocks",
-      "same-as-always": "The bedroom"
+      "same-as-always": "The bedroom",
+      "doing-nothing": "On the rug",
+      "making-something": "At the table",
+      "with-someone": "The game"
     }
   },
   "plans": {

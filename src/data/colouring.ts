@@ -200,6 +200,39 @@ export const COLOURING_PAGES: ColouringPage[] = [
     },
   },
   {
+    id: "doing-nothing",
+    path: "now",
+    src: "/assets/colouring/strategies/doing-nothing",
+    alt: "A child lying on a rug beside a cat, looking up at the clouds",
+    families: ["bored"],
+    evidence: {
+      level: "practice",
+      note: "**The most important of the six, and the one no list of suggestions ever has.** Putting *doing nothing on purpose* inside a list of things to do is this family's distinction on the screen itself — and it is the only figure that tells her the thing she is already doing is one of the options (D-263). Needs nothing at all.",
+    },
+  },
+  {
+    id: "making-something",
+    path: "now",
+    src: "/assets/colouring/strategies/making-something",
+    alt: "A child at a low table with an open box of small things, crayons and a blank sheet of paper",
+    families: ["bored"],
+    evidence: {
+      level: "practice",
+      note: "Making with the hands. Needs paper, crayons, a box of things. **The sheet of paper on the table is deliberately blank**: it is the largest area on the page for the child to fill, and anything drawn on it would take that away from her.",
+    },
+  },
+  {
+    id: "with-someone",
+    path: "now",
+    src: "/assets/colouring/strategies/with-someone",
+    alt: "Two children facing each other across a board game on the floor",
+    families: ["bored"],
+    evidence: {
+      level: "practice",
+      note: "Something with another person. Needs somebody. **The only page in the library where two figures face each other** — the bench and *alguém ao pé de mim* both already exist and mean other things. The board carries no grid and no markings, so it is not one particular game.",
+    },
+  },
+  {
     id: "counting-fingers",
     path: "strategy",
     src: "/assets/colouring/strategies/counting-fingers",
@@ -226,7 +259,7 @@ export const COLOURING_PAGES: ColouringPage[] = [
     path: "strategy",
     src: "/assets/colouring/strategies/jumping",
     alt: "A child jumping with both arms in the air",
-    families: ["angry", "scared"],
+    families: ["angry", "scared", "bored"],
     evidence: {
       level: "practice",
       note: "Moving is not hitting. Discharging anger by striking something is excluded: the catharsis literature points the other way, raising arousal rather than lowering it.",

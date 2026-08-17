@@ -93,6 +93,9 @@ export default function HowDoIFeel() {
   const [fine, setFine] = useState<string | null>(null);
   const [zone, setZone] = useState<BodyZone | null>(null);
   const [page, setPage] = useState<string | null>(null);
+  // Boredom asks before it offers (D-262). Everywhere else the pictures are
+  // already on screen when she arrives; here they wait behind one tap.
+  const [asked, setAsked] = useState(false);
 
   const family = EMOTIONS.find((e) => e.id === chosen) ?? null;
   // Only angry is authored so far. A family with no pages closes after the
@@ -105,6 +108,7 @@ export default function HowDoIFeel() {
     setFine(null);
     setZone(null);
     setPage(null);
+    setAsked(false);
     setStage("choose");
   }
 
@@ -182,6 +186,30 @@ export default function HowDoIFeel() {
   function pageLabel(id: string) {
     return (family ? t.pages[`${family.id}__${id}`] : undefined) ?? t.pages[id];
   }
+
+  /**
+   * **Boredom waits to be asked** (D-262).
+   *
+   * Every other family shows its pictures the moment she arrives. This one
+   * shows the line first — *não faz mal nenhum não ter nada para fazer* — and
+   * keeps the suggestions behind a button that says **ainda estou aborrecida**.
+   *
+   * The workbook tells parents that filling the emptiness immediately is this
+   * family's error. A screen that offers a grid of things to do in the same
+   * minute she says she is bored would be the product doing exactly that, one
+   * line below a sentence telling her she does not have to find something yet.
+   *
+   * The button describes what she feels rather than asking for help. *Quero
+   * ideias* would make her someone requesting assistance; *ainda estou
+   * aborrecida* leaves her doing what this activity asks in every other family,
+   * which is to say how she is.
+   *
+   * A child who invents something never reaches the suggestions, and leaves by
+   * the same way out as everyone else. Nothing tells her she did better —
+   * nothing here is scored.
+   */
+  const waitsToBeAsked = family?.id === "bored";
+  const showPages = !waitsToBeAsked || asked;
 
   const mayOpenFineWords = can(CURRENT_AUDIENCE, "fineWords");
   const fineWords = family ? (FINE_WORDS[family.id] ?? []) : [];
@@ -358,18 +386,25 @@ export default function HowDoIFeel() {
             leaves the choice with her; "do this" decides for her, and deciding
             what a child should do next is a person's work.
           */}
-          <h2 className="mt-6 flex items-center justify-center gap-3 text-center font-display font-700 text-ch-ink">
-            {strategyPrompt}
-            <SpeakButton
-              textKey={
-                family && t.strategyPrompt[family.id]
-                  ? `feelings.strategyPrompt.${family.id}`
-                  : "feelings.strategyPrompt._"
-              }
-            />
-          </h2>
+          {showPages ? (
+            <h2 className="mt-6 flex items-center justify-center gap-3 text-center font-display font-700 text-ch-ink">
+              {strategyPrompt}
+              <SpeakButton
+                textKey={
+                  family && t.strategyPrompt[family.id]
+                    ? `feelings.strategyPrompt.${family.id}`
+                    : "feelings.strategyPrompt._"
+                }
+              />
+            </h2>
+          ) : null}
 
-          <ul className="mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3">
+          <ul
+            className={cn(
+              "mt-5 grid grid-cols-2 gap-3 sm:grid-cols-3",
+              !showPages && "hidden",
+            )}
+          >
             {pages.map((option) => (
               <li key={option.id}>
                 <button
@@ -404,6 +439,20 @@ export default function HowDoIFeel() {
             finish.
           */}
           <div className="mt-6 flex flex-wrap justify-center gap-3">
+            {/*
+              The one extra button, and only in this family. It sits with the
+              others rather than on a screen of its own: one tap of the kind she
+              already gives everywhere, not a step added to the path.
+            */}
+            {waitsToBeAsked && !asked ? (
+              <button
+                type="button"
+                onClick={() => setAsked(true)}
+                className="min-h-[64px] rounded-full bg-white/80 px-6 font-display font-600 text-ch-ink/80"
+              >
+                {t.stillBored}
+              </button>
+            ) : null}
             <button
               type="button"
               onClick={() => setStage("done")}

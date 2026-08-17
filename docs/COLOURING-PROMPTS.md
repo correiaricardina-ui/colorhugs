@@ -500,6 +500,189 @@ patterns on the duvet. No stripes. No stars. No sparkles. No sun.
 
 ---
 
+---
+
+# Tédio
+
+**Five new pages**, and *mexer o corpo* reuses the jumping child. It is the most
+expensive family for artwork, and the last one that needs any: happy and calm
+have no options at all.
+
+**Two axes at once** (D-263). The name of each page is the **kind** of thing;
+a line beneath it says what it **needs**. Together the six cover both — every
+kind appears once, and the materials run from *nothing* to *another person*.
+
+**The rule this family adds:** in the sad pages nobody is sad, in the scared
+pages nobody is frightened, in the ashamed pages nobody is being looked at —
+**and here nobody is bored.** No slumped shoulders, no head on a hand, no sighing
+face. These are pictures of what she might do, not of what she is feeling.
+
+**And no screens.** Not a television, not a tablet, not a phone, in any of the
+five. Filling the emptiness with a screen is the most common version of this
+family's error, and a screen drawn on the page would be the material proposing
+it.
+
+### Não fazer nada de propósito · `doing-nothing.png`
+
+*The most important of the six, and the one no list of suggestions ever has.
+Putting it inside a list of things to do is the family's distinction on the
+screen itself.*
+
+```
+[STYLE BLOCK]
+
+THE SCENE
+One child lying on her back on a fat rounded rug, arms out, looking straight up
+at the sky. Beside her on the rug, one plush cat also lying down. Above them,
+four fat rounded clouds.
+
+The child MUST be calm and content, with her eyes open, looking up. She is not
+bored, not sad and not asleep. No slumped shoulders. No hand under the chin. No
+sighing mouth.
+
+Every figure MUST have hair — a big rounded soft mass of it. Bald is wrong. The
+child MUST have visible clothing with a separate top and separate trousers, each
+its own enclosed area.
+
+The rug MUST be its own enclosed area, and the four clouds MUST each be their
+own, clearly different sizes.
+
+The cat MUST have two separate rounded ears, one separate rounded muzzle and one
+fat rounded tail, each sealed as its own area.
+
+FORBIDDEN, ONE BY ONE: no screens of any kind. No television. No tablet. No
+phone. No book. No clock. No sun with a face. No stars. No sparkles. No speech
+bubble. No zzz. No closed eyes.
+```
+
+### Inventar uma história · `making-a-story.png`
+
+```
+[STYLE BLOCK]
+
+THE SCENE
+One child sitting cross-legged on the floor with three plush toys arranged in
+front of her, as if they were characters in something she is telling: one bear,
+one rabbit and one small round bird.
+
+The child MUST be calm and content and MUST be looking at the toys. Her hands
+are up, mid-gesture, as though she is in the middle of saying something.
+
+Every figure MUST have hair — a big rounded soft mass of it. Bald is wrong. The
+child MUST have visible clothing with a separate top and separate trousers, each
+its own enclosed area.
+
+Each toy MUST have a face: two round dot eyes and one small curved mouth, and
+nothing else on the face. Each MUST have a separate rounded tummy patch, and the
+bear and rabbit MUST have two separate ears each.
+
+THE GROUND LINE: a single soft line spanning the whole width of the picture,
+edge to edge, behind them. It must not stop short of either edge. Think of it as
+the horizon.
+
+FORBIDDEN, ONE BY ONE: no screens. No book. No speech bubble. No letters. No
+words. No thought bubble. No hearts. No stars. No sparkles.
+```
+
+### Fazer uma coisa com as mãos · `making-something.png`
+
+```
+[STYLE BLOCK]
+
+THE SCENE
+A low round table seen from the side, with one child sitting behind it and
+working on something with both hands. On the table: one fat open box with round
+bits spilling gently out of it, three chubby crayons lying loose, and one sheet
+of paper with nothing drawn on it.
+
+The child MUST be calm and content and MUST be looking down at her hands.
+
+Every figure MUST have hair — a big rounded soft mass of it. Bald is wrong. The
+child MUST have visible clothing with a separate top and separate trousers, each
+its own enclosed area.
+
+The box MUST be its own enclosed area, the paper MUST be its own, and each of
+the three crayons MUST be its own. The round bits MUST be at least four, each
+its own area and clearly different sizes.
+
+THE PAPER MUST BE COMPLETELY BLANK. No drawing on it, no lines, no letters, no
+numbers — it is a sheet of paper, and it is also the biggest area on the page for
+the child to fill.
+
+FORBIDDEN, ONE BY ONE: no screens. No scissors. No glue bottle with a label. No
+writing anywhere. No numbers. No hearts. No stars. No sparkles.
+```
+
+### Ir lá para fora · `going-outside.png`
+
+```
+[STYLE BLOCK]
+
+THE SCENE
+One child standing outdoors on grass, arms slightly out, with one fat plump tree
+to one side and three plump rounded bushes around. Two fat rounded clouds above.
+
+The child MUST be calm and content and MUST be facing the viewer. She is not
+running and not jumping — that is another page.
+
+Every figure MUST have hair — a big rounded soft mass of it. Bald is wrong. The
+child MUST have visible clothing with a separate top and separate trousers, each
+its own enclosed area.
+
+The tree MUST have a fat rounded trunk that is its own enclosed area and one
+plump rounded mass of leaves that is its own. Even a leaf is plump and soft — no
+points, no serrated edges, no thin twigs.
+
+Each of the three bushes MUST be its own enclosed area and clearly different
+sizes.
+
+THE GROUND LINE: a single soft line spanning the whole width of the picture,
+edge to edge, separating the grass from the sky. It must not stop short of either
+edge. Think of it as the horizon.
+
+FORBIDDEN, ONE BY ONE: no screens. No sun with a face. No birds. No butterflies.
+No flowers with pointed petals. No fence. No path. No hearts. No stars. No
+sparkles.
+```
+
+### Uma coisa com outra pessoa · `with-someone.png`
+
+*It must not be the bench, and it must not be two figures side by side facing
+out — both of those already exist and mean other things. This one is two people
+doing something together.*
+
+```
+[STYLE BLOCK]
+
+THE SCENE
+Two children sitting on the floor facing each other across a fat rounded board
+game between them, with four plump round game pieces on it. Both are reaching
+towards the board.
+
+Both MUST be calm and content and MUST be looking at each other, not at the
+viewer. This is the one page in the library where two figures face each other,
+and that is the point of it.
+
+Every figure MUST have hair — a big rounded soft mass of it. Bald is wrong. Give
+the two children hair of clearly different shapes. Each MUST have visible
+clothing with a separate top and separate trousers, each its own enclosed area.
+
+The board MUST be its own enclosed area, and each of the four pieces MUST be its
+own, clearly different sizes.
+
+THE BOARD MUST HAVE NO MARKINGS. No squares, no grid, no letters, no numbers, no
+dots — it is a fat rounded board and nothing else.
+
+THE GROUND LINE: a single soft line spanning the whole width of the picture,
+edge to edge, behind them. It must not stop short of either edge.
+
+FORBIDDEN, ONE BY ONE: no screens. No dice with numbers. No cards with symbols.
+No grid on the board. No writing anywhere. No numbers. No speech bubble. No
+hearts. No stars. No sparkles.
+```
+
+---
+
 # Landing the files
 
 ## Where they go, and what to run
@@ -518,6 +701,11 @@ exactly:
 | `quiet-corner.png` | *Almofadas* — substitui a existente |
 | `also-got-it-wrong.png` | *Quem também já se enganou* (envergonhado) |
 | `same-as-always.png` | *Uma coisa que continua igual* (envergonhado) |
+| `doing-nothing.png` | *Não fazer nada de propósito* (tédio) |
+| `making-a-story.png` | *Inventar uma história* (tédio) |
+| `making-something.png` | *Fazer uma coisa com as mãos* (tédio) |
+| `going-outside.png` | *Ir lá para fora* (tédio) |
+| `with-someone.png` | *Uma coisa com outra pessoa* (tédio) |
 
 The filenames describe the picture and never the feeling (D-120): the child
 downloads the PDF and the file that lands in her house must not report what she
