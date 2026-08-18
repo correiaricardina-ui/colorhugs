@@ -5727,3 +5727,729 @@ family takes home carry no loose feminine agreement, no age ranges, and no
 markdown asterisks. The workbooks keep the feminine where it belongs — they speak
 of *a criança*, which is a feminine noun in Portuguese and says nothing about the
 child in the room.
+
+---
+
+# Increment 40 — Three commercial lines (2026-08-17)
+
+### D-288 `[DEFINED]` Three audiences, and teachers are not a third version of the same thing
+The material to be sold divides by **audience**, and the division is not cosmetic.
+
+**Parents and clinicians share the child.** They speak about her, they know who
+she is, and what is said is about her.
+
+**A teacher has thirty.** No individual sheets, no session, no framing to receive
+what a sheet opens. **And a limit not yet written anywhere: the teacher must not
+receive what the child discloses in session.**
+
+That makes the teacher line the hardest of the three and **the only one that
+needs genuinely new material** — the other two are largely assembly of what
+exists.
+
+| | O que leva |
+| --- | --- |
+| **Pais** | as sete cartas, um guia curto por família, páginas para colorir por temas, o baralho. **Nada que peça observação estruturada e nada que meça.** |
+| **Professores** | poster, guia de vocabulário para a sala, cartões dos esquemas, e o que fazer e não fazer na aula |
+| **Psicólogos** | os sete cadernos, mais o mapa corporal em papel, bloco de registo, grelha de acomodação, registo dos degraus, plano de oito sessões, ficha de devolução à escola, enquadramento e consentimento, mapa A3 do depósito |
+
+**One piece crosses two lines:** the *ficha de devolução à escola* — written by
+the psychologist, read by the teacher. It is where the limit on what is not
+transmitted has to be written.
+
+### D-289 `[DEFINED]` The teacher line: *o professor não trata; nomeia*
+It is this line's governing distinction, and it does the same work a family
+distinction does: it limits and it gives something real to do.
+
+**A teacher cannot do what this material does.** The sheets open, and he has
+thirty children, forty-five minutes, and no framing to receive what opens. **Given
+simplified sheets he will apply them in good faith and open things in the
+classroom he has no way of closing.**
+
+**Naming is what he can do well and what nobody does:** give the children the
+words, use them aloud, and recognise what is happening without touching anyone's
+story. **It is half the value of this project and it is the half that fits in a
+classroom.**
+
+**It splits the material into two groups that do not mix:**
+
+- **For the whole class** — vocabulary, poster, language activities. **It is not
+  psychology, it is emotional literacy**, and it enters the curriculum through
+  that door.
+- **For one child in particular** — **no sheets.** Only what to do and what not
+  to do in the moment, and when to refer. One page per family, four or five lines
+  each.
+
+**And a third thing, the most delicate:** what to do when a child tells him
+something. It is not rare, and **the teacher is frequently the first person told**.
+It needs writing, with the limit explicit: receive, do not investigate, and to
+whom it goes.
+
+### D-290 `[IMPLEMENTATION]` The teachers' classroom pages — nine pages, and no worksheet in any of them
+`docs/materials/professores-sala.html`, built by `scripts/build-teacher-pages.py`
+into `professores-sala.pdf`. **A separate builder**: the workbook one knows about
+families, evidence gradings, session records and child sheets, and none of that
+exists here.
+
+**The same five headings on every page, in the same order**, because a teacher
+with thirty children does not read seven different structures: *o que se vê na
+sala · o que ajuda · o que não ajuda · a frase que serve · quando falar com
+alguém.*
+
+***A frase que serve* is the centre of each page.** A teacher does not need the
+arousal curve — **he needs to know what to say in the five seconds while it is
+happening**, and that is the line that gets stuck inside a planner.
+
+Things in these pages that are decisions:
+
+- ***Assustado* is described by what is not seen.** In a classroom fear usually
+  shows as **a child who does not do things** — not going to the board, being ill
+  on Tuesdays, forgetting the material for one subject. And **dispensar** is
+  named as the error: it solves the lesson and worsens the month.
+- ***Envergonhado* includes the opposite presentation**: laughing and playing the
+  fool, which is the fastest way to choose the reason one is being looked at.
+- ***Aborrecido* carries the family's correction into the room where it matters
+  most**: the child who cannot start looks exactly like the child who finished
+  early, and they need opposite things. Its line is the whole page — *não há nada
+  para fazer, ou não estás a conseguir começar?*
+- ***Calmo* names the trap a classroom makes:* **uma sala silenciosa por medo não
+  é uma sala calma**, and the child knows the difference.
+- ***Feliz* reframes two things teachers read as indiscipline** and are not: the
+  agitation before a good thing, and the fall the day after.
+
+**The ninth page is the one that matters most: *Quando uma criança conta alguma
+coisa*.** Receive, do not investigate, **do not promise secrecy** — with the
+sentence that replaces the promise — record in her words, and pass it on. It
+closes by saying that if there is suspicion of danger this stops being
+pedagogical material, and that **knowing whom one tells, before needing to, is
+the only part of it that can be prepared in advance.**
+
+**Two layout faults fixed on the printed page**: the escalation callout was
+splitting across a break — an escalation instruction cut in half is the one place
+that cannot happen — and the disclosure page overflowed onto a tenth page holding
+only that callout. Spacing was tightened rather than content cut.
+
+### D-291 `[IMPLEMENTATION]` The classroom vocabulary guide — eleven pages
+`docs/materials/professores-vocabulario.html`. **The big piece of the teacher
+line, and the only one that justifies the purchase on its own**: a teacher using
+it is giving a language lesson, not doing therapy.
+
+**One builder, two documents.** `build-teacher-pages.py` now takes a name. The
+second was going to be a copy of the first with a different cover, and a copy is
+two files that drift apart the first time a margin changes.
+
+**The intellectual core is the third page**, and it is what no other emotional
+literacy material has: **each family's words separate along a different axis.**
+Anger by intensity, sadness by cause and target, fear by time, shame by reach,
+boredom by what is missing, calm by what came before, happiness by where they
+point.
+
+**Only one of the seven sorts by intensity** — and it is the one everybody uses
+as the model for the other six, which is where phrases like *estou um bocadinho
+traumatizado* come from. **It is a linguistic observation and not a psychological
+one**, which is exactly why it belongs in a language class.
+
+Two pages built from findings that were by-products of the workbooks:
+
+- ***As palavras que a língua colou*** — chateado, sozinho, embaraçado,
+  aborrecido. **Each is a whole lesson**, and the activity is the same for all
+  four: three situations that would all be described with the same word, and a
+  better word for each.
+- ***As palavras que faltam*** — the seven gaps, one per family. **The activity
+  is to invent the missing word**, and it works because it is true: the word does
+  not exist, and children tell the difference between inventing for fun and
+  inventing because something is missing. It is also the best door in this guide
+  to other languages, in a class with children from several.
+
+***A palavra da semana* is the page to keep if only one survives**, with an order
+that is a decision: **start with the easy and good ones** — contente, descansado,
+aliviado — because a class that learns to name what is good first reaches the
+others with less resistance, and the reverse is not true. **Leave *culpado*,
+*magoado* and *sozinho* for late in the year.**
+
+**And the guide never asks a child about herself.** Checked by search: the only
+second person addressed to a child in the whole document is the one inside the
+rule forbidding it — *a pergunta é sempre quando é que alguém fica assim, e nunca
+quando é que tu ficas assim.*
+
+### D-292 `[IMPLEMENTATION]` The poster and the schema cards — assembly, no new content
+`scripts/build-teacher-extras.py`, two pieces built from what already existed.
+
+**The poster is A3 and carries the seven families with their fine words**, in the
+same seven accents used everywhere else so a wall and a table read as one object.
+The seventh sits centred across both columns, because a lone card hugging the
+left margin reads as a mistake.
+
+**A fault worth recording because it is the kind that is invisible in a PDF
+viewer:** the first version set A3 in the page rule and then sized everything for
+a page. Everything was correct and **nothing was readable across a classroom** —
+a poster is read from four metres. Body type went from 12.5pt to 17pt, names from
+21pt to 30pt, and the grid now stretches to fill the sheet.
+
+**The cards are the six schema figures, A5, two to an A4 sheet** with a cut line
+between. They existed and were trapped inside a workbook page: **somebody
+explaining the avoidance cycle to a parent wants it on the table, not on page
+seven.**
+
+**They use the child's version of each figure** (D-189). A table card is looked at
+*with* somebody, and the sentence written to the clinician does not belong on a
+surface a child can see. Each carries one line saying what the picture shows, and
+nothing else.
+
+**The teacher line is complete**: seven classroom pages plus the disclosure page,
+the eleven-page vocabulary guide, the poster, and the six cards.
+
+---
+
+# Increment 41 — Register and technical precision (2026-08-17)
+
+### D-293 `[DEFINED]` Register, for everything written in this project
+**Technically careful and professionally serious.** No colloquial or
+over-familiar phrasing, no chatty asides, no jokey tone. Clinical and educational
+content is written with precision: named constructs, stated evidence level,
+explicit limits.
+
+**Warmth stays where it belongs** — the parents' letters and the child's sheets —
+**but never at the cost of technical accuracy**, and even there the writing is
+sober rather than cute. Those two are a deliberate exception, not an oversight.
+
+### D-294 `[IMPLEMENTATION]` The three evidence levels are now defined, in all seven workbooks
+**The material graded evidence in three levels and never said what they mean.** A
+colleague reading *razoável* had no way of knowing whether it meant *there are
+studies and they are weak* or *there are no studies and the inference is sound* —
+which are different things with different consequences for what she may say to a
+parent.
+
+A table now opens section 3 in every workbook:
+
+| | O que significa |
+| --- | --- |
+| **Estabelecido** | Mecanismo descrito por investigação replicada, com consenso sobre a direcção. Pode ser afirmado como facto. |
+| **Razoável** | O mecanismo geral tem sustentação; **a aplicação concreta não foi testada.** Fundamentado, nunca demonstrado. |
+| **Prática** | Sem investigação directa. Está no material por experiência clínica e coerência. **Não se afirma eficácia.** |
+
+And a sentence that prevents the commonest misreading: **um nível diz respeito à
+afirmação, e não à utilidade.** An option graded *prática* may be the most useful
+in a given session; what the grading limits is what is said about it.
+
+### D-295 `[IMPLEMENTATION]` Evidence is no longer described by metaphor
+**This was the most serious technical fault in the material.** A workbook that
+grades evidence in three levels cannot then discuss evidence in figures of
+speech, and it did so nineteen times: *terreno mais firme*, *a literatura é
+fina*, *melhor apoio*, *o achado mais sólido*, *apoio indirecto* — the last
+without ever saying indirect to what.
+
+**It is what a colleague would notice first**, because it is the difference
+between a graded claim and an impression.
+
+Each was replaced with something checkable. Examples:
+
+- *o achado mais sólido de todo este projecto* → **a única afirmação central
+  deste projecto graduada como estabelecida**, followed by what is replicated and
+  in which literature.
+- *a literatura sobre companhia animal é fina* → **a investigação é escassa, com
+  amostras pequenas e desenhos sem grupo de comparação.**
+- *Prática, com apoio indirecto* → **Prática: sem investigação nesta aplicação; a
+  fundamentação decorre de X**, naming X.
+- *a evidência é mais fina do que a popularidade sugere* → **é a estratégia com
+  menos investigação nesta idade**, with the physiological basis and the adult
+  studies stated separately.
+
+**Fixed at the source in both places:** the seven markdown files and
+`build-sheet-guides.py`, so the generated section 9 does not reintroduce them.
+All seven rebuilt and verified: every guide still whole on its own page, session
+record included.
+
+### D-296 `[IMPLEMENTATION]` Register raised in the teacher documents
+The teacher line had the worst of it, and in three distinguishable kinds.
+
+**Jokes.** *Adoece às terças-feiras* as an example of school avoidance is a joke
+at a child's expense in a document a teacher reads about a child in his class.
+Replaced with *falta em dias específicos*.
+
+**Conversational shorthand.** *A cara na terceira fila*, *a parte boa*, *resolve
+a aula e agrava o mês*, *a maneira mais rápida de*. Each replaced with what it
+was standing in for — *apresentam-se de forma indistinguível*, *as mais
+produtivas para discussão*, *resolve a situação imediata e reforça a evitação*.
+
+**Opinion presented as content.** *É a parte mais interessante do conjunto*, *é a
+melhor actividade deste guia*, *é a página a guardar*. A guide that tells a
+teacher which of its own pages is best is advertising itself. The claims were
+replaced by the reason underneath them, which was the useful part all along:
+**reconhecer o eixo de cada família é o que distingue ensinar um campo lexical de
+fazer decorar uma lista.**
+
+**And one that mattered more than the others: *três segundos*.** It had become a
+slogan — a section heading in one document and a bolded phrase in another. It
+now reads *é uma intervenção de segundos e tem efeito sobre a probabilidade de
+ela voltar a contar*, which says the same thing and states the mechanism.
+
+**What was kept: the concision.** The objective was not to make the prose heavy —
+it was to remove what was conversation and leave what was information. Both
+documents rebuilt at the same length, nine and eleven pages.
+
+### D-297 `[IMPLEMENTATION]` The rhetorical fragments — fewer than expected, and worth naming
+The third pass looked for short emphatic closers. **A keyword search returned
+twenty-eight hits and most were noise**: *e é a única que…* carries information,
+and so does *e mais nada* where it limits a promise. Searching for the phrasing
+found the wrong thing.
+
+**Searching for the shape found it.** Sentences of one to five words closing a
+paragraph, across the workbooks and the teacher documents: twenty-two, of which
+**seven were genuine** — a verbless fragment adding emphasis where the argument
+was already made.
+
+- ***Aqui há.*** — three files, closing the paragraph on why the workbook may ask
+  what the app may not. Replaced with **na sessão, essa condição está
+  satisfeita.**
+- ***E a clínica, no resto.*** — two files, in *onde isto assenta*. Replaced with
+  **nos restantes pontos, a fundamentação é de prática clínica**, which is what
+  it meant.
+- ***Uma chegada, um fim.*** — obscure as well as fragmentary. Replaced with **com
+  o mesmo início e o mesmo fim.**
+- ***E chega.*** and ***e é esse o ponto.*** — replaced with the statement each
+  was gesturing at.
+
+**The rest were kept, and the distinction is worth recording**: *Por código, nunca
+por nome*, *A última não espera*, *Sem obrigação e sem ronda* are short because
+they are instructions, and an instruction is clearer short. **The tic is a
+fragment that replaces an argument; a short imperative is not the same thing.**
+
+Everything rebuilt: seven workbooks and two teacher documents, all at the same
+page counts, every guide still whole on its page.
+
+---
+
+# Increment 42 — The parents' line (2026-08-17)
+
+### D-298 `[DEFINED]` The parents' line: *os pais não aplicam; acompanham*
+**Parents who buy this without a clinician are not the parents who receive the
+letter in session.** The letter is written for somebody who has been in a room
+with a professional, and it says *combinámos experimentar isto esta semana*. Sold
+on its own that sentence has no referent: there was no *combinámos*, and there is
+nobody to tell *na próxima vez*.
+
+**So this line is not the clinical material with fewer parts. It is material that
+has to close on itself** — no session, no return visit, and nobody to receive
+what a sheet would open.
+
+The parallel with the teacher line is exact. **The teacher names; the parent
+accompanies** — recognising what is happening, responding better in the moment,
+and knowing when it stops being his to handle. **Applying worksheets to his own
+child is not his to do**, and it is the first thing he will do if given
+worksheets.
+
+**Two consequences, fixed now:**
+
+- **No worksheets in this line.** A child filling in *Magoado* with her mother
+  may name her mother, and there is nobody present to receive that. It is the
+  same reasoning that kept the sheets off the screen (D-095).
+- **The seven letters cannot be sold as they stand.** Either they are rewritten
+  without the session sentences, or they leave the line. **Rewritten**: they are
+  the best-written text in the project and the thing parents most want to read.
+
+**What the line carries:** the seven letters rewritten, a short guide of *o que
+fazer quando ele está assim*, the deck, and the colouring pages. Nothing that
+asks for structured observation and nothing that measures (D-288).
+
+### D-299 `[DEFINED]` Two books for parents, and they do not explain each other
+Both were adopted: **a narrative book for the parent** and **an illustrated story
+to read with the child.** They are separate products for separate readers.
+
+**The parents' book is read alone by the adult** — the seven families as a path
+rather than seven loose chapters, beginning with calm and happy because that is
+where the store is built (D-273), and the difficult ones in order.
+
+**The story is read *with* the child, and must work whole for somebody who has
+never read the other.** If it needs a footnote it is not a story, it is teaching
+material in disguise.
+
+**The risk named now, because it is what spoils almost every children's book
+about feelings: the character who learns a lesson and says it out loud at the
+end.** It is the narrative equivalent of the thermometer — it turns a story into
+a worksheet with pictures, and children notice by the second page.
+
+**The rule: the seven feelings happen, and nobody explains them.** The Sad one
+does not say *aprendi que a tristeza se acompanha*; the Sad one is accompanied,
+and the child sees it. **The story shows; the workbook explains.** A story that
+explains has no reason to exist beside the other.
+
+**And the seven cannot be seven chapters**, or it becomes a catalogue. Something
+has to happen that runs through them.
+
+### D-300 `[DEFINED]` The story has no child in it — the seven are the cast
+Three protagonists were considered: a child with the seven as what happens
+inside her; one of the seven with the other six appearing to it; or **the seven
+alone, in a world that is only theirs.**
+
+**The third, and the reason comes from the material itself: the seven cards have
+never represented children.** They represent feelings, and they have never had
+gender, age or an owner. **Putting a child in the story forces a choice between
+a boy and a girl** — and the decision immediately before this one was to remove
+exactly that from everything (D-287).
+
+It also protects the story from the commonest failure of the genre: a child
+protagonist invites the reader to identify and then to be taught. **Seven
+feelings living together invite the reader to watch.**
+
+### D-301 `[DEFINED]` The story: the Bored one arrives, and the other six are already there
+Two shapes were considered — a single day in a house shared by all seven, and an
+arrival. **The arrival.**
+
+**Six live together and a seventh turns up: the Bored one**, who does not
+understand what the others are for and asks. **The answers are not explanations:
+they are things she sees happen.**
+
+**Boredom is the right character for the part**, and the reason comes from its
+own workbook: it is **the only one of the seven that is not a problem** and that
+nobody is treating (D-260). That leaves it free to watch. The other six are all
+busy being something.
+
+Three things this shape solves:
+
+- **Movement without inventing a journey.** The story advances because somebody
+  new is there, not because anyone travels.
+- **A companion for the reader** — somebody who also does not know.
+- **Order.** The seven appear when the story needs them, not as a list. **Seven
+  characters with nothing happening is a catalogue**, which is what the other
+  shape risked.
+
+**And an ending that is not a lesson: the Bored one realises she is one of
+them.** Nothing is said aloud; something is understood. It satisfies D-299
+without a moral.
+
+**Cost, recorded so it is not a surprise:** twelve to sixteen illustrated scenes
+with seven characters that must stay identical from page to page. **It is the
+most expensive thing this project has attempted**, and the first that needs
+character consistency across images rather than isolated figures.
+
+### D-302 `[IMPLEMENTATION]` The story text — sixteen scenes, five hundred words
+`docs/materials/livro-historia.md`. Scene descriptions for the illustrator and
+the text for each page, written before any image because **a badly decided scene
+costs a discarded illustration.**
+
+**The names are the card names** — Zangado, Triste, Assustado, Envergonhado,
+Calmo, Feliz, Aborrecido — and not the externalised forms the sheets use (*a
+Zanga*, *o Medo*). A child holding the deck and the book should find the same
+name in both. All are grammatically masculine, which settles the gender question
+by itself: **they are not people, they are feelings, and none of them is a boy or
+a girl.**
+
+**Size is the language of the book.** The angry one becomes enormous and returns
+to his size; the ashamed one shrinks and comes back; the happy one grows each
+time he tells and returns to normal when it ends. **None of these changes is
+stated in the text** — they are only seen. It is the main narrative vehicle and
+it is what replaces explanation.
+
+**The Bored one never changes size**, because he is the observer and his
+constancy is what makes the others readable.
+
+Three things the text does that are the point of it:
+
+- **The Bored one is never corrected.** He pulls funny faces at somebody sad and
+  says *é só uma porta* to somebody frightened — the two things the whole project
+  tells adults not to do. **Nobody reprimands him**; it simply does not work, and
+  he sees what does.
+- **The answers he gets are short and mechanical, never moral.** *Porque antes
+  ele não ouvia* is the longest explanation in the book.
+- **The last scene repeats the first**, same framing, one more character inside.
+  **The repetition is the ending**, and it is not said aloud.
+
+Checked against its own rules: no child in the cast, no sentence of the *aprendi
+que* kind, no line over twenty-eight words, and **the word *emoção* does not
+appear once.**
+
+### D-303 `[DEFINED]` The face never changes — which is what makes the book possible
+Character consistency across sixteen scenes was recorded as the project's largest
+technical risk (D-301). **It is resolved by a decision rather than by technique.**
+
+**Each character's face is fixed and never changes.** It is not a limitation: it
+is what these characters are. **They are not people who have moods — they are the
+feelings themselves.** The Sad one always has the tear, because take the tear away
+and it is no longer him.
+
+> **A cara é fixa. O tamanho e a postura carregam a história.**
+
+The angry one becomes enormous with the same face. The ashamed one shrinks with
+the same face. **And in scene 13, after the good thing has ended, the happy one
+keeps his face and sits small and slumped in a corner** — the feeling has not
+changed, the thing has ended. That is precisely what the scene has to say, and
+the smiling face on a slumped body says it better than a new expression would.
+
+**Only the arms may move**, and only where the scene requires it. Colour, body
+shape and face do not change.
+
+### D-304 `[IMPLEMENTATION]` The character sheet and the two test scenes
+`docs/materials/livro-personagens.md`. **It is not for generating the book — it
+is for finding out whether the book is possible.**
+
+**A cast block to paste into every prompt**, describing the seven exactly as the
+deck draws them, with the three details a generator most easily drops named
+explicitly: **the blue one's teardrop, the pink one's hand over the face, the
+olive one's hand against the cheek.**
+
+**And a new style block**, because this is the first thing in the project that is
+not black line on white: flat colour, no gradients, no highlights, no shadows,
+simple uncrowded backgrounds.
+
+**Two test scenes, chosen as the hardest in the book:**
+
+- **Scene 4** — the angry one three times the height of the others, four
+  characters present, an event on the floor. It tests **size as language**.
+- **Scene 15** — all seven at once, around an object that must not be
+  recognisable. It tests everything.
+
+**Five countable checks** rather than an impression, and one question that
+decides: **put scene 4 beside scene 15 — are they recognisably the same
+characters?** If not, **the answer is not to push the prompt but to find another
+way of producing the images.**
+
+### D-305 `[IMPLEMENTATION]` The consistency test passed — and found three faults
+The two hardest scenes were generated and measured against the five countable
+checks.
+
+**The question that decides was answered yes.** Put side by side, the characters
+are recognisably the same in both images: the same bodies, the same colours, and
+all seven faces correct, including the three a generator most easily drops — the
+blue one's teardrop, the pink one's hand over the face, the olive one's hand
+against the cheek. **The book is possible**, and D-303's decision to fix the faces
+is what made it so.
+
+Seven characters detected in scene 15, five in scene 4, all correct.
+
+**Three faults, all fixable, and one of them mine.**
+
+**The white sticker rim.** It was in the cast block because it is in the deck —
+and in the deck it is right, because a card sits alone on white. **In a scene it
+turns the characters into cardboard cut-outs pasted onto a photograph**, which is
+exactly how both test images read. Removed from the cast block, together with the
+drop shadows and the paper texture the generator added to the wall.
+
+**The size was 1.83×, not 3×.** Measured on the pixels rather than judged: the
+red one's height against the mean of the others. **If size is the language of the
+book, an ambiguous size is an unreadable sentence.** The prompt now gives a
+concrete test — *if the mint green one reaches only up to his knee, the size is
+right* — and names the failure: *a red one twice their height is WRONG.*
+
+**The object in scene 15 came out as a small house** made of sticks and cloth,
+which the prompt had forbidden by listing what it must not be. **Listing
+exclusions was not enough**; the prompt now describes what it must be instead — a
+lopsided pile balanced by somebody who did not know where it was going, with no
+roof, no walls, no opening and no symmetry — and names the failed attempt.
+
+**It is the same lesson as the ground line and the thumb**: naming the failure
+concretely works where listing the requirement does not.
+
+### D-306 `[IMPLEMENTATION]` Second attempt: two of three fixed, and the size resists
+Measured again, not judged.
+
+| | Antes | Agora | Pedido |
+| --- | ---: | ---: | ---: |
+| Rebordo branco, cena 4 | 59.3% | **8.2%** | 0 |
+| Rebordo branco, cena 15 | 66.6% | **0.0%** | 0 |
+| Vermelho / média dos outros | 1.83× | **2.16×** | 3× |
+
+**The white rim is gone**, measured as the proportion of near-white pixels in a
+band around each figure. The characters now stand in the room instead of being
+pasted onto it, and it is the single biggest improvement between the two
+attempts.
+
+**The object in scene 15 is no longer a house.** It is a lopsided pile of blocks,
+a stick and a piece of cloth, with no roof and nothing that could be entered —
+which is what the scene needs.
+
+**The size did not take**, and it is the one thing that matters most. From 1.83×
+to 2.16× after being told three times, given a concrete test and shown the
+failure. **The instruction is not the problem; the framing is** — a figure three
+times the height of the others does not fit a picture composed around a group.
+
+So the rule changed from a proportion to a composition: **compose the picture
+around his size, so that he does not fit comfortably in the frame** — his head
+touching or cut by the top edge while the others stand well below the middle. It
+is the same move that fixed the ground line: **describe the picture, not the
+measurement.**
+
+**Everything else holds.** Seven characters in scene 15, five in scene 4, all
+colours correct, all seven faces correct across both images including the
+teardrop, the hand over the face and the hand at the cheek. **The consistency
+question stays answered: they are the same characters.**
+
+### D-307 `[IMPLEMENTATION]` Third attempt: the size took, and the test is closed
+| | 1.ª | 2.ª | 3.ª |
+| --- | ---: | ---: | ---: |
+| Vermelho / média dos outros | 1.83× | 2.16× | **3.82×** |
+| Rebordo branco | 59% | 8% | 8% |
+| A coisa parecia uma casa | sim | não | não |
+
+**What changed between the second attempt and the third was not insistence — it
+was replacing a measurement with a composition.** Asking for *three times taller*
+failed twice. Describing the frame worked at once: *the top of his head touches
+the top edge, every other character stands in the lower half, and if all five fit
+comfortably side by side the composition is wrong.*
+
+**The generator composes pictures; it does not measure proportions.** It is the
+same lesson as the ground line, the thumb and the object — **and it is now three
+for three.**
+
+Measured on the image: the red one's head starts at 4% from the top and every
+other character begins below 59%. It overshot to 3.82×, which is not a fault:
+**in a scene where anger is at its peak, bigger is more readable than exact.**
+
+**The test is closed and the book is no longer a technical risk.** Both scenes
+kept as reference art in `artwork/livro/`: they are the two that every subsequent
+prompt should be judged against, and the first pair a colleague or an illustrator
+would be shown.
+
+**What remains open is not consistency but volume**: fourteen more scenes at this
+standard.
+
+### D-308 `[IMPLEMENTATION]` The fourteen remaining scene prompts
+`docs/materials/livro-prompts.md`. Sixteen scenes, two already generated,
+fourteen written — verified against the story so that none is missing.
+
+**Every scene carries a composition instruction rather than a measurement**,
+because that is what worked three times out of three (D-307). Where size changes
+— scenes 5, 10, 12, 13 — the frame is described: *he must not fit comfortably*,
+*most of the picture is empty room*, *the emptiness around him is the subject*.
+
+**Cast economy is stated as a rule:** only the characters the scene needs appear.
+**A scene with seven characters is seven chances to go wrong; a scene with three
+is three.** Half the book is two- or three-character scenes.
+
+**Three scenes carry a warning against the generator's instinct:**
+
+- **Scene 6** — the olive one pulling faces at the sad one **must not be
+  smiling**. His face never changes, and a generator will want to make him
+  cheerful because he is being cheerful.
+- **Scene 7** — the yellow one's arms must be **down**, not raised, because he has
+  sat down beside somebody.
+- **Scene 13** is the most delicate in the book, and its prompt says so: **the
+  happy one keeps his face entirely.** *The smiling face on a slumped, small body
+  is the entire point of this picture, and changing his face would destroy it.*
+
+**A generation order, in four batches**, and the first is not the beginning of the
+book: **scenes 1 and 16 together**, because the last picture repeats the first
+and the repetition is the ending. **If those two do not match, the ending does not
+work**, and it is worth knowing early rather than at the sixteenth image.
+
+The remaining batches go from easiest to hardest — two characters, then three,
+then the full room — so that the cheap scenes stabilise the style before the
+expensive ones.
+
+### D-309 `[IMPLEMENTATION]` Twelve scenes generated; fourteen of sixteen in hand
+Scenes 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12 and 14 generated and kept in
+`artwork/livro/`. **Fourteen of the sixteen exist. Scenes 13 and 16 are
+missing.**
+
+**The consistency holds across all fourteen.** Every character is recognisably
+itself in every appearance, and the three details that were flagged as fragile —
+the blue one's teardrop, the pink one's hand over the face, the olive one's hand
+at the cheek — are correct everywhere.
+
+**The instructions that worked against the generator's instinct all took**, which
+is the part worth recording:
+
+- **Scene 6:** the olive one pulls faces at the sad one **without smiling**. His
+  face is unchanged, which is what the story needs and what a generator resists.
+- **Scene 7:** the yellow one sits with his **arms down**.
+- **Scene 5:** the red one is back to normal size and small in the frame, which
+  is what the scene says.
+- **Scene 12:** the yellow one's raised arms are cut by the top edge, exactly as
+  the composition instruction asked.
+- **Scene 10:** the pink one is genuinely tiny behind the cupboard.
+
+**Three faults, and one is a continuity error rather than a drawing error.**
+
+**The assembled object appears in scene 11**, where it cannot exist: it is built
+in scene 14 and seen in scene 15. **A picture book read by a child who turns back
+a page will catch this** — and the fault came from giving the generator scenes 11
+and 15 in the same batch, where it carried the object across.
+
+**Scenes 8 and 9 have a visibly darker, browner room** than the other twelve.
+Measured on the floor: 94 and 87 units from the median against 26 or less
+everywhere else. **They were generated as a pair and drifted as a pair** — which
+is the cost of batching, and the lesson is to include a scene from the accepted
+set in every batch as an anchor.
+
+**Scene 1 has a roof and a brown exterior** that no other scene has. It is not
+wrong — the house is seen from outside — but scene 16 must match it exactly, and
+that is now the harder of the two remaining pictures.
+
+### D-310 `[DEFINED]` Emptiness needs composition; absence alone reads as unfinished
+Ricardina's observation that some scenes are not visually attractive traces to my
+own instruction. **Writing *o vazio é o assunto* in five scenes produced pages
+that are seventy per cent bare floor** — and a literal void reads as an unfinished
+page, not as solitude. A child reads the second thing.
+
+**The correction is the same in all of them: bring the frame in and drop the
+camera** to the characters' own height. The figure gets larger, the emptiness
+remains, and the page stops looking abandoned.
+
+Applied to scenes 8 and 9 in this pass. **Scenes 5, 10 and 14 have the same
+fault** and are candidates for the same fix.
+
+**And a batching rule, learned from scenes 8 and 9 drifting as a pair:** every
+batch includes one already-accepted scene as an anchor. A batch generated with no
+reference to what exists drifts as a whole, and the drift is invisible until the
+scenes are laid side by side.
+
+### D-311 `[IMPLEMENTATION]` Scene 16 works as the ending — fifteen of sixteen in hand
+The repetition reads. Same house, same roof, same walls, same floor, same
+palette, same sofa and same two tables and the same bookshelf in the same places,
+**and seven characters inside instead of six, with nobody left outside.** A child
+turning back to the first page finds the picture again with one more in it, which
+is the whole of the ending.
+
+**What differs, and it is a judgement rather than a fault.** The rug and the
+stool are gone, and the characters are doing different things: the blue one has
+the box instead of the plush rabbit, the yellow one reads on the floor instead of
+drawing at the table, the mint one has taken the table. **Time has passed in the
+story, so the characters having moved is right; the missing furniture is a small
+loss and not worth another generation.**
+
+**Fifteen of sixteen scenes are in hand.** Only scene 13 remains — the happy one
+small and slumped with his face unchanged, which is the most delicate picture in
+the book.
+
+**Not regenerated, and still standing as recorded in D-309:** scene 11 carries an
+object that does not exist yet in the story, and scenes 8 and 9 have a room
+darker than every other scene. Both were prompted for and neither came back.
+
+### D-312 `[IMPLEMENTATION]` Sixteen of sixteen — the book is illustrated
+Scenes 13, 11 and 9 came back and are kept. **All sixteen scenes exist**, and the
+whole book laid out as a contact sheet reads as one object with one cast.
+
+**Scene 13 works, and it was the one that could not be salvaged if it failed.**
+The happy one sits small in the corner — measured at 0.54 of the olive one's
+height — with his face entirely unchanged: eyes closed in curves, wide open
+smile. **The smiling face on a small slumped body is exactly the sentence the
+scene had to say**, and no generator instinct overrode it.
+
+**Scene 11 no longer contains the object.** The continuity error is gone: seven
+characters, loose blocks, nothing stacked, nobody looking at the pink one.
+
+**Scene 9 is now in the book's palette** and framed close, and it is a better
+picture than the one it replaces.
+
+**One outstanding: scene 8** was not regenerated and is still the dark brown
+room. It is the only scene visibly outside the palette — measured at 99 from the
+book's median, against 50 or less everywhere else.
+
+**A palette spread worth naming before layout.** Floors range from [212 149 89]
+to [247 207 154]. **No single scene is wrong, but the book drifts warmer and
+lighter across batches**, and the reader turning pages will see it. It is
+correctable in layout with a single colour adjustment per scene rather than by
+regenerating anything — **and that is the cheaper fix**, since the drawings
+themselves are right.
+
+### D-313 `[IMPLEMENTATION]` Scene 8 redone — the book is complete
+The dark room is gone. Measured on the floor: **99 units from the book's median
+before, 29 after.** Five characters, all correct, and the framing is close
+instead of a field of bare floor.
+
+**All sixteen scenes exist and are kept in `artwork/livro/`.** *Quem És Tu?* is
+written and illustrated.
+
+**The palette spread stands as recorded in D-312** and is now the only visual
+work left: scenes 9, 11, 12 and 14 sit 34 to 60 units from the median. **No
+drawing is wrong** — it is a levelling job for layout, one colour adjustment per
+image, and cheaper and safer than regenerating anything.

@@ -46,8 +46,9 @@ diz **eu sou má** — e é por isso que não se resolve a explicar-lhe que o qu
 não foi assim tão grave.
 
 **Foi recusada a distinção mais óbvia**, que seria *vergonha não é culpa*.
-Verdadeira, e bem apoiada: a culpa olha para o acto e move para a reparação; a
-vergonha olha para a pessoa e move para o esconder. Mas é uma distinção da
+A distinção é sustentada por investigação: a culpa dirige-se ao acto e associa-
+se a comportamento reparador; a vergonha dirige-se à pessoa e associa-se a
+ocultação e evitamento. Mas é uma distinção da
 taxonomia de quem estuda, não uma frase de criança, e nenhuma ficha pende dela.
 Fica onde é útil — no enquadramento de quem aplica.
 
@@ -138,6 +139,20 @@ gente.
 ---
 
 ## 3. As cinco, e o que as sustenta
+
+**Os três níveis de sustentação usados neste caderno.** A graduação é do
+material e não da literatura, e existe para que quem o usa saiba o que pode
+afirmar e o que não pode.
+
+| | O que significa |
+| --- | --- |
+| **Estabelecido** | O mecanismo está descrito por investigação replicada e há consenso sobre a sua direcção. Pode ser afirmado a pais e a professores como facto. |
+| **Razoável** | O mecanismo geral tem sustentação; **a aplicação concreta deste material não foi testada**. Apresenta-se como fundamentado, nunca como demonstrado. |
+| **Prática** | Não há investigação directa nesta aplicação. Está no material por experiência clínica e por coerência com o que os outros níveis sustentam. **Não se afirma eficácia.** |
+
+**Um nível diz respeito à afirmação, e não à utilidade.** Uma opção graduada como
+prática pode ser a mais útil numa sessão concreta; o que a graduação limita é o
+que se diz sobre ela.
 
 | | Base | Grau |
 | --- | --- | --- |
@@ -732,7 +747,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 6 aos 9 anos |
-| **Base** | Geração de alternativas. **Razoável** — resolução de problemas é das melhores estudadas nesta idade; esta aplicação é prática. |
+| **Base** | Geração de alternativas. **Razoável** — o treino de resolução de problemas tem investigação consolidada nesta idade; esta aplicação concreta não foi testada. |
 | **Objectivo** | Transformar o arrependimento em alternativa. **É a metade virada para a frente**, e está separada da reparação porque uma criança pode conseguir esta e não a outra. |
 | **Como aplicar** | **Só depois da ficha *Culpado*, e só se a resposta lá tiver sido *uma coisa que eu fiz*.** Nunca no dia. |
 | **A notar** | Se a alternativa é dela ou é a nossa. **A dela vale mais**, mesmo quando é pior — é a única que vem com a situação dela dentro. |
@@ -778,7 +793,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 6 aos 9 anos |
-| **Base** | Reparação. **Prática**, com apoio indirecto: é o que a distinção entre culpa e vergonha prevê. |
+| **Base** | Reparação. **Prática**: sem investigação nesta aplicação. A fundamentação decorre da distinção entre culpa e vergonha. |
 | **Objectivo** | Escolher o que dizer a quem ficou magoado, e prever o caso de a outra pessoa não querer ouvir já. |
 | **Como aplicar** | Depois da ficha anterior, e **nunca no mesmo dia do acontecimento** — enquanto a coisa ainda está quente, compor não é possível. |
 | **A notar** | Se escreve sobre o que fez ou sobre o que sentiu. **Uma criança que só consegue explicar-se ainda não chegou à outra pessoa** — e isso é informação, não falha. |

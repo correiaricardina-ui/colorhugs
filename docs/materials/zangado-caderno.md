@@ -47,8 +47,8 @@ seguir.
 
 Nos primeiros anos, a criança regula-se **com** um adulto e não sozinha. A
 regulação autónoma constrói-se sobre essa experiência repetida, não em vez
-dela. É a razão pela qual *ir ter com alguém* é a estratégia com melhor base
-deste conjunto — e a razão pela qual um material digital, sozinho, tem um tecto
+dela. É a razão pela qual *ir ter com alguém* é a única estratégia deste conjunto
+cujo mecanismo é graduado como estabelecido — e a razão pela qual um material digital, sozinho, tem um tecto
 que convém reconhecer.
 
 ### As cinco estratégias não são arbitrárias
@@ -105,14 +105,25 @@ A criança escolhe, ou não escolhe nenhuma e sai.
 
 ## 3. As cinco estratégias, e o que as sustenta
 
-O material distingue três níveis de sustentação. A distinção é do material, não
-da literatura, e existe para que quem o usa saiba o que pode afirmar.
+**Os três níveis de sustentação usados neste caderno.** A graduação é do
+material e não da literatura, e existe para que quem o usa saiba o que pode
+afirmar e o que não pode.
+
+| | O que significa |
+| --- | --- |
+| **Estabelecido** | O mecanismo está descrito por investigação replicada e há consenso sobre a sua direcção. Pode ser afirmado a pais e a professores como facto. |
+| **Razoável** | O mecanismo geral tem sustentação; **a aplicação concreta deste material não foi testada**. Apresenta-se como fundamentado, nunca como demonstrado. |
+| **Prática** | Não há investigação directa nesta aplicação. Está no material por experiência clínica e por coerência com o que os outros níveis sustentam. **Não se afirma eficácia.** |
+
+**Um nível diz respeito à afirmação, e não à utilidade.** Uma opção graduada como
+prática pode ser a mais útil numa sessão concreta; o que a graduação limita é o
+que se diz sobre ela.
 
 ### Ir ter com alguém e dizer
 
 **Base estabelecida, aplicação razoável.** Que a criança pequena regula *com* um
-adulto, e não sozinha, é das coisas mais consistentes da psicologia do
-desenvolvimento. Que este gesto concreto ajude naquele momento é razoável, não
+adulto, e não sozinha, é dos achados mais consistentes da investigação sobre regulação emocional na
+infância. Que este gesto concreto ajude naquele momento é razoável, não
 demonstrado.
 
 Foi discutido retirá-la, por o produto não poder garantir que há alguém
@@ -129,8 +140,8 @@ alguém existe.
 ### Olhar para outra coisa, contar devagar
 
 **Razoável, e provavelmente a mais forte deste conjunto aos quatro e cinco
-anos.** O desvio da atenção é a estratégia com melhor apoio especificamente em
-crianças pequenas — é o mecanismo que aparece na investigação clássica sobre
+anos.** O desvio da atenção é a estratégia de regulação com maior número de estudos em
+crianças em idade pré-escolar e escolar — é o mecanismo que aparece na investigação clássica sobre
 adiamento da gratificação.
 
 **Contar é um sítio onde pôr a atenção, não um exercício.** O desenho da mão não
@@ -139,9 +150,10 @@ tarefa em vez de um descanso.
 
 ### Respirar devagar, a soltar o ar mais tempo do que a apanhá-lo
 
-**Razoável em adultos, prática em crianças.** É a estratégia mais popular em
-produtos para crianças e a evidência é mais fina do que a popularidade sugere:
-a lógica fisiológica e os estudos são sobretudo com adultos.
+**Razoável em adultos, prática em crianças.** É a estratégia mais frequente em
+produtos para crianças e a que tem menos investigação nesta idade: a
+fundamentação fisiológica é sólida e os estudos disponíveis são sobretudo com
+adultos.
 
 Está graduada abaixo do que a maioria assume, e é a que mais beneficiaria de
 verificação independente.
@@ -182,7 +194,8 @@ que uma pergunta ligada ao que a criança acabou de escolher.
 
 **Estas perguntas são para o clínico, não para o material da criança.** Na
 aplicação nada é perguntado à criança além do que sente, precisamente porque
-uma pergunta abre e uma criança sozinha não tem quem a receba. Aqui há.
+uma pergunta abre e uma criança sozinha não tem quem a receba. Na sessão, essa
+condição está satisfeita.
 
 ### Depois de *ir ter com alguém*
 
@@ -809,7 +822,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 6 aos 9 anos |
-| **Base** | Reparação. **Prática**, com apoio indirecto: é o que a distinção entre culpa e vergonha prevê. |
+| **Base** | Reparação. **Prática**: sem investigação nesta aplicação. A fundamentação decorre da distinção entre culpa e vergonha. |
 | **Objectivo** | Escolher o que dizer a quem ficou magoado, e prever o caso de a outra pessoa não querer ouvir já. |
 | **Como aplicar** | **Não no dia.** Enquanto a activação desce, compor ainda não é possível. É material para a sessão seguinte. |
 | **A notar** | Se escreve sobre o que fez ou sobre o que sentiu. **Uma criança que só consegue explicar-se ainda não chegou à outra pessoa** — e isso é informação, não falha. |
@@ -848,6 +861,9 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 
 </div>
 
+
+
+---
 
 ## 10. Limites
 

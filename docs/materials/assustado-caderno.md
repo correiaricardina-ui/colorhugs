@@ -57,10 +57,11 @@ prometemos não fazer.
 
 ### O que mantém o medo é a fuga
 
-**É o achado mais sólido de todo este projecto.** Que a evitação alivia no
-momento e agrava a prazo é das coisas mais bem estabelecidas da psicologia
-infantil — mais do que qualquer coisa que sustente as seis opções da família da
-tristeza ou as cinco da zanga.
+**É a única afirmação central deste projecto graduada como estabelecida.** Que
+a evitação reduz o desconforto imediato e mantém ou aumenta a resposta de medo
+a prazo está replicado na investigação sobre ansiedade infantil, e é o
+pressuposto sobre o qual assentam os tratamentos com melhor eficácia
+demonstrada nesta área.
 
 E é também o que quase todas as famílias fazem ao contrário, sem má intenção
 nenhuma: **a versão que piora é a que sabe melhor no momento.**
@@ -128,8 +129,19 @@ diferentes de propósito: cinco pedras iguais em fila são uma escala, e uma esc
 
 ## 3. As quatro, e o que as sustenta
 
-O material distingue três níveis de sustentação. A distinção é do material, não
-da literatura, e existe para que quem o usa saiba o que pode afirmar.
+**Os três níveis de sustentação usados neste caderno.** A graduação é do
+material e não da literatura, e existe para que quem o usa saiba o que pode
+afirmar e o que não pode.
+
+| | O que significa |
+| --- | --- |
+| **Estabelecido** | O mecanismo está descrito por investigação replicada e há consenso sobre a sua direcção. Pode ser afirmado a pais e a professores como facto. |
+| **Razoável** | O mecanismo geral tem sustentação; **a aplicação concreta deste material não foi testada**. Apresenta-se como fundamentado, nunca como demonstrado. |
+| **Prática** | Não há investigação directa nesta aplicação. Está no material por experiência clínica e por coerência com o que os outros níveis sustentam. **Não se afirma eficácia.** |
+
+**Um nível diz respeito à afirmação, e não à utilidade.** Uma opção graduada como
+prática pode ser a mais útil numa sessão concreta; o que a graduação limita é o
+que se diz sobre ela.
 
 **Nenhuma destas quatro é a peça principal desta família.** São formas de baixar
 a activação, e a activação não é o problema — a fuga é. Servem para tornar
@@ -149,8 +161,8 @@ opostas.** É a pergunta que a orientação da ficha 4 obriga a fazer.
 
 ### Contar devagar, olhar para outra coisa
 
-**Razoável.** Desvio da atenção, que é a família de regulação com melhor apoio
-especificamente em crianças pequenas.
+**Razoável.** Desvio da atenção, que é a estratégia de regulação com maior número de estudos
+em crianças desta idade.
 
 **Cautela:** desviar a atenção *para conseguir ficar* é aproximação; desviar a
 atenção *para não ter de estar ali* é evitação por dentro. A diferença não está
@@ -210,7 +222,8 @@ conversa sobre o que têm feito.
 
 Agrupadas pela figura que as puxa. **São para o clínico, não para o material da
 criança** — na aplicação nada é perguntado além do que sente, porque uma pergunta
-abre e uma criança sozinha não tem quem a receba. Aqui há.
+abre e uma criança sozinha não tem quem a receba. Na sessão, essa condição está
+satisfeita.
 
 ### Depois de *ir ter com alguém*
 
@@ -826,7 +839,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 6 aos 9 anos |
-| **Base** | Aproximação gradual. **Estabelecido** — o achado mais sólido de todo este material. **Não é um protocolo de exposição.** |
+| **Base** | Aproximação gradual. **Estabelecido** — é o mecanismo com melhor sustentação de todo o material. **A ficha não é um protocolo de exposição e não tem dose nem duração.** |
 | **Objectivo** | Transformar uma coisa evitada numa série de bocadinhos, escolhidos por ela, com companhia combinada e com a falha prevista. |
 | **Como aplicar** | **O primeiro degrau tem de dar para fazer hoje.** É o que mais corre mal: um degrau ambicioso não se dá, e ninguém volta a tentar. Se ela propuser um grande, aceitar e pôr um menor antes. |
 | **A notar** | Se a ordem é dela e não a nossa ideia do que é mais difícil. **E se preenche a caixa da falha**: quem não consegue imaginar não conseguir é quem mais precisa de a ter escrita. |

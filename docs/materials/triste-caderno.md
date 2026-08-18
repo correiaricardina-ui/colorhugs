@@ -135,7 +135,7 @@ equívoca quanto ao sentimento aliviar. E o custo de a escrever assim não se v�
 logo: uma criança a quem se promete que falar faz passar, e que fala e continua
 triste, conclui que fez mal ou que há qualquer coisa estragada nela.
 
-*Mais fácil de carregar* é o que se pode prometer. E chega.
+*Mais fácil de carregar* é o que se pode prometer, e é suficiente.
 
 **As seis são oferecidas, não prescritas.** A criança escolhe, ou não escolhe
 nenhuma e sai por *agora não*.
@@ -144,8 +144,19 @@ nenhuma e sai por *agora não*.
 
 ## 3. As seis, e o que as sustenta
 
-O material distingue três níveis de sustentação. A distinção é do material, não
-da literatura, e existe para que quem o usa saiba o que pode afirmar.
+**Os três níveis de sustentação usados neste caderno.** A graduação é do
+material e não da literatura, e existe para que quem o usa saiba o que pode
+afirmar e o que não pode.
+
+| | O que significa |
+| --- | --- |
+| **Estabelecido** | O mecanismo está descrito por investigação replicada e há consenso sobre a sua direcção. Pode ser afirmado a pais e a professores como facto. |
+| **Razoável** | O mecanismo geral tem sustentação; **a aplicação concreta deste material não foi testada**. Apresenta-se como fundamentado, nunca como demonstrado. |
+| **Prática** | Não há investigação directa nesta aplicação. Está no material por experiência clínica e por coerência com o que os outros níveis sustentam. **Não se afirma eficácia.** |
+
+**Um nível diz respeito à afirmação, e não à utilidade.** Uma opção graduada como
+prática pode ser a mais útil numa sessão concreta; o que a graduação limita é o
+que se diz sobre ela.
 
 **A evidência separa três destas seis, e depois pára.** Vale a pena dizê-lo antes
 do quadro, porque a alternativa era apresentar seis com o mesmo ar de coisa
@@ -154,8 +165,8 @@ apoiada, e três delas não o são.
 ### Alguém ao pé de mim, sem falar
 
 **Base estabelecida, aplicação prática.** Que a criança pequena regula com um
-adulto e não sozinha é das coisas mais consistentes da psicologia do
-desenvolvimento, e é a melhor base de todo este conjunto. Que a **presença
+adulto e não sozinha é dos achados mais consistentes da investigação sobre regulação emocional na
+infância, e é o único mecanismo deste conjunto graduado como estabelecido. Que a **presença
 silenciosa** em concreto seja a forma que ajuda é prática, não demonstrado.
 
 É a opção que os adultos menos fazem, e por isso a que mais precisa de estar
@@ -191,8 +202,8 @@ quieta, é muitas vezes a única que existe.
 ### Um bicho
 
 **Prática.** E prática quer dizer *não foi bem estudado*, não quer dizer *não
-funciona* — a literatura sobre companhia animal é fina e metodologicamente
-frágil.
+funciona* — a investigação sobre companhia animal em crianças é escassa, com amostras
+pequenas e desenhos sem grupo de comparação.
 
 Está no conjunto porque, numa escolha que é da criança e não nossa, o que as
 crianças dizem vale mais do que uma literatura fina. E as crianças dizem o cão
@@ -236,8 +247,8 @@ Não é a curva da activação, e não podia ser. A zanga sobe depressa e desce
 devagar, e a tristeza não faz isso — desenhá-la com aquela forma diria uma coisa
 falsa antes de se ler uma palavra.
 
-O que este esquema mostra é **a mesma tristeza carregada de duas maneiras**:
-sozinha e com companhia. Uma chegada, um fim.
+O que este esquema mostra é **a mesma tristeza carregada de duas maneiras** —
+sozinha e com companhia — com o mesmo início e o mesmo fim.
 
 **As duas linhas acabam juntas, de propósito.** Uma figura em que a companhia faz
 a tristeza terminar mais cedo prometia exactamente o que a secção 2 diz que não
@@ -259,8 +270,8 @@ Agrupadas pela figura que as puxa, porque uma pergunta solta serve menos do que
 uma pergunta ligada ao que a criança acabou de escolher.
 
 **Estas perguntas são para o clínico, não para o material da criança.** Na
-aplicação nada é perguntado à criança além do que sente, precisamente porque uma
-pergunta abre e uma criança sozinha não tem quem a receba. Aqui há.
+aplicação nada é perguntado à criança além do que sente, precisamente porque uma pergunta abre e uma criança sozinha não tem quem a receba. Na sessão, essa
+condição está satisfeita.
 
 ### Depois de *alguém ao pé de mim*
 
@@ -870,7 +881,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 4 aos 7 anos |
-| **Base** | Representação de quem está ausente. **Prática**, com apoio indirecto na literatura sobre separação e vinculação. |
+| **Base** | Representação de quem está ausente. **Prática**: sem investigação nesta aplicação; a fundamentação é teórica, a partir do que se sabe sobre separação e vinculação. |
 | **Objectivo** | Dar lugar à única palavra da família que não é inteiramente má, e ver de quem ou de quê. |
 | **Como aplicar** | É de desenhar, não de escrever. As perguntas por baixo fazem-se depois do desenho, nunca antes. |
 | **A notar** | **Se é de uma pessoa, de um sítio ou de um tempo.** Uma criança com saudades de uma versão da própria família que já não existe está a dizer outra coisa — é frequente depois de uma separação, de uma mudança ou de um nascimento. |
@@ -962,7 +973,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 6 aos 9 anos |
-| **Base** | Comunicação de necessidades e procura de ajuda. **Prática** — a companhia assenta em terreno firme, o pedir não. |
+| **Base** | Comunicação de necessidades e procura de ajuda. **Prática** — o mecanismo da companhia é estabelecido; a comunicação de necessidades pela própria criança não tem investigação nesta idade. |
 | **Objectivo** | Fechar a distância entre o que ela descobriu na ficha 3 e o que ela recebe. **É o que esta família tem em vez de *da próxima vez*.** |
 | **Como aplicar** | Depois da ficha 3, nunca antes — não há o que pedir sem saber primeiro o que ajuda. Ensaiar a frase em voz alta na sala. |
 | **A notar** | A quem pede. E se a terceira caixa fica vazia: uma criança que não consegue imaginar a recusa é a que mais precisa de a ter preparada. |
@@ -1014,8 +1025,8 @@ declaradas: uma porque as crianças a escolhem, uma porque dá casa a uma palavr
 fina, e uma porque sem ela o material prescreveria companhia.
 
 **A melhor evidência do conjunto aponta para fora do ecrã**, e mais nesta família
-do que na zanga. A coisa mais bem apoiada aqui presente é que uma criança triste
-precisa de outra pessoa ao pé. Um material digital que o diz honestamente está a
+do que na zanga. O único mecanismo estabelecido aqui presente é que uma criança triste precisa
+de outra pessoa ao pé. Um material digital que o diz honestamente está a
 apontar para si, e não para si próprio.
 
 **Sobre contar a alguém, a ressalva outra vez.** É a única afirmação deste

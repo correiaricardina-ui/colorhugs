@@ -107,8 +107,8 @@ feliz.**
 ### Onde isto assenta
 
 Psicologia do desenvolvimento e da emoção, no que respeita à distinção entre
-afecto positivo activado e desactivado. A literatura sobre saboreio, no que
-respeita a demorar-se. E a clínica, no resto.
+afecto positivo activado e desactivado. A investigação sobre saboreio, no que respeita a demorar-se. Nos restantes
+pontos, a fundamentação é de prática clínica.
 
 **Não é psicoterapia.**
 
@@ -135,6 +135,20 @@ tempo, e não há razão para separar nas palavras o que a imagem não separa.
 ---
 
 ## 3. O que se recolhe
+
+**Os três níveis de sustentação usados neste caderno.** A graduação é do
+material e não da literatura, e existe para que quem o usa saiba o que pode
+afirmar e o que não pode.
+
+| | O que significa |
+| --- | --- |
+| **Estabelecido** | O mecanismo está descrito por investigação replicada e há consenso sobre a sua direcção. Pode ser afirmado a pais e a professores como facto. |
+| **Razoável** | O mecanismo geral tem sustentação; **a aplicação concreta deste material não foi testada**. Apresenta-se como fundamentado, nunca como demonstrado. |
+| **Prática** | Não há investigação directa nesta aplicação. Está no material por experiência clínica e por coerência com o que os outros níveis sustentam. **Não se afirma eficácia.** |
+
+**Um nível diz respeito à afirmação, e não à utilidade.** Uma opção graduada como
+prática pode ser a mais útil numa sessão concreta; o que a graduação limita é o
+que se diz sobre ela.
 
 **Não há estratégias nesta família e não há evidência a graduar por opção**, o que
 a torna a mais curta das secções 3 de todo o material.
@@ -553,7 +567,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 6 aos 9 anos |
-| **Base** | Saboreio. **Razoável** — é a única das três camadas desta família com base identificável, e a literatura é sobretudo com adultos. |
+| **Base** | Saboreio. **Razoável** — é a única das três camadas desta família com investigação própria, e essa é sobretudo com adultos. |
 | **Objectivo** | Ficar mais tempo numa coisa boa em vez de passar por ela. **Pequena de propósito**: uma coisa boa grande não precisa de ajuda nenhuma para ser notada. |
 | **Como aplicar** | Contar devagar, com pormenores sensoriais. Se ela despachar em duas frases, pedir outra vez mais devagar — **é a lentidão que é o exercício, não a história.** |
 | **A notar** | Se consegue demorar-se sem ficar desconfortável. E a terceira pergunta — se alguém sabe que aquilo foi bom para ela — costuma render mais do que as outras duas. |

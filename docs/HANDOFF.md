@@ -1,7 +1,7 @@
 # ColorHugs — Handoff
 
 Paste this as the first message of a new conversation, and upload
-`colorhugs-phase1.zip` with it.
+`colorhugs.zip` with it.
 
 ---
 
@@ -27,6 +27,11 @@ The other documents in `docs/`:
 | `CERTIFICATIONS.md` | seals worth pursuing, and two that turned out not to apply |
 | `QA-CHECKLIST.md` | pre-launch checks, with blockers |
 | `AVATAR-PROMPTS.md`, `STICKER-PROMPTS.md`, `EMOTION-CARD-PROMPTS.md` | image generation specs |
+| `COLOURING-PROMPTS.md` | every colouring page prompt, with the failures named |
+| `WORKBOOK-RECIPE.md` | how a family workbook is built, section by section |
+| `materials/livro-historia.md` | the children's story, sixteen scenes |
+| `materials/livro-personagens.md` | the cast sheet and the consistency rules |
+| `materials/livro-prompts.md` | the scene prompts for the story |
 
 ---
 
@@ -48,28 +53,45 @@ The other documents in `docs/`:
 
 ## Where the project is
 
-**Live.** `colorhugs.pt`, hosted on GitHub Pages from the repository
-`correiaricardina-ui/colorhugs`, deployed by a GitHub Actions workflow. I
-manage commits through GitHub Desktop.
+**Seven families closed.** Zangado, Triste, Assustado, Envergonhado, Aborrecido,
+Calmo, Feliz. Each has three PDFs — `caderno` (clinician, 25 to 29 pages),
+`exploracao` (the child's sheets, 12 to 14 pages) and `pais` (one page) — built
+from `<família>-caderno.md` plus `<família>-fichas.html` by
+`scripts/build-workbook-pdf.py <family>`. **Twenty-one documents.**
 
-**In holding mode.** The repository variable `SITE_MODE` is set to `holding`,
-so the domain shows a "coming soon" page and the real site is built at
-`colorhugs.pt/preview/`, unlinked and not indexed. Clearing that variable and
-re-running the workflow puts the site live.
+**Teacher line complete.** `professores-sala.pdf` (seven classroom pages plus the
+disclosure page), `professores-vocabulario.pdf` (eleven pages), the A3 poster and
+six A5 schema cards. Built by `build-teacher-pages.py` and
+`build-teacher-extras.py`.
 
-**Built:** Next.js 14, TypeScript, Tailwind. The homepage, seven section pages,
-thirty-two activity pages, and the Parents & Safety area. All artwork processed
-and wired. Nothing is faked — placeholder activities say so.
+**The children's story is written and illustrated.** *Quem És Tu?* — sixteen
+scenes, about five hundred words, in `livro-historia.md`, with all sixteen
+illustrations in `artwork/livro/`.
 
-Three activities are real: *How Do I Feel?*, *Explore & Color*, and the avatar
-picker. **The avatar is the skeleton the rest plugs into** (D-207): one call to
-`markVisited(area)` connects an activity to it, and the colour it carries is the
-child's rather than the character's (D-208).
-
-**Not built:** any actual activity, accounts, payments, moderation, and
-internationalisation.
+**Interactive:** all seven families live on screen, each with its own question.
+The bored family waits to be asked before it offers anything (D-262).
 
 ---
+
+## What is being worked on, and what is not started
+
+**Three commercial lines** (D-288): **Professores** — complete. **Pais** — in
+progress. **Psicólogos** — not started.
+
+**Next in the parents' line:**
+
+- **The parents' book** — the seven families as a narrative read by the adult
+  alone, beginning with calm and happy. Not written.
+- **The seven letters rewritten** so they close without a session (D-298). As
+  they stand they say *combinámos experimentar isto esta semana*, which has no
+  referent outside a consultation.
+- ***Quem És Tu?*** needs laying out. **One job left on the art:** scenes 9, 11,
+  12 and 14 sit 34 to 60 units from the book's median floor colour. No drawing is
+  wrong — it is a levelling pass at layout, one colour adjustment per image.
+
+**The psychologists' line, not started** (D-288): body map on paper, record pad,
+accommodation grid, ladder log, eight-session plan, school feedback sheet,
+framing and consent, A3 store map.
 
 ## The rules that keep applying
 
@@ -123,6 +145,40 @@ background removal, trimming, format conversion — but not reinvented. If
 artwork is missing, say so and show an honest placeholder.
 
 ---
+
+
+### Added in the session that closed the seven families
+
+**Register — applies to everything written** (D-293). Technically careful and
+professionally serious. No colloquial phrasing, no chatty asides, no jokey tone.
+Named constructs, stated evidence level, explicit limits. **Warmth belongs in the
+parents' letters and the child's sheets and nowhere else**, and never at the cost
+of accuracy.
+
+**Evidence is never described by metaphor** (D-294, D-295). The three levels —
+**estabelecido / razoável / prática** — are defined in a table at the top of
+section 3 of every workbook, and every claim uses them or says concretely what is
+replicated and where. *Terreno firme*, *a literatura é fina* and *apoio
+indirecto* were removed nineteen times.
+
+**No gender in anything the child or family takes home** (D-287). Double forms
+where the word *is* the feeling — *nervoso ou nervosa* — and rewriting where the
+agreement was incidental. **Age ranges live in the workbook and never on the
+child's sheet** (D-247).
+
+**Each family adds one rule to its artwork.** Nobody is sad in the sad pages;
+nobody is frightened in the scared pages; nobody is being looked at in the
+ashamed pages; nobody is bored in the bored pages, **and there are no screens in
+them**.
+
+**For image prompts: describe the picture, not the measurement.** Asking for
+*three times taller* failed twice; describing the frame worked at once. The same
+held for the ground line, the sealed thumb and the unrecognisable object — **four
+times out of four** (D-307).
+
+**Generate in batches with one already-accepted image as an anchor**, or the
+whole batch drifts together and the drift is invisible until they are laid side
+by side (D-310).
 
 ## Recent decisions worth knowing
 
@@ -187,8 +243,10 @@ kite — remain withdrawn (D-079).
 
 ## What I would like you to do first
 
-Read the decision log. Then tell me, in a few lines, what you understand the
-state of the project to be — so I can check you have it right before we carry
-on.
+Read the decision log — it now runs to **D-313**. Then tell me, in a few lines,
+what you understand the state of the project to be, so I can check you have it
+right before we carry on.
 
-Do not start building anything until we have agreed what.
+**Do not start building anything until we have agreed what.**
+
+The next piece is the parents' book, unless I say otherwise.

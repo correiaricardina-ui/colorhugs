@@ -212,8 +212,8 @@ SHEETS["angry"] = [
         "n": 9,
         "title": "Compor as coisas",
         "Idade": "6 aos 9 anos",
-        "Base": "Reparação. **Prática**, com apoio indirecto: é o que a "
-                "distinção entre culpa e vergonha prevê.",
+        "Base": "Reparação. **Prática**: sem investigação nesta aplicação. A "
+                "fundamentação decorre da distinção entre culpa e vergonha.",
         "Objectivo": "Escolher o que dizer a quem ficou magoado, e prever o caso "
                      "de a outra pessoa não querer ouvir já.",
         "Como aplicar": "**Não no dia.** Enquanto a activação desce, compor ainda "
@@ -474,8 +474,9 @@ SHEETS["sad"] = [
         "n": 8,
         "title": "Com saudades",
         "Idade": "4 aos 7 anos",
-        "Base": "Representação de quem está ausente. **Prática**, com apoio "
-                "indirecto na literatura sobre separação e vinculação.",
+        "Base": "Representação de quem está ausente. **Prática**: sem investigação "
+                "nesta aplicação; a fundamentação é teórica, a partir do que se "
+                "sabe sobre separação e vinculação.",
         "Objectivo": "Dar lugar à única palavra da família que não é inteiramente "
                      "má, e ver de quem ou de quê.",
         "Como aplicar": "É de desenhar, não de escrever. As perguntas por baixo "
@@ -520,7 +521,9 @@ SHEETS["sad"] = [
         "title": "O que eu posso pedir",
         "Idade": "6 aos 9 anos",
         "Base": "Comunicação de necessidades e procura de ajuda. **Prática** — "
-                "a companhia assenta em terreno firme, o pedir não.",
+                "o mecanismo da companhia é estabelecido; a comunicação de "
+                "necessidades pela própria criança não tem investigação nesta "
+                "idade.",
         "Objectivo": "Fechar a distância entre o que ela descobriu na ficha 3 e o "
                      "que ela recebe. **É o que esta família tem em vez de *da "
                      "próxima vez*.**",
@@ -808,8 +811,9 @@ SHEETS["scared"] = [
         "n": 9,
         "title": "Chegar devagar",
         "Idade": "6 aos 9 anos",
-        "Base": "Aproximação gradual. **Estabelecido** — o achado mais sólido de "
-                "todo este material. **Não é um protocolo de exposição.**",
+        "Base": "Aproximação gradual. **Estabelecido** — é o mecanismo com melhor "
+                "sustentação de todo o material. **A ficha não é um protocolo "
+                "de exposição e não tem dose nem duração.**",
         "Objectivo": "Transformar uma coisa evitada numa série de bocadinhos, "
                      "escolhidos por ela, com companhia combinada e com a falha "
                      "prevista.",
@@ -1049,8 +1053,9 @@ SHEETS["ashamed"] = [
         "n": 7,
         "title": "O que querias ter feito de outra maneira",
         "Idade": "6 aos 9 anos",
-        "Base": "Geração de alternativas. **Razoável** — resolução de problemas "
-                "é das melhores estudadas nesta idade; esta aplicação é prática.",
+        "Base": "Geração de alternativas. **Razoável** — o treino de resolução de "
+                "problemas tem investigação consolidada nesta idade; esta "
+                "aplicação concreta não foi testada.",
         "Objectivo": "Transformar o arrependimento em alternativa. **É a metade "
                      "virada para a frente**, e está separada da reparação "
                      "porque uma criança pode conseguir esta e não a outra.",
@@ -1073,8 +1078,8 @@ SHEETS["ashamed"] = [
         "n": 8,
         "title": "O que querias dizer a quem ficou magoado",
         "Idade": "6 aos 9 anos",
-        "Base": "Reparação. **Prática**, com apoio indirecto: é o que a distinção "
-                "entre culpa e vergonha prevê.",
+        "Base": "Reparação. **Prática**: sem investigação nesta aplicação. A "
+                "fundamentação decorre da distinção entre culpa e vergonha.",
         "Objectivo": "Escolher o que dizer a quem ficou magoado, e prever o caso "
                      "de a outra pessoa não querer ouvir já.",
         "Como aplicar": "Depois da ficha anterior, e **nunca no mesmo dia do "
@@ -1574,7 +1579,7 @@ SHEETS["calm"] = [
         "title": "Demorar-me",
         "Idade": "6 aos 9 anos",
         "Base": "Saboreio. **Razoável** — é a única das três camadas desta família "
-                "com base identificável, e a literatura é sobretudo com adultos.",
+                "com investigação própria, e essa é sobretudo com adultos.",
         "Objectivo": "Ficar mais tempo numa coisa boa em vez de passar por ela. "
                      "**Pequena de propósito**: uma coisa boa grande não precisa "
                      "de ajuda nenhuma para ser notada.",
@@ -1832,9 +1837,9 @@ SHEETS["happy"] = [
         "A notar": "Se alguma das que escolhe depende de outra pessoa estar "
                    "disponível. **E se escolhe só as que faz sozinha** — pode ser "
                    "preferência, e pode ser que contar não lhe tenha corrido bem.",
-        "Cuidados": "Nenhuma é melhor do que outra na folha dela, mesmo que uma "
-                    "tenha melhor base. **A hierarquia é do caderno e não da "
-                    "criança.**",
+        "Cuidados": "Nenhuma é melhor do que outra na folha dela, mesmo que "
+                    "uma tenha investigação própria e as outras não. **A "
+                    "hierarquia é do caderno e não da criança.**",
         "questions": [
             "Alguma destas já fazes sem ninguém te dizer?",
             "Há alguma maneira tua que não esteja aqui?",
@@ -1845,8 +1850,8 @@ SHEETS["happy"] = [
         "n": 4,
         "title": "Contar a alguém",
         "Idade": "6 aos 9 anos",
-        "Base": "Partilha de acontecimentos positivos. **Razoável**, e a melhor "
-                "base desta família.",
+        "Base": "Partilha de acontecimentos positivos. **Razoável**, e a única opção "
+                "desta família com investigação própria.",
         "Objectivo": "**Escolher a pessoa antes de contar.** É a única maneira de "
                      "guardar cujo resultado não está nas mãos dela.",
         "Como aplicar": "Pela ordem em que está: primeiro quem, depois como se "
@@ -1908,8 +1913,8 @@ SHEETS["happy"] = [
         "n": 7,
         "title": "Entusiasmado",
         "Idade": "7 aos 9 anos",
-        "Base": "Antecipação. **Razoável** quanto à partilha do substrato de "
-                "activação com a ansiedade; a aplicação é prática.",
+        "Base": "Antecipação. **Razoável** quanto à sobreposição do substrato de "
+                "activação com a ansiedade; esta aplicação não foi testada.",
         "Objectivo": "Ver o entusiasmo como alegria que aponta para a frente — e "
                      "**preparar a ficha 10**, que é onde o padrão se vê.",
         "Como aplicar": "A terceira pergunta — se foi como esperava — faz-se sem "
@@ -1995,8 +2000,8 @@ SHEETS["happy"] = [
         "n": 11,
         "title": "Quando acaba",
         "Idade": "6 aos 9 anos",
-        "Base": "Regresso após acontecimento positivo. **Prática**, e descrita com "
-                "frequência sem estar bem estudada em crianças.",
+        "Base": "Regresso após acontecimento positivo. **Prática**: descrita com "
+                "frequência na clínica, sem investigação sistemática em crianças.",
         "Objectivo": "**Nomear o buraco, e dizer que é normal.** Muitas vezes é "
                      "tudo o que é preciso, e é raro alguém lho ter dito.",
         "Como aplicar": "Sem alarme e sem consolo. A ficha descreve; não trata.",

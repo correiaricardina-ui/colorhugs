@@ -132,6 +132,20 @@ diz à criança que aquilo em que ela já está é uma das opções.
 
 ## 3. As seis, e o que as sustenta
 
+**Os três níveis de sustentação usados neste caderno.** A graduação é do
+material e não da literatura, e existe para que quem o usa saiba o que pode
+afirmar e o que não pode.
+
+| | O que significa |
+| --- | --- |
+| **Estabelecido** | O mecanismo está descrito por investigação replicada e há consenso sobre a sua direcção. Pode ser afirmado a pais e a professores como facto. |
+| **Razoável** | O mecanismo geral tem sustentação; **a aplicação concreta deste material não foi testada**. Apresenta-se como fundamentado, nunca como demonstrado. |
+| **Prática** | Não há investigação directa nesta aplicação. Está no material por experiência clínica e por coerência com o que os outros níveis sustentam. **Não se afirma eficácia.** |
+
+**Um nível diz respeito à afirmação, e não à utilidade.** Uma opção graduada como
+prática pode ser a mais útil numa sessão concreta; o que a graduação limita é o
+que se diz sobre ela.
+
 **Nenhuma destas seis tem base de evidência própria, e é a única família de que
 isso se pode dizer.** São actividades, não estratégias, e não há literatura que
 compare fazer uma coisa com as mãos com ir lá para fora. **Prática, todas.**
@@ -166,8 +180,8 @@ Duas tiras. Na primeira, o vazio é preenchido mal aparece e o desconforto acaba
 logo — e nada que seja dela chega a acontecer. Na segunda, o desconforto dura
 mais um bocado, há um pedaço de nada, e depois uma coisa que veio dela.
 
-**O último bloco está desenhado a tracejado de propósito.** Não se pode prometer
-que a invenção aparece — não aparece sempre, e a evidência é fina. A linha do
+**O último bloco está desenhado a tracejado de propósito.** Não se pode afirmar que a invenção aparece. A investigação que liga tédio a
+produção criativa é escassa, quase toda com adultos e em contexto laboratorial. A linha do
 clínico di-lo: *a parte que custa é o princípio, não o todo — e o que vem no fim
 não vem sempre nem por encomenda.*
 

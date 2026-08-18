@@ -36,7 +36,7 @@ a tristeza pode durar semanas, a zanga minutos, e a alegria varia como as
 outras. **Era atmosfera a passar por informação**, e este material não faz isso
 nas outras seis famílias.
 
-O que se pode dizer com terreno mais firme é outra coisa: **um mau momento
+O que tem sustentação é outra coisa: **um mau momento
 repete-se sozinho na cabeça, e um bom momento tem de ser segurado.** Mas dito
 assim a uma criança é uma frase triste — diz-lhe que o bom é frágil — e por isso
 não é a frase dela.
@@ -113,15 +113,16 @@ muito**, e é a ligação mais fina que este material carrega. Para uma criança
 ansiosa, o entusiasmo pode ser vivido como ameaça — e uma família positiva pode
 ser, nesse caso, a porta mais fácil para trabalhar activação.
 
-**Grau: razoável.** A partilha do substrato de activação está bem descrita; a
-aplicação clínica desta ligação em crianças é extrapolação de prática.
+**Grau: razoável.** A sobreposição do substrato de activação entre antecipação
+positiva e ansiedade está descrita na investigação sobre emoção; a aplicação
+clínica desta ligação em crianças não foi testada.
 
 ### Onde isto assenta
 
 Psicologia da emoção, no que respeita ao afecto positivo activado e à
 antecipação. A literatura sobre saboreio e sobre partilha de acontecimentos
-positivos, que é a que melhor sustenta a camada de guardar. E a clínica, no
-resto.
+positivos, que é a que sustenta a camada de guardar. Nos restantes pontos, a fundamentação
+é de prática clínica.
 
 **Não é psicoterapia.**
 
@@ -160,6 +161,20 @@ telemóvel não tem quem receba a conversa sobre o buraco depois da festa.
 ---
 
 ## 3. As cinco maneiras de guardar
+
+**Os três níveis de sustentação usados neste caderno.** A graduação é do
+material e não da literatura, e existe para que quem o usa saiba o que pode
+afirmar e o que não pode.
+
+| | O que significa |
+| --- | --- |
+| **Estabelecido** | O mecanismo está descrito por investigação replicada e há consenso sobre a sua direcção. Pode ser afirmado a pais e a professores como facto. |
+| **Razoável** | O mecanismo geral tem sustentação; **a aplicação concreta deste material não foi testada**. Apresenta-se como fundamentado, nunca como demonstrado. |
+| **Prática** | Não há investigação directa nesta aplicação. Está no material por experiência clínica e por coerência com o que os outros níveis sustentam. **Não se afirma eficácia.** |
+
+**Um nível diz respeito à afirmação, e não à utilidade.** Uma opção graduada como
+prática pode ser a mais útil numa sessão concreta; o que a graduação limita é o
+que se diz sobre ela.
 
 **Só uma tem base própria, e é preciso dizê-lo:**
 
@@ -435,8 +450,8 @@ acontecer.
 **Falta uma palavra**, e é a que mais custa a esta família: **não há em português
 uma palavra de criança para a alegria partilhada** — aquela que só existe porque
 outra pessoa está a senti-la ao mesmo tempo. *Cumplicidade* é de adulto e
-*convívio* é de folheto. **Fica sem nome exactamente a alegria que a maneira de
-guardar com melhor base — contar a alguém — existe para produzir.**
+*convívio* é de folheto. **Fica sem nome exactamente a alegria que a única maneira de guardar com
+investigação própria — contar a alguém — existe para produzir.**
 
 ---
 
@@ -552,7 +567,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | **Objectivo** | Mostrar que a alegria se guarda de maneiras diferentes, e descobrir as dela. |
 | **Como aplicar** | Deixar assinalar quantas quiser. A caixa do fim é para uma maneira que não esteja nas figuras. |
 | **A notar** | Se alguma das que escolhe depende de outra pessoa estar disponível. **E se escolhe só as que faz sozinha** — pode ser preferência, e pode ser que contar não lhe tenha corrido bem. |
-| **Cuidados** | Nenhuma é melhor do que outra na folha dela, mesmo que uma tenha melhor base. **A hierarquia é do caderno e não da criança.** |
+| **Cuidados** | Nenhuma é melhor do que outra na folha dela, mesmo que uma tenha investigação própria e as outras não. **A hierarquia é do caderno e não da criança.** |
 
 **Questões de exploração**
 
@@ -594,7 +609,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 6 aos 9 anos |
-| **Base** | Partilha de acontecimentos positivos. **Razoável**, e a melhor base desta família. |
+| **Base** | Partilha de acontecimentos positivos. **Razoável**, e a única opção desta família com investigação própria. |
 | **Objectivo** | **Escolher a pessoa antes de contar.** É a única maneira de guardar cujo resultado não está nas mãos dela. |
 | **Como aplicar** | Pela ordem em que está: primeiro quem, depois como se percebe, e só no fim a coisa que ainda não contou. |
 | **A notar** | **A segunda pergunta é a que interessa.** Uma criança que não consegue dizer como sabe que a pessoa ficou contente pode não ter tido essa experiência. |
@@ -732,7 +747,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 7 aos 9 anos |
-| **Base** | Antecipação. **Razoável** quanto à partilha do substrato de activação com a ansiedade; a aplicação é prática. |
+| **Base** | Antecipação. **Razoável** quanto à sobreposição do substrato de activação com a ansiedade; esta aplicação não foi testada. |
 | **Objectivo** | Ver o entusiasmo como alegria que aponta para a frente — e **preparar a ficha 10**, que é onde o padrão se vê. |
 | **Como aplicar** | A terceira pergunta — se foi como esperava — faz-se sem tom nenhum. **Não é uma pergunta armadilhada.** |
 | **A notar** | **Se descreve o corpo entusiasmado em palavras de ansiedade.** Para uma criança ansiosa, saber que o corpo faz o mesmo nas duas costuma ser um alívio grande. |
@@ -916,7 +931,7 @@ notar e o que evitar, e tem espaço para o registo da sessão em que foi usada.
 | Orientação | |
 | --- | --- |
 | **Idade** | 6 aos 9 anos |
-| **Base** | Regresso após acontecimento positivo. **Prática**, e descrita com frequência sem estar bem estudada em crianças. |
+| **Base** | Regresso após acontecimento positivo. **Prática**: descrita com frequência na clínica, sem investigação sistemática em crianças. |
 | **Objectivo** | **Nomear o buraco, e dizer que é normal.** Muitas vezes é tudo o que é preciso, e é raro alguém lho ter dito. |
 | **Como aplicar** | Sem alarme e sem consolo. A ficha descreve; não trata. |
 | **A notar** | O que lhe disseram. **Se alguém lhe disse que não tinha motivos, isso é a peça que falta** — e é o que se corrige com os adultos e não com ela. |
@@ -970,10 +985,10 @@ não consegue nomear uma única coisa boa, ou que perdeu o interesse por coisas 
 que gostava, é matéria de avaliação clínica — e é a mesma linha que a família do
 tédio traça a propósito do *sem vontade*.
 
-**A ligação entre entusiasmo e ansiedade é razoável e não estabelecida.** A
-partilha do substrato de activação está bem descrita; a aplicação clínica em
-crianças é extrapolação de prática, e este caderno não promete que trabalhar uma
-melhora a outra.
+**A ligação entre entusiasmo e ansiedade é graduada como razoável e não como
+estabelecida.** A sobreposição do substrato de activação está descrita; a
+aplicação clínica em crianças não foi testada, e este caderno não afirma que
+trabalhar uma melhore a outra.
 
 **Contar a alguém depende de quem recebe**, e isso está fora do alcance da
 criança e deste material. **Não é uma técnica que ela possa aplicar sozinha com
