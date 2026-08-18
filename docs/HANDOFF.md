@@ -14,7 +14,7 @@ grow, with families in control. You are helping me design and build it.
 **Read `docs/DECISION_LOG.md` in the attached project before answering
 anything.** It holds every decision made so far, numbered D-001 onwards, with
 the reasoning. It is the source of truth. If something here and something there
-disagree, the decision log wins.
+disagree, the decision log wins. **It now runs to D-325.**
 
 The other documents in `docs/`:
 
@@ -29,9 +29,11 @@ The other documents in `docs/`:
 | `AVATAR-PROMPTS.md`, `STICKER-PROMPTS.md`, `EMOTION-CARD-PROMPTS.md` | image generation specs |
 | `COLOURING-PROMPTS.md` | every colouring page prompt, with the failures named |
 | `WORKBOOK-RECIPE.md` | how a family workbook is built, section by section |
-| `materials/livro-historia.md` | the children's story, sixteen scenes |
+| `materials/livro-historia.md` | *Quem És Tu?*, the children's story, sixteen scenes |
+| `materials/livro-paratexto.md` | the book's cover, imprint, cast page and back cover |
 | `materials/livro-personagens.md` | the cast sheet and the consistency rules |
-| `materials/livro-prompts.md` | the scene prompts for the story |
+| `materials/livro-prompts.md` | the scene prompts, and the cover prompt |
+| `materials/livro-pais.md` | *Antes de Precisar*, the parents' book |
 
 ---
 
@@ -42,8 +44,7 @@ The other documents in `docs/`:
 - **Tell me when I am wrong.** I would rather be corrected than agreed with.
   Several of the best decisions in this project came from you pushing back.
 - **Verify before recording.** Do not write facts into the project without
-  checking them. Two of three certification seals I asked for turned out not to
-  apply, and finding that out early saved real work.
+  checking them.
 - **Write decisions down.** Every material decision goes into
   `docs/DECISION_LOG.md` with its reasoning, so the *why* survives.
 - I communicate by voice message and screenshot. Sometimes the transcription
@@ -54,44 +55,33 @@ The other documents in `docs/`:
 ## Where the project is
 
 **Seven families closed.** Zangado, Triste, Assustado, Envergonhado, Aborrecido,
-Calmo, Feliz. Each has three PDFs — `caderno` (clinician, 25 to 29 pages),
-`exploracao` (the child's sheets, 12 to 14 pages) and `pais` (one page) — built
-from `<família>-caderno.md` plus `<família>-fichas.html` by
-`scripts/build-workbook-pdf.py <family>`. **Twenty-one documents.**
+Calmo, Feliz. Each now has **four** PDFs — `caderno` (clinician), `exploracao`
+(the child's sheets), `pais` (the letter as handed over in session) and
+`pais-familia` (the same letter for a family that downloaded it, closing on
+itself). Built by `scripts/build-workbook-pdf.py <family>`. **Twenty-eight
+documents.**
 
-**Teacher line complete.** `professores-sala.pdf` (seven classroom pages plus the
-disclosure page), `professores-vocabulario.pdf` (eleven pages), the A3 poster and
-six A5 schema cards. Built by `build-teacher-pages.py` and
-`build-teacher-extras.py`.
+**Teacher line complete.** `professores-sala.pdf`, `professores-vocabulario.pdf`,
+the A3 poster and six A5 schema cards.
 
-**The children's story is written and illustrated.** *Quem És Tu?* — sixteen
-scenes, about five hundred words, in `livro-historia.md`, with all sixteen
-illustrations in `artwork/livro/`.
+**Parents' line complete.**
 
-**Interactive:** all seven families live on screen, each with its own question.
-The bored family waits to be asked before it offers anything (D-262).
+- ***Quem És Tu?*** — the illustrated story, in **three expressions from one
+  source**: `quem-es-tu-leitura.pdf` (twenty A5 pages in reading order),
+  `quem-es-tu-impressao.pdf` (instruction sheet plus five imposed A4 sheets for
+  a home-printed, folded and stapled booklet), and `docs/materials/livro-ecra/`
+  (open `index.html` — nineteen screens, no server, no network, no storage).
+  Built by `scripts/build-book-pdf.py` and `scripts/build-book-web.py`.
+- ***Antes de Precisar*** — the parents' book, read alone by the adult. Seven
+  chapters and a closing, about five thousand words, twenty-four A5 pages.
+  Built by `scripts/build-parents-book-pdf.py`.
+- **The seven letters**, in the two settings described above.
+
+**The psychologists' line has not been started** (D-288): body map on paper,
+record pad, accommodation grid, ladder log, eight-session plan, school feedback
+sheet, framing and consent, A3 store map.
 
 ---
-
-## What is being worked on, and what is not started
-
-**Three commercial lines** (D-288): **Professores** — complete. **Pais** — in
-progress. **Psicólogos** — not started.
-
-**Next in the parents' line:**
-
-- **The parents' book** — the seven families as a narrative read by the adult
-  alone, beginning with calm and happy. Not written.
-- **The seven letters rewritten** so they close without a session (D-298). As
-  they stand they say *combinámos experimentar isto esta semana*, which has no
-  referent outside a consultation.
-- ***Quem És Tu?*** needs laying out. **One job left on the art:** scenes 9, 11,
-  12 and 14 sit 34 to 60 units from the book's median floor colour. No drawing is
-  wrong — it is a levelling pass at layout, one colour adjustment per image.
-
-**The psychologists' line, not started** (D-288): body map on paper, record pad,
-accommodation grid, ladder log, eight-session plan, school feedback sheet,
-framing and consent, A3 store map.
 
 ## The rules that keep applying
 
@@ -101,152 +91,105 @@ These recur constantly. Apply them without being reminded.
 third-party scripts, no child-to-child messaging, no publication without human
 review, no diagnosis or assessment ever.
 
-**No price and no purchase button on any child-facing screen.** When a free set
-runs out the child is told the set is finished and pointed at a grown-up.
+**No price and no purchase button on any child-facing screen.**
 
-**A material a child uses alone must close itself.** Naming can stand alone;
-exploring cannot. No "why", no free-text box, no interpretation, no intensity.
-Only material licensed to practitioners may open something and leave it open —
-because there is a person there to pick it up. Family printables follow the
-child-alone rules, because a printed sheet does not choose who is in the room.
+**A material a child uses alone must close itself.** Only material licensed to
+practitioners may open something and leave it open — because there is a person
+there to pick it up. **Family printables follow the child-alone rules**, and this
+is why the letters exist in two settings (D-322).
 
 **Nothing is scored, ranked or taken away.** Rewards are for participation and
-variety, never performance. No streaks that can break — a streak that breaks is
-a punishment.
+variety, never performance.
 
-**Six families are closed** — angry, sad, scared, ashamed, bored and calm — each in three PDFs plus
-the shared deck. **A family workbook is built to a fixed recipe** — three PDFs from one source,
-for the clinician, the child and the parents. `docs/WORKBOOK-RECIPE.md` holds
-the section order, the sheet menu, the non-negotiable rules (boxes not lines,
-nothing printed inside a box, the child's page speaks to her not about her) and
-the list of faults that were invisible in the file and obvious on the printed
-page. Angry is the worked example.
+**Address forms** (D-319, D-320). **No *vós* and no *você*** — the verb carries
+the address. The letters and anything addressed to the parents use the third
+person plural (*cuidem*, *digam*, *a vossa filha*); anything addressed to one
+adult at a time, like a printing instruction, uses the singular (*imprima*,
+*pode*). ***Sua* is avoided**, because in European Portuguese it is ambiguous.
 
 **The house style is kawaii, Jellycat soft toy, cozy** — fat squashy shapes,
 thick bold outline, nothing rigid or elegant. It governs **every** image in the
-project, colouring pages included, and lives in `docs/ART-DIRECTION.md`, which
-also holds the prompting lessons and the rule to verify by measuring rather
-than by looking.
+project and lives in `docs/ART-DIRECTION.md`.
 
-**No text inside artwork.** Names come from the language file. A sticker that
-reads "Explorer" needs seven translations and seven regenerations, for ever.
-The existing activity artwork predates this rule and carries English text baked
-in; it is regenerated text-free as each activity is built (D-110). Section
-names are the exception — they work as wordmarks and are not translated.
+**No text inside artwork.** Names come from the language file.
 
 **Evidence is graded honestly** — established, reasonable, or practice. Never
-claim more than the support. A psychology-informed platform that overstates its
-science is worth less than one that has none.
+claim more than the support.
 
 **Never display a certification seal that has not been earned.**
 
 **Approved artwork is never redrawn or replaced.** It can be processed —
-background removal, trimming, format conversion — but not reinvented. If
-artwork is missing, say so and show an honest placeholder.
+background removal, trimming, colour levelling, format conversion — but not
+reinvented.
+
+**Register** (D-293). Technically careful and professionally serious. Warmth
+belongs in the parents' letters, the child's sheets and the parents' book, and
+never at the cost of accuracy.
+
+**For image prompts: describe the picture, not the measurement** (D-307), and
+**generate in batches with an already-accepted image as an anchor** (D-310).
 
 ---
 
+## What the last session did, and what is worth knowing about it
 
-### Added in the session that closed the seven families
+**The illustrated book was finished.** A cover was generated — right on the first
+attempt, the only time in this book that has happened. The palette of scenes 9,
+11, 12 and 14 was levelled onto the book's median by
+`scripts/level-book-palette.py`, closing the spread from 58.5 to 29.7. Scene 11
+was trimmed 6.2% to match the 5:4 format; **scene 4 was deliberately left
+portrait** and given a narrower placement on its page, because cropping it would
+cost 36% of the height and regenerating it would risk the most expensive image in
+the book (D-317).
 
-**Register — applies to everything written** (D-293). Technically careful and
-professionally serious. No colloquial phrasing, no chatty asides, no jokey tone.
-Named constructs, stated evidence level, explicit limits. **Warmth belongs in the
-parents' letters and the child's sheets and nowhere else**, and never at the cost
-of accuracy.
+**Three lessons from that session that generalise:**
 
-**Evidence is never described by metaphor** (D-294, D-295). The three levels —
-**estabelecido / razoável / prática** — are defined in a table at the top of
-section 3 of every workbook, and every claim uses them or says concretely what is
-replicated and where. *Terreno firme*, *a literatura é fina* and *apoio
-indirecto* were removed nineteen times.
+- **Measure before believing a fault.** Three faults suspected on the cover by
+  looking — a cast shadow, separate fingers, a tongue — were all disproved on
+  measuring, and two of them turned out to be **rules the project had written for
+  itself that contradicted its own canonical artwork** (D-315).
+- **A test can be wrong as easily as an image.** Twice a measurement accused a
+  correct file, once because a colour mask was sweeping in scenery (D-316).
+- **Render it, do not read it.** Every layout fault that session — a literal `#`
+  on a cover, a mark printed over the characters, a footer telling a family they
+  held licensed professional material, a doubled percent sign that printed
+  `colorhugs.pt3` as one word — was invisible in the source and obvious on the
+  page.
 
-**No gender in anything the child or family takes home** (D-287). Double forms
-where the word *is* the feeling — *nervoso ou nervosa* — and rewriting where the
-agreement was incidental. **Age ranges live in the workbook and never on the
-child's sheet** (D-247).
+**Fonts now live in the repository.** `assets/fonts/` holds Nunito and Baloo 2,
+both SIL Open Font License, with the licences beside them, plus the three static
+instances generated by `scripts/make-book-fonts.py`. **Static instances and not
+the variable files** — Chromium embeds a variable font as Type 3, which is worse
+in every way.
 
-**Each family adds one rule to its artwork.** Nobody is sad in the sad pages;
-nobody is frightened in the scared pages; nobody is being looked at in the
-ashamed pages; nobody is bored in the bored pages, **and there are no screens in
-them**.
-
-**For image prompts: describe the picture, not the measurement.** Asking for
-*three times taller* failed twice; describing the frame worked at once. The same
-held for the ground line, the sealed thumb and the unrecognisable object — **four
-times out of four** (D-307).
-
-**Generate in batches with one already-accepted image as an anchor**, or the
-whole batch drifts together and the drift is invisible until they are laid side
-by side (D-310).
-
-## Recent decisions worth knowing
-
-**The child brings the colour.** The child picks one of ten avatars, supplied as
-line art. It gains colour as she uses ColorHugs — **for having been there, not
-for how much she did.** One activity or six, the same colour. What accumulates
-over time is variety, not intensity. Large on the home page, small elsewhere.
-
-**Seven areas, seven avatar zones**, one per area: head → Learning Hub,
-head-top → Brain Gym, chest → My Inner World, arms → Kids Draw, torso → Color &
-Create, back → My ColorHugs, legs → Community.
-
-**Stickers are separate from avatars.** Avatars are the child on the screen and
-have no white rim; stickers are collectible, arrive already coloured, and keep
-the rim. Twenty-four planned; sixteen made.
-
-**Commercial model: three lines, in order** — printables first, professional
-licences second, family subscription third. It is one content library packaged
-three ways, so **every piece of content is authored three ways at once**:
-interactive, printable, and professional application note.
-
-**Branding is endorsed**: ColorHugs by Ricardina Correia. Three lockups —
-plain for children, `colorhugs-parents.webp` for families,
-`colorhugs-professional.webp` for practitioners. No endorsement on child
-screens.
+**The PSD is not the master and cannot be** (D-318). No library that writes PSD
+writes live text, so a generated PSD would carry the text rasterised, destroying
+the one reason to want it. **The master is the markdown plus the build script.**
 
 ---
 
 ## What is open right now
 
-**My Inner World / How Do I Feel? is designed** — increment 20 of the decision
-log holds it, and the rules there apply to every activity built after it. The
-three expressions exist: the activity spec, the printable (a seven-card deck),
-and the professional note at
-`docs/materials/como-me-sinto-nota-aplicacao.md`.
-
-**What that activity still needs before it can be built:** the artwork
-regenerated without text (D-110). The account question is answered (D-202) and
-the short trail now has somewhere to live — the device.
-
-**Artwork:** all twenty-four stickers and all seven emotion cards are done. The
-body map figure is done and passed the sealing test. Two avatars — penguin and
-kite — remain withdrawn (D-079).
-
-**Bigger questions, recorded in the decision log:**
-
-- ~~**Q-010 Where the account system lives.**~~ **Closed by D-202:** commercial
-  state on a server, the child's trail on the device and never synced. The short
-  trail is unblocked; the Free boundary stays declared and not enforced until a
-  backend exists.
-- **Q-013 The "Brain Gym" name.** Brain Gym is a trademarked programme widely
-  cited as pseudoscience in education. The audience most likely to recognise it
-  is the one whose trust this product most needs.
-- **Q-015 What happens when a child repeatedly reports distress.** Narrower
-  now: with no intensity recorded, the question is about repetition, not
-  severity. Still needs clinical and legal input.
+- **`[mês e ano]`** in the book's imprint is the only placeholder left in it.
+- **Q-013 The "Brain Gym" name.** Trademarked programme, widely cited as
+  pseudoscience. The audience most likely to recognise it is the one whose trust
+  this product most needs.
+- **Q-015 What happens when a child repeatedly reports distress.** Needs clinical
+  and legal input.
 - **Q-016 Can a child's drawing become a colouring page for other children?**
   Needs a legal position on consent.
 - **Q-018 VAT on EU digital sales.** Needs an accountant before the first sale.
-- **Q-026, Q-027, Q-028** — small and carried: the ashamed card's raised hand,
-  three unresolved PT-PT words, and whether language is detected or asked.
+- **Q-026, Q-027, Q-028** — the ashamed card's raised hand, three unresolved
+  PT-PT words, and whether language is detected or asked.
+
+---
 
 ## What I would like you to do first
 
-Read the decision log — it now runs to **D-313**. Then tell me, in a few lines,
-what you understand the state of the project to be, so I can check you have it
-right before we carry on.
+Read the decision log — **D-325**. Then tell me, in a few lines, what you
+understand the state of the project to be, so I can check you have it right
+before we carry on.
 
 **Do not start building anything until we have agreed what.**
 
-The next piece is the parents' book, unless I say otherwise.
+The next piece is the psychologists' line, unless I say otherwise.

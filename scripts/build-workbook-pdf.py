@@ -437,8 +437,38 @@ ul.prompts li { margin-bottom: 2.5mm; }
 SHEET_RE = re.compile(r'<section class="sheet".*?</section>', re.S)
 
 
+SETTING_RE = re.compile(
+    r"<(\w+)([^>]*?)\sdata-setting=\"([^\"]+)\"([^>]*)>(.*?)</\1>", re.S
+)
+
+
+def strip_setting(sheet: str, setting: str) -> str:
+    """Remove os blocos que não pertencem a este contexto (D-322).
+
+    **A mesma carta serve dois sítios que não são o mesmo sítio.** Numa consulta
+    há uma pessoa que combinou uma coisa e que a vem buscar na semana seguinte;
+    numa casa que descarregou o ficheiro não há ninguém. Três frases mudam — a
+    abertura, o bloco do meio e a assinatura — e o corpo da carta é comum, para
+    que uma alteração ao que importa não tenha de ser feita duas vezes.
+    """
+
+    def keep(m):
+        return m.group(0) if m.group(3) == setting else ""
+
+    # Elementos vazios (a caixa de linhas) não são apanhados pelo par de etiquetas.
+    sheet = re.sub(
+        r'<div class="lines"\s+data-setting="([^"]+)"[^>]*></div>',
+        lambda m: m.group(0) if m.group(1) == setting else "",
+        sheet,
+    )
+    return SETTING_RE.sub(keep, sheet)
+
+
 def load_sheets(
-    family_id: str, audience: str | None = None, show_age: bool = True
+    family_id: str,
+    audience: str | None = None,
+    show_age: bool = True,
+    setting: str = "clinica",
 ) -> str:
     """The sheets, as HTML, from the one file that defines them.
 
@@ -481,6 +511,8 @@ def load_sheets(
         # does the opposite of helping: a child who reads *7 aos 9 anos* on a
         # page she was given at six has been told she is early, and a child of
         # ten has been told she is late.
+        sheet = strip_setting(sheet, setting)
+
         age = re.search(r'data-age="([^"]+)"', sheet)
         if age and show_age:
             sheet = sheet.replace(
@@ -645,11 +677,16 @@ RUNNING = """
 """
 
 
-def parents_html(family_id: str) -> str:
+def parents_html(family_id: str, setting: str = "clinica") -> str:
     """One page, for the family to take home.
 
     It closes itself: nothing on it asks a question that needs someone there to
     receive the answer (D-095). Everything that opens stays in the workbook.
+
+    **Two settings, one letter** (D-322). `clinica` is handed over at the end of
+    a session and may leave something open, because there is a person who will
+    pick it up next week. `familia` is downloaded by a household with nobody
+    coming, so it presupposes no session and asks for nothing to be applied.
     """
     title = FAMILIES[family_id]
     return f"""<!doctype html>
@@ -658,10 +695,11 @@ def parents_html(family_id: str) -> str:
 <style>{CSS}
 .sheet:first-of-type {{ page-break-before: avoid; }}
 </style></head>
-<body>{load_sheets(family_id, "parents")}</body></html>"""
+<body>{load_sheets(family_id, "parents", setting=setting)}</body></html>"""
 
 
-def render(html: str, target: str, title: str, cover: str | None = None) -> str:
+def render(html: str, target: str, title: str, cover: str | None = None,
+           footer: str = "colorhugs.pt · Material licenciado") -> str:
     """Print to PDF, with a running header and footer on every page.
 
     The cover is rendered on its own with no margin and no running elements —
@@ -695,7 +733,7 @@ def render(html: str, target: str, title: str, cover: str | None = None) -> str:
             + "<span>ColorHugs</span></div></div>",
             footer_template=RUNNING
             + '<div class="run"><div class="rule">'
-            + "<span>colorhugs.pt · Material licenciado</span>"
+            + f"<span>{footer}</span>"
             + '<span class="pageNumber"></span></div></div>',
         )
         if cover is not None:
@@ -755,12 +793,23 @@ def build(family_id: str) -> str:
         f"{title} — Caderno de exploração",
         cover=os.path.join(MATERIALS, "figuras", f"{family_id}-capa-crianca.png"),
     )
+    # Duas cartas, do mesmo original (D-322). A da consulta mantém o combinado;
+    # a da família fecha-se em si mesma.
     parents = render(
-        parents_html(family_id),
+        parents_html(family_id, "clinica"),
         os.path.join(MATERIALS, f"{stem}-pais.pdf"),
         f"{title} — Para os pais",
     )
-    return "\n".join((workbook, sheets, parents))
+    parents_family = render(
+        parents_html(family_id, "familia"),
+        os.path.join(MATERIALS, f"{stem}-pais-familia.pdf"),
+        f"{title} — Para os pais",
+        # **O rodapé da licença profissional não pertence a esta carta.** Diz
+        # *Material licenciado* a uma casa que a descarregou para si, o que é
+        # falso e soa a aviso.
+        footer="colorhugs.pt",
+    )
+    return "\n".join((workbook, sheets, parents, parents_family))
 
 
 if __name__ == "__main__":

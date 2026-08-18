@@ -1,12 +1,30 @@
+# Dependências e builds do Next.js
 node_modules/
 .next/
 out/
-build/
-.DS_Store
-*.pem
-npm-debug.log*
-.env
-.env*.local
-.vercel
 *.tsbuildinfo
-next-env.d.ts
+
+# Python
+__pycache__/
+*.pyc
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Segredos — nunca commitar
+.env
+.env.*
+!.env.example
+
+# Saídas de construção regeneráveis.
+#
+# A versão de ecrã do livro é inteiramente gerada por
+# `scripts/build-book-web.py` a partir do markdown e da arte, e são vinte
+# megabytes de imagens duplicadas. Guardá-la no repositório é guardar duas
+# vezes a mesma coisa, e o git nunca deixa de a guardar.
+docs/materials/livro-ecra/
+
+# Ficheiros temporários dos construtores
+docs/materials/.*.pdf
+docs/materials/*.pdf.html

@@ -87,10 +87,20 @@ not change. The body shape must not change.
 
 FORBIDDEN IN EVERY SCENE, ONE BY ONE: no white rim. No drop shadows. No texture
 on walls or floors. No speech bubbles. No exclamation marks. No tears on anyone
-but the blue one. No noses. No ears. No hair. No clothes. No separate fingers.
-No eyebrows on anyone except the red one. No teeth. No tongues. No sparkles. No
-stars. No hearts floating in the air.
+but the blue one. No noses. No ears. No hair. No clothes. No hand with five
+separate distinguishable fingers — a hand is a rounded mitt with one or two
+short creases, as on the cards. No eyebrows on anyone except the red one. No
+teeth. No tongue on anyone except the GOLDEN YELLOW one, whose open mouth
+contains its pink tongue exactly as on its card — that tongue is correct and
+must not be removed. No sparkles. No stars. No hearts floating in the air.
 ```
+
+> **Duas linhas desta lista foram corrigidas em D-315**, porque contradiziam o
+> desenho canónico das personagens. *No tongues* teria mandado apagar a língua do
+> amarelo, que está na carta `happy.png`; *no separate fingers* teria mandado
+> apagar os vincos das mãos, que estão na cena 15 aprovada e nas cartas. **Uma
+> regra que proíbe o que já foi aceite produz uma regressão na primeira vez que o
+> gerador lhe obedecer.**
 
 ---
 
@@ -462,3 +472,55 @@ estabilizar: cenas 3, 6, 9, 10, 13.
 
 **E a verificação que atravessa tudo:** posta qualquer cena nova ao lado da cena 4
 e da cena 15, **são as mesmas personagens?**
+
+---
+
+## Capa · As sete, e o Aborrecido à frente
+
+*Gerada e aceite (D-315). Guardada em `artwork/livro/capa.png`. **Formato ao
+alto**, ao contrário de todas as cenas do interior. **O topo sai vazio de
+propósito** — é onde entra o título, como texto vivo na maquetização, porque
+nenhuma palavra é desenhada dentro da arte.*
+
+```
+THE SCENE
+A COVER ILLUSTRATION, not a scene from the story. A plain flat wall behind and a
+plain flat floor below, in the same warm sandy tan and pale cream as the
+reference images — not darker, not brighter, no other background colours. The
+room is completely bare: no furniture, no window, no door, no plant, no rug,
+nothing on the wall.
+
+ALL SEVEN CHARACTERS stand together in a loose group, all facing the front.
+Every one of the seven must be present and must match its description exactly:
+red, light blue, lilac, pink, olive, mint green, golden yellow. Seven, not six
+and not eight.
+
+THE OLIVE ONE stands at the front, nearest to us, a little apart from the other
+six and a little larger because he is closer. His hand rests against his cheek
+and his half-closed eyes look sideways, exactly as always — HE IS NOT LOOKING AT
+US and his face is not altered in any way.
+
+The other six stand behind him in a loose huddle, close together and slightly
+overlapping, all the same normal size as each other.
+
+COMPOSITION — A TALL UPRIGHT PICTURE, clearly taller than it is wide.
+THE ENTIRE UPPER HALF OF THE PICTURE IS BARE EMPTY WALL WITH NOTHING IN IT. The
+characters stand low, along the bottom. If the head of the tallest character
+reaches above the middle of the picture, the composition is WRONG and the
+picture must be recomposed with the group lower and smaller. Picture it like
+this: a large bare wall photographed from a little way back, with a small group
+of figures standing at the very bottom of it and a great deal of empty wall
+above their heads.
+
+FORBIDDEN, ONE BY ONE: no text of any kind. No title. No lettering. No words. No
+single letters. No numbers. No banner, ribbon or scroll. No frame, border or
+outline around the edge of the picture. No decoration in the empty upper half —
+it stays bare wall. No eighth character. No character missing. No white rim
+around the figures. No drop shadows. No texture on the wall or floor. No speech
+bubbles. No confetti, balloons, sparkles, stars or floating hearts. No character
+holding another. No tears on anyone but the blue one.
+```
+
+**Âncoras usadas:** cena 15 (prova de elenco — é a única aprovada com as sete ao
+mesmo tempo) e cena 1 (fixa a paleta da casa). **Resultado à primeira
+tentativa.**

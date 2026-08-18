@@ -90,9 +90,12 @@ CHILDREN'S PICTURE BOOK, not a poster and not an app screen.
 NO TEXT OF ANY KIND anywhere in the image. No words, no letters, no numbers, no
 speech bubbles, no signs.
 
-FORBIDDEN, ONE BY ONE: no noses. No ears. No hair. No clothes. No separate
-fingers. No eyebrows except on the red one. No teeth. No tongues. No eyelashes.
-No sparkles. No stars. No hearts floating in the air. No sun with a face.
+FORBIDDEN, ONE BY ONE: no noses. No ears. No hair. No clothes. No hand with
+five separate distinguishable fingers — a hand is a rounded mitt with one or two
+short creases, as on the cards. No eyebrows except on the red one. No teeth. No
+tongue on anyone except the GOLDEN YELLOW one, whose open mouth contains its
+pink tongue exactly as on its card. No eyelashes. No sparkles. No stars. No
+hearts floating in the air. No sun with a face.
 ```
 
 ---

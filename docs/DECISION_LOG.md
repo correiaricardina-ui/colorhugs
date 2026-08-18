@@ -6453,3 +6453,520 @@ written and illustrated.
 work left: scenes 9, 11, 12 and 14 sit 34 to 60 units from the median. **No
 drawing is wrong** — it is a levelling job for layout, one colour adjustment per
 image, and cheaper and safer than regenerating anything.
+
+# Increment 43 — The book as a printed object (2026-08-18)
+
+### D-314 `[DEFINED]` The book is a home-printed A5 booklet, and the PSD is the master rather than the download
+Asked for the illustrated book as a PSD download plus a version to read on a PC.
+**Two of those three things were the same thing wearing different clothes, and
+separating them was the whole decision.**
+
+**Who prints it: the families, at home.** That single answer fixes almost
+everything else, because a domestic printer is not negotiable with:
+
+- **No bleed.** Home printers do not print to the edge and each one stops at a
+  different distance. **The illustration sits inside a white margin**, which is
+  also what makes the result predictable across unknown hardware.
+- **Resolution stops being the constraint.** At the planned image width the
+  cover measures 203 dpi and the interior scenes about 278 dpi. Flat colour under
+  a thick outline survives this; a photograph would not.
+- **Ink is the real cost of this product.** Half of every page is saturated
+  floor colour, sixteen times over. It is not a drawing problem and it is not
+  solved by redrawing — it is a layout problem, and it is the reason the
+  booklet beats loose sheets.
+
+**A PSD is not what a family downloads.** It needs Photoshop, it runs to
+hundreds of megabytes across sixteen scenes, and — the serious one — **an
+editable PSD hands over the raw artwork**, so anyone can strip the ColorHugs
+mark and reprint. **The customer gets a PDF. The PSD stays as the master**, the
+single file that is edited and from which the PDF, the screen version and any
+future translation are exported.
+
+**What the PSD master carries, and what it cannot.** Layers for the colour
+adjustment (this is where the four unlevelled scenes of D-313 live, reversible
+and non-destructive over an untouched original), the live text, the print
+margins and the mark. **It cannot separate the characters from the background** —
+the scenes were generated as single flattened images, and pulling a character
+out is redrawing, not layering. Approved artwork is not redrawn (D-041).
+
+**The format: A5 portrait, twenty pages, five A4 sheets printed both sides and
+stapled at the fold.** Sixteen scenes plus cover, imprint, cast page and back
+cover — a multiple of four, which saddle-stitching requires. Portrait was chosen
+over landscape against one real loss, a smaller illustration, for three gains:
+**278 dpi instead of 187**, the fold every family already knows how to make, and
+**a place of its own for the text** instead of the text sitting on the drawing.
+In a book read aloud that last one is not a detail.
+
+**Pages will be imposed in the PDF** so the family never touches the printer's
+booklet mode. The predictable failure is turning the sheet the wrong way in
+duplex and getting half the booklet upside down; the instruction is to print
+sheet one alone, both sides, and check before printing the rest.
+
+**Two scene formats are out of step and this is now a layout decision, not a
+drawing one:** fourteen scenes are 5:4 landscape, **scene 4 is portrait** and
+**scene 11 is 4:3**.
+
+### D-315 `[IMPLEMENTATION]` The cover — first attempt, and three suspected faults that were not faults
+**No cover existed** and none had ever been decided; the log was silent on it.
+Three routes were weighed — recropping scene 1, generating new, assembling the
+seven card figures. **Generating was chosen**, with scene 15 and scene 1 as
+anchors (D-310). **It came back right on the first attempt**, which is the first
+time in this book that has happened.
+
+**The five counted checks all pass.** Seven characters, seven colours, none
+missing and none added. The blue one's teardrop, the pink one's hand across the
+face and the olive one's hand at the cheek — the three the generator drops — are
+all present. No lettering anywhere. Portrait. **The topmost character pixel sits
+at 54% of the height**, so more than half the picture is bare wall for the title.
+
+**The empty top is not an unfinished page.** It reads as one when the image is
+judged alone, which is exactly the fault named in D-310 — but here it is
+reserved space, and **the image is judged with the title over it, not without.**
+
+**Three faults were suspected on looking and disproved on measuring. This is the
+entry worth keeping.**
+
+| Suspected | Measured | Verdict |
+| --- | --- | --- |
+| Cast shadow under the feet | darkening gone within 5 px; **scene 1 behaves identically** | antialiasing, not a shadow |
+| Separate fingers on three figures | **the same creases are in accepted scene 15 and on the cards** | canonical |
+| Tongue in the yellow one's mouth | **the tongue is on `happy.png`, the canonical card** | canonical |
+
+**Two of those were rules the project had written down for itself**, and both
+rules were wrong rather than the image. `No tongues` would have deleted the happy
+one's tongue; `no separate fingers` would have deleted hands that fifteen
+accepted images already have. **Both lines are corrected in
+`livro-prompts.md` and `livro-personagens.md`** — a prohibition that forbids what
+has already been accepted produces a regression the first time a generator obeys
+it, and it would have been blamed on the generator.
+
+**Conformity, measured.** Floor at **15.8 from the book's median**, closer than
+ten of the sixteen scenes, so the cover does not worsen the palette spread still
+outstanding from D-313. Outline at **3.91 per thousand pixels of width** against
+3.57 in scenes 1 and 15 — same relative weight, no thin line.
+
+**One mechanical adjustment, no artistic consequence.** The image arrived 2:3;
+A5 is 1:1.41. **83 pixels of bare wall trimmed from the top**, nothing of the
+drawing touched. Saved as `artwork/livro/capa.png` at 1024×1453.
+
+**Named and left standing:** the cover shows all seven together while the ending
+is the bored one realising he is one of them. He stands forward, apart and
+looking sideways, which reads as *not yet*. **Accepted as a judgement, not as a
+measurement.**
+
+### D-316 `[IMPLEMENTATION]` The palette levelled — and the correction had to be taught what not to touch
+The last visual job outstanding from D-313. **Scenes 9, 11, 12 and 14 are levelled
+onto the book's median; the other twelve are untouched.** Done by
+`scripts/level-book-palette.py`, so it is repeatable and reversible rather than a
+hand pass in an editor.
+
+**The method.** Measure each scene's dominant floor and wall colour, compute the
+offset to the median of the twelve conforming scenes, and apply that offset to
+the background only. **Nothing is repainted and nothing is flattened** — the
+offset is added, so scenery keeps its relationship to the floor it stands on.
+
+| | floor before | floor after |
+| --- | ---: | ---: |
+| cena-09 | 36.9 | **0.9** |
+| cena-11 | 33.1 | **0.9** |
+| cena-12 | 40.8 | **3.8** |
+| cena-14 | 58.5 | **4.3** |
+
+**The book's spread closes from 58.5 to 29.7 at the widest, and from 24 to 15 on
+average.** The four corrected scenes are now the closest in the book to its own
+median.
+
+**Three faults were made and measured out. They are the entry.**
+
+**One: the offsets were applied in sequence and the floor was corrected twice.**
+Where a scene's floor and wall are near-identical colours, the wall's offset
+landed on floor pixels that had already taken the floor's. Scenes 12 and 14 went
+straight past the median and out the other side — **cena-14 measured 58.5 before
+and 75.4 after.** Both offsets now come from the original image and each pixel
+takes one.
+
+**Two: the olive one changed colour.** Its body is [188 153 66] and cena-14's
+floor is [212 150 90] — 34 apart, inside the correction radius. **Measured 21.4
+of drift on the character, and still 15.8 after a fixed protective radius was
+added**, because the figure has internal variation and its edge pixels fall
+outside any fixed radius. **The colours of the characters never change** (folha de
+personagens), so the boundary cannot be a radius: the seven cast colours are now
+sources in the same nearest-neighbour contest as the floor and the wall, and a
+pixel nearer a character than to the background is never touched. **Final drift on
+every character body in all four scenes: zero. Black outlines: bit-identical.**
+
+**Three: the correction invented a texture that was not there.** Cena-14's wall
+came back visibly blotchy. The cause was not the lift itself but the split: its
+wall and floor are 24 apart, so **the same wall surface was divided between two
+different offsets** and the seam showed as mottling. Below a stated threshold,
+floor and wall are now treated as one surface and take one offset. **The wall
+ends at 25.3 from the median instead of 7.3 — worse on the number and right on
+the page**, since visible texture on a flat wall breaks the art direction, and
+25.3 sits inside the pack anyway.
+
+**And a fourth that was not a fault at all.** A check reported 11.2 of drift on
+the olive one after the fix. **The check was wrong, not the image**: its mask was
+sweeping in scenery of a similar colour. Isolating the figure's largest connected
+region gave zero. **This is the second time this week a measurement accused a
+correct image** (D-315), and the lesson is the same in both directions — measure,
+then check what the measurement actually enclosed.
+
+**Scenes 4 and 11 remain off-format** (portrait, and 4:3 against 5:4). That is a
+layout decision recorded in D-314 and is untouched by this.
+
+### D-317 `[DEFINED]` The two off-format scenes are resolved on the page, not in the generator
+D-314 left scene 4 (portrait) and scene 11 (4:3) out of step with the other
+fourteen (5:4 landscape). **Neither is regenerated. Approved artwork is not
+replaced to solve a problem of millimetres.**
+
+**Scene 11: trimmed, 6.2% of the width.** The two edges were measured for
+content; the left carried roughly half of what the right did, and its outer
+ninety columns held none at all. **Ninety pixels came off the left edge** — bare
+floor and wall, no character and no object. Now 1358×1086, 5:4, matching the
+fourteen. The pre-trim file is worth keeping outside the repository until layout
+is proofed.
+
+**Scene 4: left exactly as it is, and given its own placement.** Cropping it to
+landscape would cost **36% of the height**, and the height is the sentence the
+scene speaks — the red one's head at the top, the other five in the lower half.
+Regenerating it is worse. **It is the most expensive image in the book**: three
+attempts, and the size failed on the first two (1.83× and 2.16× where three were
+asked). A new landscape version would compete with an accepted one at the
+generator's worst odds, on the scene that establishes the book's whole visual
+language.
+
+**And the format resolves itself, because the booklet is portrait.** The
+landscape scenes sit at 120 mm wide by 96 tall with the text beneath. Scene 4
+sits at **107 mm by 134** — same page, same margin, same text block, 11% narrower
+than its neighbours. **In a picture book that does not read as an error; it reads
+as the page where the picture changes shape, and it is the page where somebody
+becomes enormous.**
+
+**The book's artwork is now closed.** Sixteen scenes levelled and in format, plus
+the cover. Everything remaining is layout.
+
+### D-318 `[IMPLEMENTATION]` The book is built from its sources, and the PSD cannot be the master
+`scripts/build-book-pdf.py` produces **two PDFs from one source**:
+`quem-es-tu-leitura.pdf` (twenty A5 pages in reading order, for screen and for
+proofing) and `quem-es-tu-impressao.pdf` (the instruction sheet, then five A4
+sheets already imposed). **The family never touches the printer's booklet mode.**
+
+**The text does not live in the build.** The sixteen scenes come from
+`livro-historia.md` and the four paratext pages from `livro-paratexto.md`, and in
+both files the rule is the same: **what is in a blockquote goes on the page, and
+everything else is commentary for whoever is writing.** Editorial notes and
+illustration notes are excluded by construction rather than by markup. A
+translation edits markdown and re-runs the script.
+
+**The PSD cannot be the master, and this must be recorded before it is planned
+around.** No Python library that can write a PSD can write **live text** — pytoshop
+writes pixel layers only, and no text-tool records. A PSD generated here would
+carry the text **rasterised**, which destroys the one benefit that made a PSD
+master attractive in D-314: swapping a text layer for a translation. **The master
+is the markdown plus this script**, which is the pattern the workbooks already
+use (D-172). A layered PSD remains worth producing as an export for anyone who
+needs to open the book in Photoshop; it is a hand-off format, not the source.
+
+**Faults found by rendering rather than by reading the code. Every one was
+invisible in the file.**
+
+- Markdown heading marks printed literally — the cover read `# Quem És Tu?`.
+- The brand mark sat on top of the characters on the cover. **It is now off the
+  cover entirely**, which is also the better answer: the cover is the face the
+  child sees, and the endorsement belongs on the imprint and the back.
+- A fixed illustration slot left a 38 mm hole between picture and text on every
+  landscape page.
+- The imposed file mixed a portrait instruction sheet with landscape sheets, so
+  a printer set to fit-to-page would have scaled the booklet. **One page size
+  throughout.**
+- The instruction sheet said *print sheet 1 first* while the instruction sheet is
+  itself page 1. It now names actual PDF page numbers: **the book is pages 2 to
+  11, and the test is pages 2 and 3.**
+- The brand mark was being resampled with the illustrations, and converting it
+  from transparency to RGB **turned its background black** on two pages.
+
+**Illustrations are placed at 200 dpi in the size they occupy.** At the native
+297 dpi the file came to 30 MB; **a heavy file is a real obstacle for a family
+downloading at home**, and on a domestic printer, with flat colour under a thick
+outline, 200 dpi does not read as different. **16 MB.** The originals are not
+touched — the resampled copies live in a temporary directory and are deleted
+after the build.
+
+**Still open on the page, and both are for the author.** The imprint carries
+`[POR DECIDIR]` for the illustration credit and `[mês e ano]` for the edition.
+**Neither should be filled in by anyone but her**, and the credit line is where
+the project's rule against passing synthetic artwork off as something else is
+either kept or broken.
+
+**And one for the corpus, not for this book:** scene 2 has the bored one ask *o
+que é que vocês fazem aqui?* The standing instruction is that *vocês* appears in
+no PT-PT material. It is character-to-character dialogue rather than address to
+the reader, and in spoken European Portuguese it is the natural plural — but the
+rule as written does not carve that out, and **the text is the author's, so it is
+flagged and not changed.**
+
+### D-319 `[DEFINED]` The book's typography, and the address form changes to the third person singular
+**Two typefaces, both SIL Open Font License, both in the repository with their
+licence beside them** (`assets/fonts/`).
+
+**Nunito** for the text — humanist sans with rounded terminals, set at weight
+500. **Baloo 2 Bold** for the title, the imprint heading and the cast heading —
+rounded, heavy, geometric. Together they answer the house style (kawaii, fat,
+rounded, thick outline) without becoming a cartoon lettering face, and they keep
+the register sober enough for the imprint page to be read as a legal notice.
+
+**Static instances, not the variable files.** With a variable font Chromium
+embeds every glyph as **Type 3** — outlines drawn one by one rather than glyphs
+in an embedded font. Confirmed with `pdffonts`: forty-two Type 3 entries before,
+CID TrueType subsets after. `scripts/make-book-fonts.py` generates the three
+instances from the two variable originals.
+
+**The address form changes** (supersedes the standing vós instruction **for this
+material only**). *Podeis imprimir… as vezes que quiserdes* becomes **Pode
+imprimir… as vezes que quiser**, and every imperative on the instruction sheet
+follows: *imprimi* → **imprima**, *dobrai* → **dobre**, *agrafai* → **agrafe**,
+*fazei* → **faça**. **No pronoun is introduced** — no *você* appears, and the
+verb carries the address, which is the ordinary PT-PT formal register.
+
+**This is a change of register, not a correction of an error**, and it now sits
+against the rest of the corpus. `[OPEN QUESTION]` — the seven parents' letters
+and the teacher documents use vós forms throughout. **Either they follow, or the
+family line speaks in two voices.**
+
+**The illustration credit is settled:** *Ilustrações: Ricardina Correia (arte
+assistida por IA)*. It names the author and states the method in the same line,
+which is what the rule against passing synthetic artwork off as something else
+requires. `[mês e ano]` remains the only placeholder left in the book.
+
+### D-320 `[DEFINED]` The archaic vós is removed from the corpus, and the standing instruction is replaced
+D-319 changed the address form for the book. Extended to everything. **The
+standing instruction — *use vós forms, never você* — is withdrawn and replaced
+by: no vós, no você, and the verb carries the address.**
+
+**The survey came back much smaller than expected, and the shape of it matters.**
+Twenty-one occurrences across the seven parents' letters, and nothing at all in
+the workbooks, the child's sheets or the teacher documents — those never
+addressed anyone in the second person. **A first pass with a keyword list
+produced thirty-six hits and most were false**: *repeti-lo*, *imprimi-las*,
+*pedi-lo*, *Ouvi-la*, *tende a preencher* — infinitives with clitics and an
+unrelated verb, not vós imperatives. **The list found the letters, not the
+grammar**; the real hits were then read one by one in context.
+
+**Two categories, and only one of them is archaic.**
+
+*Changed.* `sois vós` → **são os pais** (2). `continuais` → **continuam** (1).
+`cuidem de vós` → **cuidem de si** (4). `Isto escreve-se convosco, não para vós`
+→ **Isto escreve-se com os pais, e não para os pais** (7). `o que vos peço` → **o
+que peço aos pais** (2).
+
+*Kept.* `vosso`, `vossa`, `vossos`, `convosco` — **these are the ordinary PT-PT
+possessives and pronoun for plural address**, the ones that belong with *cuidem*
+and *digam*, which the letters already used. They are not the archaic vós, and
+removing them would have meant rewriting *a vossa filha ou o vosso filho* into
+*a sua filha* — where **sua is ambiguous in European Portuguese** and would have
+cost the letters clarity to fix a problem they did not have.
+
+**All seven workbooks rebuilt**, so the twenty-one PDFs match their sources.
+Verified in the printed text, not in the file.
+
+**Closed. Two addressees, not two voices.** The book's instruction sheet stays in
+the third person singular — *pode imprimir* — because it addresses whoever is
+standing at the printer. **The letters stay plural** — *cuidem*, *digam*, *a
+vossa filha* — because they address the parents. Both are free of vós and of
+você, so both satisfy the new rule, and they differ because the reader differs.
+**The rule governs the pronoun, not the number**, and *sua* stays out of the
+letters, where it would have been ambiguous.
+
+### D-321 `[IMPLEMENTATION]` The book on screen — a folder that opens with two clicks
+`scripts/build-book-web.py` produces `docs/materials/livro-ecra/`, opened by
+double-clicking `index.html`. **No server, no connection, no installation.**
+Nineteen screens: cover, sixteen scenes, cast, back cover. 20 MB.
+
+**Third output, same source.** The text comes from `livro-historia.md` and
+`livro-paratexto.md` by the same blockquote rule as the PDFs, and the script
+imports the PDF builder's reader rather than reimplementing it — **one grammar,
+not two that drift apart.**
+
+**The screen adaptation is the layout, not the book.** In print the illustration
+sits above the text because the page is portrait; on a landscape screen it sits
+beside it, and the cover keeps the title over the empty wall exactly as printed.
+Below 820 px it stacks. Nothing is redrawn and nothing is rewritten.
+
+**What it deliberately does not have:** no third-party script, no remote font,
+no network request of any kind, no record of what was read, no browser storage,
+no price and no purchase button. **Verified by inspecting the built file, not by
+intending it.** A book opened on a computer at home does not need to know who
+opened it.
+
+**Alt text comes from the illustration brief.** Each scene's *O que se vê* was
+written to tell an illustrator what is in the picture, which is what a screen
+reader needs to say. **A second alt text was not written**, because it would have
+diverged from this one at the first change. All seventeen images carry it.
+Keyboard: arrows, PageUp/PageDown, Home, End; visible focus rings; the imprint
+opens in a dialog rather than sitting in the reading path, since a copyright page
+in the middle of a story is an interruption with no reason.
+
+**Two faults found by screenshotting, both invisible in the CSS.** The cast and
+back-cover screens sat hard against the left edge on a wide viewport instead of
+centred. And a rule meant for the cast page's heading was styling the **back
+cover's first line of story text in the display face**, which turned the opening
+sentence of the book into a title.
+
+**The book is finished.** Three expressions from one source: reading PDF,
+home-print PDF, and screen. `[mês e ano]` in the imprint is the only thing left
+in it.
+
+### D-322 `[IMPLEMENTATION]` Two letters from one source — D-298 closed
+The seven parents' letters presupposed a consultation in three places, and the
+same three in all seven: the opening (*a personagem com que trabalhámos nesta
+sessão*), the middle (*Combinámos experimentar isto esta semana*, with a
+two-line box), and the sign-off (*digam-me na próxima vez*).
+
+**None of those sentences was wrong.** They are correct for someone who was in
+the room. *Combinámos* refers to something actually agreed, the box is filled in
+there with the psychologist present, and it is collected the following week —
+licensed material may open something and leave it open, because there is a
+person to pick it up (D-095). **What did not exist was the version for a family
+that downloaded the file.**
+
+**Two settings, one source.** Blocks are marked `data-setting="clinica"` or
+`data-setting="familia"` and the builder strips the other. **The body of the
+letter is shared** — only the three sentences vary — so a change to what matters
+is still made once. Each family now builds four PDFs: workbook, child's book,
+`-pais.pdf` (unchanged, for the consultation) and `-pais-familia.pdf`.
+**Twenty-eight documents.**
+
+**The family version has no box, and that was a judgement rather than a
+translation.** A blank box headed *combinámos experimentar isto* arriving in a
+house with nobody coming **is a request for application**, and the principle of
+the parents' line is that *os pais não aplicam; acompanham*. It is replaced by a
+sentence that says so: *não há aqui nada para aplicar… é para reparar no que já
+acontece em casa*. A softer box would have been the same request in better
+clothes.
+
+**And a fault the split exposed.** The family letter came out carrying the
+running footer *colorhugs.pt · Material licenciado* — **telling a household that
+downloaded the letter for itself that it is holding licensed professional
+material**, which is untrue and reads as a warning. The footer is now a
+parameter; the family letter carries the address alone.
+
+D-298 is closed.
+
+### D-323 `[DEFINED]` The parents' book — spine, chapter shape, and a specimen
+`docs/materials/livro-pais.md` holds the structure and **the first chapter
+written in full**, so the voice and the depth could be corrected before six more
+were written to them. **Approved as it stands.**
+
+**The spine is the store, and it comes from D-273 rather than from a choice made
+now.** The seven cannot be seven chapters or the book is a catalogue (D-299).
+**The first two chapters fill the store and the five after them spend it.** A
+reader who reaches the angry chapter already knows what the store is, because he
+built it in the two before — so when the book says *send her to fetch something
+that keeps her company*, the something exists and has a name. **A book that opens
+with anger can only say be patient.**
+
+**Order:** calm, happy, then angry, sad, scared, ashamed, bored. **Bored goes
+last** because it is the one that is not a problem and the one most often read as
+defiance — and because it is the protagonist of the story the family may already
+have read.
+
+**Chapter shape: five movements, and no headings announcing them.** A scene from
+a house, three or four lines, with no name and no age. What is happening. The
+distinction that governs the family, in one sentence. What usually goes wrong —
+**never *parents do this badly*, always *the thing that comes naturally is the
+thing that does not work, and there is a reason*.** Then what to do and what
+supports it, graded in words rather than by label.
+
+**No chapter ends in a list.** A list is what turns a book to read into a book to
+comply with.
+
+**The disclaimer opens the book rather than closing it**, because a warning at
+the end arrives after the person has already tried.
+
+**Two things needing a decision before the remaining six are written:** the title
+— *Antes de Precisar*, which states the thesis in two words — and whether the
+first chapter's register is right. It carries the letters' warmth rather than the
+workbooks' reserve, which is a deliberate reading of D-293: this is read alone by
+an adult who is worried, not by a colleague.
+
+### D-324 `[DEFINED]` The parents' book written — seven chapters and a closing
+`docs/materials/livro-pais.md` now holds the whole book: opening disclaimer,
+seven chapters and a closing. **About five thousand words**, roughly five hundred
+a chapter — short enough to be read in one sitting by someone who is worried,
+which is the reader D-299 named.
+
+**Every chapter keeps the five movements and shows none of them.** No internal
+headings, no bulleted list anywhere in the book, and no chapter ending in one.
+Each opens on a scene in a house with no name and no age, and closes by returning
+to that same scene in two lines — **the return is what makes it a chapter rather
+than an entry**.
+
+**Each chapter's argument is the family's own governing distinction**, taken from
+the workbooks rather than invented here: calm is noticed and not produced;
+happiness is retained rather than repaired; anger is not aggression; sadness is
+accompanied and not removed; **relief is what maintains fear**; hiding is what
+maintains shame; and boredom is not a problem to solve. The rejected distinctions
+are honoured too — the fear chapter deliberately does **not** argue that the fear
+is out of proportion, because that leads straight to cognitive reappraisal, which
+this material excludes.
+
+**Evidence is graded in words in six of the seven chapters.** The fear chapter
+says its claim is established, and it is the only one that does. Savouring is
+called reasonable and explicitly not a replicated result in young children.
+Boredom gets the most careful handling of all: **the positive claim is reasonable
+and no more, and the safe half is the negative one** — a child whose time is
+entirely filled has no occasion to invent.
+
+**The fear chapter carries the sentence most likely to be read as an accusation**,
+so it says so and disarms it: taking a frightened child out of a situation is the
+reflex of an adult who loves her. The problem is the repetition, not the gesture,
+and a parent reading it has gained information rather than a verdict.
+
+**The closing does not list symptoms and does not scale anything.** It reframes
+the question — not *is this serious*, which nobody can answer from outside, but
+*is this stopping her life from happening* — and gives four signs: everywhere,
+lasting, **she has stopped doing things**, and the parents are frightened. It
+says plainly that certainty is not required to book an appointment, since that is
+what the appointment is for. Talk of disappearing or self-harm, a large sudden
+change, or something at home hurting her are set apart as **not material for a
+book**.
+
+**The title is *Antes de Precisar*, confirmed**, and it is the thesis: the store
+is built while everything is fine, which is the only time it can be built. **The
+register was read across all seven and holds** — the letters' warmth rather than
+the workbooks' reserve, which is the right reading of D-293 for a book read alone
+by an adult who is worried.
+
+### D-325 `[IMPLEMENTATION]` *Antes de Precisar* built — twenty-four A5 pages
+`scripts/build-parents-book-pdf.py` produces the reading PDF and the imposed
+home-print PDF from `livro-pais.md`, by the same machinery as the illustrated
+book — it imports the imposition and the instruction sheet rather than copying
+them. **Twenty-four A5 pages, six A4 sheets.**
+
+**The markdown's opening section is not the book.** The file starts with the
+structure, the spine and the writing rules, which are notes for whoever writes.
+The builder reads from `# O que este livro não faz` onward, so **the notes can
+grow without ever reaching a reader**.
+
+**Each chapter opens with its family's figure from the deck.** No artwork was
+generated; the seven exist. **The cards were drawn for a white background**, so
+on a cream page each arrived inside its own white square — seven rectangles on a
+cover that has none. The background is keyed out by flood-filling inward from the
+edges only, which leaves the whites of the eyes alone because they do not touch
+the border. The drawings are untouched.
+
+**Twenty-two pages is not a multiple of four**, which saddle-stitching requires.
+Rather than fail, the builder appends blank pages — **the printed book ends with
+a clean leaf instead of ending halfway through a sheet**, which is what a printer
+would do.
+
+**Three faults, all found by rendering.** The running footer printed across the
+cover with the page number jammed against the address, because Chromium applies
+a footer to every page or to none — **the cover is now printed separately and
+merged**, as the workbooks already do. The subtitle sat left-aligned inside a
+centred cover. And the footer's own stylesheet carried `width: 100%%` — a stray
+doubled percent that made the rule invalid, collapsed the flex row, and printed
+**colorhugs.pt3** as one word.
+
+**The parents' line is complete.** The seven letters in two settings, the
+illustrated story in three expressions, and this book.
