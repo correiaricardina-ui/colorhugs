@@ -13,7 +13,7 @@ para a mesa; a nota é para ler antes.**
 
 ## Abertura
 
-> Três folhas, dois dados, dois jogos e sete folhas de bonecos, para usar na
+> Quatro folhas, dois dados, dois jogos e sete folhas de bonecos, para usar na
 > consulta. **Cada peça funciona sozinha** — não há ordem
 > entre elas, nenhuma pressupõe as outras, e o caderno existe só para as manter
 > juntas.
@@ -49,6 +49,26 @@ para a mesa; a nota é para ler antes.**
 >
 > **A não fazer.** Não perguntar porque é que alguém está onde está. Não dizer o
 > que a arrumação significa. **Não guardar a folha como retrato da família.**
+
+---
+
+## Onde é que sinto
+
+> **O que é.** Uma figura de corpo inteiro, sem cara e sem roupa, para a criança
+> marcar onde sente.
+>
+> **Como se propõe.** Pôr a folha e uma caixa de lápis, e perguntar por um
+> episódio concreto e passado. Não nomear zonas: dizer *peito* ou *barriga* é
+> dizer-lhe onde é suposto sentir-se alguma coisa.
+>
+> **Uma figura só, e é de propósito.** Duas lado a lado convidariam a comparar um
+> antes com um depois, **e comparar é medir.**
+>
+> **Para explorar.** Se marcou um sítio ou vários. Se a cor mudou de sítio para
+> sítio. Se há um sítio onde nunca sente nada.
+>
+> **A não fazer.** Não perguntar *quanto*. Não anotar as marcas como registo. E
+> não corrigir: **uma criança que marca os pés para o medo não está enganada.**
 
 ---
 
@@ -136,8 +156,9 @@ para a mesa; a nota é para ler antes.**
 
 ## Outra vez — o jogo em que se perde
 
-> **O que é.** Um percurso curto de catorze casas e um dado em que duas das seis
-> faces mandam voltar ao princípio. Uma partida demora um ou dois minutos.
+> **O que é.** Duas folhas: o percurso de quinze casas numa, o dado e as peças
+> na outra. **As peças dobram ao meio e ficam de pé no percurso.** Uma das seis faces do dado manda voltar ao princípio. Uma partida demora à volta de minuto e meio, e
+> perde-se ao princípio quase cinco vezes por partida.
 >
 > **Perde-se muitas vezes, e é de propósito.** É a única maneira honesta de
 > trabalhar a frustração: fazê-la acontecer na consulta, com alguém ao lado que
@@ -159,8 +180,9 @@ para a mesa; a nota é para ler antes.**
 
 ## A vez — o jogo em que se espera
 
-> **O que é.** Um desenho a dois, com doze quadrados, e um monte de doze cartas:
-> seis dizem *agora*, seis dizem *espera*. Antes de cada vez tira-se uma carta.
+> **O que é.** Duas folhas: numa, doze quadrados para marcar em cima e uma
+> moldura para o desenho em baixo; na outra, as doze cartas com frente e verso. Seis dizem *agora*, seis dizem
+> *espera*. Antes de cada vez tira-se uma carta do monte, virado para baixo.
 >
 > **A espera é imposta pela sorte e não por um adulto.** É a diferença que faz
 > esta peça funcionar: ninguém está a mandar esperar — a espera apenas acontece.

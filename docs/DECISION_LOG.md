@@ -7959,3 +7959,570 @@ the child makes that bridge herself, it is a different thing.**
 **And one limit that follows from the cards themselves:** a card reading
 *aconteceu à frente de toda a gente* can open something, so this is consulting-room
 material and not a game to send home.
+
+
+### D-359 `[PROPOSAL]` Framing, consent and licence — three sheets, not one
+`docs/materials/enquadramento-consentimento.md` and three separate PDFs.
+**Nothing here is approved and none of it may be used with a family before legal
+review.** The warning is printed on all three sheets rather than only in the
+markdown, so it cannot be lost by printing one of them.
+
+**There are two consents here and conflating them would be serious.**
+
+**Consent to the psychological intervention belongs to each psychologist's own
+practice.** It is regulated by the Ordem dos Psicólogos Portugueses and varies
+with the setting, the child's age and the parental-responsibility arrangement.
+**ColorHugs does not supply it.** Supplying it would be practising through
+somebody else's licence, and **a generic form used as though it were sufficient
+is worse than no form at all.**
+
+**Consent regarding this material is what ColorHugs can and should supply**: what
+the pieces are, what they do not do, and what happens to what the child writes or
+draws on them.
+
+**And the licence terms are not consent at all** — they are the agreement between
+ColorHugs and the practitioner who bought the material. Three documents, and they
+are not even given to the same person.
+
+**Three things the sheets state that matter beyond the legal wrapper.**
+**ColorHugs receives nothing** — there is no record, platform or account behind
+paper material, and the psychologist is the one holding what the child produces.
+**A family may ask that a material stop being used**, without justifying it and
+without it affecting the accompaniment. And the licence forbids **describing the
+materials as evidence-based**, because the notes grade their own support and
+several claims are marked as practice.
+
+**The consent sheet is written for the simple case and says so in a note to the
+practitioner that does not print.** It does not cover shared custody in
+disagreement, court-ordered accompaniment, or children in care — **and in those
+situations consent is not settled by a form.**
+
+**What has to be verified before licensing** is listed in the markdown: legal
+review of all three, a data-protection opinion even for paper, the Portuguese
+regime for minors' consent and the second signature, compatibility with the
+Ordem's code, and **proper drafting of the licence, which in this draft describes
+intentions rather than clauses.**
+
+
+### D-360 `[IMPLEMENTATION]` The body map joins Peças de sessão, and the cover names everything
+*Onde é que sinto* — the paper body map, the last piece of the original D-288 list
+that belonged to the working set rather than to the recording family. **Peças de
+sessão is twenty pages.**
+
+**The artwork already existed and the check that mattered was the seal.** Filling
+from outside the figure does not reach the torso, the head or the legs: **a child
+can colour it and the paint does not escape**, which is what a sheet like this has
+to guarantee before anything else.
+
+**One figure, and that is deliberate.** Two side by side would invite comparing a
+before with an after, **and comparing is measuring.**
+
+**No zone is named on the sheet.** Printing *peito* or *barriga* would tell the
+child where she is supposed to feel something, and the work is her saying where
+she feels it. The instructions add the matching prohibition: **a child who marks
+her feet for fear is not mistaken.**
+
+**The cover was showing four thumbnails for a caderno that holds nine pieces**,
+which quietly hid the rest. It now names every piece in two lines above them, so
+the thumbnails read as a sample rather than a list.
+
+**And a shadowing bug the page exposed.** The thumbnail loop reused `alt` — the
+box height — as its own loop variable, leaving it at 5 afterwards, so **the fourth
+caption was printed inside its box, on top of the figures.** Invisible in the
+code, obvious on the render.
+
+
+### D-361 `[IMPLEMENTATION]` The two games gain pieces, colour cues and a denser page
+Both sheets were called visually weak, and they were weak for different reasons.
+
+**The games had no playing pieces.** The rules said *cada um escolhe uma figura*
+and the sheet supplied none. **Four tokens to cut out**, using four of the seven
+existing figures — no artwork generated.
+
+**A vez was unplayable by a child who cannot read.** Twelve cards carrying only a
+word. Each card now leads with **colour and shape as well as the word** — a filled
+green circle for *agora*, an open amber circle for *espera* — which is the same
+argument that put figures on the dice, and it costs nothing.
+
+**Both pages are denser.** The grids and cards grew and the margins shrank, and
+*Outra vez* now puts the die net and the tokens side by side instead of stacked.
+
+**Three overlaps, all found by rendering.** The die and the tokens were drawn at
+the same coordinates, one on top of the other — `pecas` now takes an x origin
+because **it shares a band with the die net**. The bottom row of cards printed
+over the running footer twice before the grid was small enough. And the grid's top
+row crossed the last line of the rules.
+
+**Outra vez's track will be artwork when it exists.** Fourteen identical rounded
+rectangles in a serpentine are a diagram; a drawn path is a path. The builder
+falls back to the grid until `artwork/sessao/percurso.png` exists — the same
+arrangement as the jar and the house.
+
+**Asked whether to generate art for both. Only one of them needs it.** *A vez* is
+twelve empty squares to draw in and twelve word cards: any image there would be
+decoration, and **on a working sheet decoration competes for the space it was
+supposed to fix.**
+
+
+### D-362 `[IMPLEMENTATION]` The track, the cards, and a game that was five minutes long
+Three images installed: `percurso.png`, `carta-agora.png`, `carta-espera.png`.
+
+**The pencil and the hourglass pass without reservation.** Reduced to 12 mm they
+are told apart instantly — one tall and narrow, the other round and waisted,
+which is what the brief asked for and what a child who cannot read needs.
+**I had argued against images on these cards and was wrong**: the coloured circle
+worked, but it is a convention a child has to be taught first, **and a picture of
+the thing being done is immediate.**
+
+**The track came back with fifteen stones instead of fourteen, and checking
+whether that mattered found something worse.** With fifteen stones and **two**
+*volta* faces a game averages **97 turns — about five minutes**, where the rules
+promise one or two. **The game was failing its own specification**: losing had to
+be frequent *and fast*, and it was frequent and slow.
+
+**One *volta* face instead of two fixes it.** Twenty-eight turns, about a minute
+and a half, and still **4.7 returns to the start per game** — only 7% of games
+pass without one. **Losing stays frequent; it stops being permanent.** The sixth
+face becomes a 2.
+
+**And the die had the same hole the cards had.** Two faces read *volta* in words,
+which a child who cannot read cannot read. The face now carries **an arrow
+curving back**, with the word small beneath it.
+
+
+### D-363 `[DEFINED]` Outra vez goes to two sheets, because the die was too small to build
+Asked whether the pieces and the die were too small to handle. **Measured, and two
+of the three were.**
+
+**The stones are fine: 26.6 mm, and 29.3 mm once the track is set at the page's
+full width.** **The tokens were the wrong way round** — a 30 mm cut-out has to sit
+on a 29 mm stone, so the piece was larger than the place it goes.
+
+**The die was the real problem.** Faces of 20 mm. The strategy dice are 48 mm, and
+**a 20 mm paper cube is hard to fold, worse to glue and bad to roll** in the hand
+of a six-year-old.
+
+**It does not all fit on one sheet.** A net with 40 mm faces needs 160 mm of
+height, and after the track only 106 mm remained. **Outra vez is two sheets** —
+the track on one, the die and the tokens on the other. **Paper is cheap; a die
+that cannot be assembled is not.** Peças de sessão is twenty-one pages.
+
+**The general point is worth keeping.** Every cut-out and folded piece in this
+line should be checked against the hand that will use it and against the place it
+has to sit, **and both checks are measurements rather than impressions.**
+
+
+### D-364 `[IMPLEMENTATION]` A vez: cards with backs, and the grid inside a panel
+**The cards now have printed backs**, and there are two reasons rather than one.
+A back stops the pile being read from the wrong side — and **printed on one side
+only, the pencil and the hourglass show through ordinary printer paper**, which
+would have ended the game just as surely.
+
+**All twelve backs are identical**, carrying the logo and the game's name: the
+pile is face-down and the wait has to be a surprise.
+
+**They grew from 41×19 mm to 56×52 mm**, because a card that small has no room
+for a back, a mark, or a picture worth seeing. Twelve to a sheet, fronts and
+backs mirrored in one file, as the Depósito already does.
+
+**The twelve squares sit inside a panel.** Loose on the sheet they read as an
+exercise grid; framed, they read as a drawing being made together.
+
+**And the panel is measured from the grid rather than the other way round.** The
+first version had the grid wider than the panel — the outer columns crossed its
+border — and four centimetres of empty panel below. Peças de sessão is
+twenty-three pages.
+
+
+### D-365 `[IMPLEMENTATION]` Tokens that stand up, and a drawing that is one drawing
+**The tokens were flat cut-outs and fell over.** A piece that falls at every turn
+is a piece that gets lost. Each token is now **the figure plus its mirror image
+above it, joined by a fold**: folded in half it is two-sided, opens like a tent,
+and stands on the track.
+
+**A vez's twelve squares moved to the top and the drawing got a frame below**, and
+this improves the rule rather than only the layout. **Twelve small squares to draw
+inside produced twelve small drawings; now the drawing is one drawing** and the
+squares mark what has already been done.
+
+The rule follows: on *agora* **something is drawn and one square is marked**; on
+*espera* the turn passes and nothing is drawn. **The frame is a double line with a
+small heart at each corner** — enough to say the space is for something, and quiet
+enough not to compete with what goes in it.
+
+**And the die shrank from 40 to 36 mm** because at 40 it collided with the tokens
+now that each one is twice as tall. Still nearly twice the 20 mm that D-363 had
+rejected as unbuildable.
+
+
+### D-366 `[PROPOSAL]` Devolução à escola — and the third family begins
+`docs/materials/devolucao-escola.md` and `scripts/build-record-sheets.py`. **The
+first piece of *Peças de registo*** — sheets for the practitioner to write on
+rather than for the child to use, which is what separates them from *Peças de
+sessão* and why they have a family of their own, in a different colour.
+
+**It is the only piece in the whole project that leaves the consulting room for
+third parties.** So **what does not go is more important than what goes**, and it
+is printed on the sheet — not as a caution for the practitioner but as a
+declaration the teacher reads: no diagnosis, none suggested, no clinical, family
+or personal history, nothing the child said or did in session, and no test
+results because no tests were done. **And the closing line: if something the
+school would like to know is missing, the absence is deliberate.** A meeting can
+be asked for; what cannot happen is that it goes in writing on a sheet that
+circulates.
+
+**A sheet like this is only useful if it is concrete.** *Tenham paciência, a
+criança tem ansiedade* changes nothing in a classroom. The hint text under each
+field gives the register: *avisar antes de a chamar em voz alta; deixar sair da
+sala e voltar sem ter de pedir.*
+
+**The child has to know what is being sent about her**, and it is a tick box
+rather than a recommendation, **because a box makes you look at it.** The
+practitioner's note adds what the box does not: if the answer is *no*, it is
+worth knowing why before sending — there are good reasons, and there is the one
+that is not good, which is that it was easier.
+
+**It is consistent with the teachers' line**, whose distinction is *o professor
+não trata; nomeia*. Nothing here asks anyone to do therapy in a classroom.
+
+**Two faults.** The header fields were written without backticks in the markdown,
+so they were not recognised as fields and the sheet printed with no header at
+all. And it ran to two pages with the second holding four lines — **the legal
+warning moved from a box into the footer**, where it is read once and costs no
+height.
+
+**Still a proposal**: like the framing and consent sheets, this one needs legal
+review before use, and for the same reason — it touches confidentiality and
+consent.
+
+
+### D-367 `[IMPLEMENTATION]` Grelha de acomodação — three columns, no frequency, no blame
+Second piece of *Peças de registo*, A4 landscape. `grelha-acomodacao.md`, and the
+builder gained a table so that later record sheets can use one.
+
+**A grid that reads as a list of the parents' mistakes does not get filled in —
+or gets filled in dishonestly.** So the sheet says so before the first row:
+taking a child out of a situation that is hurting her is the reflex of somebody
+who loves her, **and the problem is never the gesture but its repetition in
+situations that are not dangerous.** Whoever arrives here has done nothing wrong;
+they have gained information they did not have.
+
+**The third column is the work, and it is not *stop doing it*.** It is **uma
+versão mais pequena** — to the door instead of inside, answering once instead of
+three times, five minutes instead of always. **Removing at a stroke an
+accommodation that holds a family's day together is not a plan; it is an
+accident.**
+
+**There is no frequency column and no scale.** The accommodation grids in the
+literature score; this one does not. **What matters in a consultation is not how
+many times a week — it is which one can be made smaller first**, and the closing
+field asks exactly that, with *a mais fácil primeiro, não a que mais pesa.*
+
+**Two things the practitioner's note carries and the sheet does not.** This sheet
+does not leave the consulting room: a list of accommodations read out of context —
+by a relative, by a school — reads as the accusation the sheet spends its first
+paragraph denying. And **there is no column for what the child feels**, which is
+deliberate: the grid is about what the adults do, and that column would turn it
+into an assessment of the child.
+
+**Its grounding is the fear family's**, where *o que mantém o medo é a fuga* is
+the project's only central claim graded as established.
+
+
+### D-368 `[IMPLEMENTATION]` Registo dos degraus — ordering is not measuring
+Third piece of *Peças de registo*. The ladder above, the log of what happened
+below, one page.
+
+**A ladder without order is not a ladder, and this project refuses scales.** The
+resolution is exact: **ordering is not measuring.** The steps carry numbers
+because they are a sequence — first, second, third — **not because they measure
+how much fear is in each.** No zero to ten, no thermometer, and the sheet says on
+its face that *quanto* is not asked.
+
+**The column that matters is not how long she stayed.** It is **whether she left
+before or after it came down**, which is this family's whole mechanism in one box
+to tick: **leaving at the peak hands the relief back to the fear** and teaches
+that escaping worked; leaving after it has dropped a little records something
+else — *estive ali e aguentei*.
+
+**Repeating comes before climbing**, and there is a column for it, because that
+is where almost every ladder breaks: it is climbed too early, the next step goes
+badly, and it starts again with the child convinced she cannot do it. **If a step
+went badly you do not climb — you divide**, and there is always a smaller step
+between two.
+
+**Two columns are absent and the note says they must stay absent.** No intensity
+column, though the exposure literature uses 0–10 scales and they are useful in
+many settings — **here the decision is otherwise, and adding one contradicts the
+rule that runs through every piece.** And no column for how likely the feared
+thing is: **the distinction *medo não é perigo* was explicitly rejected for this
+family** because it leads to arguing probability with a small child.
+
+**And it does not go home.** What goes home, if anything, is a short concrete
+agreement said in words — **not the whole ladder, which out of context reads as a
+list of things the child still cannot do.**
+
+
+### D-369 `[IMPLEMENTATION]` Bloco de registo — the field that justifies the permission
+Fourth piece of *Peças de registo*. **Two halves to a sheet, cut in two** — a pad
+rather than a form, with the mark on each half because each half leaves the sheet
+alone.
+
+**A clinical record is not ColorHugs'.** It belongs to each psychologist's
+practice and her deontology, and supplying a clinical-record form would be the
+same overlap that was refused for consent (D-359). **What this material can supply
+is the note of a session in which these pieces were used** — a working sheet that
+then enters the file, not the file.
+
+**The central field is *o que ficou aberto*, and it is why the sheet exists.** The
+rule that separates licensed material from what goes home is that **a licensed
+piece may open something and leave it open, because somebody is there to catch
+it** (D-095). **This pad is where it is caught. Without it, the permission has no
+counterpart.**
+
+**There is no field for conclusions and none should be added.** What a child
+chose, refused or repeated is not clinical data by itself — every application note
+says so — and a field headed *o que isto significa* would invite the opposite.
+
+**Two faults, both from the render.** Only the first of the three *quem esteve*
+boxes appeared: the pattern matched once per paragraph instead of finding all.
+And the last field was cut off, because a half has a fixed height and the content
+ran past it.
+
+**One line in the practitioner's note is worth keeping.** If *o que ficou aberto*
+is empty three sessions running, **it is worth asking whether the pieces are being
+used or only shown.**
+
+
+### D-370 `[IMPLEMENTATION]` Oito sessões — a worked case, not a plan. The line is complete
+Fifth and last piece of *Peças de registo*. **The psychologists' line is
+complete.**
+
+**D-327 required a worked example rather than a course, and this is where that
+bites.** A document listing *sessão 1: mapa corporal; sessão 2: baralho* is
+exactly the programme this material says it is not. **So it is not a plan — it is
+a case, with the reasoning in view.**
+
+**Two things were put into it deliberately, and they are the whole difference.**
+**A piece that was considered and refused** — *Antes de Precisar* was not given to
+the parents in session 4, because the book is for accompanying and that family
+needed one thing to change rather than more reading. And **a point where the plan
+changed** — the second step was not climbed, because the first had not been
+repeated with an exit after the fear came down; it was divided instead. **A worked
+example without either is a timetable with prose around it**, and the practitioner
+note says both must survive any rewrite.
+
+**The case is fictional and says so on every page.** No child is described.
+
+**It ends by saying what it does not show**: not the right number of sessions, not
+the right order, **and not a result** — because a worked example that ended well
+would become a promise. And not the pieces this case did not use, which is most of
+them.
+
+**The footer differs from the other record sheets**, because this one is not a
+draft awaiting legal review: it carries *caso fictício, exemplo trabalhado, não é
+um plano de tratamento.*
+
+
+### D-371 `[IMPLEMENTATION]` Oito sessões restructured — the reasoning is separated from the events
+The first version wrote each session as free prose, and **the reasoning and the
+events were mixed together.** In a worked example **what a reader wants to copy is
+not what happened — it is why that piece was chosen at that moment**, and that has
+to be separated and labelled.
+
+**Four fixed fields per session, in every session:** *porquê agora*, *o que se
+usou*, *o que aconteceu*, *o que ficou*. **The first is the one that was missing**
+and is the one that carries the teaching: *ela tem uma imagem do medo, não tem
+palavras para o corpo nem para a sequência — sem sequência não há degraus.*
+
+**Four phases group them:** enquadrar e conhecer, perceber o que sustenta,
+trabalhar, devolver e combinar. **They are named because they make the reasoning
+legible, not because they must be followed**, and the document says so in the same
+breath: **this case went backwards at session 6, and most do.** It also now says
+that a case where accommodation was the main problem would have begun at session
+4.
+
+**Visually each session is a card** with the labels in a fixed left column, so the
+four fields line up down the page and a reader can read one field across all
+eight.
+
+**Three faults from the render.** The labels butted against the text when longer
+than their column. A phase heading was orphaned at the foot of a page. And once
+the row became a flex layout, **every bold run inside the text became its own
+column and jumped sideways** — the body is now wrapped in a single element.
+
+
+### D-372 `[DEFINED]` The access model — two axes, a common core, and a specialty module
+`docs/ACCESS-MODEL.md`. Structure defined; **prices are not, and the
+infrastructure does not exist.**
+
+**The boundary is not file type or price. It is who has to be in the room for the
+material to be safe** — a rule the project had already made without calling it
+commercial packaging: *a piece that opens something and leaves it open can only
+exist where somebody is there to catch it.* That line separates **alone from
+accompanied**, not free from paid.
+
+**Two axes, deliberately independent: who you are** (family · teacher ·
+professional by specialty) **and how you pay** (individual subscription ·
+institutional licence). **Schools are both** — a teacher can subscribe alone or
+use seats bought by the school, and a clinic may want professional seats. **If
+the two axes are not separated from the start they cannot be separated later.**
+
+**Professional is a superset**, holding everything Premium has plus the clinical
+set for that specialty. **What makes a superset safe is not the price but the
+credential:** a family does not skip the psychologists' pack because it is
+expensive; it cannot pass the check.
+
+**The common core is the same for every profession** — the full interactive and
+the family printables. **Only the clinical set differs**, and that decides the
+data model: **files are tagged by specialty, not by tier.** A system that only
+knows *this user is a professional* hands psychology material to a speech
+therapist.
+
+**The two verifications do not have equal force, and the document says so.**
+Psychologists can be confirmed against the Ordem's public register. Speech,
+occupational and psychomotor therapists are asked for the cédula as a document —
+**which deters the casual and does not stop the determined.** What does the real
+work is the licence sheet, which turns misuse into breach: **verification
+filters; the licence holds responsible.** Either way it is human work per signup,
+and without it the exclusivity is a sentence.
+
+**The cadernos de exploração stay in Professional despite being the child's
+sheets.** Of Zangado's twelve, one is marked as the clinician's and one as the
+parents': **the exploration book is not a standalone product but the child's part
+of a workbook that presupposes somebody leading.**
+
+**And the interactive is scaffolding without content.** 4,883 lines: routing,
+sections, avatars, locales, the access model, the activity registry and an honest
+*Coming Soon*. **Thirty-nine entries are declared and three activities are
+built.** The activities can proceed now; **the commercial gate is a separate
+project** — authentication, payments, server-side entitlements, protected file
+delivery — **and a PDF in a public folder is not protected by sitting behind a
+password page.**
+
+
+### D-373 `[DEFINED]` The How Do I Feel catalogue — five lots, counted
+`docs/CATALOGO-HOW-DO-I-FEEL.md`. Every artefact in the seven-family line, which
+lot it sits in, and what is sold separately.
+
+**It covers one line on purpose.** Learning Hub, Brain Gym, Kids Draw for Kids and
+Color & Create will have their own, and **that is why the arrangement is by lot
+rather than by product: a lot takes a new line without changing shape.**
+
+**Counted rather than described.** Nineteen colouring pages; 31 cards in the
+families' deck; **sixty child sheets across the seven exploration books**; seven
+workbooks of 25–29 pages; 24 teacher pages; 23 pages of session pieces; 59 cards
+in the therapy deck; five files for O Depósito; five record sheets. **One of the
+three built interactive activities belongs to this line.**
+
+**The free pack is proposed as the seven family cards** — the piece that best
+shows the rest and that closes itself.
+
+**Five separately-sellable printables already exist and are finished**: the
+families' deck, the colouring library, *Quem És Tu?*, *Antes de Precisar*, and
+the teachers' pack. **This is the line that can be earning while the rest is
+built**, which is what the commercial model said from the start.
+
+**Three physical objects are a different business, not a variant of the same
+one** — stock, postage and returns.
+
+**The document ends with what is missing and who each item depends on**, because
+four of the six do not depend on us: legal review, named references, the
+commercial gate, and prices validated against real buyers.
+
+
+### D-374 `[IMPLEMENTATION]` A composer for the project's documents
+`scripts/build-doc-pdf.py` takes any project markdown and sets it as a PDF with a
+cover, the professional lockup and the project's fonts. Built for the catalogue
+and reusable for the rest.
+
+**The documents stay in markdown**, which is where they are worked; this is for
+reading and showing.
+
+**Two faults from the render.** A list item spanning two source lines was read as
+one line, so **the rest of the item came out as a paragraph with the bold markers
+visible.** And the fixed footer sat on top of the last lines of a page.
+
+
+### D-375 `[PROPOSAL]` Prices, and the professional set is bought rather than rented
+**Folded into `docs/CATALOGO-HOW-DO-I-FEEL.md`**; the separate `PRECOS.md` was
+removed rather than left to drift. **None of these figures has been validated
+with real buyers**, and validation decides, not reasoning.
+
+**The two kinds of price are separated inside the document and the scope is
+stated.** **Per-piece prices belong to this line. Tier prices cover the whole
+product** — Premium at €6 buys everything, and when the Learning Hub catalogue
+exists the same €6 will appear there too. **Without that note, a reader takes them
+for line prices.**
+
+**The clinical set is essentially finished, and that changes the model.** **359
+pages** of professional material plus two decks and a board game. **A finished
+body sold by monthly subscription is downloaded in month one and cancelled in
+month two.** So the professional subscription becomes **annual only, at €180** —
+not as a trick but as the honest way to charge for a library that already exists
+rather than one that promises to grow. **Families are the opposite**: their
+product is the interactive, which does grow, so monthly stays.
+
+**Ferramentas is the right name for one half and the wrong name for the other.**
+The decks, *O Depósito* and the session and record pieces **are tools** — used
+with the hands, serving a task, and the word is already the project's own.
+**But *Antes de Precisar* is not a tool; it is a book that is read**, and *Quem És
+Tu?* is a story. **Two names**: *Ferramentas* for the consulting room and the
+classroom, *Livros e imprimíveis* for home — the same alone/accompanied boundary
+as everything else.
+
+**The seven family cards become the free pack**, and it is a commercial decision
+rather than generosity: they show the quality of the rest, they close themselves,
+**and they are the piece that circulates between parents without anyone
+promoting it.**
+
+**The recommendation is not to publish any of these prices without testing
+them.** The cheap test is the informative one: **put three of the standalone
+items on sale** — the deck at €7, the parents' book at €8, the session pieces at
+€22 — three prices at three levels for one setup effort. **What three months of
+real sales teach cannot be learned from any conversation about pricing**, and it
+is what should then fix the professional subscription, which is the most expensive
+number to get wrong.
+
+### D-376 `[IMPLEMENTATION]` The document footer is the print engine's, not a CSS element
+A `position: fixed` footer **repeats at the top of every page after the first,
+printed over the text.** It looked correct on page one, which is why the first
+build passed. The composer now uses the print engine's own footer template, with
+the page number, and the header is left empty. **Checked by counting dark pixels
+in the footer band on every page rather than by looking at one.**
+
+
+### D-377 `[IMPLEMENTATION]` Explore & Color is shelved by subject, never by feeling
+`src/data/subjects.ts`. The library was a flat grid of nineteen pages; it is now
+five shelves: **with someone · quiet places · animals · moving about · things and
+hands.**
+
+**The shelves may not be feelings, and the rule already existed.** `colouring.ts`
+fixes it for filenames: **a page is named for what it shows, never for the
+feeling**, because a parent who finds `angry/breathing.pdf` learns what the child
+chose and the product promised not to report. **A shelf labelled *When I am
+angry* would do exactly that, on screen, where anybody can see it.** Two further
+reasons: **one page serves several families** — the quiet corner serves anger and
+sadness and does a different job in each — so an arrangement by feeling would
+either repeat it or pick a family for it. And **a child who comes to colour comes
+to choose a drawing, not a feeling.**
+
+**The subject is deduced rather than written, at the author's request, and the
+cost is stated in the file.** The only field describing the picture is `alt`;
+`path` and `families` are about emotion and are precisely the ones that may not
+become shelves. So it is **ordered keyword rules over `alt`, first match wins** —
+**which makes the order an editorial decision written as code rather than as a
+field.**
+
+**Two things keep that honest.** A report prints every page and its shelf, and
+**a page matching no rule throws** instead of landing in a catch-all, which is how
+a library quietly stops being arranged at all.
+
+**The check found three wrong before anyone saw the screen.** The folded blanket
+and the bedroom corner shelved under *animals* because of a plush bear and a
+plush rabbit — **a plush toy is a thing, not an animal** — and the
+lying-and-clouds page because of a cat in it. **Putting *quiet* before *animals*
+fixed all three with no exception at all**: those pages carry *blanket*,
+*bedroom*, *lying* and *clouds*, and the dog, the cat at the end of the stones
+and the elephant carry no quiet word. **Nineteen pages, none unmatched:** four,
+five, three, three, four.

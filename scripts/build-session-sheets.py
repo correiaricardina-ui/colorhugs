@@ -32,6 +32,7 @@ from PIL import Image, ImageDraw, ImageFont
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONTS = os.path.join(ROOT, "assets", "fonts")
 SESSAO = os.path.join(ROOT, "artwork", "sessao")
+CORPO = os.path.join(ROOT, "public", "assets", "body")
 BRANDING = os.path.join(ROOT, "public", "assets", "branding")
 OUT = os.path.join(ROOT, "docs", "materials", "folhas")
 
@@ -217,11 +218,20 @@ def capa():
         [round(24 * MM), round(60 * MM), round(60 * MM), round(61.4 * MM)],
         radius=round(0.7 * MM), fill=FAMILY_COLOUR)
     draw.text((round(24 * MM), round(66 * MM)),
-              "Três folhas, dois dados, dois jogos, sete folhas de bonecos, e as instruções.",
+              "Quatro folhas, dois dados, dois jogos, sete folhas de bonecos, e as instruções.",
               font=small, fill=(110, 100, 88))
     draw.text((round(24 * MM), round(73 * MM)),
               "Cada peça funciona sozinha. Não há ordem entre elas.",
               font=small, fill=(110, 100, 88))
+    # **As quatro miniaturas são uma amostra e não a lista.** O caderno tem mais
+    # peças do que cabem em quatro caixas, e uma capa que mostrasse quatro sem o
+    # dizer estaria a esconder as outras.
+    draw.text((round(24 * MM), round(84 * MM)),
+              "Quem vive nesta casa · Onde é que sinto · Antes, durante, depois · "
+              "Duas listas", font=tiny, fill=(140, 130, 116))
+    draw.text((round(24 * MM), round(89 * MM)),
+              "Dado do Zangado · Dado do Triste · Outra vez · A vez · "
+              "Bonecos de tamanhos, sete famílias", font=tiny, fill=(140, 130, 116))
 
     # As três miniaturas.
     # Quatro miniaturas em vez de três: o dado é peça da família e tem de se ver
@@ -262,8 +272,11 @@ def capa():
             diff.putdata([0 if p[:3] > (246, 246, 246) else 255
                           for p in fig.getdata()])
             fig = fig.crop(diff.getbbox())
-            for alt, cx, cy in ((20, 15, 8), (9, 9, 30), (5, 27, 33)):
-                h2 = round(alt * MM)
+            # **`alt` é a altura da caixa e não pode ser reutilizada aqui.**
+            # Era, e o ciclo deixava-a a valer 5 — a legenda desta miniatura
+            # passava a ser escrita dentro da caixa, por cima das figuras.
+            for figura_mm, cx, cy in ((20, 15, 8), (9, 9, 30), (5, 27, 33)):
+                h2 = round(figura_mm * MM)
                 f2 = fig.resize((round(fig.width * h2 / fig.height), h2),
                                 Image.LANCZOS)
                 im.paste(f2, (round((x0 + cx) * MM) - f2.width // 2,
@@ -393,8 +406,39 @@ def wrap_text(draw, texto, fonte, largura_px):
     return linhas
 
 
+def mapa_corporal():
+    """A figura do corpo, para a criança marcar onde sente.
+
+    **Uma figura só e grande.** Duas lado a lado convidariam a comparar um antes
+    com um depois, e comparar é medir — que é o que este material não faz.
+
+    **Nenhuma zona está nomeada na folha.** Escrever *peito* ou *barriga* seria
+    dizer à criança onde é suposto sentir-se alguma coisa, e o trabalho é ela
+    dizer onde sente.
+
+    **O contorno está vedado**, verificado por enchimento a partir de fora: a
+    tinta não foge da figura.
+    """
+    im, draw = page()
+    header(draw, "Onde é que sinto",
+           "Marcar, pintar ou riscar. Não há sítios certos.")
+
+    corpo = Image.open(os.path.join(CORPO, "outline.webp")).convert("RGBA")
+    altura = round(196 * MM)
+    corpo = corpo.resize((round(corpo.width * altura / corpo.height), altura),
+                         Image.LANCZOS)
+    im.paste(corpo, ((A4[0] - corpo.width) // 2, round(48 * MM)), corpo)
+
+    label(draw, "Com a cor que quiseres. Podes marcar mais do que um sítio, "
+                "ou nenhum.", 18, 252)
+
+    credit(im, draw)
+    return im
+
+
 SHEETS = {
     "casa-das-sete": casa_das_sete,
+    "mapa-corporal": mapa_corporal,
     "antes-durante-depois": antes_durante_depois,
     "duas-listas": duas_listas,
 }
@@ -429,6 +473,9 @@ def main():
     jogos.main()
     for nome in jogos.JOGOS:
         folhas.append(Image.open(os.path.join(OUT, f"{nome}.png")).convert("RGB"))
+    for n in (1, 2):
+        folhas.append(Image.open(
+            os.path.join(OUT, f"a-vez-cartas-{n}.png")).convert("RGB"))
 
     # **Os bonecos passam a peça desta família** (D-351). O Depósito saiu: é
     # produto à parte, com identidade própria.

@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import ColouringCanvas from "@/components/activities/ColouringCanvas";
 import { COLOURING_PAGES, LIBRARY_PAGES } from "@/data/colouring";
+import { SUBJECT_LABEL, groupBySubject } from "@/data/subjects";
 import SpeakButton from "@/components/ui/SpeakButton";
 import { useLocale } from "@/i18n/LocaleProvider";
 import { strings } from "@/i18n/strings";
@@ -22,6 +23,12 @@ import { asset } from "@/lib/site";
  * "On the bench", not "Go and tell someone". A child browsing the library has
  * no reason to meet a feeling she did not choose, and a page that named its
  * strategy would carry the feeling with it (D-120).
+ *
+ * **The shelves follow the same rule** (D-377). They are subjects — with
+ * someone, quiet places, animals, moving about, things and hands — **never
+ * feelings**. A shelf labelled "When I am angry" would do on screen exactly
+ * what the filenames are forbidden from doing on disk. The subject is deduced
+ * from what each page shows; see `subjects.ts`.
  */
 export default function ExploreAndColor() {
   const { locale } = useLocale();
@@ -75,8 +82,13 @@ export default function ExploreAndColor() {
         {t.pick}
         <SpeakButton textKey="library.pick" />
       </h2>
-      <ul className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-3">
-        {pages.map((option) => (
+      {groupBySubject(pages).map((shelf) => (
+      <div key={shelf.subject} className="mt-8 first:mt-6">
+      <h3 className="mb-3 text-center font-display font-700 text-ch-ink/70">
+        {SUBJECT_LABEL[shelf.subject][locale] ?? SUBJECT_LABEL[shelf.subject].en}
+      </h3>
+      <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3">
+        {shelf.pages.map((option) => (
           <li key={option.id}>
             <button
               type="button"
@@ -99,6 +111,8 @@ export default function ExploreAndColor() {
           </li>
         ))}
       </ul>
+      </div>
+      ))}
     </section>
   );
 }

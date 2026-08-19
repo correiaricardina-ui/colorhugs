@@ -14,7 +14,7 @@ grow, with families in control. You are helping me design and build it.
 **Read `docs/DECISION_LOG.md` in the attached project before answering
 anything.** It holds every decision made so far, numbered D-001 onwards, with
 the reasoning. It is the source of truth. If something here and something there
-disagree, the decision log wins. **It now runs to D-358.**
+disagree, the decision log wins. **It now runs to D-377.**
 
 The other documents in `docs/`:
 
@@ -103,10 +103,37 @@ built:**
   playing-card size with mirrored backs in a single file, twenty-one counters,
   rules and box face. `build-deposit-game.py`.
 
-Each piece has an application note with the evidence graded honestly. **Still to
-build:** record pad, accommodation grid, ladder log, eight-session plan, school
-feedback sheet, and **framing and consent — the piece without which none of this
-can be licensed.**
+- **Peças de registo** — the third family, five sheets for the practitioner to
+  write on: bloco de registo, grelha de acomodação, registo dos degraus,
+  devolução à escola, and *Oito sessões*, a worked case rather than a plan.
+  `build-record-sheets.py`.
+- **Enquadramento, consentimento e licença** — three sheets, `[PROPOSAL]`, **not
+  usable before legal review**. `build-consent-sheets.py`.
+
+Each piece has an application note with the evidence graded honestly. **The
+psychologists' line is complete.**
+
+## Packaging and access
+
+**`docs/ACCESS-MODEL.md`** fixes the structure (D-372): two independent axes —
+who you are and how you pay — a common core for every profession and a clinical
+module per specialty, **files tagged by specialty rather than by tier**, and two
+verifications that do not have equal force.
+
+**`docs/CATALOGO-HOW-DO-I-FEEL.md`** is the catalogue for this line with prices
+folded in (D-373, D-375). **Per-piece prices belong to the line; tier prices
+cover the whole product.** The professional subscription is **annual only**,
+because a finished library sold monthly is downloaded once and cancelled.
+
+**`scripts/build-doc-pdf.py`** sets any project markdown as a PDF for showing.
+
+## Still to do
+
+- **Legal review** of the three consent sheets and the school feedback sheet.
+- **Named references** in the *Razoável* sections of every application note.
+- **The interactive**: 39 entries declared, **4 activities built**. The
+  commercial gate — accounts, payments, entitlements, protected delivery — is a
+  separate project and does not exist.
 
 **A rule this line added** (D-328): *nothing is scored or ranked* applies to the
 autonomous product, **not to the consulting room**. With a clinician present,
