@@ -217,7 +217,7 @@ def capa():
         [round(24 * MM), round(60 * MM), round(60 * MM), round(61.4 * MM)],
         radius=round(0.7 * MM), fill=FAMILY_COLOUR)
     draw.text((round(24 * MM), round(66 * MM)),
-              "Três folhas, dois dados, dois jogos, e uma folha de instruções.",
+              "Três folhas, dois dados, dois jogos, sete folhas de bonecos, e as instruções.",
               font=small, fill=(110, 100, 88))
     draw.text((round(24 * MM), round(73 * MM)),
               "Cada peça funciona sozinha. Não há ordem entre elas.",
@@ -228,7 +228,7 @@ def capa():
     # na capa como as outras.
     y0, alt, larg, passo = 108, 46, 37, 43
     for i, nome in enumerate(("Quem vive nesta casa", "Antes, durante, depois",
-                              "Duas listas", "Dados e jogos")):
+                              "Duas listas", "Bonecos de tamanhos")):
         x0 = 22 + i * passo
         draw.rounded_rectangle(
             [round(x0 * MM), round(y0 * MM), round((x0 + larg) * MM),
@@ -256,13 +256,18 @@ def capa():
                 draw.line([xx, round((y0 + 27) * MM), xx + p2,
                            round((y0 + 27) * MM)], fill=FAINT, width=2)
         else:
-            lado = 9
-            for c, l in ((1, 0), (0, 1), (1, 1), (2, 1), (1, 2), (1, 3)):
-                draw.rectangle(
-                    [round((x0 + 5 + c * lado) * MM), round((y0 + 5 + l * lado) * MM),
-                     round((x0 + 5 + (c + 1) * lado) * MM),
-                     round((y0 + 5 + (l + 1) * lado) * MM)],
-                    outline=BOX, width=3)
+            fig = Image.open(os.path.join(
+                ROOT, "artwork", "emotions", "angry.png")).convert("RGBA")
+            diff = Image.new("L", fig.size)
+            diff.putdata([0 if p[:3] > (246, 246, 246) else 255
+                          for p in fig.getdata()])
+            fig = fig.crop(diff.getbbox())
+            for alt, cx, cy in ((20, 15, 8), (9, 9, 30), (5, 27, 33)):
+                h2 = round(alt * MM)
+                f2 = fig.resize((round(fig.width * h2 / fig.height), h2),
+                                Image.LANCZOS)
+                im.paste(f2, (round((x0 + cx) * MM) - f2.width // 2,
+                              round((y0 + cy) * MM)), f2)
         larg_txt = draw.textlength(nome, font=tiny)
         draw.text((round((x0 + larg / 2) * MM) - larg_txt / 2,
                    round((y0 + alt + 4) * MM)), nome, font=tiny, fill=(130, 120, 106))
@@ -424,6 +429,18 @@ def main():
     jogos.main()
     for nome in jogos.JOGOS:
         folhas.append(Image.open(os.path.join(OUT, f"{nome}.png")).convert("RGB"))
+
+    # **Os bonecos passam a peça desta família** (D-351). O Depósito saiu: é
+    # produto à parte, com identidade própria.
+    spec = importlib.util.spec_from_file_location(
+        "bonecos", os.path.join(ROOT, "scripts", "build-size-figures.py"))
+    bon = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(bon)
+    bon.main()
+    for familia in bon.FAMILIES:
+        folhas.append(Image.open(os.path.join(
+            ROOT, "docs", "materials", "bonecos",
+            f"bonecos-{familia}.png")).convert("RGB"))
 
     # **O caderno junta-as e não as prende.** Cada folha continua a existir no
     # seu PDF e a imprimir-se sozinha; o caderno é conveniência de arrumação,

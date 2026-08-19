@@ -13,7 +13,8 @@ para a mesa; a nota é para ler antes.**
 
 ## Abertura
 
-> Três folhas, dois dados e dois jogos, para usar na consulta. **Cada peça funciona sozinha** — não há ordem
+> Três folhas, dois dados, dois jogos e sete folhas de bonecos, para usar na
+> consulta. **Cada peça funciona sozinha** — não há ordem
 > entre elas, nenhuma pressupõe as outras, e o caderno existe só para as manter
 > juntas.
 >
@@ -175,3 +176,33 @@ para a mesa; a nota é para ler antes.**
 > **A não fazer.** Não encher a espera com conversa. Não retirar as cartas de
 > «espera» quando saem muitas seguidas. **O que se está a praticar é isso
 > mesmo.**
+
+
+
+---
+
+## Bonecos de tamanhos
+
+> **O que é.** Sete folhas, uma por família, com a mesma figura em três tamanhos
+> para recortar. As figuras são as do baralho e as do livro — a criança que já
+> as viu reconhece-as.
+>
+> **Imprime-se a folha da família que serve àquele caso naquele dia.** As sete
+> não se usam ao mesmo tempo.
+>
+> **Três tamanhos, e três é o tecto e não uma falta.** Dizem *ficou pequeno*,
+> *ficou como costuma ser*, *ficou enorme*, e **não se convertem em número**.
+> Cinco degraus já pediriam uma escala, e uma escala é o que esta peça não pode
+> ser.
+>
+> **Como se propõe.** Pôr os três em cima da mesa sem os apresentar. Perguntar
+> pelo tamanho de um episódio concreto e passado — *na quinta-feira, à saída da
+> escola* — e não pelo tamanho que a coisa tem em geral.
+>
+> **Para explorar.** Deixar pôr o boneco onde quiser na mesa, e não só escolher:
+> **a distância a que o coloca costuma dizer tanto como o tamanho.**
+>
+> **A não fazer.** Não anotar o tamanho escolhido. Não comparar entre sessões
+> como medida de evolução. E no Envergonhado: **o pequeno é o estado e não a sua
+> ausência** — encolher é o que a vergonha faz, e um pequeno ali não quer dizer
+> *foi pouco*.

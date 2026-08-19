@@ -36,6 +36,8 @@ INK = (58, 51, 43)
 FAINT = (168, 155, 138)
 CUT = (205, 195, 180)
 
+FAMILY = "Peças de sessão"
+FAMILY_COLOUR = (150, 128, 96)
 CREDIT = "© ColorHugs · colorhugs.pt · Material licenciado"
 
 FAMILIES = {
@@ -77,9 +79,17 @@ def sheet(family_id):
     small = ImageFont.truetype(os.path.join(FONTS, "Nunito-Medium.ttf"), round(3.4 * MM))
     tiny = ImageFont.truetype(os.path.join(FONTS, "Nunito-Medium.ttf"), round(2.9 * MM))
 
-    draw.text((round(18 * MM), round(15 * MM)), label, font=title, fill=INK)
+    # **O mesmo cabeçalho das outras peças da família** (D-351): o nome da
+    # família por cima, o traço da cor por baixo do título, o mesmo rodapé.
+    draw.text((round(18 * MM), round(13 * MM)), FAMILY.upper(), font=tiny,
+              fill=FAMILY_COLOUR)
+    draw.text((round(18 * MM), round(18 * MM)), f"Bonecos — {label}",
+              font=title, fill=INK)
+    draw.rounded_rectangle(
+        [round(18 * MM), round(29.5 * MM), round(46 * MM), round(30.7 * MM)],
+        radius=round(0.6 * MM), fill=FAMILY_COLOUR)
     draw.text(
-        (round(18 * MM), round(26 * MM)),
+        (round(18 * MM), round(34 * MM)),
         "Recortar. Não é uma escala e não se regista.",
         font=small, fill=FAINT,
     )
@@ -90,7 +100,7 @@ def sheet(family_id):
     # sobra coluna. O grande fica sozinho em cima, os dois pequenos lado a lado
     # por baixo.
     placed = []
-    for mm, cx_mm, top_mm in ((BIG_MM, 105, 42), (MID_MM, 68, 196), (SMALL_MM, 142, 212)):
+    for mm, cx_mm, top_mm in ((BIG_MM, 105, 46), (MID_MM, 68, 198), (SMALL_MM, 142, 214)):
         f = figure(name, mm)
         x = round(cx_mm * MM) - f.width // 2
         y = round(top_mm * MM)

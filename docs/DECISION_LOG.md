@@ -7682,3 +7682,280 @@ precisely what is being practised.
 **Both sheets overflowed the page on the first build** — the die net ran off the
 bottom of one and a row of cards off the other. Invisible in the code, obvious on
 the render.
+
+
+### D-348 `[IMPLEMENTATION]` O Depósito — and the simulation found the hole in the rules
+Two A4 sheets: the board with the rules, and the twelve day cards with the
+counters. `scripts/build-deposit-game.py`, reading the cards and the rules from
+`docs/materials/deposito.md`. **Peças de sessão now runs to fourteen pages, and
+the psychologists' first package is complete: nine pieces.**
+
+**The failure this design exists to avoid** is the educational board game — land
+on a square, gain a counter; land on another, lose one. That **illustrates the
+store's logic without making it felt**, because there is no decision, and a game
+without a decision is a simulation.
+
+**The good-day choice is the game.** Put two counters in, or clear a card that
+was left unresolved. **Both are good and you cannot have both** — which is the
+real scarcity of a family with a good day ahead. **The order is not chosen; the
+store is.** When three hard days come out at the start there is nothing to be
+done and it is nobody's fault, and that is **seen** rather than explained.
+
+**Four thousand simulated games found a hole in the rules that reading them had
+not.** The rule said *resolve a card* and **never said what resolving cost**.
+With no cost, resolving always beats filling, the choice vanishes, and with it
+the piece. **Resolving now costs the price printed on the card.** With the rule
+complete: about **10% of games end with nothing unresolved**, the mean is **1.6
+cards left on the table**, and the strategy matters without deciding the outcome
+— always filling gives 1.84, clearing the cheapest first gives 1.58. **A decision
+that changes the result without determining it is what makes it a decision.**
+
+**A number in the draft was also wrong and the check caught it.** The text said
+the costs totalled fourteen. They total **twelve** — 2+1+2+3+3+1 — the same as
+the six good days can bank. The game is tight not because the costs are larger
+but **because resolving also spends, and because the order is not chosen.**
+
+**The instructions say not to play it once.** The second game, with the same
+twelve cards in another order, is where the lesson lands. And: do not choose for
+the child on a good day, and **do not tidy away the unresolved cards before
+looking at them.**
+
+
+### D-349 `[IMPLEMENTATION]` O Depósito revised — a jar, twenty-four cards, hearts
+Three faults named on the built version, and all three were right.
+
+**The board was weak because it did not show what matters, which is the level.**
+Twelve circles in a grid do not fill up; they get ticked. **A store only teaches
+anything if it can be seen filling and emptying**, so the twelve places now sit
+inside a vessel that fills from the bottom. The jar is generated art — line only,
+no colour, because paper counters go on top of it and a child may colour it in.
+
+**Twelve cards was too few, and the reason is play rather than variety.** The
+same twelve every time make the second game predictable, **and the second game is
+where the lesson lands.** There are now **twenty-four — twelve good and twelve
+hard — and each game draws six of each at random.** The twelve costs total
+twenty-four, so six drawn at random cost twelve on average, which is exactly what
+six good days can bank: the tested balance is preserved and the variety
+multiplies. **Re-simulated over six thousand games: 10% end clear, mean 1.63
+unresolved, and the strategy still matters — 1.85 filling always against 1.63
+clearing the cheapest first.**
+
+**The counters were circles, which is the drawing of somebody who has not
+decided.** They are now hearts, in the body shape of the seven, drawn in line so
+a child can colour them — and the sheet says they do not have to match.
+
+**The first heart was assembled from two circles and a triangle and the seam
+showed**: the interior lines crossed the shape and it read as three badly fitted
+pieces. **It is now one computed closed curve.** Which is the same lesson as the
+house: a shape built out of parts looks built out of parts.
+
+**Peças de sessão now runs to sixteen pages.**
+
+
+### D-350 `[IMPLEMENTATION]` The jar, and the board is now a vessel
+`artwork/sessao/deposito-frasco.png`. **Counted rather than looked at:** a
+horizontal scan crosses **ten strokes at each of the three rows** — two jar walls
+plus four circles of two edges each. Twelve circles, four to a row, each about a
+fifth of the jar's width, which is what a paper counter needs. Nothing else
+inside, no colour, no lettering. **Right on the first attempt.**
+
+**The line measures 7.13 per thousand pixels of width, against 4.99 for the house
+and 3.57 for the book.** Not a fault — this is the sheet that gets handled most,
+with counters on it and possibly coloured — but **the project's ladder of stroke
+weights now has three rungs instead of one**, and that is worth knowing before
+somebody 'corrects' one of them to match another.
+
+**The builder falls back to the grid when the file is absent**, so the board kept
+building while the artwork did not exist, and adding it took one file.
+
+**And a stale line was caught in the printed text:** the rules still said *joga-se
+outra vez, com as mesmas doze cartas*, which stopped being true when the deck went
+to twenty-four. It now says *com outras doze*.
+
+
+### D-351 `[DEFINED]` The psychologists' line splits into one working set and two products
+With the nine pieces built and side by side, the arrangement is decided.
+
+**Peças de sessão** is the licensed working set: three sheets, two dice, two
+games, and now **the bonecos de tamanhos**, which take the family header and join
+the caderno. **Nineteen pages**, and every piece still prints alone. It is the
+set a clinician buys once and works from.
+
+**The baralho and O Depósito come out**, because each is a product rather than a
+sheet. Fifty-nine cards in four naipes, and a cooperative board game with
+twenty-four cards and its counters, **are things somebody buys as things** — they
+have their own object, their own box, their own price, and they do not belong
+inside another product's folder.
+
+**That is a commercial decision and it changes what has to be built**: each needs
+its own identity — cover, instructions, and in the Depósito's case a board and
+pieces worth selling on their own. **The Depósito is not there yet**, and its
+board was called weak once already and improved once already.
+
+**Nothing in the pieces themselves changed by this split.** Selection and order
+remain the clinician's (D-327), no piece presupposes another, and a set that is
+sold together is still not a sequence.
+
+
+### D-352 `[IMPLEMENTATION]` O Depósito rebuilt as a product sold on its own
+Six sheets: box face, board, rules, two card sheets, counters. The cards were
+already closed and were not touched.
+
+**The board went landscape and gained three places.** *O monte*, *Por resolver*
+and *A reserva*. **The reason it looked thin was not the drawing — it was that
+the table was doing half the work.** With no marked places, every game is laid
+out differently and the thing reads as a set of loose sheets rather than a game.
+*Por resolver* is outlined in a dashed line and the others solid, so **the place
+where cards accumulate looks provisional**, which is what it is.
+
+**The rules came off the board.** A board with ten lines of text printed beside
+it is not a board; it is an instruction sheet with a picture. They are now their
+own sheet, with what is in the box and the honest line that **about one game in
+ten ends with nothing unresolved.**
+
+**The box face says three things before any text**: what the game is, for how
+many, and that it is cooperative. **No winner is the most unusual thing about this
+game and belongs on the front**, not buried in the rules.
+
+**A fault the change introduced and the render caught.** The footer was still
+being placed at the height of a portrait page, so on the landscape board it fell
+off the sheet. It now measures the page it is being written on rather than
+assuming one.
+
+
+### D-353 `[IMPLEMENTATION]` The Depósito as a game: A3 board, real card sizes, mirrored backs
+Twelve sheets now: box face, A3 board, rules, four card fronts with four mirrored
+backs, and the counters.
+
+**The board is A3 and its places are the exact size of the cards that go in
+them.** A place smaller than the card is a suggestion rather than a place, and a
+larger one puts the table back in charge.
+
+**The cards were 42×46 mm, which is too small for a child to handle in a table
+game.** They are now **63×88 mm — playing-card size — six to an A4 sheet**, and
+the figure and the cost both gained room.
+
+**Every one of the twenty-four backs is identical, and this is the opposite of
+the therapy deck.** There the back names the naipe on purpose, so a clinician can
+find one without turning the pile. **Here, a back that said whether a card is a
+good day or a hard one would end the game**, because the deck is face-down and
+what comes next must not be knowable.
+
+**Two faults, both caught by rendering.** The right-hand column ran off the
+bottom: two rows of 88 mm places plus the deck do not fit the height of an A3,
+and the reserve fell off the sheet. It is one row of three now, and the label says
+that more than three stack — which is what one does in a game anyway. And the
+footer was still being placed at portrait height, so on the landscape board it
+printed outside the page; it now measures the page it is written on.
+
+
+### D-354 `[IMPLEMENTATION]` The board fills the sheet, the mark goes on both faces, the cards ship as one file
+**The board left a third of the sheet blank and a board with holes in it looks
+unfinished.** The jar now runs almost the full height, the right-hand column
+narrows to the width of three cards, *O monte* and *A reserva* sit side by side
+instead of stacked, and the ColorHugs mark sits at the foot of the column.
+
+**The mark goes on the face of every card as well as the back**, as the emotion
+deck already does (D-330). A card photographed or photocopied has no back and
+stops saying where it came from.
+
+**The cards ship as one file, fronts and backs alternating.** It is what a duplex
+printer needs, and **eight separate files were eight chances to print in the wrong
+order.**
+
+**Asked whether the board should be generated as an image instead. It should
+not, and the reason is mechanical.** The places have to measure 63×88 mm exactly
+and sit at exact coordinates; a generated image guarantees neither, and the day
+the card size changes the board stops fitting with no way to correct it. **The jar
+is art and is generated; the places are geometry and stay in code** — the same
+division already used for the house sheet, where the artwork comes from outside
+and the sheet is built around it.
+
+
+### D-355 `[SUPERSEDED by D-356]` The counters coloured by family
+**Twenty-one counters, three of each family, shuffled**, in the seven family
+colours. **Superseded the same day, and the correction was the author's.**
+
+**Asked whether to generate a coloured heart to replace the line one. No.** One
+generated colour gives one colour, and seven generations would give **seven
+slightly different shapes**. The colour is applied in code to a single line
+drawing, which guarantees two things a generator cannot: **the shape is identical
+across all twenty-one**, and **the colours are exactly the seven canonical family
+values**, taken from the files rather than matched by eye.
+
+**The pipeline takes the artwork when it exists and the computed heart until
+then.** `ficha_colorida` tints whatever it is given by replacing the light
+interior and leaving the black outline and the transparency alone, so swapping in
+`artwork/sessao/ficha-coracao.png` changes the drawing and nothing else.
+
+
+### D-356 `[DEFINED]` One counter, multicoloured — a ficha is not a feeling
+**All twenty-one counters are identical, and the heart is multicoloured.**
+
+**The reason is better than the one it replaces, and it is a content error being
+corrected rather than a preference.** A counter coloured red says that what is
+stored is anger — **and the store is not filled with anger.** It is filled on
+calm and happy days, which are the only two that bank anything. **A one-colour
+heart names a feeling that is not in there.**
+
+A multicoloured heart says what it is: a mixture, belonging to nobody. And
+because every counter is the same, **no counter can be read as a particular
+feeling** — which is the whole point of a unit of store.
+
+**This one is generated rather than tinted in code.** Colouring by code was right
+when the colours had to match the seven families exactly; here there is one
+drawing with several colours in it, and that is artwork. The builder repeats a
+single image, and falls back to the computed white heart until the file exists.
+
+
+### D-357 `[IMPLEMENTATION]` The multicoloured counter, and the project's first textured fill
+`artwork/sessao/ficha-coracao.png`. Twenty-one identical counters. **Right on the
+first attempt, and judged at 32 mm rather than at the size it was drawn.**
+
+**Two departures from the brief, and they go different ways.**
+
+**There are no black lines between the patches, and that is better than what I
+asked for.** I specified them; at 32 mm internal divisions only dirty the shape.
+The patches meet on their own.
+
+**The fill is brushed rather than flat, and this is the project's first textured
+surface.** Measured: the lilac patch reaches a standard deviation of 23.8 in the
+blue channel, against 5.5 in the sky-blue one. **At 32 mm it cannot be seen** —
+the strokes fall below a tenth of a millimetre — so the piece works. **It is
+recorded as an exception rather than allowed to pass unnoticed and become a
+precedent**, because the art direction is flat colour everywhere else and a
+second textured piece should be a decision, not a drift.
+
+
+### D-358 `[IMPLEMENTATION]` The Depósito's application note — and what it refuses to claim
+`docs/materials/deposito-nota-aplicacao.md`. Same shape as the notes for the deck,
+the bonecos and the three sheets. **The Depósito is now complete as a product:
+five printed pieces and the note.**
+
+**The *Estabelecido* section says there is nothing.** Not a hedge — there is no
+established evidence for this game, and **none about board games in child
+psychotherapy that would support it.** What is established is the background
+common to all the material, and the note states plainly what that authorises
+(that working with these ideas matters) and what it does not (that this game does
+it).
+
+**The metaphor is named as the project's own.** *O depósito* comes from this
+material and not from the literature, and it sits in *Prática* alongside the
+twenty-four cards, the costs, and the decision that **the game almost never
+resolves completely.**
+
+**The box says what the game cannot be sold as.** Not *a game that teaches
+children to manage emotions* — **what it does is make an idea visible**, and what
+a child does with that depends on everything else, above all on who is at the
+table.
+
+**Three cautions are about the adult rather than the child.** Do not choose for
+her on a good day — the choice is the whole piece, and an adult who decides turns
+the game into a demonstration. Do not tidy the unresolved cards away before
+looking at them. And **do not turn the result into a conversation about her
+life**: *vês, é como quando tu…* closes the game and undoes what it opened. **If
+the child makes that bridge herself, it is a different thing.**
+
+**And one limit that follows from the cards themselves:** a card reading
+*aconteceu à frente de toda a gente* can open something, so this is consulting-room
+material and not a game to send home.

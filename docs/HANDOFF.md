@@ -14,7 +14,7 @@ grow, with families in control. You are helping me design and build it.
 **Read `docs/DECISION_LOG.md` in the attached project before answering
 anything.** It holds every decision made so far, numbered D-001 onwards, with
 the reasoning. It is the source of truth. If something here and something there
-disagree, the decision log wins. **It now runs to D-347.**
+disagree, the decision log wins. **It now runs to D-358.**
 
 The other documents in `docs/`:
 
@@ -93,9 +93,20 @@ built:**
   (losing) and **A vez** (waiting). `build-session-sheets.py`,
   `build-strategy-die.py`, `build-session-games.py`.
 
+**The line is now arranged as one working set and two products** (D-351):
+
+- **Peças de sessão** — the licensed working set, nineteen pages in
+  `pecas-de-sessao.pdf`, every piece also printing alone: three sheets, two dice,
+  two games, and the seven bonecos sheets.
+- **Baralho terapêutico** — a product in its own right, fifty-nine cards.
+- **O Depósito** — a product in its own right: A3 board, twenty-four cards at
+  playing-card size with mirrored backs in a single file, twenty-one counters,
+  rules and box face. `build-deposit-game.py`.
+
 Each piece has an application note with the evidence graded honestly. **Still to
-build: O Depósito**, the cooperative board game — the only physical expression of
-the store the whole product assumes, and the most expensive piece.
+build:** record pad, accommodation grid, ladder log, eight-session plan, school
+feedback sheet, and **framing and consent — the piece without which none of this
+can be licensed.**
 
 **A rule this line added** (D-328): *nothing is scored or ranked* applies to the
 autonomous product, **not to the consulting room**. With a clinician present,
