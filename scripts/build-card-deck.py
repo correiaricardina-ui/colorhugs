@@ -33,6 +33,15 @@ OUT = os.path.join(ROOT, "docs", "materials", "baralho")
 
 REGULAR = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+TEXT = os.path.join(ROOT, "assets", "fonts", "Nunito-Medium.ttf")
+
+# **A marca vai na face de cada carta e não só no verso** (D-330). Uma carta
+# fotocopiada ou fotografada perde o verso e deixa de dizer de onde veio.
+#
+# É composta na carta e não desenhada dentro da ilustração, por isso não
+# contraria a regra de não haver texto dentro da arte: os PNG das personagens
+# ficam intactos e continuam a servir todas as línguas.
+CREDIT = "© ColorHugs · colorhugs.pt"
 
 DPI = 300
 MM = DPI / 25.4
@@ -118,7 +127,26 @@ def card_front(path, label, family):
     draw.text(
         ((CARD[0] - width) / 2, CARD[1] - round(26 * MM)), label, font=font, fill=INK
     )
+
+    credit(draw)
     return card
+
+
+def credit(draw):
+    """A linha da marca, ao pé da carta.
+
+    **Discreta de propósito.** A carta é manuseada por crianças pequenas e o
+    logótipo a cores ao pé da figura é ruído — uma linha composta faz o mesmo
+    trabalho de proveniência com uma fracção da tinta e da atenção.
+    """
+    font = ImageFont.truetype(TEXT, round(3.1 * MM))
+    width = draw.textlength(CREDIT, font=font)
+    draw.text(
+        ((CARD[0] - width) / 2, CARD[1] - round(11.5 * MM)),
+        CREDIT,
+        font=font,
+        fill=(120, 128, 158),
+    )
 
 
 def card_back():

@@ -6970,3 +6970,715 @@ doubled percent that made the rule invalid, collapsed the flex row, and printed
 
 **The parents' line is complete.** The seven letters in two settings, the
 illustrated story in three expressions, and this book.
+
+### D-326 `[DEFINED]` The repository stays public for now, and privacy is a deferred decision
+**Established as fact, not as inference.** A request to
+`api.github.com/repos/correiaricardina-ui/colorhugs/contents/docs/materials`
+succeeded **with no authentication**, which proves the repository is public, and
+returned 48 files of which **25 are PDFs**: the seven `caderno` (the licensed
+practitioner product), the seven `exploracao`, the seven `pais` letters and the
+four teacher documents. `artwork/` — the high-resolution masters, 81 MB — is
+public alongside them.
+
+**The decision is to leave it that way for now**, and to return to it later.
+
+**The reasoning that makes this defensible.** Nothing is on sale yet, and a
+repository with no stars, no forks and no inbound links is not found by accident.
+The exposure today is theoretical.
+
+**The reasoning that makes it a decision rather than an oversight, and why it is
+recorded here.** **The cost of the fix rises with every commit.** Deleting a file
+in a later commit does not remove it from history; a real removal needs
+`git filter-repo` or the BFG, a force-push, and a request to GitHub to collect
+the unreferenced objects — and anyone who has cloned or forked keeps their copy.
+**This is cheap to fix now and expensive to fix after the first sale.**
+
+**The two ways out, when the time comes.** Make this repository private and take
+GitHub Pro, since **Pages from a private repository requires a paid plan** — one
+repository, about four euros a month. Or create a **new public repository holding
+only the site** — `src`, `public` and the configuration, about 24 MB — and keep
+this one private with the materials. **`src` does not reference `artwork/` at
+all**, which was verified: the site builds entirely from `public/assets/`, so the
+split is clean and free.
+
+**The trigger to act is the first sale**, or the first inbound link to the
+repository, whichever comes first.
+
+### D-327 `[DEFINED]` The psychologists' line: therapeutic pieces, chosen by the clinician
+Each line begins with a distinction that limits it. Parents: *não aplicam;
+acompanham*. Teachers: *não trata; nomeia*. **Here the distinction does different
+work, and that is what makes it hard to write.** In the other two it limited the
+competence of the reader — a parent is not a therapist, a teacher is not a
+therapist. **A psychologist is.** Limiting what she does would be both impertinent
+and false.
+
+**What has to be limited in this line is the material.** Eight instruments sold
+under licence, with the look of a system, invite being read as a programme to be
+followed — and that does two kinds of damage at once. It **promises more than the
+evidence supports**, against the grading rule that runs through the whole project.
+And it **moves clinical judgement into the document**, which is the opposite of
+what the material is for.
+
+> **These are therapeutic pieces, selected and applied by the clinician according
+> to her clinical judgement, and adjusted to the case in front of her.**
+
+**What follows from it, and is checkable:** the eight-session plan is **a worked
+example and not a course**, as Zangado was for the workbooks. **No piece
+presupposes another.** No sheet says *na sessão 3*. And the framing document
+states in writing that selection and order belong to the clinician.
+
+**The defensible opposite was considered and rejected**: that a plan is only worth
+having if it is a plan, and that a busy clinician buying material wants something
+to follow. It was rejected because a followable programme would make claims this
+material cannot support — but the concern behind it is real, and it is why the
+worked example has to be genuinely worked rather than a skeleton.
+
+### D-328 `[DEFINED]` *Nothing is scored or ranked* applies to the autonomous product, not to the room
+A founding rule of this project is that **nothing is scored, ranked or taken
+away** — rewards are for participation and variety, never performance. **That rule
+was written for the product a child uses alone, and it is right there.** A screen
+that ranks a child, or a streak that can break, is a punishment delivered by a
+machine with nobody present.
+
+**It is wrong for the consulting room, and keeping it there would forbid the most
+useful instrument on the list.** Losing in front of someone is how frustration is
+worked with — it has to happen, in the room, with an adult beside her who does not
+leave when it does. A material line for clinicians that cannot contain a game with
+a loser has removed its own best tool to satisfy a rule about screens.
+
+**The rule now reads by audience.** For the autonomous product and for anything a
+child uses alone at home: no score, no ranking, no streak, nothing taken away.
+**For material licensed to practitioners: competition, losing, waiting and
+frustration are legitimate and are frequently the point** — because a clinician
+chose the game, is in the room, and is there to catch what it opens. It is the
+same logic that already lets practitioner material open something and leave it
+open (D-095), applied to a second dimension.
+
+**What does not change with audience:** nothing compares a child to a norm,
+nothing produces a number that goes in a file as a result, and nothing here
+assesses. **A game with a winner is not an assessment**, and the distance between
+the two has to stay written on the pieces themselves.
+
+### D-329 `[DEFINED]` The first package for the psychologists' line — eight pieces
+Chosen from the assessed list, with the four card types **consolidated into a
+single deck** carrying several games rather than four separate decks.
+
+| Peça | O que é |
+| --- | --- |
+| **O Depósito** | jogo de tabuleiro cooperativo, sem vencedor |
+| **Um jogo em que se perde** | perder frequente, rápido e por sorte pura |
+| **Um jogo em que se espera** | tolerância à demora, com espera obrigatória entre jogadas |
+| **Baralho** | um só baralho, vários jogos: reparação · conversa · «quase» · «fizeste, não és» |
+| **A casa das sete** | folha em corte, vazia, para colocar quem lá vive |
+| **Antes, durante, depois** | cartas em branco para sequenciar um episódio real |
+| **Duas listas que não coincidem** | adulto e criança respondem em separado à mesma pergunta |
+| **Dado das estratégias** | cinco faces mais uma em branco; oferece, não prescreve |
+
+**Consolidating the four card types is the right call and it is not only
+economy.** One deck the clinician already knows how to handle beats four she has
+to choose between mid-session, and it makes the pieces genuinely modular in the
+way D-327 requires. **It also inherits an existing production line**: 90×120mm,
+four to a sheet, mirrored backs, built by `scripts/build-card-deck.py` (D-200).
+
+**Two things dropped out of the recommendation and are recorded so the reasons
+are not lost.**
+
+**The Depósito was recommended for deferral and is in anyway.** The objection
+stands and is worth keeping in view: **an educational board game is a genre with
+a deserved bad reputation**, usually a leaflet with dice. It is the most expensive
+piece here by a wide margin. It is in because it is the only physical expression
+of the spine the whole product assumes.
+
+**Bonecos de tamanhos was dropped**, and it had the best ratio on the list — high
+therapeutic value, near-zero cost, and it carries the visual grammar the
+storybook already established, letting a child show how big it got without being
+asked for a number.
+
+### D-330 `[DEFINED]` Naipes, the mark on the face of every card, and the size figures return
+Three decisions on the deck, taken together because they shape the same object.
+
+**Naipes and not levels.** Four parallel sets in one deck — reparação, conversa,
+«quase», «fizeste, não és» — distinguished by colour or by a mark, and the
+clinician takes what serves the case in front of her. **Levels would have implied
+an order and contradicted D-327**, and the practical objection is stronger than
+the doctrinal one: **the four do not serve the same cases.** «Fizeste, não és»
+belongs to shame and works with the parent in the room; reparação comes after
+something has broken; «quase» is vocabulary. There is no order between them true
+for every child.
+
+**The mark goes on the face of every card, not only on the back**, and it is
+applied to the existing thirty-one-card deck as well. **A photocopied or
+photographed card has no back**, and stops saying where it came from.
+
+It is set as one quiet line at the foot — `© ColorHugs · colorhugs.pt` — rather
+than the logo. **The card is handled by small children, and a colour logo beside
+the figure is noise**; a composed line does the same provenance work with a
+fraction of the ink and the attention. **It is a brand mark and a copyright notice
+at once**, which the logo alone would not be.
+
+**It does not conflict with the rule against text inside artwork.** The line is
+composed onto the card by `build-card-deck.py`, not drawn into the illustration —
+the character PNGs are untouched and still serve every language, and the line
+itself comes from the script and can be localised.
+
+**Honest about what it does.** It does not prevent copying. It makes provenance
+visible on a loose card and makes casual redistribution awkward. That is all, and
+it is worth having for the cost.
+
+**Bonecos de tamanhos returns**, making the package nine pieces. It had the best
+ratio on the assessed list: high therapeutic value, near-zero cost, and it carries
+the storybook's visual grammar — the angry one becomes enormous, the ashamed one
+shrinks — letting a child show how big it got **without being asked for a
+number**.
+
+### D-331 `[IMPLEMENTATION]` Bonecos de tamanhos — the first piece of the psychologists' line
+Seven A4 sheets, one per family, each with the same figure at three sizes to be
+cut out. `scripts/build-size-figures.py`, plus the clinician's note at
+`docs/materials/bonecos-nota-aplicacao.md`.
+
+**It was built first not because it is easiest but because the risk in this line
+is not production.** We know how to print cards, sheets and workbooks — it has
+been done twenty-eight times. **What has never been written is the note that
+accompanies a therapeutic piece**: what it is for, how it is introduced, what it
+does not do, on what support, and the reminder that the choice is the clinician's.
+That note is what distinguishes this line from the other two. **Getting it wrong
+on a sheet of cut-outs costs an afternoon; getting it wrong on the deck would
+have cost four naipes at once** — which is the pattern Zangado already taught.
+
+**One sheet per family, not one sheet with the seven.** The clinician prints what
+serves the case in front of her (D-327), and seven families at once would force
+either an enormous sheet or figures too small for a child to cut.
+
+**Three sizes, and three is the ceiling rather than a shortage.** Three coarse
+steps say *ficou pequeno*, *ficou como costuma ser*, *ficou enorme*, and **do not
+convert into a number**. Five steps would ask for a scale, and a scale is the one
+thing this piece must not be. **The proportion is not arbitrary**: the large is
+about three times the medium, which is the proportion the angry one has in scene 4
+of the storybook. A child who has read it recognises the size.
+
+**The white sticker rim, a defect elsewhere in the project, is the cutting margin
+here.** It stays.
+
+**A fault found by rendering, not by reading.** The first layout put the large
+figure on the left and the two smaller ones in a right-hand column, and **the cut
+boxes overlapped** — the figures are nearly square, so at 138 mm tall the large
+one leaves no column beside it. The large now sits alone above and the two small
+ones side by side below, and **the builder now checks the boxes for overlap and
+refuses to write the sheet if they intersect**, so the fault cannot come back
+silently.
+
+**Two cautions specific to this piece are written into the note.**
+**Externalising is not handing over responsibility** — *a Zanga ficou deste
+tamanho* separates the child from the state and takes nothing away from what she
+did while it was that size. And **for Envergonhado the small size is the state,
+not its absence**: shrinking is what shame does, so a small chosen on that sheet
+does not mean *foi pouco*.
+
+### D-332 `[IMPLEMENTATION]` The therapeutic deck — anatomy fixed, first naipe written
+`docs/materials/baralho-terapeutico.md` holds the design and the phrases;
+`scripts/build-therapy-deck.py` reads the numbered lists under each naipe and
+lays out fronts and mirrored backs. **Twelve cards per naipe plus one instruction
+card, four naipes, fifty-two cards, thirteen A4 sheets.** The first naipe —
+*Fizeste, não és* — is written and built; the other three are specified and
+empty.
+
+**It inherits the geometry of the families' deck** (D-200): 90×120 mm, four to a
+sheet. A clinician who owns one deck stores the other the same way.
+
+**Every card carries one sentence and nothing else. No illustration, no number,
+and — the decision that defines the deck — no printed answer.** A card carrying
+the corrected version would turn the work into marking against a key, and **the
+work is what happens between the sentence and the answer**, which belongs to the
+clinician and the child and is different every time.
+
+**The backs distinguish naipes but not cards.** This qualifies the families'-deck
+rule that all backs are identical: there, the point is that no card can be
+recognised face-down; here the clinician also has to find a naipe without turning
+the pile. **Both hold at once** — the naipe is legible from the back, the
+individual card is not.
+
+**These cards carry text and the families' deck did not**, and the consequence is
+worth recording before anyone plans a translation: **this deck cannot be
+translated by substitution.** Each language needs sentences written from scratch,
+because what a Portuguese child hears is not the translation of what a French
+child hears.
+
+**All twelve are in the third person, and the consistency is not only stylistic.**
+*És desastrado* is said **to** the child; *é desastrado* is said **about** her to
+another adult, frequently in front of her — **which is the form the label most
+often takes**, and the one the shame family names as the error. The third person
+is the more faithful phrasing and the one an adult recognises fastest as his own.
+The gender is distributed across the twelve — four masculine, four feminine, four
+unmarked. **No card needs a double form**, because these are quotations and not
+material addressed to the child.
+
+**The instruction card uses both sides, and it is the one exception in the deck.**
+The first attempt carried a slogan — *cada carta diz o que alguém é; encontrar o
+que aconteceu* — which reads well and is useless at a table. **An instruction card
+that sends the clinician elsewhere for the instructions is not an instruction
+card.** The front now carries what the naipe does and how it is played, including
+that the episode behind a label may be invented and is often better invented. The
+back carries the hard rule and what the naipe does not do. **It is identifiable
+face-down in the pile, and that is convenient rather than a fault.**
+
+**A caution that decides how naipe 1 is used, not merely how it is described.**
+These cards carry sentences that hurt — they are the ones children actually hear,
+and some hear them at home. **The child is never asked which card is her.** The
+work is done on the characters, or in the abstract, or — with the adult in the
+room — on a sentence the adult recognises having said. **The naipe exists mainly
+for the adult.**
+
+
+### D-333 `[IMPLEMENTATION]` Naipe 2 — Reparação
+Twelve cards and the two-sided instruction card. **The word *desculpa* appears on
+no card and in no answer sought** — it is on the instruction card only, to say
+that it is not what is being looked for.
+
+**It is not only objects.** A thing breaks, but so does someone's turn, an
+afternoon somebody spent days preparing, a promise, and work a whole class did.
+**Four cards about broken cups would teach that repairing means replacing.** The
+twelve are spread across objects, fairness, words, promises, other people's
+effort and the group.
+
+**None of the twelve carries gender**, unlike naipe 1. That naipe holds
+quotations from adults and stays as they are said; these are about an unnamed
+child, where the rest of the material's rule applies.
+
+**The instruction card gives repair three tests rather than a definition:** the
+child is the one who does it, it reaches the person who was harmed, and it is
+genuinely possible. **A repair only an adult can carry out is not hers.**
+
+**And it says that some things are not repaired.** When there is no repair
+available, saying so is part of the work and not a failure of the game — which
+matters, because a deck of twelve repairable situations would otherwise teach
+that everything can be undone.
+
+**The back carries the rule the family line already established**: repair is not
+an apology on the day. One extracted in front of a room is exposure on top of
+exposure, and what the child records is not the repair but the second audience.
+
+
+### D-334 `[IMPLEMENTATION]` The logo goes on the backs of the therapy deck
+The backs carried the naipe colour and the naipe name and nothing else. They now
+carry the logo as well, which is what the families' deck already did.
+
+**It is the plain `colorhugs-logo`, not the professional lockup.** The deck is
+licensed to practitioners, but **the card is handled by a child at a table**, and
+the child-facing contexts take the plain mark. The licence is stated on the face,
+in the credit line, where the clinician reads it and the child does not.
+
+**The logo sits on a pale disc rather than straight on the colour.** It is a
+multi-coloured mark, and a saturated panel underneath it swallows half of it — on
+the rose and the blue it came out muddy. The disc is the naipe's own colour at a
+tenth of its strength, so the mark reads cleanly and the back still belongs to
+its naipe.
+
+**The naipe name moves below the disc** and keeps its job: the naipe is legible
+face-down, the individual card is not (D-332).
+
+
+### D-335 `[IMPLEMENTATION]` Naipe 3 — Quase
+Twelve situations in which **more than one family fits and none fits better**,
+plus the two-sided instruction card. **Thirty-nine cards in the deck now**, twenty
+A4 sheets; the fourth naipe closes it at fifty-two.
+
+**This naipe is why the dominó do corpo was dropped.** A domino needs one-to-one
+matching, and the relation between a body sensation and a family is not one to
+one — a tight chest serves fear, anger and shame. **A game that forces
+*aperto no peito = medo* teaches something false and makes a child worse at
+reading herself.** Here the ambiguity is the content rather than the defect.
+
+**Not all the ambiguity is between two bad things.** Four of the twelve also fit
+Calmo or Feliz — the heart going fast before going in, the hot face at hearing
+your own name said aloud. **A naipe where hesitating was always between fear and
+sadness would teach that the body is only ambiguous when things go wrong.**
+
+**The work is not to choose.** The instruction card says to find two, keep both,
+and then ask **what would make the difference** — what would have to be known for
+only one to remain. It is the only piece that uses the two decks at once: the
+families' deck on the table, the family cards laid beside the situation.
+
+**None of the twelve carries gender.** Four had to be rewritten to get there —
+*sozinho*, *dele*, *cansado*, *sentado* — and each was avoidable without losing
+anything: *foi sentar-se noutro sítio*, *disseram o nome em voz alta*, *disse que
+tinha sono*, *ficou no chão*.
+
+
+### D-336 `[IMPLEMENTATION]` The seven families are inside the Quase naipe
+The Quase instruction card said to put the families' deck on the table beside it.
+**That made one piece depend on another, which D-327 forbids**, and left the naipe
+useless to a clinician who owns only this deck.
+
+**The seven figures are now cards of the naipe itself** — same gold band, same
+back, and they carry the figure and the family name. Twenty cards in this naipe:
+seven families, twelve situations, one instruction card. **Forty-six in the deck**,
+and the fourth naipe closes it.
+
+They duplicate seven cards of the families' deck, and the duplication is the
+point: **a piece that only works when another piece is present is not a piece.**
+
+**The white field behind the figures had to go.** The sticker rim is white and
+connected to the background, so on the card's cream panel each figure arrived
+inside a visible white box. Flood-filling inward from the edges removes both, and
+here that is what is wanted — **the rim serves no purpose on a card that is not
+being cut out**, unlike the bonecos sheets where it is the cutting margin. The
+whites of the eyes survive, because they do not touch the border.
+
+
+### D-337 `[IMPLEMENTATION]` Naipe 4 — Conversa. The deck is complete
+Twelve questions for the adult to ask the child, out loud, in the room, plus the
+two-sided instruction card. **The deck closes at fifty-nine cards and thirty A4
+sheets** — thirteen, thirteen, twenty and thirteen.
+
+**No question begins with *porquê*.** A child who does not know invents a cause
+to satisfy whoever asked, then repeats it, and after a while holds an explanation
+for something she never explained. It is the forbidden question of the sad
+family, and the naipe is built around its absence rather than merely avoiding it.
+
+**Eight of the twelve turn towards the adult**, and that is the naipe's real
+idea. *O que é que costuma acontecer antes de eu me zangar. O que é que eu digo
+muitas vezes. O que é que eu faço que ajuda mesmo quando estás a chorar.* **A
+child knows things about her parent that nobody ever asks her**, and it is the
+information hardest to obtain in a consultation and easiest to obtain this way.
+
+**The instruction card carries the rule that makes the naipe work rather than
+backfire: after the answer, the adult does not comment.** No correcting, no
+completing, no explaining. **The silence after an answer is part of the
+question.** And one or two cards a session is enough — twelve in a row turns it
+into a questionnaire.
+
+**The back adds the limit:** it is not used to check whether the child's answer
+is true.
+
+
+### D-338 `[IMPLEMENTATION]` The deck's application note, with the science graded
+`docs/materials/baralho-nota-aplicacao.md`. Same shape as the note for *Como Me
+Sinto?* and for the bonecos: what it is, for whom, what it does not do, the
+evidence graded, the cautions, the limits, and misuse.
+
+**The playing instructions are not in it.** They are on the cards, where the
+clinician has them at the table (D-332). The note carries framing, grounding and
+limits.
+
+**The note opens the science section by saying the deck has not been studied.**
+Nothing that follows is evidence about these cards; it is evidence about the
+constructs they approach. **Two claims reach *estabelecido* and no more.**
+
+**Shame and guilt are distinct states rather than degrees of one** — guilt turns
+towards what was done and orients to repair, shame towards who one is and orients
+to disappearing. That grounds naipe 1 and naipe 2. **It authorises saying that
+separating act from person is a real distinction with consequences; it does not
+authorise saying this naipe produces it in a child.**
+
+**There is no one-to-one correspondence between a bodily sensation and a discrete
+emotion.** That grounds naipe 3, and it is also the recorded reason the
+sensation-to-family matching game was refused: **the game would have taught
+something false.**
+
+**Four claims are *razoável* and are marked with what is weaker in each**: trait
+criticism producing helpless responses (**the praise side is better studied than
+the criticism side**, and the extension to a label said to a third party in front
+of the child is plausible and undemonstrated); coerced apologies not doing an
+apology's work (**the long-run effect of repair, which naipe 2 presupposes, is the
+part least studied**); emotional granularity (adults); elaborative reminiscing
+between adult and child (the best-supported of the four).
+
+**Traditions are named — Tangney, Lewis, Dweck, Barrett, Fivush, Reese — and no
+citation is invented.** The note states in a box that authors, years and
+publications must be verified and cited by name before licensing, and that
+**nothing in it may be reproduced in commercial material before that check.**
+
+**One caution in the note is about the adult and not the child.** With a parent in
+the room, naipe 1 can wound the parent: someone who recognises a sentence of his
+own and reads it aloud in front of his daughter is exposed, and the session has to
+hold that. **If there is no room for it that day, the naipe is not used that day.**
+The misuse section says the same thing at its bluntest: used without framing,
+these cards are an instrument for shaming an adult in front of his child.
+
+
+### D-339 `[IMPLEMENTATION]` The three session sheets
+`scripts/build-session-sheets.py` produces *Quem vive nesta casa*, *Antes,
+durante, depois* and *Duas listas*, one A4 PDF each, with **one application note
+for the three** at `docs/materials/folhas-nota-aplicacao.md` — they share a logic
+rather than being the same thing.
+
+**These are the pieces that open and stay open.** On a sheet that goes home that
+is forbidden across this project, because nobody is there to catch what was
+opened. Here somebody is, and it is the only reason the three can exist.
+
+**Boxes and not lines, nothing printed inside a box.** A line says how much is
+expected; a box says nothing.
+
+**The house has an outside, and it is not decoration.** In scene 1 of the
+storybook the seventh is at the door, and a child who wants to put somebody out
+of the house needs somewhere to put them. **A house drawn to the margin would
+force everyone indoors.** The rooms are unnamed and their number corresponds to
+nothing.
+
+**Duas listas is cut in half rather than split into columns.** The first version
+put the two columns side by side on the same half, so each could see what the
+other was writing — **which removes the whole point of the piece.** Two identical
+halves, one above the other, and it is cut.
+
+**Two faults found by rendering.** The house came out with an outline under a
+millimetre thick and read as a diagram; the art direction is a thick line of even
+weight and it applies to a schematic too. And the door now crosses the wall
+rather than sitting inside it — there is an inside, an outside, and a way
+between.
+
+**The note says plainly what the house is not: it is not a projective test.**
+There is no established correspondence between what a child draws in a house and
+what happens in hers, and the material offers none. Who is in which room, who is
+outside, who does not appear — **none of it has a fixed reading**, and the reading
+belongs to the clinician.
+
+**And a caution on the two lists that is about neither sheet nor child:** if the
+comparison could shame the child in front of the adult, or the adult in front of
+the child, it is not made that day. The halves can stay with the clinician.
+
+
+### D-340 `[IMPLEMENTATION]` The empty house is generated art, not a code drawing
+`artwork/sessao/casa-vazia.png`. The first version of *Quem vive nesta casa* was
+traced in code and read as a diagram. This one belongs to the same family as the
+rest of the project.
+
+**It is line and not colour, and that is a decision rather than an economy.** In
+the storybook the house is coloured, but nobody writes on it there. **Here the
+child draws, writes, or places the cut-out bonecos, which are already
+coloured** — a house full of colour would fight with her pencil.
+
+**Two attempts, and the fault in the first one was countable.** A cross-section of
+four empty rooms should cross **six** vertical strokes on a horizontal scan —
+three walls, each drawn with thickness, so two edges each. The first attempt
+crossed **eight** on the upper floor: perspective lines inside the rooms,
+suggesting a receding floor and a back wall. **They matter for a practical reason
+rather than an aesthetic one — the child draws inside those rooms**, and lines
+across the drawing area read as a mistake once she has drawn over them. The first
+attempt was also inconsistent: two rooms had the depth lines, one had none, one
+had half.
+
+**A judgement I would have got wrong by looking.** I was about to call the first
+attempt's line too thin and technical. It measured **3.57 per thousand pixels of
+width — identical to scene 1 of the book, to the thousandth.** What misled me was
+the absence of colour. The accepted version measures **4.99, forty per cent
+heavier than the book**, and that is right rather than wrong: **a line that will
+be drawn over has to carry more weight than a line that is only looked at.**
+
+**The ground line is extended to the page margins by the builder.** In the artwork
+it stops at the width of the drawing, and what lay beneath read as blank page
+rather than as outside. Extended, the sheet has an inside and an outside — which
+is the reason the house has a door.
+
+**The other two sheets get no artwork, and that was argued rather than skipped.**
+*Antes, durante, depois* is three empty boxes and *Duas listas* is two identical
+halves; an image on either would be decoration, and **on a working sheet
+decoration competes for the space and spends ink without serving anything.**
+
+
+### D-341 `[DEFINED]` The sheets become a family: *Peças de sessão*, with a caderno
+Three sheets that looked unrelated now read as one set, and they ship both ways:
+**each sheet keeps its own PDF and prints alone**, and `pecas-de-sessao.pdf`
+gathers instructions plus the three, five pages.
+
+**The caderno gathers them; it does not bind them.** Nothing in it presupposes
+anything else, there is no order, and **no sheet is numbered** — a number would
+say there is a sequence, and D-327 says there is not. The caderno is convenience
+of storage, not a course.
+
+**What makes them a family is a header and not a decoration.** The line's name
+sits above the title in small caps, a short rule in the family colour sits under
+it, and the footer is the same on all three. It costs almost no ink and it works
+at a glance across a desk.
+
+**The instruction sheet is not the application note, and the split is
+deliberate.** `folhas-instrucoes.md` is practical and goes on the table: how to
+propose each sheet, what to explore once it is done, what not to do.
+`folhas-nota-aplicacao.md` holds the scientific framing, the graded evidence and
+the limits, and is read before, not during. **A single document would have been
+too heavy to use and too thin to justify.**
+
+**Three things in the instructions exist because they were learned elsewhere in
+the project.** For the house: *não guardar a folha como retrato da família* — it
+is not a projective test. For the sequence sheet: **start with the middle box and
+work backwards**, because the *antes* is the part nobody ever narrates and is
+usually what was being looked for. For the two lists: **the most useful question
+after comparing is what surprised each of them**, not who was right.
+
+
+### D-342 `[IMPLEMENTATION]` The caderno's cover
+Six pages now: cover, two of instructions, and the three sheets. Each sheet still
+prints alone.
+
+**The cover says it is practitioner material through its register, not through a
+warning.** Sober and typographic, with the **professional lockup** — the
+practitioners' mark, where the cards and the child's sheets take the plain one.
+The licence line sits at the foot, under a rule, where a clinician reads it.
+
+**The three thumbnails are not decoration.** They are the three sheets drawn
+small — the house, the three boxes, the two halves — and they say what is inside
+without the caderno being opened. **On a desk holding material from several
+sets, that is what finds the right one.** The house thumbnail is the real
+artwork at small size; the other two are drawn by the same code that draws the
+sheets, so they cannot drift apart from what they depict.
+
+**No numbering on the cover either**, for the same reason as inside: the three
+are listed left to right because a page has to put them somewhere, not because
+there is an order.
+
+
+### D-343 `[DEFINED]` *Consulta* and not *sala*, where the word names the setting
+**The word had two jobs and only one of them was wrong.**
+
+**Where the material is used** — *folhas para usar na sala* — was ambiguous.
+*Sala* is also the classroom, and **the teacher line uses the word in exactly that
+sense**, so the same word named two different rooms across two commercial lines.
+It is now *consulta* on the cover, in the instructions, in the two application
+notes and in the deck's naipe table.
+
+**Who is present** — *com o adulto na sala* — is correct and stays. The room has
+already been named; *com o adulto na consulta* would read as though the adult
+were the one being seen.
+
+**And one occurrence stays for a third reason**: *um pedido arrancado à frente de
+uma sala* is a room full of people, not a setting, and changing it would break
+the sentence.
+
+
+### D-344 `[IMPLEMENTATION]` Dado das estratégias, and it joins *Peças de sessão*
+`scripts/build-strategy-die.py` produces an A4 with a cube net to cut, fold and
+glue. Five faces carry the things that tend to help once anger is past its peak;
+**the sixth is the child's own.** The die is the fourth piece of the family and
+sits in the caderno, which now runs to seven pages.
+
+**The tension in this piece is real and is resolved by rule rather than by
+drawing.** The five strategies are *offered and not prescribed* (D-?, the angry
+family). **A die that landed on one and required it would turn the offer into a
+prescription.** So the sheet says, in its own header: the die proposes, and
+whoever rolls may accept, refuse, or roll again.
+
+**The sixth face names itself and stays empty.** A blank face is not understood;
+a written face leaves nowhere to write. The label sits small and grey at the top
+and the rest of the face belongs to the child. **A strategy a child names herself
+is worth more than five she was given**, and it is the only one she already knows
+works on her.
+
+**Words and not pictograms.** Five new icons would have cost five generations and
+would be guessed differently by every child; **words come out of the file and
+translate without redrawing anything.**
+
+**The instructions add when not to use it:** after, never during. At the peak a
+child is not listening, and a die there is one more thing to be angry at. And
+they add what not to do — do not roll mid-anger, do not ask her to try the face
+that came up, **do not record which faces came up.**
+
+
+### D-345 `[DEFINED]` A die per family turns out to mean two dice, not seven
+Asked for a die per family. **Checking the corpus before writing changed the
+shape of the answer.**
+
+**The structure *choose one of these* exists in two families and in no other five,
+and that is a decision the workbooks took and explained.** The sad family's
+workbook says it in its own words: **four of the angry one's five do not survive
+this family.** Breathing slowly, counting slowly and moving the body, offered to
+a sad child, are exactly the *vamos fazer uma coisa gira* the material tells
+parents not to do. Only *ir ter com alguém* crosses over, because it accompanies
+instead of removing.
+
+**In the other five families the sheets hold questions, not things to do.** And
+**Aborrecido cannot have one at all**: the named error of that family is filling,
+and six things to do offered to a bored child are the adult solving her emptiness
+for her.
+
+**Seven dice would have meant inventing five things to do for families in which
+this material spent years saying there is nothing to do.** That is why the
+alternative — write new option sets per family — was rejected.
+
+**The two dice do not ask the same question, and that is what makes them right.**
+One asks *qual queres experimentar*; the other asks *o que te faz companhia*.
+**The difference between the two questions is the distinction that separates the
+two families**, and the object teaches it without explaining it.
+
+**Only the angry die has an open face.** The sad one's six are a closed set in the
+workbook; adding *outra coisa* would put a seventh where the material fixed six.
+
+The faces and the question of each die live in `docs/materials/dados-familias.md`;
+`build-strategy-die.py` reads them and **refuses to build a die that does not have
+exactly six faces.** The caderno now runs to eight pages.
+
+
+### D-346 `[IMPLEMENTATION]` The dice get figures — image above, word below
+Ten of eleven figures are in `artwork/sessao/dados/` and placed on the faces.
+
+**The reason for images is not decoration, and my first argument against them was
+wrong.** I had said words translate without redrawing, which is true, and left out
+what matters more: **the die serves children from five, and many do not read.** A
+die of words alone excludes exactly the age the angry family most serves. Image
+and word together: whoever reads, reads; whoever does not, recognises; and the
+word stays there teaching the one who is learning.
+
+**The supporting characters come from the book and were not invented.** The calm
+one is who sits beside you — he is in scene 6 — and the stuffed rabbit is the sad
+one's, from scene 1.
+
+**Judged at the size they print, not at the size they were drawn.** All eleven
+were reduced to 26 mm and looked at there. Eight passed at once; three failed, and
+**two failed because of my prompt.**
+
+**The green companion came back sad in both images where he appears** — frowning
+brows, downturned mouth, and in one of them a teardrop. **I described his face in
+batch one and forgot to describe it in batch two**, and the generator filled the
+gap by making the companion match the mood of the one being kept company. There is
+a content reason not to let that pass: **the point of those two faces is that the
+one keeping company does not become sad too.**
+
+**Then the corrected version broke the sad one's face**: one eye, and the mouth
+rendered as a black oval up beside it. The instruction *turned towards the green
+one* was what broke it. Removing it — the hand reaches, the face stays
+front-on — fixed it in one attempt.
+
+**The last face was word-only for one build, and is now complete.** *Respirar
+devagar* first came back as a long tapered white shape leaving the mouth, which
+at 26 mm reads as a tongue. **The builder places a figure when the file exists and
+leaves the word alone when it does not**, so a known fault was not fixed into the
+file just to avoid an empty face — and when the corrected figure arrived, adding
+it took one file and one run.
+
+**The fix was to name the failure and the geometry rather than the idea.** *A long
+soft plume* is abstract; *one small round cloud beside the mouth, at mouth height,
+not tapering, not hanging down, not touching the body* is a picture. **And the
+likeliest failure had to be forbidden twice**: the puff belongs above his head in
+every other image of the angry one, which is where the generator knows it from.
+**Eleven figures placed, both dice complete.**
+
+
+### D-347 `[IMPLEMENTATION]` The two small games — and they are two, because of tempo
+`scripts/build-session-games.py` produces *Outra vez* and *A vez*. They join
+*Peças de sessão*, which is now eleven pages: cover, two of instructions, three
+sheets, two dice, two games.
+
+**I had suspected the two were one game with variants. They are not, and the
+reason is tempo.** Losing has to happen **often and fast**, or nothing is
+practised; waiting has to happen **slowly**, or there is no wait. **A game cannot
+be quick and slow at the same time.** Merging them would have produced something
+that did neither.
+
+**Outra vez.** Fourteen squares, and a die where **two of the six faces send you
+back to the start**. A game lasts a minute or two, so several are played in a
+session and losing happens repeatedly. **It is pure luck and there is no skill in
+it**, which is the condition that makes losing bearable: whoever loses did not
+lose by being worse at something, and there is no competence to defend.
+
+The instructions carry what not to do, and it is the hard part: **do not let the
+child win, do not shorten the track when *volta* comes up several times running,
+and do not console immediately** — wait, and see what happens on its own.
+
+**A vez.** A shared drawing of twelve squares and a pile of twelve cards, six
+*agora* and six *espera*. **The wait is imposed by chance and not by an adult** —
+nobody is telling the child to wait; the wait simply happens, and that is what
+makes the piece work. What not to do: **do not fill the wait with conversation,
+and do not remove the *espera* cards when several come up together.** That is
+precisely what is being practised.
+
+**Both sheets overflowed the page on the first build** — the die net ran off the
+bottom of one and a row of cards off the other. Invisible in the code, obvious on
+the render.

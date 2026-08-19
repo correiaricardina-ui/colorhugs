@@ -14,7 +14,7 @@ grow, with families in control. You are helping me design and build it.
 **Read `docs/DECISION_LOG.md` in the attached project before answering
 anything.** It holds every decision made so far, numbered D-001 onwards, with
 the reasoning. It is the source of truth. If something here and something there
-disagree, the decision log wins. **It now runs to D-325.**
+disagree, the decision log wins. **It now runs to D-347.**
 
 The other documents in `docs/`:
 
@@ -77,9 +77,29 @@ the A3 poster and six A5 schema cards.
   Built by `scripts/build-parents-book-pdf.py`.
 - **The seven letters**, in the two settings described above.
 
-**The psychologists' line has not been started** (D-288): body map on paper,
-record pad, accommodation grid, ladder log, eight-session plan, school feedback
-sheet, framing and consent, A3 store map.
+**Psychologists' line, in progress.** Its governing distinction is D-327: **these
+are therapeutic pieces, selected and applied by the clinician according to her
+clinical judgement, and adjusted to the case in front of her.** No piece
+presupposes another and nothing is a programme. **Eight of nine pieces are
+built:**
+
+- **Bonecos de tamanhos** — seven A4 sheets, one per family, the figure at three
+  sizes to cut out. `build-size-figures.py`.
+- **Baralho terapêutico** — fifty-nine cards in four naipes: *fizeste, não és* ·
+  *reparação* · *quase* · *conversa*. Naipes, not levels. `build-therapy-deck.py`.
+- **Peças de sessão** — eleven pages gathered in `pecas-de-sessao.pdf`, and every
+  piece also prints alone: *Quem vive nesta casa*, *Antes durante depois*, *Duas
+  listas*, the **dice for Zangado and Triste**, and the two games **Outra vez**
+  (losing) and **A vez** (waiting). `build-session-sheets.py`,
+  `build-strategy-die.py`, `build-session-games.py`.
+
+Each piece has an application note with the evidence graded honestly. **Still to
+build: O Depósito**, the cooperative board game — the only physical expression of
+the store the whole product assumes, and the most expensive piece.
+
+**A rule this line added** (D-328): *nothing is scored or ranked* applies to the
+autonomous product, **not to the consulting room**. With a clinician present,
+competition, losing and waiting are legitimate and are frequently the point.
 
 ---
 
